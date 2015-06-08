@@ -1,0 +1,42 @@
+[Allergique]
+  0 = Acariens
+  1 = Iode injectable
+  2 = Penicilline
+
+[Chirurgicaux]
+  0 = Neurologique
+  1 = Orthopédique
+  2 = Traumatologie
+  3 = Uro-génital
+  4 = Vasculaire
+  5 = Viscérale
+
+[Cognitifs]
+  0 = DP
+  1 = DPTDC
+  2 = TDC
+
+[Familliaux]
+  0 = Coronariens
+  1 = Psychiatriques
+  2 = Respiratoires
+
+[Médicaux]
+  0 = Cardio-vasculaire
+  1 = Endocrinien
+  2 = Gastro-entérologique
+  3 = Métabolique
+  4 = Neurologique
+  5 = Pneumologique
+  6 = Psychiatriques
+
+[Procréation puerpéralité]
+  0 = Accouchement
+  1 = Allaitement
+  2 = Grossesse
+
+[Sociaux]
+  0 = RMI
+  1 = SDF
+  2 = Tutelle
+

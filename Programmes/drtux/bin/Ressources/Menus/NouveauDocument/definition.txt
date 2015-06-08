@@ -1,0 +1,24 @@
+<!DOCTYPE CMenu><CMenu version="0.0" stdsetdef="1">
+<actions>
+    <action>
+        <property name="name">
+            <cstring>Nouveau document</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>filenew.png</iconset>
+        </property>
+        <property name="text">
+            <string>Nouveau document</string>
+        </property>
+        <property name="menuText">
+            <string>Nouveau document</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+N</string>
+        </property>
+        <property name="script">
+            <string>{{:: INCLUDE(../../Plug/NewDoc/NewDoc.txt)}}\</string>
+        </property>
+    </action>
+</actions>
+</CMenu>

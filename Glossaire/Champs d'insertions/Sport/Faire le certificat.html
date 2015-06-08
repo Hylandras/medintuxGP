@@ -1,0 +1,7 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p>$start_title Crée automatiquement le certificat $end_title {{\<br />{{:: SET_VAR (inaptitude,$Glossaire/Prescription/Certificats/Dispense de sport.html)}}\</p>
+<p>{{:: SET_VAR (aptitude,$Glossaire/Prescription/Certificats/Sport aptitude.html)}}\</p>
+<p>{{:: SET_VAR ( certificat,{{:: TEST (S,{{:: Extract (Observation,<span style="color:#0000ff">Certificat</span>  <span style="color:#0000ff">Sport</span>,EOL)}},=,inaptitude,{{VAR=inaptitude}},</p>
+<p>{{VAR=aptitude}})}})}}\</p>
+<p>{{::import ({{VAR=certificat}} , new , Prescription )}}\<br />}}</p>
+</body></html>

@@ -1,0 +1,4 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p>$start_title Crée automatiquement l'ordonnance $end_title droite{{\</p>
+<p>{{:: SET_VAR (ordonnance,\<br />{{:: TEST (S,\<br />{{:: MESSAGE_ALERT ($File $Glossaire/Prescription/Ordonnances/immobilisations/IMMOB_ATTELLE AIRCAST.html, Faire l'ordonnance maintenant ?,\<br />Oui, Non,,,630, 450,)\<br /> }}\<br />, = , Oui , $Glossaire/Prescription/Ordonnances/immobilisations/IMMOB_ATTELLE AIRCAST.html ,  ) \<br />}}\<br />)}}\<br />{{::import ({{VAR=ordonnance}}, new , Prescription )}}\<br />}}</p>
+</body></html>

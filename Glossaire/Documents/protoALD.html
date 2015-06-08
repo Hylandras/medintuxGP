@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta name="qrichtext" content="charset=utf-8" />
+</head>
+<body text="#000000" style="font-size:12pt;font-family:Arial">
+
+<!--  Modifie l'intutilé de l'observation pour plus de lisibilité 
+	{{::Intitule ( Protocole ALD , change) }} -->
+
+<!-- Entête -->
+<p align="center"><span style="font-weight:600">PROTOCOLE&nbsp;ALD.<br />Remplissez&nbsp;les&nbsp;champs.<br />&nbsp;<br />FORMULAIRE&nbsp;PRÉPARÉ&nbsp;LE&nbsp;:&nbsp;{{DATE&nbsp;TIRET}}</span><br /></p>
+
+<!-- Informations concernant la maladie -->
+<p align="center"><hr><span style="font-weight:600">INFORMATION(S)&nbsp;CONCERNANT&nbsp;LA&nbsp;MALADIE</span></p>
+<p><hr></p>
+
+<p><span style="font-weight:600;text-decoration:underline">Diagnostics</span> :<br />
+Diagnostic&nbsp;1. 					<span style="text-decoration:underline;color:#aa0000"> </span><br />
+	En&nbsp;date&nbsp;présumée&nbsp;du&nbsp;<span style="font-style:italic">//&nbsp;dd-MM-yyyy&nbsp;//</span> 1:&nbsp;	<span style="text-decoration:underline;color:#aa0000"> </span><br /><br />
+
+Diagnostic&nbsp;2. 					<span style="text-decoration:underline;color:#aa0000"> </span><br />
+	En&nbsp;date&nbsp;présumée&nbsp;du&nbsp;<span style="font-style:italic">//&nbsp;dd-MM-yyyy&nbsp;//</span> 2:&nbsp;	<span style="text-decoration:underline;color:#aa0000"> </span><br /><br />
+
+Diagnostic&nbsp;3. 					<span style="text-decoration:underline;color:#aa0000"> </span><br />
+	En&nbsp;date&nbsp;présumée&nbsp;du&nbsp;//&nbsp;dd-MM-yyyy&nbsp;// 3:&nbsp;	<span style="text-decoration:underline;color:#aa0000"> </span><br /><br />
+
+&nbsp;<span style="font-weight:600;text-decoration:underline">Argumentaire&nbsp;(en&nbsp;6&nbsp;lignes&nbsp;maximum)</span> :<span style="text-decoration:underline;color:#aa0000"> ~&amp;		&amp;~<br /><br /></span></p>
+
+<!-- Actes et prestations concernant la pathologie -->
+<p align="center"><hr><span style="font-weight:600">ACTES&nbsp;ET&nbsp;PRESTATIONS&nbsp;CONCERNANT&nbsp;LA&nbsp;MALADIE</span></p>
+<p><hr></p>
+	<!-- Traitement -->
+<p><span style="font-weight:600;text-decoration:underline">Traitement en cours (enlevez les spécialités non concernées sans vous soucier de leur numéro, ne laissez qu'une spécialité par ligne, 12 maximum)</span> :<br />
+<span style="text-decoration:underline;color:#aa0000">{{::Extract_Traitement(,Médicament proposé à l'ALD ::NUM::=  ::LIBELLE:: SautDeLigne, )}}</span>
+<br /><br /><br />
+	<!-- Suivi Bio -->
+<span style="font-weight:600;text-decoration:underline">Suivi&nbsp;biologique&nbsp;proposé</span> :<br />
+Biologie&nbsp;proposée&nbsp;1.	<span style="text-decoration:underline;color:#aa0000"> </span><br />
+Biologie&nbsp;proposée&nbsp;2.	<span style="text-decoration:underline;color:#aa0000"> </span><br />
+Biologie&nbsp;proposée&nbsp;3.	<span style="text-decoration:underline;color:#aa0000"> </span><br /><br /><br />
+	<!-- Suivi Cs Spé -->
+<span style="font-weight:600;text-decoration:underline">Consultations&nbsp;spécialisées</span> :<br />
+Cs&nbsp;spécialisée&nbsp;1.		<span style="text-decoration:underline;color:#aa0000"> </span><br />
+Cs&nbsp;spécialisée&nbsp;2.		<span style="text-decoration:underline;color:#aa0000"> </span><br />
+Cs&nbsp;spécialisée&nbsp;3.		<span style="text-decoration:underline;color:#aa0000"> </span><br /><br /><br />
+	<!-- Paramédicaux -->
+<span style="font-weight:600;text-decoration:underline">Para-médicaux</span> :<br />
+Para-Médicaux&nbsp;1.	<span style="text-decoration:underline;color:#aa0000"> </span><br />
+Para-Médicaux&nbsp;2.	<span style="text-decoration:underline;color:#aa0000"> </span><br />
+Para-Médicaux&nbsp;3.	<span style="text-decoration:underline;color:#aa0000"> </span><br /><br /><br />
+
+<span style="font-weight:600;text-decoration:underline">Indiquez la </span><span style="font-weight:600;text-decoration:underline;color:#0000ff">durée</span><span style="font-weight:600;text-decoration:underline"> prévisible des soins</span> :	<span style="text-decoration:underline;color:#aa0000"> </span>
+
+<br /><span style="font-weight:600;text-decoration:underline">Indiquez la </span><span style="font-weight:600;text-decoration:underline;color:#0000ff">durée</span><span style="font-weight:600;text-decoration:underline">&nbsp;prévisible de&nbsp;l'arrêt de travail, s'il y a lieu</span> :	<span style="text-decoration:underline;color:#aa0000"> </span>
+
+<br /><span style="font-weight:600;text-decoration:underline">Le reclassement professionnel est envisagé&nbsp;</span><span style="font-weight:600;text-decoration:underline;color:#0000ff">=</span>	<span style="text-decoration:underline;color:#aa0000"> </span><br /><br /></p>
+
+<!-- Information au patient -->
+<p align="center"><hr><span style="font-weight:600">INFORMATION&nbsp;AU&nbsp;PATIENT</span></p>
+<p><hr></p>
+<p><span style="font-weight:600;text-decoration:underline">Informations pour le patient concernant sa maladie</span> :<span style="text-decoration:underline;color:#aa0000">&nbsp;~&amp;		&amp;~<br />&nbsp;<br /></span></p>
+
+<!-- Proposition du médecin traitant -->
+<p align="center"><hr><span style="font-weight:600">PROPOSITIONS&nbsp;DU&nbsp;MÉDECIN&nbsp;TRAITANT</span></p>
+<p><hr></p>
+<p><span style="font-weight:600;text-decoration:underline;color:#0000ff">ALD&nbsp;proposée</span> :	<span style="text-decoration:underline;color:#aa0000"> </span><br /><br /></p>
+
+<!-- Proposition du médecin traitant -->
+<p align="center"><hr><span style="font-weight:600">POUR LE R&Eacute;GLEMENT</span></p>
+<p><hr></p>
+<p><span style="font-weight:600;text-decoration:underline">Date de l'examen // dd/MM/yyyy //</span> :	<span style="text-decoration:underline;color:#aa0000"> {{DT=dd/MM/yyyy}} <br /></span>
+<p><span style="font-weight:600;text-decoration:underline">En consultation (C) ou en visite (V)</span> :	<span style="text-decoration:underline;color:#aa0000"> <br /></span>
+<p><span style="font-weight:600;text-decoration:underline">En cas de visite, notez (à la main) sur le formulaire le montant de l'idemnit&eacute; kilom&eacute;trique.</span><br /><br />
+<p><span style="font-weight:600;text-decoration:underline">N'oubliez pas de cocher la case de r&eacute;glement et d'envoyer un RIB avec votre formulaire.</span><br /></p>
+
+
+<!-- Préparer le formulaire PDF -->
+<p><span style="font-weight:600;text-decoration:underline;color:#0000ff">Préparer le formulaire ALD</span>&nbsp;&nbsp;<br /><br /></p>
+
+</body></html>

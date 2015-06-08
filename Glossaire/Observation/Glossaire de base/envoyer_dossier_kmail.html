@@ -1,0 +1,12 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body style="font-size:10pt;font-family:Sans">
+<p>{{\</p>
+<p>{{:: SET_VAR(FName,{{NOM PRENOM PATIENT}}-{{GUID}})}}\</p>
+<p>{{REM=--------------------- exportation du dossier complet -------------------------------}}\</p>
+<p>{{:: SET_VAR(exportS,{{:: EXPORT(../../tmp/{{VAR=FName}}.html , D, Terrain|Observation|Prescription|Documents|Vigie, 1900-01-01T00:00:00, 2200-01-01T00:00:00,$File../../pdf/SeparateurEntete.html,$File../../pdf/ObservEntete.html) }}) }}\</p>
+<p>{{REM=--------------------- impression en PDF --------------------------------------------}}\</p>
+<p>{{:: SET_VAR(toDo,{{:: SI(s,{{VAR=exportS}},=,,NOP,exe_process)}})}}\</p>
+<p>{{:: {{VAR=toDo}}(WaitEnd ,../../APropos/bin/APropos,ToPDF,$ToAbsPath../../tmp/{{VAR=FName}}/{{VAR=FName}}.html)}}\</p>
+<p>{{REM=---------------------- envoi par mail-----------------------------------------------}}\</p>
+<p>{{:: {{VAR=toDo}}(NoWaitEnd ,/usr/bin/kmail,-c,roland-sevin@medintux.org,-s,Dossier de {{TITRE PATIENT}} {{NOM PRENOM PATIENT}},--msg,$ToAbsPath../../pdf/TestEnvoiMail.txt,--attach,$ToAbsPath../../tmp/{{VAR=FName}}/{{VAR=FName}}.pdf)}}\</p>
+<p>}}</p>
+</body></html>

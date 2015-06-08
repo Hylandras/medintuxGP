@@ -1,0 +1,5 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans">
+<p>$start_title Votre fichier en mode Web $end_title{{\</p>
+<p>{{:: SET_VAR (password,{{::SQL_SELECT (Personnes , PassWord, WHERE Login =  '{{USER LOGIN MEDECIN}}',1,,)}})}}\
+{{::exe_process (NoWaitEnd ,../../APropos/bin/APropos,BrowserOnly,http://localhost/MedWebTux/verifLogin.php?login={{USER LOGIN MEDECIN}}&amp;pass={{VAR=password}}&amp;ID={{SQL_GET_DOSS_GUID}})}}\</p>
+</body></html>

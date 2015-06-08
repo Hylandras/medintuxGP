@@ -1,0 +1,33 @@
+<!DOCTYPE CMenu><CMenu version="0.0" stdsetdef="1">
+<actions>
+	<action>
+		<property name="name">
+			<cstring>Réinitialiser les variables d'environnement</cstring>
+		</property>
+		<property name="iconSet">
+			<iconset>reset.png</iconset>
+		</property>
+		<property name="text">
+			<string>Réinitialiser les variables d'environnement</string>
+		</property>
+		<property name="menuText">
+			<string>Réinitialiser les variables d'environnement</string>
+		</property>
+		<property name="accel">
+			<string>Ctrl+r</string>
+		</property>
+		<property name="script">
+			<string>
+				{{:: SET_VAR(LIST_docType,Hospitalisation|Consultation Spécialisée|Examen Complémentaire|Courrier|)}}\
+				{{:: SET_VAR(LIST_docSpeciality,Administratif-Social|Angiologie|Cardiologie|Dermatologie|Hépato-Gastro-Entérologie|Endocrinologie-Métabolisme-Nutrition|Gynécologie-Obstétrique|Maladies Infectieuses|Neurologie|Oncologie|Ophtalmologie|ORL|Orthopédie|Pneumologie|Prévention|Psychiatrie|Urologie|Vaccination|Autre|)}}\
+				{{:: SET_VAR(listResult,Rejected)}}\
+				{{:: SET_VAR(PatientFiles, $IsAbsPathE:/REY/PatientFiles)}}\
+				{{:: SET_VAR(tmpFiles, $IsAbsPathD:/MedinTux/tmpFiles)}}\
+				{{:: SET_VAR(popupFading, 3000)}}\
+			</string>
+		</property>
+		<property name="period">
+			<string>-100</string>
+		</property>
+	</action>
+</actions>

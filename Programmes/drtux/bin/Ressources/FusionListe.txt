@@ -1,0 +1,147 @@
+{{:: Extract (Observation , apres , avant , tester , mettre )}}
+{{:: Extract (Prescription , apres , avant , tester , mettre )}}
+{{:: Extract (Ordonnance , apres , avant , tester , mettre )}}
+{{:: Extract (Ordonnance Vidal , apres , avant , tester , mettre )}}
+{{:: Extract (Certificat , apres , avant , tester , mettre )}}
+{{:: Extract (Courrier , apres , avant , tester , mettre )}}
+{{:: Extract_ATCD (<b><u>Antécédents médicaux:</u></b> <br>,<b><u>Antécédents chirurgicaux :</u></b> <br>,<b><u>Antécédents allergiques :</u></b> <br>,<b><u>Antécédents divers :</u></b> <br>, -	::LIBELLE::    ::MEDCHIR::    ::ETAT::   ::CODE::   ::NOTE::   ::DATE:: , en date du :)}}
+{{:: Extract_ATCD (<b><u>Antécédents médicaux:</u></b> <br>,<b><u>Antécédents chirurgicaux :</u></b> <br>,<b><u>Antécédents allergiques :</u></b> <br>,<b><u>Antécédents divers :</u></b> <br>,°	::LIBELLE::  ::NOTE:: ::DATE:: . ,  En date du :)}}
+{{:: Extract_Table (VAR Constantes de Base , Pouls = 20  ; SAO2 = 80  ; Temp = 30 , DATE VISITE   , TOUTE DATE,  100, 20, 1, 200 ,dd-MM-yyyy hh:mm=Dates de prises, 50)}}
+{{:: Extract_Table (VAR Constantes de Base , Pouls = 20  ; SAO2 = 80  ; Temp = 30 , TOUTE DATE    , DATE VISITE, 100, 20, 1, 200 ,dd-MM-yyyy hh:mm=Dates de prises, 50)}}
+{{:: Extract_Table (VAR Constantes de Base , Pouls = 20  ; SAO2 = 80  ; Temp = 30 , TOUTE DATE    , TOUTE DATE,  100, 20, 1, 200 ,dd-MM-yyyy hh:mm=Dates de prises, 50)}}
+{{:: Extract_Table (VAR Constantes de Base , Pouls = 20  ; SAO2 = 80  ; Temp = 30 , DATE VISITE   ,  +24      ,  100, 20, 1, 200 ,dd-MM-yyyy hh:mm=Dates de prises, 50)}}
+{{:: Extract_Table (VAR Constantes de Base , Pouls = 20  ; SAO2 = 80  ; Temp = 30 , DATE VISITE   , +-24      ,  100, 20, 1, 200 ,dd-MM-yyyy hh:mm=Dates de prises, 50)}}
+{{:: Extract_Table (VAR Constantes de Base , Pouls = 20  ; SAO2 = 80  ; Temp = 30 , DATE VISITE   ,  -24      ,  100, 20, 1, 200 ,dd-MM-yyyy hh:mm=Dates de prises, 50)}}
+{{:: Extract_Table (VAR Constantes de Base , Pouls = 20  ; SAO2 = 80  ; Temp = 30 , DATE ACTUELLE ,  +24      ,  100, 20, 1, 200 ,dd-MM-yyyy hh:mm=Dates de prises, 50)}}
+{{:: Extract_VAR (VAR Constantes de Base , SAO2 , DATE VISITE ,   0  , TOUTES )}}
+{{:: Extract_VAR (VAR Constantes de Base , SAO2 , DATE VISITE , -24  , PREMIERE )}}
+{{:: Extract_VAR (VAR Constantes de Base , SAO2 , DATE VISITE , +24  , DERNIERE )}}
+{{:: Extract_VAR (VAR Constantes de Base , SAO2 , DATE VISITE , +-24 , PLUS PROCHE )}}
+{{:: exe_process (WaitEnd , ../../QLightPad/bin/QLightPad)}}
+{{::import (../../tmp/LastScanned.txt , insert)}}
+{{::import (../../tmp/LastScanned.txt , new)}}
+{{::import (../../tmp/LastScanned.txt , replace)}}
+{{::import (../../tmp/LastScanned.txt , insert remove_src clear_src)}}
+{{::delete_file (../../tmp/LastScanned.txt, clear)}}
+{{::copy_file($ToAbsPath ../../tmp/{{GET LAST IMAGE NAME}} , $ToAbsPath ../../tmp/NewName.png, $remove_src_file)}}
+{{:: TEST(String,    Valeur1, = ,Valeur2, c'est vrai, c'est faux )}}
+{{:: TEST(Numérique, Valeur1, = ,Valeur2, c'est vrai, c'est faux )}}
+{{:: TEST(S,{{SEXE MEDECIN}},=,F,e)}}
+{{:: TEST(N,{{AGE PATIENT}},>=,18,majeur,mineur)}}
+{{IF {{SEXE PATIENT}} = F | e | |}}
+{{IF {{::Upper ( {{ADRESSE COMPLETE MEDECIN}} ) }} %= MARS  | commence par MARS | ne commence pas par MARS|}}
+{{IF {{::Upper ( {{ADRESSE COMPLETE MEDECIN}} ) }} =% EILLE | finit par EILLE   | ne finit pas par EILLE|}}
+{{IF {{::Upper ( {{ADRESSE COMPLETE MEDECIN}} ) }} %% SEIL  | contient SEIL     | ne contient pas SEIL|}}
+{{IF {{::Lower ( {{ADRESSE COMPLETE MEDECIN}} ) }} %% seil  | contient seil     | ne contient pas seil|}}
+{{IF {{::DaysTo( {{DATE OBSERVATION}},{{CURRENT DATE}} ) }} > 30 | Observation datant de plus de 30 jours ||}}
+{{IF {{AGE PATIENT ANNEE ABREGE}}   >= 18  | Majeur | Mineur|}}
+{{:: Intitule ( Intitule du document , add  ) }}
+{{:: Intitule ( Intitule du document , change  ) }}
+{{:: Intitule ( Intitule du document ) }}
+{{:: sous_type ( sous_type du document , add  ) }}
+{{:: sous_type ( sous_type du document , change  ) }}
+{{:: sous_type ( sous_type du document ) }}
+{{::Calc (25 , * , POIDS) }}
+{{::Calc (25 , x , POIDS) }}
+{{::Calc (25 , + , POIDS) }}
+{{::Calc (25 , / , POIDS) }}
+{{::Calc (25 , - , POIDS) }}
+{{::Calc (25 , * , TAILLE) }}
+{{::Calc (25 , * , SURFACE) }}
+{{::Calc (25 , * , BMI) }}
+{{::Calc (25 , * , {{AGE PATIENT ANNEE ABREGE}}) }}
+{{INTERVENANT = Médecine generale CHAMPS DESIRES = TNP,S,A,CV DECALAGE=       }}
+{{INTERVENANT = Médecine generale CHAMPS DESIRES = TNP,S,A,CV DECALAGE=     SEP=<hr><br>  }}
+{{INTERV_STRUCT_XXX = Médecine generale STYLE = liste CHAMPS DESIRES = TNPSACV DECALAGE=	}}
+{{INTERV_STRUCT_XXX = Médecine generale STYLE = noms CHAMPS DESIRES = TNPSACV DECALAGE=	}}
+{{INTERV_CHAMP_XXX_TITRE}}
+{{INTERV_CHAMP_XXX_SPECIALITE}}
+{{INTERV_CHAMP_XXX_NOM}}
+{{INTERV_CHAMP_XXX_PRENOM}}
+{{INTERV_CHAMP_XXX_ADR_1}}
+{{INTERV_CHAMP_XXX_ADR_2}}
+{{INTERV_CHAMP_XXX_ADR_3}}
+{{INTERV_CHAMP_XXX_CODE_POST}}
+{{INTERV_CHAMP_XXX_VILLE}}
+{{INTERV_CHAMP_XXX_NOM}}
+{{INTERV_CHAMP_XXX_NOM}}
+{{SAVE CURRENT DOC=../../tmp/exemple.text}}
+{{SAVE CURRENT DOC={{GET SAVE FILE NAME = ../../tmp/}}}}
+{{GET SAVE FILE NAME = ../../tmp/}}
+{{GET LAST IMAGE NAME}}
+{{GET LAST IMAGE SRC_NAME}}
+{{SAVE LAST IMAGE NAME== ../../tmp/ }}
+{{SAVE LAST IMAGE NAME=../../tmp/ }}{{:: copy_files ($ToAbsPath ../../tmp/{{GET LAST IMAGE NAME}} , $ToAbsPath ../../tmp/NewName.png, $remove_src_file)}}
+{{::insert_image (./Ressources/icones/PingouinsSimple.png , 300 , 500) }}
+{{SAVE LAST IMAGE NAME=../../tmp/}}{{:: exe_process (WaitEnd ,  /usr/bin/gimp ,$ToAbsPath ../../tmp/{{GET LAST IMAGE NAME}})}}{{:: replace_image ({{GET LAST IMAGE NAME}}, ../../tmp/{{GET LAST IMAGE NAME}},-1,-1,$keep_src_name $remove_src_file)}}
+{{:: replace_image ({{GET LAST IMAGE NAME}}, ../../tmp/{{GET LAST IMAGE NAME}},-1,-1, $keep_src_name $remove_src_file) }}
+{{OPEN_FILE_NAME=Fichiers IMAGE (*.jpg *.jpeg *.png *.PNG *.gif *.GIF *.JPEG *.JPG);;Tous les fichiers (*)}}
+{{:: replace_image ({{GET LAST IMAGE NAME}}, {{OPEN_FILE_NAME}}, -1, -1, $keep_Original_W  $keep_Original_H) }}
+{{:: replace_image ({{GET LAST IMAGE NAME}}, {{OPEN_FILE_NAME}}, 600, -1) }}
+{{DATE TIRET}}
+{{DAYSTO}}
+{{dd-MM-yyyy}}
+{{date}}
+{{HHHMM}}
+{{DT=expression}}
+{{DT=dd-MM-yyyy}}
+{{hh:mm}}
+{{DATE DOCUMENT=Prescription FORMAT=dd-MM-yyyy}}
+{{DATE VISITE}}
+{{DATE OBSERVATION}}
+{{DATE DERNIERES REGLES}}
+{{DDR=expression}}
+{{DDR=dd-MM-yyyy}}
+{{USER TITRE PS}}
+{{USER ADRESSE COMPLETE MEDECIN}}
+{{USER ADRESSE MEDECIN}}
+{{USER VILLE MEDECIN}}
+{{USER CP MEDECIN}}
+{{USER SEXE MEDECIN}}
+{{USER SPECIALITE MEDECIN}}
+{{USER IDENTIFICATION MEDECIN}}
+{{USER CONVENTION MEDECIN}}
+{{USER NOM PRENOM MEDECIN}}
+{{USER NOM MEDECIN}}
+{{USER PRENOM MEDECIN}}
+{{USER LOGIN MEDECIN}}
+{{TITRE PS}}
+{{ADRESSE COMPLETE MEDECIN}}
+{{ADRESSE MEDECIN}}
+{{VILLE MEDECIN}}
+{{CP MEDECIN}}
+{{SEXE MEDECIN}}
+{{SPECIALITE MEDECIN}}
+{{IDENTIFICATION MEDECIN}}
+{{CONVENTION MEDECIN}}
+{{NOM PRENOM MEDECIN}}
+{{NOM MEDECIN}}
+{{PRENOM MEDECIN}}
+{{AGE PATIENT ABREGE}}
+{{AGE PATIENT ANNEE ABREGE}}
+{{AGE PATIENT}}
+{{NUM. TEL3 PATIENT}}
+{{NUM. TEL2 PATIENT}}
+{{NUM. TEL1 PATIENT}}
+{{EMAIL PATIENT}}
+{{DATE NAISSANCE PATIENT}}
+{{SEXE PATIENT}}
+{{TITRE PATIENT}}
+{{PROFESSION PATIENT}}
+{{NOMBRE D'ENFANT PATIENT}}
+{{VILLE PATIENT}}
+{{CODE POSTAL PATIENT}}
+{{ADRESSE PATIENT}}
+{{ADRESSE COMPLETE PATIENT}}
+{{ADRESSE PATIENT UNE LIGNE}}
+{{NUM. SECU PATIENT}}
+{{NOM PRENOM ASSURE}}
+{{NOM PRENOM INTERVENANT=Médecine generale}}
+{{NOM PATIENT}}
+{{PRENOM PATIENT}}
+{{NOM PRENOM PATIENT}}
+{{POIDS PATIENT}}
+{{BMI PATIENT}}
+{{SURFACE PATIENT}}
+{{?*20}}
+{{\t*20}}

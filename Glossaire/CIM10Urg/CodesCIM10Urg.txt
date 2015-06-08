@@ -1,0 +1,1130 @@
+Chapitre du thésaurus	Code CIM10	Libellé du thésaurus
+Hépato-gastro-entérologie	A04.9	Gastroentérite bactérienne SAI
+Hépato-gastro-entérologie	A05.9	Toxi-infection alimentaire SAI
+Hépato-gastro-entérologie	A08.4	Gastroentérite virale SAI
+Infectiologie générale et cutanée	A38	Scarlatine
+Infectiologie générale et cutanée	A41.9	Septicémie SAI
+Infectiologie générale et cutanée	A46	Erysipèle
+Infectiologie générale et cutanée	A48.0	Gangrène gazeuse
+Infectiologie générale et cutanée	A60.0	Herpès génital
+Infectiologie générale et cutanée	A69.2	Maladie de Lyme
+Neurologie	A87.9	Méningite virale 
+Infectiologie générale et cutanée	B00.2	Herpès buccal
+Infectiologie générale et cutanée	B01.9	Varicelle SAI
+Infectiologie générale et cutanée	B02.9	Zona SAI
+Infectiologie générale et cutanée	B05.9	Rougeole SAI
+Infectiologie générale et cutanée	B06.9	Rubéole SAI
+Infectiologie générale et cutanée	B09	Virose cutanéo-muqueuse SAI
+Hépato-gastro-entérologie	B19.9	Hépatite virale SAI
+Infectiologie générale et cutanée	B26.9	Oreillons SAI
+Infectiologie générale et cutanée	B27.9	M.N.I
+Infectiologie générale et cutanée	B34.9	Virose SAI, Syndrôme grippal
+Infectiologie générale et cutanée	B37.0	Candidose buccale
+Infectiologie générale et cutanée	B37.2	Candidose de la peau ou des ongles
+Infectiologie générale et cutanée	B37.3	Candidose vaginale
+Infectiologie générale et cutanée	B37.9	Candidose SAI
+Infectiologie générale et cutanée	B54	Paludisme SAI
+Infectiologie générale et cutanée	B80	Oxyurose
+Infectiologie générale et cutanée	B85.2	Pédiculose SAI
+Infectiologie générale et cutanée	B86	Gale
+Neurologie	C79.3	Métastases cérébrales
+Hématologie	C95.0	Leucémie aigüe
+Hématologie	D50.0	Anémie chronique ferriprive
+Hématologie	D61.9	Aplasie médullaire
+Hématologie	D62	Anémie aiguë post-hémorragique 
+Hématologie	D64.9	Anémie SAI
+Hématologie	D68.9	Trouble de la coagulation SAI
+Dermatologie	D69.0	Purpura allergique
+Hématologie	D69.2	Purpura thrombopénique idiopathique
+Hématologie	D69.6	Thrombopénie SAI
+Endocrinologie-Métabolique	E03.9	Hypo thyroïdie 
+Endocrinologie-Métabolique	E05.9	Hyper thyroidie SAI
+Endocrinologie-Métabolique	E10.0	Coma diabétique insulino-dépendant
+Endocrinologie-Métabolique	E10.1	Acidocétose sur diabète insulino-dépendant
+Endocrinologie-Métabolique	E10.9	Décompensation d'un diabète insulino-dépendant
+Endocrinologie-Métabolique	E11.0	Coma diabétique non insulino-dépendant
+Endocrinologie-Métabolique	E11.1	Acidocétose sur diabète non insulino-dépendant
+Endocrinologie-Métabolique	E11.9	Décompensation d'un diabète non insulino-dépendant
+Endocrinologie-Métabolique	E14.0	Coma diabétique type non précisé
+Endocrinologie-Métabolique	E14.1	Acidocétose sur diabète type non précisé
+Endocrinologie-Métabolique	E14.9	Décompensation d'un diabète type non précisé
+Endocrinologie-Métabolique	E16.2	Hypoglycémie SAI
+Endocrinologie-Métabolique	E27.4	Insuff surrénalienne  aiguë
+Endocrinologie-Métabolique	E83.5	Hyper calcémie
+Endocrinologie-Métabolique	E86	Déshydration 
+Endocrinologie-Métabolique	E87.0	Hyper-natrémie
+Endocrinologie-Métabolique	E87.1	Hypo-natrémie
+Endocrinologie-Métabolique	E87.5	Hyper-kaliémie
+Endocrinologie-Métabolique	E87.6	Hypo-kaliémie
+Neurologie	F03	Démence SAI
+Neurologie	F07.2	Syndrôme post traumatisme crânien
+Intoxication et toxicomanie	F10.0	Intoxication éthylique aiguë
+Intoxication et toxicomanie	F10.2	Problème de dépendance à une intoxication éthylique chronique
+Intoxication et toxicomanie	F10.3	Syndrôme de sevrage sans délirium d'une intoxication alcoolique
+Intoxication et toxicomanie	F10.4	Syndrôme de sevrage avec délirium d'une intoxication alcoolique
+Intoxication et toxicomanie	F11.0	Intoxication aiguë à l'héroïne, aux opiacés
+Intoxication et toxicomanie	F11.2	Problème de dépendance à l'héroïne, aux opiacés
+Intoxication et toxicomanie	F11.3	Syndrôme de sevrage sans délirium d'une intoxication à l'héroïne, aux opiacés
+Intoxication et toxicomanie	F11.4	Syndrôme de sevrage avec délirium d'une intoxication à l'héroïne, aux opiacés
+Intoxication et toxicomanie	F12.0	Intoxication aiguë au cannabis
+Intoxication et toxicomanie	F12.2	Problème de dépendance au cannabis
+Intoxication et toxicomanie	F12.3	Syndrôme de sevrage sans délirium d'une intoxication au cannabis
+Intoxication et toxicomanie	F12.4	Syndrôme de sevrage avec délirium d'une intoxication au cannabis
+Intoxication et toxicomanie	F14.0	Intoxication aiguë à la cocaïne
+Intoxication et toxicomanie	F14.2	Problème de dépendance à la cocaïne
+Intoxication et toxicomanie	F14.3	Syndrôme de sevrage sans délirium d'une intoxication à la cocaïne
+Intoxication et toxicomanie	F14.4	Syndrôme de sevrage avec délirium d'une intoxication à la cocaïne
+Intoxication et toxicomanie	F15.0	Intoxication aiguë par d'autres stimulants
+Intoxication et toxicomanie	F15.2	Problème de dépendance à d'autres stimulants
+Intoxication et toxicomanie	F15.3	Syndrôme de sevrage sans délirium d'une intoxication à d'autres stimulants
+Intoxication et toxicomanie	F15.4	Syndrôme de sevrage avec délirium d'une intoxication à d'autres stimulants
+Intoxication et toxicomanie	F16.0	Intoxication aiguë à d'autres substances hallucinogènes
+Intoxication et toxicomanie	F16.2	Problème de dépendance à d'autres substances hallucinogènes
+Intoxication et toxicomanie	F16.3	Syndrôme de sevrage sans délirium d'une intoxication à d'autres substances hallucinogènes
+Intoxication et toxicomanie	F16.4	Syndrôme de sevrage avec délirium d'une intoxication à d'autres substances hallucinogènes
+Psychiatrie et troubles psychologiques	F20.9	Schizophrénie SAI
+Psychiatrie et troubles psychologiques	F23.0	Bouffée délirante SAI
+Psychiatrie et troubles psychologiques	F30.9	Episode maniaque SAI
+Psychiatrie et troubles psychologiques	F32.9	Dépression SAI
+Psychiatrie et troubles psychologiques	F41.0	Anxiété panique
+Psychiatrie et troubles psychologiques	F41.9	Anxiété SAI
+Psychiatrie et troubles psychologiques	F44.9	Hystérie SAI
+Psychiatrie et troubles psychologiques	F45.9	Trouble psychosomatique
+Psychiatrie et troubles psychologiques	F50.0	Anorexie mentale
+Psychiatrie et troubles psychologiques	F51.9	Trouble du sommeil d'origine psychogène
+Psychiatrie et troubles psychologiques	F60.3	Agressivité
+Neurologie	G00.9	Méningite bactérienne
+Neurologie	G03.9	Méningite SAI
+Neurologie	G20	Parkinson, maladie 
+Neurologie	G24.0	Dystonie médicamenteuse
+Neurologie	G24.9	Dystonie, dyskinésie
+Neurologie	G31.2	Encéphalopathie alcoolique
+Neurologie	G35	Sclérose en plaque SAI
+Neurologie	G40.9	Epilepsie SAI
+Neurologie	G41.9	Epilepsie état de mal SAI 
+Neurologie	G44.0	Algie vasculaire de la face
+Neurologie	G44.2	Céphalée de tension
+Neurologie	G45.3	Amaurose fugace
+Neurologie	G45.4	Amnésie fugace, Ictus amnésique
+Neurologie	G45.9	Accident Ischémique Transitoire   SAI 
+Neurologie	G50.0	Névralgie du trijumeau
+Neurologie	G51.0	Paralysie faciale à frigore
+Neurologie	G51.9	Paralysie faciale SAI
+Rhumatologie	G56.0	Syndrôme du canal carpien
+Rhumatologie	G58.0	Névralgie intercostale
+Neurologie	G62.9	Polynévrite SAI
+Neurologie	G70.0	Myasthénie
+Neurologie	G81.9	Hémiplégie SAI
+Neurologie	G83.4	Syndrôme de la queue de cheval
+Neurologie	G83.9	Syndrôme paralytique SAI
+Neurologie	G91.2	Hydrocéphalie à pression normale
+Neurologie	G92	Encéphalopathie toxique
+Neurologie	G93.4	Encéphalopathie SAI 
+Neurologie	G93.6	Oedeme cérébral non traumatique
+Neurologie	G97.1	Syndrôme post ponction lombaire
+Ophtalmologie	H00.0	Orgelet
+Ophtalmologie	H00.1	Chalazion
+Ophtalmologie	H04.3	Dacryocystite SAI
+Ophtalmologie	H10.0	Conjonctivite purulente
+Ophtalmologie	H10.3	Conjonctivite aiguë   SAI
+Ophtalmologie	H11.3	Hémorragie conjonctivale
+Ophtalmologie	H16.0	Ulcère cornéen
+Ophtalmologie	H16.9	Kératite SAI
+Ophtalmologie	H20.9	Uveite SAI
+Ophtalmologie	H33.2	Décollement de rétine
+Ophtalmologie	H34.9	Occlusion vasculaire de rétine SAI
+Ophtalmologie	H40.9	Glaucome
+Ophtalmologie	H53.9	Trouble de la vision SAI
+Ophtalmologie	H57.1	Douleur oculaire
+ORL et stomatologie	H60.9	Otite externe SAI
+ORL et stomatologie	H61.2	Bouchon de cérumen
+ORL et stomatologie	H66.9	Otite moyenne SAI
+ORL et stomatologie	H70.0	Mastoïdite aiguë
+ORL et stomatologie	H73.0	Myringite aiguë
+ORL et stomatologie	H81.0	Maladie de Ménière
+ORL et stomatologie	H81.1	Vertige bénin paroxystique
+ORL et stomatologie	H81.3	Vertige. périphérique SAI
+Neurologie	H81.4	Vertige central 
+ORL et stomatologie	H91.2	Surdité brutale
+ORL et stomatologie	H92.0	Otalgie
+ORL et stomatologie	H92.2	Otorragie
+ORL et stomatologie	H93.1	Acouphènes
+Cardio-vasculaire	I10	Hypertension essentielle, poussée
+Cardio-vasculaire	I20.0	Angor instable
+Cardio-vasculaire	I20.8	Angor d'effort
+Cardio-vasculaire	I20.9	Angor SAI
+Cardio-vasculaire	I21.9	Infarctus du myocarde SAI
+Cardio-vasculaire	I26.9	Embolie pulmonaire SAI
+Cardio-vasculaire	I30.1	Péricardite infectieuse
+Cardio-vasculaire	I44.2	Bloc auriculo-ventriculaire complet
+Cardio-vasculaire	I45.9	Trouble de la conduction SAI
+Cardio-vasculaire	I46.9	Arrêt cardiaque SAI
+Cardio-vasculaire	I47.1	Tachycardie supraventriculaire
+Cardio-vasculaire	I47.2	Tachycardie ventriculaire
+Cardio-vasculaire	I48	Fibrillation, flutter auriculaire
+Cardio-vasculaire	I49.0	Fibrillation, flutter ventriculaire
+Cardio-vasculaire	I49.1	Extrasystoles supraventriculaires
+Cardio-vasculaire	I49.3	Extrasystoles ventriculaires
+Cardio-vasculaire	I49.9	Arythmie cardiaque SAI
+Cardio-vasculaire	I50.0	Insuffisance cardiaque droite
+Cardio-vasculaire	I50.1	Insuffisance cardiaque gauche
+Cardio-vasculaire	I50.9	Insuffisance cardiaque globale
+Neurologie	I60.8	Hémorragie méningée
+Neurologie	I62.9	Accident vasculaire cérébral hémorragique
+Neurologie	I63.9	Accident vasculaire cérébral ischémique
+Neurologie	I64	Accident vasculaire cérébral SAI
+Cardio-vasculaire	I70.2	Artériopathie oblitérante des membres inférieurs
+Cardio-vasculaire	I71.0	Dissection aortique
+Cardio-vasculaire	I71.9	Anévrysme aortique SAI
+Cardio-vasculaire	I74.3	Ischémie artérielle aiguë des membres inférieurs
+Cardio-vasculaire	I80.9	Phlébite de membre SAI
+Dermatologie	I83.0	Ulcère variqueux de membre
+Cardio-vasculaire	I83.9	Varices de membre non ulcérées
+Hépato-gastro-entérologie	I84.9	Hémorroïde SAI
+Hépato-gastro-entérologie	I85.0	Varices oesophagiennes hémorragiques
+Hépato-gastro-entérologie	I88.0	Lymphadénite mésentérique
+Cardio-vasculaire	I89.0	Lymphoedeme
+Cardio-vasculaire	I89.1	Lymphangite
+Cardio-vasculaire	I95.1	Hypotension orthostatique
+ORL et stomatologie	J00	Rhinopharyngite 
+ORL et stomatologie	J01.9	Sinusite aiguë SAI
+ORL et stomatologie	J02.9	Angine SAI
+ORL et stomatologie	J04.0	Laryngite aiguë 
+Pneumologie	J04.1	Trachéite SAI
+ORL et stomatologie	J05.1	Epiglotitte aiguë SAI
+Infectiologie générale et cutanée	J11.1	Grippe SAI
+Pneumologie	J12.9	Pneumopathie virale 
+Pneumologie	J15.9	Pneumopathie bactérienne
+Pneumologie	J18.9	Pneumopathie SAI
+Pneumologie	J20.9	Bronchite aiguë SAI
+Pneumologie	J21.9	Bronchiolite SAI
+ORL et stomatologie	J30.4	Rhinite allergique 
+ORL et stomatologie	J32.9	Sinusite chronique 
+ORL et stomatologie	J36	Angine phlegmoneuse 
+ORL et stomatologie	J38.5	Spasme laryngé
+ORL et stomatologie	J39.0	Abcès rétropharyngé
+Pneumologie	J45.9	Asthme SAI 
+Pneumologie	J46	Etat de mal asthmatique
+Pneumologie	J68.9	Trouble respiratoire SAI dû à des émanations, gaz, fumées, ou agents chimiques
+Pneumologie	J69.0	Pneumopathie d’inhalation
+Pneumologie	J84.9	Pneumopathie interstitielle
+Pneumologie	J90	Pleurésie
+Pneumologie	J93.9	Pneumothorax non traumatique
+Pneumologie	J96.0	Détresse respiratoire
+Pneumologie	J96.1	Insuffisance respiratoire chronique
+ORL et stomatologie	K02.9	Caries dentaires SAI
+ORL et stomatologie	K04.0	Abcès dentaire
+ORL et stomatologie	K05.1	Gingivite aiguë SAI
+ORL et stomatologie	K07.6	Articulation temporo-mandibulaire (dysfonction)
+ORL et stomatologie	K08.8	Douleur dentaire
+ORL et stomatologie	K11.2	Sialoadénite
+ORL et stomatologie	K11.5	Sialolithiase
+ORL et stomatologie	K12.1	Stomatite 
+Hépato-gastro-entérologie	K20	Oesophagite SAI
+Hépato-gastro-entérologie	K21.9	Reflux gastro-oesophagien
+Hépato-gastro-entérologie	K22.6	Syndrôme de Mallory-Weiss
+Hépato-gastro-entérologie	K27.4	Ulcère gastro-duodénal hémorragique
+Hépato-gastro-entérologie	K27.9	Ulcère gastro-duodénal sans précision 
+Hépato-gastro-entérologie	K29.7	Gastrite SAI
+Hépato-gastro-entérologie	K30	Dyspepsie
+Hépato-gastro-entérologie	K35.9	Appendicite SAI
+Hépato-gastro-entérologie	K46.0	Hernie abdominale occluse
+Hépato-gastro-entérologie	K46.9	Hernie abdominale non occluse
+Hépato-gastro-entérologie	K51.9	Rectocolite hémorragique, poussée
+Hépato-gastro-entérologie	K52.9	Diarrhée
+Hépato-gastro-entérologie	K55.0	Infarctus du mésentère
+Hépato-gastro-entérologie	K56.1	Invagination intestinale aiguë
+Hépato-gastro-entérologie	K56.2	Volvulus du grêle
+Hépato-gastro-entérologie	K56.4	Fécalome
+Hépato-gastro-entérologie	K56.6	Occlusion intestinale SAI
+Hépato-gastro-entérologie	K57.3	Sigmoïdite diverticulaire
+Hépato-gastro-entérologie	K59.0	Constipation
+Hépato-gastro-entérologie	K59.9	Colopathie fonctionnelle
+Hépato-gastro-entérologie	K60.2	Fissure anale
+Hépato-gastro-entérologie	K61.0	Abcés anal
+Hépato-gastro-entérologie	K62.3	Prolapsus rectal
+Hépato-gastro-entérologie	K62.5	Rectorragie
+Hépato-gastro-entérologie	K62.9	Proctologie SAI
+Hépato-gastro-entérologie	K65.0	Péritonite aiguë
+Hépato-gastro-entérologie	K66.1	Hémopéritoine 
+Hépato-gastro-entérologie	K66.8	Pneumopéritoine
+Hépato-gastro-entérologie	K70.1	Hépatite alcoolique
+Hépato-gastro-entérologie	K71.9	Hépatite médicamenteuse
+Hépato-gastro-entérologie	K72.9	Hépatite SAI
+Hépato-gastro-entérologie	K80.2	Lithiase de la vésicule ou des voies biliaires SAI
+Hépato-gastro-entérologie	K81.0	Cholecystite non lithiasique
+Hépato-gastro-entérologie	K83.0	Angiocholite non lithiasiaque
+Hépato-gastro-entérologie	K85	Pancréatite aiguë SAI
+Hépato-gastro-entérologie	K86.1	Pancréatite chronique SAI
+Hépato-gastro-entérologie	K91.4	Stomie intestinale ou colique (problème de)
+Hépato-gastro-entérologie	K92.0	Hématémèse
+Hépato-gastro-entérologie	K92.1	Mélaena
+Hépato-gastro-entérologie	K92.2	Hémorragie digestive occulte
+Infectiologie générale et cutanée	L01.0	Impétigo
+Infectiologie générale et cutanée	L02.9	Abcés cutané SAI, furoncle SAI
+Infectiologie générale et cutanée	L03.0	Phlegmon doigt, orteil
+Infectiologie générale et cutanée	L03.2	Phlegmon face
+Infectiologie générale et cutanée	L03.9	Phlegmon cutané   SAI
+Dermatologie	L05.9	Kyste du sinus pilonidal
+Dermatologie	L13.9	Dermite bulleuse SAI
+Dermatologie	L20.9	Dermite atopique SAI
+Dermatologie	L25.9	Dermite de contact SAI
+Dermatologie	L27.9	Dermite dûe à une substance prise par voie interne
+Dermatologie	L29.9	Prurit
+Dermatologie	L50.9	Urticaire SAI
+Dermatologie	L55.9	Coup de soleil SAI
+Dermatologie	L60.0	Ongle incarné
+Dermatologie	L72.1	Kyste sébacé
+Dermatologie	L89	Escarre
+Rhumatologie	M00.90	Arthrite infectieuse SAI , sièges multiples
+Rhumatologie	M00.91	Arthrite infectieuse SAI , région scapulaire
+Rhumatologie	M00.92	Arthrite infectieuse SAI , coude
+Rhumatologie	M00.93	Arthrite infectieuse SAI , poignet
+Rhumatologie	M00.94	Arthrite infectieuse SAI , main
+Rhumatologie	M00.95	Arthrite infectieuse SAI , hanche
+Rhumatologie	M00.96	Arthrite infectieuse SAI , genou
+Rhumatologie	M00.97	Arthrite infectieuse SAI , cheville,pied
+Rhumatologie	M00.98	Arthrite infectieuse SAI , autre
+Rhumatologie	M00.99	Arthrite infectieuse SAI , siège non précisé
+Rhumatologie	M06.90	Polyarthrite rhumatoïde SAI , sièges multiples
+Rhumatologie	M06.91	Polyarthrite rhumatoïde SAI , région scapulaire
+Rhumatologie	M06.92	Polyarthrite rhumatoïde SAI , coude
+Rhumatologie	M06.93	Polyarthrite rhumatoïde SAI , poignet
+Rhumatologie	M06.94	Polyarthrite rhumatoïde SAI , main
+Rhumatologie	M06.95	Polyarthrite rhumatoïde SAI , hanche
+Rhumatologie	M06.96	Polyarthrite rhumatoïde SAI , genou
+Rhumatologie	M06.97	Polyarthrite rhumatoïde SAI , cheville,pied
+Rhumatologie	M06.98	Polyarthrite rhumatoïde SAI , autre
+Rhumatologie	M06.99	Polyarthrite rhumatoïde SAI , siège non précisé
+Rhumatologie	M10.90	Goutte , sièges multiples
+Rhumatologie	M10.91	Goutte , région scapulaire
+Rhumatologie	M10.92	Goutte , coude
+Rhumatologie	M10.93	Goutte , poignet
+Rhumatologie	M10.94	Goutte , main
+Rhumatologie	M10.95	Goutte , hanche
+Rhumatologie	M10.96	Goutte , genou
+Rhumatologie	M10.97	Goutte , cheville,pied
+Rhumatologie	M10.98	Goutte , autre
+Rhumatologie	M10.99	Goutte , siège non précisé
+Rhumatologie	M11.20	Chondrocalcinose , sièges multiples
+Rhumatologie	M11.21	Chondrocalcinose , région scapulaire
+Rhumatologie	M11.22	Chondrocalcinose , coude
+Rhumatologie	M11.23	Chondrocalcinose , poignet
+Rhumatologie	M11.24	Chondrocalcinose , main
+Rhumatologie	M11.25	Chondrocalcinose , hanche
+Rhumatologie	M11.26	Chondrocalcinose , genou
+Rhumatologie	M11.27	Chondrocalcinose , cheville,pied
+Rhumatologie	M11.28	Chondrocalcinose , autre
+Rhumatologie	M11.29	Chondrocalcinose , siège non précisé
+Rhumatologie	M11.90	Arthrite micro-cristalline SAI , sièges multiples
+Rhumatologie	M11.91	Arthrite micro-cristalline SAI , région scapulaire
+Rhumatologie	M11.92	Arthrite micro-cristalline SAI , coude
+Rhumatologie	M11.93	Arthrite micro-cristalline SAI , poignet
+Rhumatologie	M11.94	Arthrite micro-cristalline SAI , main
+Rhumatologie	M11.95	Arthrite micro-cristalline SAI , hanche
+Rhumatologie	M11.96	Arthrite micro-cristalline SAI , genou
+Rhumatologie	M11.97	Arthrite micro-cristalline SAI , cheville,pied
+Rhumatologie	M11.98	Arthrite micro-cristalline SAI , autre
+Rhumatologie	M11.99	Arthrite micro-cristalline SAI , siège non précisé
+Rhumatologie	M13.90	Arthrites SAI , sièges multiples
+Rhumatologie	M13.91	Arthrite SAI , région scapulaire
+Rhumatologie	M13.92	Arthrite SAI , coude
+Rhumatologie	M13.93	Arthrite SAI , poignet
+Rhumatologie	M13.94	Arthrite SAI , main
+Rhumatologie	M13.95	Arthrite SAI , hanche
+Rhumatologie	M13.96	Arthrite SAI , genou
+Rhumatologie	M13.97	Arthrite SAI , cheville,pied
+Rhumatologie	M13.98	Arthrite SAI , autre
+Rhumatologie	M13.99	Arthrite SAI , siège non précisé
+Rhumatologie	M16.9	Coxarthrose SAI
+Rhumatologie	M17.9	Gonarthose SAI
+Rhumatologie	M18.9	Arthrose de l'articulation métacarpo-phallangienne du pouce
+Rhumatologie	M19.90	Arthrose SAI , sièges multiples
+Rhumatologie	M19.91	Arthrose SAI , région scapulaire
+Rhumatologie	M19.92	Arthrose SAI , coude
+Rhumatologie	M19.93	Arthrose SAI , poignet
+Rhumatologie	M19.94	Arthrose SAI , main
+Rhumatologie	M19.95	Arthrose SAI , hanche
+Rhumatologie	M19.96	Arthrose SAI , genou
+Rhumatologie	M19.97	Arthrose SAI , cheville,pied
+Rhumatologie	M19.98	Arthrose SAI , autre
+Rhumatologie	M19.99	Arthrose SAI , siège non précisé
+Rhumatologie	M23.3	Syndrôme méniscal
+Rhumatologie	M25.00	Hémarthrose , sièges multiples
+Rhumatologie	M25.01	Hémarthrose , région scapulaire
+Rhumatologie	M25.02	Hémarthrose , coude
+Rhumatologie	M25.03	Hémarthrose , poignet
+Rhumatologie	M25.04	Hémarthrose , main
+Rhumatologie	M25.05	Hémarthrose , hanche
+Rhumatologie	M25.06	Hémarthrose , genou
+Rhumatologie	M25.07	Hémarthrose , cheville,pied
+Rhumatologie	M25.08	Hémarthrose , autre
+Rhumatologie	M25.09	Hémarthrose , siège non précisé
+Rhumatologie	M25.40	Epanchement articulaire SAI , sièges multiples
+Rhumatologie	M25.41	Epanchement articulaire SAI , région scapulaire
+Rhumatologie	M25.42	Epanchement articulaire SAI , coude
+Rhumatologie	M25.43	Epanchement articulaire SAI , poignet
+Rhumatologie	M25.44	Epanchement articulaire SAI , main
+Rhumatologie	M25.45	Epanchement articulaire SAI , hanche
+Rhumatologie	M25.46	Epanchement articulaire SAI , genou
+Rhumatologie	M25.47	Epanchement articulaire SAI , cheville,pied
+Rhumatologie	M25.48	Epanchement articulaire SAI , autre
+Rhumatologie	M25.49	Epanchement articulaire SAI , siège non précisé
+Rhumatologie	M25.50	Arthralgies , sièges multiples
+Rhumatologie	M25.51	Arthralgie , région scapulaire
+Rhumatologie	M25.52	Arthralgie , coude
+Rhumatologie	M25.53	Arthralgie , poignet
+Rhumatologie	M25.54	Arthralgie , main
+Rhumatologie	M25.55	Arthralgie , hanche
+Rhumatologie	M25.56	Arthralgie , genou
+Rhumatologie	M25.57	Arthralgie , cheville,pied
+Rhumatologie	M25.58	Arthralgie , autre
+Rhumatologie	M25.59	Arthralgie , siège non précisé
+Rhumatologie	M43.6	Torticolis
+Rhumatologie	M46.1	Sacroiliïte
+Rhumatologie	M48.5	Tassement vertébral SAI
+Rhumatologie	M50.1	Névralgie cervico-brachiale par atteinte discale
+Rhumatologie	M51.1	Lomosciatique par atteinte discale
+Rhumatologie	M51.2	Lumbago par atteinte discale
+Rhumatologie	M53.1	Névralgie cervico-brachiale sans atteinte discale ou SAI
+Rhumatologie	M54.2	Cervicalgie
+Rhumatologie	M54.4	Lombo-sciatique sans atteinte discale ou SAI
+Rhumatologie	M54.5	Lombalgie SAI
+Rhumatologie	M54.62	Rachialgie cervicale
+Rhumatologie	M54.64	Rachialgie dorsale
+Rhumatologie	M54.66	Rachialgie lombaire
+Rhumatologie	M54.9	Dorsalgie SAI
+Infectiologie générale et cutanée	M60.0	Abcès musculaire SAI
+Rhumatologie	M60.00	Abcès musculaire , sièges multiples
+Rhumatologie	M60.01	Abcès musculaire , épaule
+Rhumatologie	M60.02	Abcès musculaire , bras
+Rhumatologie	M60.03	Abcès musculaire , avant bras
+Rhumatologie	M60.04	Abcès musculaire , main
+Rhumatologie	M60.05	Abcès musculaire , cuisse
+Rhumatologie	M60.06	Abcès musculaire , jambe
+Rhumatologie	M60.07	Abcès musculaire , pied
+Rhumatologie	M60.08	Abcès musculaire , autre
+Rhumatologie	M60.09	Abcès musculaire , siège non précisé
+Rhumatologie	M60.90	Myosite SAI , sièges multiples
+Rhumatologie	M60.91	Myosite SAI , épaule
+Rhumatologie	M60.92	Myosite SAI , bras
+Rhumatologie	M60.93	Myosite SAI , avant bras
+Rhumatologie	M60.94	Myosite SAI , main
+Rhumatologie	M60.95	Myosite SAI , cuisse
+Rhumatologie	M60.96	Myosite SAI , jambe
+Rhumatologie	M60.97	Myosite SAI , pied
+Rhumatologie	M60.98	Myosite SAI , autre
+Rhumatologie	M60.99	Myosite SAI , siège non précisé
+Rhumatologie	M62.10	Déchirure musculaire , sièges multiples
+Rhumatologie	M62.11	Déchirure musculaire , épaule
+Rhumatologie	M62.12	Déchirure musculaire , bras
+Rhumatologie	M62.13	Déchirure musculaire , avant bras
+Rhumatologie	M62.14	Déchirure musculaire , main
+Rhumatologie	M62.15	Déchirure musculaire , cuisse
+Rhumatologie	M62.16	Déchirure musculaire , jambe
+Rhumatologie	M62.17	Déchirure musculaire , pied
+Rhumatologie	M62.18	Déchirure musculaire , autre
+Rhumatologie	M62.19	Déchirure musculaire , siège non précisé
+Rhumatologie	M62.20	Ischémie musculaire , sièges multiples
+Rhumatologie	M62.21	Ischémie musculaire , épaule
+Rhumatologie	M62.22	Ischémie musculaire , bras
+Rhumatologie	M62.23	Ischémie musculaire , avant bras
+Rhumatologie	M62.24	Ischémie musculaire , main
+Rhumatologie	M62.25	Ischémie musculaire , cuisse
+Rhumatologie	M62.26	Ischémie musculaire , jambe
+Rhumatologie	M62.27	Ischémie musculaire , pied
+Rhumatologie	M62.28	Ischémie musculaire , autre
+Rhumatologie	M62.29	Ischémie musculaire , siège non précisé
+Rhumatologie	M62.40	Contracture musculaire , sièges multiples
+Rhumatologie	M62.41	Contracture musculaire , épaule
+Rhumatologie	M62.42	Contracture musculaire , bras
+Rhumatologie	M62.43	Contracture musculaire , avant bras
+Rhumatologie	M62.44	Contracture musculaire , main
+Rhumatologie	M62.45	Contracture musculaire , cuisse
+Rhumatologie	M62.46	Contracture musculaire , jambe
+Rhumatologie	M62.47	Contracture musculaire , pied
+Rhumatologie	M62.48	Contracture musculaire , autre
+Rhumatologie	M62.49	Contracture musculaire , siège non précisé
+Rhumatologie	M62.60	Elongation, foulure musculaire , sièges multiples
+Rhumatologie	M62.61	Elongation, foulure musculaire , épaule
+Rhumatologie	M62.62	Elongation, foulure musculaire , bras
+Rhumatologie	M62.63	Elongation, foulure musculaire , avant bras
+Rhumatologie	M62.64	Elongation, foulure musculaire , main
+Rhumatologie	M62.65	Elongation, foulure musculaire , cuisse
+Rhumatologie	M62.66	Elongation, foulure musculaire , jambe
+Rhumatologie	M62.67	Elongation, foulure musculaire , pied
+Rhumatologie	M62.68	Elongation, foulure musculaire , autre
+Rhumatologie	M62.69	Elongation, foulure musculaire , siège non précisé
+Rhumatologie	M62.890	Rhabdomyolyse
+Rhumatologie	M66.20	Déchirure spontannée d'un tendon extenseur , sièges multiples
+Rhumatologie	M66.21	Déchirure spontannée d'un tendon extenseur , épaule
+Rhumatologie	M66.22	Déchirure spontannée d'un tendon extenseur , bras
+Rhumatologie	M66.23	Déchirure spontannée d'un tendon extenseur , avant bras
+Rhumatologie	M66.24	Déchirure spontannée d'un tendon extenseur , main
+Rhumatologie	M66.25	Déchirure spontannée d'un tendon extenseur , cuisse
+Rhumatologie	M66.26	Déchirure spontannée d'un tendon extenseur , jambe
+Rhumatologie	M66.27	Déchirure spontannée d'un tendon extenseur , pied
+Rhumatologie	M66.28	Déchirure spontannée d'un tendon extenseur , autre
+Rhumatologie	M66.29	Déchirure spontannée d'un tendon extenseur , siège non précisé
+Rhumatologie	M66.30	Déchirure spontannée d'un tendon fléchisseur , sièges multiples
+Rhumatologie	M66.31	Déchirure spontannée d'un tendon fléchisseur , épaule
+Rhumatologie	M66.32	Déchirure spontannée d'un tendon fléchisseur , bras
+Rhumatologie	M66.33	Déchirure spontannée d'un tendon fléchisseur , avant bras
+Rhumatologie	M66.34	Déchirure spontannée d'un tendon fléchisseur , main
+Rhumatologie	M66.35	Déchirure spontannée d'un tendon fléchisseur , cuisse
+Rhumatologie	M66.36	Déchirure spontannée d'un tendon fléchisseur , jambe
+Rhumatologie	M66.37	Déchirure spontannée d'un tendon fléchisseur , pied
+Rhumatologie	M66.38	Déchirure spontannée d'un tendon fléchisseur , autre
+Rhumatologie	M66.39	Déchirure spontannée d'un tendon fléchisseur , siège non précisé
+Rhumatologie	M67.3	Synovite transitoire SAI
+Rhumatologie	M71.2	Kyste synovial poplité
+Rhumatologie	M71.30	Kyste synovial , sièges multiples
+Rhumatologie	M71.31	Kyste synovial , région scapulaire
+Rhumatologie	M71.32	Kyste synovial , coude
+Rhumatologie	M71.33	Kyste synovial , poignet
+Rhumatologie	M71.34	Kyste synovial , main
+Rhumatologie	M71.35	Kyste synovial , hanche
+Rhumatologie	M71.36	Kyste synovial , genou sauf poplité
+Rhumatologie	M71.37	Kyste synovial , cheville,pied
+Rhumatologie	M71.38	Kyste synovial , autre
+Rhumatologie	M71.39	Kyste synovial , siège non précisé
+Rhumatologie	M71.90	Bursite SAI , sièges multiples
+Rhumatologie	M71.91	Bursite SAI , région scapulaire
+Rhumatologie	M71.92	Bursite SAI , coude
+Rhumatologie	M71.93	Bursite SAI , poignet
+Rhumatologie	M71.94	Bursite SAI , main
+Rhumatologie	M71.95	Bursite SAI , hanche
+Rhumatologie	M71.96	Bursite SAI , genou
+Rhumatologie	M71.97	Bursite SAI , cheville,pied
+Rhumatologie	M71.98	Bursite SAI , autre
+Rhumatologie	M71.99	Bursite SAI , siège non précisé
+Rhumatologie	M75.0	Capsulite rétractile de l’épaule
+Rhumatologie	M75.1	Syndrôme de la coiffe des rotateurs
+Rhumatologie	M75.2	Tendinite bicipitale
+Rhumatologie	M75.3	Tendinite calcifiante de l'épaule 
+Rhumatologie	M76.0	Tendinite fessière
+Rhumatologie	M76.5	Tendinite rotulienne
+Rhumatologie	M76.6	Tendinite achiléenne
+Rhumatologie	M76.7	Tendinite péronnière 
+Rhumatologie	M77.1	Tendinite épicondylienne
+Rhumatologie	M77.9	Tendinite SAI
+Rhumatologie	M79.10	Douleur musculaire , sièges multiples
+Rhumatologie	M79.11	Douleur musculaire , épaule
+Rhumatologie	M79.12	Douleur musculaire , bras
+Rhumatologie	M79.13	Douleur musculaire , avant bras
+Rhumatologie	M79.14	Douleur musculaire , main
+Rhumatologie	M79.15	Douleur musculaire , cuisse
+Rhumatologie	M79.16	Douleur musculaire , jambe
+Rhumatologie	M79.17	Douleur musculaire , pied
+Rhumatologie	M79.18	Douleur musculaire , autre
+Rhumatologie	M79.19	Douleur musculaire , siège non précisé
+Rhumatologie	M79.5	Corps étranger résiduel d'un tissu mou
+Rhumatologie	M79.60	Douleur de membre , sièges multiples
+Rhumatologie	M79.61	Douleur de membre , épaule
+Rhumatologie	M79.62	Douleur de membre , bras
+Rhumatologie	M79.63	Douleur de membre , avant bras
+Rhumatologie	M79.64	Douleur de membre , main
+Rhumatologie	M79.65	Douleur de membre , cuisse
+Rhumatologie	M79.66	Douleur de membre , jambe
+Rhumatologie	M79.67	Douleur de membre , pied
+Rhumatologie	M79.68	Douleur de membre , autre
+Rhumatologie	M79.69	Douleur de membre , siège non précisé
+Rhumatologie	M86.90	Ostéomyélite SAI , sièges multiples
+Rhumatologie	M86.91	Ostéomyélite SAI , région scapulaire
+Rhumatologie	M86.92	Ostéomyélite SAI , coude
+Rhumatologie	M86.93	Ostéomyélite SAI , poignet
+Rhumatologie	M86.94	Ostéomyélite SAI , main
+Rhumatologie	M86.95	Ostéomyélite SAI , hanche
+Rhumatologie	M86.96	Ostéomyélite SAI , genou sauf poplité
+Rhumatologie	M86.97	Ostéomyélite SAI , cheville,pied
+Rhumatologie	M86.98	Ostéomyélite SAI , autre
+Rhumatologie	M86.99	Ostéomyélite SAI , siège non précisé
+Rhumatologie	M87.90	Ostéonécrose SAI , sièges multiples
+Rhumatologie	M87.91	Ostéonécrose SAI , région scapulaire
+Rhumatologie	M87.92	Ostéonécrose SAI , coude
+Rhumatologie	M87.93	Ostéonécrose SAI , poignet
+Rhumatologie	M87.94	Ostéonécrose SAI , main
+Rhumatologie	M87.95	Ostéonécrose SAI , hanche
+Rhumatologie	M87.96	Ostéonécrose SAI , genou sauf poplité
+Rhumatologie	M87.97	Ostéonécrose SAI , cheville,pied
+Rhumatologie	M87.98	Ostéonécrose SAI , autre
+Rhumatologie	M87.99	Ostéonécrose SAI , siège non précisé
+Rhumatologie	M89.00	Algoneurodystrophie SAI , sièges multiples
+Rhumatologie	M89.01	Algoneurodystrophie SAI , région scapulaire
+Rhumatologie	M89.02	Algoneurodystrophie SAI , coude
+Rhumatologie	M89.03	Algoneurodystrophie SAI , poignet
+Rhumatologie	M89.04	Algoneurodystrophie SAI , main
+Rhumatologie	M89.05	Algoneurodystrophie SAI , hanche
+Rhumatologie	M89.06	Algoneurodystrophie SAI , genou
+Rhumatologie	M89.07	Algoneurodystrophie SAI , cheville,pied
+Rhumatologie	M89.08	Algoneurodystrophie SAI , autre
+Rhumatologie	M89.09	Algoneurodystrophie SAI , siège non précisé
+Rhumatologie	M92.9	Ostéochondrite juvénile
+Rhumatologie	M93.0	Epiphysiolyse hanche non traumatique
+Rhumatologie	M94.0	Syndrôme chondro-costal de Tietze
+Urogénital et obstétrique	N05.9	Syndrôme néphritique
+Urogénital et obstétrique	N10	Pyélonéphrite aiguë
+Urogénital et obstétrique	N15.1	Abcés rénal
+Urogénital et obstétrique	N17.9	Insuffisance rénale aiguë
+Urogénital et obstétrique	N18.9	Insuffisance rénale chronique
+Urogénital et obstétrique	N20.9	Calcul urinaire SAI
+Urogénital et obstétrique	N23	Colique néphrétique SAI
+Urogénital et obstétrique	N30.0	Cystite aiguë
+Urogénital et obstétrique	N34.2	Urétrite SAI
+Urogénital et obstétrique	N36.8	Urétrorragie
+Urogénital et obstétrique	N39.0	Infection urinaire SAI
+Urogénital et obstétrique	N41.0	Prostatite aiguë
+Urogénital et obstétrique	N43.3	Hydrocèle SAI
+Urogénital et obstétrique	N44	Torsion du testicule    
+Urogénital et obstétrique	N45.9	Orchi épidydimite SAI
+Urogénital et obstétrique	N47	Phymosis
+Urogénital et obstétrique	N48.1	Balanite
+Urogénital et obstétrique	N50.8	Douleur testiculaire
+Urogénital et obstétrique	N64.4	Douleur mammaire
+Urogénital et obstétrique	N64.5	Ecoulement mammaire 
+Urogénital et obstétrique	N64.9	Mastopathie   SAI
+Urogénital et obstétrique	N70.0	Salpingite
+Urogénital et obstétrique	N75.8	Bartholinite SAI
+Urogénital et obstétrique	N76.0	Vulvo-vaginite SAI
+Urogénital et obstétrique	N81.9	Prolapsus génital
+Urogénital et obstétrique	N83.2	Kyste ovarien SAI
+Urogénital et obstétrique	N83.5	Torsion d’annexe
+Urogénital et obstétrique	N89.8	Ecoulement vaginal
+Urogénital et obstétrique	N92.1	Méno-métrorragie
+Urogénital et obstétrique	N93.9	Saignement utérin ou vaginal non lié au cycle
+Urogénital et obstétrique	N94.6	Douleur menstruelle
+Urogénital et obstétrique	O00.9	Grossesse extra-utérine SAI
+Urogénital et obstétrique	O03.9	Fausse couche SAI
+Urogénital et obstétrique	O15.9	Eclampsie
+Urogénital et obstétrique	O21.9	Vomissement de la grossesse SAI
+Urogénital et obstétrique	O46.9	Hémorragie obstétricale du pré-partum SAI
+Urogénital et obstétrique	O47.9	Faux travail SAI
+Urogénital et obstétrique	O80.9	Accouchement réalisé, constaté aux urgences
+Hépato-gastro-entérologie	Q40.0	Sténose congénitale du pylore
+Cardio-vasculaire	R00.0	Tachycardie
+Cardio-vasculaire	R00.1	Bradycardie
+Cardio-vasculaire	R00.2	Palpitations
+Cardio-vasculaire	R03.0	Constation d'une élevation de la tension artérielle sans mention d'HTA
+Cardio-vasculaire	R03.1	Constation d'une baisse de la tension artérielle
+ORL et stomatologie	R04.0	Epistaxis
+ORL et stomatologie	R04.1	Saignement pharyngé
+Pneumologie	R04.2	Hémoptysie
+Pneumologie	R05	Toux
+Cardio-vasculaire	R06.0	Dyspnée
+ORL et stomatologie	R07.0	Douleur pharyngée
+Pneumologie	R07.1	Douleur thoracique respiratoire
+Cardio-vasculaire	R07.2	Douleur thoracique précordiale
+Rhumatologie	R07.3	Douleur thoracique pariétale
+Cardio-vasculaire	R07.4	Douleur thoracique SAI
+Hépato-gastro-entérologie	R10.0	Ventre de bois
+Hépato-gastro-entérologie	R10.1	Douleur épigastrique
+Urogénital et obstétrique	R10.2	Douleur pelvienne
+Hépato-gastro-entérologie	R10.3	Douleur de la fosse iliaque
+Hépato-gastro-entérologie	R10.4	Douleur abdominale SAI
+Hépato-gastro-entérologie	R11	Nausées, vomissements
+Hépato-gastro-entérologie	R12	Pyrosis
+Hépato-gastro-entérologie	R13	Dysphagie
+Hépato-gastro-entérologie	R17	Ictère
+Hépato-gastro-entérologie	R18	Ascite
+Neurologie	R20.8	Trouble de la sensibilité cutanée
+Dermatologie	R21	Eruption SAI
+Dermatologie	R22.9	Tuméfaction SAI
+Dermatologie	R23.3	Pétéchies
+Neurologie	R25.1	Tremblements
+Neurologie	R25.8	Mouvements anormaux
+Neurologie	R26.2	Trouble de la marche SAI
+Diagnostics non spécifiques	R26.80	Chute sans étiologie, chutes à répétition
+Neurologie	R27.0	Ataxie
+Endocrinologie-Métabolique	R29.0	Crise de tétanie
+Neurologie	R29.1	Méningisme
+Urogénital et obstétrique	R30.0	Dysurie
+Urogénital et obstétrique	R30.9	Douleur mictionnelle
+Urogénital et obstétrique	R31	Hématurie
+Urogénital et obstétrique	R33	Rétention urinaire
+Urogénital et obstétrique	R36	Ecoulement urétral
+Neurologie	R40.0	Somnolence
+Neurologie	R40.2	Coma SAI
+Neurologie	R41.0	Confusion, Désorientation
+Neurologie	R42	Vertige SAI
+Psychiatrie et troubles psychologiques	R44.3	Hallucinations SAI
+Psychiatrie et troubles psychologiques	R45.1	Agitation
+Psychiatrie et troubles psychologiques	R46.2	Trouble du comportement
+Neurologie	R47.0	Aphasie
+Infectiologie générale et cutanée	R50.0	Frissons
+Infectiologie générale et cutanée	R50.9	Fièvre SAI
+Neurologie	R51	Céphalée
+Diagnostics non spécifiques	R52.1	Douleur chronique irréductible
+Diagnostics non spécifiques	R52.9	Douleurs multiples ou SAI
+Diagnostics non spécifiques	R53.+0	Altération état général
+Diagnostics non spécifiques	R53.+1	Malaise sans perte de connaissance
+Diagnostics non spécifiques	R53.+2	Asthénie
+Diagnostics non spécifiques	R55	Syncope, lipothymie
+Neurologie	R56.0	Convulsion fébrile
+Neurologie	R56.8	Convulsion SAI
+Cardio-vasculaire	R57.0	Choc cardiogénique
+Cardio-vasculaire	R57.1	Choc hypovolémique
+Infectiologie générale et cutanée	R57.8	Choc septique
+Cardio-vasculaire	R57.9	Choc SAI
+Infectiologie générale et cutanée	R59.0	Adénopathie(s) localisée(s)
+Infectiologie générale et cutanée	R59.1	Adénopathie(s) diffuse(s)
+Infectiologie générale et cutanée	R59.9	Adénopathie SAI
+Cardio-vasculaire	R60.0	Œdème localisé
+Diagnostics non spécifiques	R63.0	Anorexie
+Endocrinologie-Métabolique	R73.9	Découverte d'une hyperglycémie
+Endocrinologie-Métabolique	R82.4	Acétonurie
+Diagnostics non spécifiques	R95	Syndrôme de la mort subite du nourrisson
+Diagnostics non spécifiques	R99	Décès de cause inconnue SAI
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S00.0	CONTUSION DU CUIR CHEVELU
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S00.1	CONTUSION DE LA PAUPIERE ET DE LA REGION PERI-OCULAIRE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S00.3	CONTUSION DU NEZ
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S00.4	CONTUSION DE L'OREILLE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S00.5	CONTUSION DE LA BOUCHE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S00.8	CONTUSION D'AUTRES PARTIES DE LA TETE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S01.0	PLAIE  DU CUIR CHEVELU
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S01.1	PLAIE  DE LA PAUPIERE ET DE LA REGION PERI-OCULAIRE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S01.2	PLAIE  DU NEZ
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S01.3	PLAIE  DE L'OREILLE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S01.4	PLAIE  DE LA JOUE ET DES TEMPES
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S01.5	PLAIE  DE BOUCHE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S01.8	PLAIE  D'AUTRES PARTIES DE LA TETE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.0	FRAC. DE LA VOUTE DU CRANE (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.00	FRAC. DE LA VOUTE DU CRANE (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.01	FRAC. DE LA VOUTE DU CRANE (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.1	FRAC. DE LA BASE DU CRANE (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.10	FRAC. DE LA BASE DU CRANE (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.11	FRAC. DE LA BASE DU CRANE (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.2	FRAC. DES OS DU NEZ (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.20	FRAC. DES OS DU NEZ (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.21	FRAC. DES OS DU NEZ (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.3	FRAC. DU PLANCHER DE L'ORBITE (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.30	FRAC. DU PLANCHER DE L'ORBITE (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.31	FRAC. DU PLANCHER DE L'ORBITE (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.4	FRAC. DES OS MALAIRES ET MAXILLAIRES SUP. (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.40	FRAC. DES OS MALAIRES ET MAXILLAIRES SUP. (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.41	FRAC. DES OS MALAIRES ET MAXILLAIRES SUP. (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.5	FRAC. DENTAIRE (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.50	FRAC. DENTAIRE (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.51	FRAC. DENTAIRE (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.6	FRAC. DU MAXILLAIRE INF. (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.60	FRAC. DU MAXILLAIRE INF. (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.61	FRAC. DU MAXILLAIRE INF. (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.7	FRAC. MULT. DU CRANE ET DES OS DE LA FACE (SAI)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.70	FRAC. MULT. DU CRANE ET DES OS DE LA FACE (FERMEE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S02.71	FRAC. MULT. DU CRANE ET DES OS DE LA FACE (OUVERTE)
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S03.0	LUXATION  DE LA MACHOIRE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S03.1	LUXATION  DE LA CLOISON DU NEZ
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S03.2	LUXATION  DENTAIRE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S03.4	ENTORSE DE LA MACHOIRE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S04.9	LES. TRAUMA. D'UN NERF CRANIEN, SAI
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S05.1	CONTUSION DU GLOBE OCULAIRE ET DES TISSUS DE L'ORBITE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S05.5	CORPS ETRANGER OCULAIRE AVEC PLAIE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S05.9	PLAIE DE L'ŒIL
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S06.0	COMMOTION CEREBRALE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S06.1	OEDEME CEREBRAL TRAUMATIQUE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S06.4	HEMATOME EXTRA-DURAL TRAUMA.
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S06.5	HEMATOME SOUS-DURAL TRAUMA.
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S06.6	HEMORRAGIE  SOUS ARACHNOIDIENNE. TRAUMA.
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S06.8	HEMORRAGIE INTRACEREBRALE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S06.9	TRAUMATISME INTRACRANIEN SAI
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S08.0	ARRACHEMENT DU CUIR CHEVELU
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S08.1	ARRACHEMENT DE L'OREILLE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S09.0	LES. TRAUMA. DE VAISSEAU SANGUIN DE LA TETE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S09.1	LES. TRAUMA. DE MUSCLES ET DE TENDONS DE LA TETE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	S09.2	RUPTURE TRAUMA. DU TYMPAN
+TRAUMATOLOGIE DU TRONC	S10.9	CONTUSION DU COU
+TRAUMATOLOGIE DU TRONC	S11.9	PLAIE  DU COU
+TRAUMATOLOGIE DU TRONC	S12.9	FRAC. DU RACHIS CERVICAL, PARTIE SAI (SAI)
+TRAUMATOLOGIE DU TRONC	S12.90	FRAC. DU RACHIS CERVICAL, PARTIE SAI (FERMEE)
+TRAUMATOLOGIE DU TRONC	S12.91	FRAC. DU RACHIS CERVICAL, PARTIE SAI (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S13.1	LUXATION  D'UNE VERTEBRE CERVICALE
+TRAUMATOLOGIE DU TRONC	S13.4	ENTORSE DU RACHIS CERVICAL
+TRAUMATOLOGIE DU TRONC	S14.2	LES. TRAUMA. D'UNE RACINE NERVEUSE CERVICALE
+TRAUMATOLOGIE DU TRONC	S15.9	LES. TRAUMA. DE VAISSEAU SANGUIN DU COU
+TRAUMATOLOGIE DU TRONC	S16	LES. TRAUMA. DE MUSCLES ET DE TENDONS DU COU
+TRAUMATOLOGIE DU TRONC	S20.0	CONTUSION DU SEIN
+TRAUMATOLOGIE DU TRONC	S20.2	CONTUSION DU THORAX
+TRAUMATOLOGIE DU TRONC	S21.0	PLAIE  DU SEIN
+TRAUMATOLOGIE DU TRONC	S21.9	PLAIE  DU THORAX
+TRAUMATOLOGIE DU TRONC	S22.0	FRAC. D'UNE VERTEB. DORSALE (SAI)
+TRAUMATOLOGIE DU TRONC	S22.00	FRAC. D'UNE VERTEB. DORSALE (FERMEE)
+TRAUMATOLOGIE DU TRONC	S22.01	FRAC. D'UNE VERTEB. DORSALE (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S22.2	FRAC. DU STERNUM (SAI)
+TRAUMATOLOGIE DU TRONC	S22.20	FRAC. DU STERNUM (FERMEE)
+TRAUMATOLOGIE DU TRONC	S22.21	FRAC. DU STERNUM (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S22.3	FRAC. DE COTE (SAI)
+TRAUMATOLOGIE DU TRONC	S22.30	FRAC. DE COTE (FERMEE)
+TRAUMATOLOGIE DU TRONC	S22.31	FRAC. DE COTE (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S22.5	VOLET COSTAL
+TRAUMATOLOGIE DU TRONC	S23.3	ENTORSE DU RACHIS DORSAL
+TRAUMATOLOGIE DU TRONC	S24.2	LES. TRAUMA. D'UNE RACINE NERVEUSE DORSALE
+TRAUMATOLOGIE DU TRONC	S25.0	LES. TRAUMA. DE L'AORTE THORACIQUE
+TRAUMATOLOGIE DU TRONC	S25.9	LES. TRAUMA. D'UN VAISSEAU SANGUIN DU THORAX
+TRAUMATOLOGIE DU TRONC	S26.9	LES. TRAUMA. DU COEUR, SAI
+TRAUMATOLOGIE DU TRONC	S27.0	PNEUMOTHORAX TRAUMA.
+TRAUMATOLOGIE DU TRONC	S27.2	HEMOPNEUMOTHORAX TRAUMA.
+TRAUMATOLOGIE DU TRONC	S27.9	LES. TRAUMA. D'ORGANE THORACIQUE SAI
+TRAUMATOLOGIE DU TRONC	S29.0	LES. TRAUMA. DE MUSCLES ET DE TENDONS DU THORAX
+TRAUMATOLOGIE DU TRONC	S30.0	CONTUSION DES LOMBES
+TRAUMATOLOGIE DU TRONC	S30.1	CONTUSION DE LA PAROI ABDOMINALE, PELVIENNE
+TRAUMATOLOGIE DU TRONC	S30.2	CONTUSION DES ORGANES GENITAUX EXTERNES
+TRAUMATOLOGIE DU TRONC	S31.0	PLAIE  DES LOMBES
+TRAUMATOLOGIE DU TRONC	S31.1	PLAIE  ABDOMINALE, PELVIENNE
+TRAUMATOLOGIE DU TRONC	S31.5	PLAIE  DES ORGANES GENITAUX EXTERNES
+TRAUMATOLOGIE DU TRONC	S32.0	FRAC. D'UNE VERTEBRE LOMBAIRE (SAI)
+TRAUMATOLOGIE DU TRONC	S32.00	FRAC. D'UNE VERTEBRE LOMBAIRE (FERMEE)
+TRAUMATOLOGIE DU TRONC	S32.01	FRAC. D'UNE VERTEBRE LOMBAIRE (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S32.1	FRAC. DU SACRUM (SAI)
+TRAUMATOLOGIE DU TRONC	S32.10	FRAC. DU SACRUM (FERMEE)
+TRAUMATOLOGIE DU TRONC	S32.11	FRAC. DU SACRUM (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S32.2	FRAC. DU COCCYX (SAI)
+TRAUMATOLOGIE DU TRONC	S32.20	FRAC. DU COCCYX (FERMEE)
+TRAUMATOLOGIE DU TRONC	S32.21	FRAC. DU COCCYX (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S32.3	FRAC. DE L'ILION (SAI)
+TRAUMATOLOGIE DU TRONC	S32.30	FRAC. DE L'ILION (FERMEE)
+TRAUMATOLOGIE DU TRONC	S32.31	FRAC. DE L'ILION (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S32.4	FRAC. DU COTYLE (SAI)
+TRAUMATOLOGIE DU TRONC	S32.40	FRAC. DU COTYLE (FERMEE)
+TRAUMATOLOGIE DU TRONC	S32.41	FRAC. DU COTYLE (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S32.5	FRAC. DU PUBIS (SAI)
+TRAUMATOLOGIE DU TRONC	S32.50	FRAC. DU PUBIS (FERMEE)
+TRAUMATOLOGIE DU TRONC	S32.51	FRAC. DU PUBIS (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S32.8	FRAC. D'AUTRES PARTIES DU BASSIN (SAI)
+TRAUMATOLOGIE DU TRONC	S32.80	FRAC. D'AUTRES PARTIES DU BASSIN (FERMEE)
+TRAUMATOLOGIE DU TRONC	S32.81	FRAC. D'AUTRES PARTIES DU BASSIN (OUVERTE)
+TRAUMATOLOGIE DU TRONC	S33.2	LUXATION  SACRO-ILIAQUE ET SACRO-COCCYGIENNE
+TRAUMATOLOGIE DU TRONC	S33.4	RUPTURE TRAUMA. DE LA SYMPHYSE PUBIENNE
+TRAUMATOLOGIE DU TRONC	S33.5	ENTORSE DU RACHIS LOMBAIRE
+TRAUMATOLOGIE DU TRONC	S34.2	LES. TRAUMA. DE LA RACINE NERVEUSE LOMBO-SACREE
+TRAUMATOLOGIE DU TRONC	S34.3	LES. TRAUMA. DE LA QUEUE DE CHEVAL
+TRAUMATOLOGIE DU TRONC	S35.9	LES. TRAUMA. DE VAISSEAU SANGUIN DE L'ABDOMEN OU DES LOMBES
+TRAUMATOLOGIE DU TRONC	S36.0	LES. TRAUMA. DE LA RATE
+TRAUMATOLOGIE DU TRONC	S36.1	LES. TRAUMA. DU FOIE ET DES VOIES BILIAIRES
+TRAUMATOLOGIE DU TRONC	S36.3	LES. TRAUMA. DE L'ESTOMAC
+TRAUMATOLOGIE DU TRONC	S36.4	LES. TRAUMA. DE L'INTESTIN GRELE
+TRAUMATOLOGIE DU TRONC	S36.5	LES. TRAUMA. DU COLON
+TRAUMATOLOGIE DU TRONC	S36.6	LES. TRAUMA. DU RECTUM, DE L'ANUS
+TRAUMATOLOGIE DU TRONC	S36.8	LES. TRAUMA. D'AUTRES ORGANES ABDOMINAUX
+TRAUMATOLOGIE DU TRONC	S36.9	LES. TRAUMA. D'UN ORGANE ABDOMINAL  SAI
+TRAUMATOLOGIE DU TRONC	S37.0	LES. TRAUMA. DU REIN
+TRAUMATOLOGIE DU TRONC	S37.9	LES. TRAUMA. D'UN ORGANE PELVIEN SAI
+TRAUMATOLOGIE DU TRONC	S39.0	LES. TRAUMA. DE TENDONS DE L'ABDOMEN, DES LOMBES
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S40.0	CONTUSION DE L'EPAULE, BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S41.0	PLAIE  DE L'EPAULE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S41.1	PLAIE  DU BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.0	FRAC. DE LA CLAVICULE (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.00	FRAC. DE LA CLAVICULE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.01	FRAC. DE LA CLAVICULE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.1	FRAC. DE L'OMOPLATE (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.10	FRAC. DE L'OMOPLATE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.11	FRAC. DE L'OMOPLATE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.2	FRAC. DE L'EXTREMITE SUP. DE L'HUMERUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.20	FRAC. DE L'EXTREMITE SUP. DE L'HUMERUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.21	FRAC. DE L'EXTREMITE SUP. DE L'HUMERUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.3	FRAC. DE LA DIAPHYSE DE L'HUMERUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.30	FRAC. DE LA DIAPHYSE DE L'HUMERUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.31	FRAC. DE LA DIAPHYSE DE L'HUMERUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.4	FRAC. DE L'EXTREMITE INF. DE L'HUMERUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.40	FRAC. DE L'EXTREMITE INF. DE L'HUMERUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S42.41	FRAC. DE L'EXTREMITE INF. DE L'HUMERUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S43.0	LUXATION  DE L'EPAULE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S43.1	LUXATION  ACROMIO-CLAVICULAIRE
+TRAUMATOLOGIE DU TRONC	S43.2	LUXATION  STERNO-CLAVICULAIRE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S43.4	ENTORSE DE L'EPAULE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S43.5	ENTORSE ACROMIO-CLAVICULAIRE
+TRAUMATOLOGIE DU TRONC	S43.6	ENTORSE STERNO-CLAVICULAIRE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S44.9	LES. TRAUMA. D'UN NERF DE L'EPAULE OU DU BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S45.9	LES. TRAUMA. D'UN VAISSEAU SANGUIN DE L'EPAULE OU DU BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S46.9	LES. TRAUMA. DE TENDON DE L'EPAULE OU DU  BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S47	ECRASEMENT DE L'EPAULE, BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S48.0	AMPUT. TRAUMA. DE L'EPAULE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S48.1	AMPUT. TRAUMA. DU BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S50.0	CONTUSION DU COUDE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S50.1	CONTUSION DE L'AVANT-BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S51.0	PLAIE  DU COUDE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S51.8	PLAIE   DE L'AVANT-BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.0	FRAC. DE LA PARTIE SUP. DU CUBITUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.00	FRAC. DE LA PARTIE SUP. DU CUBITUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.01	FRAC. DE LA PARTIE SUP. DU CUBITUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.1	FRAC. DE L'EXTREMITE SUP. DU RADIUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.10	FRAC. DE L'EXTREMITE SUP. DU RADIUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.11	FRAC. DE L'EXTREMITE SUP. DU RADIUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.2	FRAC. DE LA DIAPHYSE DU CUBITUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.20	FRAC. DE LA DIAPHYSE DU CUBITUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.21	FRAC. DE LA DIAPHYSE DU CUBITUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.3	FRAC. DE LA DIAPHYSE DU RADIUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.30	FRAC. DE LA DIAPHYSE DU RADIUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.31	FRAC. DE LA DIAPHYSE DU RADIUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.4	FRAC. DES DEUX DIAPHYSES, CUBITALE ET RADIALE (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.40	FRAC. DES DEUX DIAPHYSES, CUBITALE ET RADIALE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.41	FRAC. DES DEUX DIAPHYSES, CUBITALE ET RADIALE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.5	FRAC. DE L'EXTREMITE INF. DU RADIUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.50	FRAC. DE L'EXTREMITE INF. DU RADIUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.51	FRAC. DE L'EXTREMITE INF. DU RADIUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.6	FRAC. DE L'EXTREMITE INF. DU CUBITUS ET DU RADIUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.60	FRAC. DE L'EXTREMITE INF. DU CUBITUS ET DU RADIUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.61	FRAC. DE L'EXTREMITE INF. DU CUBITUS ET DU RADIUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.8	FRAC. DE L'EXTREMITE INF. DU CUBITUS (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.80	FRAC. DE L'EXTREMITE INF. DU CUBITUS (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S52.81	FRAC. DE L'EXTREMITE INF. DU CUBITUS (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S53.1	LUXATION  DU COUDE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S53.4	ENTORSE DU COUDE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S54.9	LES. TRAUMA. D'UN NERF DU COUDE OU DE L'AVANT BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S55.9	LES. TRAUMA. D'UN VAISSEAU SANGUIN DU COUDE OU DE L'AVANT BRAS 
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S56.8	LES. TRAUMA. DE TENDONS DU COUDE OU DE L'AVANT BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S57.0	ECRASEMENT DU COUDE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S57.8	ECRASEMENT DE L'AVANT BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S58.0	AMPUT. TRAUMA. DU COUDE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S58.1	AMPUT. TRAUMA. DE L'AVANT BRAS
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S60.0	CONTUSION DE DOIGT SANS LESION DE L'ONGLE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S60.1	CONTUSION DE DOIGT ET DE L'ONGLE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S60.2	CONTUSION DU POIGNET
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S60.9	CONTUSION DE LA MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S61.0	PLAIE  DE DOIGT SANS LESION DE L'ONGLE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S61.1	PLAIE  DE DOIGT AVEC LESION DE L'ONGLE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S61.9	PLAIE  DU POIGNET OU DE LA MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.0	FRAC. DE L'OS SCAPHOIDE DE LA MAIN (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.00	FRAC. DE L'OS SCAPHOIDE DE LA MAIN (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.01	FRAC. DE L'OS SCAPHOIDE DE LA MAIN (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.1	FRAC. D'AUTRE OS DU CARPE (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.10	FRAC. D'AUTRE OS DU CARPE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.11	FRAC. D'AUTRE OS DU CARPE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.2	FRAC. DU 1er METACARP. (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.20	FRAC. DU 1er METACARP. (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.21	FRAC. DU 1er METACARP. (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.3	FRAC. D'UN AUTRE OS DU METACARPE (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.30	FRAC. D'UN AUTRE OS DU METACARPE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.31	FRAC. D'UN AUTRE OS DU METACARPE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.5	FRAC. DU POUCE (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.50	FRAC. DU POUCE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.51	FRAC. DU POUCE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.6	FRAC. D'UN AUTRE DOIGT (SAI)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.60	FRAC. D'UN AUTRE DOIGT (FERMEE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S62.61	FRAC. D'UN AUTRE DOIGT (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S63.0	LUXATION  DU POIGNET
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S63.1	LUXATION  DU DOIGT
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S63.5	ENTORSE DU POIGNET
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S63.6	ENTORSE DE DOIGT
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S64.9	LES. TRAUMA. D'UN NERF DU POIGNET OU DE LA MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S65.9	LES. TRAUMA. D'UN VAISSEAU SANGUIN DU POIGNET OU DE LA MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S66.9	LES. TRAUMA. D'UN TENDON DU POIGNET OU DE LA MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S67.0	ECRASEMENT DU POUCE OU D'AUTRE DOIGT
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S67.8	ECRASEMENT DU POIGNET, DE LA MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S68.0	AMPUT. TRAUMA. DU POUCE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S68.1	AMPUT. TRAUMA. D'UN DOIGT AUTRE QUE LE POUCE
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S68.4	AMPUT. TRAUMA. DU POIGNET
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	S68.8	AMPUT. TRAUMA. DE LA MAIN SAI
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S70.0	CONTUSION DE LA HANCHE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S70.1	CONTUSION DE LA CUISSE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S71.0	PLAIE  DE LA HANCHE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S71.1	PLAIE  DE LA CUISSE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.0	FRAC. DU COL DU FEMUR (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.00	FRAC. DU COL DU FEMUR (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.01	FRAC. DU COL DU FEMUR (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.1	FRAC. DU TROCHANTER (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.10	FRAC. DU TROCHANTER (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.11	FRAC. DU TROCHANTER (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.2	FRAC. SOUS-TROCHANTERIENNE (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.20	FRAC. SOUS-TROCHANTERIENNE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.21	FRAC. SOUS-TROCHANTERIENNE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.3	FRAC. DE LA DIAPHYSE FEMORALE (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.30	FRAC. DE LA DIAPHYSE FEMORALE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.31	FRAC. DE LA DIAPHYSE FEMORALE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.4	FRAC. DE L'EXTREMITE INF. DU FEMUR (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.40	FRAC. DE L'EXTREMITE INF. DU FEMUR (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S72.41	FRAC. DE L'EXTREMITE INF. DU FEMUR (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S73.0	LUXATION  DE LA HANCHE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S73.1	ENTORSE DE LA HANCHE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S74.9	LES. TRAUMA. D'UN NERF DE LA HANCHE OU DE LA CUISSE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S75.9	LES. TRAUMA. D'UN VAISSEAU SANGUIN DE LA HANCHE OU DE LA CUISSE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S76.0	LES. TRAUMA. DE TENDONS DE LA HANCHE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S76.4	LES. TRAUMA. DE TENDONS DE LA CUISSE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S77.0	ECRASEMENT DE LA HANCHE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S77.1	ECRASEMENT DE LA CUISSE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S78.0	AMPUT. TRAUMA. DE LA HANCHE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S78.1	AMPUT. TRAUMA. DE LA CUISSE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S80.0	CONTUSION DU GENOU
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S80.1	CONTUSION DE LA JAMBE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S81.0	PLAIE  DU GENOU
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S81.8	PLAIE  DE LA JAMBE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.0	FRAC. DE LA ROTULE (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.00	FRAC. DE LA ROTULE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.01	FRAC. DE LA ROTULE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.1	FRAC. DE L'EXTREMITE SUP. DU TIBIA (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.10	FRAC. DE L'EXTREMITE SUP. DU TIBIA (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.11	FRAC. DE L'EXTREMITE SUP. DU TIBIA (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.2	FRAC. DE LA DIAPHYSE DU TIBIA (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.20	FRAC. DE LA DIAPHYSE DU TIBIA (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.21	FRAC. DE LA DIAPHYSE DU TIBIA (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.3	FRAC. DE L'EXTREMITE INF. DU TIBIA (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.30	FRAC. DE L'EXTREMITE INF. DU TIBIA (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.31	FRAC. DE L'EXTREMITE INF. DU TIBIA (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.4	FRAC. DU PERONE SEUL (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.40	FRAC. DU PERONE SEUL (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.41	FRAC. DU PERONE SEUL (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.5	FRAC. DE LA MALLEOLE INT. (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.50	FRAC. DE LA MALLEOLE INT. (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.51	FRAC. DE LA MALLEOLE INT. (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.6	FRAC. DE LA MALLEOLE EXT. (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.60	FRAC. DE LA MALLEOLE EXT. (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.61	FRAC. DE LA MALLEOLE EXT. (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.8	FRAC. BIMALLEOLAIRE (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.80	FRAC. BIMALLEOLAIRE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S82.81	FRAC. BIMALLEOLAIRE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S83.0	LUXATION  DE LA ROTULE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S83.1	LUXATION  DU GENOU
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S83.4	ENTORSE DU GENOU
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S83.6	ENTORSE DE LA ROTULE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S84.9	LES. TRAUMA. D'UN NERF DU GENOU OU DE LA JAMBE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S85.9	LES. TRAUMA. D'UN VAISSEAU SANGUIN DU GENOU OU DE LA JAMBE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S86.9	LES. TRAUMA. D'UN TENDON DE LA JAMBE OU DU GENOU
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S87.0	ECRASEMENT DU GENOU
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S87.8	ECRASEMENT DE LA JAMBE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S88.0	AMPUT. TRAUMA. DU GENOU
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S88.1	AMPUT. TRAUMA. DE LA JAMBE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S90.0	CONTUSION DE LA CHEVILLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S90.1	CONTUSION D'UN ORTEIL
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S90.2	CONTUSION D'UN ORTEIL AVEC LESION DE L'ONGLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S90.3	CONTUSION DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S91.0	PLAIE  DE LA CHEVILLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S91.1	PLAIE  D'UN ORTEIL SANS LESION DE L'ONGLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S91.2	PLAIE  D'UN ORTEIL AVEC LESION DE L'ONGLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S91.3	PLAIE DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.0	FRAC. DU CALCANEUM (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.00	FRAC. DU CALCANEUM (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.01	FRAC. DU CALCANEUM (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.1	FRAC. DE L'ASTRAGALE (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.10	FRAC. DE L'ASTRAGALE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.11	FRAC. DE L'ASTRAGALE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.2	FRAC. D'AUTRES OS DU TARSE (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.20	FRAC. D'AUTRES OS DU TARSE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.21	FRAC. D'AUTRES OS DU TARSE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.3	FRAC. D'OS DU METATARSE (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.30	FRAC. D'OS DU METATARSE (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.31	FRAC. D'OS DU METATARSE (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.4	FRAC. DU GROS ORTEIL (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.40	FRAC. DU GROS ORTEIL (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.41	FRAC. DU GROS ORTEIL (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.5	FRAC. D'UN AUTRE ORTEIL (SAI)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.50	FRAC. D'UN AUTRE ORTEIL (FERMEE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S92.51	FRAC. D'UN AUTRE ORTEIL (OUVERTE)
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S93.0	LUXATION  DE LA CHEVILLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S93.1	LUXATION  D'UN ORTEIL
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S93.3	LUXATION  DE PARTIES NCA OU SAI DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S93.4	ENTORSE DE LA CHEVILLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S93.5	ENTORSE D'UN ORTEIL
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S93.6	ENTORSE DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S94.9	LES. TRAUMA. D'UN NERF DE LA CHEVILLE OU DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S95.9	LES. TRAUMA. D'UN VAISSEAU SANGUIN DE LA CHEVILLE OU DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S96.9	LES. TRAUMA. D'UN TENDON DE LA CHEVILLE OU DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S97.0	ECRASEMENT DE LA CHEVILLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S97.1	ECRASEMENT D'UN ORTEIL
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S97.8	ECRASEMENT DU PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S98.0	AMPUT. TRAUMA. DE LA CHEVILLE
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S98.1	AMPUT. TRAUMA. D'UN ORTEIL
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	S98.3	AMPUT. TRAUMA.  DU PIED SAI
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T15.0	CORPS ETRANGER DANS LA CORNEE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T15.1	CORPS ETRANGER DANS LE SAC CONJONCTIVAL
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T16	CORPS ETRANGER DANS L'OREILLE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T17.1	CORPS ETRANGER DANS UNE NARINE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T17.2	CORPS ETRANGER DANS LE PHARYNX
+TRAUMATOLOGIE DU TRONC	T17.3	CORPS ETRANGER DANS LE LARYNX
+TRAUMATOLOGIE DU TRONC	T17.4	CORPS ETRANGER DANS LA TRACHEE
+TRAUMATOLOGIE DU TRONC	T17.5	CORPS ETRANGER DANS LES BRONCHES
+TRAUMATOLOGIE DU TRONC	T17.8	CORPS ETRANGER PULMONAIRE
+TRAUMATOLOGIE DU TRONC	T17.9	CORPS ETRANGER DES VOIES RESPIRATOIRES SAI
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T18.0	CORPS ETRANGER DANS LA BOUCHE
+TRAUMATOLOGIE DU TRONC	T18.1	CORPS ETRANGER DANS L'OESOPHAGE
+TRAUMATOLOGIE DU TRONC	T18.2	CORPS ETRANGER DANS L'ESTOMAC
+TRAUMATOLOGIE DU TRONC	T18.3	CORPS ETRANGER DANS L'INTESTIN GRELE
+TRAUMATOLOGIE DU TRONC	T18.4	CORPS ETRANGER DANS LE COLON
+TRAUMATOLOGIE DU TRONC	T18.5	CORPS ETRANGER DANS L'ANUS OU LE RECTUM
+TRAUMATOLOGIE DU TRONC	T18.9	CORPS ETRANGER DIGESTIF SAI
+TRAUMATOLOGIE DU TRONC	T19.0	CORPS ETRANGER DANS L'URETRE
+TRAUMATOLOGIE DU TRONC	T19.1	CORPS ETRANGER DANS LA VESSIE
+TRAUMATOLOGIE DU TRONC	T19.2	CORPS ETRANGER DANS LA VULVE ET LE VAGIN
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T20.1	BRULURE DU 1er DEGRE DE LA TETE ET DU COU
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T20.2	BRULURE DU 2d DEGRE DE LA TETE ET DU COU
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T20.3	BRULURE DU 3eme DEGRE DE LA TETE ET DU COU
+TRAUMATOLOGIE DU TRONC	T21.1	BRULURE DU 1er DEGRE DU TRONC
+TRAUMATOLOGIE DU TRONC	T21.2	BRULURE DU 2d DEGRE DU TRONC
+TRAUMATOLOGIE DU TRONC	T21.3	BRULURE DU 3eme DEGRE DU TRONC
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	T22.1	BRULURE DU 1er DEGRE DU Mb. SUP sauf POIGNET, MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	T22.2	BRULURE DU 2d DEGRE DU Mb. SUP sauf POIGNET, MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	T22.3	BRULURE DU 3eme DEGRE DU Mb. SUP sauf POIGNET, MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	T23.1	BRULURE DU 1er DEGRE POIGNET, MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	T23.2	BRULURE DU 2d DEGRE POIGNET, MAIN
+TRAUMATOLOGIE DE MEMBRE SUPERIEUR	T23.3	BRULURE DU 3eme DEGRE POIGNET, MAIN
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	T24.1	BRULURE DU 1er DEGRE DU Mb. INF sauf CHEVILLE, PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	T24.2	BRULURE DU 2d DEGRE DU Mb. INF sauf CHEVILLE, PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	T24.3	BRULURE DU 3eme DEGRE DU Mb. INF sauf CHEVILLE, PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	T25.1	BRULURE DU 1er DEGRE CHEVILLE, PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	T25.2	BRULURE DU 1er DEGRE CHEVILLE, PIED
+TRAUMATOLOGIE DE MEMBRE INFERIEUR	T25.3	BRULURE DU 1er DEGRE CHEVILLE, PIED
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T26.0	BRULURE DE LA PAUPIERE ET DE LA REGION PERIOCULAIRE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T26.1	BRULURE DE LA CORNEE ET DU SAC CONJONCTIVAL
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T26.2	BRULURE DU GLOBE OCULAIRE
+TRAUMATOLOGIE AUTRE	T35.7	GELURE, SAI
+Intoxication et toxicomanie	T39.0	Intoxication aux salicylés
+Intoxication et toxicomanie	T39.1	Intoxication au paracétamol
+Intoxication et toxicomanie	T42.3	Intoxication aux barbituriques
+Intoxication et toxicomanie	T42.4	Intoxication aux benzodiazépines
+Intoxication et toxicomanie	T42.7	Intoxication aux sédatif SAI
+Intoxication et toxicomanie	T43.0	Intoxication aux antidépresseurs tricycliques
+Intoxication et toxicomanie	T43.5	Intoxication au méprobamate
+Intoxication et toxicomanie	T43.9	Intoxication aux psychotropes SAI
+Intoxication et toxicomanie	T44.7	Intoxication aux béta-bloquants
+Intoxication et toxicomanie	T46.9	Intoxication aux médicaments cardiovasculaires SAI
+Intoxication et toxicomanie	T50.9	Intoxication médicamenteuse SAI
+Intoxication et toxicomanie	T52.9	Intoxication par des solvants organiques SAI
+Intoxication et toxicomanie	T53.9	Intoxication aux hydrocarbures
+Intoxication et toxicomanie	T54.9	Intoxication par des produits caustiques
+Intoxication et toxicomanie	T58	Intoxication au monoxyde de carbone
+Intoxication et toxicomanie	T59.9	Intoxication par des fumées et gaz SAI
+Intoxication et toxicomanie	T60.9	Intoxication aux pesticides SAI
+Intoxication et toxicomanie	T62.0	Intoxication à des champignons ingérés
+Intoxication et toxicomanie	T63.0	Intoxication par un venin de serpent
+Dermatologie	T63.4	Piqûre d'insecte
+Intoxication et toxicomanie	T65.9	Intoxication par une substance SAI
+TRAUMATOLOGIE AUTRE	T67.0	COUP DE CHALEUR ET INSOLATION
+TRAUMATOLOGIE AUTRE	T68	HYPOTHERMIE DE CAUSE EXTERNE
+TRAUMATOLOGIE DE L'EXTREMITE CEPHALIQUE	T70.0	BAROTRAUMATISME DE L'OREILLE
+Psychiatrie et troubles psychologiques	T74.9	Sévices, maltraitance SAI
+TRAUMATOLOGIE AUTRE	T75.1	NOYADE ET SUBMERSION NON MORTELLE
+TRAUMATOLOGIE AUTRE	T75.4	EFFETS DU COURANT ELECTRIQUE
+Cardio-vasculaire	T78.2	Choc allergique
+ORL et stomatologie	T78.3	Oedeme de quincke
+TRAUMATOLOGIE AUTRE	T79.2	HEMORRAGIE TRAUMATIQUE SECONDAIRE
+TRAUMATOLOGIE AUTRE	T79.3	INFECTION POST-TRAUMATIQUE  D'UNE PLAIE
+TRAUMATOLOGIE AUTRE	T79.6	SYNDROME DE LOGE MUSCULAIRE TRAUMATIQUE
+TRAUMATOLOGIE AUTRE	T79.9	COMPLICATION POST-TRAULMATIQUE PRECOCE SAI
+TRAUMATOLOGIE AUTRE	T81.3	DESUNION D'UNE PLAIE SUTUREE
+Urogénital et obstétrique	T83.0	Sonde urinaire (problème mécanique)
+Neurologie	T85.0	Dérivation ventriculaire (problème mécanique)
+Infectiologie générale et cutanée	T88.1	Eruption post vaccinale
+Diagnostics de recours particuliers	Z02.7	Délivrance d’un certificat médical SAI
+Intoxication et toxicomanie	Z03.6	Suspicion d'intoxication par une substance ingérée
+Diagnostics de recours particuliers	Z04.0	Alcoolémie légale, recherche d’autres substances pharmacologiques dans le sang
+TRAUMATOLOGIE AUTRE	Z04.1	EXAMEN SANS ANOMALIE APRES ACCIDENT DE LA VOIE PUBLIQUE
+Diagnostics de recours particuliers	Z04.4	Examen et mise en observation après allégation de viol
+Diagnostics de recours particuliers	Z04.5	Examen et mise en observation après allégation d'agression
+Infectiologie générale et cutanée	Z20.5	Exposition au virus de l'hépatite virale
+Infectiologie générale et cutanée	Z20.6	Exposition au VIH
+Infectiologie générale et cutanée	Z20.9	Exposition à des maladies transmissibles SAI
+Infectiologie générale et cutanée	Z26.9	Nécessite d'une vaccination SAI
+Urogénital et obstétrique	Z32.1	Diagnostic de grossesse
+Urogénital et obstétrique	Z34.9	Surveillance d'une grossesse SAI
+Hépato-gastro-entérologie	Z43.1	Soins de gastrostomie
+TRAUMATOLOGIE AUTRE	Z47.0	SOINS DE CONTRÔLE BROCHES, FIXATEURS INTERNES
+TRAUMATOLOGIE AUTRE	Z47.8	SOINS DE CONTRÔLE PLÂTRES, FIXATEURS EXTERNES
+TRAUMATOLOGIE AUTRE	Z47.9	SOINS DE CONTRÔLE ORTHOPEDIQUE SAI
+TRAUMATOLOGIE AUTRE	Z48.0	SURVEILLANCE  DES SUTURES ET PANSEMENTS CHIRURGICAUX
+TRAUMATOLOGIE AUTRE	Z48.9	SOINS DE CONTRÔLE CHIRURGICAL SAI
+Hématologie	Z51.3	Transfusion sanguine
+Diagnostics non spécifiques	Z51.5	Soins palliatifs
+Diagnostics de recours particuliers	Z59.0	Difficultés liées au fait d'être sans abri
+Diagnostics de recours particuliers	Z59.7	Demande d’aide sociale, couverture sociale insuffisante
+Urogénital et obstétrique	Z64.0	Difficultés liées à une grossesse non désirée
+Diagnostics de recours particuliers	Z74.9	Demande de placement d'une personne dépendante, Difficultés liées à une dépendance envers la personne qui donne les soins SAI
+Diagnostics de recours particuliers	Z75.2	Attente aux urgences en vue d’une hospitalisation dans un serrvice spécialisé pour traitement ou investigation 
+
+

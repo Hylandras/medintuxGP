@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:Arial Narrow">
+<p><br /><span style="font-style:italic;font-weight:600;text-decoration:underline">Gazométrie</span>:	 <br />	<span style="font-weight:600">PH</span><span style="font-weight:400">:</span> 	(7.35 - 7.45) <br />	<span style="font-weight:600">PC02</span>: 	mmHg (32 - 45)<br />	<span style="font-weight:600">PO2</span>: 	mmHg (75 - 100) <br />	<span style="font-weight:600">HCO3</span>: 	mmol/L (Bicarbonates) <br />	<span style="font-weight:600">BE</span>: 	mmol/L</p>
+</body></html>

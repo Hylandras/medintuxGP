@@ -1,0 +1,9 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p>$start_titleSomme des chiffres$end_title{{::SET_VAR (total,{{::Calc({{:: Extract (* ,Au cours du dernier mois\, avec quelle fréquence avez-vous eu la sensation que votre vessie n'était pas complètement vidée ?, EOL )}},+,\</p>
+<p>{{::Calc({{:: Extract (* ,Au cours du dernier mois\, avec quelle fréquence avez-vous eu besoin d'uriner moins de 2 heures après une miction ?, EOL )}},+,\</p>
+<p>{{::Calc({{:: Extract (* ,Au cours du dernier mois\, avec quelle fréquence avez-vous eu une interruption du jet d'urine c'est-à-dire démarrage de la miction puis arrêt puis redémarrage ?, EOL )}},+,\</p>
+<p>{{::Calc({{:: Extract (* ,Au cours du dernier mois\, après avoir ressenti le besoin d'uriner\, avec quelle fréquence avez-vous eu des difficultés à retenir votre miction ?, EOL )}},+,\</p>
+<p>{{::Calc({{:: Extract (* ,Au cours du dernier mois\, avec quelle fréquence avez-vous eu une diminution de la taille et de la force du jet ?, EOL )}},+,\</p>
+<p>{{::Calc({{:: Extract (* ,Au cours du dernier mois\, avec quelle fréquence avez-vous dû forcer ou pousser pour commencer à uriner ?, EOL )}},+,\</p>
+<p>{{:: Extract (* ,Au cours du dernier mois écoulé\, combien de fois par nuit\, en moyenne\, vous êtes-vous levé pour uriner \(entre le moment de votre coucher le soir et celui de votre lever définitif le matin\) ?, EOL )}})}})}})}})}})}})}})}}{{VAR=total}} sur 35 :\<br />{{::TEST(N,{{VAR=total}},&lt;,8,léger,{{::TEST(N,{{VAR=total}},&lt;,19,modéré,sévère)}})}}<br /></p>
+</body></html>

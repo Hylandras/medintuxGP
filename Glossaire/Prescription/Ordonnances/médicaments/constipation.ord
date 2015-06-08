@@ -1,0 +1,50 @@
+
+
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?> 
+<ordotext> 
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial Narrow">
+<p><br /><span style="font-family:Arial;font-weight:600;color:#0000ff">1) </span><span style="font-family:Arial;font-weight:600;text-decoration:underline;color:#0000ff">Polyoxyethylène 10g Pdr sol buv 20Sach</span><span style="font-family:Arial;color:#0000ff"> </span><span style="font-family:Arial;font-style:italic;color:#0000ff"><br />1 sachet le matin pendant un mois<br />Renouveler si nécessaire</span><br /></p>
+</body></html>
+
+</ordotext> 
+
+<ordoMedicaStruct><PosologieList> 
+<Posologie> 
+<numVersion>1</numVersion> 
+<cip>3389978</cip> 
+<pk>9988</pk> 
+<libelle>Traitement symptomatique. Constipation</libelle> 
+<sexe></sexe> 
+<terrain>$AG:216:0:mois$PS:0:0:Kg</terrain> 
+<doseMin>1</doseMin> 
+<doseMax>2</doseMax> 
+<doseUnit>8</doseUnit> 
+<doseLimitMax>0</doseLimitMax> 
+<factCorpQU>0</factCorpQU> 
+<factCorpUnit>2</factCorpUnit> 
+<periode>86400</periode> 
+<equiCoeff>0</equiCoeff> 
+<unitCoeff>28</unitCoeff> 
+<nbPrises>1</nbPrises> 
+<schemaPrise>MA</schemaPrise> 
+<divers></divers> 
+<extraPk>0</extraPk> 
+<note></note> 
+<posoAdjust>1</posoAdjust> 
+<secabilite>1</secabilite> 
+<numOrdre>1</numOrdre> 
+<posoTextuelle>Renouveler si nécessaire</posoTextuelle> 
+<ald>0</ald> 
+<posoType>3</posoType> 
+<duree>2.6784e+06</duree> 
+<IdTable>1</IdTable> 
+</Posologie> 
+</PosologieList></ordoMedicaStruct> 
+
+
+
+
+
+
+
+

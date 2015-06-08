@@ -1,0 +1,32 @@
+<html>
+<head><meta name="qrichtext" content="charset=utf-8" /></head>
+<body style="font-size:10pt;font-family:Sans">
+	<p align="center">
+		{{REM=	######VAR##### }}\<br />
+		{{REM= We initialize list results at false }}\<br />
+		{{:: SET_VAR(listResult,Rejected)}}\<br />
+		{{REM= List of document types. It is necessary to separate each option with a &quot;|&quot; also the list must be ended with this one }}\<br />
+		{{:: SET_VAR(LIST_docType,Hospitalisation|Consultation Spécialisée|Examen Complémentaire|Courrier|)}}\<br />
+		{{REM= List of specialities. It is necessary to separate each option with a &quot;|&quot; also the list must be ended with this one }}\<br />
+		{{:: SET_VAR(LIST_docSpeciality,Administratif-Social|Angiologie|Cardiologie|Dermatologie|Hépato-Gastro-Entérologie|Endocrinologie-Métabolisme-Nutrition|Gynécologie-Obstétrique|Maladies Infectieuses|Neurologie|Oncologie|Ophtalmologie|ORL|Orthopédie|Pneumologie|Prévention|Psychiatrie|Urologie|Vaccination|Autre|)}}\<br />
+		{{REM= We initialize these two vars to ensure a good presentation for preview mode }}\<br/>
+		{{:: SET_VAR(docType,Type de Document)}}\<br />
+		{{:: SET_VAR(docSpeciality,Spécialité)}}\<br />
+		{{REM=	#####END VAR##### }}\<br />
+
+		{{REM=	If SCRIPT_STATUS has the value FUSION_ADD or FUSION_CREATE, which is right if we create a document, validAction variable takes no value if not it takes FLAG_FALSE. We prefix almost all instructions with validAction so if we are in preview mode, instructions will be prefixed and not recognized }}\<br />
+		{{:: SI(S,{{VAR=$SCRIPT_STATUS}},%%,$FUSION_ADD, ,{{:: SI(S,{{VAR=$SCRIPT_STATUS}},%%,$FUSION_CREATE,,FLAG_FALSE)}})&gt;validAction}}\<br />
+		{{:: {{VAR = validAction}}DO_LISTE({{VAR = LIST_docType}} , Type de document ,|, listResult)&gt;docType}}\<br />
+		{{:: SI(S,{{VAR=listResult}},=,Rejected,FLAG_FALSE,{{VAR = validAction}})&gt;validAction}}\<br />
+		{{:: {{VAR = validAction}}DO_LISTE({{VAR = LIST_docSpeciality}} ,Spécialité ,|, listResult)&gt;docSpeciality}}\<br />
+		{{:: SI(S,{{VAR=listResult}},=,Rejected,FLAG_FALSE,{{VAR = validAction}})&gt;validAction}}\<br />
+
+		{{REM= We give a name to the document only if we creating a new one }}\<br />
+		{{:: {{VAR = validAction}}SI(S,$SCRIPT_STATUS,%%,$FUSION_ADD_Ajouter,,{{:: Intitule({{VAR = docType}} {{VAR = docSpeciality}})}})}}\<br />
+		<hr>
+		<span style="font-family:Courier New;font-size:20pt;font-weight:600">{{VAR = docType}} // {{VAR = docSpeciality}}</span>
+		<hr>
+		{{IMAGE_PICT}}{{IMAGE_WIDTH=1000}}
+	</p>
+</body>
+</html>

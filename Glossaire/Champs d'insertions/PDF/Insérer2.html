@@ -1,0 +1,11 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
+<p>{{\</p>
+<p>{{::SET_VAR(TypeDoc,{{:: DO_LISTE (Hospitalisation|Consultation|Courrier| , Choix du type de document ,|, retour_de_liste)}})}}\</p>
+<p>{{::SET_VAR(Discipline,{{:: DO_LISTE (Cardiologie|Pneumologie|Gastro|Endocrino|Neurologie|Orthopédie|Rhumatologie|Hématologie|Urgences|Chirurgie digestive| , Choix du type de document ,|, retour_de_liste)}})}}\</p>
+<p>{{::SET_VAR(NomFichier, {{NOM PATIENT}}_{{PRENOM PATIENT}}_{{DATE NAISSANCE PATIENT}}_{{VAR = TypeDoc}}_{{VAR = Discipline}}_{{DATE = yyyyMMdd}}_{{HeureCourante = hhmmss}}.pdf)}}\</p>
+<p>{{::copy_file(/home/maxime/tmp/convert/temp.pdf , /var/www/html/MedPDF/{{VAR = NomFichier}}, $remove_src_file)}}\</p>
+<p>{{::delete_file (/home/maxime/tmp/convert/temp.pdf)}}\</p>
+<p>{{:: Intitule ( {{VAR = TypeDoc}} {{VAR = Discipline}} ) }}\</p>
+<p>}}\</p>
+<p>{{VAR = NomFichier}}<br />&lt;a src=&quot;http://127.0.0.1/MedPDF/{{VAR = NomFichier}}&quot;&gt;Lien du fichier&lt;/a&gt;</p>
+</body></html>

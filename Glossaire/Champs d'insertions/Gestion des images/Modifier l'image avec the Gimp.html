@@ -1,0 +1,15 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:Helvetica">
+<p><span style="font-family:Courier New;font-size:10pt">$start_titleModifier l'image avec The Gimp$end_title{{\<br />{{REM=-------------------- determiner l'executable selon os --------------------------------------------</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{:: SET_VAR(theGimp, {{:: test(S,{{OS}},=,W,C:/Program Files/Gimp-2.0/bin/gimp-2.6,{{:: test(S,{{OS}},=,L,/usr/bin/gimp, {{:: test(S,{{OS}},=,M,{{AP = ../../Plug/Gimp/LauchGimp.sh}},OS inconnu)}})}})}})}}\</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{REM=-------------------- determiner condition os --------------------------------------------</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{:: SET_VAR(siMac, {{:: test(S,{{OS}},=,M,,noMac)}})}}\</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{:: SET_VAR(siPasMac, {{:: test(S,{{OS}},=,M,isMac,)}})}}\</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{REM=-------------------- on enregistre la dernière image se trouvant sous la souris ------------------</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{SAVE LAST IMAGE NAME=../../tmp/}}\<br />{{REM=-------------------- on recupere le nom du fichier enregistre ------------------------------------</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{:: VAR_SET(DstImage, '{{AP = ../../tmp/{{GET LAST IMAGE NAME}}}}')}}\<br />{{REM=-------------------- on cree le bash de lancement de the Gimp ------------------------------------</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{REM=                     en plaçant le nom du fichier image dans le modele </span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{:: {{VAR=siMac}}REPLACE_IN_FILE( ../../Plug/Gimp/LauchGimpModele.sh, ../../Plug/Gimp/LauchGimp.sh, DstImage )}}\<br />{{REM=-------------------- lancer ce bash qui lance the Gimp -------------------------------------------</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{:: {{VAR=siMac}}exe_process    (WaitEnd,$IsAbsPath$NoAddExebash,{{VAR=theGimp}})}}\<br />{{:: {{VAR=siPasMac}}exe_process (WaitEnd,{{VAR=theGimp}},$ToAbsPath ../../tmp/{{GET LAST IMAGE NAME}})}}<br />{{REM=-------------------- on recupere l'image modifiee et on la replace -------------------------------</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">{{:: replace_image ({{GET LAST IMAGE NAME}},../../tmp/{{GET LAST IMAGE NAME}},-1,-1,keep_src_file Name remove_src )  }}\</span></p>
+<p><span style="font-family:Courier New;font-size:10pt">}}</span></p>
+</body></html>

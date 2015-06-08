@@ -1,0 +1,726 @@
+-30 examen médical ou bilan santé détaillé
+-31 examen médical ou bilan santé partiel
+-32 test de sensibilité
+-33 examen microbiologique ou immunologique
+-34 autre analyse de sang
+-35 autre analyse d'urine
+-36 autre analyse de selles
+-37 cytologie ou histologie
+-38 autre analyse de laboratoire
+-39 épreuve fonctionnelle
+-40 endoscopie
+-41 radiologie diagnostique ou imagerie
+-42 tracé électrique
+-43 autre procédure diagnostique
+-44 vaccination ou médication préventive
+-45 recommendation ou éducation de la  santé ou avis ou régime
+-46 discussion entre dispensateurs ssp
+-47 discussion dispensateur spécialiste
+-48 clarification de la demande du patient
+-49 autre procédure préventive
+-50 médication ou prescription ou injection
+-51 incision ou drainage ou aspiration
+-52 excision ou biopsie ou cautér ou débridation
+-53 perfussion ou intubation ou dilatation ou appareillage
+-54 réparation ou fixation ou suture ou plâtre ou prothèse
+-55 traitement local ou infiltration
+-56 pansement ou compression ou bandage
+-57 thérapie manuelle ou médecine physique
+-58 conseil thérap ou écoute ou examens
+-59 autres procédures thérapeutiques
+-60 résultats analyses ou examens
+-61 résultats examens ou procédure autre dispensateur
+-62 contact administratif
+-63 rencontre de suivi
+-64 épis. nouveau ou en cours init. par disp.
+-65 épis. nouveau ou en cours init. par tiers
+-66 référence à dispens. ssp non médecin
+-67 référence à médecin
+-68 autre référence
+-69 autres procédures
+a01 douleur générale ou de sites multiples
+a02 frissons
+a03 fièvre
+a04 fatigue ou faiblesse générale
+a05 sensation d'être malade
+a06 évanouissement ou syncope
+a07 coma
+a08 gonflement
+a09 problème de transpiration
+a10 saignement ou hémorragie non classé ailleurs
+a11 douleur thoracique non classé ailleurs
+a13 préoccupé par ou peur d'un traitement médical
+a16 nourrisson irritable
+a18 préoccupé par son aspect extérieur
+a20 demande ou discussion sur l'euthanasie
+a21 facteur de risque de cancer
+a23 facteur de risque non classé ailleurs
+a25 peur de la mort, de mourir
+a26 peur du cancer non classé ailleurs
+a27 peur d'une autre maladie non classé ailleurs
+a28 limitation de la fonction ou incapacité non classé ailleurs
+a29 autre symptôme ou plainte général
+        a70 tuberculose
+        a71 rougeole
+        a72 varicelle
+        a73 paludisme
+        a74 rubéole
+        a75 mononucléose infectieuse
+        a76 autre exanthème viral
+        a77 autre maladie virale non classé ailleurs
+        a78 autre maladie infectieuse non classé ailleurs
+                a79 cancer non classé ailleurs
+                        a80 traumatisme ou lésion traumat. non classé ailleurs
+                        a81 polytraumatisme ou lésions multiples
+                        a82 effet tardif d'un traumatisme
+                        a84 intoxication par substance médicinale
+                        a85 effet secondaire substance médicinale
+                        a86 effet toxique substance non médicinale
+                        a87 complication de traitement médical
+                        a88 effet secondaire de facteur physique
+                        a89 effet secondaire de matériel prothétique
+                                a90 anomalie congénitale non classé ailleurs ou multiple
+                                        a91 résultat d'investigat. anormale non classé ailleurs
+                                        a92 allergie ou réaction allergique non classé ailleurs
+                                        a93 nouveau-né prématuré
+                                        a94 autre morbidité périnatale
+                                        a95 mortalité périnatale
+                                        a96 mort
+                                        a97 pas de maladie
+                                        a98 gestion santé ou médecine préventive
+                                        a99 maladie de nature ou site non précisé
+b02 ganglion lymph. augmenté ou  douloureux
+b04 symptôme ou plainte du sang
+b25 peur du sida ou du vih
+b26 peur du cancer du sang ou lymph.
+b27 peur autre maladie sang ou lymph ou rate
+b28 limitation de la fonction ou incapacité (b)
+b29 autre symptôme ou plainte du système lymph. ou immunol.
+        b70 adénite aiguë
+        b71 adénite chronique ou non-spécifique
+                b72 maladie de hodgkin ou lymphome
+                b73 leucémie
+                b74 autre cancer du sang
+                b75 tumeur bénigne ou indéterminée du sang ou de la lymphe
+                        b76 rupture traumat. de la rate
+                        b77 autre traumatisme sang ou lymph ou rate
+                                b78 anémie hémolytique héréditaire
+                                b79 autre anomalie congénitale sang ou  lymph ou rat
+                                        b80 anémie par déficience en fer
+                                        b81 anémie carence vit b12 ou ac. folique
+                                        b82 autre anémie ou indéterminé
+                                        b83 purpura ou défaut de coagulation
+                                        b84 globules blancs anormaux
+                                        b87 splénomégalie
+                                        b90 infection par le virus hiv, sida
+                                        b99 autre maladie sang ou lymph ou rate
+d01 douleur ou crampes abdominales généralisées
+d02 douleur abdominale ou épigastrique
+d03 brûlure ou brûlant ou brûlement estomac
+d04 douleur rectale ou anale
+d05 démangeaisons périanales
+d06 autre douleur abdominale localisée
+d07 dyspepsie ou indigestion
+d08 flatulence ou gaz ou renvoi
+d09 nausée
+d10 vomissement
+d11 diarrhée
+d12 constipation
+d13 jaunisse
+d14 hématémèse ou vomissement de sang
+d15 méléna
+d16 saignement rectal
+d17 incontinence rectale
+d18 modification selles ou mouvements des intestin
+d19 symptôme ou plainte dents ou gencives
+d20 symptôme ou plainte bouche ou langue ou lèvres
+d21 problème de déglutition
+d23 hépatomégalie
+d24 masse abdominale non classé ailleurs
+d25 distension abdominale
+d26 peur du cancer du système digestif
+d27 peur d'une autre maladie digestive
+d28 limitation de la fonction ou incapacité (d)
+d29 autre symptôme ou plainte du système digestif
+        d70 infection gastro-intestinale
+        d71 oreillons
+        d72 hépatite virale
+        d73 gastro-entérite présumée infectieuse
+                d74 cancer de l'estomac
+                d75 cancer du colon ou du rectum
+                d76 cancer du pancréas
+                d77 autre cancer digestif ou non classé ailleurs
+                d78 tumeur bénigne ou indéterminée du système dig.
+                        d79 corps étranger du système digestif
+                        d80 autre traumatisme du système digestif
+                                d81 anomalie congénitale du système digestif
+                                        d82 maladie des dents ou des gencives
+                                        d83 maladie bouche ou langue ou lèvres
+                                        d84 maladie de l'oesophage
+                                        d85 ulcère duodénal
+                                        d86 autre ulcère peptique
+                                        d87 trouble de la fonction gastrique
+                                        d88 appendicite
+                                        d89 hernie inguinale
+                                        d90 hernie hiatale
+                                        d91 autre hernie abdominale
+                                        d92 maladie diverticulaire
+                                        d93 syndromeome du colon irritable
+                                        d94 entérite chronique ou colite ulcéreuse
+                                        d95 fissure anale ou abcès périanal
+                                        d96 vers ou autre parasite
+                                        d97 maladie du foie non classé ailleurs
+                                        d98 cholécystite ou cholélithiase
+                                        d99 autre maladie du système digestif
+f01 oeil douloureux
+f02 oeil rouge
+f03 ecoulement de l'oeil
+f04 taches visuelles ou flottantes
+f05 autre perturbation de la vision
+f13 sensation oculaire anormale
+f14 mouvements oculaires anormaux
+f15 apparence anormale de l'oeil
+f16 symptôme ou plainte de la paupière
+f17 symptôme ou plainte lunettes
+f18 symptôme ou plainte lentilles de contact
+f27 peur d'une maladie de l'oeil
+f28 limitation de la fonction ou incapacité (f)
+f29 autre symptôme ou plainte de l'oeil
+        f70 conjonctivite infectieuse
+        f71 conjonctivite allergique
+        f72 blépharite, orgelet, chalazion
+        f73 autre infection ou inflammation de l'oeil
+                f74 tumeur de l'oeil et des annexes
+                        f75 contusion ou hémorragie de l'oeil
+                        f76 corps étranger dans l'oeil
+                        f79 autre lésion traumat. de l'oeil
+                                f80 sténose canal lacrymal de l'enfant
+                                f81 autre anomalie congénitale de l'oeil
+                                        f82 décollement de la rétine
+                                        f83 rétinopathie
+                                        f84 dégénérescence maculaire
+                                        f85 ulcère de la cornée
+                                        f86 trachome
+                                        f91 défaut de réfraction
+                                        f92 cataracte
+                                        f93 glaucome
+                                        f94 cécité
+                                        f95 strabisme
+                                        f99 autre maladie de l'oeil ou annexes
+h01 douleur d'oreille ou otalgie
+h02 problème d'audition
+h03 acouphène ou bourdonnement d'oreille
+h04 ecoulement de l'oreille
+h05 saignement de l'oreille
+h13 sensation d'oreille bouchée
+h15 préoccupé par l'aspect des oreilles
+h27 peur d'une maladie de l'oreille
+h28 limitation de la fonction ou incapacité (h)
+h29 autre symptôme ou plainte de l' oreille
+        h70 otite externe
+        h71 otite moyenne aiguë ou myringite
+        h72 otite moyenne séreuse
+        h73 salpingite d'eustache
+        h74 otite moyenne chronique
+                h75 tumeur de l'oreille
+                        h76 corps etranger dans l'oreille
+                        h77 perforation du tympan
+                        h78 lésion traumat. superf. de l'oreille
+                        h79 autre lésion traumat. de l'oreille
+                                h80 anomalie congénitale de l'oreille
+                                        h81 excès de cérumen
+                                        h82 syndromeome vertigineux
+                                        h83 otosclérose
+                                        h84 presbyacousie
+                                        h85 traumatisme sonore
+                                        h86 surdité
+                                        h99 autre maladie de l'oreille ou  mastoïde
+k01 douleur cardiaque
+k02 oppression ou constriction cardiaque
+k03 douleur cardiovasculaire non classé ailleurs
+k04 palpitat. ou perception battements card.
+k05 autre battement cardiaque irrégulier
+k06 veines proéminentes
+k07 oedème, gonflement des chevilles
+k22 facteur risque mal. cardio-vasculaire
+k24 peur d'une maladie de coeur
+k25 peur de l'hypertension
+k27 peur d'une autre maladie cardio-vasculaire
+k28 limitation de la fonction ou incapacité (k)
+k29 autre symptôme ou plainte cardiovasculaire
+        k70 infection du système cardio-vasculaire
+        k71 raa ou maladie cardiaque rhumatismale
+                k72 tumeur cardio-vasculaire
+                                k73 anomalie congénitale cardio-vasculaire
+                                        k74 cardiopathie ischémique avec angor
+                                        k75 infarctus myocardique aigu
+                                        k76 cardiopathie ischémique sans angor
+                                        k77 décompensation cardiaque
+                                        k78 fibrillation auriculaire ou flutter
+                                        k79 tachycardie paroxystique
+                                        k80 arythmie cardiaque non classé ailleurs
+                                        k81 souffle cardiaque ou artériel non classé ailleurs
+                                        k82 coeur pulmonaire
+                                        k83 valvulopathie non classé ailleurs
+                                        k84 autre maladie cardiaque
+                                        k85 pression sanguine élevée
+                                        k86 hypertension non compliquée
+                                        k87 hypertension avec complication
+                                        k88 hypotension orthostatique
+                                        k89 ischémie cérébrale transitoire
+                                        k90 accident vasculaire cérébral
+                                        k91 maladie cérébrovasculaire
+                                        k92 athérosclose ou maladie vasculaire périphérique
+                                        k93 embolie pulmonaire
+                                        k94 phlébite et thrombophlébite
+                                        k95 varices des jambes
+                                        k96 hémorroïdes
+                                        k99 autre maladie cardio-vasculaire
+l01 symptôme ou plainte du cou
+l02 symptôme ou plainte du dos
+l03 symptôme ou plainte des lombes
+l04 symptôme ou plainte du thorax
+l05 symptôme ou plainte du flanc et du creux axillaire
+l07 symptôme ou plainte de la mâchoire
+l08 symptôme ou plainte de l'épaule
+l09 symptôme ou plainte du bras
+l10 symptôme ou plainte du coude
+l11 symptôme ou plainte du poignet
+l12 symptôme ou plainte de la main et du doigt
+l13 symptôme ou plainte de la hanche
+l14 symptôme ou plainte de la jambe et de la cuisse
+l15 symptôme ou plainte du genou
+l16 symptôme ou plainte de la cheville
+l17 symptôme ou plainte du pied et de l'orteil
+l18 douleur musculaire
+l19 symptôme ou plainte musculaire non classé ailleurs
+l20 symptôme ou plainte d'une articulation non classé ailleurs
+l26 peur d'un cancer du système ostéo-articulaire
+l27 peur d'une autre maladie du système ostéo-articulaire
+l28 limitation de la fonction ou incapacité (l)
+l29 autre symptôme ou plainte ostéo-articulaire
+        l70 infection du système ostéo-articulaire
+                l71 cancer du système ostéo-articulaire
+                        l72 fracture du radius ou du cubitus
+                        l73 fracture du tibia ou du péroné
+                        l74 fracture de la main ou du pied
+                        l75 fracture du fémur
+                        l76 autre fracture
+                        l77 entorse de la cheville
+                        l78 entorse du genou
+                        l79 entorse articulaire non classée ailleurs
+                        l80 luxation et subluxation
+                        l81 lésion traumatique non classée ailleurs ostéo-articulaire
+                                l82 anomalie congénitale ostéo-articulaire
+                                        l83 syndrome cervical
+                                        l84 syndrome dorso-lomb. sans irradiation
+                                        l85 déformation acquise de la colonne
+                                        l86 syndrome. dorso-lombaire et irradiation
+                                        l87 bursite, tendinite, synovite non classé ailleurs
+                                        l88 polyarthrite rhumatoïde séropositive
+                                        l89 coxarthrose
+                                        l90 gonarthrose
+                                        l91 autre arthrose
+                                        l92 syndromeome de l'épaule
+                                        l93 coude du joueur de tennis
+                                        l94 ostéochondrose
+                                        l95 ostéoporose
+                        l96 lésion aiguë interne du genou
+                l97 autre tumeur bénigne ou indéterminée ostéo-articulaire
+                                        l98 déformation acquise des membres inférieurs
+                                        l99 autre maladie ostéo-articulaire
+n01 mal de tête céphalée
+n03 douleur de la face
+n04 jambes sans repos
+n05 fourmillements doigts, pieds, orteils
+n06 autre perturbation de la sensibilité
+n07 convulsion ou crise comitiale
+n08 mouvements involontaires anormaux
+n16 perturbation du goût ou de l'odorat
+n17 vertige ou étourdissement
+n18 paralysie ou faiblesse
+n19 trouble de la parole
+n26 peur d'un cancer neurologique
+n27 peur d'une autre maladie neurologique
+n28 limitation de la fonction ou incapacité (n)
+n29 autre symptôme ou plainte neurologique
+        n70 poliomyélite
+        n71 méningite ou encéphalite non classé ailleurs
+        n72 tétanos
+        n73 autre infection neurologique
+                n74 cancer du système neurologique
+                n75 tumeur bénigne neurologique
+                n76 autre tumeur indéterminée neurologique
+                        n79 commotion
+                        n80 autre lésion traumatique de la tête
+                        n81 autre lésion traumatique neurologique
+                                n85 anomalie congénitale neurologique
+                                        n86 sclérose en plaque
+                                        n87 syndromeome parkinsonien
+                                        n88 epilepsie
+                                        n89 migraine
+                                        n90 algie vasculaire de la face
+                                        n91 paralysie faciale ou paralysie de bell
+                                        n92 névralgie du trijumeau
+                                        n93 syndromeome du canal carpien
+                                        n94 névrite ou neuropathie périphérique
+                                        n95 céphalée de tension
+                                        n99 autre maladie neurologique
+P01 sensation anxiété ou nervosité ou tension
+P02 réaction de stress aiguë
+P03 sensation de dépression
+P04 sentiment ou comportement irritable ou colère
+P05 sensation vieux, comportement sénile
+P06 perturbation du sommeil
+P07 diminution du désir sexuel
+P08 diminution accomplissement sexuel
+P09 préoccupation sur l'identité sexuelle
+P10 bégaiement, bredouillement, tic
+P11 trouble de l'alimentation de l'enfant
+P12 enurésie
+P13 encoprésie
+P15 alcoolisme chronique
+P16 alcoolisation aiguë
+P17 usage abusif du tabac
+P18 usage abusif de médicament
+P19 usage abusif de drogue
+P20 perturbation de la mémoire
+P22 symptôme ou plainte du comportement de l'enfant
+P23 symptôme ou plainte du comportement de l'adolescent
+P24 problème spécifique de l'apprentissage
+P25 problèmes de phase de vie adulte
+P27 peur d'un trouble mental
+P28 limitation de la fonction ou incapacité (P)
+P29 autre symptôme ou plainte psychologique
+                                        P70 démence
+                                        P71 autre psychose organique
+                                        P72 schizophrénie
+                                        P73 phsychose affective
+                                        P74 trouble anxieux ou état anxieux
+                                        P75 trouble somatoforme
+                                        P76 dépression
+                                        P77 suicide ou tentative de suicide
+                                        P78 neurasthénie, surmenage
+                                        P79 phobie, trouble obsessionnel compulsif
+                                        P80 trouble de la personnalité
+                                        P81 trouble hyperkinétique
+                                        P82 syndromeome de stress post-traumatique
+                                        P85 retard mental
+                                        P86 anorexie mentale, boulimie
+                                        P98 autre psychose non classé ailleurs
+                                        P99 autre trouble psychologique
+r01 douleur du système respiratoire
+r02 souffle court, dyspnée
+r03 sibilance
+r04 autre problème respiratoire
+r05 toux
+r06 saignement de nez, épistaxis
+r07 congestion nasale, éternuement
+r08 autre symptôme ou plainte du nez
+r09 symptôme ou plainte des sinus
+r21 symptôme ou plainte de la gorge
+r23 symptôme ou plainte de la voix
+r24 hémoptysie
+r25 expectoration ou glaire anormale
+r26 peur d'un cancer du système respiratoire
+r27 peur d'une autre maladie respiratoire
+r28 limitation de la fonction ou incapacité (r)
+r29 autre symptôme ou plainte respiratoire
+        r71 coqueluche
+        r72 streptococcie pharyngée
+        r73 furoncle ou abcès du nez
+        r74 infection aiguë voies respiratoire sup.
+        r75 sinusite aiguë ou chronique
+        r76 angine aiguë
+        r77 laryngite, trachéite aiguë
+        r78 bronchite aiguë, bronchiolite
+        r79 bronchite chronique
+        r80 grippe
+        r81 pneumonie
+        r82 pleurésie, épanchement pleural
+        r83 autre infection respiratoire
+                r84 cancer des bronches, du poumon
+                r85 autre cancer respiratoire
+                r86 tumeur respiratoire bénigne
+                        r87 corps étranger du nez, du larynx, des bronches
+                        r88 autre lésion traumatique du système respiratoire
+                                r89 anomalie congénitale du système respiratoire
+                                        r90 hypertrophie amygdales ou végétations
+                r92 autre tumeur indéterminée du système respiratoire
+                                        r95 maladie pulmonaire chronique obstructive
+                                        r96 asthme
+                                        r97 rhinite allergique
+                                        r98 syndromeome d'hyperventilation
+                                        r99 autre maladie respiratoire
+s01 douleur ou hypersensibilité de la peau
+s02 prurit
+        s03 verrue
+s04 tuméfaction ou gonflement localisé de la peau
+s05 tuméfactions ou gonflements généralisé de la peau
+s06 eruption localisée
+s07 eruption généralisée
+s08 modification de la couleur de la peau
+        s09 doigt ou orteil infecté
+        s10 furoncle ou anthrax
+        s11 infection post-traumatique de la peau
+                        s12 piqûre d'insecte
+                        s13 morsure animale ou humaine
+                        s14 brûlure cutanée
+                        s15 corps étranger dans la peau
+                        s16 ecchymose ou contusion
+                        s17 eraflure, égratignure, ampoule
+                        s18 coupure ou lacération
+                        s19 autre lésion traumatique de la peau
+s20 cor ou callosité
+s21 symptôme ou plainte au sujet de la texture de la peau
+s22 symptôme ou plainte de l'ongle
+s23 calvitie ou perte de cheveux
+s24 autre symptôme ou plainte cheveux, poils ou cuir chevelu
+s26 peur du cancer de la peau
+s27 peur d'une autre maladie de la peau
+s28 limitation de la fonction ou incapacité (s)
+s29 autre symptôme ou plainte de la peau
+s70 zona
+        s71 herpes simplex
+        s72 gale ou autre acariose
+        s73 pédiculose ou autre infestation peau
+        s74 dermatophytose
+        s75 moniliase ou candidose de la peau
+        s76 autre maladie infectieuse de la peau
+                s77 cancer de la peau
+                s78 lipome
+                s79 autre tumeur bénigne ou indéterminée de la peau
+                        s80 kératose actinique ou coup de soleil
+                                s81 hémangiome ou lymphangiome
+                                s82 naevus ou naevus pigmentaire
+                                s83 autre anomalie congénitale de la peau
+                                        s84 impétigo
+                                        s85 kyste ou fistule pilonidal
+                                        s86 dermatite séborrhéique
+                                        s87 dermatite atopique ou eczéma
+                                        s88 dermatite et allergie de contact
+                                        s89 erythème fessier
+                                        s90 pytiriasis rosé
+                                        s91 psoriasis
+                                        s92 maladie des glandes sudoripares
+                                        s93 kyste sébacé
+                                        s94 ongle incarné
+                                        s95 molluscum contagiosum
+                                        s96 acné
+                                        s97 ulcère chronique de la peau
+                                        s98 urticaire
+                                        s99 autre maladie de la peau
+t01 soif excessive
+t02 appétit excessif
+t03 perte d'appétit
+t04 problème d'alimentation nourrisson ou enfant
+t05 problème d'alimentation de l'adulte
+t07 gain de poids
+t08 perte de poids
+t10 retard de croissance
+t11 déshydratation
+t26 peur d'un cancer du système endocrinien
+t27 peur autre mal. endoc ou métab. ou nutrit.
+t28 limitation de la fonction ou incapacité (t)
+t29 autre symptôme ou plainte endoc ou métab. ou nutrit.
+        t70 infection du système endocrinien
+                t71 cancer de la thyroïde
+                t72 tumeur bénigne de la thyroïde
+                t73 tumeur indéterminée du système endocrinien
+                                t78 canal ou kyste thyréoglosse
+                                t80 anomalie congénitale endocrine ou métabolique ou nutrit.
+                                        t81 goitre
+                                        t82 obésité
+                                        t83 excès pondéral
+                                        t85 hyperthyroïdie ou thyréotoxicose
+                                        t86 hypothyroïdie ou myxoedème
+                                        t87 hypoglycémie
+                                        t89 diabète insulino-dépendant
+                                        t90 diabète non insulino-dépendant
+                                        t91 carence vitaminique ou nutritionnelle
+                                        t92 goutte
+                                        t93 trouble du métabolisme des lipides
+                                        t99 autre maladie endoc ou métab. ou nutrit
+u01 dysurie ou miction douloureuse
+u02 miction fréquente ou impérieuse
+u04 incontinence urinaire
+u05 autre problème de miction
+u06 hématurie
+u07 autre symptôme ou plainte au sujet de l'urine
+u08 rétention d'urine
+u13 autre symptôme ou plainte de la vessie
+u14 symptôme ou plainte du rein
+u26 peur d'un cancer du système urinaire
+u27 peur d'une autre maladie urinaire
+u28 limitation de la fonction ou incapacité (u)
+u29 autre symptôme ou plainte urinaire
+        u70 pyélonéphrite ou pyélite
+        u71 cystite ou autre infection urinaire
+        u72 urétrite
+                u75 cancer du rein
+                u76 cancer de la vessie
+                u77 autre cancer urinaire
+                u78 tumeur bénigne du tractus urinaire
+                u79 autre tumeur indéterminée urinaire
+                        u80 lésion traumatique du tractus urinaire
+                                u85 anomalie congénitale du tractus urinaire
+                                        u88 glomérulonéph. ou syndr. néphrotique
+                                        u90 protéinurie orthostatique
+                                        u95 lithiase urinaire
+                                        u98 analyse urinaire anormale non classé ailleurs
+                                        u99 autre maladie urinaire
+w01 question de grossesse
+w02 peur d'être enceinte
+w03 saignement pendant la grossesse
+w05 nausée ou vomissement de grossesse
+w10 contraception post-coïtale
+w11 contraception orale
+w12 contraception intra-utérine
+w13 stérilisation chez la femme
+w14 autre contraception chez la femme
+w15 stérilité - hypofertilité de la femme
+w17 saignement du post-partum
+w18 autre symptôme ou plainte du post-partum
+w19 symptôme ou plainte du sein ou lactation post-partum
+w21 préoccupée par modification d'image et grossesse
+w27 peur complications de la grossesse
+w28 limitation de la fonction ou incapacité (w)
+w29 autre symptôme ou plainte de la grossesse
+        w70 infection puerpérale, sepsis
+        w71 infection compliquant la grossesse
+                w72 tumeur maligne avec grossesse
+                w73 tumeur bénigne ou indéterminée et grossesse
+                        w75 lésion traumatique et grossesse
+                                w76 anomalie congénitale et grossesse
+                                        w78 grossesse
+                                        w79 grossesse non désirée
+                                        w80 grossesse ectopique
+                                        w81 toxémie gravidique
+                                        w82 avortement spontané
+                                        w83 avortement provoque
+                                        w84 grossesse a haut risque
+                                        w85 diabète gravidique
+                                        w90 accouchement non complique, enfant vivant
+                                        w91 accouchement non complique, enfant mort
+                                        w92 accouchement complique, enfant vivant
+                                        w93 accouchement complique, enfant mort
+                                        w94 mastite puerpérale
+                                        w95 autre maladie du sein grossesse ou lactation
+                                        w96 autre complication puerpérale
+                                        w99 autre maladie de la grossesse ou acc.
+x01 douleur génitale chez la femme
+x02 douleur menstruelle
+x03 douleur intermenstruelle
+x04 rapport sexuel douloureux chez la femme
+x05 menstruation absente ou rare
+x06 menstruation excessive
+x07 menstruation irrégulière ou fréquente
+x08 saignement intermenstruel
+x09 symptôme ou plainte prémenstruel
+x10 ajournement des menstruations
+x11 symptôme ou plainte liés a la ménopause
+x12 saignement de la post-ménopause
+x13 saignement post-coïtal chez la femme
+x14 ecoulement vaginal
+x15 symptôme ou plainte du vagin
+x16 symptôme ou plainte de la vulve
+x17 symptôme ou plainte du petit bassin chez la femme
+x18 douleur du sein chez la femme
+x19 tuméfaction ou masse du sein chez la femme
+x20 symptôme ou plainte du mamelon chez la femme
+x21 autre symptôme ou plainte du sein chez la femme
+x22 préoccupée par l'apparence des seins
+x23 peur d'une mst chez la chez la femme
+x24 peur dysfonction sexuelle chez la femme
+x25 peur d'un cancer génital chez la femme
+x26 peur d'un cancer du sein chez la femme
+x27 peur autre maladie génitale ou du sein  chez la femme
+x28 limitation de la fonction ou incapacité (x)
+x29 autre symptôme ou plainte génital chez la femme
+        x70 syphilis chez la femme
+        x71 gonococcie chez la femme
+        x72 candidose génitale chez la femme
+        x73 trichomonase génitale chez la femme
+        x74 maladie inflammatoire pelvienne de la femme
+                x75 cancer du col de l'utérus
+                x76 cancer du sein chez la femme
+                x77 autre cancer génital chez la femme
+                x78 fibrome utérin
+                x79 tumeur bénigne du sein chez la femme
+                x80 tumeur bénigne génitale chez la femme
+                x81 autre tumeur génitale indéterminée chez la femme
+                        x82 lésion traumatique génitale chez la femme
+                                x83 anomalie génitale congénitale chez la femme
+                                        x84 vaginite ou vulvite non classé ailleurs
+                                        x85 maladie du col de l'utérus non classé ailleurs
+                                        x86 frottis de col anormal
+                                        x87 prolapsus utéro-vaginal
+                                        x88 maladie fibrokystique du sein
+                                        x89 syndromeome de tension prémenstruelle
+        x90 herpes génital chez la femme
+                                        x91 condylome acuminé chez la femme
+                                        x92 infection génitale à chlamydia de la femme
+                                        x99 autre maladie génitale de la femme
+y01 douleur du pénis
+y02 douleur des testicules, du scrotum
+y03 ecoulement urétral chez l'homme
+y04 autre symptôme ou plainte du pénis
+y05 autre symptôme ou plainte des testicules ou du scrotum
+y06 symptôme ou plainte de la prostate
+y07 impuissance sexuelle non classé ailleurs
+y08 autre symptôme ou plainte liée à une fonction sexuelle chez l'homme
+y10 stérilité, hypofertilité de l'homme
+y13 stérilisation de l'homme
+y14 autre symptôme ou plainte lié au planning familial chez l'homme
+y16 symptôme ou plainte du sein chez l'homme
+y24 peur d'une dysfonction sexuelle chez l'homme
+y25 peur d'une maladie sexuellement transmissible chez l'homme
+y26 peur d'un cancer génital chez l'homme
+y27 peur d'une autre maladie génitale chez l'homme
+y28 limitation de la fonction ou incapacité (y)
+y29 autre symptôme ou plainte génitale chez l'homme
+        y70 syphilis de l'homme
+        y71 gonococcie de l'homme
+        y72 herpes génital de l'homme
+        y73 prostatite ou vésiculite séminale
+        y74 orchite ou épididymite
+        y75 balanite
+        y76 condylome acuminé de l'homme
+                y77 cancer de la prostate
+                y78 autre cancer génital chez l'homme
+                y79 autre tumeur génitale bénigne ou indéterminée chez l'homme
+                        y80 lésion traumatique génitale chez l'homme
+                                y81 phimosis ou hypertrophie du prépuce
+                                y82 hypospadias
+                                y83 ectopie testiculaire
+                                y84 autre anomalie congénitale chez l'homme
+                                        y85 hypertrophie bénigne de la prostate
+                                        y86 hydrocèle
+                                        y99 autre maladie génitale chez l'homme
+z01 pauvreté ou problème économique
+z02 problème d'eau ou de nourriture
+z03 problème d'habitat ou de voisinage
+z04 problème socioculturel
+z05 problème de travail
+z06 problème de non emploi
+z07 problème d'éducation
+z08 problème de protection sociale
+z09 problème légal
+z10 problème relatif au système de soins de santé
+z11 problème du fait d'être malade ou compliance
+z12 problème de relation entre partenaires
+z13 problème de comportement du partenaire
+z14 problème du à la maladie du partenaire
+z15 problème lié à la perte ou décès du partenaire
+z16 problème de relation avec un enfant
+z18 problème du à la maladie d'un enfant
+z15 problème lié à la perte ou décès d'un enfant
+z20 problème relation autre parent ou famille
+z21 problème au comportement d'un autre parent ou famille
+z22 problème du à la maladie d'un autre parent ou famille
+z23 problème lié à la perte ou décès d'un autre parent ou famille
+z24 problème de relation avec un ami
+z25 agression ou évènement nocif non classé ailleurs
+z27 peur d'un problème social
+z28 limitation de la fonction ou incapacité (z)
+z29 problème social non classé ailleurs

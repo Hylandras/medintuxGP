@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans">
+<p><span style="font-family:Arial Narrow;font-weight:400">	placer sur 24 heures, début</span><span style="font-family:Arial Narrow"> à  {{DT=hh|mm}}  <br />	</span></p>
+</body></html>

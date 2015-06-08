@@ -1,0 +1,42 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body style="font-size:10pt;font-family:Sans">
+<p>{{REM=Modèle d'après Olivier Nicollet}}\<br />{{\<br />{{::SET_VAR ( JoursTerme, {{::Calc ({{::DaysTo( {{DDR = dd-MM-yyyy}},{{DATE}} ) }} , mod , 7) }})}}\<br />{{::SET_VAR (SATerme, {{::Calc ( {{::Calc ( {{::DaysTo( {{DDR = dd-MM-yyyy}},{{DATE}} ) }} , - , {{::Calc ({{::DaysTo( {{DDR = dd-MM-yyyy}},{{DATE}} ) }} , mod , 7) }} ) }} , /, 7)}})}}\<br />}}<span style="font-weight:600"><br /> ÉCHOGRAPHIE OBSTÉTRICALE DU PREMIER TRIMESTRE</span> : JQQM010</p>
+<p> Examen réalisé sur un appareil XYZ (DATE XYZ).</p>
+<p> Compte-rendu type Comité Technique</p>
+<p> Réseau Aurore n° agrément dépistage T21 1er trimestre : XYZ</p>
+<p> </p>
+<p><span style="font-weight:600"> Informations initiales</span></p>
+<p> o <span style="font-weight:600">BMI </span>: {{BMI}}</p>
+<p> o <span style="font-weight:600">Datation et terme</span> : </p>
+<p><span style="font-weight:600"> DDR</span>: {{DDR=dd-MM-yyyy}} <span style="font-weight:600">DG</span>:{{::DATE_CALC({{DDR=dd-MM-yyyy}},14,+,J)}}</p>
+<p> grossesse de {{ VAR = SATerme }} semaines et {{ VAR = JoursTerme }} jours </p>
+<p> </p>
+<p> </p>
+<p><span style="font-weight:600"> Contenu de l’examen</span></p>
+<p> o <span style="color:#0000ff">Grossesse</span> </p>
+<p> o Mobilité spontanée.</p>
+<p> o <span style="color:#0000ff">Activité cardiaque</span> </p>
+<p><span style="font-weight:600"> Biométrie</span></p>
+<p> </p>
+<p> o <span style="font-weight:600">Résultats biométriques</span> : {{:: Extract_Table (VAR 12JA SAR , Lcc = 30 ; Sar = 30 ; Cn = 30 ;Herman = 30; Bip = 30; Dat = 30 , DATE VISITE , TOUTE DATE, 100, 20, 1, 200 ,dd-MM-yyyy :mm=Date de l'examen, 50)}}</p>
+<p><span style="font-weight:600"> Morphologie</span></p>
+<p> o <span style="font-weight:600">Contour de la boîte crânienne</span> : aspect habituel*.</p>
+<p> o Absence de particularité de la ligne médiane.</p>
+<p> o Paroi abdominale antérieure : aspect habituel*.</p>
+<p> o Présence de quatre membres comprenant chacun trois segments.</p>
+<p> o <span style="font-weight:600">Volume amniotique</span> : aspect habituel*.</p>
+<p> o <span style="font-weight:600">Aspect du trophoblaste (placenta)</span> : homogène.</p>
+<p> o Absence de masse annexielle suspecte.</p>
+<p><span style="font-weight:600"> CONCLUSION :</span></p>
+<p> Grossesse monofoetale de {{ VAR = SATerme }} semaines et {{ VAR = JoursTerme }} jours </p>
+<p> DDR : {{DDR=dd-MM-yyyy}}</p>
+<p> Début de grossesse au :{{::DATE_CALC({{DDR=dd-MM-yyyy}},14,+,J)}}</p>
+<p> Aspect* habituel des différentes structures analysées.</p>
+<p> On proposera la réalisation du test de dépistage combiné 1er ou séquentiel intégré 2ème trimestre (J.O. 3/07/2009).</p>
+<p> (n° agrément xyz).</p>
+<p> </p>
+<p> </p>
+<p> *Par le mot “aspect” on entend que l’opérateur a examiné une structure ou un organe. Dans le compte rendu, une mention de type «structure d’aspect habituel» signifie que cette structure a été vue et a paru normale à l’examinateur. Dans la majorité des cas, il y a concordance entre le résultat du dépistage échographique et l’état de santé de l’enfant. Cependant, comme pour tout dépistage, des faux négatifs sont possibles : une structure considérée comme vue et normale à l’échographie peut s’avérer en réalité absente ou anormale. Des faux positifs sont également possibles : une structure considérée comme non vue ou</p>
+<p> anormale à l’échographie peut s’avérer en réalité présente ou normale.</p>
+<p> </p>
+<p></p>
+</body></html>

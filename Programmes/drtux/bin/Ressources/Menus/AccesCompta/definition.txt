@@ -1,0 +1,24 @@
+<!DOCTYPE CMenu><CMenu version="0.0" stdsetdef="1">
+<actions>
+    <action>
+        <property name="name">
+            <cstring>Acces_Compta</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>comptabilite.png</iconset>
+        </property>
+        <property name="text">
+            <string>Acces comptabilite</string>
+        </property>
+        <property name="menuText">
+            <string>Acces &amp;Compta</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+</string>
+        </property>
+        <property name="script">
+            <string>{{:: exe_process (WaitEnd ,../../comptabilite/bin/comptabilite)}}</string>
+        </property>
+    </action>
+</actions>
+</CMenu>

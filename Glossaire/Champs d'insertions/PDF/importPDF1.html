@@ -1,0 +1,13 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
+<p>{{:: SET_VAR ( cheminW,C:/Program Files/ImageMagick-6.7.2-Q16/Magickcmd)}}\</p>
+<p>{{:: SET_VAR ( cheminL,/usr/bin/convert)}}\</p>
+<p>{{:: SET_VAR ( chemin, »)}}\</p>
+<p>{{:: SET_VAR ( chemin,{{:: TEST(S,{{OS}},=,W,{{VAR=cheminW}},{{VAR=chemin}})}})}}\</p>
+<p>{{:: SET_VAR ( chemin,{{:: TEST(S,{{OS}},=,L,{{VAR=cheminL}},{{VAR=chemin}})}})}}\</p>
+<p>{{:: SET_VAR ( options, »)}}\</p>
+<p>{{:: SET_VAR ( options,{{:: TEST (S,{{OS}},=,L,–save,{{VAR=options}})}})}}\</p>
+<p>{{:: SET_VAR ( options,{{:: TEST(S,{{OS}},=,W,{{VAR=options}})}})}}\</p>
+<p>{{::SET_VAR(Fichier,{{:: OPEN_FILE_NAME( Fichiers PDF \(*.pdf\);;Tous les fichiers \(*\))}})}}\</p>
+<p>{{::Intitule ( Image scannée ) }} {{::exe_process (WaitEnd, {{VAR=chemin}}, convert, -density, 150, {{VAR = Fichier}} , ../../tmp/import_pdf.png)}}\</p>
+<p>{{::insert_image (../../tmp/import_pdf.png , 700 , 700)}}</p>
+</body></html>

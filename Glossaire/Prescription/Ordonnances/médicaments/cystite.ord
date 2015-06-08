@@ -1,0 +1,50 @@
+
+
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?> 
+<ordotext> 
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial Narrow">
+<p><br /><span style="font-family:Arial;font-weight:600;color:#0000ff">1) </span><span style="font-family:Arial;font-weight:600;text-decoration:underline;color:#0000ff">loméfloxacine 400mg Cpr pell séc B/3</span><span style="font-family:Arial;color:#0000ff"> </span><span style="font-family:Arial;font-style:italic;color:#0000ff"><br />1 comprimé le soir pendant 3 jours </span><br /></p>
+</body></html>
+
+</ordotext> 
+
+<ordoMedicaStruct><PosologieList> 
+<Posologie> 
+<numVersion>1</numVersion> 
+<cip>3345975</cip> 
+<pk>13395</pk> 
+<libelle>Cystite aiguë non compliquée de la femme</libelle> 
+<sexe>F</sexe> 
+<terrain>$AG:216:0:mois$PS:0:0:Kg</terrain> 
+<doseMin>1</doseMin> 
+<doseMax>0</doseMax> 
+<doseUnit>7</doseUnit> 
+<doseLimitMax>0</doseLimitMax> 
+<factCorpQU>0</factCorpQU> 
+<factCorpUnit>2</factCorpUnit> 
+<periode>86400</periode> 
+<equiCoeff>0</equiCoeff> 
+<unitCoeff>28</unitCoeff> 
+<nbPrises>1</nbPrises> 
+<schemaPrise>SO</schemaPrise> 
+<divers></divers> 
+<extraPk>1133</extraPk> 
+<note></note> 
+<posoAdjust>50</posoAdjust> 
+<secabilite>2</secabilite> 
+<numOrdre>1</numOrdre> 
+<posoTextuelle></posoTextuelle> 
+<ald>0</ald> 
+<posoType>2</posoType> 
+<duree>259200</duree> 
+<IdTable>1</IdTable> 
+</Posologie> 
+</PosologieList></ordoMedicaStruct> 
+
+
+
+
+
+
+
+

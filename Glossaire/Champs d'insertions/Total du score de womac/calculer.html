@@ -1,0 +1,24 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:Courier">
+<p><span style="font-size:12pt">$start_titleCalcule la somme des items$end_title</span><span style="font-size:12pt;font-weight:600">Douleur :</span><span style="font-size:12pt"> {{::SET_VAR(douleur,{{::Calc({{::Calc({{::Calc({{::Calc({{:: Extract (* ,Lorsque vous marchez sur une surface plane ?, EOL )}},+,\<br />{{:: Extract (* ,Lorsque vous montez ou descendez les escaliers ?, EOL )}})}},+,\</span></p>
+<p><span style="font-size:12pt">{{:: Extract (* ,La nuit\, lorsque vous êtes au lit ?, EOL )}})}},+,\</span></p>
+<p><span style="font-size:12pt">{{:: Extract (* ,Lorsque vous vous levez d’une chaise ou vous asseyez ?, EOL )}})}},+,\</span></p>
+<p><span style="font-size:12pt">{{:: Extract (* ,Lorsque vous vous tenez debout ?, EOL  )}})}})}}{{VAR=douleur}} sur 20</span></p>
+<p><span style="font-size:12pt;font-weight:600">Raideur :</span><span style="font-size:12pt"> {{::SET_VAR(raideur,{{::Calc({{:: Extract (* ,Quelle est l'importance de la raideur de votre articulation lorsque vous vous levez le matin ?, EOL   )}},+,\</span></p>
+<p><span style="font-size:12pt">{{:: Extract (* ,Quelle est l'importance de la raideur de votre articulation lorsque vous bougez après vous être assis\, couché ou reposé durant la journée ?, EOL   )}})}})}} {{VAR=raideur}} sur 8<br /></span><span style="font-size:12pt;font-weight:600">Fonction :</span><span style="font-size:12pt"> {{::SET_VAR(fonction,{{::Calc({{:: Extract (* ,Descendre les escaliers ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Monter les escaliers ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Vous relever de la position assise ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Vous tenir debout ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Vous pencher en avant ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Marcher en terrain plat ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Entrer et sortir d’une voiture ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Faire vos courses ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Enfiler collants ou chaussettes ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Sortir du lit ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Enlever vos collants ou vos chaussettes ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Vous étendre sur le lit ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Entrer ou sortir d’une baignoire ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Vous asseoir ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Vous asseoir et vous relever des toilettes ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{::Calc({{:: Extract (* ,Faire le ménage &quot; à fond &quot; de votre domicile ?, EOL )}},+,\</span></p>
+<p><span style="font-size:12pt">{{:: Extract (* ,Faire l’entretien quotidien de votre domicile ?, EOL )}})}})}})}})}})}})}})}})}})}})}})}})}})}})}})}})}})}}{{VAR=fonction}} sur 68<br />Soit {{::Calc({{VAR=douleur}},+,{{::Calc({{VAR=raideur}},+,{{VAR=fonction}})}})}} sur 96</span></p>
+</body></html>

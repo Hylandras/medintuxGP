@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p><span style="font-weight:600"> {{::Calc ( {{::Calc ( {{::Extract(Documents,Cholestérol total \(mmol\): ,EOL)}},-,\<br />{{::Extract(Documents,Cholestérol HDL \(mmol\): ,EOL)}})}}\<br />,-,{{::Calc ( {{::Extract(Documents,Triglycérides \(mmol\):,EOL)}},/,2.18)}})}}<br /></span>$start_title<br />Calcul basé sur les valeurs ci-dessus<br />Formule de Friedwald pour les mmol/l : LDL Chol = Chol total - HDL Chol - TG/2.18 $end_title</p>
+</body></html>

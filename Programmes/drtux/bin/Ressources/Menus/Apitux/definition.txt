@@ -1,0 +1,31 @@
+<!DOCTYPE CMenu><CMenu version="0.0" stdsetdef="1">
+<actions>
+    <action>
+        <property name="name">
+            <cstring>Apitux</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>api2.png</iconset>
+        </property>
+        <property name="text">
+            <string>Apitux</string>
+        </property>
+        <property name="menuText">
+            <string>Ap&amp;itux</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+I</string>
+        </property>
+        <property name="script">
+            <string>{{[Execute]
+pathPlugin=../../apitux/bin/apitux
+maskExch=Bonjour tout le monde
+pathIni=****
+waitEnd=n
+[Parametres]
+
+}}</string>
+        </property>
+    </action>
+</actions>
+</CMenu>

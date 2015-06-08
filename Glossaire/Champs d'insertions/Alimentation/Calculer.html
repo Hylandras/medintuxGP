@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p><span style="font-weight:600">{{IF  {{:: Extract (Observation , Se servir , EOL )}} = A|\<br />{{IF  {{:: Extract (Observation , Manger , EOL )}} = A|A|B|}}||}}\<br />{{IF  {{:: Extract (Observation , Se servir , EOL )}} = B| \<br />{{IF  {{:: Extract (Observation , Manger , EOL )}} = C|C|B|}}||}}\<br />{{IF  {{:: Extract (Observation , Se servir , EOL )}} = C|\<br />{{IF  {{:: Extract (Observation , Manger , EOL )}} = A|B|C|}}||}}\<br />$start_title Tient compte du remplissage Se servir et Manger $end_title</span></p>
+</body></html>

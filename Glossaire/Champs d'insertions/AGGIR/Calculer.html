@@ -1,0 +1,73 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p> $start_title <span style="font-weight:600">Tient compte des 8 titres principaux.<br />Les valeurs différentes de C et B ou nulles sont<br />comptées comme A<br />1 = dépendance maximale<br />6 = dépendance nulle</span> $end_title<span style="font-weight:600">{{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|2000|||}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|1200|||}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|40|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|16|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|40|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|16|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|60|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|20|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|100|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|16|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|800|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|120|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|200|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|32|}}}})}})}})}})}})}})}})}}&gt;4379|1| {{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|2000|||}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|1200|||}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|40|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|16|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|40|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|16|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|60|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|20|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|100|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|16|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|800|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|120|}}}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|200|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|32|}}}})}})}})}})}})}})}})}}&gt;4389|2| {{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|1500|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|320|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|1200|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|120|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|40|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|16|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|40|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|16|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|60|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|100|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|16|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|800|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|120|}}|}},-,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|80|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|40|}}|}})}})}})}})}})}})}})}}&gt;2015|2| {{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|0|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|0|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|40|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|16|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|40|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|16|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|60|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|20|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|160|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|20|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|1000|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|400|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|40|}}|}})}})}})}})}})}})}})}}&gt;1531|2|{{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|0|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|0|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|0|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|0|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|2000|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|400|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|2000|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|200|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|0|}}|}})}})}})}})}})}})}})}}&gt;2399|2|{{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|400|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|400|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|400|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|400|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|400|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|800|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|800|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|200|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|0|}}|}})}})}})}})}})}})}})}}&gt;1199|3|{{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|200|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|200|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|500|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|500|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|500|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|500|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|500|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|100|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|200|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|0|}}|}})}})}})}})}})}})}})}}&gt;799|3|{{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|150|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|150|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|300|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|300|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|500|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|500|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|400|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|200|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|200|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|100|}}|}})}})}})}})}})}})}})}}&gt;649|4|{{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|0|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|0|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|3000|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|3000|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|3000|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|3000|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|1000|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|1000|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|1000|}}|}})}})}})}})}})}})}})}}&gt;3999|4|{{IF {{::Calc({{IF {{::Extract(Observation,Cohérence,EOL)}} = C|0|{{IF {{::Extract(Observation,Cohérence,EOL)}}=B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Orientation,EOL)}} = C|0|{{IF {{::Extract(Observation,Orientation,EOL)}} = B|0|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Toilette,EOL)}} = C|3000|{{IF {{::Extract(Observation,Toilette,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Habillage,EOL)}} = C|3000|{{IF {{::Extract(Observation,Habillage,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Alimentation,EOL)}} = C|3000|{{IF {{::Extract(Observation,Alimentation,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Élimination,EOL)}} = C|3000|{{IF {{::Extract(Observation,Élimination,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{::Calc({{IF {{::Extract(Observation,Transferts,EOL)}} = C|1000|{{IF {{::Extract(Observation,Transferts,EOL)}}=B|2000|}}|}},+,\</span></p>
+<p><span style="font-weight:600">{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}} = C|1000|{{IF {{::Extract(Observation,Déplacements intérieurs,EOL)}}=B|1000|}}|}})}})}})}})}})}})}})}}&gt;1999|5|6|}}|}}|}}|}}|}}|}}|}}|}}|}}}}</span></p>
+</body></html>

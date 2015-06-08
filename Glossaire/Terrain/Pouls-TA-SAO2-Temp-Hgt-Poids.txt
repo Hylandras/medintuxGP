@@ -1,0 +1,78 @@
+
+[VAR Constantes de Base] 
+Modèle = Date, Pouls, 31536000, 100, 50, pps, Tachycardie, Bradycardie 
+Modèle = Date, SAO2, 31536000, 0, 92, %, , Hypoxie 
+Modèle = Date, Temp, 31536000, 40.5, 36, °, Hyperthermie, Hypothermie 
+Modèle = Date, TAS, 31536000, 14, 9, cmHg, Hypertension, Hypotension 
+Modèle = Date, TAD, 31536000, 9.5, 5, cmHg, Hypertension, Hypotension 
+[VAR Poids] 
+Modèle = Date, Poids, 31536000, 100, 50, kg, Obésité, Amaigrissement 
+Modèle = Date, Taille, 31536000, 200, 50, cm, Gigantisme, Nanisme 
+Modèle = Date, PC, 31536000, 60, 20, cm, , 
+Modèle = Date, Tour de taille, 31536000, 250, 70, cm, 30, cm(s), , 
+Modèle = Date, Tour de hanches, 31536000, 250, 70, cm, 30, cm(s), , 
+[VAR Pneumo] 
+Modèle = Date, Peak Flow, 31536000, 500, 400, L/min, , Obstruction 
+Modèle = Date, CV, 31536000, 5, 1, L, , 
+Modèle = Date, VR, 31536000, 1, 0, L, , 
+Modèle = Date, VEMS, 31536000, 4, 1, L, , 
+[VAR Obstétrique]
+Modèle = Date, Hauteur utérine, 31536000, 40, 0, cm, , 
+Modèle = Date, Périmètre ombilical, 31536000, 120, 60, cm, , 
+[VAR Constantes supp] 
+Modèle = Date, TSH, 31536000, 4.4, 0.4, u, ,
+Modèle = Date, PSA, 31536000, 4, 0, u, ,
+Modèle = Date, HbA1c, 31536000, 6.5, 4, %, ,
+Modèle = Date, CPK, 31536000, , , u, ,
+Modèle = Date, ACE, 31536000, , , u, ,
+Modèle = Date, AFP, 31536000, , , u, ,
+Modèle = Date, clairance, 31536000, , , ml/min, ,
+Modèle = Date, Glycémie, 31536000, , , g/l, ,
+Modèle = Date, INR, 31536000, , , , ,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

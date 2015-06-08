@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body style="font-size:10pt;font-family:Sans">
+<p>{{::SET_VAR (todo,{{::SI (S,{{DATE DOCUMENT=Observation FORMAT=dd-MM-yyyy}},=,{{DATE TIRET}},NOP,Import)}})}}<br /><br /><br />{{::SET_VAR (modele,{{::SI (S,{{::#SQL_SELECT(RubriquesHead, RbDate_NomDate, WHERE RbDate_IDDos='{{GUID}}' AND RbDate_TypeRub='20030000',1,,)}},=,,premiere_consultation,MG)}})}}<br />{{::SET_VAR (todo,{{::SI (S,{{::#SQL_SELECT(RubriquesHead, RbDate_NomDate, WHERE RbDate_IDDos='{{GUID}}' AND RbDate_Date LIKE '{{DT=yyyy-MM-dd}}%' AND RbDate_TypeRub='20030000',1,,)}},!=,,NOP,Import)}})}}{{VAR=todo}}{{VAR=modele}}<br /><br />{{ insert_image ($Glossaire/ImagesFolder/eyes.png , 300 , 500) }}</p>
+</body></html>

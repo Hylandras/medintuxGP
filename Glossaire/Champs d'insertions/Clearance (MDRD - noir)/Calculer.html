@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans Serif">
+<p>{{IF {{::Extract(Documents,Créatininémie - mg , EOL)}} &gt;0) |{{::exe_process(WaitEnd ,../../Plug/clearance/clearance.php,{{::Extract(Documents,Créatininémie - mg , EOL)}},\<br />{{AGE PATIENT ANNEE ABREGE}},{{SEXE PATIENT}}, 1.21,$ToAbsPath../../tmp/clearance.txt$EndToAbsPath)}}\<br />{{::import (../../tmp/clearance.txt , insert)}} |La créatininémie en mg n'est pas renseignée|}}$start_title<br />Basé sur la créatininémie en mg<br />Résultat en mL/min/1,73 m² de surface corporelle<br />$end_title</p>
+</body></html>

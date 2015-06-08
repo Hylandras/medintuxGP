@@ -1,0 +1,25 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans Serif">
+<p>{{\</p>
+<p>{{REM=-------------- recuperer le nom de l'editeur en cours ------------------------------------}}\</p>
+<p>{{:: CURRENT_EDITOR(name)-editorName}}\</p>
+<p></p>
+<p>{{REM=-------------- positionner repertoire des documents selon nom de l'editeur en cours ------}}\</p>
+<p>{{:: SET_VAR(pathFileToImport,$Glossaire{{VAR=editorName}})}}\   </p>
+<p></p>
+<p>{{REM=-------------- positionner un sous repertoire preferentiel en fonction de l'editeur ------}}\</p>
+<p>{{:: SI(S,$editorName,=,Prescription,{{VAR=pathFileToImport}}/Ordonnances types,$pathFileToImport)&gt;pathFileToImport}}\</p>
+<p>                        </p>
+<p>{{REM=-------------- choix d'un document de avec le selecteur de fichiers ----------------------}}\</p>
+<p>{{:: ABS_PATH($pathFileToImport)&gt;pathFileToImport}}\</p>
+<p>{{:: __LINE_EDIT ($pathFileToImport,chemin, affichage du répertoire de présélection)}}\</p>
+<p>{{:: OPEN_FILE_NAME(Documents [*.html *.HTML];;Tous les fichiers [*],$pathFileToImport)&gt;fileToLoad}}\</p>
+<p></p>
+<p>{{REM=-------------- ce test positionne le mode d'importation a 'noInquire' si le document -----}}\</p>
+<p>{{REM=               peut etre importe sans verifier la presence d'un autre a la date courante  }}\</p>
+<p>{{:: SI(S,$editorName,=,Observation,new,new noInquire)&gt;importMode}}\</p>
+<p></p>
+<p></p>
+<p>{{REM=-------------- importer ce document ------------------------------------------------------}}\</p>
+<p>{{:: IMPORT($fileToLoad,$importMode,$editorName)}}\</p>
+<p>}}</p>
+</body></html>

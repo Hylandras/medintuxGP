@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p>{{IF {{::Extract(Observation,espace RR \(en mm pour 25 mm/s\) , EOL)}} &gt;0) |\<br />{{::exe_process(WaitEnd ,../../Plug/qt_corr/qt_corr.php,{{::Extract(Observation,espace RR \(en mm pour 25 mm/s\) , EOL)}},\<br />{{AGE PATIENT ANNEE ABREGE}},{{SEXE PATIENT}},$ToAbsPath../../tmp/qtc.txt$EndToAbsPath)}}\<br />{{::import (../../tmp/qtc.txt , insert)}}|L'espace RR n'est pas renseigné|}}$start_title<br />Formule de Bazett , soit QTc=K*RR^1/2<br />La limite supérieure de la normale est de 0,39 à 0,40 seconde chez l'homme <br />et 0,41 à 0,44 seconde chez la femme<br />$end_title</p>
+</body></html>

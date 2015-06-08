@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:Helvetica">
+<p><span style="font-size:11pt">$start_title Choisir un correspondant $end_title\<br />{{::DO_LISTE(</span><span style="font-size:12pt">{{::#SQL_SELECT (fchpat_Intervenants\<br /> INNER JOIN Personnes ON fchpat_Intervenants.fchpat_Intervenants_IntervPK=Personnes.ID_PrimKey ,Nom|Prenom,\<br />WHERE fchpat_Intervenants_PatGUID='{{SQL_GET_DOSS_GUID}}',100</span><span style="font-size:11pt"> ,&amp;nbsp;,| ) }}, Intervenants)}}</span></p>
+</body></html>

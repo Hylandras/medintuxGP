@@ -1,0 +1,19 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Courier">
+<p>$start_title Selon les recommandations de l'AFSSAPS$end_title<br />Nombre de facteurs de risque : \<br />{{::Calc ({{IF {{SEXE PATIENT}}=Masculin|{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;50|1||}}|\<br />{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;60|1||}}}},+,\<br />{{::Calc ({{IF {{:: Extract(*,Fumeur,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Antécédents familiaux,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Diabète,EOL)}}=oui|1||}},+,\</p>
+<p>{{IF {{:: Extract(*,HTA,EOL)}}=oui|1||}})}})}})}})}}<br /><span style="font-weight:600">Objectif :</span> {{IF {{::Calc ({{IF {{SEXE PATIENT}}=Masculin|{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;50|1||}}|\<br />{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;60|1||}}}},+,\<br />{{::Calc ({{IF {{:: Extract(*,Fumeur,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Antécédents familiaux,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Diabète,EOL)}}=oui|1||}},+,\</p>
+<p>{{IF {{:: Extract(*,HTA,EOL)}}=oui|1||}})}})}})}})}}&lt;1|2.2|{{IF {{::Calc ({{IF {{SEXE PATIENT}}=Masculin|{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;50|1||}}|\<br />{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;60|1||}}}},+,\<br />{{::Calc ({{IF {{:: Extract(*,Fumeur,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Antécédents familiaux,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Diabète,EOL)}}=oui|1||}},+,\</p>
+<p>{{IF {{:: Extract(*,HTA,EOL)}}=oui|1||}})}})}})}})}}=1|1.91|{{IF {{::Calc ({{IF {{SEXE PATIENT}}=Masculin|{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;50|1||}}|\<br />{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;60|1||}}}},+,\<br />{{::Calc ({{IF {{:: Extract(*,Fumeur,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Antécédents familiaux,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Diabète,EOL)}}=oui|1||}},+,\</p>
+<p>{{IF {{:: Extract(*,HTA,EOL)}}=oui|1||}})}})}})}})}}=2|1.6|{{IF {{::Calc ({{IF {{SEXE PATIENT}}=Masculin|{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;50|1||}}|\<br />{{IF {{AGE PATIENT ANNEE ABREGE}}&gt;60|1||}}}},+,\<br />{{::Calc ({{IF {{:: Extract(*,Fumeur,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Antécédents familiaux,EOL)}}=oui|1||}},+,\</p>
+<p>{{::Calc ({{IF {{:: Extract(*,Diabète,EOL)}}=oui|1||}},+,\</p>
+<p>{{IF {{:: Extract(*,HTA,EOL)}}=oui|1||}})}})}})}})}}&gt;2|1||}}|}}|}}|}}g/L</p>
+<p></p>
+</body></html>

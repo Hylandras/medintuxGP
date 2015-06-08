@@ -1,0 +1,52 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body style="font-size:10pt;font-family:Sans">
+<p><span style="font-weight:600">Les calculs sont effectués à  partir du premier jour de la date des dernières règles le {{DDR = dd MMMM yyyy}}</span><br /><br />Aujourd'hui, le {{DT=d MMMM yyyy }}, le terme est de  {{TERME_GROSSESSE}}<br /><br /><br /><table border=1 cellpadding=2 cellspacing=2 width=100% >
+<tr><td>
+<p>Grossesse à déclarer avant la 15ème SA </p></td><td>
+<p>{{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 105, +, J  )}}</p></td></tr>
+<tr><td>
+<p>Première échographie (12ème SA) entre </p></td><td>
+<p>{{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 84, +, J  )}} -- {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 91, +, J  )}}</p></td></tr>
+<tr><td>
+<p>Deuxième échographie (22ème SA) entre </p></td><td>
+<p>{{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 154, +, J  )}} -- {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 161, +, J  )}}</p></td></tr>
+<tr><td>
+<p>Troisième échographie (32ème SA) entre </p></td><td>
+<p>{{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 224, +, J  )}} -- {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 231, +, J  )}}</p></td></tr>
+<tr><td>
+<p>Trisomie 21 et biomarqueurs (11ème-13ème SA) entre </p></td><td>
+<p>{{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 77, +, J  )}} -- {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 97, +, J  )}}</p></td></tr>
+<tr><td>
+<p>Trisomie 21 et biomarqueurs (14ème-15ème SA) entre </p></td><td>
+<p>{{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 98, +, J  )}} -- {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 112, +, J  )}}</p></td></tr>
+<tr><td>
+<p>Terme prévu le (40ème SA) </p></td><td>
+<p><span style="font-weight:600">{{:: DATE_CALC( {{DDR = dd-MM-yyyy}} , 280, +, J  )}}</span></p></td></tr>
+</table>
+<br /><br /><br /><br />
+<span style="font-weight:600">Les congés de maternité</span>
+<table border=1 cellpadding=2 cellspacing=2 width=100% >
+<tr><td width=50%>
+<p>Si moins de trois enfants (6 S avant / 10 S après) </p></td><td width=25%>
+<p>du {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 238, +, J  )}}</p></td><td width=25%>
+<p>au {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 350, +, J  )}}</p></td></tr>
+</table>
+<br /><br /><table border=1 cellpadding=2 cellspacing=2 width=100% >
+<tr><td width=50%>
+<p>À partir du troisième enfant (8 S avant / 18 S après) </p></td><td width=25%>
+<p>du {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 224, +, J  )}}</p></td><td width=25%>
+<p>au {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 406, +, J  )}}</p></td></tr>
+</table>
+<br /><br /><table border=1 cellpadding=2 cellspacing=2 width=100% >
+<tr><td width=50%>
+<p>Pour des jumeaux (10 S avant / 22 S après) </p></td><td width=25%>
+<p>du {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 210, +, J  )}}</p></td><td width=25%>
+<p>au {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 434, +, J  )}}</p></td></tr>
+</table>
+<br /><br /><table border=1 cellpadding=2 cellspacing=2 width=100% >
+<tr><td width=50%>
+<p>Pour des triplés (24 S avant / 22 S après) </p></td><td width=25%>
+<p>du {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 112, +, J  )}}</p></td><td width=25%>
+<p>au {{:: DATE_CALC( {{DDR = dd-MM-yyyy}}, 434, +, J  )}}</p></td></tr>
+</table>
+<br /><br /></p>
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE CMenu><CMenu version="0.0" stdsetdef="1">
+<actions>
+    <action>
+        <property name="name">
+            <cstring>Acces_personnes</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>personnes.png</iconset>
+        </property>
+        <property name="text">
+            <string>Acces Annuaire</string>
+        </property>
+        <property name="menuText">
+            <string>Acces Annuaire</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+^</string>
+        </property>
+        <property name="script">
+            <string>{{:: exe_process (WaitEnd ,../../personnes/bin/personnes)}}</string>
+        </property>
+    </action>
+</actions>
+</CMenu>

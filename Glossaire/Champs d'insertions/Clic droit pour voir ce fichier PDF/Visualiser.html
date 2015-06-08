@@ -1,0 +1,8 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
+<p><span style="font-family:Fixed">{{\<br />{{:: SET_VAR ( Pdf_VisualW,C:/Program Files/Foxit Software/Foxit Reader/Foxit Reader)}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_VisualL,/usr/bin/okular)}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_VisualM,/Applications/Aperçu)}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_Visual,chemin inconnu)}}\<br />{{:: TEST (S,{{OS}},=,M,{{VAR=Pdf_VisualM}},{{VAR=Pdf_Visual}})&gt;Pdf_Visual}}\</span></p>
+<p><span style="font-family:Fixed">{{:: TEST (S,{{OS}},=,L,{{VAR=Pdf_VisualL}},{{VAR=Pdf_Visual}})&gt;Pdf_Visual}}\</span></p>
+<p><span style="font-family:Fixed">{{:: TEST (S,{{OS}},=,W,{{VAR=Pdf_VisualW}},{{VAR=Pdf_Visual}})&gt;Pdf_Visual}}\<br />{{:: RM({{:: CS({{:: Extract (*,Voir ce fichier PDF , EOL)}})}},:)&gt;pdf_a_visualiser}}\<br />{{:: exe_process (noWaitEnd , {{var=Pdf_Visual}},</span><span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#aa0000">$ToAbsPath ../../../PatientFiles/{{GET_DOSS_GUID}}/</span><span style="font-family:Fixed">{{var=pdf_a_visualiser}})}}\<br />}}</span></p>
+</body></html>

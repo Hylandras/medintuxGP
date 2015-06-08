@@ -1,0 +1,13 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p>$start_title Crée automatiquement le certificat $end_title de la plongée sous-marine {{\</p>
+<p>{{:: SET_VAR (certificat,\</p>
+<p>{{:: TEST (S,\</p>
+<p>{{:: MESSAGE_ALERT ($File $Glossaire/Prescription/Certificats/Sport aptitude.html, Faire le certificat maintenant ?,\</p>
+<p>Oui, Non,,,630, 450,)\</p>
+<p> }}\</p>
+<p>, = , Oui , $Glossaire/Prescription/Certificats/Sport aptitude.html ,  ) \</p>
+<p>}}\</p>
+<p>)}}\</p>
+<p>{{::import ({{VAR=certificat}}, new , Prescription )}}\</p>
+<p>}}</p>
+</body></html>

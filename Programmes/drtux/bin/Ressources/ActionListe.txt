@@ -1,0 +1,15 @@
+
+{{CCAM_View}}
+{{CIM10Urg}}
+{{ActesClassants}}
+{{HeureCourante}}
+{{DateCourante}}
+{{PlacerBiologie}}
+{{PlacerPathologies}}
+{{DefinirATCD_Cim10}}
+{{DefinirATCD_Allergie}} 
+{{TraitementCourant}} 
+{{TraitementHabituel}}
+{{InsérerOrdo}}
+{{Enregistrer comme un document type}}
+

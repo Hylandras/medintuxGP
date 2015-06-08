@@ -1,0 +1,10 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
+<p>$start_titleLancer une feuille de recueil$end_title{{\<br />{{:: SET_VAR ( cheminW,C:/Program Files/Foxit Software/Foxit Reader/Foxit Reader)}}\</p>
+<p>{{:: SET_VAR ( cheminL,/usr/bin/okular)}}\</p>
+<p>{{:: SET_VAR ( cheminM,/Applications/Aperçu)}}\</p>
+<p>{{:: SET_VAR ( chemin,chemin inconnu)}}\</p>
+<p>{{:: SET_VAR ( chemin,{{:: TEST (S,{{OS}},=,M,{{VAR=cheminM}},{{VAR=chemin}})}})}}\</p>
+<p>{{:: SET_VAR ( chemin,{{:: TEST (S,{{OS}},=,L,{{VAR=cheminL}},{{VAR=chemin}})}})}}\</p>
+<p>{{:: SET_VAR ( chemin,{{:: TEST (S,{{OS}},=,W,{{VAR=cheminW}},{{VAR=chemin}})}})}}\</p>
+<p>{{:: exe_process (NoWaitEnd ,{{VAR=chemin}},$ToAbsPath../../pdf/journeedesuividietemotionactivite.pdf$EndToAbsPath)}}\<br />}}</p>
+</body></html>

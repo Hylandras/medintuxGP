@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:Helvetica">
+<p><span style="font-size:11pt">$start_title Choisir un correspondant parmi la spécialité sélectionnée$end_title\<br />{{:: SET_VAR ( spec,{{GET_SELECTION}})}}{{::DO_LISTE({{::#SQL_SELECT (Personnes , Qualite|Nom |Prenom,WHERE Qualite LIKE '{{VAR=spec}}', 30,&amp;nbsp;,| ) }}, Spécialistes)}}</span></p>
+</body></html>

@@ -1,0 +1,80 @@
+[VAR Poids] 
+Modèle = Date, Poids, 31536000, 100, 50, kg, Obésité, Amaigrissement 
+Modèle = Date, Taille, 31536000, 200, 50, cm, Gigantisme, Nanisme 
+Modèle = Date, DDR, 31536000, , , , , , , 
+Modèle = Date, DG, 31536000, , ,, , , , 
+Modèle = Date, Sar, 31536000, 42, 0, sar, ,
+[VAR 12JA SAR] 
+Modèle = Date, Ddr, 31536000, , , date=DDR, , 
+Modèle = Date, Lcc, 31536000, 500, 400, mm, , 
+Modèle = Date, Sar, 31536000, 42, 0, sar, , 
+Modèle = Date, Cn, 31536000, 10, 0, mm, ,
+Modèle = Date, Herman, 31536000, 9, 0, , ,
+Modèle = Date, Bip, 31536000, 150, 0, mm, ,
+Modèle = Date, Dat, 31536000, 300, 0, mm, , 
+Modèle = Date, DDR, 31536000, , , , , , , 
+Modèle = Date, DG, 31536000, , ,, , , , 
+[VAR 22JA SAR]
+Modèle = Date, DDR, 31536000, , , , , , , 
+Modèle = Date, DG, 31536000, , ,, , , , 
+Modèle = Date, Sar, 31536000, 42, 0, semaine, ,
+Modèle = Date, Bip, 31536000, 150, 0, mm, ,
+Modèle = Date, Bip%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pc, 31536000, 300, 0, mm, ,
+Modèle = Date, Pc%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pa, 31536000, 300, 0, mm, ,
+Modèle = Date, Pa%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Femur, 31536000, 300, 0, mm, ,
+Modèle = Date, Femur%, 31536000, 90, 10, centiles, sup 90, inf 3
+[VAR 32JA SAR]
+Modèle = Date, DDR, 31536000, , , , , , , 
+Modèle = Date, DG, 31536000, , ,, , , , 
+Modèle = Date, Sar, 31536000, 42, 0, semaine, ,
+Modèle = Date, Bip, 31536000, 150, 0, mm, ,
+Modèle = Date, Bip%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pc, 31536000, 300, 0, mm, ,
+Modèle = Date, Pc%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pa, 31536000, 300, 0, mm, ,
+Modèle = Date, Pa%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Femur, 31536000, 300, 0, mm, ,
+Modèle = Date, Femur%, 31536000, 90, 10, centiles, sup 90, inf 3
+[VAR 12JB SAR] 
+Modèle = Date, Ddr, 31536000, , , date=DDR, , 
+Modèle = Date, Lcc, 31536000, 500, 400, mm, , 
+Modèle = Date, Sar, 31536000, 42, 0, sar, , 
+Modèle = Date, Cn, 31536000, 10, 0, mm, ,
+Modèle = Date, Herman, 31536000, 9, 0, , ,
+Modèle = Date, Bip, 31536000, 150, 0, mm, ,
+Modèle = Date, Dat, 31536000, 300, 0, mm, , 
+Modèle = Date, DDR, 31536000, , , , , , , 
+Modèle = Date, DG, 31536000, , ,, , , , 
+[VAR 22JB SAR]
+Modèle = Date, DDR, 31536000, , , , , , , 
+Modèle = Date, DG, 31536000, , ,, , , , 
+Modèle = Date, Sar, 31536000, 42, 0, semaine, ,
+Modèle = Date, Bip, 31536000, 150, 0, mm, ,
+Modèle = Date, Bip%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pc, 31536000, 300, 0, mm, ,
+Modèle = Date, Pc%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pa, 31536000, 300, 0, mm, ,
+Modèle = Date, Pa%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Femur, 31536000, 300, 0, mm, ,
+Modèle = Date, Femur%, 31536000, 90, 10, centiles, sup 90, inf 3
+[VAR 32JB SAR]
+Modèle = Date, DDR, 31536000, , , , , , , 
+Modèle = Date, DG, 31536000, , ,, , , , 
+Modèle = Date, Sar, 31536000, 42, 0, semaine, ,
+Modèle = Date, Bip, 31536000, 150, 0, mm, ,
+Modèle = Date, Bip%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pc, 31536000, 300, 0, mm, ,
+Modèle = Date, Pc%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Pa, 31536000, 300, 0, mm, ,
+Modèle = Date, Pa%, 31536000, 90, 10, centiles, sup 90, inf 3
+Modèle = Date, Femur, 31536000, 300, 0, mm, ,
+Modèle = Date, Femur%, 31536000, 90, 10, centiles, sup 90, inf 3
+[VAR Constantes de Base] 
+Modèle = Date, Pouls, 31536000, 100, 50, pps, Tachycardie, Bradycardie 
+Modèle = Date, SAO2, 31536000, 0, 92, %, , Hypoxie 
+Modèle = Date, Temp, 31536000, 40.5, 36, °, Hyperthermie, Hypothermie 
+Modèle = Date, Maxima, 31536000, 14, 9, cmHg, Hypertension, Hypotension 
+Modèle = Date, Minima, 31536000, 9.5, 5, cmHg, Hypertension, Hypotension 

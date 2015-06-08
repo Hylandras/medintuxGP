@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p><span style="font-weight:600">{{IF  {{:: Extract (Observation , Haut , EOL )}} = A|\<br />{{IF  {{:: Extract (Observation , Bas , EOL )}} = A|A|B|}}||}}\<br />{{IF  {{:: Extract (Observation , Haut , EOL )}} = C|{{IF  {{:: Extract (Observation , Bas , EOL )}} = C|C|B|}}||}}\<br />{{IF  {{:: Extract (Observation , Haut , EOL )}} = B|B|}} $start_title Tient compte du remplissage Haut et Bas $end_title</span></p>
+</body></html>

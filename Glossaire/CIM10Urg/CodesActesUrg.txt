@@ -1,0 +1,129 @@
+Electroencéphalogramme	UA01
+Ponction lombaire	UA02
+Suture linéaire plaie paupière ou arcade	UA03
+Fond d'oeil	UA04
+Tamponnement antérieur épistaxis	UA05
+Tamponnement postérieur épistaxis	UA06
+Ablation corps étranger fosse nasale	UA07
+Fibroscopie Laryngotrachéale	UA08
+Trachéotomie	UA09
+Echo-doppler des vaisseaux du cou	UA10
+Echo-cardiographie avec doppler	UA11
+ECG	UA12
+Doppler artériel des membres inf	UA13
+Doppler veineux	UA14
+Ablation endoscopique corps étranger respiratoire	UA15
+Fibroscopie bronchique	UA16
+Aérosol	UA17
+Ponction pleurale diagnostique	UA18
+Sonde E.E.S transcutanée	UA19
+Sonde E.E.S. endocavitaire	UA20
+Gaz du sang	UA21
+Scintigraphie pulmonaire	UA22
+Ponction pleurale évacuatrice	UA23
+Fibro. Oesogastroduodénale en urgence	UA24
+TTT thrombose hémorroïdaire externe	UA25
+Anuscopie	UA26
+Ponction d'ascite	UA27
+Lavage gastrique pour Hgie digestive haute	UA28
+Tamponnement varices oesophagiennes (Blakemore)	UA29
+Sonde urinaire	UA30
+Cathéter sus-pubien	UA31
+Chirurgie de l'ongle, réimplantation : main	UA32
+Chrirugie de l'ongle incarné : pied	UA33
+Autres interventions sur l'ongle : pied	UA34
+Traitement plaie endobuccale	UA35
+Traitement plaie linguale profonde	UA36
+Réduction manuelle luxation uni/bilatérale ATM	UA37
+Pansement brûlure < 10% sauf visage et mains	UA38
+Pansement brûlure 10 à 30% sauf visage et mains	UA39
+Pansement brûlure visage ou mains : 1 site	UA40
+Pansement brûlure visage ou mains : 2 sites	UA41
+Pansement brûlure visage ou mains : 3 sites	UA42
+Réduction orthopédique d'1 luxation du coude	UA43
+Parage suture d'1 plaie superficielle peu étendue	UA44
+Parage suture d'1 plaie profonde et/ou étendue	UA45
+Parage suture de plaies superficielles peu étendues	UA46
+Parage suture de plaies profondes et/ou étendues	UA47
+Extraction de C.E. récent de la peau	UA48
+Extraction de C.E. ancien de la peau	UA49
+Extraction de C.E. profond des parties molles	UA50
+Evacuation de collection superficielle (abcès....)	UA51
+Evacuation de collection profonde (abcès....)	UA52
+Excision ou incision de panaris	UA53
+Orthèse immobilisation provisoire membre sup.	UA54
+Orthèse immobilisation provisoire membre inf.	UA55
+Orthèse immobilisation cervicale	UA56
+TTT orthopédique fracture clavicule	UA57
+TTT orthopédique fracture omoplate	UA58
+Réduction orthopédique luxation scapulo-humérale	UA59
+TTT orthopédique fract. métaphyse sup. humérus	UA60
+TTT orthopédique fract. diaphyse humérus	UA61
+TTT ortho. fract. métaphyse inf. humérus et/ou sup. cubitus/radius (extra-articulaire)	UA62
+TTT orthopédique fracture 1 seul os avant-bras	UA63
+TTT orthopédique fracture 2 os avant-bras	UA64
+TTT orthopédique fracture métaphyse inférieure radius/cubitus	UA65
+Réduction orthopédique de luxation/fracture articulaire pour 1 seule articulation : doigts	UA66
+Réduction orthopédique de luxation/fracture articulaire pour 2 articulations ou plus : doigts	UA67
+TTT ortho. d'1 fracture extra-articulaire : 1 doigt	UA68
+TTT ortho. d'1 fract. extra-artic. : 2 doigts ou plus	UA69
+Réduction de fracture et contention par plâtre cruro-pédieux : diaphyse tibia/péroné	UA70
+Réduction orthopédique de luxation/fracture articulaire : rotule/tibia	UA71
+TTT orthopédique entorse grave cheville	UA72
+Biopsie peau et parties molles	UA73
+Lavage auriculaire	UA74
+Ponction articulaire diagnostique	UA75
+Ponction articulaire évacuatrice	UA76
+Extraction CE amygdalien	UA77
+Extraction CE conjonctive	UA78
+Extraction CE cornéen	UA79
+Extraction CE oreille	UA80
+Evacuation d'hématome unguéal	UA81
+Réduction orthopédique de luxation, fracture acromio-claviculaire ou sterno-claviculaire	UA82
+Réduction orthopédique de luxation, fracture du poignet	UA83
+Réduction orthopédique de luxation, fracture de la cheville	UA84
+Réduction orthopédique de luxation, fracture du tarse	UA85
+Réduction orthopédique de luxation, fracture des métatarses, des orteils	UA86
+Traitement orthopédique de luxation, fracture du tarse	UA87
+Traitement orthopédique de luxation, fracture des métatarses, des orteils	UA88
+Anesthésie locale	UB01
+Anesthésie régionale	UB02
+Anesthésie générale	UB03
+Urographie intraveineuse	UG01
+Artériographie des membres inférieurs	UG02
+Artériographie cérébrale	UG03
+Angiographie pulmonaire	UG04
+Phlébographie membres inférieurs	UG05
+Aortographie thoracique	UG06
+Aortographie abdominale	UG07
+Lavement baryté aux hydrosolubles	UG08
+Autres actes de radio	UG09
+Scanner cérébral sans injection	UG10
+Scanner cérébral avec injection	UG11
+Scanner rachidien	UG12
+IRM crâne contenu et massif facial	UG13
+Scanner abdominal	UG14
+Scanner thoracique avec injection	UG15
+IRM rachis et contenu	UG16
+Echographie de la grossesse au 1er trimestre	UG17
+Echographie de la grossesse au 2ème trimestre	UG18
+Echographie de la grossesse au 3ème trimestre	UG19
+Echographie abdominale	UG20
+Echographie rénale	UG21
+Echographie testiculaire	UG22
+Echographie pelvienne en dehors grossesse	UG23
+Coronarographie	UG24
+Echographie des parties molles	UG25
+Scanner du massif facial	UG26
+Mise en place d'1 drain thoracique	UO01
+Cathéter veineux central ou désilet	UO02
+Intubation	UO03
+Cardioversion	UO04
+TTT d'1 arrêt cardio-respiratoire	UO05
+Drogues vasoactives	UO06
+Fibrinolytiques	UO07
+Transfusion massive	UO08
+Lavage gastrique	UO09
+Ventiliation mécanique	UO10
+Ventiliation non invasive	UO11
+

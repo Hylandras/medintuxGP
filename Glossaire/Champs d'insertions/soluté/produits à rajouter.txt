@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans">
+<p><span style="font-family:Arial Narrow"><br />	          </span><span style="font-family:Arial Narrow;color:#0000ff">produits à rajouter</span><span style="font-family:Arial Narrow"> :</span></p>
+</body></html>

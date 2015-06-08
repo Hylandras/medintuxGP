@@ -1,0 +1,6 @@
+#define TYP_ORDO_CALC    |20020100|or
+#define TYP_ORDONNANCE   |20020000|or
+#define TYP_ORDONNANCE   |20020200|or
+#define TYP_CERTIFICAT   |20020300|ce
+#define TYP_COURRIER     |20020500|co
+

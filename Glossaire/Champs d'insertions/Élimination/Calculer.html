@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
+<p><span style="font-weight:600">{{IF  {{:: Extract (Observation , Urinaire , EOL )}} = A|\<br />{{IF  {{:: Extract (Observation , Anale , EOL )}} = A|A|\<br />{{IF  {{:: Extract (Observation , Anale , EOL )}} =B|B|C|}}||}}||}}\<br />{{IF  {{:: Extract (Observation , Urinaire , EOL )}} = C|C|}}\<br />{{IF  {{:: Extract (Observation , Urinaire , EOL )}} = B|\<br />{{IF  {{:: Extract (Observation , Anale , EOL )}} = C|C|B|}}||}}\<br />$start_title Tient compte du remplissage Urinaire Anal $end_title</span></p>
+</body></html>
