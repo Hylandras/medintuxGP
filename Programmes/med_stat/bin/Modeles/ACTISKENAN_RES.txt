@@ -1,0 +1,78 @@
+
+  <Filtre_SQL_List>
+    <Filtre_SQL_List_count>2</Filtre_SQL_List_count>
+    <Filtre_SQL_List_NbCol>5</Filtre_SQL_List_NbCol>
+    <Filtre_SQL_List_Line>
+      <Filtre_SQL_Item0_Col0>  ( </Filtre_SQL_Item0_Col0>
+      <Filtre_SQL_Item0_Col1>RbDate_TypeRub</Filtre_SQL_Item0_Col1>
+      <Filtre_SQL_Item0_Col2>est égal</Filtre_SQL_Item0_Col2>
+      <Filtre_SQL_Item0_Col3>20020100</Filtre_SQL_Item0_Col3>
+      <Filtre_SQL_Item0_Col4></Filtre_SQL_Item0_Col4>
+    </Filtre_SQL_List_Line>
+    <Filtre_SQL_List_Line>
+      <Filtre_SQL_Item1_Col0>  ) </Filtre_SQL_Item1_Col0>
+      <Filtre_SQL_Item1_Col1></Filtre_SQL_Item1_Col1>
+      <Filtre_SQL_Item1_Col2></Filtre_SQL_Item1_Col2>
+      <Filtre_SQL_Item1_Col3></Filtre_SQL_Item1_Col3>
+      <Filtre_SQL_Item1_Col4></Filtre_SQL_Item1_Col4>
+    </Filtre_SQL_List_Line>
+  </Filtre_SQL_List>
+ <Sql_Result_Data>SELECT * FROM RubriquesHead INNER JOIN IndexNomPrenom ON RubriquesHead.RbDate_IDDos=IndexNomPrenom.FchGnrl_IDDos INNER JOIN fchpat ON RubriquesHead.RbDate_IDDos=fchpat.FchPat_GUID_Doss INNER JOIN RubriquesBlobs ON RubriquesHead.RbDate_RefBlobs_PrimKey=RubriquesBlobs.RbDate_PrimKey WHERE RbDate_Date &gt;= '19000101000000' AND RbDate_Date&lt;= '20160101000000' AND (`RbDate_TypeRub` = '20020100' ) ORDER BY RubriquesHead.RbDate_IDDos ;</Sql_Result_Data>
+  <Filtre_Meta_List>
+    <Filtre_Meta_List_count>2</Filtre_Meta_List_count>
+    <Filtre_Meta_List_NbCol>6</Filtre_Meta_List_NbCol>
+    <Filtre_Meta_List_Line>
+      <Filtre_Meta_Item0_Col0>  ( </Filtre_Meta_Item0_Col0>
+      <Filtre_Meta_Item0_Col1>Nom_Medicament</Filtre_Meta_Item0_Col1>
+      <Filtre_Meta_Item0_Col2>contient</Filtre_Meta_Item0_Col2>
+      <Filtre_Meta_Item0_Col3>ACTISKENAN</Filtre_Meta_Item0_Col3>
+      <Filtre_Meta_Item0_Col4></Filtre_Meta_Item0_Col4>
+      <Filtre_Meta_Item0_Col5></Filtre_Meta_Item0_Col5>
+    </Filtre_Meta_List_Line>
+    <Filtre_Meta_List_Line>
+      <Filtre_Meta_Item1_Col0>  ) </Filtre_Meta_Item1_Col0>
+      <Filtre_Meta_Item1_Col1></Filtre_Meta_Item1_Col1>
+      <Filtre_Meta_Item1_Col2></Filtre_Meta_Item1_Col2>
+      <Filtre_Meta_Item1_Col3></Filtre_Meta_Item1_Col3>
+      <Filtre_Meta_Item1_Col4></Filtre_Meta_Item1_Col4>
+      <Filtre_Meta_Item1_Col5></Filtre_Meta_Item1_Col5>
+    </Filtre_Meta_List_Line>
+  </Filtre_Meta_List>
+  <MetaFieldDef_List>
+    <MetaFieldDef_List_count>2</MetaFieldDef_List_count>
+    <MetaFieldDef_List_NbCol>4</MetaFieldDef_List_NbCol>
+    <MetaFieldDef_List_Line>
+      <MetaFieldDef_Item0_Col0>code_ATC</MetaFieldDef_Item0_Col0>
+      <MetaFieldDef_Item0_Col1>Prescription Vidal</MetaFieldDef_Item0_Col1>
+      <MetaFieldDef_Item0_Col2>GET_ALL_VALUE_IN_TEXT ( &lt;atc&gt; , &lt;/atc&gt; )</MetaFieldDef_Item0_Col2>
+      <MetaFieldDef_Item0_Col3></MetaFieldDef_Item0_Col3>
+    </MetaFieldDef_List_Line>
+    <MetaFieldDef_List_Line>
+      <MetaFieldDef_Item1_Col0>Nom_Medicament</MetaFieldDef_Item1_Col0>
+      <MetaFieldDef_Item1_Col1>Prescription Vidal</MetaFieldDef_Item1_Col1>
+      <MetaFieldDef_Item1_Col2>GET_ALL_VALUE_IN_TEXT ( &lt;gph_na&gt; , &lt;/gph_na&gt; )</MetaFieldDef_Item1_Col2>
+      <MetaFieldDef_Item1_Col3></MetaFieldDef_Item1_Col3>
+    </MetaFieldDef_List_Line>
+  </MetaFieldDef_List>
+  <CDenombre_List>
+    <CDenombre_List_count>0</CDenombre_List_count>
+  </CDenombre_List>
+  <ResHeader_List>
+    <ResHeader_List_count>5</ResHeader_List_count>
+    <ResHeader_List_Label>° FchGnrl_NomDos</ResHeader_List_Label>
+
+    <ResHeader_List_Label>° FchGnrl_Prenom</ResHeader_List_Label>
+
+    <ResHeader_List_Label>° ID_PrimKey</ResHeader_List_Label>
+
+    <ResHeader_List_Label>° FchGnrl_IDDos</ResHeader_List_Label>
+
+    <ResHeader_List_Label>* Nom_Medicament</ResHeader_List_Label>
+
+  </ResHeader_List>
+  <Date Heure>
+    <Date de debut>20012015</Date de debut>
+    <Date de fin>21012015</Date de fin>
+    <Heure de debut>0800</Heure de debut>
+    <Heure de fin>0800</Heure de fin>
+  </Date Heure>

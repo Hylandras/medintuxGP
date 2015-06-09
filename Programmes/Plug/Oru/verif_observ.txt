@@ -1,0 +1,76 @@
+{{REM= ---------------------------------- type image selon sexe medecin ---------------------------------------------------------------------------------------}}\
+{{:: VAR_SET(messageErreur,)}}\
+{{:: SI(S,{{USER SEXE MEDECIN}},=,M,cyber-flic.png,cyber_police.png)>imageMessage}}\
+
+{{REM= ---------------------------------- entete infirmiere ---------------------------------------------------------------------------------------------------}}\
+{{:: Extract (Observation,Date :, EOL)-itemDateEntree}}\
+{{::#SI (S,$itemDateEntree,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Date d'entrée vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Heure d'Arrivée SU :, EOL)-itemHeureEntree}}\
+{{::#SI (S,$itemHeureEntree,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Heure d'arrivée vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Mode d'entree :,Heure d'Arriv)-itemModeEntree}}\
+{{::#SI (S,$itemModeEntree,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Mode d'entree vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Provenance :, EOL)-itemProvenance}}\
+{{::#SI (S,$itemProvenance,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Provenance vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Transport admission :, EOL)-itemTransAdmission}}\
+{{::#SI (S,$itemTransAdmission,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">c admission vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Transport mode de prise en charge :, EOL)-itemTransPec}}\
+{{::#SI (S,$itemTransPec,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Transport mode de prise en charge vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Motif CIM10 :, EOL)-itemMotifCim}}\
+{{::#SI (S,$itemMotifCim,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Motif CIM 10 vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Salle d'examen :, EOL)-itemSaleExam}}\
+{{::#SI (S,$itemSaleExam,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Sale d'examen vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Code IDE :, EOL)-itemCodeIDE}}\
+{{::#SI (S,$itemCodeIDE,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Code IDE vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,Circonstances :, EOL)-itemCirconstances}}\
+{{::#SI (S,$itemCirconstances,=,,{{VAR=messageErreur}}<img src=LedBlueWhiteRight.png>     <span style="color:#0000ff">Ciconstances vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{REM= ---------------------------------- donnees medicales ---------------------------------------------------------------------------------------------------}}\
+
+{{:: RM({{:: Extract (Observation,AVIS SPECIALISES :, TRAITEMENT)}},:)-itemAvisSpe}}\
+{{:: RM($itemAvisSpe)-itemAvisSpe}}\
+{{::#SI (S,$itemAvisSpe,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Avis spécialisés vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,C.C.M.U, EOL)}},:)-itemCCMU}}\
+{{::#SI (S,$itemCCMU,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">C.C.M.U vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: Extract (Observation,~","~)-itemCertif}}\
+{{::#SI (S,$itemCertif,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Certificat vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,Arrêt Travail \(ou scolaire\), EOL)}},:)-itemArretW}}\
+{{::#SI (S,$itemArretW,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Arrêt de travail vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,Arrêt Sport, EOL)}},:)-itemArretSport}}\
+{{::#SI (S,$itemArretSport,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Arrêt de sport vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,ITT, EOL)}},:)-itemItt}}\
+{{::#SI (S,$itemItt,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">ITT vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,CIM10Urg,POST URGENCE)}},:)-itemCIMSortie}}\
+{{::#SI (S,$itemCIMSortie,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">CIM10 de sortie vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,Type de sortie,EOL)}},:)-itemTypeSortie}}\
+{{::#SI (S,$itemTypeSortie,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Type de sortie vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,Date SU,H. d)}},:)-itemDateSortie}}\
+{{::#SI (S,$itemDateSortie,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Date de sortie vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,part SU,EOL)}},:)-itemHeureSortie}}\
+{{::#SI (S,$itemHeureSortie,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Heure de sortie vide</span><br>,$messageErreur)>messageErreur}}\
+
+{{:: RM({{:: Extract (Observation,Cotation,$ToEnd)}},:)-itemCotation}}\
+{{:: RM($itemCotation,Codage CCAM)-itemCotation}}\
+{{:: RM($itemCotation)>itemCotation}}\
+{{::#SI (S,$itemCotation,=,,{{VAR=messageErreur}}<img src=LedRedWhiteRight.png>     <span style="color:#0000ff">Cotations vides</span><br>,$messageErreur)>messageErreur}}\
+
+
+{{::#VAR_SET(TO_DO,{{::#SI (S,{{VAR=messageErreur}},=,,_NO,)}})}}\
+{{::#{{VAR=TO_DO}}MESSAGE_ALERT (<table cellSpacing="0" cellpadding="0" width=100% border="0"><tbody><tr><td width=35%><img src={{VAR=imageMessage}}></td> <td width=65%>{{VAR=messageErreur}}</td></tr></tbody></table>,Vérification du dossier,j'ai pris note,,,, 650, 400,$Glossaire/ImagesFolder) }}\

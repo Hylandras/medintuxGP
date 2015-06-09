@@ -1,0 +1,70 @@
+
+[Observation]
+  Zoom = 10
+  Montrer = Normal
+  Position =  0 , 0 , 603 , 194
+
+[Prescription]
+  Zoom = 12
+  Montrer = Normal
+  Position = 2 , 220 , 603 , 284
+
+
+[Identité]
+  Montrer = Non
+  Position = 198 , 3 , 481 , 503
+
+
+[Terrain]
+  Montrer = Normal
+  Position = 365 , 3 , 311 , 502
+
+
+[Documents]
+  Montrer = Normal
+  Position = 1 , 2 , 580 , 369
+
+
+[Choix Patients]
+  Montrer = non
+  Position = 242 , 6 , 213 , 499
+
+
+[Dock glossaire]
+  Montrer = Normal
+  Position = 0 , 147 , 200 , 943
+
+
+[Windows List]
+  Observation =  0 , 0 , 604 , 218
+  Prescription = 2 , 220 , 604 , 308
+  Terrain = 365 , 3 , 312 , 526
+  Choix Patients = 922 , 0 , 213 , 849
+
+
+[Impression]
+  Resolution = 71 , 71
+  MargTop = 5.94
+  Marg_Left = 10
+  Marg_Right = 10
+  Marg_Bottom = 1
+  Zoom = 100
+  IsOutToFile = 0
+  OutpuFileName = /home/ro/print.ps
+  printerSelectionOption =    
+  colorMode = 0
+
+[* Ordonnance]
+  Head_H = 82.55
+  Foot_H = 44.7675
+  NumCopies = 1
+
+
+[* Observation]
+  Head_H = 78.105
+  Foot_H = 5.3975
+  NumCopies = 1
+
+
+[Dock_Rubriques]
+  Montrer = Cacher

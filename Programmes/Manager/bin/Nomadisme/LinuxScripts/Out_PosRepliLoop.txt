@@ -1,0 +1,38 @@
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade aixact.dnsalias.com - 3306 : 21/09/2009  7:26:38,50 
+*************************** 1. row ***************************
+             Slave_IO_State: 
+                Master_Host: aadmaison.homedns.org
+                Master_User: server104
+                Master_Port: 3306
+              Connect_Retry: 10
+            Master_Log_File: LogBin103.000001
+        Read_Master_Log_Pos: 2008
+             Relay_Log_File: SCMGP-relay-bin.000002
+              Relay_Log_Pos: 2145
+      Relay_Master_Log_File: LogBin103.000001
+           Slave_IO_Running: No
+          Slave_SQL_Running: No
+            Replicate_Do_DB: drtuxtest,medicatuxtest
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: drtuxtest.userdoc
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 2008
+            Relay_Log_Space: 2145
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: NULL
+.
+.

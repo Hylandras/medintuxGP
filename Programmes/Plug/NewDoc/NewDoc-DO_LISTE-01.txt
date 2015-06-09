@@ -1,0 +1,33 @@
+{{\
+{{REM=-------------- recuperer le nom de l'editeur en cours ------------------------------------}}\
+{{:: CURRENT_EDITOR(name)-editorName}}\
+
+{{REM=-------------- positionner repertoire des documents selon nom de l'editeur en cours ------}}\
+{{:: SET_VAR(pathFileToImport,$Glossaire{{VAR=editorName}})}}\   
+
+{{REM=-------------- positionner un sous repertoire preferentiel en fonction de l'editeur ------}}\
+{{:: SI(S,$editorName,=,Prescription,{{VAR=pathFileToImport}}/Ordonnances types,$pathFileToImport)>pathFileToImport}}\
+                        
+{{REM=-------------- liste des documents du glossaire correspondant a cet editeur---------------}}\
+{{:: LIST_DIR ($pathFileToImport,,html)>documentsList}}\
+{{REM=-------------- choix d'un document de la liste precedemment acquise .---------------------}}\
+{{:: DO_LISTE ($documentsList, Choix d'un document à insérer ,|, retour_de_liste,-1, S )-fileToLoad}}\
+
+{{REM=-------------- le resultat du test place le NO_ACTION a vide si le choix est valide ------}}\
+{{:: SI(S,$retour_de_liste,=,Accepted,IMPORT,NO_ACTION)>ACTION_TODO}}
+
+{{REM=-------------- ce test positionne le mode d'importation a 'noInquire' si le document -----}}\
+{{REM=               peut etre importe sans verifier la presence d'un autre a la date courante  }}\
+{{:: SI(S,$editorName,=,Observation,new,new noInquire)>importMode}}\
+
+
+{{REM=-------------- importer ce document : remarquez que ACTION_TODO  -------------------------}}\
+{{REM=               prend la valeur IMPORT si le retour de choix de liste est à 'Accepted' et  }}\
+{{REM=               alors le document sera importé car la mention {{VAR=ACTION_TODO}} sera     }}\
+{{REM=               transformée en  IMPORT donc instruction connue et valide d'importation de  }}\
+{{REM=               donnees.                                                                   }}\
+{{REM=               Dans le cas contraire {{VAR=ACTION_TODO}} sera transformée en NO_ACTION    }}\
+{{REM=               donc instruction inconnue et non valide non suivie d'action.               }}\
+{{:: __LINE_EDIT ($fileToLoad, fichier à insérer, confirmez ce fichier)}}\
+{{:: {{VAR=ACTION_TODO}}({{VAR=pathFileToImport}}/{{VAR=fileToLoad}},$importMode,$editorName)}}\
+}}

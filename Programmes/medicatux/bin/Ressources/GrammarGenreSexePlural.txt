@@ -1,0 +1,40 @@
+cuillere|cuillère|cuillères|f
+cuillère|cuillère|cuillères|f
+application|application|applications|f
+goutte|goutte|gouttes|f
+injection|injection|injections|f
+inhalation|inhalation|inhalations|f
+gelule|gélule|gélules|f
+gélule|gélule|gélules|f
+pulverisation|pulvérisation|pulvérisations|f
+pulvérisation|pulvérisation|pulvérisations|f
+ampoule(s)|ampoule|ampoules|f
+ampoule|ampoule|ampoules|f
+capsule|capsule|capsules|f
+flacon|flacon|flacons|m
+mg|mg|mg|m
+ml|ml|ml|m
+ui|ui|ui|f
+comprime secable|comprimé sécable|comprimés sécables|m
+comprime|comprimé|comprimés|m
+comprimé|comprimé|comprimés|m
+bouffee|bouffée|bouffées|f
+bouffée|bouffée|bouffées|f
+gourde|fiole|fioles|f
+sucette|sucette|sucettes|f
+milligramme|milligramme|milligrammes|m
+gramme|gramme|grammes|m
+microgramme|microgramme|microgrammes|m
+dose-graduation|dose-graduation|doses-graduations|f
+dose-graduation/kg|dose-graduation/kg|doses-graduations/kg|f
+dose-kg|dose-kg|doses-kg|f
+comprimé orodispersible|comprimé orodispersible|comprimés orodispersibles|m
+comprimé effervescent|comprimé effervescent|comprimés effervescents|m
+cuillère à soupe|cuillère à soupe|cuillères à soupe|f
+dose|dose|doses|f
+an|an|ans|m
+seringue|seringue|seringues|f
+kilogramme|kilogramme|kilogrammes|m
+sachet|sachet|sachets|m
+boîte|boîte|boîtes|f
+boite|boîte|boîtes|f

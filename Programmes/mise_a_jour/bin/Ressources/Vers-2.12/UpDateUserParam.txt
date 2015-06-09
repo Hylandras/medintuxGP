@@ -1,0 +1,1 @@
+'\r\n[Observation]\r\n  Zoom = 10\r\n  Montrer = Normal\r\n  Position =  0 , 0 , 603 , 194\r\n\r\n

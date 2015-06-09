@@ -1,0 +1,919 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>Dlg_QGetDatasemp</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Dlg_QGetDatasemp</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>734</width>
+            <height>515</height>
+        </rect>
+    </property>
+    <property name="paletteForegroundColor">
+        <color>
+            <red>255</red>
+            <green>0</green>
+            <blue>0</blue>
+        </color>
+    </property>
+    <property name="paletteBackgroundPixmap">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="backgroundOrigin">
+        <enum>WindowOrigin</enum>
+    </property>
+    <property name="caption">
+        <string>Mise à jour du Vidal Datasemp pour MedinTux</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QFrame" row="2" column="0">
+            <property name="name">
+                <cstring>frame4</cstring>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>94</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="frameShape">
+                <enum>PopupPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <property name="lineWidth">
+                <number>4</number>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>4</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <widget class="CW_EditText" row="0" column="0">
+                    <property name="name">
+                        <cstring>cW_EditText_Log</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>3</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>255</green>
+                            <blue>21</blue>
+                        </color>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="0" column="0">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>78</green>
+                    <blue>213</blue>
+                </color>
+            </property>
+            <property name="paletteBackgroundPixmap">
+                <pixmap>image0</pixmap>
+            </property>
+            <property name="backgroundOrigin">
+                <enum>WindowOrigin</enum>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="frameShape">
+                <enum>PopupPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <property name="lineWidth">
+                <number>2</number>
+            </property>
+            <property name="title">
+                <string>Paramètres de connexion</string>
+            </property>
+            <property name="alignment">
+                <set>AlignTop|AlignHCenter</set>
+            </property>
+            <property name="flat">
+                <bool>false</bool>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="0" column="6">
+                    <property name="name">
+                        <cstring>lineEdit_FtpPort</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>45</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>45</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="5">
+                    <property name="name">
+                        <cstring>textLabel_Port</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>127</blue>
+                        </color>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Port :</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="1" rowspan="1" colspan="4">
+                    <property name="name">
+                        <cstring>lineEdit_FtpAdress</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>textLabel_Repertoire</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>127</blue>
+                        </color>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Répertoire FTP :</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="1" column="3" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>lineEdit_FtpRepertoire</cstring>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="3" column="2" rowspan="1" colspan="5">
+                    <property name="name">
+                        <cstring>lineEdit_LogPass</cstring>
+                    </property>
+                    <property name="echoMode">
+                        <enum>Password</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="2" column="3" rowspan="1" colspan="4">
+                    <property name="name">
+                        <cstring>lineEdit_LogName</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="3" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>textLabel_LogPass</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>127</blue>
+                        </color>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Mot de passe (login)</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="0" rowspan="1" colspan="3">
+                    <property name="name">
+                        <cstring>textLabel_LogName</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>127</blue>
+                        </color>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Nom d'utilisateur (login)</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel_Adresse</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>127</blue>
+                        </color>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Adresse FTP :</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="5" column="4" rowspan="1" colspan="3">
+                    <property name="name">
+                        <cstring>textLabel_Expiration</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>255</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="palette">
+                        <palette>
+                            <active>
+                                <color>
+                                    <red>255</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>170</red>
+                                    <green>170</green>
+                                    <blue>127</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>190</blue>
+                                </color>
+                                <color>
+                                    <red>212</red>
+                                    <green>212</green>
+                                    <blue>158</blue>
+                                </color>
+                                <color>
+                                    <red>85</red>
+                                    <green>85</green>
+                                    <blue>63</blue>
+                                </color>
+                                <color>
+                                    <red>113</red>
+                                    <green>113</green>
+                                    <blue>84</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>236</red>
+                                    <green>233</green>
+                                    <blue>216</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>128</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                            </active>
+                            <disabled>
+                                <color>
+                                    <red>255</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>170</red>
+                                    <green>170</green>
+                                    <blue>127</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>190</blue>
+                                </color>
+                                <color>
+                                    <red>195</red>
+                                    <green>195</green>
+                                    <blue>145</blue>
+                                </color>
+                                <color>
+                                    <red>85</red>
+                                    <green>85</green>
+                                    <blue>63</blue>
+                                </color>
+                                <color>
+                                    <red>113</red>
+                                    <green>113</green>
+                                    <blue>84</blue>
+                                </color>
+                                <color>
+                                    <red>128</red>
+                                    <green>128</green>
+                                    <blue>128</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>128</red>
+                                    <green>128</green>
+                                    <blue>128</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>236</red>
+                                    <green>233</green>
+                                    <blue>216</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>128</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>0</green>
+                                    <blue>255</blue>
+                                </color>
+                            </disabled>
+                            <inactive>
+                                <color>
+                                    <red>255</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>170</red>
+                                    <green>170</green>
+                                    <blue>127</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>190</blue>
+                                </color>
+                                <color>
+                                    <red>195</red>
+                                    <green>195</green>
+                                    <blue>145</blue>
+                                </color>
+                                <color>
+                                    <red>85</red>
+                                    <green>85</green>
+                                    <blue>63</blue>
+                                </color>
+                                <color>
+                                    <red>113</red>
+                                    <green>113</green>
+                                    <blue>84</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>236</red>
+                                    <green>233</green>
+                                    <blue>216</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>128</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>255</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>0</red>
+                                    <green>0</green>
+                                    <blue>255</blue>
+                                </color>
+                                <color>
+                                    <red>255</red>
+                                    <green>0</green>
+                                    <blue>255</blue>
+                                </color>
+                            </inactive>
+                        </palette>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="frameShape">
+                        <enum>WinPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string>Expire le :</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="5" column="2" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>lineEdit_UserName</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>170</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="echoMode">
+                        <enum>Password</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="4" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>textLabel1_2_2_2</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>255</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Clef d'accès</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="5" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>textLabel1_2_2</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>255</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>WindowOrigin</enum>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Clef d'activation</string>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget" row="4" column="2" rowspan="1" colspan="5">
+                    <property name="name">
+                        <cstring>layout4</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit_AccessKey</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>5</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="paletteForegroundColor">
+                                <color>
+                                    <red>170</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                            </property>
+                            <property name="echoMode">
+                                <enum>Password</enum>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pushButton_ComputeClefAcces</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>&lt;</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout12</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout9</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>0</number>
+                        </property>
+                        <widget class="QPushButton" row="0" column="5">
+                          <property name="name">
+                            <cstring>pushButton_tester</cstring>
+                          </property>
+                          <property name="text">
+                            <string>&amp;Test</string>
+                          </property>
+                          <property name="accel">
+                            <string>Alt+Q</string>
+                          </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="4">
+                            <property name="name">
+                                <cstring>pushButton6</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Quitter</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+Q</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="3">
+                            <property name="name">
+                                <cstring>pushButtonLocal</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Local</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+L</string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Ne se connecte pas au serveur&lt;br&gt;vérifie la présence d'une version plus récente déjà téléchargée&lt;br&gt;et effectue la mise à jour des données si besoin</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Ne se connecte pas au serveur&lt;br&gt;vérifie la présence d'une version plus récente déjà téléchargée&lt;br&gt;et effectue la mise à jour des données si besoin</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="2">
+                            <property name="name">
+                                <cstring>pushButton_Connexion</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Connexion Ftp</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+C</string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Se connecte au serveur&lt;br&gt;vérifie la présence d'une version plus récente&lt;br&gt;et effectue la mise à jour des données</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Se connecte au serveur&lt;br&gt;vérifie la présence d'une version plus récente&lt;br&gt;et effectue la mise à jour des données</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="1">
+                            <property name="name">
+                                <cstring>pushButton_Upload</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Upload</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Se connecte au serveur&lt;br&gt;vérifie la présence d'une version plus récente&lt;br&gt;et effectue la mise à jour des données</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Se connecte au serveur&lt;br&gt;vérifie la présence d'une version plus récente&lt;br&gt;et effectue la mise à jour des données</string>
+                            </property>
+                        </widget>
+                        <spacer row="0" column="0">
+                            <property name="name">
+                                <cstring>spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>423</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout11</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>0</number>
+                        </property>
+                        <widget class="QProgressBar" row="0" column="0">
+                            <property name="name">
+                                <cstring>progressBar</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="1" column="0">
+                            <property name="name">
+                                <cstring>lineEdit_Message</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>0</width>
+                                    <height>22</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>22</height>
+                                </size>
+                            </property>
+                            <property name="paletteForegroundColor">
+                                <color>
+                                    <red>170</red>
+                                    <green>0</green>
+                                    <blue>0</blue>
+                                </color>
+                            </property>
+                            <property name="backgroundOrigin">
+                                <enum>WindowOrigin</enum>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <bold>1</bold>
+                                </font>
+                            </property>
+                            <property name="frameShape">
+                                <enum>GroupBoxPanel</enum>
+                            </property>
+                            <property name="lineWidth">
+                                <number>0</number>
+                            </property>
+                            <property name="text">
+                                <string>textLabel1</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>CW_EditText</class>
+        <header location="local">../../MedinTuxTools/CW_EditText.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image1</pixmap>
+        <signal>textChanged()</signal>
+        <signal>currentFontChanged( const QFont&amp;  )</signal>
+        <signal>currentColorChanged( const QColor &amp; )</signal>
+        <signal>currentAlignmentChanged( int  )</signal>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="4929">789cbd56c972224714bccf5728a66e138e37ec30e1f0412c1a8d6604344848c8e103f482d8251681e4f0bf3b33ab411a2f61870f2603bab35e2d6f2f3e7e38b96d5f9e7cf8f86ebd196cc6e149783f589d7c88b6f3f9f3cfbffcf4ebbbf795cc492e7392cde0f1fe8777efddd94978e23ee509727b102f10e24bf12221fe49bc4468fd5ebc4c8837c42b84e62fc4f5917c2c3e20c4abe243423c120f0971138f08f1503c26b4bf5f9f10e215f24186103f15cf125aefc47384f867f13c219e881708ad9f8b1709c9ebe22542f247f132219e11af10e24fe232587c2dae8ff61b8a0f09c90be221219e158f08f117f19810cf892784f61b900f3384e435f12c21f9bd788e108fc5f384e6e7c50b847851bc48886fc44b84f89d789910df8a5708f19db802acf39ec565b0e41d717dc4158f614888cfc42342ebbd3d3121f94a3c21c4b57f9821c495df619610bf14cf11e28a679827c4955f618110577cc222213e112f11e2f2775826c4e5dfb042882bdf95ce3efeca6f85d7db3f1597c1e2aaa7501f71e56b1811e28a571813e2cad73021c447e45186200f14af284b48aefa8c7284785b3c4f8807e20542bc245e24c45be22542f1507e476542f2a6788590dceba30296bc2bae84162f8b2bc0e2d7e23258bc27ae8ff895784c687fd577941092df90c7194272e54f9c25c4d5cfe21c21ae7a8af384b8fc15170871d57f5c24b4ffb9788910ef8b9709f16fe21542fc565c0d4bfb297f54bebefe95bf4a67dfffd42f155edfff543f32d7e7bff225d6475cfd274e089df7953cc91092abdf245942f20bf11c21fe453c4f68beec4b0a84b8ee83a44888abbe9312e1f3cb9c0d6c682130b4c8624b6c444032c2fb9f31d2f80833ef31dfe15d6b34dfcbe2e32c3fffaf56277ff99b1cf7c07e44aa636c639b40bf21749d1e67fd838ee9ba297e47ff838e339bdbc296f6002cf1f6889129e5af73bdce1e7e2f3c57b6b60d2c9376df59f4673dff337c6fb1ad3dd90e9edcc32fcff662a756b59ad50fbabce2f54cbc3760c9dacee8f937ba53d7c69bf9dfad7fb3cbe83babfff0fec6d3071d3f03e7f645b8b0aff60ddabe40cbcbd799dfeb40e07906eb9ad64af3a2616d49daa95703bee1d9fe9708fef06cfbf569ac3b40d7aeecda7a76036d6fad8fb3cfecce26a96d03c434838cc822be913277853539d811a1d276e0099e79cd29c0bf03ac0ef15b87f545ac2da678fbb639b2cd1b90e7f5d64164e337f9d8b112c01c22da56868e6d9c7fa9b1ad55ec9333e7f0acda1c6f033774ce8588f5167a3f42cb9a8becc1593a83d21876d4b066f1dfe012ec3a4e63dd80ad3b44ac75cc77680f367123e4dad8ddbbb13d051b377153374124eea0c716ab4ab4c3cdecdccd911b73e8d4740b37b55bcc8da1694755d392fcfc6fd1fffb31b7c409ee18eb2dce2e1dab81cf00a3ec7c336ae496eec1beb84768b982e67b8bb1be8f6f0b9aafdd06fe1e62cfad5d700ece08c063f7643db7c11a6afe15f3d6901e0086b1f4cd4b38271df3a313ebf958c36f9d377e7ced1a79d478db3aee1e27ed74aed3b90835f29699bd325506ea2b8f3913e81c43ff84d6c3d23276dc5b0ef17fb04fb07483c8276eaffef6801cc82373ab6005e4ee067c893939cb683e5660ee333be0d18f3b9cdd3a740a5fbd88d710637564ee957b416c99a9f4f2de66ee14ba35a423bd5fb0a93b85863e9f1348c6f0ec0de6ec94c5ac82273740f656ad8a3c5babafaeac0069157aa1cfba2a330a79b4564ecfb1aa8a7d57b67fd531f5637cec2f6378678ab886b67723977a5716ecd5714af0df33f66c612407adbaeed0add99522ecd8c59c22cebd87857db740b708e8773747ec91dbc8b84bcce2be03685393ff9bf0c80c33d69096301e5a74a819f77cf0e3f12edac0de08313d83b66d9fa369870db1df08b303af2374bb9355f1c142e0d972aabbc8667886aea6bd02448fb326cc229cd8c1c9a8461bc2c733ecd7c5588837ea4afd5ad03338f8116bbd1fd36e0f5b18a1262caa614d84ff0eaf77e21d7c1371354e62accb38ab0e4b06c79bc221879fe0ef962ce923ea4378aaa07eeab325e453dde90a730678d28bf43c3b6add5e10f18e9b21025dffbf5b3d9cfdd1fb81562d903f2344845d65850e442d54f1d079eeea1845ade0bd886713f2bae60dfc3d882c74ec56906da15780b83237c7d00cb70ecec51de15853acca2bf580002c506fb9e47d02e9ad2affdcda695dcf8cdda386bc6da0021fdc19ec2db3d33103789b419b53dc201964f312cf1de2db56efcffb9da54f87b98e7e5e71cce54b9cda466ffd0c8fd6a0e94cf7c2009a0ed9f171e219a435c72ca9eb8e1babe34147f4ab4787bb19bda76b719a8f88933c9e87f7eff0847eeedcb187fb2edc833f635461e2700ba27ecfdd4af6631dbcd2c30e4ddda288b0aa76caee090b59fd01bafc18fab770ee04d9e37b82c39a16f66cd837ec10a0a2fa88fdcc31771a58b9a11770b63bde33815dc36b5fe0db0bfc3ec086afaaab43272943ab29ce58d03e60071d6f71461beb166ea3b338e7f13007fbdc42a33eac3d456fbd70bebf2f7017acfd7f178c3cea36b9c06e2f94d98dd6e34e4294e7c69bc2f1fc341f1bc8bda5bf8520bd810d8dc3bde8bba56ef0be6e0c5a58c2b72c5913316aa6b694e0a15b9cb8702f9c8338756561177bfafc43ee424be205e75d417e8d35d738fd549970e3c7f06caa278d0eff7ba88174ec13a8e459eae7e3bf62655b0f51994283397669e1db539e8e9007e9bf708cdee84ee79c3232f91a1831468afb1c3bb4580d0740936bdc0e33e855c67b4f3af8b165da8fbd8ebffdf8ee778914f97b</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="1002">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003b149444154388dad945f4c5b551cc73fe7dc4b7b4bcba0762d45c43114323599ee6192609c51d883892ce083f1718b3ebb185f8dc91e972cf39d2d2a2f1af664b6f1e0fe3863a0718969700eb0c52142da0242a1bd6d696f7bcff101585203ceb8fd9ece39f99dcff9fe7edf939f88c562ec465f5f9fe609442c161362173c3e3eae7b7a7ac8e7f36432196cdbfe4f907c3e4f2291201e8fe338cec3737357e9e8e828aded1e229d650e1f2d51754b082110124c13a4dc5ea341eb9dc284c0558a853f3ce8cb0677ef500fde7d39d2596679e326597b8e9abb85d7a770ab16ab6983ec5a05b487a70e36f0f4e10afe408d6a558310980108478dba4a1e8233990c5d474b64ed39aa3a8fe5f3317fbf81dbd70bccfeb205947632fd74f6589c1c6ea2f70d03a58ba0c1f2c9bdc1b66de3b8256a6e11cbe7e3ee1d181b590124fe2693aeee08d223c82c3a2c24b7b874bec8f26288774f7bd054504aef0dde6e99c0eb83f9fb266323cb80a27fb0958141836044605a2ee5523393371cc646fee2da37195aa35d0c0c5b4859ac03d7e91712dcaac5adab3650a3ff9d08ef7dd8404bb48869e5d958b5b87dadc4c9a1464e9f0d0326df7ebd86bd2e310cb1bf62d384d59441f2d70a070e1c60e09489929b988681bdd9cc97170bcc4c65595f71f8e0e3301337fc24a7732467831875a47f289652b0be5e4151e6d07316c1b0c0340d8ab92023e76d66a6b2840e36d2fb7a13fee632475e6edc367ea98a90fb98b7dd6310ca0328a44761582e1bab41befabcc0ec940d28bc5e93b68e064cab84e1d9beaeb48934eac1f53b01c1b000fca496aa54b61a99fcde61662a4b4b4b23d1680be9d426173e4df3602a48ea411989a4fd590f52a8fd156b05ed9d350e3defe3cfdf4b4c7ce770ea7d3fb9f520afbe1620daeee5c26735d20b9b9cfb6811a754a439e4e5c5639a4caa1e5caf586bfc0197b78702005cb9b4cae4cd3267ce8638fe964bd72b393e39d74928d242617303a756a37f284447770dcdbffc6384a05a85de1306e9a52057c7527c7131c3c42d3f475eb2303c82d4fc3276d6811db37efeb148723082d9b08f79f97c1e5729109a9a28307cc622d2d6cdf52b2b24efe548dedb00142009862cfa879ee1a71f6cec928353511472fbf4389148b0b0e0c108081412458dfe21c9f11351e67e7358595468246d1d1e5e38a6e9e851bc39d84ab502a669331dafec0d8ec7e3e8cb06e1a881d727d1ae40180a434a8c9db129a54126ad48a7358c2b4c5352c8c374bcccdab2bb37d8719cba79fab8211f9df218e0582c261e95f8bfc04f1a1e8bc5c4dfe0a190172af6a9690000000049454e44ae426082</data>
+    </image>
+</images>
+<tabstops>
+    <tabstop>lineEdit_FtpRepertoire</tabstop>
+    <tabstop>lineEdit_LogName</tabstop>
+    <tabstop>lineEdit_LogPass</tabstop>
+    <tabstop>lineEdit_FtpAdress</tabstop>
+    <tabstop>lineEdit_FtpPort</tabstop>
+    <tabstop>pushButton_Connexion</tabstop>
+    <tabstop>pushButton6</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">Dlg_QGetDatasemp.ui.h</include>
+</includes>
+<layoutdefaults spacing="6" margin="11"/>
+ /includehints>
+</UI>

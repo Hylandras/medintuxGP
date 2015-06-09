@@ -1,0 +1,137 @@
+              INSTALLATION DE MEDINTUX 16.00.000 SUR UBUNTU-AMD-64 13.10
+              ----------------------------------------------------------
+              Pour moi qui n'est plus très jeune et les débutants.
+
+Départ à partir d'une installation neuve d'ubuntu-amd64 13.10.
+
+Il faut juste savoir lire attentivement ce qui suit et cliquer 
+dans le calme et la sérénité. Pas de chat dans l'environnement.
+
+Les étapes ci-dessous sont garanties sur une ubuntu fraîchement installée.
+
+________________________________________________________________________________________
+                               FRANCISATION D'UBUNTU 
+________________________________________________________________________________________
+--------------------------- Mettre le système en français ------------------------------
+Dans la barre d'icônes du bureau d'ubuntu à gauche :  
+   --> System Settings  (en français : Paramètres système) 
+       --> icône : Langage Support (en français : prise en charge des langues). 
+                   Si le message The language support is not installed completely
+                   apparait cliquez sur install
+           --> Onglet : Language (en français : Langue).
+               --> Bouton : install/Remove Langages... 
+                            (en français : installer et supprimer des langues)
+                   -- >le package de prise en charge des langues se télécharge après 
+                       avoir demandé votre mot de passe.
+                   --> choisir le français dansla liste Langage,
+                       en le glissant en haut dans la liste.
+                       cliquez sur le bouton : Apply System-Wide 
+                                               (en français : Appliquer à tout le système).
+           --> Onglet : Regional Formats
+                        (en français : Formats régionaux).
+               --> Liste déroulante du haut : y choisir le français
+                   cliquez sur le bouton : Apply System-Wide 
+                                               (en français : Appliquer à tout le système).
+
+---------------------------- Installer un clavier francais -----------------------------
+Dans la barre d'icônes du bureau d'ubuntu à gauche : 
+   --> System Settings  (en français : Paramètres système) 
+       --> icône : Text Entry
+                   (en français :Saisie de texte).
+           --> cliquez sur le bouton + en bas à gauche
+               de la liste déroulante, et choisissez le français.
+
+---- REBOOTEZ POUR QUE TOUTES CES MODIFICATIONS SOIENT PRISES EN CHARGE ----------------
+une boîte de dialogue proposera de changer en français les noms des répertoires
+Documents, Téléchargements etc. confirmez.
+Votre système devrait être en français.
+
+_______________________________________________________________________________________
+                 INSTALLATION DE QUELQUES OUTILS UTILES POUR LA SUITE
+_______________________________________________________________________________________
+ 
+----------------- Installer un terminal (ou console) ----------------------------------
+Dans l'icône du haut à gauche de la barre d'icônes du menu du bureau : 
+   --> cliquez dessus et dans la zone de saisie entrez : console
+       cela fera apparaître une icône noire nommée : Terminal
+       --> cliquez dessus cela fera apparaître la fenêtre de la console.
+       --> lorsque l'icône Terminal apparaît dans la barre d'icônes 
+           de gauche faites bouton droit --> Conserver dans le lanceur.
+________________________________________________________________________________________
+                        INSTALLATION DE MEDINTUX
+________________________________________________________________________________________
+
+----------------- décompacter l'archive de Medintux ------------------------------------
+ATTENTION : L'installation initiale correcte de Medintux doit se faire dans les 
+            répertoires indiqués ci-dessous et pas d'autres. Par la suite il vous sera
+            toujours possible de déplacer le répertoire principal de Medintux à l'endroit
+            de votre choix, et alors pensez à modifier les icônes de raccourcis du
+            bureau pour qu'ils pointent sur le nouvel emplacement.
+            
+On suppose que que vous avez déjà téléchargé l'archive : medintux-amd64.tar.gz
+et placé celle-ci dans le répertoire : Documents
+Extrayez-là  à ce même endroit, ce qui devrait donner le répertoire suivant : 
+Documents/medintux-amd64/     dans lequel tout se trouve.
+
+----------------- Installer MedinTux ---------------------------------------------------
+ATTENTION : L'installation initiale correcte de Medintux nécessite qu'il y ait un 
+            utilisateur mysql : 'root@localhost' avec un mot de passe 'admin'.
+            Si mysql n'est pas installé le script d'installation s'occupe de tout.
+            Sinon créez cet utilisateur.
+            
+            Vous devez être connecté à internet, car le script d'installation installe des
+            paquets Ubuntu nécessaires à Medintux.
+Installation :
+------------
+Lancez le terminal.
+Placez vous dans le répertoire Medintux en tapant : cd ~/Documents/medintux-amd64 
+                                                    puis touche 'Return'
+puis saisissez (ou tapez)                         : ./installMedinTux.sh
+                                                    puis touche 'Return' 
+et attendez la fin des opérations.
+
+----------------- Démarrer MedinTux ---------------------------------------------------
+Cliquez sur le programme principal : 
+    /medintux-amd64/Programmes/Manager/bin/Manager
+       --> lorsque l'icone Manager apparaît dans la barre d'icônes d'ubuntu
+           à gauche faites bouton droit --> Conserver dans le lanceur.
+NB : il vous est possible de faire la même chose pour tous les autres logiciels
+     de la suite MedinTux.
+
+----------------- Réglages de l'aspect des programmes Qt3 MedinTux --------------------
+Le programme : /medintux-amd64/qt3_l64/bin/qtconfig
+permet de régler quelques aspects graphiques des programmes de MedinTux en Qt3.
+
+----------------- Réglages de l'aspect des programmes Qt4 MedinTux --------------------
+Le programme : /medintux-amd64/qt3_l64/Qt-4.8.5/bin/qtconfig
+permet de régler quelques aspects graphiques des programmes de MedinTux en Qt4.
+
+_______________________________________________________________________________________
+            ETAPE FACULTATIVE POUR LES GEEKS : COMPILATION DE MEDINTUX.
+_______________________________________________________________________________________
+Choix du libre : Et oui MedinTux est bien Open Source, la preuve on peut le recompiler.
+
+-------------  Recompiler MedinTux avec /set_bases ------------------------------------
+
+Il est possible de recompiler tout MedinTux avec l'utilitaire :
+/medintux-amd64/Programmes/set_bases/bin/set_bases
+
+Lancez : /medintux-amd64/Programmes/set_bases/bin/set_bases
+choisissez un programme à recompiler dans la liste située à droite
+du bouton : 'Compilation des exécutables'
+puis cliquez sur le bouton  : 'Compilation des exécutables' attendre... attendre ...
+
+NOTE : un utilitaire très dangereux, criticable, toussa, mais très utile permet de
+       nettoyer l'archive MedinTux de tous les fichiers intermédiaires générés
+       par une compilation :
+       /medintux-amd64/Programmes/MrPropre/bin/MrPropre
+       il est déjà préparamétré pour faire le travail sans trop de dégats ...
+       c'est lui qui a été utilisé pour faire cette archive.
+
+NOTE : les outils Qt3 se trouvent dans :
+           /medintux-amd64/qt3_l64/bin
+       et Qt4 dans :
+           /medintux-amd64/qt4_l64/Qt-4.8.5/bin   ou
+           /usr/local/Trolltech/Qt-4.8.5/bin
+
+

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+    <fields>
+      <field name="nom pr&#233;nom">
+        <value>{{xfdf_nom_prenom}}</value>
+        </field>
+      <field name="adresse">
+        <value>{{xfdf_adresse}}</value>
+        </field>
+      <field name="immat">
+        <value>{{xfdf_immat}}</value>
+        </field>
+      <field name="cl&#233;">
+        <value>{{xfdf_cle}}</value>
+        </field>
+      <field name="date naiss">
+        <value>{{xfdf_naissance}}</value>
+        </field>
+      <field name="immat ass">
+        <value>{{xfdf_immat}}</value>
+        </field>
+      <field name="cl&#233; ass">
+        <value>{{xfdf_cle}}</value>
+        </field>
+      <field name="diag1">
+        <value>{{xfdf_diag1}}</value>
+        </field>
+      <field name="diag2">
+        <value>{{xfdf_diag2}}</value>
+        </field>
+      <field name="diag3">
+        <value>{{xfdf_diag3}}</value>
+        </field>
+      <field name="date diag1">
+        <value>{{xfdf_date_diag1}}</value>
+        </field>
+      <field name="date diag2">
+        <value>{{xfdf_date_diag2}}</value>
+        </field>
+      <field name="date diag3">
+        <value>{{xfdf_date_diag3}}</value>
+        </field>
+      <field name="arguments">
+        <value>{{xfdf_arguments}}</value>
+        </field>
+      <field name="sp&#233; phar1">
+        <value>{{xfdf_spe_phar1}}</value>
+        </field>
+      <field name="sp&#233; phar2">
+        <value>{{xfdf_spe_phar2}}</value>
+        </field>
+      <field name="sp&#233; phar3">
+        <value>{{xfdf_spe_phar3}}</value>
+        </field>
+      <field name="sp&#233; phar4">
+        <value>{{xfdf_spe_phar4}}</value>
+        </field>
+      <field name="sp&#233; phar5">
+        <value>{{xfdf_spe_phar5}}</value>
+        </field>
+      <field name="sp&#233; phar6">
+        <value>{{xfdf_spe_phar6}}</value>
+        </field>
+      <field name="sp&#233; phar7">
+        <value>{{xfdf_spe_phar7}}</value>
+        </field>
+      <field name="sp&#233; phar8">
+        <value>{{xfdf_spe_phar8}}</value>
+        </field>
+      <field name="sp&#233; phar9">
+        <value>{{xfdf_spe_phar9}}</value>
+        </field>
+      <field name="sp&#233; phar10">
+        <value>{{xfdf_spe_phar10}}</value>
+        </field>
+      <field name="sp&#233; phar11">
+        <value>{{xfdf_spe_phar11}}</value>
+        </field>
+      <field name="sp&#233; phar12">
+        <value>{{xfdf_spe_phar12}}</value>
+        </field>
+      <field name="suivi bio1">
+        <value>{{xfdf_suivi_biol1}}</value>
+        </field>
+      <field name="suivi bio2">
+        <value>{{xfdf_suivi_biol2}}</value>
+        </field>
+      <field name="suivi bio3">
+        <value>{{xfdf_suivi_biol3}}</value>
+        </field>
+      <field name="rec sp&#233;1">
+        <value>{{xfdf_rec_spe1}}</value>
+        </field>
+      <field name="rec sp&#233;2">
+        <value>{{xfdf_rec_spe2}}</value>
+        </field>
+      <field name="rec sp&#233;3">
+        <value>{{xfdf_rec_spe3}}</value>
+        </field>
+      <field name="rec pro1">
+        <value>{{xfdf_pro1}}</value>
+        </field>
+      <field name="rec pro2">
+        <value>{{xfdf_pro2}}</value>
+        </field>
+      <field name="rec pro3">
+        <value>{{xfdf_pro3}}</value>
+        </field>
+      <field name="date pro">
+        <value>{{xfdf_date_pro}}</value>
+        </field>
+      <field name="infos mal">
+        <value>{{xfdf_mal}}</value>
+        </field>
+      <field name="infos ma2">
+        <value>{{xfdf_ma2}}</value>
+        </field>
+      <field name="ident m&#233;d">
+        <value>{{xfdf_nomPrenomMed}}</value>
+        </field>
+      <field name="num ident m&#233;d">
+        <value>{{xfdf_numIdentMed}}</value>
+        </field>
+      <field name="nom &#233;tab">
+        <value>{{xfdf_nom_etab}}</value>
+        </field>
+      <field name="adress &#233;tab">
+        <value>{{xfdf_adress_etab}}</value>
+        </field>
+      <field name="num finess">
+        <value>{{xfdf_num_finess}}</value>
+        </field>
+      <field name="nom chef serv">
+        <value>{{xfdf_nom_chef_serv}}</value>
+        </field>
+      <field name="act">
+        <value>{{xfdf_act}}</value>
+        </field>
+      <field name="date entr&#233;e">
+        <value>{{xfdf_date_entree}}</value>
+        </field>
+      <field name="date examen">
+        <value>{{xfdf_examen}}</value>
+        </field>
+      <field name="r&#232;glem">
+        <value>{{xfdf_regl}}</value>
+        </field>
+      <field name="exam">
+        <value>{{xfdf_exam}}</value>
+        </field>
+      <field name="Recl pro">
+        <value>{{xfdf_recl_pro}}</value>
+        </field>
+      <field name="ALD1">
+        <value>{{xfdf_ald1}}</value>
+        </field>
+      <field name="ALD2">
+        <value>{{xfdf_ald2}}</value>
+        </field>
+      <field name="ALD3">
+        <value>{{xfdf_ald3}}</value>
+        </field>
+      <field name="ALD4">
+        <value>{{xfdf_ald4}}</value>
+        </field>
+      <field name="ALD5">
+        <value>{{xfdf_ald5}}</value>
+        </field>
+      <field name="nom pr&#233;nom ass">
+        <value>{{xfdf_nom_prenom_ass}}</value>
+        </field>
+      <field name="dur&#233;e soins">
+        <value>{{xfdf_duree_soins}}</value>
+        </field>
+      <field name="dur&#233;e arr&#234;t">
+        <value>{{xfdf_duree_arret}}</value>
+        </field>
+   </fields>
+    <f href="fichier.pdf" />
+</xfdf>

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Demarrer_medintux
+Icon=/home/maxime/medintux-amd64/Icones/MedinTux.png
+Path=/home/maxime/medintux-amd64/Programmes/Doc/Start_MedinTux
+Exec=/home/maxime/medintux-amd64/Programmes/Doc/Start_MedinTux/start_medintux.sh
+StartupNotify=false
+StartupWMClass=Start_MedinTux
+OnlyShowIn=Unity;
+X-UnityGenerated=true
+Name[fr_FR]=Demarrer_medintux
+
+
+
+

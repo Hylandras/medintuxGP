@@ -1,0 +1,3223 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Dlg_PosoManager</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Dlg_PosoManager</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>990</width>
+            <height>636</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Gestion des posologies</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>3</number>
+        </property>
+        <property name="spacing">
+            <number>1</number>
+        </property>
+        <widget class="QSplitter" row="1" column="0">
+            <property name="name">
+                <cstring>splitter4</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <widget class="QSplitter">
+                <property name="name">
+                    <cstring>splitter1</cstring>
+                </property>
+                <property name="sizePolicy">
+                    <sizepolicy>
+                        <hsizetype>3</hsizetype>
+                        <vsizetype>4</vsizetype>
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                    </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                    <size>
+                        <width>32767</width>
+                        <height>32767</height>
+                    </size>
+                </property>
+                <property name="frameShape">
+                    <enum>NoFrame</enum>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="childrenCollapsible">
+                    <bool>true</bool>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout21</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="spacing">
+                            <number>0</number>
+                        </property>
+                        <widget class="QListView">
+                            <column>
+                                <property name="text">
+                                    <string>Produit</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>CodeProduit</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Pk_t00</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>pk_t4b</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>CodeCIP</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>CodeUV</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>IsG</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>IsD</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>num</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <property name="name">
+                                <cstring>listView_Produits</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>9</pointsize>
+                                </font>
+                            </property>
+                            <property name="resizePolicy">
+                                <enum>Manual</enum>
+                            </property>
+                            <property name="showSortIndicator">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout20</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>pushButtonListPosoCopier</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32767</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>9</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>&amp;Copier Liste Poso &gt;&gt;&gt;</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+C</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer4</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>26</width>
+                                            <height>10</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>pushButtonListPosoColler</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>0</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32767</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>9</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>C&amp;oller </string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+O</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout22</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="spacing">
+                            <number>0</number>
+                        </property>
+                        <widget class="QLayoutWidget" row="1" column="0">
+                            <property name="name">
+                                <cstring>layout19</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>pushButtonDefPosoCopier</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32767</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>9</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Copier une &amp;définition de posologie  &gt;&gt;&gt;</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+D</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer3_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>121</width>
+                                            <height>10</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>pushButtonDefPosoColler</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32767</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>9</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Coller la définition de &amp;posologie ci-dessous</string>
+                                    </property>
+                                    <property name="accel">
+                                        <string>Alt+P</string>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                        <widget class="QListView" row="0" column="0">
+                            <column>
+                                <property name="text">
+                                    <string>PrimKey</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Code CIP</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Libelle</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Poso Min</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Poso Max</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Posos Unit</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Fact Corp Qu</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Fact Corp Unit</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Période</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Coeff</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <column>
+                                <property name="text">
+                                    <string>Coeff Unit</string>
+                                </property>
+                                <property name="clickable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizable">
+                                    <bool>true</bool>
+                                </property>
+                            </column>
+                            <property name="name">
+                                <cstring>listView_MedicaPoso</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>4</hsizetype>
+                                    <vsizetype>5</vsizetype>
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>32767</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>9</pointsize>
+                                </font>
+                            </property>
+                            <property name="showSortIndicator">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+            </widget>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>layout28</cstring>
+                </property>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>0</number>
+                    </property>
+                    <widget class="QGroupBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>groupBox5_3</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="paletteForegroundColor">
+                            <color>
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>255</blue>
+                            </color>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>1</bold>
+                            </font>
+                        </property>
+                        <property name="frameShape">
+                            <enum>GroupBoxPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="title">
+                            <string>Conditions d'application</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>2</number>
+                            </property>
+                            <property name="spacing">
+                                <number>0</number>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>layout69</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QPushButton" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>pushButtonAdvancedTerrain</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Terrain (avancé)</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+T</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLineEdit" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>lineEdit_Terrain</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>LineEditPanel</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Définition structurée des spécifications de terrain</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>layout30</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer3</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>115</width>
+                                                <height>16</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_4_2_2_3</cstring>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>60</width>
+                                                <height>32767</height>
+                                            </size>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Se&amp;xe </string>
+                                        </property>
+                                        <property name="buddy" stdset="0">
+                                            <cstring>comboBox_Sexe</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <item>
+                                            <property name="text">
+                                                <string>Féminin</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Masculin</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Indifférent</string>
+                                            </property>
+                                        </item>
+                                        <property name="name">
+                                            <cstring>comboBox_Sexe</cstring>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>32767</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="currentItem">
+                                            <number>2</number>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout28</cstring>
+                                        </property>
+                                        <hbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel2_4_4</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>0</hsizetype>
+                                                        <vsizetype>5</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="paletteForegroundColor">
+                                                    <color>
+                                                        <red>0</red>
+                                                        <green>0</green>
+                                                        <blue>0</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>0</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Âge de (en mois) </string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter|AlignRight</set>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit">
+                                                <property name="name">
+                                                    <cstring>lineEdit_AgeMin</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>0</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>9</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>32</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__________</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel2_4_2_4</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>0</hsizetype>
+                                                        <vsizetype>5</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="paletteForegroundColor">
+                                                    <color>
+                                                        <red>0</red>
+                                                        <green>0</green>
+                                                        <blue>0</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>0</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string> à </string>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit">
+                                                <property name="name">
+                                                    <cstring>lineEdit_AgeMax</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>0</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>9</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>32</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__________</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                        </hbox>
+                                    </widget>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout29</cstring>
+                                        </property>
+                                        <hbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel2_5</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>0</hsizetype>
+                                                        <vsizetype>5</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="paletteForegroundColor">
+                                                    <color>
+                                                        <red>0</red>
+                                                        <green>0</green>
+                                                        <blue>0</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>0</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string> Poids de </string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter|AlignRight</set>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit">
+                                                <property name="name">
+                                                    <cstring>lineEdit_EdPo_PoidsMin</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>0</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>9</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>32</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__________</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel3_2</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>0</hsizetype>
+                                                        <vsizetype>5</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="paletteForegroundColor">
+                                                    <color>
+                                                        <red>0</red>
+                                                        <green>0</green>
+                                                        <blue>0</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>0</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string> à </string>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit">
+                                                <property name="name">
+                                                    <cstring>lineEdit_EdPo_PoidsMax</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>0</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>50</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>9</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>32</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__________</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                        </hbox>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLineEdit" row="2" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit_Indication</cstring>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>textLabel2_4_2_2_2_3</cstring>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                    </font>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>LineEditPanel</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Intitulé de cette posologie  .</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QLayoutWidget" row="3" column="0">
+                        <property name="name">
+                            <cstring>layout27</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QPushButton" row="0" column="0">
+                                <property name="name">
+                                    <cstring>pushButton_AddPoso</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Ajouter</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+A</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="2">
+                                <property name="name">
+                                    <cstring>pushButton_RecordPoso</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Enregistrer les modifications</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+E</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="1">
+                                <property name="name">
+                                    <cstring>pushButton_ErasePoso</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>E&amp;ffacer</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+F</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>groupBox_UP</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="paletteForegroundColor">
+                            <color>
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>255</blue>
+                            </color>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>1</bold>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string>Quantité d'unités de prise</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>2</number>
+                            </property>
+                            <property name="spacing">
+                                <number>1</number>
+                            </property>
+                            <widget class="QLayoutWidget" row="2" column="0" rowspan="1" colspan="3">
+                                <property name="name">
+                                    <cstring>layout25</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QSlider">
+                                        <property name="name">
+                                            <cstring>slider_VarPoso</cstring>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>170</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="minValue">
+                                            <number>0</number>
+                                        </property>
+                                        <property name="maxValue">
+                                            <number>99</number>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="tickmarks">
+                                            <enum>Above</enum>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Permet de tester avec les valeurs entre le minimum et le maximum</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout24</cstring>
+                                        </property>
+                                        <hbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel2</cstring>
+                                                </property>
+                                                <property name="paletteForegroundColor">
+                                                    <color>
+                                                        <red>0</red>
+                                                        <green>0</green>
+                                                        <blue>0</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>0</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string> par </string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter|AlignRight</set>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit">
+                                                <property name="name">
+                                                    <cstring>lineEditFactCorpQU</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>100</width>
+                                                        <height>0</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>100</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>9</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>32</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__________</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QComboBox">
+                                                <item>
+                                                    <property name="text">
+                                                        <string>Kg de poids</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>m2 de surface corporelle</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>Pas de facteur corporel</string>
+                                                    </property>
+                                                </item>
+                                                <property name="name">
+                                                    <cstring>comboBoxFactCorpUnit</cstring>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>32767</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="paletteForegroundColor">
+                                                    <color>
+                                                        <red>0</red>
+                                                        <green>0</green>
+                                                        <blue>255</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>9</pointsize>
+                                                        <bold>0</bold>
+                                                    </font>
+                                                </property>
+                                            </widget>
+                                        </hbox>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget" row="4" column="0" rowspan="1" colspan="3">
+                                <property name="name">
+                                    <cstring>layout20</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel5</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>5</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>LineEditPanel</enum>
+                                        </property>
+                                        <property name="margin">
+                                            <number>0</number>
+                                        </property>
+                                        <property name="text">
+                                            <string>&lt;u&gt;Exemple:&lt;/u&gt;   &lt;b&gt;500 mg par comprimé&lt;/b&gt;  et facteur corporel = &lt;b&gt;Kg de poids&lt;/b&gt;  &lt;br&gt;  unité de UP1 =  &lt;b&gt;mg&lt;/b&gt;  avec  unité de UP2 = &lt;b&gt;comprimé&lt;/b&gt;</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout26</cstring>
+                                        </property>
+                                        <hbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="CMaskedLineEdit">
+                                                <property name="name">
+                                                    <cstring>lineEditQUP1byUP2</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>7</hsizetype>
+                                                        <vsizetype>1</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>100</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>100</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>32</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__________</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                                <property name="toolTip" stdset="0">
+                                                    <string>Quantité de l'unité de prise 1 (ci-dessus ligne : UP1 ) contenue dans la forme usuelle ou galénique d'unité de prise ( ligne : UP2 )</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabelCoeffResult</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>7</hsizetype>
+                                                        <vsizetype>0</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>0</width>
+                                                        <height>25</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>32767</width>
+                                                        <height>25</height>
+                                                    </size>
+                                                </property>
+                                                <property name="paletteForegroundColor">
+                                                    <color>
+                                                        <red>0</red>
+                                                        <green>0</green>
+                                                        <blue>0</blue>
+                                                    </color>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <bold>0</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Quantité d'unités UP1 dans l'unité UP2</string>
+                                                </property>
+                                            </widget>
+                                        </hbox>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="CMaskedLineEdit" row="6" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit_TailleTest</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>7</hsizetype>
+                                        <vsizetype>1</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                    </font>
+                                </property>
+                                <property name="carMask" stdset="0">
+                                    <number>32</number>
+                                </property>
+                                <property name="control" stdset="0">
+                                    <string>GGGGGGGGGG</string>
+                                </property>
+                                <property name="mask" stdset="0">
+                                    <string>__________</string>
+                                </property>
+                                <property name="text" stdset="0">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Indiquez la taille dont doit tenir compte la posologie affichée à droite ci-contre(en zone bleu clair)</string>
+                                </property>
+                            </widget>
+                            <widget class="CMaskedLineEdit" row="5" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit_PoidsTest</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>7</hsizetype>
+                                        <vsizetype>5</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                    </font>
+                                </property>
+                                <property name="carMask" stdset="0">
+                                    <number>32</number>
+                                </property>
+                                <property name="control" stdset="0">
+                                    <string>GGGGGGGGGG</string>
+                                </property>
+                                <property name="mask" stdset="0">
+                                    <string>__________</string>
+                                </property>
+                                <property name="text" stdset="0">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Indiquez le poids dont doit tenir compte la posologie affichée à droite ci-contre  (en zone bleu clair)</string>
+                                </property>
+                            </widget>
+                            <widget class="QTextBrowser" row="5" column="2" rowspan="2" colspan="1">
+                                <property name="name">
+                                    <cstring>textBrowser_Result</cstring>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>32767</width>
+                                        <height>50</height>
+                                    </size>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>170</red>
+                                        <green>255</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Vue présentant le résultat des données</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="5" column="0">
+                                <property name="name">
+                                    <cstring>textLabel2_2</cstring>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Poids de test </string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignVCenter|AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="6" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Taille de test </string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignVCenter|AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget" row="3" column="0" rowspan="1" colspan="3">
+                                <property name="name">
+                                    <cstring>layout20</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>lineEdit_a_UP2_2</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>50</width>
+                                                <height>0</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>50</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>255</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>LineEditPanel</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string>UP 2</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_QMin_UP2</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>7</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="readOnly">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Quantité Minimum d'unités de prise, sous forme utile (comprimés, gélules etc.)</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>lineEdit_a_UP2</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>40</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>40</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>à</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_QMax_UP2</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>7</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="readOnly">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Quantité Maximum d'unités de prise, sous forme utile (comprimés, gélules etc.)</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <property name="name">
+                                            <cstring>comboBoxUP_2</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>0</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="editable">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="sizeLimit">
+                                            <number>20</number>
+                                        </property>
+                                        <property name="autoCompletion">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="duplicatesEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Unité dans laquelle s'exprime l'unité de prise</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>pushButtonNewUP2_Unit</cstring>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>32767</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string></string>
+                                        </property>
+                                        <property name="iconSet">
+                                            <iconset>image0</iconset>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Ajouter et définir une nouvelle unité</string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="0" rowspan="1" colspan="3">
+                                <property name="name">
+                                    <cstring>layout24</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel3</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>5</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Exprimée pour une durée de :</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_Periode</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>0</hsizetype>
+                                                <vsizetype>7</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                            </font>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GGGGGGGGGG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__________</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Période pour laquelle est définie la posologie (habituellement 1 jour)</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel4</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>0</hsizetype>
+                                                <vsizetype>5</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>secondes (1 jour = 86400 secondes)</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <item>
+                                            <property name="text">
+                                                <string>1 jour</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>2 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>3 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>4 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>5 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>6 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>7 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>8 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>9 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>10 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>11 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>12 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>13 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>14 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>15 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>16 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>17 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>18 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>19 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>20 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>21 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>22 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>23 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>24 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>25 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>26 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>27 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>28 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>29 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>30 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>31 jours</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>1 mois</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>2 mois</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>3 mois</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>4 mois</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>5 mois</string>
+                                            </property>
+                                        </item>
+                                        <property name="name">
+                                            <cstring>comboBoxPeriode</cstring>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>32767</width>
+                                                <height>19</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Liste de valeurs possibles pour la période ci-contre à gauche</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel4_2</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>5</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>32767</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string> Maximum possible pour &lt;font color="#0000ff"&gt;&lt;b&gt;UP1&lt;/b&gt;&lt;/font&gt;</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_UP1_Max</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>7</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GGGGGGGGGG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__________</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Période pour laquelle est définie la posologie (habituellement 1 jour)</string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="0" rowspan="1" colspan="3">
+                                <property name="name">
+                                    <cstring>layout23</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>lineEdit_a_UP2_2_2</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>50</width>
+                                                <height>0</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>50</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>255</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>LineEditPanel</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string>UP 1</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_QMin_UP1</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>5</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                            </font>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GGGGGGGGGG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__________</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Quantité minimum d'unités de prise pour la période définie ci-dessus</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>pushButton_A</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>40</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>40</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>255</blue>
+                                            </color>
+                                        </property>
+                                        <property name="text">
+                                            <string>à</string>
+                                        </property>
+                                        <property name="toggleButton">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_QMax_UP1</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>5</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                            </font>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GGGGGGGGGG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__________</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Quantité maximum d'unités de prise pour la période définie ci-dessus</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox">
+                                        <property name="name">
+                                            <cstring>comboBoxUP_1</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>0</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>200</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="editable">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="sizeLimit">
+                                            <number>20</number>
+                                        </property>
+                                        <property name="autoCompletion">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Unité dans laquelle s'exprime l'unité de prise</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton">
+                                        <property name="name">
+                                            <cstring>pushButtonNewUP1_Unit</cstring>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>32767</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string></string>
+                                        </property>
+                                        <property name="iconSet">
+                                            <iconset>image0</iconset>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Ajouter et définir une nouvelle unité</string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>groupBox16</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="paletteForegroundColor">
+                            <color>
+                                <red>0</red>
+                                <green>0</green>
+                                <blue>255</blue>
+                            </color>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <bold>1</bold>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string>Schéma de prise</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>2</number>
+                            </property>
+                            <property name="spacing">
+                                <number>1</number>
+                            </property>
+                            <widget class="QLabel" row="0" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>textLabel_Moment</cstring>
+                                </property>
+                                <property name="paletteForegroundColor">
+                                    <color>
+                                        <red>0</red>
+                                        <green>0</green>
+                                        <blue>0</blue>
+                                    </color>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                        <bold>0</bold>
+                                        <italic>1</italic>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Répartition de la prise</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox" row="0" column="2">
+                                <item>
+                                    <property name="text">
+                                        <string>(vide)</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour, le matin                                                                      </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour, à midi                                                                        </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour, le soir                                                                         </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour, le soir au coucher                                                             </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour, au petit déjeuner                                                             </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour, au cours du repas de midi                                                     </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 fois par jour, au cours du dîner                                                            </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 fois par jour, matin et soir                                                                   </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 fois par jour, matin et midi                                                                  </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 fois par jour, midi et soir                                                                  </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 fois par jour, le matin et au coucher</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 fois par jour, matin et soir au cours des repas                                             </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 fois par jour, au petit déjeuner et au repas de midi                                         </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 fois par jour, aux repas de midi et du soir                                                  </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>3 fois par jour, matin, midi et soir                                                          </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>3 fois par jour, matin, midi et soir au cours des repas                                       </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>4 fois par jour, matin, midi, après-midi et soir                                                </string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>5 fois par jour, matin, midi, après-midi, soir et coucher                                      </string>
+                                    </property>
+                                </item>
+                                <property name="name">
+                                    <cstring>comboBoxMoment</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>5</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="sizeLimit">
+                                    <number>20</number>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Liste de quelques schémas de prise communs</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="3">
+                                <property name="name">
+                                    <cstring>textLabel_Pendant</cstring>
+                                </property>
+                                <property name="paletteForegroundColor">
+                                    <color>
+                                        <red>0</red>
+                                        <green>0</green>
+                                        <blue>0</blue>
+                                    </color>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                        <bold>0</bold>
+                                        <italic>1</italic>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Pendant</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox" row="0" column="4">
+                                <item>
+                                    <property name="text">
+                                        <string>(vide)</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>1 jour</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>2 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>3 Jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>4 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>5 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>6 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>7 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>8 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>10 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>12 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>15 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>21 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>28 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>31 jours</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>62 jours</string>
+                                    </property>
+                                </item>
+                                <property name="name">
+                                    <cstring>comboBoxPendant</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>0</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="editable">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="sizeLimit">
+                                    <number>18</number>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Durée de prescription</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="5">
+                                <property name="name">
+                                    <cstring>pushButton_PosoSchemaEx</cstring>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>150</width>
+                                        <height>32767</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Schéma de prise (avancé) ...</string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Permet de définir des schémas de prise complexes</string>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="0" rowspan="1" colspan="6">
+                                <property name="name">
+                                    <cstring>layout23</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QRadioButton" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>radioButtonSecable1</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>0</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Non sécable</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QRadioButton" row="0" column="3">
+                                        <property name="name">
+                                            <cstring>radioButtonSecable4</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>0</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Sécable en 4</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLineEdit" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>lineEdit_SpecPrise</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>3</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Définition structurée des schémas de prise</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QRadioButton" row="0" column="2">
+                                        <property name="name">
+                                            <cstring>radioButtonSecable2</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>0</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="paletteForegroundColor">
+                                            <color>
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                            </color>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>9</pointsize>
+                                                <bold>0</bold>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Sécable en 2</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1_2</cstring>
+                                </property>
+                                <property name="paletteForegroundColor">
+                                    <color>
+                                        <red>0</red>
+                                        <green>0</green>
+                                        <blue>255</blue>
+                                    </color>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Note :</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter|AlignLeft</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="2" column="1" rowspan="1" colspan="5">
+                                <property name="name">
+                                    <cstring>lineEdit_Note</cstring>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <pointsize>9</pointsize>
+                                        <bold>0</bold>
+                                    </font>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout19</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <widget class="Line" row="0" column="0">
+                    <property name="name">
+                        <cstring>line1</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>textLabel1_3</cstring>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>255</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Posologies déjà définies pour ce produit</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="Line" row="0" column="2">
+                    <property name="name">
+                        <cstring>line1_2</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>HLine</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>CMaskedLineEdit</class>
+        <header location="local">../CMaskedLineEdit.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image1</pixmap>
+        <signal>Sig_FocusOut()</signal>
+        <signal>Sig_FocusIn()</signal>
+        <signal>Sig_CarEvent(QEvent * ev)</signal>
+        <property type="UInt">carMask</property>
+        <property type="String">text</property>
+        <property type="String">mask</property>
+        <property type="String">control</property>
+        <property type="Int">mixMode</property>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1350">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000050d494441545885bd97bd6f1c5514c57ff7bd99ddb54382491c3b090802041014803246422e10088462f807a828e89068908002898e828e92963f81020221414848b8495648504472121207e228def17ad7f6ceeecefbb814bb909838fe445c693e34d27be7e8dc77ef3d23b3b3b3ec35b2fc9482501fff5676bad6ec19bcf1aa82070d64f98cfeaf04b2c66b4ad9259ef8046a13107b3bde636f0a94058c3d8739f13ea40721f4ff3f02d9e22b8a407ce653b00ead3d003b4ec05e14e8f5e1f17731e327f19d4b84ea83bb2290ec063bfb735ab9ff38fae83b84ce5534b4b0f78d43dc05816ce90d452368a07ef8ec9665942dbea258d0a73f2688a2bdab90f4200504b2c629ad1ffe6edbe598a00a4494c8c91bd32aca404a33bc6c427de2a7db1bf6fae84333f8b10cd3b988c41c096b4469636afb21869d2940f448e520e94b3fa221126e7e852e9f87ce65289be096c86e4c2b7eb0400f3f8b7fea3de85f86b8082ca2a145d455341d45ba2b3b23509f382bd9c2b4faf36f232fff8c1ef81005a20756af416f0ed3bd82f4ae12a9100e4d61740ddc3c428efa063e7608dac1268654777610e4ef569ccd4f2b0fbd89bef835f44bd4dd4409d854c0447ce8a1ae01e53cc62d20ba84c69ce057887e1587236de58cdeb80258a2b5d427b63e0bb7ab60a40a7f7e03bf7d407cfa33280b2cab48bf8bf32ba85bc1481ba189b0440839de77c02d13420fc1e0ee1fa7ab90b6736cbfe085855755ad454540848d0ea7dc398cb25b2f29a587e73f8747de428b397c6f19e2328636680b438e774dd47788be450c3d540d88a022c4244582c7fa80290bec5a8ba4d34142898480a0449b8018eae3a745fe3d0db385694540a7bec41f3801c5ef185d026d425c248636b15c2584163138040b02c31b006a86df64f05415aceb618b354cd9c5146bd8b207b24127ac1f9b1514f8f523a4b884311d880dd05b44bf4c746d7c6813831f82cb3a700089010901bc03ef1002be364a7ffc28eebe314cbc7d50376cc5f563b322c522f6f21790aca0ba48289b04dfc6f75b68f00866087eaf18e43d262928545a0df6cffdc2be6b1791723035eb874ecbbd5bb13598ee02a17f8de8d788ae4df0ab2820c3cdef152a16128bc648a59d536d2e628a35d4583449d619974d668125a415625c435d3e00574136907c1db8b5a840da6e525dba89e9765023685aa13e7efaae851b12c81a332a9210264ee0fb39eab6096e2caa86911b97a9b6724292de13787305429f387604379210bbcb80192abe455f11a1d2ce495b39a152a37e786b8f781781ac31a382a5776892e83b0c33be65e8909f097e30c0b601be2101e34bdc8183b8da08e21d02834e660cd1d84109890c108347d6b9901d9be2f504b2c68caa18caf123a80882a0494a1483290b2a459374b5454cabb8b1496235454340741756682302123dfec018e5fe4318ef506b488a556aad1c5bac60fb3dd4082606d29526c5234f112b2368700c7c85122ad5dd11c8f2531a932add23c731fd2e95764ea5d9c0b82e1295682de78ffdf08fc653375fd391eb97e83efc04b1528330340c62d889395ca780a65546f205ec4a13e31cd15ad4a65c98bcbb8c2e1c3d2753b75ed7d1eb73140f3f49a88c22bb3085e6ce57537649971b1095f347cf497de28c6c56c31726bf17f125a3d7e730ae20da9450a9016cfb2fe91f053603da2c2e4c9e95a95bafebbef9393a8f3d3348079b37ac3b63cfff860312032546e62f61ca028cddf6daff84c080c4593165977d7f5c41cdf6c5fccf0800d427ce08310c1ad5a6a3fa76fc0589e1a3bd03a853120000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>listView_MedicaPoso</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>listView_MedicaPoso_clicked(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxFactCorpUnit</sender>
+        <signal>activated(int)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxFactCorpUnit_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxUP_2</sender>
+        <signal>activated(int)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxUP_2_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxUP_2</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxUP_2_textChanged(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxUP_1</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxUP_1_textChanged(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxUP_1</sender>
+        <signal>activated(int)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxUP_1_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxPeriode</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxPeriode_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxMoment</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxMoment_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonSecable1</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>radioButtonSecable1_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonSecable2</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>radioButtonSecable2_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonSecable4</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>radioButtonSecable4_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>slider_VarPoso</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>slider_VarPoso_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxPendant</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>comboBoxPendant_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit_SpecPrise</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>lineEdit_SpecPrise_textChanged(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonNewUP1_Unit</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButtonNewUP1_Unit_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonNewUP2_Unit</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButtonNewUP2_Unit_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_AddPoso</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButton_AddPoso_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>listView_MedicaPoso</sender>
+        <signal>currentChanged(QListViewItem*)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>listView_MedicaPoso_currentChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_RecordPoso</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButton_RecordPoso_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_ErasePoso</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButton_ErasePoso_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>listView_Produits</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>listView_Produits_clicked(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>listView_Produits</sender>
+        <signal>currentChanged(QListViewItem*)</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>listView_Produits_currentChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonAdvancedTerrain</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButtonAdvancedTerrain_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonListPosoCopier</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButtonListPosoCopier_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonListPosoColler</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButtonListPosoColler_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonDefPosoCopier</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButtonDefPosoCopier_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonDefPosoColler</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButtonDefPosoColler_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_A</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_PosoManager</receiver>
+        <slot>pushButton_A_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>pushButton_PosoSchemaEx</tabstop>
+    <tabstop>lineEdit_Indication</tabstop>
+    <tabstop>pushButtonAdvancedTerrain</tabstop>
+    <tabstop>lineEdit_Terrain</tabstop>
+    <tabstop>comboBox_Sexe</tabstop>
+    <tabstop>radioButtonSecable1</tabstop>
+    <tabstop>radioButtonSecable2</tabstop>
+    <tabstop>radioButtonSecable4</tabstop>
+    <tabstop>comboBoxMoment</tabstop>
+    <tabstop>comboBoxPendant</tabstop>
+    <tabstop>lineEdit_SpecPrise</tabstop>
+    <tabstop>pushButton_AddPoso</tabstop>
+    <tabstop>pushButton_ErasePoso</tabstop>
+    <tabstop>pushButton_RecordPoso</tabstop>
+    <tabstop>slider_VarPoso</tabstop>
+    <tabstop>comboBoxFactCorpUnit</tabstop>
+    <tabstop>textBrowser_Result</tabstop>
+    <tabstop>lineEdit_QMin_UP2</tabstop>
+    <tabstop>lineEdit_QMax_UP2</tabstop>
+    <tabstop>comboBoxUP_2</tabstop>
+    <tabstop>pushButtonNewUP2_Unit</tabstop>
+    <tabstop>comboBoxPeriode</tabstop>
+    <tabstop>pushButton_A</tabstop>
+    <tabstop>comboBoxUP_1</tabstop>
+    <tabstop>pushButtonNewUP1_Unit</tabstop>
+    <tabstop>listView_Produits</tabstop>
+    <tabstop>pushButtonListPosoCopier</tabstop>
+    <tabstop>pushButtonListPosoColler</tabstop>
+    <tabstop>pushButtonDefPosoCopier</tabstop>
+    <tabstop>pushButtonDefPosoColler</tabstop>
+    <tabstop>listView_MedicaPoso</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in declaration">../CMedicaBase.h</include>
+    <include location="local" impldecl="in declaration">CApp.h</include>
+    <include location="local" impldecl="in declaration">Dlg_HtmlView.h</include>
+    <include location="local" impldecl="in declaration">Dlg_AdvancedTerrain.h</include>
+    <include location="global" impldecl="in implementation">math.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="local" impldecl="in implementation">Dlg_PosoManager.ui.h</include>
+</includes>
+<variables>
+    <variable>CPosologie m_CPosologie;</variable>
+    <variable>QString m_CIP;</variable>
+    <variable>QString m_ProdName;</variable>
+    <variable>Dlg_HtmlView *m_pDlg_HtmlView;</variable>
+    <variable>QString m_TableSpecIndex;</variable>
+    <variable>QPL_CPosologie m_CPosologieListMem;</variable>
+    <variable>CPosologie m_CPosologieMem;</variable>
+</variables>
+<slots>
+    <slot>initDialog( QString cip, const QString &amp; tableSpecIndex, const QString &amp;, QListView * pQListView )</slot>
+    <slot>lineEdit_PoidsTest_textChanged( const QString &amp; )</slot>
+    <slot>lineEdit_TailleTest_textChanged( const QString &amp; )</slot>
+    <slot>lineEdit_QMin_UP1_textChanged( const QString &amp; )</slot>
+    <slot>lineEdit_QMax_UP1_textChanged( const QString &amp; )</slot>
+    <slot>lineEditFactCorpQU_textChanged( const QString &amp; )</slot>
+    <slot>ListViewProduitCopy( QListView * pQListView )</slot>
+    <slot>listView_Produits_clicked( QListViewItem * pQListViewItem )</slot>
+    <slot>listView_Produits_currentChanged( QListViewItem * pQListViewItem )</slot>
+    <slot>listView_Produits_Changed( QListViewItem * pQListViewItem )</slot>
+    <slot>listView_MedicaPoso_currentChanged( QListViewItem * pQListViewItem )</slot>
+    <slot>listView_MedicaPoso_clicked( QListViewItem * pQListViewItem )</slot>
+    <slot>listView_ItemToInterface( QListViewItem * pQListViewItem )</slot>
+    <slot>CPosologieToInterface( CPosologie &amp; poso )</slot>
+    <slot>InterfaceToCPosologie( CPosologie &amp; poso )</slot>
+    <slot>DisplayResult()</slot>
+    <slot returnType="int">ComputeNbPrises( const QString &amp; spec )</slot>
+    <slot>ComputeSecondForm( const CPosologie &amp;, QString &amp; upMin, QString &amp; upMax )</slot>
+    <slot>slider_VarPoso_valueChanged( int )</slot>
+    <slot>radioButtonSecable1_clicked()</slot>
+    <slot>radioButtonSecable2_clicked()</slot>
+    <slot>radioButtonSecable4_clicked()</slot>
+    <slot returnType="int">getSecabilite()</slot>
+    <slot>comboBoxMoment_activated( const QString &amp; )</slot>
+    <slot>comboBoxUP_1_textChanged( const QString &amp; )</slot>
+    <slot>comboBoxUP_1_activated( int )</slot>
+    <slot>comboBoxUP_2_textChanged( const QString &amp; )</slot>
+    <slot>comboBoxUP_2_activated( int )</slot>
+    <slot>lineEditQUP1byUP2_textChanged( const QString &amp; )</slot>
+    <slot>SetComboOnThisLibelle( QComboBox * pQComboBox, const QString &amp; value )</slot>
+    <slot>SetComboOnLibelle( QComboBox * pQComboBox, const QString &amp; value )</slot>
+    <slot>comboBoxPeriode_activated( const QString &amp; text )</slot>
+    <slot>comboBoxFactCorpUnit_activated( int )</slot>
+    <slot>comboBoxPendant_activated( const QString &amp; )</slot>
+    <slot>lineEdit_SpecPrise_textChanged( const QString &amp; )</slot>
+    <slot>pushButtonNewUP1_Unit_clicked()</slot>
+    <slot>UnitTablesSynchronise()</slot>
+    <slot>pushButtonNewUP2_Unit_clicked()</slot>
+    <slot>pushButton_AddPoso_clicked()</slot>
+    <slot>AddPosoToBase( CPosologie &amp; poso )</slot>
+    <slot>pushButton_RecordPoso_clicked()</slot>
+    <slot>pushButton_ErasePoso_clicked()</slot>
+    <slot>pushButtonAdvancedTerrain_clicked()</slot>
+    <slot>pushButtonListPosoCopier_clicked()</slot>
+    <slot>pushButtonListPosoColler_clicked()</slot>
+    <slot>AddPosoListToBase( QPL_CPosologie &amp; list_CPosologie )</slot>
+    <slot>pushButtonDefPosoCopier_clicked()</slot>
+    <slot>pushButtonDefPosoColler_clicked()</slot>
+    <slot>pushButton_A_clicked()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function returnType="float">ExtractNumber( const QString text )</function>
+    <function returnType="QString">ComboFactCorpUnitToUnit()</function>
+    <function returnType="QString">ComboSexeToVal()</function>
+    <function returnType="QString">comboBoxMomentToSpecPrises( QString &amp; spec )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+    <includehint>../CMaskedLineEdit.h</includehint>
+</includehints>
+</UI>

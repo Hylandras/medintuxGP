@@ -1,0 +1,43 @@
+ scriptStr.replace("root",      login_Master);
+ scriptStr.replace("root",   login_masterSrc);
+ scriptStr.replace("root",   login_masterSrc);
+ scriptStr.replace("root",      login_Nomade);
+ scriptStr.replace("root",     login_Reverse);
+
+ scriptStr.replace("localhost",      host_Master);
+ scriptStr.replace("localhost",   host_masterSrc);
+ scriptStr.replace("localhost",   host_masterSrc);
+ scriptStr.replace("localhost",      host_Nomade);
+ scriptStr.replace("localhost",     host_Reverse);
+
+ scriptStr.replace("",      pass_Master);
+ scriptStr.replace("",   pass_masterSrc);
+ scriptStr.replace("",   pass_masterSrc);
+ scriptStr.replace("pass",      pass_Nomade);
+ scriptStr.replace("",     pass_Reverse);
+
+ scriptStr.replace("3306",      port_Master);
+ scriptStr.replace("3306",   port_masterSrc);
+ scriptStr.replace("3306",   port_masterSrc);
+ scriptStr.replace("3307",      port_Nomade);
+ scriptStr.replace("3306",     port_Reverse);
+
+ scriptStr.replace("",      logBin_Master);
+ scriptStr.replace("",   logBin_masterSrc);
+ scriptStr.replace("",   logBin_masterSrc);
+ scriptStr.replace("",      logBin_Nomade);
+ scriptStr.replace("",     logBin_Reverse);
+
+ scriptStr.replace("98",      log_Pos_Master);
+ scriptStr.replace("98",   log_Pos_MasterSrc);
+ scriptStr.replace("98",   log_Pos_MasterSrc);
+ scriptStr.replace("98",      log_Pos_Nomade);
+ scriptStr.replace("98",     log_Pos_Reverse);
+
+ //................... infos lues dans les fichiers status.............
+ scriptStr.replace("",          master_Host);
+ scriptStr.replace("",          master_User);
+ scriptStr.replace("",          master_Port);
+ scriptStr.replace("",            masterKey);
+ scriptStr.replace("",      master_Log_File);
+ scriptStr.replace("",  read_Master_Log_Pos);

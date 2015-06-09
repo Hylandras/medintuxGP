@@ -1,0 +1,1 @@
+( rpu_encours_id_patient = '64C62195-E599-11D5-888F-0090272F73E6' AND rpu_encours_dt_entree = '2014-06-22 05:02:00' )

@@ -1,0 +1,134 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>FormDlgMyMessageBox</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>FormDlgMyMessageBox</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>450</width>
+            <height>170</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>MessageBox</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTextEdit" row="0" column="0">
+            <property name="name">
+                <cstring>textEditMesage</cstring>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <Qt::red>0</Qt::red>
+                    <Qt::green>0</Qt::green>
+                    <Qt::blue>0</Qt::blue>
+                </color>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <Qt::red>255</Qt::red>
+                    <Qt::green>253</Qt::green>
+                    <Qt::blue>202</Qt::blue>
+                </color>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="textFormat">
+                <enum>Qt::RichText</enum>
+            </property>
+            <property name="undoDepth">
+                <number>0</number>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="1">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>pushButton1</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>pushButton1</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>pushButton1</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton4</cstring>
+                    </property>
+                    <property name="text">
+                        <string>pushButton1</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>FormDlgMyMessageBox</receiver>
+        <slot>pushButton1_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>FormDlgMyMessageBox</receiver>
+        <slot>pushButton2_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton3</sender>
+        <signal>clicked()</signal>
+        <receiver>FormDlgMyMessageBox</receiver>
+        <slot>pushButton3_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton4</sender>
+        <signal>clicked()</signal>
+        <receiver>FormDlgMyMessageBox</receiver>
+        <slot>pushButton4_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">DlgMyMessageBox.ui.h</include>
+</includes>
+<slots>
+    <slot>pushButton1_clicked()</slot>
+    <slot>pushButton2_clicked()</slot>
+    <slot>pushButton3_clicked()</slot>
+    <slot>pushButton4_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

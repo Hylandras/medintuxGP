@@ -1,0 +1,112 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>GrandLivre_BilanAnnuel</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>GrandLivre_BilanAnnuel</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Grand Livre et Bilan Annuel</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTabWidget" row="0" column="0">
+            <property name="name">
+                <cstring>tabWidget2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Bilan Annuel</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QPushButton" row="0" column="0">
+                        <property name="name">
+                            <cstring>butSauvBilanAnnuel</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Sauvegarder en HTML</string>
+                        </property>
+                    </widget>
+                    <widget class="QTextEdit" row="1" column="0">
+                        <property name="name">
+                            <cstring>bilanAnnuel</cstring>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Grand Livre</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QPushButton" row="0" column="0">
+                        <property name="name">
+                            <cstring>butSauvGdLivre</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Sauvegarder en HTML</string>
+                        </property>
+                    </widget>
+                    <widget class="QTextEdit" row="1" column="0">
+                        <property name="name">
+                            <cstring>gdLivre</cstring>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>butSauvGdLivre</sender>
+        <signal>clicked()</signal>
+        <receiver>GrandLivre_BilanAnnuel</receiver>
+        <slot>butSauvGdLivre_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>butSauvBilanAnnuel</sender>
+        <signal>clicked()</signal>
+        <receiver>GrandLivre_BilanAnnuel</receiver>
+        <slot>butSauvBilanAnnuel_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">qmessagebox.h</include>
+    <include location="global" impldecl="in declaration">qfile.h</include>
+    <include location="local" impldecl="in declaration">../ComptaMoteurBase.h</include>
+    <include location="global" impldecl="in declaration">qdir.h</include>
+    <include location="local" impldecl="in implementation">livres.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">ComptaMoteurBase* m_pComptaMoteurBase;</variable>
+    <variable access="public">QString m_PathSauvegarde;</variable>
+</variables>
+<slots>
+    <slot>setParams( ComptaMoteurBase * pMB, QString &amp; pathSave )</slot>
+    <slot>butSauvGdLivre_clicked()</slot>
+    <slot>butSauvBilanAnnuel_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

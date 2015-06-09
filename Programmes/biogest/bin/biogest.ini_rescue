@@ -1,0 +1,47 @@
+[Connexion]
+  Parametres = QMYSQL3 , qlaboftp , root , # , 192.168.100.3 , 3306
+  _Parametres = QMYSQL3,qlaboftp,root,#,localhost,3306
+  _Parametres = QMYSQL3,qlaboftp,root,#,192.168.100.3,3306
+  _Parametres = QMYSQL3,qlaboftp,root,#00090016000200550009001A,192.168.0.10,3306
+ TimeToReconnect   = 3600000 
+
+
+[biogest session]
+  started = 22-03-2013 14:59:37:269
+  closed = 22-03-2013 18:06:39:523
+  Repertoire des templates = ./Ressources/Templates
+  Template en cours = resultat.txt
+  Repertoire temporaire = ./Ressources/TempFiles
+  PathLastCopy=./toInclude.txt
+  ServeurFTP = labocasalta.concertolab.com , 21 , urgences , #001900170014004D000D001B005F005500560047 , resultats
+  _ServeurFTP = labocasalta.concertolab.com,21,urgences,#001900170014004D000D001B005F005500560047,resultats
+  _ServeurFTP = 78.192.132.151,21,medintux,#00180010000B0056000D00000000000400170012,/mysql-arch/hprim-labo
+  LogFTP = ok
+  EffacementDistant = ok
+  EffacementLocal = ok
+  Just patients with results = ok
+  Limiter le nombre de resultats = 200
+  Ftp daemon enabled = no
+  Ftp scrutation = 180
+  DataBase scrutation = 180
+  date filter = ok
+  Popup message             = <center><b><u>De nouveaux<br>rsultats<br>sont arrivs</u></b></center>
+  Popup message text param  = 130,60,#0000ff,#f8ffa0
+  Service = Urgences              : CMUR
+  _Service = Tous services         : ___
+  _Service = Urgences              : CMUR
+  _Service = Reanimation           : CMR
+  _Service = Ambulatoire           : CMS
+  _Service = Bloc                  : CMB
+  _Service = Premier               : CMP
+  _Service = Second                : CMD
+  _Service = Troisieme             : CMT
+  _Service = Quatrieme             : CMQ
+  _Service = Cinquieme             : CMC
+  _Service = Usic Cardio           : USIC
+  _Service = Rea rez de chausse    : CMREA
+  _Service = Rea Troisieme         : USC3
+
+
+[ConnexionBase]
+  Parametres = QMYSQL3 , DrTuxTest , root ,  , 192.168.100.3 , 3306

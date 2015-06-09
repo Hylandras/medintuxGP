@@ -1,0 +1,38 @@
+<!DOCTYPE CMenu><CMenu version="0.0" stdsetdef="1">
+<actions>
+    <action>
+        <property name="name">
+            <cstring>Acces_pdf</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>pdfLies.png</iconset>
+        </property>
+        <property name="text">
+            <string>Voir les documents PDF</string>
+        </property>
+        <property name="menuText">
+            <string>Voir les documents PDF</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+ù</string>
+        </property>
+        <property name="script">
+            <string>{{\
+{{:: SET_VAR ( Pdf_VisualW,C:/Program Files/Foxit Software/Foxit Reader/Foxit Reader)}}\
+{{:: SET_VAR ( Pdf_VisualL,/usr/bin/kpdf)}}\
+{{:: SET_VAR ( Pdf_VisualM,/Applications/Aperçu)}}\
+{{:: SET_VAR ( Pdf_Visual,chemin inconnu)}}\
+{{:: SET_VAR ( Pdf_Visual,{{:: TEST (S,{{OS}},=,M,{{VAR=Pdf_VisualM}},{{VAR=Pdf_Visual}})}})}}\
+{{:: SET_VAR ( Pdf_Visual,{{:: TEST (S,{{OS}},=,L,{{VAR=Pdf_VisualL}},{{VAR=Pdf_Visual}})}})}}\
+{{:: SET_VAR ( Pdf_Visual,{{:: TEST (S,{{OS}},=,W,{{VAR=Pdf_VisualW}},{{VAR=Pdf_Visual}})}})}}\
+{{:: SET_VAR (Filtre,{{SQL_GET_DOSS_GUID}})}}\
+{{:: SET_VAR (Pdf_Dir,{{AP=../../pdf}})}}\
+{{:: SET_VAR (liste,{{:: LIST_DIR({{VAR=Pdf_Dir}},{{VAR=Filtre}},pdf)}})}}\
+{{:: SET_VAR (Nom_Fichier,{{:: DO_LISTE({{VAR=liste}},choisissez le fichier à visualiser)}})}}\
+{{:: SET_VAR (todo,{{:: SI(S,{{VAR=Nom_Fichier}},!=,,exe_process,A_NOP)}})}}\
+{{:: {{VAR=todo}}(NoWaitEnd,{{VAR=Pdf_Visual}},{{VAR=Pdf_Dir}}/{{VAR=Nom_Fichier}})}}\
+}}</string>
+        </property>
+    </action>
+</actions>
+</CMenu>

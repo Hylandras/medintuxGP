@@ -1,0 +1,167 @@
+.bdm_bordure_globale {
+	border: 1px solid #003366;
+}
+.bdm_ligne_over {
+	background-color: #CCCCCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;	
+}
+.bdm_ligne_out {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.bdm_ligne_select {
+	background-color: #2F4696;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;	
+}
+.bdm_produit_supprime {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #990000;
+	font-style: italic;
+}
+.bdm_liste_tableau {
+	border-bottom: 1px solid #999999;
+}
+.bdm_noresult {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #990000;	
+}
+a.bdm_lien_alerte:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F4696;
+	text-decoration: underline;
+}
+a.bdm_lien_alerte:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F4696;
+	text-decoration: underline;
+}
+a.bdm_lien_alerte:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #A4BE0C;
+	text-decoration: underline;
+}
+a.bdm_lien_fonction:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F4696;
+	text-decoration: underline;
+}
+a.bdm_lien_fonction:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F4696;
+	text-decoration: underline;
+}
+a.bdm_lien_fonction:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #A4BE0C;
+	text-decoration: underline;
+}
+a.bdm_lien_standard:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F4696;
+	text-decoration: none;
+}
+a.bdm_lien_standard:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #2F4696;
+	text-decoration: none;
+}
+a.bdm_lien_standard:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-style: normal;
+	font-weight: bold;
+	color: #A4BE0C;
+	text-decoration: underline;
+}
+.bdm_texte_alerte {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;	
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+}
+.bdm_texte_classique {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;	
+	font-style: normal;
+	font-weight: normal;
+	color: #2F4696;
+}
+.bdm_contenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;	
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.bdm_titre_alerte {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-style: italic;
+	font-weight: bold;
+	color: #2F4696;
+}
+.bdm_ligne1 {
+	background-color: #F2F9CF;
+}
+.bdm_ligne2 {
+	background-color: #FFFFFF;
+}
+.bdm_ordo_imprim_titre {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:24px;
+	font-style: italic;
+	font-weight: bold;
+	color: #000000;
+	font-variant: small-caps;
+}
+.bdm_ordo_imprim_contenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;	
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.bdm_pharmatheque {
+	font-family: "Courier New", Courier, mono;
+	font-size: 15px;
+	font-weight: normal;
+	color: #000000;
+}

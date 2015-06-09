@@ -1,0 +1,334 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>FormRubChoixPatient</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FormRubChoixPatient</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>591</width>
+            <height>441</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>FormChoixPatient</string>
+    </property>
+    <property name="toolTip" stdset="0">
+        <string></string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLineEdit" row="1" column="0">
+            <property name="name">
+                <cstring>lineEditAutoLocator</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Saisir le nom du patient à rechercher séparé du prénom par un point virgule</string>
+            </property>
+        </widget>
+        <widget class="QListView" row="2" column="0">
+            <column>
+                <property name="text">
+                    <string>Nom                           </string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Nom JF                     </string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Prénom</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Adresse</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>CP</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Ville</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Tél 1</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Tél 2</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <property name="name">
+                <cstring>ListView_Patient</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="mouseTracking">
+                <bool>false</bool>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="resizePolicy">
+                <enum>Manual</enum>
+            </property>
+            <property name="allColumnsShowFocus">
+                <bool>true</bool>
+            </property>
+            <property name="resizeMode">
+                <enum>AllColumns</enum>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0">
+            <property name="name">
+                <cstring>textLabel_StateList</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <property name="text">
+                <string>textLabel_StateList</string>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonNew</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>80</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>Nouveau</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Créer un nouveau dossier</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>checkBoxAutre</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Autre</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Voir le dossier dans un nouveau programme</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Lorsque ce bouton est coché, un clic sur un des patients de la liste,
+l'affichera et le lancera dans une autre instance du programme, au lieu de remplacer celui affiché actuellement dans l'instance en cours.</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>25</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonInfo</cstring>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1293">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000004d449444154388d95954b6c945518869ffffc97b975663ad33a33a550a420a05c0cdaa81d1a01a9143046b13184b0a2d176a7b0518c0be3ca46c24216c6269a98989a4ad0a8448d099258a4e54ee985500b65ca747a9b4ea7d3b95ffef95d14db45add16f737292ef3ce7fddeef5ca4aeae2efe2deaeaea0c97cbb5308f46a30821501485f3e7cf4bcbad93960337bcea37ec6eb0b9c0e6008b5d8021c865201d13cc856136a4e176bbe9e8e858b2c11270fd3ebfe1f441dd0bcfb27bd75e36aedd8cbbd483244128324060bc97c0441f63c111860762046e1914d30ece9c39232d0b6e78c56f9457c1d1b78ed3b0a391f2d24ae2e919c2915102a383648890639a4476827866947832ccc8ed24fd170aa4a69cb4b7b74b4bc0f5fbfc86771d7cf8c1090ed4bf492e9f627c2ac8e5ab5d0c0fdfc3e7f5f260629068fa2e0e6f01a74707398d616418bb57e0f7d33934dd4b5b5b9b04a000f8fd7ea362031c7bfb38afbdd84c2e9f22129be4cad52eaaab9ea0e9d0d185aa06febcc6479f358392a4b45c45d3acacdb0a85b8e05c7b6c214f00d83df39e36ec7c9d7c2143221da5a7e70abef2d5ecdcbe87543ac1e9b36d044607d9b4be86238def13194ba3e77524546449a5e6f90aaa379b696e6e360084df3fdffdfa5d0d78dd2b4966a3c45253846743a82685543ac1275fbcc78f7f9ce0cb6f5b01f03e5249269d452f1a509400158b5de5c967aac866b38b8a6d2ed8b86e2b89ec2c73e9296693219c3e8373d73fe7c83bb5dc19fb99646a96c6bd2d004c8683c89a8e512c6220010a193dcd864d2b28168b2c786c734099cb4b3c3545343eca4c32489629dcabf2e08091a1188dbbdf65cb86e748a6e638fdcbc794b80c74748a8021c9640b45d654b990657951b1d52e402a124d8c124904994d0549644364f409e2b108be921a0eec9957fbe9d7c799c9f562b28124002140286028b8cb4b912469115c342034334024f1e021748c8c3e4d8118e1c904075f3a86cdeae0dcc56fb874a78db2150a8a2683226308198482a699c9a66454559db74208413e23088cf56029d1886743a4f311f27a1c830ce83a2556270017ae7d87dda5a09864244d45554ca88a192164ec562be1b1c482158a1082744c3032decf8a951e328528ba914012791459e0f6695cbc71969ec14ec6c3c398cb4c68aa054db5a16856846a42c8265cd672fa2f4517c19d9d9dd2c1233b8d503080bd2c87508a400e4556a0a8e1ab2ae166a08d6c4e47b2081c257614cd82aadad1b41264a1516a3363932ae9bbd1bd68054034a471bf3f4ec5da691c4e338aac202419542be19041cdea37b0599dc45331ae3ff80adb4a27269303593663366954ba5631707186a1fe3066b379b1796eb79bfb7d0623fd298a852c92309015055998980b0b6ab7ede7d0cb47d9be6d3f89a8094d75a0c8164caacaa3e595c4eebbf8f5879bc8b24c6b6babb400eee8e890f4a483dece02a3437984000303904052e6c7873a845051640d87d5c463de6a92410fdf775c667a22c3c9932797be6e00870f1f36346792babd1e9ede51816a110403b30487e344a70b94796c54ad2963fdfa2a1c4a2543b7e6f8eda7de25d025608096961623168b51bdd9cc96a756b1f6710f1e5f290e670999a4606632cdd8488c3b7d13dcbd1d4155d525d07f04ff1d4d4d4d86aeebe8babe708454554508812ccf5f8453a74efdb73fafb6b6d6e8eeee5e36f9ffc45fafc409768a0c5d710000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>lineEditAutoLocator</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>FormRubChoixPatient</receiver>
+        <slot>lineEditAutoLocator_textChanged(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>ListView_Patient</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>FormRubChoixPatient</receiver>
+        <slot>ListView_Patient_clicked(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>ListView_Patient</sender>
+        <signal>selectionChanged(QListViewItem*)</signal>
+        <receiver>FormRubChoixPatient</receiver>
+        <slot>ListView_Patient_selectionChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonNew</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubChoixPatient</receiver>
+        <slot>pushButtonNew_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>checkBoxAutre</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubChoixPatient</receiver>
+        <slot>checkBoxAutre_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonInfo</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubChoixPatient</receiver>
+        <slot>pushButtonInfo_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in implementation">qwhatsthis.h</include>
+    <include location="global" impldecl="in implementation">qtimer.h</include>
+    <include location="global" impldecl="in declaration">qsqldatabase.h</include>
+    <include location="local" impldecl="in declaration">CMoteur_Base.h</include>
+    <include location="local" impldecl="in declaration">../../MedinTuxTools/CPrtQListViewItem.h</include>
+    <include location="local" impldecl="in implementation">RubChoixPatient.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">QString m_DossPrenom;</variable>
+    <variable access="public">QString m_ID_Doss;</variable>
+    <variable access="public">QString m_NumGUID;</variable>
+    <variable access="public">QString m_DossNom;</variable>
+    <variable access="public">CMoteurBase* m_pCMoteurBase;</variable>
+    <variable access="public">QString m_User;</variable>
+    <variable>QString m_LastGUID;</variable>
+</variables>
+<signals>
+    <signal>Sign_IdentChange(const char*, const char*, const char*, const char* );</signal>
+    <signal>Sign_CreateNewIdent()</signal>
+    <signal>Sign_IdentDelete(const char*, const char*, const char*, const char* );</signal>
+    <signal>Sign_DrTuxExeAnother(QString, QString, QString, QString)</signal>
+    <signal>Sign_GetActiveGUID(QString &amp;);</signal>
+</signals>
+<slots>
+    <slot>SetInterfaceOnDroits( const QString &amp; droits )</slot>
+    <slot>InitAllList( const QString &amp; qstr_nom, const QString &amp; qstr_prenom )</slot>
+    <slot>reinitList( const char *, const char * id_doss, const char *, const char * )</slot>
+    <slot>Slot_SearchFor( QString patient )</slot>
+    <slot>lineEditAutoLocator_textChanged( const QString &amp; qstr_in )</slot>
+    <slot>ListView_Patient_clicked( QListViewItem * qlistViewItem )</slot>
+    <slot>ListView_Patient_selectionChanged( QListViewItem * qlistViewItem )</slot>
+    <slot>RestaureLastGUID()</slot>
+    <slot>pushButtonNew_clicked()</slot>
+    <slot>pushButtonDelete_clicked()</slot>
+    <slot>checkBoxAutre_clicked()</slot>
+    <slot>pushButtonInfo_clicked()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

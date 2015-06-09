@@ -1,0 +1,221 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>DlgPassChange</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DlgPassChange</cstring>
+    </property>
+    <property name="enabled">
+        <bool>true</bool>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>443</width>
+            <height>242</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Saisie du mot de passe</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="1">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QCheckBox" row="2" column="0" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>checkBoxMemorise</cstring>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Mémoriser le mot de passe</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+M</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="1" column="0">
+                            <property name="name">
+                                <cstring>textLabel2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Mot de &amp;passe :</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit_Pass</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="2" column="2">
+                            <property name="name">
+                                <cstring>pushButtonOK</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="text">
+                                <string>&amp;OK</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+O</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>textLabel1</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>NoFrame</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Plain</enum>
+                            </property>
+                            <property name="text">
+                                <string>&amp;Utilisateur :</string>
+                            </property>
+                            <property name="buddy" stdset="0">
+                                <cstring>lineEdit_User</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="1" column="1" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>lineEdit_Pass</cstring>
+                            </property>
+                            <property name="echoMode">
+                                <enum>Password</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit" row="0" column="1" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>lineEdit_User</cstring>
+                            </property>
+                            <property name="echoMode">
+                                <enum>Normal</enum>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QListView" row="0" column="0">
+                    <column>
+                        <property name="text">
+                            <string>Login</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Nom                  </string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Prénom</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>ID</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>GUID</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>ListView_UserList</cstring>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>115</red>
+                            <green>195</green>
+                            <blue>195</blue>
+                        </color>
+                    </property>
+                    <property name="acceptDrops">
+                        <bool>true</bool>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="rootIsDecorated">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonOK</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPassChange</receiver>
+        <slot>pushButtonOK_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">../../drtux/src/CMoteur_Base.h</include>
+    <include location="local" impldecl="in implementation">DlgPassChange.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">CMoteurBase* m_pCMoteurBase;</variable>
+    <variable access="public">QString m_User;</variable>
+    <variable access="public">QString m_PassWord;</variable>
+    <variable access="public">int m_Mode;</variable>
+</variables>
+<slots>
+    <slot>initDialog( CMoteurBase * pCMoteurBase, const char * user )</slot>
+    <slot>On_ListView_UserList_Clicked( QListViewItem * pQListViewItem )</slot>
+    <slot>lineEdit_User_textChanged( const QString &amp; qstr )</slot>
+    <slot>lineEdit_Pass_textChanged( const QString &amp; qstr )</slot>
+    <slot>pushButtonOK_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

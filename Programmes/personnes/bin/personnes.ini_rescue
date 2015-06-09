@@ -1,0 +1,9 @@
+
+[Connexion]
+  Parametres = QMYSQL3 , DrTuxTest , root ,  , localhost , 3306
+
+[Geometry]
+  MainWindow = 652 , 165 , 740 , 678
+  SpliterNomPrenom = 221 , 490
+[END_INI]
+

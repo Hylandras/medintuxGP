@@ -1,0 +1,126 @@
+A:visited
+{
+    COLOR: #2F4696;
+    TEXT-DECORATION: none
+}
+A:link
+{
+    COLOR: #2F4696;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #2F4696;
+    TEXT-DECORATION: underline
+}
+TD
+{
+    FONT-SIZE: x-small;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana
+}
+
+.bdm_tableauhaut {
+	border-top: 1px solid #000066;
+	border-right: 1px solid #000066;
+	border-bottom: 1px none #000066;
+	border-left: 1px solid #000066;
+}
+
+.bdm_tableaumilieu {
+	border-top: 1px none #000066;
+	border-right: 1px solid #000066;
+	border-bottom: 1px none #000066;
+	border-left: 1px solid #000066;
+}
+
+.bdm_tableaubas {
+	border-top: 1px none #000066;
+	border-right: 1px solid #000066;
+	border-bottom: 1px solid #000066;
+	border-left: 1px solid #000066;
+}
+.bdm_fondtableau {
+	background-color: #4357A8;
+}
+.bdm_titre_chapitre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 18px;
+}
+.bdm_titre_chapitre_bleu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #004990;
+	font-weight: bold;
+	height: 18px;
+}
+
+.bdm_info_statut {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #004990;
+	font-weight: bold;
+	height: 25px;
+}
+.bdm_contenu_chapitre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	font-size: 10px;
+}
+.bdm_titre_monographie {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #004990;
+	font-weight: bold;
+}
+A.bdm_lien_menu:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A.bdm_lien_menu:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+A.bdm_lien_menu:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #BFE10E;
+}
+.bdm_tableau_contour {
+	border: 1px solid #336699;
+}
+.bdm_bordure_lpp {
+	border: 1px solid #4357A8;
+}
+.bdm_contenu_lpp {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	font-size: 11px;
+}
+.bdm_titre_rubrique {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #4357A8;
+}
+.bdm_ligne_separation {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #004990;
+}

@@ -1,0 +1,33 @@
+CARDIO|=|ECG|=|DEQP003|=|Électrocardiographie sur au moins 12 dérivations                                                    
+CORPS ETRANGER|=|SUPERFICIEL MAIN VISAGE|=|QAGA003|=|Ablation d'un corps étranger superficiel de la peau du visage ou des mains                          
+CORPS ETRANGER|=|SUPERFICIEL PEAU|=|QZGA004|=|Ablation d'un corps étranger superficiel de la peau, en dehors du visage et des mains               
+EVACUATION|=|ABCES|=|QZJA009|=|Évacuation de collection superficielle de la peau, par abord direct                                 
+EVACUATION|=|ABCES SANS GUIDAGE|=|QZJB002|=|Évacuation de collection superficielle et/ou profonde de la peau et des tissus mous, par voie transcutanée sans guidage                                                                                 
+IMMOBILISATION|=|CHEVILLE|=|NGMP001|=|Confection d'une contention souple de la cheville et/ou du pied, ou confection d'une semelle plâtrée
+IMMOBILISATION|=|CLAVICULE|=|MADP001|=|Contention orthopédique unilatérale ou bilatérale de fracture de la clavicule                       
+IMMOBILISATION|=|COUDE BAB|=|ZDMP017|=|Confection d'un appareil rigide d'immobilisation brachio-antébrachio-palmaire                       
+IMMOBILISATION|=|GENOU STRAP|=|NFMP001|=|Confection d'une contention souple du genou                                                         
+IMMOBILISATION|=|POIGNET|=|ZDMP014|=|Confection d'un appareil rigide d'immobilisation antébrachiopalmaire                                
+IMMOBILISATION|=|RIGIDE DOIGT|=|MHMP005|=|Confection d'un appareil rigide d'immobilisation des doigts                                         
+IMMOBILISATION|=|SOUPLE MB SUP|=|MZMP001|=|Confection d'une contention souple d'une articulation du membre supérieur                           
+NEURO PSY|=|COGNITIF EVAL|=|ALQP006|=|Test d'évaluation d'un déficit cognitif                                                             
+NEURO PSY|=|DEPRESSION EVAL|=|ALQP003|=|Test d'évaluation d'une dépression                                                                  
+NEURO PSY|=|INTELLECT ADULTE EVAL|=|ALQP005|=|Test d'évaluation de l'efficience intellectuelle de l'adulte                                        
+NEURO PSY|=|INTELLECT ENFANT EVAL|=|ALQP002|=|Test d'évaluation de l'efficience intellectuelle de l'enfant                                        
+PNEUMO|=|GAZOMETRIE|=|GLHF001|=|Prélèvement de sang artériel avec gazométrie sanguine et mesure du pH, sans épreuve d'hyperoxie     
+SUTURE|=|ONGLE|=|QZEA008|=|Autogreffe du lit de l'ongle avec reposition de la tablette unguéale ou pose de prothèse            
+SUTURE|=|ONGLE|=|QZMP001|=|Couverture du lit de l'ongle par reposition de la tablette ou pose de prothèse provisoire           
+SUTURE|=|PEAU FACE PROFOND >10|=|QAJA012|=|Parage et/ou suture de plaie profonde de la peau et des tissus mous de la face de plus de 10 cm de grand axe                                                                                            
+SUTURE|=|PEAU FACE PROFOND < 3|=|QAJA004|=|Parage et/ou suture de plaie profonde de la peau et des tissus mous de la face de moins de 3 cm de grand axe                                                                                            
+SUTURE|=|PEAU FACE PROFOND 3 <> 10|=|QAJA006|=|Parage et/ou suture de plaie profonde de la peau et des tissus mous de la face de 3 cm à 10 cm de grand axe                                                                                             
+SUTURE|=|PEAU FACE SUPERFICIELLE > 10|=|QAJA002|=|Parage et/ou suture de plaie superficielle de la peau de la face de plus de 10 cm de grand axe      
+SUTURE|=|PEAU FACE SUPERFICIELLE < 3|=|QAJA013|=|Parage et/ou suture de plaie superficielle de la peau de la face de moins de 3 cm de grand axe      
+SUTURE|=|PEAU FACE SUPERFICIELLE 3 <> 10|=|QAJA005|=|Parage et/ou suture de plaie superficielle de la peau de la face de 3 cm à 10 cm de grand axe       
+SUTURE|=|PEAU MAIN PROFOND|=|QCJA001|=|Parage et/ou suture de plaie profonde de la peau et des tissus mous de la main                      
+SUTURE|=|PEAU PROFOND > 10|=|QZJA001|=|Parage et/ou suture de plaie profonde de la peau et des tissus mous de plus de 10 cm de grand axe, en dehors de la face et de la main                                                                   
+SUTURE|=|PEAU PROFOND < 3|=|QZJA016|=|Parage et/ou suture de plaie profonde de la peau et des tissus mous de moins de 3 cm de grand axe, en dehors de la face et de la main                                                                   
+SUTURE|=|PEAU PROFOND 3 <> 10|=|QZJA012|=|Parage et/ou suture de plaie profonde de la peau et des tissus mous de 3 cm à 10 cm de grand axe, en dehors de la face et de la main                                                                    
+SUTURE|=|PEAU SUPERFICIELLE >10|=|QZJA015|=|Parage et/ou suture de plaie superficielle de la peau de plus de 10 cm de grand axe, en dehors de la face                                                                                               
+SUTURE|=|PEAU SUPERFICIELLE < 3|=|QZJA002|=|Parage et/ou suture de plaie superficielle de la peau de moins de 3 cm de grand axe, en dehors de la face                                                                                               
+SUTURE|=|PEAU SUPERFICIELLE 3 <> 10|=|QZJA017|=|Parage et/ou suture de plaie superficielle de la peau de 3 cm à 10 cm de grand axe, en dehors de la face                                                                                                
+TRAUMA|=|MUSCULO TENDINEUX|=|YYYY011|=|Prise en charge diagnostique et thérapeutique dans le même temps d'une lésion ostéo-articulaire,  musculo-tendineuse ou des parties molles d'origine traumatique                                        

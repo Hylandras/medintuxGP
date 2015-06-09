@@ -1,0 +1,1023 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>DlgPosoAdjust</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DlgPosoAdjust</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>465</width>
+            <height>544</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Ajuster les posologies</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabelUP_Jour</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>8</pointsize>
+                </font>
+            </property>
+            <property name="frameShape">
+                <enum>PopupPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="text">
+                <string>textLabelUP_Jour</string>
+            </property>
+            <property name="alignment">
+                <set>AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout15</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout13</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout10</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabelPoids</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>NoFrame</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Plain</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string>Poids du patient</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabelTaille</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>NoFrame</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Plain</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string>Taille du patient</string>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout11</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <property name="margin">
+                                    <number>0</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>0</number>
+                                </property>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEdit_Poids</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEdit_Taille</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout12</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabelPdsUnit</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>NoFrame</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Plain</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string>Kg(s)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabelTailleUnit</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>NoFrame</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>Plain</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string>cm (s)</string>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </hbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>127</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonOK</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Confirmez</string>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="2" column="0">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string>Quantité d'unités de prise</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>lineEdit_a_UP1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>à</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="2">
+                    <property name="name">
+                        <cstring>lineEdit_QMax_UP1</cstring>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="1">
+                    <property name="name">
+                        <cstring>lineEdit_a_UP2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>à</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="2" column="2">
+                    <property name="name">
+                        <cstring>lineEdit_QMax_UP2</cstring>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="0">
+                    <property name="name">
+                        <cstring>lineEdit_QMin_UP1</cstring>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QSlider" row="1" column="0" rowspan="1" colspan="3">
+                    <property name="name">
+                        <cstring>slider_VarPoso</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="tickmarks">
+                        <enum>Left</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="2" column="0">
+                    <property name="name">
+                        <cstring>lineEdit_QMin_UP2</cstring>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="3">
+                    <property name="name">
+                        <cstring>textLabelUnite_UP1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>textLabelUnite1</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="3">
+                    <property name="name">
+                        <cstring>textLabelUnite_UP2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>textLabelUnite1</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0">
+            <property name="name">
+                <cstring>layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>radioButtonSecable1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Non sécable</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>radioButtonSecable2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Sécable en 2</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton">
+                    <property name="name">
+                        <cstring>radioButtonSecable4</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Sécable en 4</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="4" column="0">
+            <property name="name">
+                <cstring>layout11</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout10</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout8</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel_Moment</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <italic>1</italic>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Répartition de la prise</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignCenter</set>
+                                    </property>
+                                </widget>
+                                <widget class="QComboBox">
+                                    <item>
+                                        <property name="text">
+                                            <string>(vide)</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 fois par jour, le matin                                                                        7</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 fois par jour, à midi                                                                        40</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 fois par jour, le soir                                                                         1</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 fois par jour, le soir au coucher                                                             31</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 fois par jour, au petit déjeuner                                                              25</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 fois par jour, au cours du repas de midi                                                     188</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 fois par jour, au cours du dîner                                                              52</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>2 fois par jour, matin et soir                                                                   4</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>2 fois par jour, matin et midi                                                                  15</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>2 fois par jour, midi et soir                                                                   13</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>2 fois par jour, matin et soir au cours des repas                                              121</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>2 fois par jour, au petit déjeuner et au repas de midi                                          81</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>2 fois par jour, aux repas de midi et du soir                                                  254</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>3 fois par jour, matin, midi et soir                                                             9</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>3 fois par jour, matin, midi et soir au cours des repas                                       122</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>4 fois par jour, matin, midi, après-midi et soir                                                65</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>5 fois par jour, matin, midi, après-midi, soir et coucher                                      194</string>
+                                        </property>
+                                    </item>
+                                    <property name="name">
+                                        <cstring>comboBoxMoment</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>5</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="sizeLimit">
+                                        <number>18</number>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout6</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLabel_Pendant</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <italic>1</italic>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Pendant</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>AlignCenter</set>
+                                    </property>
+                                </widget>
+                                <widget class="QComboBox">
+                                    <item>
+                                        <property name="text">
+                                            <string>(vide)</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>1 jour</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>2 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>3Jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>4 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>5 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>6 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>7 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>8 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>10 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>12 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>15 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>21 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>28 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>31 jours</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>60 jours</string>
+                                        </property>
+                                    </item>
+                                    <property name="name">
+                                        <cstring>comboBoxPendant</cstring>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>8</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="editable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="sizeLimit">
+                                        <number>18</number>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout9</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>91</width>
+                                            <height>10</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>pushButton_NextPoso</cstring>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>32767</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string>suivant</string>
+                                    </property>
+                                    <property name="iconSet">
+                                        <iconset>image1</iconset>
+                                    </property>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QTextBrowser">
+                    <property name="name">
+                        <cstring>textBrowser_Result1</cstring>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>170</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QGroupBox" row="5" column="0">
+            <property name="name">
+                <cstring>Infos_Techniques</cstring>
+            </property>
+            <property name="title">
+                <string>Infos_Techniques</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <widget class="QLineEdit" row="1" column="0">
+                    <property name="name">
+                        <cstring>lineEdit_Value</cstring>
+                    </property>
+                </widget>
+                <widget class="QTabWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>tabWidgetPosoAdjust</cstring>
+                    </property>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>tab</cstring>
+                        </property>
+                        <attribute name="title">
+                            <string>Coeficients</string>
+                        </attribute>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>0</number>
+                            </property>
+                            <widget class="QListView" row="0" column="0">
+                                <column>
+                                    <property name="text">
+                                        <string>Kg</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>Qte1UP1 </string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>Qte2UP1 </string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>MaxUP1</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>NbUP1</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>UnitéUP1</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>Qte1UP2</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>Qte2UP2</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>MaxUP2</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>NbUP2</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>UnitéUP2</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>CodeUP1</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>CodeUP2</string>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <property name="name">
+                                    <cstring>listView_Coef</cstring>
+                                </property>
+                                <property name="rootIsDecorated">
+                                    <bool>false</bool>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QWidget">
+                        <property name="name">
+                            <cstring>tab</cstring>
+                        </property>
+                        <attribute name="title">
+                            <string>Valeurs non Ajustées</string>
+                        </attribute>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>0</number>
+                            </property>
+                            <widget class="QTextBrowser" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textBrowser_Result2</cstring>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="661">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade6523232520022630543251d2e253d856405bffcbc54105b19c8564e4b330002103711c20501b04aac80908c322680c924426062a2329848c490514630b0c9a0ea8129c7d483500eb55099b0dbd04162227619a0a9d865c0d66191018b63ca2442c595514c4b840b23bb005914970b12a18a50f42422eb241806e4c43656995a6b2e002b8880a2</data>
+    </image>
+    <image name="image1">
+        <data format="XPM.GZ" length="2157">789cddd3c952db401006e0bb9f4265dda854a36d3452a572605f6d30ab219583566cc006bcb0a5f2eed1fc9ae9a4829c82432e71db87cffdf768ac919797acfe61c75a5a6e4d67c96c9859d92099584bf97c347af9faedcbf756dbf3acea1d8696d7fed46af766566675efc68502a5156c072ff8110e1d4fbb804b27d2de53763d27d1de847df6100e9d4cfb018e9d5c3b51f65cd7acbf027bec5365117966fe124ed8024ed9119c19db0417dc3fd42e75df5696d28f757fa01ca541a13d878bc0ec37578ea510da1b702cccfdc27a891ba65e0edfc352a4baff0ae7c2ec6757398d84de0f1dc07968d63b814bf68572e6b10358b05d38644b58b2afe05c9afbab0edfce631968efc08974b5c7702acd79df69c70e1e1eeac2b934eb1fc3257baa6de6b3da71180878a45c3851ee077009bb553f849f619fe75fb4cdf56f6a57f97afe962de13e1cf07ed6b5a5f604163c7f5d3b714404afc1215fdf8325aff704c73cbf0d279c5f8553ee77e082fb5bb5b97fa45cbadcdfafcdfd1efcebf73ab050070c9f6b9bf91096dc3fabcdf33e1c713e866393efcdde5fff6f9e6c4ade9fa79432caa9f85bbecafc5e255dd180868bf255e29a6eb86e694463baa37b7a58989fd0f44dcd684e8f0bf24ff4dc502ff44a2b8df9555a6bac75daa0cd86fc166d37d60eedd25e437e9f3a0dd5a5033a6cdc4f8f8eded4319dd0e982df7b46e77f549f2ee872e1fd74c8e5f2c8af3e0189779f6f4892a20f3c3fb14d1f793e6dbbe9db7ffe7ff9f1b9f513f3d538b4</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>comboBoxMoment</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>comboBoxMoment_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>slider_VarPoso</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>slider_VarPoso_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonOK</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>pushButtonOK_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonSecable1</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>radioButtonSecable1_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonSecable2</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>radioButtonSecable2_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>radioButtonSecable4</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>radioButtonSecable4_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxPendant</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>comboBoxPendant_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxPendant</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>comboBoxPendant_textChanged(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_NextPoso</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPosoAdjust</receiver>
+        <slot>pushButton_NextPoso_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">CMoteur_Base.h</include>
+    <include location="local" impldecl="in declaration">CMDI_Terrain.h</include>
+    <include location="local" impldecl="in implementation">DlgPosoAdjust.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">CMoteurBase* m_pCMoteurBase;</variable>
+    <variable access="public">Type_Posologie m_Poso;</variable>
+    <variable access="public">float m_UnitByCps_Max;</variable>
+    <variable access="public">float m_UT;</variable>
+    <variable access="public">float m_DoseByUT_Max;</variable>
+    <variable access="public">float m_DoseByUT_Min;</variable>
+    <variable access="public">int m_Poids;</variable>
+    <variable access="public">int m_ParPoidsUT;</variable>
+    <variable access="public">int m_NumInOrdo;</variable>
+    <variable access="public">int m_Secabilite;</variable>
+    <variable access="public">float m_RatioMin;</variable>
+    <variable access="public">float m_RatioMax;</variable>
+    <variable access="public">CMDI_Terrain *m_pCMDI_Terrain;</variable>
+</variables>
+<slots>
+    <slot>initDialog( CMoteurBase * pCmoteurBase, Type_Posologie type_Posologie, CMDI_Terrain * pCMDI_Terrain )</slot>
+    <slot>GetAdequationPosoDec( QListView * pQlistView, Type_PosoDec &amp; posoDec )</slot>
+    <slot>lineEdit_Poids_textChanged( const QString &amp; qsPoids )</slot>
+    <slot>lineEdit_Taille_textChanged( const QString &amp; qsTaille )</slot>
+    <slot>comboBoxMoment_activated( const QString &amp; )</slot>
+    <slot>slider_VarPoso_valueChanged( int )</slot>
+    <slot>pushButtonOK_clicked()</slot>
+    <slot>radioButtonSecable1_clicked()</slot>
+    <slot>radioButtonSecable2_clicked()</slot>
+    <slot>radioButtonSecable4_clicked()</slot>
+    <slot>comboBoxPendant_activated( const QString &amp; )</slot>
+    <slot>comboBoxPendant_textChanged( const QString &amp; )</slot>
+    <slot>pushButton_NextPoso_clicked()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function returnType="Type_Posologie">CalculeAdequationPoso( Type_Posologie &amp; posoOri, const QString &amp; qsPoids, const QString &amp; qsTaille )</function>
+    <function returnType="float">ArondirUniteDePrise( float value, int secabilite )</function>
+    <function returnType="float">ArondirUniteDePrise( QString value, int secabilite )</function>
+    <function returnType="QString">ComboMomentGetValue( float &amp; nb_fois )</function>
+    <function returnType="float">comboBoxPendantGetValue()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

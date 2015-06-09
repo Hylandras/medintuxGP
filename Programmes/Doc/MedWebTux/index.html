@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>MedWebTux - Documentation</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+
+<body style="font-size:10pt;font-family:Arial">
+<p style="margin-left:auto;margin-right:auto;"><img src="MedinPhpCol-01.png"
+alt="logo" /></p>
+
+<p><span style="text-decoration:underline;color:#aa0000">Version 3.5.1<br />
+</span></p>
+
+<div id="menu" class="noPrint">
+<ul class="niveau1">
+  <li class="li1" style="background:#FFe7f3;"><a
+    href="../agenda.php">Agenda</a> </li>
+  <li class="li1" style="background:#DDFFDD;"><a
+    href="../liste.php">Patients</a> 
+    <ul class="niveau2" style="background:#DDFFDD;">
+      <li style="background:#DDFFDD;"><a
+        href="../nouveau_dossier.php?envoyer=Nouveau">Nouveau dossier</a> </li>
+    </ul>
+  </li>
+  <li class="li1" style="background:#BAE7FF;"><a
+    href="../correspondant.php">Intervenants</a> 
+    <ul class="niveau2" style="background:#BAE7FF;">
+      <li style="background:#BAE7FF;"><a
+        href="../formulaire_correspondant.php?envoyer=Nouveau">Nouvel
+        intervenant</a> </li>
+    </ul>
+  </li>
+  <li class="li1" style="background:#dcf9ff;"><a
+    href="../activite.php">Activité</a> </li>
+  <li class="li1" style="background:#ca0909;"><a href="../medocs.php">Vidal</a>
+  </li>
+  <li class="li1" style="background:#ff6afd;"><a href="../CCAM.php">CCAM</a> 
+    <ul class="niveau2" style="background:#ff6afd;">
+      <li style="background:#ff6afd;"><a
+        href="../CCAM.php?bouton_afficher_thesaurus=Afficher+le+thesaurus">Thesaurus</a>
+      </li>
+    </ul>
+  </li>
+  <li class="li1" style="background:#ffead5;"><a
+    href="../backup.php">Sauvegarde</a> </li>
+  <li class="li1" style="background:#dfdaff;"><a
+    href="../index.php">Accueil</a> </li>
+</ul>
+</div>
+
+<div>
+<hr />
+</div>
+
+<p><span
+style="font-size:18pt;font-weight:600;text-decoration:underline;color:#aa0000">Au
+menu</span></p>
+
+<p><a href="#Présentation">Présentation</a><span
+style="font-size:14pt;font-weight:600"><br />
+</span> <a href="#Installation">Installation</a><span
+style="font-size:14pt;font-weight:600"><br />
+</span> <a href="#Configuration">Configuration</a><span
+style="font-size:14pt;font-weight:600"><br />
+</span> <a href="#Sécurisation">Sécurisation</a><span
+style="font-size:14pt;font-weight:600"><br />
+</span> <a href="#Gestion_des_droits">Gestion des droits</a></p>
+<ul>
+  <li><a href="#Types_de_droits">Types de droits</a> </li>
+  <li><a href="#Utilisateurs délégués">Utilisateurs délégués</a> </li>
+</ul>
+
+<p><a href="#Utilisation">Utilisation</a> </p>
+<ul>
+  <li><a href="#Que_taper_dans_votre_navigateur">Que taper dans votre
+    navigateur</a></li>
+  <li><a href="#Connexion_Déconnexion">Connexion/Déconnexion</a> </li>
+  <li><a href="#Agenda">Agenda</a> </li>
+  <li><ul>
+      <li><a href="#Recherches dans l'agenda">Recherches dans l'agenda</a></li>
+      <li><a href="#Écriture dans l'agenda">Écriture dans l'agenda</a> </li>
+      <li><ul>
+          <li><a href="#Création_de_rendez-vous">Création de
+          rendez-vous</a></li>
+          <li><a href="#Modification_de_rendez-vous">Modification de
+            rendez-vous</a></li>
+          <li><a href="#Suppression_de_rendez-vous">Suppression de
+            rendez-vous</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#Fichier_des_patients">Fichier des patients</a> </li>
+  <li><ul>
+      <li><a href="#Recherche_dans_le_fichier">Recherche dans le
+      fichier</a></li>
+      <li><a href="#Fusion_de_fiches">Fusion de fiches</a></li>
+      <li><a href="#Écriture_dans_le_fichier">Création et modification de
+        fiche patient</a></li>
+      <li><a href="#Mode_patient">Fiche de synthèse patient</a></li>
+      <li><a href="#Fusion_d_ordonnances_structurées">Fusion d'ordonnances
+        structurées</a> </li>
+      <li><a href="#Liaison_à_un_intervenant">Liaison à un
+      intervenant</a></li>
+      <li><a href="#Enregistrement_des_accès">Enregistrement des
+      accès</a></li>
+      <li><a href="#Mode_consultation">Synthèse des documents par
+      journée</a></li>
+      <li><a href="#Écriture_du_mode_patient">Création d'un document
+      daté</a></li>
+      <li><a href="#Mode_observation">Mode observation</a> </li>
+    </ul>
+  </li>
+  <li><a href="#Mode_Intervenants">Mode Intervenants</a></li>
+  <li><ul>
+      <li><a href="#Recherche_d_intervenants">Recherche d'intervenants</a></li>
+      <li><a href="#modification_de_fiche_d_intervenant">Création et
+        modification de fiche d'intervenant</a></li>
+      <li><a href="#Fiche_d_intervenant">Fiche d'intervenant patients et
+        consultations liées</a></li>
+    </ul>
+  </li>
+  <li><a href="#Mode_Activité">Mode Activité</a></li>
+  <li><a href="#Mode_Vidal">Mode Vidal</a> 
+    <ul>
+      <li><a href="#Interactions">Interactions médicamenteuses</a></li>
+    </ul>
+  </li>
+  <li><a href="#Mode_CCAM">Mode CCAM</a></li>
+  <li><a href="#Mode_Comptabilité">Mode Comptabilité</a></li>
+  <li><a href="#Mode_Sauvegarde">Mode Sauvegarde</a> </li>
+  <li><a href="#Licence">Licence</a></li>
+  <li><a href="#Auteurs">Auteurs</a></li>
+</ul>
+<hr />
+
+<p><img src="zix-arrow-right.png" alt="flèche" /><a
+name="Présentation"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Présentation</span></p>
+
+<p><span style="font-weight:600">MedWebTux pour MedinTux</span> (initialement
+diffusé sous le nom de <span style="font-weight:600">MedinPHP</span>, puis
+<span style="font-weight:600">MedinWeb</span>) est un programme destiné à
+permettre de travailler avec les données de <a
+href="http://medintux.org">MedinTux</a> à partir d'un ordinateur non équipé
+du programme, mais d'un simple navigateur. <br />
+Dans certains cas, MedWebTux peut fonctionner en tant que programme
+autonome.<br />
+Cela nécessite de disposer d'une base de données <span
+style="font-weight:600">MySQL</span>, et d'un serveur <span
+style="font-weight:600">Apache</span> équipé du module <span
+style="font-weight:600">PHP</span> (les instructions d'installation de cette
+structure ne font pas partie de cette documentation). <br />
+Cette machine serveur peut être aussi bien sous Windows que sous Linux ou
+MacOS X. <br />
+Pour information, on trouve facilement en téléchargement l'ensemble <span
+style="font-size:11pt;font-weight:600;color:#550000">EasyPHP</span>, qui
+installe automatiquement <span style="font-weight:600">MySQL</span>, <span
+style="font-weight:600">Apache</span> et son module <span
+style="font-weight:600">PHP</span> pour <span
+style="font-weight:600">Windows</span>. <br />
+Une fois Apache correctement installé et démarré, une adresse comme
+http://localhost (tapée dans le navigateur de la machine locale) doit renvoyer
+un message de satisfaction.<br />
+Cette version nécessite une base de données compatible avec MedinTux
+&gt;=1.26. (2.14 comprise) </p>
+
+<p><img src="zix-arrow-right.png" alt="flèche" /><a
+name="Installation"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Installation</span></p>
+
+<p>L'ensemble des fichiers contenus dans ce répertoire doivent être copiés
+dans le <span style="font-weight:600">« DocumentRoot »</span> du serveur
+<span style="font-weight:600">Apache</span>, c'est-à-dire là où se trouvent
+les fichiers qui seront lus par le navigateur du client. <br />
+<br />
+<span style="text-decoration:underline">Si vous ne savez pas où est le
+</span><span
+style="font-style:italic;text-decoration:underline">DocumentRoot</span> sur
+votre machine :</p>
+<ul>
+  <li><span style="font-weight:600">sous Linux</span>, allez lire le fichier
+    <span style="font-style:italic;font-weight:600">httpd.conf</span> dans le
+    répertoire <span style="font-style:italic;font-weight:600">/etc/</span>,
+    et cherchez la ligne correspondante. Les fichiers peuvent être copiés en
+    vrac dans la racine du répertoire ou, mieux, en copiant le répertoire et
+    son contenu dans la racine du serveur Apache. </li>
+  <li><span style="font-weight:600">Sous Windows</span>, vous devez aussi
+    ajouter le <span style="font-weight:600">PATH </span>vers <span
+    style="font-weight:600">mysqldump.exe</span> (fourni avec MySQL) sous peine
+    que la sauvegarde ne fonctionne pas. </li>
+</ul>
+<p>Sous MacOS, il faut activer le serveur apache (pref systeme>partage>partage web), placer le dossier MedWebTux dans le dossier site (user>sites)
+</p>
+<p>Si la commande <em>http://localhost/MedWebTux</em> ne fonctionne pas alors
+que <em>http://localhost</em> fonctionne, c'est que vous n'avez pas installé
+le module <strong>php-mysql</strong> sous Linux.</p>
+
+<p>Afin d'effectuer des tests plus poussés, un fichier test.php est fourni :
+en faisant http://localhost/test.php, vous devriez voir une première ligne en
+html et une deuxième en php. Si la deuxième s'affiche, c'est que le module
+php est bien installé. Si ce test fonctionne mais que la page index.php
+n'affiche rien, c'est peut-être que le module php-mysql n'est pas activé. <br
+/>
+Dans le <strong>php.ini</strong>, il faut décommenter les lignes
+<strong>extension=php_mysqli.dll</strong> et
+"<strong>extension=php_mysql.dll.</strong></p>
+
+<p><img src="zix-arrow-right.png" alt="flèche" /><a
+name="Configuration"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Configuration</span><span
+style="font-size:15pt;font-weight:600;color:#00007f"></span><span
+style="text-decoration:underline">Modifiez le fichier </span><span
+style="font-style:italic;font-weight:600;text-decoration:underline">config.php</span><span
+style="text-decoration:underline">et le fichier</span><span
+style="font-style:italic;font-weight:600;text-decoration:underline">template.php</span><span
+style="text-decoration:underline">selon votre configuration</span>.</p>
+<ul>
+  <li><span style="font-size:12pt;font-weight:600">Encodage des caractères
+    </span><br />
+    Les chaînes de caractères affichées par le programme ne dépendent pas
+    de l'encodage. En revanche, les données issues de la base MySQL peuvent
+    être encodées en UTF-8 ou en ISO 8859-15. <br />
+    Si l'encodage sélectionné n'est pas le bon, les caractères accentués
+    seront défaillants. <br />
+    Pour corriger ce défaut, vous devez éditer le fichier <span
+    style="font-style:italic">config.php</span>, et inverser le commentaire
+    pour la variable <span style="font-style:italic">$encodage</span> (changez
+    la marque # de ligne). </li>
+  <li><span style="font-size:12pt;font-weight:600">Ville et code postal par
+    défaut </span><br />
+    La plupart des patients et des correspondants habitent dans la même ville,
+    généralement la vôtre. En renseignant ces valeurs, vous mettez
+    automatiquement ce code postal et cette ville dans les champs des
+    intervenants et des patients. Bien sûr, vous pouvez les modifier au moment
+    de saisir l'adresse d'une personne. Laissez les variables vides pour ne pas
+    avoir de valeur par défaut. <br />
+    <br />
+  </li>
+  <li><span style="font-size:12pt;font-weight:600">Observation par défaut
+    </span><br />
+    Lorsque vous créez un nouveau document (observation, prescription,
+    courrier, document), vous devrez choisir parmi un déroulant proposant
+    plusieurs maquettes. La maquette choisie s'écrira dans la zone de saisie.
+    Créez autant de maquettes que vous voulez dans templates.php, à condition
+    de les nommer $titre_default['x'] et $obs_default['x']. <br />
+    Notez que "x" doit être le même pour le titre et le contenu.<br />
+    La valeur de "x" sera affichée dans le déroulant, et elle n'est pas
+    forcément identique à son contenu. Par exemple, si x vaut "vide", cela
+    décrit un document dont le contenu et le titre initiaux sont vides.<br />
+    Si "x" vaut le nom de votre spécialité tel qu'enregistré dans votre
+    identité, cette maquette sera choisie par défaut.<br />
+    Inspirez-vous des exemples fournis.<br />
+    De cette manière, vous pourrez créer autant de types de documents que
+    voulu.<br />
+    <br />
+  </li>
+  <li><span style="font-size:12pt;font-weight:600">Taille d'affichage par
+    défaut </span><br />
+    Selon votre vue et la taille de votre écran, vous pourrez privilégier un
+    affichage plus ou moins grand, afin d'afficher davantage de données à
+    l'écran ou les lire plus facilement. <br />
+    Vous pouvez agir ensuite sur l'affichage au sein de votre navigateur pour
+    outrepasser cette valeur. <br />
+    <br />
+  </li>
+  <li><span style="font-size:12pt;font-weight:600">Type de rendez-vous par
+    défaut </span><br />
+    Selon votre activité, vous pouvez faire qu'un certain type de rendez-vous
+    soit privilégié dans le déroulant qui permet de choisir le type de
+    rendez-vous. <br />
+    De cette manière, vous pouvez avoir un certain nombre de types de
+    rendez-vous différents, sans que cela ne gêne votre activité la plus
+    fréquente. </li>
+</ul>
+
+<p><img src="zix-arrow-right.png" alt="flèche" /><a
+name="Sécurisation"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Sécurisation</span><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#55007f"><br
+/>
+<br />
+</span>En dehors des habituels login/mot de passe (éviter le prénom des
+enfants et de le coller sous le clavier !), il est possible de crypter les
+échanges entre le client et le serveur par SSL.<br />
+En effet, sur un réseau informatique, tout ordinateur connecté au réseau
+(avec ou sans fil) peut capter les échanges entre les autres ordinateurs.<br />
+Pour éviter cela, il faut pratiquer un brouillage entre client et serveur.<br
+/>
+Il n'y a aucune modification à faire au niveau du programme : tout se passe au
+niveau du serveur.<br />
+<span style="font-size:12pt;font-weight:600">Mode d'emploi résumé de
+SSL</span></p>
+<ul>
+  <li>Installer OpenSSL </li>
+  <li>on génère une clé privée rsa sur 1024 bit<br />
+    <strong></strong>$<strong>openssl genrsa 1024 &gt; server.key</strong> </li>
+  <li>on crée la demande de certificat (csr), il faut répondre aux
+    différentes questions sinon on met un point<br />
+    $ <strong>openssl req -new -key server.key &gt; server.csr </strong></li>
+  <li>on génère le certificat et on le signe avec notre clé privée<br />
+    $ <strong>openssl req -x509 -days 10000 -key server.key server.crt
+  </strong></li>
+  <li>dans le fichier de config de apache/etc/httpd/httpd.conf (le chemin peut
+    différer sur votre machine) on commente ceci si l'on veut bloquer le
+    http<br />
+    #<strong>Listen 80</strong> (ou <strong>Listen 0.0.0.0:80</strong> selon
+    votre installation) </li>
+  <li>on décommente ceci pour charger le module ssl <br />
+    <strong>LoadModule ssl_module lib/httpd/modules/mod_ssl.so</strong> (ou
+    /usr/lib/apache/mod_ssl.so) </li>
+  <li>on doit donner un nom ou une adresse ip à notre serveur<br />
+    <strong>ServerName 127.0.0.1:80 </strong></li>
+  <li>on décommente ceci pour charger le fichier de config du ssl<br />
+    # <strong>Secure (SSL/TLS) connections<br />
+    </strong>Include /etc/httpd/extra/httpd-ssl.conf (adapter la ligne à votre
+    système en fonction du fichier existant. Si nécessaire, le créer). </li>
+  <li>dans le fichier de configuration ssl
+    <strong>/etc/httpd/extra/httpd-ssl.conf</strong>, on vérifie que le chemin
+    est bien celui où sont les pages html<br />
+    <strong>DocumentRoot "/srv/httpd/htdocs"</strong> 
+    <p>ou <br />
+    DocumentRoot "/var/www/html" </p>
+  </li>
+  <li>on copie le certificat et la clé créés au début de la procédure et
+    on ajoute leur chemin au fichier <strong>httpd-ssl.conf<br />
+    </strong><strong>SSLCertificateFile
+    /etc/httpd/server.crt</strong><strong></strong> 
+    <p><strong>SSLCertificateKeyFile /etc/httpd/server.key</strong> </p>
+  </li>
+  <li>On leur donne les droits 400 (Unix) et on les attribue à l'utilisateur
+    apache<br />
+    <strong>chmod 400 server.*</strong> 
+    <p><strong>chown apache server.*</strong> </p>
+  </li>
+  <li>On ouvre le port 443 en décommentant une ligne dans /etc/services <br />
+    <strong>https 443/tcp</strong> </li>
+  <li>On redémarre le serveur apache </li>
+  <li>On se connecte avec son navigateur par https au lieu de http. La
+    première fois, il y a un message d'erreur comme quoi le certificat n'est
+    pas certifié. Ne pas en tenir compte.</li>
+</ul>
+
+<p><a name="Gestion_des_droits"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Gestion
+des droits</span><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#55007f"><br
+/>
+<br />
+</span>MedWebTux possède une gestion de base des utilisateurs et de leurs
+droits.<br />
+<br />
+<img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Types_de_droits"></a>Types de
+droits</span><br />
+Chaque utilisateur a un certain nombre de types de droits : créer des
+dossiers, lire les consultations, imprimer les ordonnances, etc. Cela
+s'applique globalement à tout le programme.<br />
+Par exemple, un utilisateur non autorisé à créer des dossiers dans MedinTux
+ne pourra pas non plus en créer dans MedWebTux.<br />
+<br />
+<img src="bulletcyan01.png" alt="puce" /><a
+name="Utilisateurs_délégués"></a><span
+style="font-size:12pt;font-weight:600">Utilisateurs délégués</span><br />
+Alors que les dossiers n'appartiennent à personne, les
+observations,ordonnances, consultations, etc. appartiennent à leur auteur.<br
+/>
+Afin d'en permettre le partage, chaque utilisateur peut déléguer d'autres
+utilisateurs à accéder à ses données privées. Par exemple, il est possible
+d'autoriser un autre médecin à<br />
+lire nos consultations, mais pas de les modifier ou une secrétaire à écrire
+des rendez-vous mais pas à lire les observations.<br />
+<br />
+<img src="zix-arrow-right.png" alt="flèche" /><a name="Utilisation"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Utilisation</span><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#55007f"><br
+/>
+<br />
+</span><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a
+name="Que_taper_dans_votre_navigateur"></a>Que taper dans votre navigateur
+?</span></p>
+
+<p>Vous pouvez entrer dans le programme en <span
+style="text-decoration:underline">lançant dans votre navigateur l'adresse IP
+ou le nom de l'ordinateur</span> sur lequel est installé le système<span
+style="font-weight:600">Apache + MySQL + PHP</span>. <br />
+Exemple :<span style="font-weight:600"></span><span
+style="font-family:Courier New;font-weight:600">http://1.2.3.4</span> ou <span
+style="font-family:Courier New;font-weight:600">http://1.2.3.4/MedWebTux</span>.<br
+/>
+<br />
+La page <span style="font-style:italic;font-weight:600">index.php</span> vous
+permet de donner un nom et un mot de passe. Il s'agit des identifiants d'un
+utilisateur référencé comme utilisateur de <span
+style="font-weight:600">MedinTux</span>.<br />
+Une fois connecté, une <span
+style="font-style:italic;font-weight:600">session</span> est établie, et vous
+pouvez atteindre n'importe quelle page depuis la page de connexion ou,
+directement, en tapant en URL <span
+style="font-family:Courier New;font-weight:600">http://1.2.3.4/(MedWebTux/)agenda.php</span><span
+style="font-weight:600">(ou </span><span
+style="font-family:Courier New;font-weight:600">liste.php</span><span
+style="font-weight:600">ou </span><span
+style="font-family:Courier New;font-weight:600">correspondant.php</span><span
+style="font-weight:600">).<br />
+</span></p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a
+name="Connexion_Déconnexion"></a>Connexion/Déconnexion<br />
+</span><img src="login.png" alt="capture" /></p>
+
+<p>Si vous tentez de lancer n'importe quelle page sans être connecté, vous
+serez redirigé automatiquement sur la page de connexion. Toutes les pages
+donnent accès à la page de déconnexion.<br />
+Pour se connecter, il n'y a pas besoin d'activer les cookies.<br />
+Le mécanisme de session utilisé déconnecte automatiquement au bout d'"un
+certain temps" (selon les réglages du serveur).</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Agenda"></a>Agenda<br />
+</span><img src="agenda1.png" alt="capture" /></p>
+
+<p>L'agenda est multiutilisateur. Cela signifie que chaque utilisateur a son
+propre agenda, et qu'il y accède automatiquement lorsqu'il est connecté au
+système. Du fait de l'existence de droits délégués, chaque utilisateur peut
+autoriser d'autres utilisateurs à modifier et/ou lire son carnet de
+rendez-vous (droit <span style="font-style:italic">agc </span>et<span
+style="font-style:italic">agv</span> de MedinTux).<br />
+Lorsqu'un utilisateur autorisé lancera l'agenda, il arrivera sur son carnet de
+rendez-vous, mais il se verra proposer une liste d'autres agendas. Un simple
+clic sur le nom de l'utilisateur voulu dans la liste déroulante effectuera le
+changement d'agenda, mais l'utilisateur d'origine restera identifié comme tel
+au niveau de l'auteur du rendez-vous.<br />
+Lorsque l'utilisateur ira dans une autre page du programme, l'agenda n'oubliera
+pas l'utilisateur dont il est délégué.<br />
+Lorsqu'on voudra créer un rendez-vous en provenant d'une fiche de patient,
+l'agenda sera positionné par défaut sur l'utilisateur autorisé.</p>
+
+<p><a name="Recherches_dans_l_agenda"></a><span
+style="font-weight:600">Recherches dans l'agenda</span></p>
+
+<p>L'<a href="../agenda.php">agenda</a> vous donne la liste des rendez-vous qui
+ont été pris à partir de MedinTux pour le médecin qui est connecté. Il est
+possible de faire une recherche par période combinée à une recherche par nom
+ou prénom, à une recherche par type de rendez-vous et à une recherche par
+statut.<br />
+La page de l'agenda démarre avec les dates de début et de fin de recherche
+renseignées avec la date du jour courant, ce qui affiche les rendez-vous du
+jour courant. Pour trouver les rendez-vous pour <br />
+d'autres jours, changez les valeurs au moyen des calendriers, ou dans la zone
+d'édition, en faisant attention de respecter la syntaxe de format proposé.<br
+/>
+Si vous donnez une date de fin antérieure à la date de début, la date de fin
+est automatiquement changée pour être identique à la date du début.<br />
+La coche <span style="font-weight:600">Correspondance exacte</span> permet
+d'exclure les noms qui ne font que contenir que la clé de recherche, mais pas
+le nom entier.<br />
+Par exemple, une recherche sur "Tar" trouvera "Tartempion" si la coche n'est
+pas validée.<br />
+<br />
+Les dates de recherche se positionnent sur la date courante au lancement, et se
+modifient automatiquement lorsqu'une date est fournie par un autre biais
+(création de rendez-vous), afin de toujours montrer le rendez-vous qui vient
+d'être pris et les places disponibles.<br />
+<br />
+Pour donner une date, vous pouvez l'écrire directement dans la zone de saisie,
+selon un format correspondant donné dans le config.php :<br />
+</p>
+
+<p>Soit jj-mm-aaaa pour le réglage français</p>
+
+<p>Soit mm-jj-aaaa pour le réglage anglais</p>
+
+<p>Soit aaaa-mm-jj pour n'importe que autre réglage de la variable
+$date_format.<br />
+<br />
+Si votre navigateur dispose de javascript et que vous voulez bénéficier d'un
+vrai calendrier pour faciliter les saisies, cliquez sur l'icône de calendrier
+située à côté de la zone de saisie.<br />
+Vous verrez alors surgir un calendrier, dans lequel il vous suffira de choisir
+la date.<br />
+<img src="calendar.png" alt="capture" /><br />
+<br />
+<span style="font-weight:600">Recherche de rendez-vous par
+spécialité</span><br />
+Une liste de boutons-radio permet de choisir la recherche pour le praticien
+seul (par défaut), tous les praticiens de sa spécialité ou tous les
+praticiens.<br />
+Pour choisir pour une autre spécialité, il faut se positionner sur un compte
+de cette spécialité.<br />
+C'est pratique pour trouver le prochain rendez-vous disponible sans tenir
+compte du praticien.<br />
+Une autre manière de choisir une spécialité est de choisir son nom dans le
+déroulant des utilisateurs.<br />
+Cette méthode positionnera le premier utilisateur de la spécialité comme
+utilisateur par défaut.<br />
+<img src="other_schedules.png" alt="capture" /><br />
+<br />
+<span style="font-weight:600">Recherche par type ou par statut</span><br />
+Les filtres de recherche peuvent se combiner aux autres critères (dates,
+praticien, nom...) afin d'affiner le résultat.<br />
+Exemple : si vous avez créé préalablement des rendez-vous vides de statut
+"non attribué", vous pouvez facilement trouver les prochains rendez-vous non
+attribués.<br />
+<br />
+<span style="font-weight:600">Recherche par patient</span><br />
+Il existe un bouton d'historique des rendez-vous dans la <strong>fiche
+patient.<br />
+</strong><img src="patient_rdv.png" alt="capture" /><br />
+Cette zone permet de créer un rendez-vous depuis la fiche patient, mais aussi
+de lancer une recherche de rendez-vous existants<br />
+pour ce patient grâce à une fenêtre fille :<br />
+<img src="historique_rdv.png" alt="capture" /><br />
+<br />
+<span style="font-weight:600">Bouton Cocher</span><br />
+Il a exactement la même fonction que le bouton <span
+style="font-weight:600">Chercher</span>, à part qu'il ajoute des cases à
+cocher aux résultats de recherche <br />
+et retire les boutons Modifier et Annuler .<br />
+<img src="cocher_rdv.png" alt="capture" /><br />
+La fonction essentielle de ce mode est d'annuler une erreur, particulièrement
+lors de la création de rendez-vous répétés.<br />
+On fait une requête sur l'erreur à corriger, on clique sur le bouton Inverser
+la sélection, ce qui coche toutes les cases (il reste possible de cocher ou
+décocher manuellement selon les besoins), on coche la dernière case à côté
+du bouton <span style="font-weight:600">Supprimer</span> et on valide<span
+style="font-weight:600">Supprimer</span>. La coche sert de confirmation. Faites
+bien attention, car il n'y aura pas d'autre demande de confirmation.<br />
+<br />
+<span style="font-weight:600">Liste des résultats</span><br />
+<br />
+Un clic sur le lien du nom d'un patient amène sur la fiche patient, où se
+trouvent l'identité et la liste des contacts (consultations). <br />
+Si le patient n'est pas enregistré avec son numéro de dossier dans l'agenda,
+un clic sur son nom amène en mode recherche avec le nom fourni déjà
+renseigné. Si la recherche n'a rien donné, un <br />
+clic sur le bouton <span style="font-weight:600">Nouveau</span> amène en mode
+création de fiche, avec le formulaire prérempli.<br />
+En cliquant sur les dates des rendez-vous, on arrive à l'acte médical
+référencé.<br />
+En cliquant sur les têtes de colonne, on peut forcer le tri par date ou par
+nom (date par défaut).<br />
+Les résultats de recherche sont accompagnés de deux boutons<span
+style="font-weight:600">&lt;&lt;</span> et <span
+style="font-weight:600">&gt;&gt;</span>. Un clic sur la double flèche vers la
+gauche envoie à la journée précédant la première journée recherchée, et
+un clic sur le <br />
+bouton droit envoie sur la première journée suivant la dernière journée
+recherchée. Un clic sur le bouton <span
+style="font-weight:600">Aujourd'hui</span> positionne toutes les variables à
+la date du jour et affiche les rendez-vous du<br />
+jour.<br />
+La coloration des types de rendez-vous est reprise dans MedinTux. On ne peut
+pas créer ou supprimer un type de rendez-vous dans MedWebTux. Il faut passer
+par MedinTux ou par un accès aux données<br />
+brutes.<br />
+La coloration des statuts de rendez-vous est différente de celle du type de
+rendez-vous, et permet de visualiser facilement l'état de tous les rendez-vous
+affichés.<br />
+Cette coloration se règle dans le fichier config.php, en créant des variables
+appariées aux variables de types de rendez-vous, correspondant aux variables
+présentes dans les réglages de MedinTux.<br />
+Exemple :<br />
+$status_rdv[0]="Absent";<br />
+$color_status["Absent"]='#FFB4A7';<br />
+<br />
+<span style="font-weight:600">Impression du planning</span><br />
+<br />
+Lorsque vous avez affiché un tableau de rendez-vous, vous pouvez appeler la
+fonction d'impression de votre navigateur (par exemple par la combinaison de
+touches Ctrl+P). L'impression supprimera tous les contrôles ou zones de
+recherche pour n'imprimer que ce qui est utile.</p>
+
+<p><a name="Écriture_dans_l_agenda"></a><span
+style="font-weight:600">Écriture dans l'agenda</span></p>
+
+<p>Il est possible d'effectuer toutes les actions sur l'agenda. On peut ainsi
+créer, modifier ou supprimer un rendez-vous. </p>
+
+<p><a name="Création_de_rendez-vous"></a><span
+style="font-size:8pt;font-weight:600">Création de rendez-vous</span></p>
+
+<p>La page d'agenda comporte un formulaire de saisie. Il suffit de le remplir
+et de cliquer sur <span style="font-weight:600">Ajouter</span>.<br />
+Dans la mesure où il n'y a pas de mécanisme de contrôle de télescopage de
+rendez-vous, il est conseillé de créer les rendez-vous en ayant l'agenda du
+jour affiché, et de contrôler ensuite l'intégration du nouveau rendez-vous
+à une heure compatible avec les autres rendez-vous.<br />
+Pour créer un rendez-vous avec un patient qui a déjà une fiche, il est
+préférable de choisir ce patient dans le mode liste ou dans sa propre fiche
+en donnant le jour désiré, de cliquer sur le bouton <br />
+<span style="font-weight:600">Rendez-vous</span> de la ligne, ce qui relance
+l'agenda avec le formulaire prérempli et un affichage des rendez-vous de ce
+jour.<br />
+Certaines zones (nom, prénom) ne doivent pas être modifiée dans ce cas, car
+c'est le numéro de dossier (invisible) qui fait foi. En revanche, vous pouvez
+changer la date, mais vous ne pourrez alors contrôler l'absence de
+télescopage qu'<span style="font-style:italic">a posteriori</span>. Cliquez
+ensuite sur <span style="font-weight:600">Ajouter</span>, comme dans le cas
+précédent.<br />
+<br />
+Une autre méthode pour créer un rendez-vous à un patient connu sans quitter
+l'agenda consiste à cliquer sur le lien<span style="font-weight:600">Choisir
+un patient</span>, qui lance une fenêtre secondaire de choix de patient.<br />
+<img src="choix_patient_agenda.png" alt="capture" /><br />
+<br />
+Il suffit de lancer une recherche, puis de cliquer sur le patient désiré pour
+qu'il remplisse automatiquement la zone de saisie, de donner les renseignements
+complémentaires (heure, date, statut, etc.) puis de valider.<br />
+<br />
+Une astuce gain de temps : le choix d'un type de rendez-vous positionne
+automatiquement la durée du rendez-vous selon les réglages présents dans la
+base de données.</p>
+
+<p><a name="Modification_de_rendez-vous"></a><span
+style="font-size:8pt;font-weight:600">Modification de rendez-vous</span></p>
+
+<p>En cliquant sur le bouton <span style="font-weight:600">Modifier</span> qui
+se trouve sur la ligne d'un rendez-vous, le formulaire de saisie de rendez-vous
+se préremplit automatiquement. Il ne vous reste qu'à préciser l'heure, le
+type ou le statut de rendez-vous.<br />
+Ensuite, cliquez sur le bouton <span style="font-weight:600">Modifier</span> du
+formulaire, pour mettre à jour le rendez-vous préexistant.<br />
+Il est possible de changer de patient en cliquant sur "Choisir un patient",
+comme dans le cas de la création de rendez-vous.<br />
+Lorsque le rendez-vous est lié à une fiche du fichier patient, il ne faut pas
+modifier seulement le nom et le prénom, car seul le numéro de dossier fait
+foi pour la liaison au dossier.<br />
+<br />
+Une utilisation possible du mode modification est de créer (automatiquement de
+préférence) des rendez-vous vides de statut non attribué, afin de
+matérialiser les plages disponibles, puis de modifier ces rendez-vous vides en
+rendez-vous attribués.<br />
+<br />
+De cette manière, la recherche de rendez-vous disponibles est facilitée
+(fonction <strong>rechercher</strong> sur nom vide et statut "<strong>non
+attribué</strong>").<br />
+<br />
+De même, un rendez-vous annulé peut être modifié en statut
+"<strong>Annulé</strong>" plutôt que supprimé, afin de conserver
+l'historique.<br />
+<br />
+Lorsque l'on modifie un rendez-vous vide de statut "Non attribué", la seule
+saisie du nom le positionne automatiquement en "<strong>non
+défini</strong>".<br />
+<br />
+<span style="font-weight:600">Gestion des conflits de modification</span><br />
+<br />
+Toute fiche qui passe en mode modification se signale par un verrou. Ce verrou
+est retiré lors de la validation de la modification (mais pas lors de la
+création d'un nouveau rendez-vous à partir du modèle).<br />
+<br />
+Lorsque vous tentez de passer une fiche de rendez-vous en mode Modification, si
+un verrou existe, vous obtenez un avertissement.<br />
+<img src="conflit_modification.png" alt="capture" /><br />
+Si vous êtes certain que ce verrou n'a pas de raison d'être (rendez-vous
+ouvert en modification, puis refermé sans validation, par exemple),<br />
+Il vous suffit de cliquer sur <span style="font-weight:600">Modifier
+</span>comme prévu pour valider votre modification et retirer le verrou (si
+une autre modification était en cours sur le même rendez-vous, le dernier à
+valider écrasera tous les autres).<br />
+Si vous cliquez sur <span style="font-weight:600">Ajouter, </span>le problème
+ne se pose pas, l'autre utilisateur pouvant continuer à utiliser la fiche en
+modification.</p>
+
+<p><a name="Suppression_de_rendez-vous"></a><span
+style="font-size:8pt;font-weight:600">Suppression de rendez-vous</span></p>
+
+<p>Pour supprimer un rendez-vous, il suffit de cliquer sur le bouton <span
+style="font-weight:600">Annuler</span>. Cela crée automatiquement un nouveau
+rendez-vous vierge de mêmes caractéristiques et de statut "non attribué",
+tout en changeant le statut du rendez-vous courant à "Annulé".<br />
+<br />
+Pour une suppression définitive d'un rendez-vous, passez par le mode <span
+style="font-weight:600">Cocher </span>de la zone de recherche.<br />
+<br />
+<span style="font-weight:600">Création de rendez-vous en série</span><br />
+Vous disposez d'un bouton qui permet de créer un grand nombre de rendez-vous
+en quelques clics.<br />
+Cette fonction a deux buts :<br />
+-soit de répéter un rendez-vous pour une personne précise (comme une séance
+de kiné tout les lundis à 14 heures pendant 3 mois),<br />
+-soit de créer une sorte de planning en créant des rendez-vous vides, de type
+non attribué, durant toutes les plages de présence possibles du praticien.<br
+/>
+La personne qui prend les rendez-vous travaillera alors systématiquement en
+mode <span style="font-weight:600">Modification</span> pour attribuer ces
+rendez-vous vides à des consultants.<br />
+<img src="agenda_rdv_repetes.png" alt="capture" /><br />
+La colonne de gauche représente les caractéristiques du rendez-vous, celle de
+droite la manière de le répéter.<br />
+Si le rendez-vous doit être répété plusieurs jours de la semaine, il faut
+utiliser la combinaison Ctrl+clic ou Maj+clic afin d'effectuer une sélection
+multiple.<br />
+Il sera créé autant de rendez-vous que possible dans la plage horaire
+désignée selon la durée des rendez-vous configurée.<br />
+Pour un rendez-vous répété une seule fois par jour, faire attention de
+choisir une plage horaire qui début à l'heure du rendez-vous et dont la fin
+est inférieure au double de la durée du rendez-vous.<br />
+Par exemple, pour un rendez-vous de 1/4 d'heure à 14h, il faut choisir comme
+début 14:00 et comme fin une valeur entre 14:15 et 14:29 compris.<br />
+Le statut des rendez-vous se positionne automatiquement sur le statut déjà
+connu ou, en son absence et en l'absence de nom fourni, sur <span
+style="font-weight:600">Non attribué</span>.<br />
+S'il existe déjà un rendez-vous de même heure, de même durée et de même
+utilisateur, le rendez-vous n'est pas créé.</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a
+name="Fichier_des_patients"></a>Fichier des patients</span></p>
+
+<p><a name="Recherche_dans_le_fichier"></a><span
+style="font-weight:600">Recherche dans le fichier<br />
+</span><img src="liste.png" alt="capture" /></p>
+
+<p>Le mode <a href="../liste.php">Patients</a> permet de trouver un ou
+plusieurs patients, en cherchant dans le fichier entier.<br />
+Pour choisir un patient, entrez une partie de son nom ou de son prénom, de sa
+date de naissance, etc. (selon la liste déroulante) suivi du caractère, ou le
+nom exact en cochant la case. <br />
+Si vous voulez trouver TOUS les patients du fichier, écrivez juste "%" dans la
+zone de saisie et ne cochez pas la case (à éviter si la base contient
+beaucoup de patients, car cela peut générer une page HTML <br />
+immense). <br />
+La recherche ne tient pas compte de la différence majuscule/minuscule, et les
+caractères accentués sont assimilés à des caractères non accentués.<br />
+La liste des patients trouvés peut être imprimée, en supprimant
+automatiquement tous les enrichissements de la page (contrôles, etc.) au moyen
+de la fonction d'impression du navigateur.<br />
+Un clic sur un nom envoie à sa fiche individuelle.<br />
+Un clic sur le bouton <span style="font-weight:600">Rendez-vous</span>, en
+ayant préalablement choisi une date, envoie sur le formulaire de prise
+rendez-vous de l'agenda sur le bon jour avec tous les champs possibles <br />
+préremplis. </p>
+
+<p><a name="Fusion_de_fiches"></a><span style="font-weight:600">Fusion de
+fiches<br />
+</span><img alt="image fusion choix" height="365" src="fusion_choix.png"
+width="420" /></p>
+
+<p>Dans le cas où il existe plusieurs fiches pour un même patient, il existe
+un moyen simple de les fusionner en une seule, qui récupère tous les
+éléments pertinents.<br />
+Pour cela, rendez-vous dans le mode <span
+style="font-style:italic">liste</span> en tant qu'administrateur. Vous verrez
+un bouton <span style="font-style:italic">Sélectionner</span>. Entrez une clé
+de recherche correspondant aux fiches que vous voulez fusionner (habituellement
+deux, mais il n'y a pas de limite). Le résultat de votre recherche s'affichera
+avec une case à cocher sur chaque ligne. Cochez les cases désirées, et
+validez par <span style="font-style:italic">Valider</span>. Vous êtes alors
+sur une nouvelle page, <br />
+sur laquelle vous pourrez choisir item par item ce que vous voulez conserver
+(par exemple, le nom d'une fiche, l'adresse d'une autre, etc.).</p>
+
+<p><img alt="Capture - Les choix des items à conserver pour une fusion"
+height="199" src="fusion_fin.png" width="439" /><br />
+Une fois votre choix fait, validez. Il ne restera plus qu'une fiche,
+réunissant les éléments des fiches fusionnées, y compris les observations,
+documents, terrains, prescriptions et liaisons aux correspondants.</p>
+
+<p>L'interface classique de MedinTux propose aussi une fusion de fiches, mais
+sans permettre le choix champ par champ.</p>
+
+<p><a name="Écriture_dans_le_fichier"></a><span
+style="font-weight:600">Écriture dans le fichier<br />
+</span><img src="nouveau_patient.png" alt="capture" /></p>
+
+<p>Il est possible de créer une nouvelle fiche à partir de rien ou d'une
+fiche préexistante, de modifier une fiche existante ou de supprimer une fiche.
+<br />
+Après une recherche infructueuse dans le fichier, un clic sur le bouton <span
+style="font-weight:600">Nouveau</span> lance un formulaire de création de
+dossier, avec la valeur recherchée préremplie. Il ne reste qu'à remplir les
+blancs et valider. <br />
+Si le patient existe déjà (nom, prénom et date de naissance identiques), il
+ne sera pas créé de nouvelle fiche, mais il y aura redirection automatique
+vers la fiche existante.<br />
+Le bouton <span style="font-weight:600">Nouveau</span> peut aussi être
+actionné sans rien avoir recherché, directement depuis la page des patients.
+<br />
+<br />
+<span style="font-weight:600">Assistance à la saisie</span><br />
+<span style="font-weight:600">Code postal</span><br />
+Une fois saisi le code postal, un changement de champ ouvre une boîte de
+dialogue qui permet de choisir la ville, qui s'écrira automatiquement dans la
+zone de saisie <span style="font-weight:600">Ville</span>.<br />
+<img src="zipcode.png" alt="capture" /><br />
+Le mécanisme inverse existe aussi : Ville -&gt;code postal<br />
+<img src="city.png" alt="capture" /><br />
+<span style="font-weight:600">Titre</span><br />
+De même, le choix Madame/Monsieur/Mademoiselle modifie dynamiquement le sexe
+présélectionné.<br />
+<span style="font-weight:600">Clé de numéro de sécurité sociale</span><br />
+La clé du numéro de sécurité sociale se calcule automatiquement à partir
+des 13 chiffres : il suffit de changer de champ de saisie pour que la clé
+apparaisse dans la bonne zone (nécessite Javascript). Les espaces seront
+automatiquement retirés.<br />
+<span style="font-weight:600">Date de naissance</span><br />
+La date de naissance bénéficie d'un calendrier (nécessite Javascript). Il
+est impératif de respecter le format de date donné en exemple, comme
+jj-mm-aaaa pour le français. Vérifiez le réglage dans config.php (choix
+possibles : fr, en, toute autre valeur ou rien positionnant la variable sur
+iso, soit aaaa-mm-jj).<br />
+<br />
+<span style="font-weight:600">Modification de fiche</span><br />
+<br />
+Pour modifier une fiche, il suffit de cliquer sur le bouton <span
+style="font-weight:600">Modifier</span> de la ligne du dossier ou de la fiche
+du patient, de faire les modifications désirées dans le formulaire, et de
+cliquer sur <span style="font-weight:600">Modifier</span> dans le <br />
+formulaire de modification. Si la fiche est déjà verrouillée, par exemple
+par un autre utilisateur, vous aurez un message d'avertissement que vous êtes
+libre d'ignorer. <br />
+<br />
+<span style="font-weight:600">Création de fiche à partir d'une fiche
+existante</span><br />
+<br />
+Pour créer une nouvelle fiche reprenant les données d'une fiche existante
+(personne habitant à la même adresse qu'une personne connue, par exemple), il
+faut cliquer sur le bouton <span style="font-weight:600">Modifier</span> de la
+<br />
+ligne de la personne connue ou de la fiche du patient de référence, faire les
+modifications nécessaires pour adapter la fiche à la nouvelle personne
+(changer le prénom, la date de naissance, <br />
+la profession, etc.), puis de cliquer sur <span
+style="font-weight:600">Ajouter</span> dans le formulaire de modification. Si
+la fiche était verrouillée, vous ne changerez pas son statut par cette
+opération.<br />
+Enfin, pour supprimer une fiche, il suffit de cliquer sur le bouton <span
+style="font-weight:600">Supprimer</span> de sa ligne. Il sera demandé une
+confirmation sur la page suivante (droit administrateur seulement). </p>
+
+<p><span style="font-weight:600">Importation de fiche</span></p>
+
+<p>Si vous disposez d'un fichier XML provenant de la fonction d'exportation de
+MedinTux d'un autre ordinateur, vous pouvez l'importer facilement depuis le
+mode liste, bouton <span style="font-weight:600">Importer </span>(pensez à<br
+/>
+sélectionner auparavant le fichier avec le sélecteur de fichiers).</p>
+
+<p>La fiche est récupérée complètement : identité, documents,
+notes,etc.</p>
+
+<p>Ne sont pas récupérés : les rendez-vous de l'agenda et la liaison aux
+intervenants.</p>
+
+<p>Les documents deviennent possession de celui qui a importé les données,
+l'utilisateur qui les possédait devenant simplement utilisateur délégué sur
+cet ordinateur.</p>
+
+<p>L'exportation n'est possible que pour les utilisateurs ayant les droits
+d'administrateurs et l'importation n'est possible que pour les dossiers qui
+n'existent pas déjà sur l'ordinateur cible (la numérotation GUID est
+récupérée).</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_patient"></a>Mode
+patient<br />
+<br />
+<a name="L_écran_général"></a></span><span style="font-weight:600">L'écran
+général</span><span style="font-size:12pt;font-weight:600"><br />
+</span><img src="dossier_patient1.png" alt="capture" /></p>
+
+<p>La fiche patient affiche les données permanentes du patient (adresse, date
+de naissance, téléphones, Mail, Notes, etc.). </p>
+
+<p>Cette page permet aussi d'afficher des synthèses au moyen des boutons du
+bas : listes, tableau, consultations ou terrains.</p>
+
+<p>La liste des contacts avec leur date sera affichée si vous cliquez sur le
+bouton <span style="font-weight:600">Afficher-&gt;listes</span>.<br />
+Ces contacts sont triés en six colonnes : <span
+style="font-weight:600">Consultations</span>, <span
+style="font-weight:600">Documents</span>, <span
+style="font-weight:600">Ordonnances</span>, <span
+style="font-weight:600">Courriers</span>, <span
+style="font-weight:600">Terrains</span> et <span
+style="font-weight:600">Honoraires.</span></p>
+
+<p><img alt="affichage des listes d'actes" height="99" src="liste_actes.png"
+width="827" /><br />
+Un clic sur une date envoie à l'ensemble des informations concernant ce
+patient à cette date (sauf le terrain).<br />
+Un clic sur l'adresse E-mail vous permet d'envoyer un mail à la personne (pour
+peu que votre navigateur soit interfacé avec votre système de courrier).<br />
+Un clic sur le nom d'un intervenant envoie sur la fiche de l'intervenant.</p>
+
+<p>Un clic sur <span style="font-weight:600">Afficher-&gt;Tableau</span>
+affiche la même chose sous forme d'un tableau ordonné par date</p>
+
+<p><img alt="capture tableau des actes" height="161" src="tableau.png"
+width="910" /></p>
+
+<p>Un clic sur <span style="font-weight:600">Afficher-&gt;Consultations</span>
+affiche le contenu de l'ensemble des consultations de ce dossier (en fonction
+de vos droits).</p>
+
+<p><img alt="capture liste des consultations" height="279"
+src="liste_consultations.png" width="877" /><br />
+Un clic sur <span style="font-weight:600">Afficher-&gt;Terrains </span>affiche
+le contenu de l'ensemble des terrains de ce dossier (en fonction de vos droits)
+et donne l'accès à la modification du statut de grossesse ou d'allaitement,
+ainsi qu'au remplissage des tableaux de suivi..</p>
+
+<p><img alt="Capture affichage et modification du terrain" height="299"
+src="terrain.png" width="581" /></p>
+
+<p>Pour valider une grossesse, il suffit d'écrire une date des dernières
+règles.</p>
+
+<p>Pour l'allaitement, il faut cocher la case.</p>
+
+<p>Pour les tableaux de suivi, il suffit de remplir les cases désirées.</p>
+
+<p>Normalement, vous ne devriez pas toucher à l'horodatage. Si vous le faites,
+respectez impérativement le format fourni.</p>
+
+<p>Pour valider les modifications, il faut cliquer en bas sur Modifier le
+terrain.</p>
+
+<p>Notez que rien ne permet de modifier les antécédents ni le traitement de
+fond sans passer par MedinTux.</p>
+
+<p></p>
+
+<p>Un bouton accompagné de cases à cocher <img
+alt="capture bouton dossier complet" height="186"
+src="bouton_dossier_complet.png" width="151" />permet aussi d'afficher le
+dossier complet, ou simplement une catégorie de documents (observations,
+ordonnances).<br />
+Il s'agit d'une simple feuille de texte, pouvant être enregistrée, ouverte
+avec un programme de texte pour modifications, envoyée par mail, etc.<br />
+Un bouton permet d'obtenir une version imprimable, dépouillée des en-têtes
+et contrôles. </p>
+
+<p>Le bouton Exporter permet de générer un fichier nommé patientxxxxxxx.xml,
+situé dans le répertoire log/ de la racine de MedWebTux.</p>
+
+<p>Un lien permet de l'enregistrer à l'endroit de votre choix pour importation
+ultérieure.</p>
+
+<p><img alt="capture dossier complet" height="731" src="dossier_complet.png"
+width="607" /></p>
+
+<p><a name="Liaison_à_un_intervenant"></a><span
+style="font-weight:600">Liaison à un intervenant<br />
+<br />
+</span><img src="liaison.png" alt="capture" /></p>
+
+<p>Le bouton <span style="font-weight:600">Intervenant Lier</span> donne accès
+à un formulaire de recherche d'intervenant.<br />
+On peut choisir l'intervenant par nom ou spécialité. En laissant vide la zone
+de saisie de nom et en laissant le déroulant de spécialité sur "Toutes", on
+trouve tous les intervenants du fichier.<br />
+Le nom des intervenants peut être recherché par correspondance exacte (cocher
+la case) ou par partie du nom.<br />
+Le plus souvent, il sera préférable de laisser la zone <span
+style="font-weight:600">Nom</span> vide et sélectionner simplement la
+spécialité.<br />
+Un clic sur le bouton <span style="font-weight:600">Chercher</span> permet
+d'afficher tous les intervenants correspondant à la requête. <br />
+Il suffit de cliquer sur le bouton <span style="font-weight:600">Lier</span>
+pour lier le patient à l'intervenant.<br />
+Le lien pourra être cassé à plusieurs endroits, en particulier en cliquant
+sur le bouton <span style="font-weight:600">Annuler</span> de la ligne du
+correspondant (il y aura confirmation). </p>
+
+<p><a name="Recherche_dans_le_dossier"></a><span
+style="font-weight:600">Recherche dans le dossier<br />
+<br />
+</span><img src="recherche.png" alt="capture" /></p>
+
+<p>Vous pouvez chercher un mot ou une phrase dans le dossier d'un patient avec
+la zone de saisie, en sélectionnant si vous voulez chercher dans les
+consultations, les ordonnances ou les courriers <br />
+au moyen de la liste déroulante.<br />
+Seuls les documents contenant cette chaîne seront affichés dans la liste de
+résultat.<br />
+La recherche ne tient pas compte de la casse (majuscules = minuscules).</p>
+
+<p><a name="Enregistrement_des_accès"></a><span
+style="font-weight:600">Enregistrement des accès</span></p>
+
+<p>Il est possible de consigner en journal tous les accès faits par un
+utilisateur particulier (ou tous). <br />
+Pour cela, il faut modifier le fichier patient.php (explications dans le
+fichier).<br />
+Cette fonction permet, par exemple, de donner accès aux données à un
+confrère, tout en s'assurant, a posteriori, qu'il n'abusera pas de cet accès.
+</p>
+
+<p><a name="Écriture_du_mode_patient"></a><span
+style="font-weight:600">Écriture de documents</span></p>
+
+<p>On peut créer tous documents afférents au patient,comme une nouvelle
+observation, un document, une ordonnance non structurée ou un courrier en
+cliquant sur "<span style="text-decoration:underline">Observation Documents-
+Ajouter"</span>.</p>
+
+<p>Notez que la maquette initiale du document doit être choisie dans le
+déroulant proche du bouton <span style="font-weight:600">Ajouter</span>.<br />
+On arrive alors en mode <span style="font-weight:600">Observation</span>.<br />
+<br />
+On peut aussi créer un document image en choisissant une image dans
+l'ordinateur. Pratique pour les Smartphones, qui intègrent un appareil photo
+et un navigateur raccordé à MedWebTux.</p>
+
+<p>Enfin, on peut aussi donner un rendez-vous par le bouton de même nom.
+Pensez à choisir la date avant de cliquer sur le bouton, afin d'arriver
+directement sur l'agenda du jour.</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_consultation"></a>Mode
+journée</span></p>
+
+<p>À partir d'un clic sur une date du mode patient ou du mode activité ou de
+la validation d'un document, on atteint une page affichant toutes les
+informations de cette journée pour ce patient triées en colonnes
+(consultation, ordonnance, courrier), ainsi que la liste des dates où il
+existe d'autres documents. Un clic sur une de ces dates envoie sur les
+informations de cette journée. </p>
+
+<p><img src="journee.png" alt="capture" /></p>
+
+<p>Notez que cette page permet aussi d'accéder à modification de document ou
+à l'impression (affichage d'une page avec en-têtes et sans boutons de
+contrôle)</p>
+
+<p><img alt="capture impression ordo" height="326" src="impression_ordo.png"
+width="335" />:</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_observation"></a>Mode
+observation (Écriture de documents)</span></p>
+
+<p>Lancé par le bouton <span style="font-weight:600">Observation -Document
+-&gt; Ajouter</span> de la fiche d'un patient ou <span
+style="font-weight:600">Modifier</span> d'une fiche de consultation, le mode
+<span style="font-weight:600">observation</span> permet de consigner des
+données médicales, pourvues d'un titre et d'un horodatage.</p>
+
+<p>Ce mode permet de créer aussi bien des observations que des ordonnances,des
+courriers ou des documents, sans toutefois bénéficier d'assistants, tels le
+Vidal, qui n'est pas exploité.<br />
+Si vous ne disposez pas de javascript, l'interface a cet aspect :</p>
+
+<p><img src="consultation.png" alt="capture" /><br />
+Le titre est libre. Il est rempli par défaut par la valeur choisie dans le
+déroulant, elle-même issue du fichier <span
+style="font-weight:600">templates.php</span> (voir plus haut).<br />
+L'horodatage est proposé automatiquement avec la date et l'heure de l'instant,
+mais peut être modifié, tant qu'on respecte la syntaxe.<br />
+Il est fourni des maquettes d'observation, de courriers, de prescriptions et de
+documents par défaut, que vous pouvez changer dans le fichier
+templates.php.<br />
+L'observation est écrite en texte simple.<br />
+Cependant, toute balise HTML introduite à la main sera interprétée à
+l'affichage.<br />
+Si vous disposez de javascript, l'éditeur de documents a bien meilleure
+allure, et il permet d'éditer les documents en texte riche, avec tableaux,
+couleurs, choix de police, etc.<br />
+<img src="editeur_wysiwyg.png" alt="capture" /></p>
+
+<p>Une fois votre observation remplie, il suffit de cliquer sur le bouton <span
+style="font-weight:600">Enregistrer en tant que</span> ou <span
+style="font-weight:600">Modifier en tant que</span> selon les cas, et vous
+retournez sur la date du jour, où le nouveau document devrait apparaître avec
+sa mise en forme définitive. Notez que l'arrivée en mode observation pose un
+verrou sur la fiche du patient, et que ce verrou est supprimé automatiquement
+au moment de l'enregistrement.Si des verrous n'ont pas été retirés, par
+exemple parce que vous n'avez pas enregistré l'observation, vous pourrez les
+supprimer au moment de quitter le programme.<br />
+Remarquez que la fonction de modification permet aussi de changer le type d'un
+document.</p>
+
+<p><span style="font-weight:600">Attention !</span> Ne modifiez pas un document
+contenant une image : l'image serait perdue.</p>
+
+<p>Pour l'instant, il n'y a pas de fonction de suppression. Patience... <br />
+<br />
+<img src="bulletcyan01.png" alt="puce" /><a
+name="Fusion_d_ordonnances_structurées"></a><span
+style="font-size:12pt;font-weight:600">Fusion d'ordonnances structurées<br />
+</span> Si votre patient dispose d'ordonnances structurées produites par
+MedinTux (il s'agit d'ordonnances établies avec l'assistant de prescriptions
+de MedinTux à l'aide du Vidal ou de la base GET), vous pouvez rencontrer de
+situations où il est utile de créer une nouvelle ordonnance composée de tout
+ou partie de plusieurs ordonnances, fonction dont MedinTux est dépourvu au
+moment où ces lignes sont écrites (version 2.14).<br />
+<br />
+À partir de la fiche patient, cliquez sur le bouton <span
+style="font-weight:600">Fusionner des ordonnances</span> de la case Observation
+Documents Ordonnances.<br />
+Vous obtenez alors une fenêtre de ce type :<br />
+<img src="fusion_ordo.png" alt="capture" /><br />
+Chaque médicament prescrit au moins une fois par le praticien lui-même ou un
+autre dont il hérite des droits sur les ordonnances apparaît une fois dans la
+liste, accompagné du code CIP et du nombre de fois où il a été prescrit.
+<br />
+Notez que les libellés affichés ne sont pas ceux qui apparaissent sur
+l'ordonnance, mais ceux pris dans le Vidal pour le code CIP enregistré.<br />
+Cette simple vue est très pratique pour avoir l'historique thérapeutique d'un
+patient en un coup d'œil.<br />
+<br />
+Il vous suffit alors de cocher les différentes case désirées, puis de
+valider pour avoir immédiatement une ordonnance contenant tous les
+médicaments choisis.<br />
+<br />
+Notez que le texte qui sera affiché à l'écran est composé uniquement du
+libellé Vidal, mais que la structure de prescription du produit est
+intégralement conservée d'une manière invisible en XML.<br />
+<br />
+Si vous demandez à modifier cette ordonnance dans MedinTux, vous verrez
+apparaître une vraie ordonnance de MedinTux, avec posologie, durée, etc. <br
+/>
+<br />
+Petite limitation : nous avons vu que, lorsqu'un médicament (plus exactement
+une présentation) a été prescrit plusieurs fois, il n'apparaît qu'une seule
+fois dans la liste. Or, il est possible que ce médicament ait été prescrit
+différemment aux différentes occasions (posologie, durée, etc.). <br />
+Dans ce cas, c'est la première occurrence trouvée dans la base de données
+qui est utilisée sans possibilité de choisir. <br />
+Libre à vous de modifier ensuite l'ordonnance avec MedinTux.</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_Intervenants"></a>Mode <a
+href="../correspondant.php">Intervenants</a></span></p>
+
+<p><a name="Recherche_d_intervenants"></a><img src="bulletcyan01.png"
+alt="puce" /><span style="font-size:12pt;font-weight:600">Page de
+synthèse</span></p>
+
+<p><img src="intervenants.png" alt="capture" /></p>
+
+<p>Sur cette page, on cherche les intervenants en fonction de n'importe quel
+critère (nom, prénom, adresse), combiné à la spécialité.<br />
+Si l'on veut voir tous les intervenants d'une spécialité, il suffit de
+choisir la spécialité dans la liste déroulante et ne pas cocher la case
+<span style="font-weight:600">Correspondance exacte</span>.<br />
+Lorsque l'on cherche selon un critère (nom, adresse, etc.), il suffit de
+renseigner une partie du critère dans la case. Pour n'avoir que les résultats
+correspondant exactement à la recherche, il faut cocher la case <span
+style="font-weight:600">Correspondance exacte</span>. Si l'on veut tous les
+intervenants correspondant à la zone de saisie sans distinction de la
+spécialité, il faut laisser le déroulant sur <span
+style="font-weight:600">Toutes</span>. <br />
+Enfin, on peut restreindre la recherche aux intervenants qui sont ou ne sont
+pas utilisateurs de MedinTux.<br />
+Un clic sur un nom envoie à la fiche détaillée de l'intervenant.<br />
+Pour imprimer le listing trouvé sans les contrôles et autres fioritures de la
+page, il suffit de faire appel à la fonction d'impression du navigateur.<br />
+<br />
+Le bouton <span style="font-weight:600">Exporter en vcard</span> n'apparaît
+que si vous avez déjà effectué une recherche.<br />
+Il permet de générer un fichier des intervenants sélectionnés lors de la
+recherche au format vcard, facile à intégrer dans n'importe quel logiciel de
+carnet d'adresses, utilisé par les clients de courrier ou les téléphones
+portables.<br />
+<br />
+</p>
+
+<p><a name="modification_de_fiche_d_intervenant"></a><img
+src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600">Création ou modification de fiche
+d'intervenant</span></p>
+
+<p>Il est aussi possible de créer un nouvel intervenant à partir de rien
+grâce au bouton <span style="font-weight:600">Nouveau</span>, ou à partir
+d'une fiche existante (bouton <span style="font-weight:600">Modifier</span> sur
+la ligne d'un intervenant servant de modèle, <br />
+par exemple pour les praticiens d'un cabinet de groupe, afin de ne pas
+réécrire l'adresse à chaque fois).<br />
+<img src="ajout_intervenant.png" alt="capture" /><br />
+La gestion des spécialités est automatique : toute nouvelle spécialité
+ajoutée dans la zone éditable sera ajoutée si la liste déroulante des
+spécialités est positionnée sur <span style="font-weight:600">Autre</span>.
+Sinon, c'est la spécialité <br />
+sélectionnée dans le déroulant qui sera prise.<br />
+Pour supprimer une spécialité de la liste, il faut la supprimer de toutes les
+fiches d'intervenant où elle apparaît.<br />
+La gestion des types de téléphones obéit au même mécanisme : s'il n'existe
+plus aucun téléphone de type "portable", le type "portable disparaît de
+lui-même..<br />
+La saisie de la ville est automatisée en fonction du code postal et
+réciproquement : écrivez simplement un code postal ou une ville, et une
+fenêtre surgira pour vous proposer la ville ou le code postal (nécessite
+Javascript activé dans le navigateur).<br />
+Les numéros de téléphone sont automatiquement nettoyés de leurs espaces à
+l'enregistrement.<br />
+<br />
+Si le ou les intervenants ont déjà une fiche vcard (exportation d'un carnet
+d'adresses, par exemple), vous pouvez importer le tout en sélectionnant le
+fichier à importer.<br />
+Cela évite de ressaisir votre carnet d'adresses en provenance d'un autre
+logiciel de contacts.<br />
+Une utilisation pratique est de récupérer ainsi tout le carnet de contacts
+d'un smartphone.<br />
+<br />
+Il est aussi possible de supprimer un correspondant en cliquant sur le bouton
+<span style="font-weight:600">Supprimer</span> de sa ligne. <br />
+Il sera demandé confirmation.<br />
+Pour lier un patient à un intervenant, il faut cliquer sur le bouton <span
+style="font-weight:600">Lier</span> de la ligne de l'intervenant, puis
+rechercher le patient à lier dans le formulaire. </p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Fiche_d_intervenant"></a>Fiche
+d'intervenant, patients et consultations liées, utilisateur<br />
+<br />
+</span><img src="fiche_intervenant.png" alt="capture" /></p>
+
+<p>Ici se trouve la fiche de l'intervenant sélectionné. Notez que vous pouvez
+arriver ici aussi bien depuis la liste des correspondants que depuis la fiche
+d'un patient lié à cet intervenant.<br />
+Un clic sur l'adresse E-mail (si elle existe) vous permet d'envoyer un mail à
+la personne.<br />
+Un clic sur <span style="font-weight:600">Patient liés-&gt;Montrer</span>
+permet d'afficher tous les patients liés à ce correspondant. Un clic sur leur
+nom envoie sur leur fiche.<br />
+Si vous donnez des dates dans les zones de saisie, en appuyant sur le bouton
+<span style="font-weight:600">Chercher</span>, vous obtiendrez une liste
+restreinte des patients : ceux qui sont liés à ce correspondant et qui ont eu
+une <br />
+consultation durant la période choisie.<br />
+La liste est celle des dates où les consultations ont eu lieu (plusieurs dates
+possibles pour un même patient). Un clic sur une date envoie sur la fiche de
+journée de ce patient ce jour-là.<br />
+Le bouton <span style="font-weight:600">Lier</span> permet de lier un nouveau
+patient à cet intervenant.<br />
+Il suffit de donner un nom de patient, de cliquer sur <span
+style="font-weight:600">Chercher</span>, et de cliquer sur le bouton <span
+style="font-weight:600">Lier</span> sur la ligne du patient choisi pour qu'il
+soit lié.<br />
+Pour délier un patient, il faut cliquer sur le bouton <span
+style="font-weight:600">Annuler</span> de sa ligne dans la fiche de
+l'intervenant.<br />
+Enfin, il est possible de supprimer la fiche de l'intervenant ou de la modifier
+en cliquant sur les boutons correspondants. <br />
+La zone de gestion des utilisateurs n'apparaît que si vous êtes
+administrateur ou utilisateur de même identité que la fiche affichée.<br />
+Si vous êtes utilisateur, vous pouvez seulement modifier votre mot de
+passe.<br />
+Si vous êtes administrateur, vous pouvez en plus transformer un intervenant en
+utilisateur en lui créant un login et un mot de passe, ainsi que les droits
+directs afférents.<br />
+Vous pouvez modifier le mot de passe et les droits directs, mais pas le
+login.<br />
+Les droits délégués ne sont pas gérés. </p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_Activité"></a>Mode
+</span><a href="../activite.php"><span
+style="font-size:12pt;font-weight:600">Activité</span></a><span
+style="font-size:12pt;font-weight:600"><br />
+<br />
+</span><img src="activite.png" alt="capture" /></p>
+
+<p>Dans ce mode, vous pouvez obtenir la liste des patients qui ont eu une
+consultation pendant une période donnée pour le médecin qui est connecté
+(ou pour un autre médecin ou même pour tous si <br />
+vous avez les droits administrateur), ainsi que le titre des consultations
+trouvées.<br />
+Le tri se fait par date et heure, ce qui permet de reconstituer le planning des
+consultations effectivement faites. En cliquant sur la tête de colonne, vous
+forcez le tri par nom.<br />
+Vous pouvez confronter cette liste à l'agenda du jour en cliquant sur la date
+d'une consultation.<br />
+Un clic sur le nom envoie au dossier du patient, tandis qu'un clic sur l'heure
+envoie à la consultation du jour.<br />
+La valeur par défaut de la recherche est la date du jour.<br />
+La saisie des dates obéit aux mêmes règles que l'agenda.<br />
+Si vous donnez une date de fin antérieure à la date de début, la date de fin
+est automatiquement changée pour être identique à la date du début.<br />
+Les résultats de recherche sont accompagnés de deux boutons <span
+style="font-weight:600">&lt;&lt;</span> et<span
+style="font-weight:600">&gt;&gt;</span>. <br />
+Un clic sur la double flèche vers la gauche envoie à la journée précédant
+la première journée recherchée, et un clic sur le bouton droit envoie sur la
+première journée suivant la dernière journée <br />
+recherchée.<br />
+Par défaut, le programme recherche toutes les consultations de la période en
+question. Il est possible de restreindre la recherche en choisissant autre
+chose que "Aucun" dans le déroulant. <br />
+Il est inutile d'ajouter des caractères joker (%), sauf pour chercher de
+multiples clés dans la même fiche. <span
+style="font-weight:600">Exemple</span> : donner "<span
+style="font-style:italic">fièvre%toux</span>" pour trouver les fiches qui
+contiennent à la fois "fièvre" et <br />
+"toux" dans cet ordre.<br />
+Dans le cas de la recherche dans les notes, elle se fait parmi les dossiers qui
+ont donné lieu à au moins un acte pendant la période étudiée. Même s'il y
+a eu plusieurs contacts, le résultat n'est <br />
+affiché qu'une fois.<br />
+Les<span style="font-weight:600">flèches </span>de <span
+style="font-weight:600">jour suivant</span> et <span
+style="font-weight:600">précédent</span> utilisent le même critère de
+recherche.<br />
+Le contenu de la zone de saisie n'a aucun effet si le menu déroulant est
+positionné sur "Aucun" lorsqu'on actionne le bouton <span
+style="font-weight:600">Chercher</span>.<br />
+Si un même patient a eu plusieurs contacts durant la période et qu'on ne veut
+l'afficher qu'une fois (recherche de tous les patients différents vus durant
+la période étudiée), il faut utiliser le bouton <span
+style="font-style:italic;font-weight:600">Grouper par nom</span>.<br />
+Si l'on désire afficher le texte des consultations, il faut actionner le
+bouton <span style="font-style:italic;font-weight:600">Montrer les
+consultations</span>. </p>
+
+<p>L'affichage de l'activité fait aussi une liaison avec la comptabilité.</p>
+
+<p>La colonne de droite montre les honoraires du patient ou un bouton <span
+style="font-style:italic;font-weight:600">Ajouter</span> si aucun honoraire
+n'est enregistré ce jour.<br />
+<br />
+Si vous voulez imprimer l'activité, seules les données utiles seront
+imprimées (pas les contrôles et zones de recherche).</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_Vidal"></a>Mode </span><a
+href="../medocs.php"><span
+style="font-size:12pt;font-weight:600">Vidal</span></a></p>
+
+<p>Ce mode nécessite que le Vidal Data Semp soit installé (licence
+commerciale).<br />
+Il donne accès à la classification des médicaments et à la fiche de chaque
+médicament.</p>
+
+<p><img alt="capture vidal" src="vidal.png" width="594" height="314" /></p>
+
+<p>Il est conseillé de toujours cocher la case <strong>Seulement les
+commercialisés</strong>, car les fiches des médicaments non disponibles sont
+incomplètes, et les recherches sont polluées par des médicaments
+inutiles.</p>
+
+<p>Pour faire une recherche par nom ou par DCI, il suffit de donner une partie
+du mot à chercher dans la zone de saisie, puis de cliquer sur
+<strong>Envoyer</strong>. Évitez de laisser la case vide (recherche sur tout
+le fichier) ou de valider par la touche Entrée en cas de recherche par DCI.</p>
+
+<p>Exemple de recherche par nom :</p>
+
+<p><img alt="capture Vidal" src="vidal1.png" width="414" height="265" /></p>
+
+<p>Cliquez simplement sur un des liens donnés pour accéder à la fiche
+complète :</p>
+
+<p><img alt="capture_vidal" src="vidal2.png" width="480" height="438" /></p>
+
+<p>Notez que certains liens sont fournis : un lien qui pointe vers la page des
+interactions et une liste de liens qui pointent vers les différentes rubriques
+de la fiche.</p>
+
+<p>La recherche par composition est semblable :</p>
+
+<p><img alt="capture_vidal" src="vidal3.png" width="379" height="219" /></p>
+
+<p>En cliquant sur un lien, on trouve toutes les spécialités contenant cette
+substance :</p>
+
+<p><img alt="capture vidal" src="vidal4.png" width="461" height="227" /></p>
+
+<p>Il suffit alors de cliquer sur le nom de la spécialité désirée.</p>
+
+<p>Il est aussi possible de naviguer dans les classes thérapeutiques, en
+cliquant sur le bouton <strong>Chercher</strong> de la classification des
+médicaments, puis en développant tous les liens fournis :</p>
+
+<p><img alt="capture vidal" src="vidal5.png" width="612" height="239" /></p>
+
+<p>Un clic sur le nom de la spécialité ouvre la fiche du médicament. Notez
+que les médicaments proposés tiennent compte de la case
+<strong>Commercialisés seulement</strong>.</p>
+
+<p>Notez également que la fiche d'un médicament propose des liens pour
+accéder à n'importe quel niveau de l'arborescence à laquelle il appartient
+:</p>
+
+<p><img alt="capture vidal" src="vidal6.png" width="530" height="265" /></p>
+
+<h4><a name="Interactions" id="Interactions" href="index.html"></a>Interactions
+médicamenteuses </h4>
+
+<p>Il y a plusieurs manières de vérifier des interactions basées sur les
+informations du Vidal Data Semp. </p>
+
+<p>Pour lancer le module sans argument, cliquez dans le menu cascadé
+Vidal-&gt;Interactions. </p>
+
+<p><img alt="capture_interactions" src="interactions1.png" width="454"
+height="145" /></p>
+
+<p>La fenêtre d'accueil est très simple : une zone de saisie et un bouton de
+validation. Écrivez tout ou partie du nom commercial d'un médicament, et une
+liste sera proposée après validation :</p>
+
+<p><img alt="capture interactions" src="interactions2.png" width="395"
+height="133" /></p>
+
+<p>Seules les spécialités actuellement commercialisées seront affichées.</p>
+
+<p>Choisissez une des spécialités trouvées en cliquant sur son nom : elle
+deviendra alors sélectionnée pour les interactions :</p>
+
+<p><img alt="Capture interactions" src="interactions3.png" width="484"
+height="85" /></p>
+
+<p>Le nom du médicament validé apparaît en lien HTML : vous pouvez cliquer
+dessus pour atteindre la fiche complète du médicament.</p>
+
+<p>À ce moment, toutes les interactions connues pour ce médicament seront
+affichées.</p>
+
+<p><img alt="capture interactions" src="interactions5.png" width="489"
+height="253" /></p>
+
+<p>Recommencez autant de fois que nécessaire pour ajouter d'autres
+médicaments. À partir du deuxième, les interactions sont calculées entre
+tous les médicaments présents dans la liste de sélection :</p>
+
+<p><img alt="capture interactions" src="interactions4.png" width="490"
+height="312" /></p>
+
+<p>Pour lancer une nouvelle recherche vierge, il suffit de lancer à nouveau le
+sous-menu Vidal -&gt;Interactions.</p>
+
+<p>Pour supprimer juste certains médicaments, il faut décocher leur case,
+puis cliquer sur le bouton Valider, en pensant à écrire quelque chose dans la
+zone de saisie (la saisie vide est interdite, car elle lancerait un affichage
+du Vidal complet, ce qui est long et inutile).</p>
+
+<p>D'autres manières de lancer le module d'interactions :</p>
+<ul>
+  <li>Depuis la fiche Vidal d'un médicament, il suffit de cliquer sur
+    <strong>Chercher les interactions</strong>. Le médicament sera positionné
+    en tête de liste. Il suffira d'ajouter les autres médicaments comme vu
+    ci-dessus</li>
+  <li>Depuis le module de synthèse d'ordonnance : cochez les médicaments
+    désirés, puis cliquez sur <strong>Vérifier les
+  interactions</strong>.</li>
+  <li>Depuis la page <strong>consultation.php</strong> du dossier patient,
+    chaque ordonnance structurée peut être validée en cliquant sur son
+    bouton d'interactions.</li>
+</ul>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_CCAM"></a>Mode </span><a
+href="../CCAM.php"><span
+style="font-size:12pt;font-weight:600">CCAM</span></a></p>
+
+<p>Ce mode permet d'accéder à la Classification Commune des Actes Médicaux
+française en lecture seule et sans liaison au dossier.</p>
+
+<p>Il existe plusieurs modes de recherche</p>
+<ul>
+  <li>Recherche par classification : commencer par choisir un organe avec le
+    déroulant, puis choisissez facultativement dans les nouveaux déroulants
+    qui apparaissent.</li>
+  <li>Recherche par mot-clé : saisissez un mot dans la zone de recherche. Si
+    vous voulez restreindre la recherche aux entrées contenant plusieurs mots,
+    donnez-les dans la zone de recherche séparés par des signes %. Exemple :
+    <span style="font-style:italic">électro%12</span> vous permet de trouver
+    uniquement l'ECG 12 dérivations. </li>
+  <li>Mode thésaurus : les actes déjà enregistrés par vous sont listés.
+    Pratique si vous utilisez fréquemment les mêmes actes. </li>
+</ul>
+
+<p><img src="CCAM.png" alt="capture" /></p>
+
+<p>Le système gère aussi les modificateurs, les associabilités et les
+incompatibilités.</p>
+
+<p><img alt="Capture acte en CCAM" height="229" src="CCAM2.png" width="365"
+/></p>
+
+<p>Une fois la fiche d'un acte trouvée, vous pouvez, en cliquant sur les
+boutons adaptés, l'ajouter au thesaurus, afficher ses modificateurs, afficher
+ses actes associés et ses actes incompatibles. </p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_Comptabilité"></a>Mode
+</span><a href="../compta/saisie_hono.php"><span
+style="font-size:12pt;font-weight:600">Comptabilité</span></a></p>
+
+<p>Ce mode nécessite que la comptabilité de MedinTux soit installée.</p>
+
+<p>Actuellement ce mode ne gère que les recettes.<br />
+On y accède soit depuis la fiche d'un patient, soit depuis une observation
+validée, soit depuis l'activité (consultation sans paiement lié).<br />
+Il permet la saisie d'un nouvel honoraire, la suppression d'un honoraire.</p>
+
+<p>Un tableau récapitulatif des honoraires du jour est fourni en bas de la
+page.</p>
+
+<p>La page de saisie des honoraires donne accès à une page de synthèse des
+honoraires, permettant la validation des honoraires, la création de bordereaux
+bancaires de remise de chèques</p>
+
+<p><img src="bulletcyan01.png" alt="puce" /><span
+style="font-size:12pt;font-weight:600"><a name="Mode_Sauvegarde"></a>Mode
+</span><a href="../backup.php"><span
+style="font-size:12pt;font-weight:600">Sauvegarde</span></a></p>
+
+<p>Ce mode est particulièrement simple, puisqu'il vous permet, d'un simple
+clic, de télécharger une copie de vos données (patients, consultations,
+rendez-vous) sur un disque local de votre <br />
+choix (disque dur, disquette USB, etc.).</p>
+
+<p>De plus, les différents liens proposés permettent de sauvegarder d'autres
+données personnelles, comme le Thesaurus CCAM, les données médicamenteuses
+personnelles ou la comptabilité.</p>
+
+<p><img src="backup.png" alt="capture" /><br />
+<br />
+<span style="font-weight:600;text-decoration:underline">Note </span><span
+style="font-weight:600">: sous Windows, il faut ajouter le chemin (PATH) de
+</span><span
+style="font-style:italic;font-weight:600">mysqldump.exe</span><span
+style="font-weight:600">au PATH de Windows.</span></p>
+
+<p>Il faut avoir les droits d'administrateur <span
+style="font-style:italic">adm</span> de MedinTux pour pouvoir réaliser cette
+opération.</p>
+
+<p></p>
+
+<p><span style="font-weight:600">Installation</span></p>
+
+<p>Cette fonction nécessite que vous ayez un répertoire nommé "log" dans la
+racine de MedWebTux, et accessible à l'utilisateur <span
+style="font-style:italic">apache</span> en écriture. </p>
+
+<p><span style="font-weight:600">Réinstallation de la sauvegarde :</span></p>
+<ul>
+  <li>Copiez le fichier <span style="font-weight:600">Dump_DrTuxTest.sql</span>
+    dans votre répertoire d'installation de MedinTux, à la place du fichier
+    de même nom (dans <span
+    style="font-weight:600">set_bases/bin/SqlCreateTable</span>). </li>
+  <li>Lancez le programme <span style="font-weight:600">set_bases</span>, en
+    demandant d'installer les bases et en choisissant DrTuxTest </li>
+  <li>Acceptez la proposition de détruire l'ancienne base. Dès que
+    l'installation est finie, vous devriez avoir accès à toutes vos données.
+  </li>
+</ul>
+
+<p><img src="zix-arrow-right.png" alt="flèche" /><a name="Licence"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Licence</span><span
+style="font-size:15pt;font-weight:600"><br />
+</span>Ce programme est distribué sous licence GNU GPL. </p>
+
+<p><img src="zix-arrow-right.png" alt="flèche" /><a name="Auteurs"></a><span
+style="font-size:15pt;font-weight:600;text-decoration:underline;color:#00007f">Auteurs</span></p>
+
+<p><a href="mailto:gerard@delafond.org">Gérard Delafond</a> </p>
+
+<p><a href="http://www.tossavi.net">TOSSAVI Kodjo Patrice</a></p>
+
+<p class="noPrint"><a href="http://validator.w3.org/check?uri=referer"><img
+src="../pics/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88"
+/></a> </p>
+</body>
+</html>

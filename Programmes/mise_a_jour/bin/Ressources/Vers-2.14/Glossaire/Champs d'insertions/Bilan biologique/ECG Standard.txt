@@ -1,0 +1,3 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans">
+<p><span style="font-family:Arial Narrow">ECG: </span><span style="font-family:Arial Narrow;color:#0000ff">Rythme cardiaque</span><span style="font-family:Arial Narrow">: Fréquence: PR </span></p>
+</body></html>

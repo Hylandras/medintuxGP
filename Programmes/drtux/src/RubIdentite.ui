@@ -1,0 +1,2036 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>FormRubIdent</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FormRubIdent</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>612</width>
+            <height>434</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>480</width>
+            <height>400</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>FormRubIdent</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QTabWidget" row="0" column="0">
+            <property name="name">
+                <cstring>tabWidget_Ident</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Arial</family>
+                </font>
+            </property>
+            <property name="tabShape">
+                <enum>Triangular</enum>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab_Administratif</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Administratif</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>0</number>
+                    </property>
+                    <widget class="QGroupBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>groupBox1</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="frameShape">
+                            <enum>GroupBoxPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="title">
+                            <string>Patient (bénéficiaire)</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>1</number>
+                            </property>
+                            <property name="spacing">
+                                <number>1</number>
+                            </property>
+                            <widget class="QLayoutWidget" row="4" column="0">
+                                <property name="name">
+                                    <cstring>layout32</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel5</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Code Postal</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_CdPostal</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>140</width>
+                                                <height>32767</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GGGGG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__  ___</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel6</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Ville</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEditVille</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>________________________________________________________________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout16</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel" row="0" column="2">
+                                        <property name="name">
+                                            <cstring>textLabel2</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Prénom</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>lineEdit_NomDossier</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>________________________________________________________________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit" row="0" column="3">
+                                        <property name="name">
+                                            <cstring>lineEdit_PremomDossier</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>________________________________________________________________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel2_2</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Nom</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="3" column="0">
+                                <property name="name">
+                                    <cstring>layout31</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout30</cstring>
+                                        </property>
+                                        <hbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel4</cstring>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Adresse</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QTextEdit">
+                                                <property name="name">
+                                                    <cstring>textEdit_Adresse</cstring>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>textEdit_Adresse</string>
+                                                </property>
+                                                <property name="tabChangesFocus">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </widget>
+                                        </hbox>
+                                    </widget>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout29</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <property name="margin">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="spacing">
+                                                <number>2</number>
+                                            </property>
+                                            <widget class="CMaskedLineEdit" row="2" column="1">
+                                                <property name="name">
+                                                    <cstring>lineEdit_Tel3</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>7</hsizetype>
+                                                        <vsizetype>0</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>0</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>32767</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="focusPolicy">
+                                                    <enum>StrongFocus</enum>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>95</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__  __  __ __ __</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>lineEdit_Tel1</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>7</hsizetype>
+                                                        <vsizetype>0</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>0</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>32767</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="focusPolicy">
+                                                    <enum>StrongFocus</enum>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>95</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__  __  __ __ __</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="1" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel3_2_2_2</cstring>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Tél 2</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="2" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel3_2_2_3</cstring>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Tél 3</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit" row="1" column="1">
+                                                <property name="name">
+                                                    <cstring>lineEdit_Tel2</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>7</hsizetype>
+                                                        <vsizetype>0</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>0</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>32767</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="focusPolicy">
+                                                    <enum>StrongFocus</enum>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>95</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>__  __  __ __ __</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                            <widget class="QLabel" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>textLabel3_2_2</cstring>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Tél 1</string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget" row="2" column="0">
+                                <property name="name">
+                                    <cstring>layout15</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="CMaskedLineEdit" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>lineEdit_DtNss</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>32767</width>
+                                                <height>32767</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>95</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GGGGGGGG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__/__/____</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit" row="0" column="3">
+                                        <property name="name">
+                                            <cstring>lineEdit_RangGeme</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>30</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>30</width>
+                                                <height>32767</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>95</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Rang gémellaire</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="2">
+                                        <property name="name">
+                                            <cstring>textLabel3_3_2_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Rang Gém.</string>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Rang gémellaire</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="6">
+                                        <property name="name">
+                                            <cstring>textLabel3_3</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string> Profession </string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel3</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Date Nss</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox" row="0" column="5">
+                                        <item>
+                                            <property name="text">
+                                                <string>Masculin</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Féminin</string>
+                                            </property>
+                                        </item>
+                                        <item>
+                                            <property name="text">
+                                                <string>Indéterminé</string>
+                                            </property>
+                                        </item>
+                                        <property name="name">
+                                            <cstring>comboBoxSexe</cstring>
+                                        </property>
+                                        <property name="editable">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="autoCompletion">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="4">
+                                        <property name="name">
+                                            <cstring>textLabel1_2</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Sexe</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit" row="0" column="7">
+                                        <property name="name">
+                                            <cstring>lineEdit_Profession</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>150</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMUUUUUUUUU</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>______________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                                <property name="name">
+                                    <cstring>layout15</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_2_2</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Nom de naissance</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_NomDeNss</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>150</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>________________________________________________________________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel2_2_2_2</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Titre</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_Titre</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>80</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMUUUUUUUUU</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>______________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget" row="5" column="0">
+                                <property name="name">
+                                    <cstring>layout19</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLineEdit" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>lineEdit_Email</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>LineEditPanel</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Sunken</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string>lineEdit_Email</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLineEdit" row="0" column="3">
+                                        <property name="name">
+                                            <cstring>textLabel_NumDoss</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>Box</enum>
+                                        </property>
+                                        <property name="frameShadow">
+                                            <enum>Plain</enum>
+                                        </property>
+                                        <property name="lineWidth">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="readOnly">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="2">
+                                        <property name="name">
+                                            <cstring>textLabelNumeroDoss</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Doss. N°</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel10</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>E mail</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>groupBox2</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="font">
+                            <font>
+                            </font>
+                        </property>
+                        <property name="frameShape">
+                            <enum>GroupBoxPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="title">
+                            <string>Assuré</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>4</number>
+                            </property>
+                            <property name="spacing">
+                                <number>2</number>
+                            </property>
+                            <widget class="QLayoutWidget" row="1" column="1">
+                                <property name="name">
+                                    <cstring>layout35</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel">
+                                        <property name="name">
+                                            <cstring>textLabel9</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Prénom Assuré</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit">
+                                        <property name="name">
+                                            <cstring>lineEdit_PrenomAssure</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>________________________________________________________________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="2">
+                                <property name="name">
+                                    <cstring>layout18</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="CMaskedLineEdit" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>lineEdit_DtNss_Assure</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>100</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>32767</width>
+                                                <height>32767</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>95</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>GGGGGGGG</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>__/__/____</string>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>lineEdit_NssClef_2</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>45</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="frameShape">
+                                            <enum>LineEditPanel</enum>
+                                        </property>
+                                        <property name="text">
+                                            <string>Date Nss</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="1" column="0">
+                                <property name="name">
+                                    <cstring>layout17</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel8</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Nom Assuré</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="CMaskedLineEdit" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>lineEdit_NomAssure</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>7</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="focusPolicy">
+                                            <enum>StrongFocus</enum>
+                                        </property>
+                                        <property name="carMask" stdset="0">
+                                            <number>32</number>
+                                        </property>
+                                        <property name="control" stdset="0">
+                                            <string>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</string>
+                                        </property>
+                                        <property name="mask" stdset="0">
+                                            <string>________________________________________________________________________________</string>
+                                        </property>
+                                        <property name="mixMode" stdset="0">
+                                            <number>1</number>
+                                        </property>
+                                        <property name="text" stdset="0">
+                                            <string></string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="1" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>layout21</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabelNumeroDoss_2</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Le bénéficiaire est lié à l'assuré en tant que...</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>WordBreak|AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>comboBoxQualiteAyantDroit</cstring>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy>
+                                                <hsizetype>5</hsizetype>
+                                                <vsizetype>0</vsizetype>
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="editable">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="autoCompletion">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="toolTip" stdset="0">
+                                            <string>Le bénéficiaire est lié à l'assuré en tant que ...</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout23</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>layout22</cstring>
+                                        </property>
+                                        <grid>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel" row="0" column="1">
+                                                <property name="name">
+                                                    <cstring>lineEdit_NssClef</cstring>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>45</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="frameShape">
+                                                    <enum>LineEditPanel</enum>
+                                                </property>
+                                                <property name="text">
+                                                    <string>N° SS</string>
+                                                </property>
+                                            </widget>
+                                            <widget class="CMaskedLineEdit" row="0" column="0">
+                                                <property name="name">
+                                                    <cstring>lineEdit_NumSecu</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>7</hsizetype>
+                                                        <vsizetype>0</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>250</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>32767</width>
+                                                        <height>32767</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                    </font>
+                                                </property>
+                                                <property name="focusPolicy">
+                                                    <enum>StrongFocus</enum>
+                                                </property>
+                                                <property name="carMask" stdset="0">
+                                                    <number>32</number>
+                                                </property>
+                                                <property name="control" stdset="0">
+                                                    <string>GGGGGGGGGGGGG</string>
+                                                </property>
+                                                <property name="mask" stdset="0">
+                                                    <string>_  __  __  __  ___  ___</string>
+                                                </property>
+                                                <property name="text" stdset="0">
+                                                    <string></string>
+                                                </property>
+                                            </widget>
+                                        </grid>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel7</cstring>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Numéro de SS de l'assuré</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>WordBreak|AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QTabWidget" row="2" column="0">
+                        <property name="name">
+                            <cstring>tabWidgetNotes</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>4</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="tabShape">
+                            <enum>Triangular</enum>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>tab</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>&amp;Intervenants</string>
+                            </attribute>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <property name="margin">
+                                    <number>0</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>0</number>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout16</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLayoutWidget" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>layout14</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QPushButton">
+                                                    <property name="name">
+                                                        <cstring>pushButton_AddMedTTT</cstring>
+                                                    </property>
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy>
+                                                            <hsizetype>0</hsizetype>
+                                                            <vsizetype>0</vsizetype>
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&amp;Ajouter un Intervenant</string>
+                                                    </property>
+                                                    <property name="accel">
+                                                        <string>Alt+A</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QPushButton">
+                                                    <property name="name">
+                                                        <cstring>pushButton_DelMedTTT</cstring>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&amp;Retirer un Intervenant</string>
+                                                    </property>
+                                                    <property name="accel">
+                                                        <string>Alt+R</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                        <widget class="QListView" row="0" column="1">
+                                            <column>
+                                                <property name="text">
+                                                    <string>Spécialité        </string>
+                                                </property>
+                                                <property name="clickable">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="resizable">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </column>
+                                            <column>
+                                                <property name="text">
+                                                    <string>Nom         </string>
+                                                </property>
+                                                <property name="clickable">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="resizable">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </column>
+                                            <column>
+                                                <property name="text">
+                                                    <string>Prénom     </string>
+                                                </property>
+                                                <property name="clickable">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="resizable">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </column>
+                                            <column>
+                                                <property name="text">
+                                                    <string>en qualité de</string>
+                                                </property>
+                                                <property name="clickable">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="resizable">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </column>
+                                            <column>
+                                                <property name="text">
+                                                    <string>ID</string>
+                                                </property>
+                                                <property name="clickable">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="resizable">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </column>
+                                            <property name="name">
+                                                <cstring>listView_Praticiens</cstring>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy>
+                                                    <hsizetype>5</hsizetype>
+                                                    <vsizetype>7</vsizetype>
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                </font>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QWidget">
+                            <property name="name">
+                                <cstring>tab</cstring>
+                            </property>
+                            <attribute name="title">
+                                <string>&amp;Notes</string>
+                            </attribute>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <property name="margin">
+                                    <number>0</number>
+                                </property>
+                                <property name="spacing">
+                                    <number>0</number>
+                                </property>
+                                <widget class="QTextEdit" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>textEdit_Note</cstring>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </widget>
+                    <widget class="QLayoutWidget" row="3" column="0">
+                        <property name="name">
+                            <cstring>layout27</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QPushButton" row="0" column="5">
+                                <property name="name">
+                                    <cstring>pushButtonCancel</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>0</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Annu&amp;ler</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+L</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="1">
+                                <property name="name">
+                                    <cstring>pushButtonCreate</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>0</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Créer le dossier et y accéder</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+C</string>
+                                </property>
+                            </widget>
+                            <spacer row="0" column="2">
+                                <property name="name">
+                                    <cstring>spacer4</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>25</width>
+                                        <height>16</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <spacer row="0" column="0">
+                                <property name="name">
+                                    <cstring>spacer6</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>21</width>
+                                        <height>10</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <spacer row="0" column="6">
+                                <property name="name">
+                                    <cstring>spacer7</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>36</width>
+                                        <height>11</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <spacer row="0" column="4">
+                                <property name="name">
+                                    <cstring>spacer5</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>25</width>
+                                        <height>16</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton" row="0" column="3">
+                                <property name="name">
+                                    <cstring>pushButtonSavModif</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>0</hsizetype>
+                                        <vsizetype>0</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Enregistrer les modifications</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+E</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab_Documents</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Informations complémentaires, photos et plus encore ...</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>0</number>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layoutBarreTexte</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>0</number>
+                            </property>
+                            <widget class="QPushButton" row="0" column="9">
+                                <property name="name">
+                                    <cstring>pushButtonExporter</cstring>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>35</width>
+                                        <height>30</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Exporter cette image...</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="6">
+                                <property name="name">
+                                    <cstring>pushButtonPrint</cstring>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>35</width>
+                                        <height>30</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Imprimer cette fenêtre</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="4">
+                                <property name="name">
+                                    <cstring>textLabel_UserName</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>115</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                    </font>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>StyledPanel</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>Utilisateur</string>
+                                </property>
+                                <property name="scaledContents">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox" row="0" column="1">
+                                <property name="name">
+                                    <cstring>comboBox_RubName</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>200</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>32767</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                    </font>
+                                </property>
+                                <property name="sizeLimit">
+                                    <number>20</number>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="3">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>55</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>55</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>vu par :</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="2">
+                                <property name="name">
+                                    <cstring>pushButtonRubDateChange</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>22</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>22</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Modifier la date et l'intitulé du document</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="8">
+                                <property name="name">
+                                    <cstring>pushButtonAdd</cstring>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>35</width>
+                                        <height>30</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Charger une image...</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="5">
+                                <property name="name">
+                                    <cstring>pushButtonSave</cstring>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>35</width>
+                                        <height>30</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Enregistrer tout le dossier</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="7">
+                                <property name="name">
+                                    <cstring>pushButtonDelete</cstring>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>35</width>
+                                        <height>30</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Placer le document en cours comme document à effacer (ne sera effacé qu'après enregistrement)</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel_NbRub</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>22</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>22</width>
+                                        <height>22</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string></string>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Modifier la date et l'intitulé du document</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>CMaskedLineEdit</class>
+        <header location="global">../../MedinTuxTools/CMaskedLineEdit.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>Sig_FocusOut()</signal>
+        <signal>Sig_FocusIn()</signal>
+        <signal>Sig_CarEvent(QEvent * ev)</signal>
+        <property type="UInt">carMask</property>
+        <property type="String">text</property>
+        <property type="String">mask</property>
+        <property type="String">control</property>
+        <property type="Int">mixMode</property>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<tabstops>
+    <tabstop>lineEdit_NomDossier</tabstop>
+    <tabstop>lineEdit_PremomDossier</tabstop>
+    <tabstop>lineEdit_NomDeNss</tabstop>
+    <tabstop>lineEdit_Titre</tabstop>
+    <tabstop>lineEdit_DtNss</tabstop>
+    <tabstop>lineEdit_RangGeme</tabstop>
+    <tabstop>comboBoxSexe</tabstop>
+    <tabstop>lineEdit_Profession</tabstop>
+    <tabstop>textEdit_Adresse</tabstop>
+    <tabstop>lineEdit_CdPostal</tabstop>
+    <tabstop>lineEditVille</tabstop>
+    <tabstop>lineEdit_Tel1</tabstop>
+    <tabstop>lineEdit_Tel2</tabstop>
+    <tabstop>lineEdit_Tel3</tabstop>
+    <tabstop>lineEdit_Email</tabstop>
+    <tabstop>lineEdit_NumSecu</tabstop>
+    <tabstop>comboBoxQualiteAyantDroit</tabstop>
+    <tabstop>lineEdit_NomAssure</tabstop>
+    <tabstop>lineEdit_PrenomAssure</tabstop>
+    <tabstop>pushButton_AddMedTTT</tabstop>
+    <tabstop>pushButton_DelMedTTT</tabstop>
+    <tabstop>pushButtonCreate</tabstop>
+    <tabstop>pushButtonSavModif</tabstop>
+    <tabstop>pushButtonCancel</tabstop>
+    <tabstop>listView_Praticiens</tabstop>
+    <tabstop>tabWidget_Ident</tabstop>
+    <tabstop>textLabel_NbRub</tabstop>
+    <tabstop>comboBox_RubName</tabstop>
+    <tabstop>pushButtonRubDateChange</tabstop>
+    <tabstop>pushButtonSave</tabstop>
+    <tabstop>pushButtonPrint</tabstop>
+    <tabstop>pushButtonDelete</tabstop>
+    <tabstop>pushButtonAdd</tabstop>
+    <tabstop>pushButtonExporter</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">RubIdentite.ui.h</include>
+</includes>
+<layoutdefaults spacing="6" margin="11"/>
+ /includehints>
+</UI>

@@ -1,0 +1,9 @@
+[Connexion]
+; pour le Datasemp : InUseBase = Parametres MedicaBase , noMedicaBase je dis bien noMedicaBase
+; pour la BaseGet : InUseBase = Parametres Get_Base , MedicaBase noMedicaBase je dis bien MedicaBase
+  Parametres MedicaBase = QMYSQL3 , MedicaTuxTest , root ,  , localhost , 3306   
+  Parametres SrceBase = QMYSQL3 , DatasempTest , root ,  , localhost , 3306   
+  Parametres Get_Base = QMYSQL3 , BaseGetTest , root ,  , localhost , 3306   
+;  InUseBase = Parametres MedicaBase , noMedicaBase
+InUseBase = Parametres Get_Base , MedicaBase
+[END_INI]

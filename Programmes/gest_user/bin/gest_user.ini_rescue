@@ -1,0 +1,8 @@
+
+[Connexion]
+  Parametres = QMYSQL3 , DrTuxTest , root , admin , localhost , 3306  
+[last login]
+  login data =  ,                                                                                                                   
+[Repertoire Temporaire]
+  Repertoire = ../../tmp
+[END_INI]

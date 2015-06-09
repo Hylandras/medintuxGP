@@ -1,0 +1,1402 @@
+Retour du Nomade WVP-MAL sur le réseau local du serveur : 20/08/2009 17:24:55,73 
+.
+.
+Etat du Maître sur le Nomade WVP-MAL : 20/08/2009 17:24:55,76 
+.
+.
+Démarrage de l'Esclave du serveur pour récupérer les opérations du Nomade WVP-MAL : 20/08/2009 17:24:56,32 
+Retour du Nomade WVP-MAL sur le réseau local du serveur : 20/08/2009 17:46:28,56 
+.
+.
+Etat du Maître sur le Nomade WVP-MAL : 20/08/2009 17:46:28,58 
+*************************** 1. row ***************************
+            File: LogBinNomade.000001
+        Position: 7228
+    Binlog_Do_DB: drtuxtest,medicatuxtest
+Binlog_Ignore_DB: 
+Log_name	File_size
+LogBinNomade.000001	7228
+.
+.
+Démarrage de l'Esclave du serveur pour récupérer les opérations du Nomade WVP-MAL : 20/08/2009 17:46:28,95 
+*************************** 1. row ***************************
+             Slave_IO_State: 
+                Master_Host: 194.250.69.243
+                Master_User: slave403
+                Master_Port: 3306
+              Connect_Retry: 60
+            Master_Log_File: LogBin401.000013
+        Read_Master_Log_Pos: 34167
+             Relay_Log_File: REMONDSlaves-relay-bin.000021
+              Relay_Log_Pos: 3087
+      Relay_Master_Log_File: LogBin401.000013
+           Slave_IO_Running: No
+          Slave_SQL_Running: No
+            Replicate_Do_DB: drtuxtest,medicatuxtest
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: 
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 34167
+            Relay_Log_Space: 3204
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: NULL
+Retour du Nomade WVP-MAL sur le réseau local du serveur : 20/08/2009 19:21:28,47 
+.
+.
+Etat du Maître sur le Nomade WVP-MAL : 20/08/2009 19:21:28,48 
+*************************** 1. row ***************************
+            File: LogBinNomade.000001
+        Position: 21955
+    Binlog_Do_DB: drtuxtest,medicatuxtest
+Binlog_Ignore_DB: 
+Log_name	File_size
+LogBinNomade.000001	21955
+.
+.
+Démarrage de l'Esclave du serveur pour récupérer les opérations du Nomade WVP-MAL : 20/08/2009 19:21:28,55 
+*************************** 1. row ***************************
+             Slave_IO_State: 
+                Master_Host: 192.168.69.101
+                Master_User: server401
+                Master_Port: 3306
+              Connect_Retry: 60
+            Master_Log_File: LogBinNomade.000001
+        Read_Master_Log_Pos: 7228
+             Relay_Log_File: REMONDSlaves-relay-bin.000002
+              Relay_Log_Pos: 7368
+      Relay_Master_Log_File: LogBinNomade.000001
+           Slave_IO_Running: No
+          Slave_SQL_Running: No
+            Replicate_Do_DB: drtuxtest,medicatuxtest
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: 
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 7228
+            Relay_Log_Space: 7368
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: NULL
+.
+.
+Nouvel état de l'Esclave du serveur par rapport au Nomade WVP-MAL : 20/08/2009 19:23:34,70 
+*************************** 1. row ***************************
+             Slave_IO_State: Waiting for master to send event
+                Master_Host: 192.168.69.101
+                Master_User: server401
+                Master_Port: 3306
+              Connect_Retry: 60
+            Master_Log_File: LogBinNomade.000001
+        Read_Master_Log_Pos: 21955
+             Relay_Log_File: REMONDSlaves-relay-bin.000002
+              Relay_Log_Pos: 22095
+      Relay_Master_Log_File: LogBinNomade.000001
+           Slave_IO_Running: Yes
+          Slave_SQL_Running: Yes
+            Replicate_Do_DB: drtuxtest,medicatuxtest
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: 
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 21955
+            Relay_Log_Space: 22095
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: 0
+.
+.
+Nouvel état de l'Esclave arrêté du serveur WXP-MAXDATA : 20/08/2009 19:24:38,36 
+*************************** 1. row ***************************
+             Slave_IO_State: 
+                Master_Host: 192.168.69.101
+                Master_User: server401
+                Master_Port: 3306
+              Connect_Retry: 60
+            Master_Log_File: LogBinNomade.000001
+        Read_Master_Log_Pos: 21955
+             Relay_Log_File: REMONDSlaves-relay-bin.000002
+              Relay_Log_Pos: 22095
+      Relay_Master_Log_File: LogBinNomade.000001
+           Slave_IO_Running: No
+          Slave_SQL_Running: No
+            Replicate_Do_DB: drtuxtest,medicatuxtest
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: 
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 21955
+            Relay_Log_Space: 22095
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: NULL
+.
+.
+Connexion à la base locale du Nomade WVP-MAL pour réinit les logs de WVP-MAL : 20/08/2009 19:24:57,94 
+Etat Avant / Après 
+*************************** 1. row ***************************
+            File: LogBinNomade.000001
+        Position: 21955
+    Binlog_Do_DB: drtuxtest,medicatuxtest
+Binlog_Ignore_DB: 
+Log_name	File_size
+LogBinNomade.000001	21955
+*************************** 1. row ***************************
+            File: LogBinNomade.000001
+        Position: 98
+    Binlog_Do_DB: drtuxtest,medicatuxtest
+Binlog_Ignore_DB: 
+Log_name	File_size
+LogBinNomade.000001	98
+.
+.
+Connexion de la base du Nomade WVP-MAL au serveur pour relancer la réplication Serveur- : 20/08/2009 19:24:58,01 
+Etat Avant / Après 
+*************************** 1. row ***************************
+             Slave_IO_State: 
+                Master_Host: WXP-MAXDATA
+                Master_User: slave402
+                Master_Port: 3306
+              Connect_Retry: 60
+            Master_Log_File: LogBinServ403.000008
+        Read_Master_Log_Pos: 20586
+             Relay_Log_File: RelayLogNomade.000002
+              Relay_Log_Pos: 13597
+      Relay_Master_Log_File: LogBinServ403.000008
+           Slave_IO_Running: No
+          Slave_SQL_Running: No
+            Replicate_Do_DB: drtuxtest,medicatuxtest
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: 
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 20586
+            Relay_Log_Space: 13597
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: NULL
+.
+.
+Nouvel état de l'Esclave du Nomade WVP-MAL par rapport au serveur : 20/08/2009 19:25:22,03 
+*************************** 1. row ***************************
+             Slave_IO_State: Connecting to master
+                Master_Host: WXP-MAXDATA
+                Master_User: slave402
+                Master_Port: 3306
+              Connect_Retry: 60
+            Master_Log_File: LogBinServ403.000008
+        Read_Master_Log_Pos: 20586
+             Relay_Log_File: RelayLogNomade.000002
+              Relay_Log_Pos: 13597
+      Relay_Master_Log_File: LogBinServ403.000008
+           Slave_IO_Running: No
+          Slave_SQL_Running: Yes
+            Replicate_Do_DB: drtuxtest,medicatuxtest
+        Replicate_Ignore_DB: 
+         Replicate_Do_Table: 
+     Replicate_Ignore_Table: 
+    Replicate_Wild_Do_Table: 
+Replicate_Wild_Ignore_Table: 
+                 Last_Errno: 0
+                 Last_Error: 
+               Skip_Counter: 0
+        Exec_Master_Log_Pos: 20586
+            Relay_Log_Space: 13597
+            Until_Condition: None
+             Until_Log_File: 
+              Until_Log_Pos: 0
+         Master_SSL_Allowed: No
+         Master_SSL_CA_File: 
+         Master_SSL_CA_Path: 
+            Master_SSL_Cert: 
+          Master_SSL_Cipher: 
+             Master_SSL_Key: 
+      Seconds_Behind_Master: NULL
+############################################################################
+*
+*
+Retour du Nomade sur le réseau local du serveur : 21/08/2009 11:21:30,77 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme' 
+Retour du Nomade sur le réseau local du serveur : 21/08/2009 11:27:15,80 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme' 
+Retour du Nomade sur le réseau local du serveur : 21/08/2009 11:27:36,66 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme' 
+Retour du Nomade sur le réseau local du serveur : 21/08/2009 11:41:05,60 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 21/08/2009 11:41:42,98 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 22/08/2009 19:29:29,41 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 23/08/2009 21:21:46,18 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 24/08/2009 10:16:44,47 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 29/08/2009 14:41:20,57 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 31/08/2009 20:41:08,93 
+chemin des scripts et fichers de log : '' 
+Retour du Nomade sur le réseau local du serveur : 31/08/2009 21:50:44,78 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 31/08/2009 22:12:41,04 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 31/08/2009 22:17:32,11 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 31/08/2009 22:18:46,88 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 31/08/2009 22:20:50,05 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009  8:53:30,75 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009  9:05:22,65 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 11:23:43,04 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 14:22:00,17 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 14:33:41,06 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 14:54:42,66 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 14:55:47,23 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 15:35:33,85 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:04:51,24 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:05:17,52 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:05:46,41 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:06:05,77 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:06:14,68 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:06:26,80 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:06:37,02 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 16:06:48,93 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 17:36:10,83 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 01/09/2009 17:37:29,54 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  0:34:56,78 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  0:35:13,48 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  0:50:17,15 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:05:36,86 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:05:56,89 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:19:36,33 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:20:04,17 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:21:02,55 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:21:26,45 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:30:17,47 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  1:30:42,39 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  2:06:51,17 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  2:06:58,15 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  2:07:49,54 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  2:46:31,50 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  3:11:39,01 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  9:01:10,92 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 02/09/2009  9:01:18,33 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 04/09/2009 15:07:34,81 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 05/09/2009 11:09:57,07 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 05/09/2009 14:25:44,94 
+chemin des scripts et fichers de log : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 10:30:24,47 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts0' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 11:10:38,19 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts0' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 12:14:20,63 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 12:16:51,77 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 12:46:58,05 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 12:49:18,97 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 12:49:27,10 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 13:08:59,21 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+-11- toSee    : 'test du deuxieme parametre' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 13:15:15,41 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 17:41:03,77 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 17:47:03,15 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 18:52:52,52 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 19:06:15,63 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 21:06:44,07 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 21:06:52,85 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 23:19:45,10 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 23:21:51,27 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 23:21:58,12 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/09/2009 23:28:02,74 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 07/09/2009 11:36:46,02 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 07/09/2009 11:50:54,41 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 07/09/2009 11:51:34,82 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 07/09/2009 13:35:08,42 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 07/09/2009 13:49:13,91 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 12:43:39,57 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:42:48,63 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:43:03,93 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:43:10,71 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:43:30,99 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:44:01,35 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:47:28,28 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:47:41,41 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:47:46,75 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:51:28,96 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : '{{param 0}}' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:57:10,69 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : '{{param 0}}' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 15:59:52,52 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:01:00,24 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : '{{param 0}}' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:01:46,99 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : '{{param 0}}' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:01:57,32 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : '{{param 0}}' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:02:05,83 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : '{{param 0}}' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:20,89 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:25,03 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:29,33 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:33,50 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:37,86 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:41,97 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:46,13 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:50,08 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:53,99 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:19:58,57 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 16:20:03,89 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:10:45,28 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:10:58,22 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:11:08,39 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:11:13,33 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:11:18,16 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:11:22,68 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:11:27,21 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:11:31,78 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:11:38,10 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:23:07,75 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 17:23:18,02 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 21:22:04,35 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 21:22:17,27 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 21:22:35,39 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 21:22:51,07 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 21:22:58,63 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 21:24:34,88 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 08/09/2009 21:44:22,39 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 09/09/2009 11:54:08,94 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 09/09/2009 13:30:23,03 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 09/09/2009 17:35:57,59 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 09/09/2009 17:37:17,16 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 10/09/2009 13:12:23,76 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Synchro du Nomade  -  sur le Réseau Cabinet  : 22/09/2009 11:23:32,85 
+.
+.
+Etat de l'Escalve du Serveur du Réseau  -  : 22/09/2009 11:23:32,86 
+############################################################################
+*
+*
+Synchro du Nomade  -  sur le Réseau Cabinet  : 22/09/2009 11:23:37,56 
+.
+.
+Etat de l'Escalve du Serveur du Réseau  -  : 22/09/2009 11:23:37,56 
+############################################################################
+*
+*
+Synchro du Nomade root -  sur le Réseau Cabinet  : 23/09/2009  9:37:48,02 
+.
+.
+Etat de l'Escalve du Serveur du Réseau localhost - localhost : 23/09/2009  9:37:48,06 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 23/09/2009  9:37:49,02 
+.
+.
+Etat du Maître sur le Nomade root -  : 23/09/2009  9:37:49,04 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 23/09/2009  9:37:49,04 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 23/09/2009  9:37:49,10 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 23/09/2009  9:37:49,10 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 23/09/2009  9:37:49,38 
+.
+.
+Arret du serveur MySQL du nomade root -  : 23/09/2009  9:37:49,38 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 23/09/2009  9:37:49,38 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 23/09/2009  9:37:49,40 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 23/09/2009  9:37:49,40 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 23/09/2009  9:37:49,40 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 23/09/2009  9:37:49,46 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 23/09/2009  9:37:49,46 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 23/09/2009  9:37:49,48 
+.
+.
+Relance de la Réplication circulaire du Réseau : 23/09/2009  9:37:49,48 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 23/09/2009  9:37:49,68 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 28/09/2009 18:16:51,04 
+.
+.
+Etat du Maître sur le Nomade root -  : 28/09/2009 18:16:51,06 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 28/09/2009 18:16:51,06 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 28/09/2009 18:16:51,15 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 28/09/2009 18:16:51,16 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 28/09/2009 18:16:51,52 
+.
+.
+Arret du serveur MySQL du nomade root -  : 28/09/2009 18:16:51,52 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 28/09/2009 18:16:51,52 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 28/09/2009 18:16:51,52 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 28/09/2009 18:16:51,52 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 28/09/2009 18:16:51,54 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 28/09/2009 18:16:51,60 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 28/09/2009 18:16:51,60 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 28/09/2009 18:16:51,62 
+.
+.
+Relance de la Réplication circulaire du Réseau : 28/09/2009 18:16:51,62 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 28/09/2009 18:16:51,82 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 28/09/2009 18:22:27,10 
+.
+.
+Etat du Maître sur le Nomade root -  : 28/09/2009 18:22:27,21 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 28/09/2009 18:22:27,52 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 28/09/2009 18:22:28,63 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 28/09/2009 18:22:28,65 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 28/09/2009 18:22:28,93 
+.
+.
+Arret du serveur MySQL du nomade root -  : 28/09/2009 18:22:28,95 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 28/09/2009 18:22:28,95 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 28/09/2009 18:22:28,95 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 28/09/2009 18:22:28,95 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 28/09/2009 18:22:28,96 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 28/09/2009 18:22:29,02 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 28/09/2009 18:22:29,02 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 28/09/2009 18:22:29,02 
+.
+.
+Relance de la Réplication circulaire du Réseau : 28/09/2009 18:22:29,04 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 28/09/2009 18:22:29,24 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 28/09/2009 18:24:29,41 
+.
+.
+Etat du Maître sur le Nomade root -  : 28/09/2009 18:24:29,41 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 28/09/2009 18:24:29,41 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 28/09/2009 18:24:29,49 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 28/09/2009 18:24:29,49 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 28/09/2009 18:24:29,77 
+.
+.
+Arret du serveur MySQL du nomade root -  : 28/09/2009 18:24:29,79 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 28/09/2009 18:24:29,79 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 28/09/2009 18:24:29,79 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 28/09/2009 18:24:29,79 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 28/09/2009 18:24:29,79 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 28/09/2009 18:24:29,87 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 28/09/2009 18:24:29,87 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 28/09/2009 18:24:29,87 
+.
+.
+Relance de la Réplication circulaire du Réseau : 28/09/2009 18:24:29,87 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 28/09/2009 18:24:30,09 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 28/09/2009 18:25:48,79 
+.
+.
+Etat du Maître sur le Nomade root -  : 28/09/2009 18:25:48,81 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 28/09/2009 18:25:48,81 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 28/09/2009 18:25:48,87 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 28/09/2009 18:25:48,87 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 28/09/2009 18:25:49,15 
+.
+.
+Arret du serveur MySQL du nomade root -  : 28/09/2009 18:25:49,16 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 28/09/2009 18:25:49,16 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 28/09/2009 18:25:49,16 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 28/09/2009 18:25:49,16 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 28/09/2009 18:25:49,16 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 28/09/2009 18:25:49,24 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 28/09/2009 18:25:49,24 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 28/09/2009 18:25:49,24 
+.
+.
+Relance de la Réplication circulaire du Réseau : 28/09/2009 18:25:49,24 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 28/09/2009 18:25:49,46 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 28/09/2009 18:28:24,99 
+.
+.
+Etat du Maître sur le Nomade root -  : 28/09/2009 18:28:24,99 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 28/09/2009 18:28:25,01 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 28/09/2009 18:28:25,09 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 28/09/2009 18:28:25,10 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 28/09/2009 18:28:25,46 
+.
+.
+Arret du serveur MySQL du nomade root -  : 28/09/2009 18:28:25,48 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 28/09/2009 18:28:25,48 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 28/09/2009 18:28:25,48 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 28/09/2009 18:28:25,48 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 28/09/2009 18:28:25,49 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 28/09/2009 18:28:25,59 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 28/09/2009 18:28:25,59 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 28/09/2009 18:28:25,59 
+.
+.
+Relance de la Réplication circulaire du Réseau : 28/09/2009 18:28:25,59 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 28/09/2009 18:28:25,92 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  0:42:20,88 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  0:42:20,89 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  0:42:20,91 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  0:42:20,97 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  0:42:20,99 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  0:42:21,27 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  0:42:21,27 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  0:42:21,27 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  0:42:21,27 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  0:42:21,27 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  0:42:21,28 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  0:42:21,35 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:21,35 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:21,35 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  0:42:21,36 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  0:42:21,56 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  0:42:25,69 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  0:42:25,69 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  0:42:25,69 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  0:42:25,77 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  0:42:25,77 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  0:42:26,05 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  0:42:26,05 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  0:42:26,05 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  0:42:26,06 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  0:42:26,06 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  0:42:26,06 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  0:42:26,14 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:26,14 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:26,14 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  0:42:26,14 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  0:42:26,38 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  0:42:28,86 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  0:42:28,86 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  0:42:28,86 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  0:42:28,94 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  0:42:28,94 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  0:42:29,22 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  0:42:29,22 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  0:42:29,22 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  0:42:29,22 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  0:42:29,24 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  0:42:29,24 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  0:42:29,30 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:29,30 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:29,31 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  0:42:29,31 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  0:42:29,52 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  0:42:32,11 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  0:42:32,11 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  0:42:32,11 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  0:42:32,19 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  0:42:32,19 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  0:42:32,47 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  0:42:32,47 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  0:42:32,49 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  0:42:32,49 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  0:42:32,49 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  0:42:32,49 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  0:42:32,56 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:32,56 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  0:42:32,56 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  0:42:32,56 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  0:42:32,77 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  1:08:00,94 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  1:08:00,94 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  1:08:00,95 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  1:08:01,02 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  1:08:01,02 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  1:08:01,30 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  1:08:01,31 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  1:08:01,31 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  1:08:01,31 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  1:08:01,31 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  1:08:01,31 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  1:08:01,39 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:01,39 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:01,39 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  1:08:01,39 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  1:08:01,61 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  1:08:03,10 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  1:08:03,10 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  1:08:03,10 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  1:08:03,17 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  1:08:03,17 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  1:08:03,44 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  1:08:03,45 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  1:08:03,45 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  1:08:03,45 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  1:08:03,45 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  1:08:03,45 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  1:08:03,53 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:03,53 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:03,53 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  1:08:03,53 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  1:08:03,75 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  1:08:07,64 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  1:08:07,72 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  1:08:07,92 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  1:08:08,41 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  1:08:08,41 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  1:08:08,67 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  1:08:08,69 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  1:08:08,69 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  1:08:08,69 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  1:08:08,69 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  1:08:08,69 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  1:08:08,77 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:08,77 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:08,77 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  1:08:08,77 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  1:08:08,97 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  1:08:10,58 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  1:08:10,66 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  1:08:10,89 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  1:08:11,20 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  1:08:11,20 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  1:08:11,49 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  1:08:11,50 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  1:08:11,50 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  1:08:11,50 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  1:08:11,50 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  1:08:11,50 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  1:08:11,58 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:11,58 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  1:08:11,58 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  1:08:11,60 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  1:08:11,80 
+############################################################################
+*
+*
+Synchronisation du Nomade root -  sur le Réseau du Serveur : 06/10/2009  1:28:52,14 
+.
+.
+Etat du Maître sur le Nomade root -  : 06/10/2009  1:28:52,25 
+.
+.
+Démarrage de l'Esclave du Serveur récupérer données Nomade localhost - localhost : 06/10/2009  1:28:52,52 
+.
+.
+Fin de la réplication du Nomade vers le Serveur : 06/10/2009  1:28:53,77 
+.
+.
+Nouvel état de l'Esclave du Serveur / au Nomade localhost - localhost : 06/10/2009  1:28:53,77 
+.
+.
+Nouvel état de l'Esclave arrêté du Serveur localhost - localhost : 06/10/2009  1:28:54,05 
+.
+.
+Arret du serveur MySQL du nomade root -  : 06/10/2009  1:28:54,05 
+.
+.
+Sauvegarde des fichiers logs binaires du nomade root -  : 06/10/2009  1:28:54,05 
+.
+.
+Redémarrage du serveur MySQL du nomade root -  : 06/10/2009  1:28:54,06 
+.
+.
+Connexion à la base locale du Nomade root -  pour réinit les logs : 06/10/2009  1:28:54,06 
+Etat Avant / Après 
+.
+.
+Connexion base du Nomade root -  au Serveur pour réplication Serveur- : 06/10/2009  1:28:54,06 
+Etat Avant / Après 
+.
+.
+Nouvel état de l'Esclave du Nomade root -  / au Serveur : 06/10/2009  1:28:54,13 
+.
+.
+Fin de la réplication du Serveur vers le Nomade : 06/10/2009  1:28:54,14 
+.
+.
+Arrêt de la réplication du Serveur vers le Nomade : 06/10/2009  1:28:54,14 
+.
+.
+Relance de la Réplication circulaire du Réseau : 06/10/2009  1:28:54,14 
+.
+.
+Nouvel état de l'Esclave du Serveur localhost - localhost : 06/10/2009  1:28:54,35 
+############################################################################
+*
+*
+Retour du Nomade sur le réseau local du serveur : 06/10/2009 14:15:07,45 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/10/2009 14:30:09,96 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 06/10/2009 14:59:39,10 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 
+Retour du Nomade sur le réseau local du serveur : 07/10/2009 15:49:23,84 
+-01- chemin des scripts : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Nomadisme\WindowsScripts' 
+-10- chemin des log.    : 'C:\OpenDevMedintux\trunk\Programmes\Manager\bin\Manager\bin\Nomadisme\FilesLogs' 

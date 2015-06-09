@@ -1,0 +1,10 @@
+{{\
+{{:: VAR_SET(url_recherche,http://www.vidal.fr/recherche/index/q:{{DCI1}} {{DCI2}} {{DCI3}})}}\
+{{:: ECHO(== start : <font color=#00c0ff>{{MACRO NAME}}</font> for <font color=#ff0000>{{ITEM_NAME}}  {{DCI1}} {{DCI2}} {{DCI3}}</font> ==)}}\
+{{:: _LOAD_URL( $url_recherche )>htmlPage}}\
+{{:: _PUT_PAGE_IN_BASE($htmlPage,{{DCI1}},Vidal Mono For DCI, $url_recherche)}}\
+{{:: _DISPLAY_PAGE( VAR = htmlPage, Ressources/web/Vidal Mono For DCI/)}}\
+{{:: DISPLAY_PAGE( $url_recherche, Ressources/web/Vidal Mono For DCI/)}}\
+{{:: _DISPLAY_PAGE( $htmlPage,Ressources/web/Vidal Mono For DCI/)}}\
+{{:: ECHO(== fin : <font color=#00c0ff>{{MACRO NAME}}</font> ==)}}\
+}}

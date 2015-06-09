@@ -1,0 +1,100 @@
+[Connexion]
+Parametres = QMYSQL3 , DrTuxTest , brama_sql_2014 , brahmadou_2014 , 192.168.0.26 , 3306
+TimeToReconnect=3600000
+
+[Interface]
+Dossier_Entrees=Ressources/Attente_Entrees
+Code_Box_Par_Defaut=A1
+Bouton_Acces_DrTux=OUI
+Chemin_du_calendrier=D:/MedinTux/Programmes/calendrier/bin/calendrier.exe
+Confirmation_Sortie_Definitive=NON
+
+[Affichage]
+Titre_Application=Synoptique des urgences
+Couleur_Patients=#CCFFF0
+Couleur_Patients_Clignote=#FFFFFF
+Couleur_Commentaire_Patients=#CCFFF0
+Couleur_BougerPatients=#CCFFF0
+Couleur_Medecins=#FFCCCC
+Couleur_HeuresEntree=#CCFFE0
+Couleur_HeuresSortie=#CCFFF9
+Couleur_ChoixDestination=#eefeee
+Largeur_Box=250
+Largeur_Tache=120
+Hauteur_Box=250
+Hauteur_NomBox=30
+Hauteur_Taches=40
+Hauteur_Medecins=20
+Hauteur_Patients=40
+Hauteur_Commentaire_Patients=15
+Hauteur_Heures=10
+Largeur_Heures=30
+Largeur_Annule_Tache=15
+Largeur_Boutons=40
+Mode_Affichage=Cadre
+
+[Positions_fenetres]
+Pos_S1=@Point(548 4)
+Size_S1=@Size(264 318)
+Pos_S2=@Point(814 6)
+Size_S2=@Size(264 315)
+Pos_S3=@Point(1079 5)
+Size_S3=@Size(264 315)
+Pos_U44=@Point(561 286)
+Size_U44=@Size(273 285)
+Pos_A1=@Point(4 1)
+Size_A1=@Size(275 676)
+Pos_SR=@Point(1620 2)
+Size_SR=@Size(298 969)
+Pos_Window=@Point(0 0)
+Size_Window=@Size(1912 1145)
+Pos_A2=@Point(4 680)
+Size_A2=@Size(274 295)
+Pos_po=@Point(158 165)
+Size_po=@Size(281 285)
+Pos_AB=@Point(586 9)
+Size_AB=@Size(281 576)
+Pos_D4=@Point(1348 5)
+Size_D4=@Size(264 314)
+Pos_R4=@Point(281 4)
+Size_R4=@Size(264 320)
+Pos_R1=@Point(813 324)
+Size_R1=@Size(264 289)
+Pos_R2=@Point(546 326)
+Size_R2=@Size(264 287)
+Pos_R3=@Point(280 326)
+Size_R3=@Size(264 287)
+Pos_L1=@Point(1349 321)
+Size_L1=@Size(264 293)
+Pos_L2=@Point(1349 622)
+Size_L2=@Size(264 350)
+Pos_L3=@Point(1081 620)
+Size_L3=@Size(264 352)
+Pos_L4=@Point(813 621)
+Size_L4=@Size(264 351)
+Pos_L5=@Point(547 623)
+Size_L5=@Size(264 350)
+Pos_L6=@Point(279 623)
+Size_L6=@Size(264 350)
+Pos_TEST=@Point(1084 324)
+Size_TEST=@Size(258 292)
+Pos_=@Point(1613 805)
+Size_=@Size(258 278)
+Pos_SECE=@Point(1084 326)
+Size_SECE=@Size(258 286)
+
+[Timer]
+Periodicite_controle_des_entrees=30
+Periodicite_controle_alarme_en_secondes=30
+Periodicite_clignotement_en_secondes=1
+Delai_avant_suppression_des_sorties_en_mn=1440
+Duree_vie_max_avant_sortie_forcee_en_secondes=259200
+
+[synoptux%20session]
+closed=15-12-2011 09:58:47:701
+started=15-12-2011 10:05:18:405
+
+[synoptux session]
+  closed = 22-07-2014 21:42:49:427
+  started = 22-07-2014 21:42:41:221
+[END_INI]

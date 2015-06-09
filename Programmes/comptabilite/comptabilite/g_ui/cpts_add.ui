@@ -1,0 +1,547 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Cpts_Add</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Cpts_Add</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>446</width>
+            <height>377</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Saisie des comptes bancaires</string>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>40</x>
+                <y>20</y>
+                <width>371</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&lt;p align="center"&gt;&lt;b&gt;Saisie des comptes bancaires&lt;/b&gt;&lt;/p&gt;</string>
+        </property>
+    </widget>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>Layout1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>330</y>
+                <width>430</width>
+                <height>33</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="spacing">
+                <number>6</number>
+            </property>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>buttonHelp</cstring>
+                </property>
+                <property name="text">
+                    <string>He&amp;lp</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+L</string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <spacer>
+                <property name="name">
+                    <cstring>Horizontal Spacing2</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>buttonOk</cstring>
+                </property>
+                <property name="text">
+                    <string>&amp;OK</string>
+                </property>
+                <property name="accel">
+                    <string></string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+                <property name="default">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>buttonCancel</cstring>
+                </property>
+                <property name="text">
+                    <string>Ca&amp;ncel</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+N</string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>430</width>
+                <height>260</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Données de base</string>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>lblLibelle</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>100</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Libellé</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>lblCategorie</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>60</y>
+                    <width>100</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Banque</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>lblCategorie_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>90</y>
+                    <width>100</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Titulaire</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>200</y>
+                    <width>80</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>7</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;Code banque&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_3_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>110</x>
+                    <y>200</y>
+                    <width>80</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>7</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;Code Guichet&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_3_2_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>200</x>
+                    <y>200</y>
+                    <width>150</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>7</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;Num Compte&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_3_2_2_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>360</x>
+                    <y>200</y>
+                    <width>60</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>7</pointsize>
+                </font>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;Clé&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>150</y>
+                    <width>100</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Par défaut</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_4</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>120</y>
+                    <width>90</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Solde initial</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>11</x>
+                    <y>180</y>
+                    <width>400</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;&lt;b&gt;RIB&lt;/b&gt;&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>libelle</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>30</y>
+                    <width>300</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez ici le libellé du compte. Celui-ci apparaîtra dans les combos de sélection des comptes.</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>banque</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>60</y>
+                    <width>300</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez le nom de votre banque.</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>titulaire</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>90</y>
+                    <width>300</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez le nom du titulaire du compte</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>solde</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>120</y>
+                    <width>300</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez le solde initial au moment de la création de votre compatibilté à l'aide de ce logiciel.</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>defaut</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>150</y>
+                    <width>16</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>En faire mon compte bancaire par défaut.</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>ribCle</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>360</x>
+                    <y>220</y>
+                    <width>60</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="maxLength">
+                <number>2</number>
+            </property>
+            <property name="inputMask">
+                <string>99; </string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez la clé RIB.</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>ribGuichet</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>110</x>
+                    <y>220</y>
+                    <width>80</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="maxLength">
+                <number>5</number>
+            </property>
+            <property name="inputMask">
+                <string>99999; </string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez le code guichet.</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>ribNumCpt</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>200</x>
+                    <y>220</y>
+                    <width>150</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="maxLength">
+                <number>11</number>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez votre numéro de compte.</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>ribBanque</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>19</x>
+                    <y>221</y>
+                    <width>80</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="maxLength">
+                <number>5</number>
+            </property>
+            <property name="inputMask">
+                <string>99999; </string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Indiquez le code de votre banque.</string>
+            </property>
+        </widget>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>Cpts_Add</receiver>
+        <slot>buttonOk_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>Cpts_Add</receiver>
+        <slot>buttonCancel_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>buttonHelp</sender>
+        <signal>clicked()</signal>
+        <receiver>Cpts_Add</receiver>
+        <slot>buttonHelp_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>libelle</tabstop>
+    <tabstop>banque</tabstop>
+    <tabstop>titulaire</tabstop>
+    <tabstop>defaut</tabstop>
+    <tabstop>ribBanque</tabstop>
+    <tabstop>ribGuichet</tabstop>
+    <tabstop>ribNumCpt</tabstop>
+    <tabstop>ribCle</tabstop>
+    <tabstop>buttonOk</tabstop>
+    <tabstop>buttonCancel</tabstop>
+    <tabstop>buttonHelp</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in declaration">../Listes.h</include>
+    <include location="local" impldecl="in declaration">../ComptaMoteurBase.h</include>
+    <include location="local" impldecl="in implementation">cpts_add.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">Comptes* cpt;</variable>
+    <variable access="public">Utilisateurs* currentUser;</variable>
+    <variable access="public">ComptaMoteurBase* pMB;</variable>
+    <variable access="public">bool paramOK;</variable>
+    <variable access="public">bool forUpdate;</variable>
+    <variable access="public">int id_cpt_toModif;</variable>
+    <variable access="public">bool seeOnly;</variable>
+</variables>
+<slots>
+    <slot>setParams( Utilisateurs * curUsr, ComptaMoteurBase * pMoteurBase )</slot>
+    <slot>setSeeOnly( bool s )</slot>
+    <slot>setCpt( Comptes * pCpt )</slot>
+    <slot>getCompte()</slot>
+    <slot>buttonOk_clicked()</slot>
+    <slot>buttonCancel_clicked()</slot>
+    <slot>buttonHelp_clicked()</slot>
+    <slot>setForUpdateOnly( bool up )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

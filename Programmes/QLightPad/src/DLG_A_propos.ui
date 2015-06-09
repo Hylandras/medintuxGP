@@ -1,0 +1,129 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>Dlg_A_Propos</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Dlg_A_Propos</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>553</width>
+            <height>436</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>A propos de QLightPad</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTabWidget" row="0" column="0">
+            <property name="name">
+                <cstring>tabWidget_DebugInfo</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab_Apropos</cstring>
+                </property>
+                <attribute name="title">
+                    <string>À &amp;propos de QLightPad</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <widget class="QTextBrowser" row="0" column="0">
+                        <property name="name">
+                            <cstring>textBrowserApropos</cstring>
+                        </property>
+                        <property name="textFormat">
+                            <enum>AutoText</enum>
+                        </property>
+                        <property name="wordWrap">
+                            <enum>FixedColumnWidth</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab_LicenceGPL</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Licence d'utilisation</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <widget class="QTextBrowser" row="0" column="0">
+                        <property name="name">
+                            <cstring>textBrowserGPL</cstring>
+                        </property>
+                        <property name="wordWrap">
+                            <enum>WidgetWidth</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Infos_systeme</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Informations système</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <property name="spacing">
+                        <number>0</number>
+                    </property>
+                    <widget class="QTextBrowser" row="0" column="0">
+                        <property name="name">
+                            <cstring>textBrowser_InfoSysteme</cstring>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<includes>
+    <include location="local" impldecl="in declaration">../../MedinTuxTools/CCoolPopup.h</include>
+    <include location="global" impldecl="in implementation">qdir.h</include>
+    <include location="global" impldecl="in implementation">qfileinfo.h</include>
+    <include location="global" impldecl="in implementation">qapplication.h</include>
+    <include location="local" impldecl="in implementation">DLG_A_propos.ui.h</include>
+</includes>
+<variables>
+    <variable>CCoolPopup *m_pCCoolPopup;</variable>
+    <variable>QString m_PathDoc;</variable>
+</variables>
+<signals>
+    <signal>Sign_DlgClosed()</signal>
+</signals>
+<slots>
+    <slot>setInfoSysteme( const QString &amp; text )</slot>
+    <slot>showCoolPopup()</slot>
+    <slot>closeEvent( QCloseEvent * ce )</slot>
+    <slot>CoolPopupStop( CCoolPopup * pCCoolPopup )</slot>
+    <slot>CoolPopupDelete()</slot>
+</slots>
+<functions>
+    <function>init()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

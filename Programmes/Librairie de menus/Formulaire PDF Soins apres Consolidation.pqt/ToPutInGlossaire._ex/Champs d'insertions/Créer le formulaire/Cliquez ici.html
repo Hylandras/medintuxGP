@@ -1,0 +1,24 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body style="font-size:10pt;font-family:Arial">
+<p>$start_titleCréation automatisée d'un formulaire pdf$end_title<br />{{\<br />          {{:: SET_VAR (xfdf_NomPrenomPatient,{{NOM PRENOM PATIENT}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_AdressePatient,{{ADRESSE PATIENT UNE LIGNE}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_CodePostalPatient,{{CODE POSTAL PATIENT}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_VillePatient, {{VILLE PATIENT}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_NumSecuPatient,{{NUM. SECU PATIENT=$no key}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_ClefSecuPatient,{{NUM CLEF PATIENT}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_Date_AT,{{:: Extract (Observation, Date de l'accident:, EOL)}} )}}\</p>
+<p>          {{:: SET_VAR (xfdf_Conso1,{{:: Extract (Observation, Consolidé le :, EOL)}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_Rechute,{{:: Extract (Observation, Rechute du :, EOL)}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_Conso2,{{:: Extract (Observation, Rechute consolidée le :, EOL)}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_NatureSequelles, {{:: Extract (Observation,Nature et localisation des séquelles imputables à l'accident :, Programme de soins proposé)}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_ActesMedicaux, {{:: Extract (Observation, Actes médicaux - nature\, périodicité :, Prescriptions pharmaceutiques - nature\, posologie : )}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_Prescriptions, {{:: Extract (Observation, Prescriptions pharmaceutiques - nature\, posologie :,Actes paramédicaux - nature\, rythme : )}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_ActesParaMedicaux, {{:: Extract (Observation, Actes paramédicaux - nature\, rythme :, Autres : )}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_Autres,{{:: Extract (Observation, Autres :, Durée proposée)}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_du,{{:: Extract (Observation, Du : , EOL)}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_au,{{:: Extract (Observation, Au : , EOL)}})}}\</p>
+<p>          {{:: SET_VAR (xfdf_DateDemande,{{:: Extract (Observation, Date de rédaction : , EOL)}})}}\</p>
+<p>{{REM=--------------------- remplacement des valeurs dans le fichier de réference -------------------------------}}\<br />{{:: SET_VAR (xfdf_NomFile,{{GUID}}_SAC_{{NOM PATIENT}} {{PRENOM PATIENT}}_{{DATE TIRET}})}}\<br />{{:: SET_VAR (xfdf_ExePdftk,{{:: SI(S,{{OS}},=,L,/usr/bin/pdftk,../../pdf/pdftk)}})}}\<br />{{:: SET_VAR (xfdf_ExePdfReader,{{:: SI(S,{{OS}},=,L,/usr/bin/evince,C:/Program Files/Foxit Software/Foxit Reader/Foxit Reader)}})}}\<br />{{::REPLACE_IN_FILE(../../pdf/soins_apres_consolidationPatientModele.xml,../../pdf/soins_apres_consolidationPatient.xfdf,xfdf_NomPrenomPatient,xfdf_AdressePatient,xfdf_CodePostalPatient,xfdf_VillePatient,xfdf_NumSecuPatient,xfdf_ClefSecuPatient,xfdf_Date_AT,xfdf_Conso1,xfdf_Rechute,xfdf_Conso2,xfdf_NatureSequelles,xfdf_ActesMedicaux,xfdf_Prescriptions,xfdf_ActesParaMedicaux,xfdf_Autres,xfdf_du,xfdf_au,xfdf_DateDemande)}}\</p>
+<p>{{::exe_process (WaitEnd ,{{VAR=xfdf_ExePdftk}},$ToAbsPath../../pdf/soins_apres_consolidation.pdf,fill_form,$ToAbsPath../../pdf/soins_apres_consolidationPatient.xfdf,output,$ToAbsPath../../pdf/doc_patients/{{VAR=xfdf_NomFile}}.pdf)}}\</p>
+<p>{{::exe_process (NoWaitEnd ,{{VAR=xfdf_ExePdfReader}},$ToAbsPath../../pdf/doc_patients/{{VAR=xfdf_NomFile}}.pdf)}}\</p>
+<p>}}</p>
+</body></html>

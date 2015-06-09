@@ -1,0 +1,27 @@
+|Description de la règle|#|Données utilisées|#|Table utilisée|#|Référence réglementaire|#|Observation exemple|
+|
+Les Professionnels de Santé ne peuvent exécuter que certains codes prestation.
+
+Cette règle a pour objet de vérifier que la spécialité du professionnel de santé et le code  prestation sont compatibles.|#|
+Spécialité du Professionnel de Santé : Lue sur la carte PS ou saisie dans le groupe 1870
+
+Code prestation : (1610) : Saisie par le PS
+
+ou
+
+Code indemnité forfaitaire de déplacement : (1620) : Saisie par le PS
+
+ou
+
+Type d'indemnité kilométrique : (1630) : Saisie par le PS
+|#|
+Table 1
+Table 2|#|
+NGAP : Dispositions générales
+NABM :Dispositions générales|#|
+
+Les prestations CCAM sont régies par la règle équivalente Rc5 (cf. Annexe1-A1).
+
+
+
+* La présence du groupe 1870 rend la saisie prioritaire sur la lecture carte PS|

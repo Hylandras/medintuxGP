@@ -1,0 +1,739 @@
+NOM_TABLE	NOM_TABLE			15	Noms des tables
+NOM_TABLE	NOM_CHAMP			15	Noms des champs
+NOM_TABLE	G00			13	Codes langues
+NOM_TABLE	G01			17	Catégories cartes
+NOM_TABLE	G02			19	Types de cartes CPS
+NOM_TABLE	G03			14	Codes civilité
+NOM_TABLE	G04			25	Niveaux de responsabilité
+NOM_TABLE	G05			24	Tableaux des Pharmaciens
+NOM_TABLE	G06			22	Codes civilité abrégés
+NOM_TABLE	G07			29	Types d'identifiant structure
+NOM_TABLE	G08			27	Types d'identifiant porteur
+NOM_TABLE	G09			18	Codes départements
+NOM_TABLE	G11			24	Natures de qualification
+NOM_TABLE	G12			11	Spécialités
+NOM_TABLE	G13			26	Orientations particulières
+NOM_TABLE	G14			27	Situations professionnelles
+NOM_TABLE	G15			11	Professions
+NOM_TABLE	G16			24	Professions en formation
+NOM_TABLE	G17			16	Modes d'exercice
+NOM_TABLE	G18			28	Attributions complémentaires
+NOM_TABLE	G19			19	Secteurs d'activité
+NOM_TABLE	G20			15	Spécialisations
+NOM_TABLE	G21			17	Formes juridiques
+NOM_TABLE	G100			29	Spécialités Assurance Maladie
+NOM_TABLE	G101			20	Codes conventionnels
+NOM_TABLE	G102			22	Codes zones tarifaires
+NOM_TABLE	G103			30	Codes Indemnités kilométriques
+NOM_TABLE	G104			15	Codes Agréments
+NOM_TABLE	G999			20	Informations fichier
+NOM_CHAMP	NOM_TABLE			15	Nom de la table
+NOM_CHAMP	NOM_CHAMP			12	Nom du champ
+NOM_CHAMP	G00			9	Langue(s)
+NOM_CHAMP	G01			15	Catégorie carte
+NOM_CHAMP	G02			17	Type de carte CPS
+NOM_CHAMP	G03			13	Code civilité
+NOM_CHAMP	G04			24	Niveau de responsabilité
+NOM_CHAMP	G05			18	Tableau Pharmacien
+NOM_CHAMP	G06			13	Code civilité
+NOM_CHAMP	G07			28	Type d'identifiant structure
+NOM_CHAMP	G08			26	Type d'identifiant porteur
+NOM_CHAMP	G09			11	Département
+NOM_CHAMP	G11			23	Nature de qualification
+NOM_CHAMP	G12			10	Spécialité
+NOM_CHAMP	G13			30	Orientation(s) particulière(s)
+NOM_CHAMP	G14			25	Situation professionnelle
+NOM_CHAMP	G15			10	Profession
+NOM_CHAMP	G16			17	Future profession
+NOM_CHAMP	G17			15	Mode d'exercice
+NOM_CHAMP	G18			32	Attribution(s) complémentaire(s)
+NOM_CHAMP	G19			18	Secteur d'activité
+NOM_CHAMP	G20			14	Spécialisation
+NOM_CHAMP	G21			15	Forme juridique
+NOM_CHAMP	G100			28	Spécialité Assurance Maladie
+NOM_CHAMP	G101			18	Code conventionnel
+NOM_CHAMP	G102			14	Zone tarifaire
+NOM_CHAMP	G103			22	Indemnité kilométrique
+NOM_CHAMP	G104			11	Agrément(s)
+NOM_CHAMP	G999			20	Informations fichier
+G00	aa			4	afar
+G00	ab			7	abkhaze
+G00	af			9	afrikaans
+G00	am			9	amharique
+G00	ar			5	arabe
+G00	as			8	assamais
+G00	ay			6	aymara
+G00	az			5	azéri
+G00	ba			7	bachkir
+G00	be			10	biélorusse
+G00	bg			7	bulgare
+G00	bh			6	bihari
+G00	bi			9	bichlamar
+G00	bn			7	bengali
+G00	bo			8	tibétain
+G00	br			6	breton
+G00	ca			7	catalan
+G00	co			5	corse
+G00	cs			7	tchèque
+G00	cy			7	gallois
+G00	da			6	danois
+G00	de			8	allemand
+G00	dz			8	bhoutani
+G00	el			4	grec
+G00	en			7	anglais
+G00	eo			9	espéranto
+G00	es			8	espagnol
+G00	et			8	estonien
+G00	eu			6	basque
+G00	fa			6	persan
+G00	fi			7	finnois
+G00	fj			7	fidjien
+G00	fo			7	féroïen
+G00	fr			8	français
+G00	fy			6	frison
+G00	ga			9	irlandais
+G00	gd			17	gaélique d'Ecosse
+G00	gl			8	galicien
+G00	gn			7	guarani
+G00	gu			9	goudjrati
+G00	ha			7	haoussa
+G00	hi			5	hindi
+G00	hr			6	croate
+G00	hu			8	hongrois
+G00	hy			8	arménien
+G00	ia			11	interlingua
+G00	ie			11	interlingue
+G00	ik			7	inupiaq
+G00	in			10	indonésien
+G00	is			9	islandais
+G00	it			7	italien
+G00	iw			6	hébreu
+G00	ja			8	japonais
+G00	ji			7	yiddish
+G00	jw			8	javanais
+G00	ka			8	géorgien
+G00	kk			6	kazakh
+G00	kl			12	groenlandais
+G00	km			5	khmer
+G00	kn			7	kannada
+G00	ko			6	coréen
+G00	ks			8	kashmiri
+G00	ku			5	kurde
+G00	ky			8	kirghize
+G00	la			5	latin
+G00	ln			7	lingala
+G00	lo			3	lao
+G00	lt			10	lithuanien
+G00	lv			6	letton
+G00	mg			8	malgache
+G00	mi			5	maori
+G00	mk			10	macédonien
+G00	ml			9	malayalam
+G00	mn			6	mongol
+G00	mo			7	moldave
+G00	mr			7	marathe
+G00	ms			6	malais
+G00	mt			7	maltais
+G00	my			6	birman
+G00	na			7	nauruan
+G00	ne			8	népalais
+G00	nl			11	néerlandais
+G00	no			9	norvégien
+G00	oc			7	occitan
+G00	om			5	galla
+G00	or			5	oriya
+G00	pa			8	pendjabi
+G00	pl			8	polonais
+G00	ps			6	pachto
+G00	pt			9	portugais
+G00	qu			7	quechua
+G00	rm			11	rhéto-roman
+G00	rn			5	rundi
+G00	ro			7	roumain
+G00	ru			5	russe
+G00	rw			6	rwanda
+G00	sa			8	sanskrit
+G00	sd			6	sindhi
+G00	sg			5	sango
+G00	sh			12	serbo-croate
+G00	si			10	singhalais
+G00	sk			8	slovaque
+G00	sl			7	slovène
+G00	sm			6	samoan
+G00	sn			5	shona
+G00	so			6	somali
+G00	sq			8	albanais
+G00	sr			5	serbe
+G00	ss			5	swati
+G00	st			12	sotho du sud
+G00	su			10	soundanais
+G00	sv			7	suédois
+G00	sw			7	swahili
+G00	ta			6	tamoul
+G00	te			8	télougou
+G00	tg			6	tadjik
+G00	th			4	thaï
+G00	ti			8	tigrigna
+G00	tk			8	turkmène
+G00	tl			7	tagalog
+G00	tn			9	setchwana
+G00	to			5	tonga
+G00	tr			4	turc
+G00	ts			6	tsonga
+G00	tt			5	tatar
+G00	tw			3	twi
+G00	uk			9	ukrainien
+G00	ur			6	ourdou
+G00	uz			6	ouzbek
+G00	vi			10	vietnamien
+G00	vo			7	volapük
+G00	wo			5	wolof
+G00	xh			5	xhosa
+G00	yo			6	yoruba
+G00	zh			7	chinois
+G00	zu			6	zoulou
+G01	00			44	Carte de Professionnel ou Personnel de Santé
+G01	01			20	Carte patient/assuré
+G01	02			18	Module de Sécurité
+G01	80			49	Carte test de Professionnel ou Personnel de Santé
+G01	81			25	Carte test patient/assuré
+G01	82			26	Module de Sécurité de test
+G02	00			37	Carte de Professionnel de Santé (CPS)
+G02	01			50	Carte de Professionnel de Santé en Formation (CPF)
+G02	02			53	Carte de Personnel d'Etablissement de Santé (CDE/CPE)
+G02	03			33	Carte de Personnel Autorisé (CPA)
+G02	04			33	Carte de Serveur Applicatif (CSA)
+G03	01			8	Adjudant
+G03	02			6	Amiral
+G03	03			8	Aspirant
+G03	04			8	Aumônier
+G03	05			9	Capitaine
+G03	06			8	Cardinal
+G03	07			8	Chanoine
+G03	08			7	Colonel
+G03	09			10	Commandant
+G03	10			11	Commissaire
+G03	11			10	Conseiller
+G03	12			9	Directeur
+G03	13			7	Docteur
+G03	14			8	Douanier
+G03	15			9	Epoux(se)
+G03	16			6	Evêque
+G03	17			7	Général
+G03	18			10	Gouverneur
+G03	19			9	Ingénieur
+G03	20			10	Inspecteur
+G03	21			10	Lieutenant
+G03	22			6	Madame
+G03	23			12	Mademoiselle
+G03	24			6	Maître
+G03	25			8	Maréchal
+G03	26			7	Médecin
+G03	30			11	Monseigneur
+G03	31			8	Monsieur
+G03	32			10	Notre-Dame
+G03	33			7	Pasteur
+G03	34			6	Préfet
+G03	35			9	Président
+G03	36			10	Professeur
+G03	37			7	Recteur
+G03	38			7	Sergent
+G03	39			11	Sous-Préfet
+G03	40			10	Technicien
+G03	41			5	Veuve
+G03	42			24	Carte Serveur Applicatif
+G04	00			10	Sans objet
+G04	01			27	Responsable de la structure
+G04	02			51	Assistant ou adjoint au responsable de la structure
+G05	A			22	Titulaire de pharmacie
+G05	B			36	Fabricant, importateur ou exploitant
+G05	C			20	Distribution en gros
+G05	Da			10	Assistant 
+G05	DA			10	Assistant 
+G05	Dh			38	Pharmacien d'un établissement de soins
+G05	DH			38	Pharmacien d'un établissement de soins
+G05	Dm			32	Pharmacien mutualiste ou minière
+G05	DM			32	Pharmacien mutualiste ou minière
+G05	DS			46	Pharmacien chargé de produits sanguins labiles
+G05	E			39	Pharmacien d'un département d'outre-mer
+G05	F			38	Pharmacien d'un territoire d'outre-mer
+G05	G			21	Pharmacien biologiste
+G06	01			3	Adj
+G06	02			2	Am
+G06	03			3	Asp
+G06	04			3	Aum
+G06	05			3	Cne
+G06	06			3	Cdl
+G06	07			4	Chan
+G06	08			3	Cel
+G06	09			3	Cdt
+G06	10			3	Cre
+G06	11			4	Cons
+G06	12			3	Dir
+G06	13			2	Dr
+G06	14			4	Doua
+G06	15			2	Ep
+G06	16			3	Evq
+G06	17			3	Gén
+G06	18			3	Gou
+G06	19			3	Ing
+G06	20			4	Insp
+G06	21			2	Lt
+G06	22			3	Mme
+G06	23			4	Mlle
+G06	24			2	Me
+G06	25			3	Mal
+G06	26			3	Méd
+G06	30			3	Mgr
+G06	31			1	M
+G06	32			3	N-D
+G06	33			4	Past
+G06	34			4	Préf
+G06	35			3	Pdt
+G06	36			2	Pr
+G06	37			4	Rect
+G06	38			3	Sgt
+G06	39			5	Spréf
+G06	40			4	Tech
+G06	41			3	Vve
+G06	42			3	CSA
+G07	0			10	ADELI-Rang
+G07	1			6	FINESS
+G07	2			5	SIREN
+G07	3			5	SIRET
+G08	0			5	ADELI
+G08	1			25	ADELI-Rang/N° de registre
+G08	2			5	DRASS
+G08	3			21	FINESS/N° de registre
+G08	4			20	SIREN/N° de registre
+G08	5			20	SIRET/N° de registre
+G08	6			45	SIRET/Nom Application/Nom Serveur/N° Carte   
+G08	7			45	FINESS/Nom Application/Nom Serveur/N° Carte  
+G08	8			49	ADELI-Rang/Nom Application/Nom Serveur/N° Carte  
+G08	9			8	Etudiant
+G09	00			11	ARMEES (00)
+G09	01			8	Ain (01)
+G09	02			10	Aisne (02)
+G09	03			11	Allier (03)
+G09	04			28	Alpes-de-Haute-Provence (04)
+G09	05			17	Hautes-Alpes (05)
+G09	06			20	Alpes-Maritimes (06)
+G09	07			12	Ardèche (07)
+G09	08			13	Ardennes (08)
+G09	09			11	Ariège (09)
+G09	10			9	Aube (10)
+G09	11			9	Aude (11)
+G09	12			12	Aveyron (12)
+G09	13			21	Bouches-du-Rhône (13)
+G09	14			13	Calvados (14)
+G09	15			11	Cantal (15)
+G09	16			13	Charente (16)
+G09	17			22	Charente-Maritime (17)
+G09	18			9	Cher (18)
+G09	19			12	Corrèze (19)
+G09	2A			17	Corse-du-Sud (2A)
+G09	2B			16	Haute-Corse (2B)
+G09	21			14	Côte-d'Or (21)
+G09	22			18	Côtes-d'Armor (22)
+G09	23			11	Creuse (23)
+G09	24			13	Dordogne (24)
+G09	25			10	Doubs (25)
+G09	26			10	Drôme (26)
+G09	27			9	Eure (27)
+G09	28			17	Eure-et-Loir (28)
+G09	29			14	Finistère (29)
+G09	30			9	Gard (30)
+G09	31			18	Haute-Garonne (31)
+G09	32			9	Gers (32)
+G09	33			12	Gironde (33)
+G09	34			12	Hérault (34)
+G09	35			20	Ille-et-Vilaine (35)
+G09	36			10	Indre (36)
+G09	37			19	Indre-et-Loire (37)
+G09	38			10	Isère (38)
+G09	39			9	Jura (39)
+G09	40			11	Landes (40)
+G09	41			17	Loir-et-Cher (41)
+G09	42			10	Loire (42)
+G09	43			16	Haute-Loire (43)
+G09	44			21	Loire-Atlantique (44)
+G09	45			11	Loiret (45)
+G09	46			8	Lot (46)
+G09	47			19	Lot-et-Garonne (47)
+G09	48			11	Lozère (48)
+G09	49			19	Maine-et-Loire (49)
+G09	50			11	Manche (50)
+G09	51			10	Marne (51)
+G09	52			16	Haute-Marne (52)
+G09	53			12	Mayenne (53)
+G09	54			23	Meurthe-et-Moselle (54)
+G09	55			10	Meuse (55)
+G09	56			13	Morbihan (56)
+G09	57			12	Moselle (57)
+G09	58			11	Nièvre (58)
+G09	59			9	Nord (59)
+G09	60			9	Oise (60)
+G09	61			9	Orne (61)
+G09	62			18	Pas-de-Calais (62)
+G09	63			16	Puy-de-Dôme (63)
+G09	64			25	Pyrénées-Atlantiques (64)
+G09	65			20	Hautes-Pyrénées (65)
+G09	66			24	Pyrénées-Orientales (66)
+G09	67			13	Bas-Rhin (67)
+G09	68			14	Haut-Rhin (68)
+G09	69			10	Rhône (69)
+G09	70			16	Haute-Saône (70)
+G09	71			19	Saône-et-Loire (71)
+G09	72			11	Sarthe (72)
+G09	73			11	Savoie (73)
+G09	74			17	Haute-Savoie (74)
+G09	75			10	Paris (75)
+G09	76			19	Seine-Maritime (76)
+G09	77			19	Seine-et-Marne (77)
+G09	78			13	Yvelines (78)
+G09	79			16	Deux-Sèvres (79)
+G09	80			10	Somme (80)
+G09	81			9	Tarn (81)
+G09	82			20	Tarn-et-Garonne (82)
+G09	83			8	Var (83)
+G09	84			13	Vaucluse (84)
+G09	85			11	Vendée (85)
+G09	86			11	Vienne (86)
+G09	87			17	Haute-Vienne (87)
+G09	88			11	Vosges (88)
+G09	89			10	Yonne (89)
+G09	90			26	Territoire de Belfort (90)
+G09	91			12	Essonne (91)
+G09	92			19	Hauts-de-Seine (92)
+G09	93			22	Seine-Saint-Denis (93)
+G09	94			17	Val-de-Marne (94)
+G09	95			15	Val d'Oise (95)
+G09	97			29	Départements d'outre-mer (97)
+G09	971			16	Guadeloupe (971)
+G09	9A			16	Guadeloupe (971)
+G09	972			16	Martinique (972)
+G09	9B			16	Martinique (972)
+G09	973			12	Guyane (973)
+G09	9C			12	Guyane (973)
+G09	974			13	Réunion (974)
+G09	9D			13	Réunion (974)
+G09	975			30	Saint-Pierre-et-Miquelon (975)
+G09	9E			30	Saint-Pierre-et-Miquelon (975)
+G09	976			13	Mayotte (976)
+G09	9F			13	Mayotte (976)
+G09	98			28	Territoires d'outre-mer (98)
+G09	98000			14	Monaco (98000)
+G09	984			33	Afrique et Terres Australes (984)
+G09	986			22	Wallis et Futuna (986)
+G09	987			25	Polynésie Française (987)
+G09	988			24	Nouvelle-Calédonie (988)
+G09	99			14	TEST CNDA (99)
+G11	00			39	Formation hospitalière et universitaire
+G11	01			20	Qualifié spécialiste
+G11	02			18	Qualifié compétent
+G11	03			20	Qualifié généraliste
+G11	04			20	Compétence exclusive
+G11	05			32	Concours Hospitalo-Universitaire
+G11	06			29	Diplôme d'Etudes Spécialisées
+G11	07			19	DESC non qualifiant
+G11	08			8	Capacité
+G11	09			72	Formation spécifique, dont Institut National de Médecine Agricole (INMA)
+G12	00			53	Médecine générale (polyvalente en milieu hospitalier)
+G12	01			12	Allergologie
+G12	02			32	Anatomie et cytologie pathologie
+G12	03			30	Anesthésiologie et réanimation
+G12	04			11	Angéiologie
+G12	05			32	Biologie médicale ou polyvalente
+G12	06			18	Oncologie médicale
+G12	07			28	Pathologie cardio-vasculaire
+G12	08			33	Chirurgie générale ou polyvalente
+G12	09			25	Chirurgie maxillo-faciale
+G12	10			19	Chirurgie infantile
+G12	11			37	Chirurgie plastique et reconstructive
+G12	12			33	Chirurgie thoracique et cardiaque
+G12	13			28	Dermatologie et vénéréologie
+G12	14			25	Diabétologie et nutrition
+G12	15			23	Gérontologie, Gériatrie
+G12	16			30	Endocrinologie et métabolismes
+G12	17			20	Gynécologie médicale
+G12	18			23	Gynécologie obstétrique
+G12	19			25	Hémobiologie, Transfusion
+G12	20			31	Gastro-Entérologie, Hépatologie
+G12	21			30	Hématologie et maladie du sang
+G12	22			29	Médecine et biologie du sport
+G12	23			19	Médecine du travail
+G12	24			35	Pathologie infectieuse et tropicale
+G12	25			16	Médecine interne
+G12	26			37	Médecine légale et expertise médicale
+G12	27			18	Médecine nucléaire
+G12	28			11	Néphrologie
+G12	29			16	Neurochirurgie  
+G12	30			10	Neurologie
+G12	31			17	Neuro-psychiatrie
+G12	32			11	Obstétrique
+G12	33			13	Ophtalmologie
+G12	34			23	Médecine de catastrophe
+G12	35			22	Oto-rhino-laryngologie
+G12	36			9	Pédiatrie
+G12	37			10	Phoniatrie
+G12	38			11	Pneumologie
+G12	39			35	Psychiatrie générale ou polyvalente
+G12	40			32	Psychiatrie enfant et adolescent
+G12	41			36	Radiodiagnostic et imagerie médicale
+G12	42			25	Oncologie radiothérapique
+G12	43			20	Réanimation médicale
+G12	44			41	Rééducation et réadaptation fonctionnelle
+G12	45			12	Rhumatologie
+G12	46			39	Chirurgie maxillo-faciale, Stomatologie
+G12	47			32	Chirurgie urologique ou urologie
+G12	48			35	Gynécologie médicale et obstétrique
+G12	49			22	Médecine pénitentiaire
+G12	50			13	Radiothérapie
+G12	51			29	Hygiène hospitalière médicale
+G12	52			47	Médecine thermale ou hydrologie et climatologie
+G12	53			41	Chirurgie orthopédique et traumatologique
+G12	54			9	Génétique
+G12	55			21	Médecine aérospatiale
+G12	56			53	Santé Publique ou épidémiologie, information médicale
+G12	57			11	Immunologie
+G12	58			20	Chirurgie vasculaire
+G12	59			53	Pharmacologie clinique et toxicologique et évaluation
+G12	60			31	Hygiène hospitalière biologique
+G12	61			36	Biochimie (hormonale et métabolique)
+G12	62			24	Bactériologie, Virologie
+G12	63			22	Hématologie biologique
+G12	64			22	Immunologie biologique
+G12	65			13	Parasitologie
+G12	66			38	Toxicologie biologique (pharmacologie)
+G12	67			11	Biophysique
+G12	68			18	Génétique médicale
+G12	69			46	Biologie cellulaire et moléculaire, Histologie
+G12	70			32	Orthopédie dento-maxillo-faciale
+G12	71			24	Orthopédie dento-faciale
+G12	72			25	Toxicomanie et alcoologie
+G12	73			21	Cytogénétique humaine
+G12	74			30	Médecine polyvalente d'urgence
+G12	75			23	Odontologie polyvalente
+G12	76			32	Médecine polyvalente gériatrique
+G12	77			32	Chirurgie viscérale ou digestive
+G12	78			19	Médecine vasculaire
+G12	79			30	Biologie des agents infectieux
+G12	80			12	Stomatologie
+G12	83			21	Aide médicale urgente
+G12	85			66	Innovation pharmaceutique, évaluation et production de médicaments
+G12	86			27	Pharmacie et santé publique
+G12	87			43	Pharmacie hospitalière et de santé publique
+G12	88			37	Pharmacie industrielle et biomédicale
+G12	89			21	Pharmacie spécialisée
+G12	90			31	Radiopharmacie et radiobiologie
+G12	91			33	Pharmaco-cinétique et métabolisme
+G12	92			30	Technologies transfusionnelles
+G12	93			25	Exploration fonctionnelle
+G12	94			38	Evaluation et Traitement de la douleur
+G13	80			11	Homéopathie
+G13	81			11	Acupuncture
+G14	10			27	Activité libérale exclusive
+G14	21			31	Activité hospitalière exclusive
+G14	22			31	Activité hospitalière partielle
+G14	24			34	Salarié sans activité hospitalière
+G14	30			37	Activité mixte (libérale et salariée)
+G14	31			35	Libérale avec activité hospitalière
+G14	32			35	Libérale sans activité hospitalière
+G14	45			22	Interdiction d'exercer
+G14	49			14	N'exerçant pas
+G14	51			22	Retraité avec activité
+G14	52			8	Retraité
+G14	53			29	Installation hors département
+G14	54			6	Décédé
+G14	59			15	N'exerçant plus
+G14	60			12	Retraité SSA
+G14	70			20	Deuxième Section SSA
+G14	75			15	Hors budget SSA
+G15	10			7	Médecin
+G15	21			10	Pharmacien
+G15	26			17	Audio-Prothésiste
+G15	28			17	Opticien-Lunetier
+G15	40			19	Chirurgien-Dentiste
+G15	50			10	Sage-Femme
+G15	60			9	Infirmier
+G15	69			23	Infirmier psychiatrique
+G15	70			24	Masseur-Kinésithérapeute
+G15	80			18	Pédicure-Podologue
+G15	91			13	Orthophoniste
+G15	92			11	Orthoptiste
+G15	94			14	Ergothérapeute
+G15	96			15	Psychomotricien
+G15	98			16	Manipulateur ERM
+G16	10			20	Médecin en formation
+G16	21			23	Pharmacien en formation
+G16	40			32	Chirurgien-Dentiste en formation
+G16	50			23	Sage-Femme en formation
+G17	00			35	Libéral, exploitant ou commerçant  
+G17	01			7	Salarié
+G17	04			10	Remplaçant
+G17	07			12	Non rétribué
+G18	10			21	Praticien vaccinateur
+G18	11			24	Praticien de catastrophe
+G18	12			24	Praticien de pénitencier
+G18	20			27	Expert auprès des tribunaux
+G18	30			25	Médecin agréé spécialiste
+G18	40			25	Médecin agréé généraliste
+G18	50			19	Médecin d'assurance
+G18	70			24	Praticien sapeur-pompier
+G18	80			28	Praticien permis de conduire
+G18	90			19	Médecin d'assurance
+G19	10			55	Etablissements publics de santé (y compris SAMU - SMUR)
+G19	11			19	Hôpitaux militaires
+G19	16			75	Etablis. de santé privés participant à l'exécution du service public (PSPH)
+G19	17			60	Etablissements de santé privés à but non lucratif (non PSPH)
+G19	25			78	Dispensaires de soins et autres établis sans hospitalisation, centres de santé
+G19	26			66	Autres structures de soins relevant du Service de Santé des Armées
+G19	31			20	Cabinets individuels
+G19	32			43	Cabinets libéraux de groupe ou associations
+G19	33			19	Exercice en société
+G19	35			51	Transports sanitaires privés (sociétés d'ambulance)
+G19	37			21	Entreprises d'intérim
+G19	41			40	Etablissements de soins et de prévention
+G19	42			65	Prévention et soins en entreprise (y compris médecine du travail)
+G19	43			31	Santé scolaire et universitaire
+G19	45			28	PMI, planification familiale
+G19	51			58	Etablissements pour personnes handicapées ou en difficulté
+G19	53			35	Etablissements pour personnes âgées
+G19	54			54	Etablissements et services sociaux d'aide à la famille
+G19	55			68	Etablissements de formation (écoles) et d'enseignement (universités)
+G19	56			41	Etablissements de protection de l'enfance
+G19	57			47	Etablissements d'hébergement et de réadaptation
+G19	58			79	Recherche dans un organisme public ou à but non lucratif (INSERM, ORS, CNRS...)
+G19	61			38	Expertise Sociétés d'Assurance privées
+G19	62			45	Organismes de Sécurité Sociale (tous régimes)
+G19	63			27	Praticien de l'aide sociale
+G19	65			71	Ministère des Affaires Sociales et de la Santé et Services déconcentrés
+G19	66			27	Collectivités territoriales
+G19	71			53	Laboratoires d'analyses médicales extra-hospitalières
+G19	75			79	Autres établis. sanitaires (CTS, stockage produits humains, centres antipoison)
+G19	81			58	Production et commerce en gros de produits à usage médical
+G19	85			79	Commerce de détail, biens à usage médical (lunetterie, orthopédie et prothèses)
+G19	86			21	Pharmacies d'officine
+G19	91			62	Autres secteurs d'activité (y compris activités non médicales)
+G19	92			18	Secteur non défini
+G20	05			38	Formation supérieure de service social
+G20	07			31	Diplôme d'Etat de puériculture 
+G20	51			16	Cadre Sage-Femme
+G20	61			22	Infirmier anesthésiste
+G20	62			28	Infirmier de bloc opératoire
+G20	63			33	Infirmier cadre de santé publique
+G20	64			15	Cadre Infirmier
+G20	65			29	Cadre Infirmier psychiatrique
+G20	71			30	Cadre Masseur-Kinésithérapeute
+G20	94			20	Cadre Ergothérapeute
+G20	96			21	Cadre Psychomotricien
+G20	98			22	Cadre Manipulateur ERM
+G20	99			14	Cadre de santé
+G21	70			17	Personne physique
+G21	71			33	Société en nom collectif (S.N.C.)
+G21	72			43	Société à responsabilité limitée (S.A.R.L.)
+G21	73			22	Société anonyme (S.A.)
+G21	74			14	Société civile
+G21	75			80	Autre société (Commandit.-Coopér.-particulière-indivision -de fait-en particip.)
+G21	76			40	Groupement d'Intérêt Economique (G.I.E.)
+G21	78			61	Entreprise unipersonnelle à responsabilité limitée (E.U.R.L.)
+G21	79			33	Société civile de moyens (S.C.M.)
+G21	85			66	Société d'exercice libéral à responsabilité limitée (S.E.L.A.R.L.)
+G21	86			57	Société d'exercice libéral à forme anonyme (S.E.L.A.F.A.)
+G21	87			65	Société d'exercice libéral en commandite par actions (S.E.L.C.A.)
+G21	88			39	Société civile professionnelle (S.C.P.)
+G100	01			17	Médecine générale
+G100	02			40	Anesthésiologie-réanimation chirurgicale
+G100	03			28	Pathologie cardio-vasculaire
+G100	04			18	Chirurgie générale
+G100	05			28	Dermatologie et Vénéréologie
+G100	06			36	Radiodiagnostic et Imagerie médicale
+G100	07			23	Gynécologie obstétrique
+G100	08			34	Gastro-Entérologie et Hépathologie
+G100	09			16	Médecine interne
+G100	10			16	Neuro-chirurgien
+G100	11			24	Oto-Rhino-Laryngologiste
+G100	12			8	Pédiatre
+G100	13			11	Pneumologie
+G100	14			12	Rhumatologie
+G100	15			13	Ophtalmologie
+G100	16			20	Chirurgie urologique
+G100	17			17	Neuro-psychiatrie
+G100	18			12	Stomatologie
+G100	19			18	Chirurgie dentaire
+G100	21			10	Sage-Femme
+G100	24			9	Infirmier
+G100	26			24	Masseur-Kinésithérapeute
+G100	27			8	Pédicure
+G100	28			13	Orthophoniste
+G100	29			11	Orthoptiste
+G100	30			32	Laboratoire d'analyses médicales
+G100	31			36	Médecine physique et de réadaptation
+G100	32			10	Neurologie
+G100	33			20	Psychiatrie générale
+G100	35			11	Néphrologie
+G100	36			33	Chirurgie dentaire (spéc. O.D.F.)
+G100	37			32	Anatomie-cytologie-pathologiques
+G100	38			18	Médecin biologiste
+G100	39			22	Laboratoire polyvalent
+G100	40			32	Laboratoire anatomo-pathologiste
+G100	41			39	Chirurgie orthopédique et Traumatologie
+G100	42			30	Endocrinologie et métabolismes
+G100	43			19	Chirurgie infantile
+G100	44			25	Chirurgie maxillo-faciale
+G100	45			41	Chirurgie maxillo-faciale et Stomatologie
+G100	46			49	Chirurgie plastique reconstructrice et esthétique
+G100	47			41	Chirurgie thoracique et cardio-vasculaire
+G100	48			20	Chirurgie vasculaire
+G100	49			32	Chirurgie viscérale et digestive
+G100	50			10	Pharmacien
+G100	70			20	Gynécologie médicale
+G100	71			11	Hématologie
+G100	72			18	Médecine nucléaire
+G100	73			18	Oncologie médicale
+G100	74			25	Oncologie radiothérapique
+G100	75			42	Psychiatrie de l’enfant et de l'adolescent
+G100	76			13	Radiothérapie
+G100	77			11	Obstétrique
+G100	78			18	Génétique médicale
+G100	99			11	Non définie
+G101	0			16	Non conventionné
+G101	1			12	Conventionné
+G101	2			29	Conventionné avec dépassement
+G101	3			35	Conventionné avec honoraires libres
+G101	9			32	Etablissement ou Centre de Santé
+G102	24	1		6	Zone B
+G102	25	1		6	Zone B
+G102	30	1		6	Zone C
+G102	30	3		6	Zone B
+G102	31	3		6	Zone A
+G102	32	3		6	Zone B
+G102	33	3		6	Zone B
+G102	34	3		6	Zone B
+G102	35	3		6	Zone B
+G102	40	0		6	Zone A
+G102	50	0		6	Zone B
+G102	60	0		6	Zone C
+G102	70	0		6	Zone D
+G102	80	2		6	Zone B
+G102	81	2		6	Zone A
+G102	82	2		6	Zone B
+G102	83	2		6	Zone B
+G102	84	2		6	Zone B
+G102	85	2		6	Zone B
+G102	99	*		11	Non définie
+G103	0			28	Pas d'indemnité kilométrique
+G103	1			31	Indemnités kilométriques plaine
+G103	2			33	Indemnités kilométriques montagne
+G103	3			34	Indemnités kilométriques spéciales
+G103	9			11	Non définie
+G104	00			14	Pas d'agrément
+G104	01			28	Agrément D ou agrément DDASS
+G104	02			25	Agréments A, B, C, E et F
+G104	03			19	Agréments G, H et J
+G104	04			10	Agrément K
+G104	05			10	Agrément L
+G104	06			10	Agrément M
+G104	99			10	Non défini
+G999	Version			28	Version : 01.10 - 19/05/2003
+G999	Checksum			48	SHA-1 : BF6EEEB4FE81C0366B20EE7646F92972F9395E40

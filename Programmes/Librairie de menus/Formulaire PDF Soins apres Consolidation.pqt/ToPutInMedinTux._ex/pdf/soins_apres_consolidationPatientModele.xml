@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+    <fields>
+      <field name="nom">
+        <value>{{xfdf_NomPrenomPatient}}</value>
+        </field>
+        <field name="adresse">
+          <value>{{xfdf_AdressePatient}}</value>
+        </field>
+        <field name="code postal">
+          <value>{{xfdf_CodePostalPatient}}</value>
+        </field>
+        <field name="commune">
+          <value>{{xfdf_VillePatient}}</value>
+        </field>
+        <field name="immatriculation">
+          <value>{{xfdf_NumSecuPatient}}</value>
+        </field>
+        <field name="cl&#233;">
+          <value>{{xfdf_ClefSecuPatient}}</value>
+        </field>
+        <field name="date AT/MP">
+          <value>{{xfdf_Date_AT}}</value>
+        </field>
+        <field name="conso 1">
+          <value>{{xfdf_Conso1}}</value>
+        </field>
+        <field name="rechute">
+          <value>{{xfdf_Rechute}}</value>
+        </field>
+        <field name="conso 2">
+          <value>{{xfdf_Conso2}}</value>
+        </field>
+        <field name="nature s&#233;quelles">
+          <value>{{xfdf_NatureSequelles}}</value>
+        </field>
+        <field name="actes m&#233;dicaux">
+          <value>{{xfdf_ActesMedicaux}}</value>
+        </field>
+        <field name="prescriptions">
+          <value>{{xfdf_Prescriptions}}</value>
+        </field>
+        <field name="actes param&#233;dicaux">
+          <value>{{xfdf_ActesParaMedicaux}}</value>
+        </field>
+        <field name="autres">
+          <value>{{xfdf_Autres}}</value>
+        </field>
+        <field name="du">
+          <value>{{xfdf_du}}</value>
+        </field>
+        <field name="au">
+          <value>{{xfdf_au}}</value>
+        </field>
+        <field name="date demande">
+          <value>{{xfdf_DateDemande}}</value>
+        </field>
+    </fields>
+    <f href="fichier.pdf" />
+</xfdf>
+

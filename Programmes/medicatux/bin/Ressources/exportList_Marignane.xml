@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Projet    : MedinTux                              -->
+<!-- Module    : medicabase                            -->
+<!-- Objet     : C_BDM_DrugListRecordArray             -->
+<!-- guru mail : sevin-roland@medintux.org             -->
+<!-- Copyright : (C) 2004-to-2013 and for the eternity -->
+<C_BDM_DrugListRecordArray>
+   <version>1</version>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>5636033</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>ZALDIAR 37,5mg/325mg Cpr pell Plq/60</m_commercialName>
+      <m_dci_1Name>CHLORHYDRATE DE TRAMADOL</m_dci_1Name>
+      <m_dci_2Name>PARACÉTAMOL</m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,00</m_ucd_price>
+      <m_atc>N02AX52</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>H</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3331625</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>VOGALENE LYOC 7,5mg Lyoph or B/16</m_commercialName>
+      <m_dci_1Name>MÉTOPIMAZINE MICRONISÉE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,02</m_ucd_price>
+      <m_atc>A04AD05</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3437275</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>VASELINE STERILISEE COOPER Pom T/20g</m_commercialName>
+      <m_dci_1Name>VASELINE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,02</m_ucd_price>
+      <m_atc>D02AC</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>5604228</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>TOPALGIC LP 100mg Cpr LP Plaq/100</m_commercialName>
+      <m_dci_1Name>CHLORHYDRATE DE TRAMADOL</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,00</m_ucd_price>
+      <m_atc>N02AX02</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>H</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>5106105</m_id>
+      <m_id_type>cip</m_id_type>
+      <m_commercialName>THUASNE GLOBE-TROTTER Canne anglaise bleu 10 paires</m_commercialName>
+      <m_dci_1Name></m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS_A</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,00</m_ucd_price>
+      <m_atc></m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>5106105</m_id>
+      <m_id_type>cip</m_id_type>
+      <m_commercialName>THUASNE GLOBE-TROTTER Canne anglaise bleu 10 paires</m_commercialName>
+      <m_dci_1Name></m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS_A</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,00</m_ucd_price>
+      <m_atc></m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3617161</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>THIOCOLCHICOSIDE EG 4mg Cpr séc B/24</m_commercialName>
+      <m_dci_1Name>THIOCOLCHICOSIDE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,04</m_ucd_price>
+      <m_atc>M03BX05</m_atc>
+      <m_generique>G</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3574693</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>TEMESTA 1mg Cpr séc B/30</m_commercialName>
+      <m_dci_1Name>LORAZÉPAM</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>N05BA06</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3177928</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>SURGAM 100mg Cpr séc B/30</m_commercialName>
+      <m_dci_1Name>ACIDE TIAPROFÉNIQUE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,02</m_ucd_price>
+      <m_atc>M01AE11</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>4168624</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>SPASFON LYOC 160mg Lyoph or Plq/5</m_commercialName>
+      <m_dci_1Name>PHLOROGLUCINOL HYDRATE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>A03AX12</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3153342</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>POLYDEXA S aur Fl/10,5ml</m_commercialName>
+      <m_dci_1Name>SULFATE DE NÉOMYCINE</m_dci_1Name>
+      <m_dci_2Name>SULFATE DE POLYMYXINE B</m_dci_2Name>
+      <m_dci_3Name>MÉTASULFOBENZOATE SODIQUE DE DEXAMÉTHASONE</m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>S02CA06</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3989365</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>PARACETAMOL TEVA 500mg Pdr sbuv Sach-dose/12</m_commercialName>
+      <m_dci_1Name>PARACÉTAMOL</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>N02BE01</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3782871</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>PARACETAMOL RTP 500mg Gél Plq/16</m_commercialName>
+      <m_dci_1Name>PARACÉTAMOL</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>N02BE01</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3638200</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>PARACETAMOL RTP 1000mg Cpr Plq/8</m_commercialName>
+      <m_dci_1Name>PARACÉTAMOL</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>N02BE01</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3076417</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>OSMOGEL Gel loc T/90g</m_commercialName>
+      <m_dci_1Name>SULFATE DE MAGNÉSIUM</m_dci_1Name>
+      <m_dci_2Name>CHLORHYDRATE DE LIDOCAÏNE</m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,05</m_ucd_price>
+      <m_atc>M02AX10</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3308572</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>NOROXINE 400mg Cpr enr Plaq/10</m_commercialName>
+      <m_dci_1Name>NORFLOXACINE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,04</m_ucd_price>
+      <m_atc>J01MA06</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3515495</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>LAMALINE Gél B/16</m_commercialName>
+      <m_dci_1Name>PARACÉTAMOL</m_dci_1Name>
+      <m_dci_2Name>MORPHINE</m_dci_2Name>
+      <m_dci_3Name>CAFÉINE</m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>N02AA51</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>4901579</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>INEXIUM 20mg Cpr gast Plq/7 [IT1] </m_commercialName>
+      <m_dci_1Name>ÉSOMÉPRAZOLE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,02</m_ucd_price>
+      <m_atc>A02BC05</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>4925373</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>IBUPROFENE ZYDUS FR 400mg Cpr pell Plq/30</m_commercialName>
+      <m_dci_1Name>IBUPROFÈNE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>M01AE01</m_atc>
+      <m_generique>G</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3311568</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>FLAGYL 500mg Cpr pell B/14</m_commercialName>
+      <m_dci_1Name>MÉTRONIDAZOLE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,03</m_ucd_price>
+      <m_atc>J01XD01</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>5DE88E92-E085-7341-AE88-A422E093F945</m_id>
+      <m_id_type>FRT</m_id_type>
+      <m_commercialName>FAUTEUIL ROULANT</m_commercialName>
+      <m_dci_1Name></m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>OW</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,00</m_ucd_price>
+      <m_atc></m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3591941</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>DEBRIDAT 200mg Cpr pell B/30</m_commercialName>
+      <m_dci_1Name>MALÉATE DE TRIMÉBUTINE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,05</m_ucd_price>
+      <m_atc>A03AA05</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3519702</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>DAFALGAN PED 3% S buv Fl/90ml+dos</m_commercialName>
+      <m_dci_1Name>PARACÉTAMOL</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,01</m_ucd_price>
+      <m_atc>N02BE01</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3642963</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>CIFLOX 500mg Cpr pesé Plaq/12</m_commercialName>
+      <m_dci_1Name>CIPROFLOXACINE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,16</m_ucd_price>
+      <m_atc>J01MA02</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3445085</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>AUGMENTIN 1g/125mg Pdr subu 8Sach</m_commercialName>
+      <m_dci_1Name>AMOXICILLINE ANHYDRE</m_dci_1Name>
+      <m_dci_2Name>ACIDE CLAVULANIQUE</m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,05</m_ucd_price>
+      <m_atc>J01CR02</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3439251</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>AUGMENTIN 100mg/12,5mg Pd sus buv Enf Fl/60ml</m_commercialName>
+      <m_dci_1Name>AMOXICILLINE ANHYDRE</m_dci_1Name>
+      <m_dci_2Name>ACIDE CLAVULANIQUE</m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,04</m_ucd_price>
+      <m_atc>J01CR02</m_atc>
+      <m_generique>R</m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3592260</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>ARIXTRA 2,5mg/0,5ml S inj 7Ser prér/0,5ml</m_commercialName>
+      <m_dci_1Name>FONDAPARINUX SODIQUE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,35</m_ucd_price>
+      <m_atc>B01AX05</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>9838779</m_id>
+      <m_id_type>cip</m_id_type>
+      <m_commercialName>AIRCAST CLASSIQUE II Orthèse cheville stabilisatrice gauche standard</m_commercialName>
+      <m_dci_1Name></m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS_A</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,00</m_ucd_price>
+      <m_atc></m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>5619371</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>ACLOTINE 100UI/ml P/S inj Fl+Solv/5ml</m_commercialName>
+      <m_dci_1Name>ANTITHROMBINE HUMAINE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,00</m_ucd_price>
+      <m_atc>B01AB02</m_atc>
+      <m_generique></m_generique>
+      <m_statut>H</m_statut>
+   </C_BDM_DrugListRecord>
+   <C_BDM_DrugListRecord>
+      <version>1</version>
+      <m_id>3821364</m_id>
+      <m_id_type>CIP</m_id_type>
+      <m_commercialName>ACETYLCYST BGR 200mg Cpr eff Tube/20</m_commercialName>
+      <m_dci_1Name>ACÉTYLCYSTÉINE</m_dci_1Name>
+      <m_dci_2Name></m_dci_2Name>
+      <m_dci_3Name></m_dci_3Name>
+      <m_owner>DS</m_owner>
+      <m_lang>fr</m_lang>
+      <m_ucd></m_ucd>
+      <m_ucd_price>0000,03</m_ucd_price>
+      <m_atc>R05CB01</m_atc>
+      <m_generique></m_generique>
+      <m_statut>VH</m_statut>
+   </C_BDM_DrugListRecord>
+</C_BDM_DrugListRecordArray>

@@ -1,0 +1,202 @@
+$>Accident;F;Circonstances{&}Accident
+$|automutilation;I;Circonstances{&}Accident{&}automutilation
+$>chute;F;Circonstances{&}Accident{&}chute
+$|accidentelle;I;Circonstances{&}Accident{&}chute{&}accidentelle
+$|d'une chaise haute;I;Circonstances{&}Accident{&}chute{&}d'une chaise haute
+$|d'une enclume sur une partie du corps;I;Circonstances{&}Accident{&}chute{&}d'une enclume sur une partie du corps
+$|d'une table à langer;I;Circonstances{&}Accident{&}chute{&}d'une table à langer
+<EOList>
+$|de bricolage;I;Circonstances{&}Accident{&}de bricolage
+$|de Chasse;I;Circonstances{&}Accident{&}de Chasse
+$|de la voie publique;T;Circonstances{&}Accident{&}de la voie publique.txt
+$>Domestique;F;Circonstances{&}Accident{&}Domestique
+$|bricolage;I;Circonstances{&}Accident{&}Domestique{&}bricolage
+$|brulure;I;Circonstances{&}Accident{&}Domestique{&}brulure
+$>chute;F;Circonstances{&}Accident{&}Domestique{&}chute
+$|accidentelle;I;Circonstances{&}Accident{&}Domestique{&}chute{&}accidentelle
+$|d'une chaise haute;I;Circonstances{&}Accident{&}Domestique{&}chute{&}d'une chaise haute
+$|d'une enclume sur une partie du corps;I;Circonstances{&}Accident{&}Domestique{&}chute{&}d'une enclume sur une partie du corps
+$|d'une table à langer;I;Circonstances{&}Accident{&}Domestique{&}chute{&}d'une table à langer
+<EOList>
+$|coupure;I;Circonstances{&}Accident{&}Domestique{&}coupure
+$|Ingestion accidentelle;I;Circonstances{&}Accident{&}Domestique{&}Ingestion accidentelle
+$>intoxication;F;Circonstances{&}Accident{&}Domestique{&}intoxication
+$|co;T;Circonstances{&}Accident{&}Domestique{&}intoxication{&}co.txt
+$|médicamenteuse;I;Circonstances{&}Accident{&}Domestique{&}intoxication{&}médicamenteuse
+$|produit ménager;I;Circonstances{&}Accident{&}Domestique{&}intoxication{&}produit ménager
+<EOList>
+$|piqure;I;Circonstances{&}Accident{&}Domestique{&}piqure
+$|plage;I;Circonstances{&}Accident{&}Domestique{&}plage
+$|électrocution;I;Circonstances{&}Accident{&}Domestique{&}électrocution
+<EOList>
+$|Ischémique Transitoire;I;Circonstances{&}Accident{&}Ischémique Transitoire
+$|loisir;I;Circonstances{&}Accident{&}loisir
+$>Scolaire;F;Circonstances{&}Accident{&}Scolaire
+$|chute;I;Circonstances{&}Accident{&}Scolaire{&}chute
+$|Sportif;I;Circonstances{&}Accident{&}Scolaire{&}Sportif
+$|trajet;I;Circonstances{&}Accident{&}Scolaire{&}trajet
+<EOList>
+$>Sportif;F;Circonstances{&}Accident{&}Sportif
+$|athlétisme;I;Circonstances{&}Accident{&}Sportif{&}athlétisme
+$|basket;I;Circonstances{&}Accident{&}Sportif{&}basket
+$|BASKET BALL;I;Circonstances{&}Accident{&}Sportif{&}BASKET BALL
+$|boxe;I;Circonstances{&}Accident{&}Sportif{&}boxe
+$|chasse;I;Circonstances{&}Accident{&}Sportif{&}chasse
+$|Cheval;I;Circonstances{&}Accident{&}Sportif{&}Cheval
+$|danse;I;Circonstances{&}Accident{&}Sportif{&}danse
+$|football;I;Circonstances{&}Accident{&}Sportif{&}football
+$|gym;I;Circonstances{&}Accident{&}Sportif{&}gym
+$|hand;I;Circonstances{&}Accident{&}Sportif{&}hand
+$|Handball;I;Circonstances{&}Accident{&}Sportif{&}Handball
+$|judo;I;Circonstances{&}Accident{&}Sportif{&}judo
+$|moto;I;Circonstances{&}Accident{&}Sportif{&}moto
+$|planche à voile;I;Circonstances{&}Accident{&}Sportif{&}planche à voile
+$|plongée sous marine;I;Circonstances{&}Accident{&}Sportif{&}plongée sous marine
+$|quad;I;Circonstances{&}Accident{&}Sportif{&}quad
+$|roller;I;Circonstances{&}Accident{&}Sportif{&}roller
+$|rollers;I;Circonstances{&}Accident{&}Sportif{&}rollers
+$|rooler;I;Circonstances{&}Accident{&}Sportif{&}rooler
+$|rubby;I;Circonstances{&}Accident{&}Sportif{&}rubby
+$|rugby;I;Circonstances{&}Accident{&}Sportif{&}rugby
+$|skate;I;Circonstances{&}Accident{&}Sportif{&}skate
+$|ski;I;Circonstances{&}Accident{&}Sportif{&}ski
+$|sport de combat;I;Circonstances{&}Accident{&}Sportif{&}sport de combat
+$|tennis;I;Circonstances{&}Accident{&}Sportif{&}tennis
+$|vélo;I;Circonstances{&}Accident{&}Sportif{&}vélo
+<EOList>
+$|Vasculaire Cérébral;I;Circonstances{&}Accident{&}Vasculaire Cérébral
+<EOList>
+$|Agression (Rixe);I;Circonstances{&}Agression (Rixe)
+$>at;F;Circonstances{&}at
+$|(agression lieux du travail);I;Circonstances{&}at{&}(agression lieux du travail)
+$|(AVP trajet professionnel);I;Circonstances{&}at{&}(AVP trajet professionnel)
+$|(AVP trajet travail);I;Circonstances{&}at{&}(AVP trajet travail)
+$|(sur les lieux du travail);I;Circonstances{&}at{&}(sur les lieux du travail)
+<EOList>
+$>Bilan;F;Circonstances{&}Bilan
+$|carcinologique;I;Circonstances{&}Bilan{&}carcinologique
+$|cardiologique;I;Circonstances{&}Bilan{&}cardiologique
+$|d'un AVC;I;Circonstances{&}Bilan{&}d'un AVC
+$|d'un diabète;I;Circonstances{&}Bilan{&}d'un diabète
+$|d'un ralentissement ou arrêt du transit;I;Circonstances{&}Bilan{&}d'un ralentissement ou arrêt du transit
+$|d'un vertige;I;Circonstances{&}Bilan{&}d'un vertige
+$|d'une AEG  Asthénie  Malaise;I;Circonstances{&}Bilan{&}d'une AEG  Asthénie  Malaise
+$|d'une douleur abdominale;I;Circonstances{&}Bilan{&}d'une douleur abdominale
+$|d'une HTA;I;Circonstances{&}Bilan{&}d'une HTA
+$|endocrinologique;I;Circonstances{&}Bilan{&}endocrinologique
+$|gynécologique;I;Circonstances{&}Bilan{&}gynécologique
+$|hématologique;I;Circonstances{&}Bilan{&}hématologique
+$|infectieux;I;Circonstances{&}Bilan{&}infectieux
+$|métabolique;I;Circonstances{&}Bilan{&}métabolique
+$|neurologique;I;Circonstances{&}Bilan{&}neurologique
+$|obstrétical;I;Circonstances{&}Bilan{&}obstrétical
+<EOList>
+$|Bilan cardiaque;I;Circonstances{&}Bilan cardiaque
+$|Consultation médicale;I;Circonstances{&}Consultation médicale
+$|Hospitalisation prévue;I;Circonstances{&}Hospitalisation prévue
+$>Hémorragie;F;Circonstances{&}Hémorragie
+$|bucco dentaire;I;Circonstances{&}Hémorragie{&}bucco dentaire
+$|cérébrale;I;Circonstances{&}Hémorragie{&}cérébrale
+$|de la délivrance;I;Circonstances{&}Hémorragie{&}de la délivrance
+$|Digestive;I;Circonstances{&}Hémorragie{&}Digestive
+$|génitale;I;Circonstances{&}Hémorragie{&}génitale
+$|hyperménorrhée;I;Circonstances{&}Hémorragie{&}hyperménorrhée
+$|hématurie;I;Circonstances{&}Hémorragie{&}hématurie
+$|hématémèse;I;Circonstances{&}Hémorragie{&}hématémèse
+$|hémoptysie;I;Circonstances{&}Hémorragie{&}hémoptysie
+$|otorragie;I;Circonstances{&}Hémorragie{&}otorragie
+$|Post Op;I;Circonstances{&}Hémorragie{&}Post Op
+$|rectale;I;Circonstances{&}Hémorragie{&}rectale
+$|épistaxis;I;Circonstances{&}Hémorragie{&}épistaxis
+<EOList>
+$>Malaise;F;Circonstances{&}Malaise
+$|avec PCI;I;Circonstances{&}Malaise{&}avec PCI
+$|Comitial;I;Circonstances{&}Malaise{&}Comitial
+$|Coronarien;I;Circonstances{&}Malaise{&}Coronarien
+$|digestif;I;Circonstances{&}Malaise{&}digestif
+$|Dyspnée;I;Circonstances{&}Malaise{&}Dyspnée
+$|Ethylique;I;Circonstances{&}Malaise{&}Ethylique
+$|hypoglycemique;I;Circonstances{&}Malaise{&}hypoglycemique
+$|hypoglycémique;I;Circonstances{&}Malaise{&}hypoglycémique
+$|indéterminé;I;Circonstances{&}Malaise{&}indéterminé
+$|respiratoire;I;Circonstances{&}Malaise{&}respiratoire
+$|Spasmophilique;I;Circonstances{&}Malaise{&}Spasmophilique
+$|vertigineux;I;Circonstances{&}Malaise{&}vertigineux
+<EOList>
+$>Morsure;F;Circonstances{&}Morsure
+$|de Buche;I;Circonstances{&}Morsure{&}de Buche
+$|de Chat;I;Circonstances{&}Morsure{&}de Chat
+$|de Chien;I;Circonstances{&}Morsure{&}de Chien
+$|de murene;I;Circonstances{&}Morsure{&}de murene
+$|de rat;I;Circonstances{&}Morsure{&}de rat
+$|de Serpent;I;Circonstances{&}Morsure{&}de Serpent
+$|de Yeck;I;Circonstances{&}Morsure{&}de Yeck
+$|Humaine;I;Circonstances{&}Morsure{&}Humaine
+<EOList>
+$>Méd Légales;F;Circonstances{&}Méd Légales
+$|Constat de coups et blessures;I;Circonstances{&}Méd Légales{&}Constat de coups et blessures
+$|ipm;I;Circonstances{&}Méd Légales{&}ipm
+$|Viol;I;Circonstances{&}Méd Légales{&}Viol
+<EOList>
+$>Méd Psy;F;Circonstances{&}Méd Psy
+$|$ depressif;I;Circonstances{&}Méd Psy{&}$ depressif
+$|agitation psycho-motrice;I;Circonstances{&}Méd Psy{&}agitation psycho-motrice
+$|automutilation;I;Circonstances{&}Méd Psy{&}automutilation
+$|bouffée délirante;I;Circonstances{&}Méd Psy{&}bouffée délirante
+$|hystérie;I;Circonstances{&}Méd Psy{&}hystérie
+$>Overdose;F;Circonstances{&}Méd Psy{&}Overdose
+$|au LSD;I;Circonstances{&}Méd Psy{&}Overdose{&}au LSD
+$|au travail;I;Circonstances{&}Méd Psy{&}Overdose{&}au travail
+$|aux amphétamines;I;Circonstances{&}Méd Psy{&}Overdose{&}aux amphétamines
+$|aux benzodiazépines;I;Circonstances{&}Méd Psy{&}Overdose{&}aux benzodiazépines
+$|à l'héroïne;I;Circonstances{&}Méd Psy{&}Overdose{&}à l'héroïne
+$|à la cocaïne;I;Circonstances{&}Méd Psy{&}Overdose{&}à la cocaïne
+$|à la morphine;I;Circonstances{&}Méd Psy{&}Overdose{&}à la morphine
+<EOList>
+$|Phlébotomie;I;Circonstances{&}Méd Psy{&}Phlébotomie
+$|Surchage médicamenteuse;I;Circonstances{&}Méd Psy{&}Surchage médicamenteuse
+<EOList>
+$>Piqure;F;Circonstances{&}Piqure
+$|d'araignée;I;Circonstances{&}Piqure{&}d'araignée
+$>d'insecte;F;Circonstances{&}Piqure{&}d'insecte
+$|(abeille);I;Circonstances{&}Piqure{&}d'insecte{&}(abeille)
+$|(fourmis);I;Circonstances{&}Piqure{&}d'insecte{&}(fourmis)
+$|(frelons);I;Circonstances{&}Piqure{&}d'insecte{&}(frelons)
+$|(guêpe);I;Circonstances{&}Piqure{&}d'insecte{&}(guêpe)
+$|(indéterminé);I;Circonstances{&}Piqure{&}d'insecte{&}(indéterminé)
+$|(moustiques);I;Circonstances{&}Piqure{&}d'insecte{&}(moustiques)
+$|(Ptérodactyle);I;Circonstances{&}Piqure{&}d'insecte{&}(Ptérodactyle)
+$|(taons);I;Circonstances{&}Piqure{&}d'insecte{&}(taons)
+<EOList>
+$>d'épine;F;Circonstances{&}Piqure{&}d'épine
+$|d'oursin;I;Circonstances{&}Piqure{&}d'épine{&}d'oursin
+$|de cactus;I;Circonstances{&}Piqure{&}d'épine{&}de cactus
+$|de crevette;I;Circonstances{&}Piqure{&}d'épine{&}de crevette
+$|de palmier;I;Circonstances{&}Piqure{&}d'épine{&}de palmier
+$|de rascasse;I;Circonstances{&}Piqure{&}d'épine{&}de rascasse
+$|de rosier;I;Circonstances{&}Piqure{&}d'épine{&}de rosier
+$|de vive;I;Circonstances{&}Piqure{&}d'épine{&}de vive
+<EOList>
+$|de scolopendre;I;Circonstances{&}Piqure{&}de scolopendre
+$|de scorpion;I;Circonstances{&}Piqure{&}de scorpion
+$|de vive;I;Circonstances{&}Piqure{&}de vive
+$|de yeck;I;Circonstances{&}Piqure{&}de yeck
+$|méduse;I;Circonstances{&}Piqure{&}méduse
+$|par aiguille de prÚlÞvement sanguin;I;Circonstances{&}Piqure{&}par aiguille de prÚlÞvement sanguin
+<EOList>
+$>Soins;F;Circonstances{&}Soins
+$|Ablation de points;I;Circonstances{&}Soins{&}Ablation de points
+$|Immobilisation Orthopédique;I;Circonstances{&}Soins{&}Immobilisation Orthopédique
+$|Injection IV ou IM;I;Circonstances{&}Soins{&}Injection IV ou IM
+$>pansement;F;Circonstances{&}Soins{&}pansement
+$|de brûlure;I;Circonstances{&}Soins{&}pansement{&}de brûlure
+$|de dermabrasion;I;Circonstances{&}Soins{&}pansement{&}de dermabrasion
+$|de plaie;I;Circonstances{&}Soins{&}pansement{&}de plaie
+<EOList>
+$|Pansement Brûlure;I;Circonstances{&}Soins{&}Pansement Brûlure
+$|Rappel VAT;I;Circonstances{&}Soins{&}Rappel VAT
+$|Refection Plâtrée;I;Circonstances{&}Soins{&}Refection Plâtrée
+$|sat;I;Circonstances{&}Soins{&}sat
+$|Surveillance Pansement;I;Circonstances{&}Soins{&}Surveillance Pansement
+<EOList>
+<EOList>

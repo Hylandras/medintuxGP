@@ -1,0 +1,15 @@
+[RapidAccess]
+  LighterBackground = 255 , 255 , 255
+  DarkerBackground = 245 , 245 , 255
+  HighLightColor = 210 , 210 , 255
+  FontColor_Ident = 0 , 0 , 0
+  FontColor_Terrain = 160 , 160 , 160
+  FontColor_Obs = 0 , 0 , 50
+  FontColor_Prescr = 50 , 0 , 0
+  FontColor_Doc = 0 , 50 , 0
+
+
+[FontSize]
+  PopupMenus = -1
+  Menus = -1
+[END_INI]

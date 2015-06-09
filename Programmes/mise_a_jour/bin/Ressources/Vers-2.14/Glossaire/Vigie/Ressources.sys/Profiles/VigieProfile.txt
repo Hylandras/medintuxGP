@@ -1,0 +1,129 @@
+<!DOCTYPE CVigie>
+<CVigie version="0.0" stdsetdef="1">
+
+  <Classeur name="0.0 stdsetdef=1">
+  </Classeur>
+
+  <Classeur name="Administratif_Social">
+    <icone>kiss.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="CardioVasculaire">
+    <icone>love.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Classeur_Médecine_Générale">
+    <isOpen>1</isOpen>
+    <icone>listview_observation.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Classeur_sejour">
+    <isOpen>1</isOpen>
+  </Classeur>
+
+  <Classeur name="Dermatologie">
+    <icone>adjusthsl.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Digestive">
+    <icone>cup.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Endocrino_Métabolisme_Nutrition">
+    <icone>distortionfx.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Génital_Urinaire">
+    <icone>amarok_dynamic.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Historique des nouveaux documents">
+    <isOpen>1</isOpen>
+    <icone>TimePicto14-13.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Historique des ordonnances du codex">
+    <icone>type_prescription.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Infectieuse">
+    <icone>amarok_magnatune.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Locomoteur_Traumatismes">
+    <icone>Locomoteur2.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Neurologie">
+    <icone>collection.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Non classés">
+    <icone>info.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Ophtalmologie">
+    <icone>redeyes.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Patho_en_cours_non_résolue">
+    <icone>IsUnique.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Prévention">
+    <icone>amarok_repeat_album.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Respiratoire_ORL">
+    <icone>amarok_configure.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Troubles_Mentaux">
+    <icone>bat.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Tumeurs">
+    <icone>amarok_mostplayed.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Vaccinations">
+    <icone>Classeur infirmier.png</icone>
+    <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="fiche_aspiration_tracheale">
+    <menuProp0>Tache effectuée</menuProp0>
+  </Classeur>
+
+  <Classeur name="fiche_changement_de_poche_stomie_ide">
+    <menuProp0>Tache effectuée</menuProp0>
+  </Classeur>
+
+  <Classeur name="soin">
+    <isOpen>1</isOpen>
+  </Classeur>
+
+  <Classeur name="soin-ide">
+    <isOpen>1</isOpen>
+  </Classeur>
+
+</CVigie>

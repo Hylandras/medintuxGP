@@ -1,0 +1,37 @@
+ scriptStr.replace("{{master user}}",      login_Master);
+ scriptStr.replace("{{masterSrc user}}",   login_masterSrc);
+ scriptStr.replace("{{nomade user}}",      login_Nomade);
+ scriptStr.replace("{{reverse user}}",     login_Reverse);
+
+ scriptStr.replace("{{master host}}",      host_Master);
+ scriptStr.replace("{{masterSrc host}}",   host_masterSrc);
+ scriptStr.replace("{{nomade host}}",      host_Nomade);
+ scriptStr.replace("{{reverse host}}",     host_Reverse);
+
+ scriptStr.replace("{{master pass}}",      pass_Master);
+ scriptStr.replace("{{masterSrc pass}}",   pass_masterSrc);
+ scriptStr.replace("{{nomade pass}}",      pass_Nomade);
+ scriptStr.replace("{{reverse pass}}",     pass_Reverse);
+
+ scriptStr.replace("{{master port}}",      port_Master);
+ scriptStr.replace("{{masterSrc port}}",   port_masterSrc);
+ scriptStr.replace("{{nomade port}}",      port_Nomade);
+ scriptStr.replace("{{reverse port}}",     port_Reverse);
+
+ scriptStr.replace("{{master logbin}}",      logBin_Master);
+ scriptStr.replace("{{masterSrc logbin}}",   logBin_masterSrc);
+ scriptStr.replace("{{nomade logbin}}",      logBin_Nomade);
+ scriptStr.replace("{{reverse logbin}}",     logBin_Reverse);
+
+ scriptStr.replace("{{master log_Pos}}",      log_Pos_Master);
+ scriptStr.replace("{{masterSrc log_Pos}}",   log_Pos_MasterSrc);
+ scriptStr.replace("{{nomade log_Pos}}",      log_Pos_Nomade);
+ scriptStr.replace("{{reverse log_Pos}}",     log_Pos_Reverse);
+
+ //................... infos lues dans les fichiers status.............
+ scriptStr.replace("{{Master_Host}}",          master_Host);
+ scriptStr.replace("{{Master_User}}",          master_User);
+ scriptStr.replace("{{Master_Port}}",          master_Port);
+ scriptStr.replace("{{MasterKey}}",            masterKey);
+ scriptStr.replace("{{Master_Log_File}}",      master_Log_File);
+ scriptStr.replace("{{Read_Master_Log_Pos}}",  read_Master_Log_Pos);

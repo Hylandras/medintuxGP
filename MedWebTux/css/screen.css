@@ -1,0 +1,17 @@
+.noScreen { 
+          display: none; 
+          } 
+		
+.conteneur_old {			
+	border:double #000000;
+	text-align: justify;
+	padding:5px;
+	background:#cfe3f8;
+	}
+
+.conteneur { 
+        margin:0;
+        text-align: justify;
+        background:#fff;
+	width:100%;
+        }

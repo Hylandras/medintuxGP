@@ -1,0 +1,2 @@
+INSERT INTO `RubriquesBlobs` (`RbDate_PrimKey`, `RbDate_DataRub`, `RbDate_IDDos`) VALUES (19,'','30DC82DD-7632-2C46-9DC3-BC1AC0ECD20A')
+INSERT INTO `RubriquesHead` (`RbDate_PrimKey`, `RbDate_IDDos`, `RbDate_TypeRub`, `RbDate_NomDate`, `RbDate_SubTypeRub`, `RbDate_Date`, `RbDate_CreateUser`, `RbDate_CreateSignUser`, `RbDate_Duree`, `RbDate_Ref_NumDoss`, `RbDate_RefBlobs_PrimKey`) VALUES (1,'30DC82DD-7632-2C46-9DC3-BC1AC0ECD20A',20030000,'Asthme sai',' ','2004-12-08 19:23:41','admin','admin',0,0,1)

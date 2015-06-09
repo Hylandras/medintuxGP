@@ -1,0 +1,627 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>Dlg_Calendar</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Dlg_Calendar</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>377</width>
+            <height>212</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Date</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>2</number>
+        </property>
+        <property name="spacing">
+            <number>2</number>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout2</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton" row="0" column="5">
+                            <property name="name">
+                                <cstring>pushButtonMonthPlus</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="autoDefault">
+                                <bool>false</bool>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image0</iconset>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Ajouter un mois</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="0">
+                            <property name="name">
+                                <cstring>pushButtonYearMoins</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="autoDefault">
+                                <bool>false</bool>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image1</iconset>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enlever une année</string>
+                            </property>
+                        </widget>
+                        <widget class="CMaskedLineEdit" row="0" column="2">
+                            <property name="name">
+                                <cstring>cMaskedLineEditDate</cstring>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>100</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="carMask" stdset="0">
+                                <number>32</number>
+                            </property>
+                            <property name="control" stdset="0">
+                                <string>GGGGGGGG</string>
+                            </property>
+                            <property name="mask" stdset="0">
+                                <string>__-__-____</string>
+                            </property>
+                            <property name="text" stdset="0">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="0" column="4">
+                            <item>
+                                <property name="text">
+                                    <string>1990</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1991</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1992</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1993</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1994</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1995</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1996</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1997</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1998</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>1999</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2000</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2001</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2002</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2003</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2004</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2005</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2006</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2007</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2008</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2009</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>2010</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>comboBoxAn</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>3000</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="editable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="sizeLimit">
+                                <number>25</number>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="6">
+                            <property name="name">
+                                <cstring>pushButtonYearPlus</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="autoDefault">
+                                <bool>false</bool>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image2</iconset>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Ajouter une année</string>
+                            </property>
+                        </widget>
+                        <widget class="QComboBox" row="0" column="3">
+                            <item>
+                                <property name="text">
+                                    <string>Janvier</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Février</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Mars</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Avril</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Mai</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Juin</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Juillet</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Août</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Septembre</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Octobre</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Novembre</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Décembre</string>
+                                </property>
+                            </item>
+                            <property name="name">
+                                <cstring>comboBoxMois</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>3000</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="editable">
+                                <bool>false</bool>
+                            </property>
+                            <property name="sizeLimit">
+                                <number>12</number>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="0" column="1">
+                            <property name="name">
+                                <cstring>pushButtonMonthMoins</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>25</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="autoDefault">
+                                <bool>false</bool>
+                            </property>
+                            <property name="iconSet">
+                                <iconset>image3</iconset>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Enlever un mois</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>pushButtonMenu</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>200</width>
+                                    <height>25</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>Présélection de dates</string>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Menu déroulant de choix de dates préétablies</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer1</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>10</width>
+                                    <height>10</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel_Heure</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Heure : </string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QTimeEdit">
+                            <property name="name">
+                                <cstring>timeEdit_Heure</cstring>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>145</width>
+                                    <height>32767</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>CMaskedLineEdit</class>
+        <header location="global">../../MedinTuxTools/CMaskedLineEdit.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image4</pixmap>
+        <signal>Sig_FocusOut()</signal>
+        <signal>Sig_FocusIn()</signal>
+        <signal>Sig_CarEvent(QEvent * ev)</signal>
+        <property type="UInt">carMask</property>
+        <property type="String">text</property>
+        <property type="String">mask</property>
+        <property type="String">control</property>
+        <property type="Int">mixMode</property>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="PNG" length="375">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000013e49444154789ca5d3bf4b026118c0f1afe2f0040677e070070e390439343826b434160dd9d89634c4fd07e1148753d6524bd1da124e826b9b2d8143a18b609070b7dd3b08be9b0d1761dde519becbfb3e0f3c1f9ef757aaf3dc619991990ddcba3bb52d9bde6b8fc65523b508909e0d3ccfc3b22caac755dc7377fa7f40dd63ae9a983913e7d4c1ad27233f007f50e2e6d6418f05c90ab5b35a2292fe9d180e848bcb327abcc26432c13971e66e27028868baeb06874f5bf8238dd69aca41e54f2402e87d814dd0db7094dda5f95e408d15c58d626c073fae5144a311c883550a730faa84ffa8b18ceb64406b091723f0bb7caf871f4d04950c0030fcea260867bbb547a03ad4eedab10f2b0abc80bc69ec3c78fe0e81f469b7e28be301c2b308540111e61643cc2d401f320520b93802186b6d8c5c79e16280d4b2dff913c6a76f99339558820000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="389">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000014c49444154789ca593314bc34018869f48861b3b54a8a39b151d2238d8b14eed2a2e055d044142a76e726428f91b9d9dc4a11007a163bbd9b1834217e1320472a0901b0271a88596b435da835bbeefbd87f7fdeece1a8e866cb3eca2c24edbcd0e8f4f50a1427ad29ad7778a1c969ecc6e6e5d2a950a4aa9bf39f0bb7ed6697730a9414721bd5d8559e86f74e077fd4cde4b8410086370df7a38844b9ab500e9c9ccbd734992048ca6f6e2233ea639ddca08d29359ebb2853106be34cd6b1f52856908446a96b42b1d38470e5a6bf69f06345b4348eb4015f12c8a3950a1e2428f711e2a50aecf8a510c4c30f6326425208c421ed594331288c63fd559fe4211fcae6ff5c298f38310ecc16c338192ce69d7de42d00facd728a6569e62ae0ca661e034afdbf80e827e604d52c15e3f46dbf901fe0a984300aa23187ffe03b008a9bf97085469a9676dfb9dbf01769d831606543f850000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="377">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000014049444154789ca593314bc3501080bf960e6f88d0408704ba64145cb276ac9ba3a0838383c52938159c8a83846ec545ddbaeaa40e427e4275d2ad1114ba1492a1d00e811e58a84344da266d2abde9eee0fbb8c7ddcb755e3a6c1285d9c26dba53b364d2f5bbb4ae5ab97504f9d92208028cb241eda4867bd198fe5bd00e03f42d1dbda4e39cd5719b6ea6644e600f429cbb1b5424284dd1386f644af28b0df5d1a372eb42248cbfc738a7cecae72404a2298aaf16d5430fe9878808fb07474b25c909065528d82015f68ec17af2194523b677ecd409e6d6289a42093031c18801fb7e880c1eb92e19d90215c96f3780f0fd2f7ff80c18a5e20b82387a3001548cec1a1e6fd110efb29d7a584981f211ad076593ea57801f29bc676fe955a64c00525058fd21a8d530a46cc107ac499c67c10981a71954b4e2da30406ed3effc03b2e27282ef169ba00000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="385">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000014849444154789ca593b14b425114c67f2f1c6ed0e0d0f0dc120a5268d02da1a5b529a37f20a7700a377934c8c529da5a0a97869668121c5d045b0287021d048784fb36ef207886e035a89169f5c4bb5c38e7bbbff37d1caed37c6eb2ca898415162e0a41722f89f10d5ed173a6f5b5308f754907b9b31caeeb628c59ce812eeb207f9e473e046b2dc65600f9eaffe9409775e0153dd48642868a9bdb3c7e3715ce812e8d278f462364b8ced5759a5e57cde91602744907d9e32c2282b5906b1d223ba03a8288fa1f90d84d608796ba4df3b09d8203e00d04058f211c18dfd0ea9c503f4de14e22fb167805a56446bb1060ada5f7fe04fd7dfcd6a4d81f5f3f232cdc8277e93903bf42fcfe08d500d5184fa737affd758db56acd19d826dc658855055515785902308528d566606373d94301a610002271a0bd3ce03b24ba9921ba559be939ab7ee74f434e7fd43c36ef6c0000000049454e44ae426082</data>
+    </image>
+    <image name="image4">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>pushButtonMonthMoins</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_Calendar</receiver>
+        <slot>pushButtonMonthMoins_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonYearMoins</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_Calendar</receiver>
+        <slot>pushButtonYearMoins_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxMois</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_Calendar</receiver>
+        <slot>comboBoxMois_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxAn</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>Dlg_Calendar</receiver>
+        <slot>comboBoxAn_textChanged(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>comboBoxAn</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_Calendar</receiver>
+        <slot>comboBoxAn_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonMonthPlus</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_Calendar</receiver>
+        <slot>pushButtonMonthPlus_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonYearPlus</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_Calendar</receiver>
+        <slot>pushButtonYearPlus_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in implementation">qdatetime.h</include>
+    <include location="global" impldecl="in implementation">qmessagebox.h</include>
+    <include location="local" impldecl="in declaration">MyDateTable.h</include>
+    <include location="global" impldecl="in declaration">qvbox.h</include>
+    <include location="global" impldecl="in declaration">qiconset.h</include>
+    <include location="local" impldecl="in declaration">C_Horloge.h</include>
+    <include location="local" impldecl="in implementation">Dlg_Calendar.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">C_Horloge *m_pC_Horloge;</variable>
+    <variable access="public">QStringList m_PopupListItem;</variable>
+    <variable access="public">QString m_CurrentPopupItem;</variable>
+    <variable access="public">QString m_RetPopupItem;</variable>
+    <variable access="public">QPopupMenu *m_pQPopupMenu;</variable>
+    <variable access="public">MyDateTable *m_pMyDateTable;</variable>
+    <variable access="public">QString m_Mode;</variable>
+</variables>
+<slots>
+    <slot>DateMenu_setIcon( const QPixmap &amp; rQPixmap )</slot>
+    <slot>Month_setIcon( const QPixmap &amp; moinsQPixmap, const QPixmap &amp; plusQPixmap )</slot>
+    <slot>Year_setIcon( const QPixmap &amp; moinsQPixmap, const QPixmap &amp; plusQPixmap )</slot>
+    <slot>setDateDeb( QDate * pdate )</slot>
+    <slot>setMode( const QString &amp; mode )</slot>
+    <slot>hideHeure()</slot>
+    <slot returnType="int">setDateTimeNatural_jjMMyyyy_Order( const QString &amp; dateTime )</slot>
+    <slot>setHeure( const QString &amp; heure )</slot>
+    <slot>setHeure( int h, int m, int s, int ms )</slot>
+    <slot>setHeure( const QTime &amp; time )</slot>
+    <slot>SelectDateAll()</slot>
+    <slot>Slot_OnReturnPressed()</slot>
+    <slot>Slot_OnTableDoubleClicked()</slot>
+    <slot>Slot_OnTableClicked()</slot>
+    <slot>Slot_OnTextDateChanged( const QString &amp; )</slot>
+    <slot>setDate( const QDate &amp; date )</slot>
+    <slot>Slot_OndateChanged( QDate date )</slot>
+    <slot>AdjustInterfaceToDate( const QDate &amp; date )</slot>
+    <slot returnType="QDate">getDate()</slot>
+    <slot>pushButtonYearPlus_clicked()</slot>
+    <slot>pushButtonMonthPlus_clicked()</slot>
+    <slot>pushButtonYearMoins_clicked()</slot>
+    <slot>pushButtonMonthMoins_clicked()</slot>
+    <slot>comboBoxMois_activated( const QString &amp; )</slot>
+    <slot>comboBoxAn_activated( const QString &amp; an )</slot>
+    <slot>comboBoxAn_textChanged( const QString &amp; an )</slot>
+    <slot>setComboAnOnDate( const QDate &amp; date )</slot>
+    <slot>setComboAnOnDate_Offset( const QDate &amp; date, int neg_Offset, int pos_Offset )</slot>
+    <slot>setMenuPreselectDateOn()</slot>
+    <slot>setMenuPreselectDateOff()</slot>
+    <slot>setMenuPreSelectDate( const QStringList &amp; itemList )</slot>
+    <slot>Slot_pushButtonMenu_clicked()</slot>
+    <slot>OnMenuActivated( int id )</slot>
+    <slot>GetPopupItem()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function returnType="int">setDateTimeNumeric_yyyyMMjj_Order( const QString &amp; dateTime )</function>
+    <function returnType="QDateTime">getDateTime()</function>
+    <function returnType="QString">get_SQL_DateTime()</function>
+    <function returnType="QString">DoPopupList( QStringList &amp; list )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

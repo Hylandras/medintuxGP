@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/BougePatient.png</file>
+        <file>images/CroixRouge.png</file>
+        <file>images/Roue.png</file>
+        <file>images/Resp.png</file>
+        <file>images/Etat.png</file>
+        <file>images/ini.png</file>
+        <file>images/Tache.png</file>
+        <file>images/Box.png</file>
+        <file>images/css.png</file>
+        <file>images/Maison.png</file>
+        <file>images/oeil.png</file>
+        <file>images/DrTux.png</file>
+        <file>images/datetime.png</file>
+        <file>images/Absence.png</file>
+        <file>images/fenetre.png</file>
+        <file>images/enregistre.png</file>
+        <file>images/carre.png</file>
+        <file>images/Annule_Tache.png</file>
+        <file>images/1downarrow.png</file>
+        <file>images/1rightarrow.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,252 @@
+BODY {
+	color: #000080;
+	background-color:  #FFFFFF;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+BODY.menu {
+	background-color: #0B3D92;	
+	color: #FFFFFF;
+	
+}
+TABLE {
+	font-size: 10pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000080;
+}
+
+A {
+	font-size: 10pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000080;
+}
+
+.button {
+	background-color: #447BAC;
+	color: #FFFFFF;
+	border-top: 1px solid #D0F1AB;
+	border-right: 1px solid #35570F;
+	border-bottom: 1px solid #35570F;
+	border-left: 1px solid #D0F1AB;
+	cursor: pointer;
+}
+TABLE.menu {
+	padding: 1px 0px 0px 1px;
+	background-color: #0B3D92;	
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+TABLE TD.leftMenu {
+	background-color: #0B3D92;	
+	color: #CCFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding: 2px 2px 2px 15px;
+}
+
+A.leftMenu {
+	color: #CCFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	text-decoration: none;
+}
+
+A.leftMenu:hover {
+	text-decoration: underline;
+}
+
+#head {
+	padding-bottom: 10px;
+	color: #CAD5ED;
+}
+
+TD.littleTitle{
+	background-color: #CAD5ED;
+	color: #0B3D92;
+	font-size: 10pt;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+TABLE.content {
+	background-color: #FFFFFF;
+}
+
+#content {
+	padding: 10px 10px 2px 10px;
+}
+TABLE.title {
+	font-size: 12pt;
+	font-weight: normal;
+	font-style: normal;
+	padding: 2px 0px 2px 2px;
+	color: #FFFFFF;
+	border-bottom: 1px solid #73BD1F;
+	font-family: Arial, sans-serif;
+}
+TABLE.title TD.rupture {
+	background-color: #73BD1F;
+	width: 200px;
+}
+
+TABLE.navigation {
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 0px 10px 0px 10px;
+	color: #FFFFFF;
+	font-family: verdana, Arial, Helvetica, sans-serif;
+}
+
+A.navigation {
+	color: #FFFFFF;
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+TABLE.colored {
+	padding: 0px 0px 0px 0px;
+	background-color: #CAD5ED;	
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+TABLE.criteria TD {
+	padding: 5px 3px 0px 2px;
+	background-color: #CAD5ED;	
+	color: #0B3D92;	}
+
+TABLE.criteria TR.title {
+	text-align: left;
+	font-weight: bold;
+	font-style: normal;
+}
+
+TABLE.criteria TR.title TD {
+	border-bottom: 1px solid #73BD1F;
+	color: #0B3D92;
+	padding-top: 15px;
+}
+
+TABLE.criteriaRemainder {
+	border: 1px solid #447BAC;
+}
+
+TABLE.criteriaRemainder CAPTION {
+	color: #447BAC;
+	text-align: left;
+	font-weight: bold;
+
+}
+
+TABLE.criteriaRemainder TD.heavy{
+	font-weight: bold;
+}
+
+
+#entete {
+	padding: 0px 3px 0px 15px;
+	text-align: left;
+}
+
+TABLE.result {
+	border: 1px solid #CAD5ED;
+}
+
+TABLE.result TH {
+	color: #FFFFFF; 
+	background-color: #0B3D92;
+}
+TABLE.result TD.light {
+	background-color: #EDF4FB;
+}
+
+TABLE.result TD.dark {
+	background-color: #D9E6F2;
+}
+
+TABLE.resultWithBorder {
+	border-left: 1px solid #CAD5ED;
+	border-top: 1px solid #CAD5ED;
+}
+
+TABLE.resultWithBorder TH {
+	color: #FFFFFF; 
+	background-color: #0B3D92;
+	border-right: 1px solid #CAD5ED;
+	border-bottom: 1px solid #CAD5ED;
+}
+TABLE.resultWithBorder TD.light {
+	background-color: #EDF4FB;
+	border-right: 1px solid #CAD5ED;
+	border-bottom: 1px solid #CAD5ED;
+}
+
+TABLE.resultWithBorder TD.dark {
+	background-color: #D9E6F2;
+	border-right: 1px solid #CAD5ED;
+	border-bottom: 1px solid #CAD5ED;
+}
+
+TABLE.resultWithBorder TD {
+	border-right: 1px solid #CAD5ED;
+	border-bottom: 1px solid #CAD5ED;
+}
+
+TD.rubrique {
+	border-bottom: 1px solid #73BD1F;
+	padding: 10px 5px 0px 5px;
+	color: #0B3D92;
+	font-weight: bold;
+	font-size: 9pt;
+}
+
+TABLE.extrait {
+	font-size: 9pt;
+	border: 1px solid #CAD5ED;
+	padding: 0px 5px 0px 5px;
+}
+
+TABLE.extrait TD {
+	padding: 5px 5px 0px 5px;
+}
+
+#composant {
+	padding: 10px 5px 0px 5px;
+}
+#denomination {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 10pt;
+}
+
+#denominationCommune {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 10pt;
+}
+
+
+#under {
+	padding: 1px 5px 0px 1px;
+	font-size: 8pt;
+
+}
+TABLE.under TD {
+	padding-right: 0px;
+	font-size: 8pt;
+}
+
+#underline {
+	border-bottom: 1px solid #DDF5C2;
+	padding: 0px 0px 0px 0px;
+}
+
+TABLE.underline TD {
+	padding-right: 8px;
+}

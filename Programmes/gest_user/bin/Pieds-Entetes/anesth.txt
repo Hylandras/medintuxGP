@@ -1,0 +1,179 @@
+<!DOCTYPE PROFILE_GestUser>
+<DocDefinition_GestUser>
+      <DocType_GestUser>20020300</DocType_GestUser>
+      <DocName_GestUser>* Certificat</DocName_GestUser>
+      <Data_GestUser>=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p><span style="font-weight:600">{{TITRE PS}} {{NOM PRENOM MEDECIN}}</span><br />{{SPECIALITE MEDECIN}}<br />{{CONVENTION MEDECIN}}<br />{{ADRESSE MEDECIN}}<br />{{VILLE MEDECIN}} {{VILLE MEDECIN}}<br />{{IDENTIFICATION MEDECIN}}		  <span style="font-size:11pt"> </span><span style="font-family:Arial Black;font-size:11pt;text-decoration:underline">CERTIFICAT</span>	<br />	<span style="font-size:6pt"><br /> </span>Le    {{DD-MM-YYYY}}<br /><br />           {{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} {{POIDS PATIENT}} </p>
+</body></html>
+}}==/r/n=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p align="center"><span style="font-size:7pt"> </span><span style="font-size:7pt;font-weight:600">{{NOM PRENOM MEDECIN}}</span><br /><br /><span style="font-style:italic;font-size:4pt"><br /></span><span style="font-style:italic;font-size:6pt">Document mis en page par MedinTux</span></p>
+</body></html>
+}}==/r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>20020300</DocType_GestUser>
+      <DocName_GestUser>[Documents] * Impression Standard</DocName_GestUser>
+      <Data_GestUser>=={{}}==/r/n=={{}}==/r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>20030000</DocType_GestUser>
+      <DocName_GestUser>* Observation</DocName_GestUser>
+      <Data_GestUser>=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p align="center">      <span style="font-family:Arial Narrow;font-size:13pt;font-weight:600;text-decoration:underline">CLINIQUE PAS GÉNÉRALE DE SANTÉ</span><span style="font-family:Arial Narrow"><br /></span>Service des Urgences<span style="font-family:Arial Narrow;font-style:italic;font-weight:600;color:#ff0000"><br /></span><span style="font-size:5pt">(   Tél :  04 44 44 44 55   Fax:   04 44 77 88 99  )</span></p>
+<p><hr><span style="font-weight:600">Nom</span>      : {{NOM PRENOM PATIENT}}        <span style="font-weight:600">Sexe</span>:{{SEXE PATIENT}}<br /><span style="font-weight:600">Né(e)</span>    : {{DATE NAISSANCE PATIENT}}            <span style="font-weight:600">Age  </span>: {{AGE PATIENT ABREGE}}<br /><span style="font-weight:600">Adresse</span>: {{ADRESSE PATIENT UNE LIGNE}}<br /><span style="font-weight:600">Tél</span>       {{NUM. TEL1 PATIENT}}                  <span style="font-weight:600">Tél 2</span>    {{NUM. TEL2 PATIENT}}<br /><hr><span style="font-weight:600">N°S.S.</span>   {{NUM. SECU PATIENT}}           <span style="font-weight:600">Vu par: </span>{{NOM PRENOM MEDECIN}}   <br /><span style="font-weight:600">Caisse S.S.             <br /></span><hr><span style="font-weight:600">Lien de parenté du patient avec l'assuré(e):    </span><span style="font-family:Arial Narrow;font-weight:600">..............................</span><span style="font-weight:600"><br />Nom et Prénom Assuré(e): </span>{{NOM PRENOM ASSURE}}<span style="font-weight:600"><br />MEDECIN TRAITANT</span>:  {{NOM PRENOM INTERVENANT=Médecine Générale}}<br /><hr></p>
+</body></html>
+}}==/r/n=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p align="center"><span style="font-size:7pt">{{NOM PRENOM MEDECIN}} </span><br /><span style="font-style:italic;font-size:6pt">Observation mise en page par MedinTux</span></p>
+</body></html>
+}}==/r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>20020200</DocType_GestUser>
+      <DocName_GestUser>* Ordonnance</DocName_GestUser>
+      <Data_GestUser>{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p><span style="font-weight:600">{{TITRE PS}} {{NOM PRENOM MEDECIN}}</span><br />{{SPECIALITE MEDECIN}}<br />{{CONVENTION MEDECIN}}<br />{{ADRESSE MEDECIN}}<br />{{VILLE MEDECIN}} {{VILLE MEDECIN}}<br />{{IDENTIFICATION MEDECIN}}<br /><br /><span style="font-size:6pt"><br /> </span>Le    {{DD-MM-YYYY}} {{ X90}} <span style="font-family:Arial;font-size:21pt;font-weight:600">{{:: Extract (Observation , Circonstances : , Heure d'Arrivée SU: , AT ,AT )}}</span><br />           {{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} {{POIDS PATIENT}} </p>
+</body></html>
+}} /r/n{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p align="center"><span style="font-size:7pt"> </span><span style="font-size:7pt;font-weight:600">{{NOM PRENOM MEDECIN}}</span><br /><br /><br /><br /><span style="font-style:italic;font-size:4pt">membre d'une association agréée par l'administration fiscale, les règlements par chèques sont acceptés<br /></span><span style="font-style:italic;font-size:6pt">Ordonnance mise en page par MedinTux</span></p>
+</body></html>
+}} /r/n{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p><span style="font-weight:600">{{TITRE PS}} {{NOM PRENOM MEDECIN}}</span><br />{{SPECIALITE MEDECIN}}<br />{{CONVENTION MEDECIN}}<br />{{ADRESSE MEDECIN}}<br />{{VILLE MEDECIN}} {{VILLE MEDECIN}}<br />{{IDENTIFICATION MEDECIN}}<br /><span style="font-style:italic;font-size:9pt;font-weight:600;color:#ff0000">                                          DUPLICATA ne permettant pas<br />                                          la délivrance de médicament </span><span style="font-size:6pt"><br /> </span>Le    {{DD-MM-YYYY}} {{ X90}} <span style="font-family:Arial;font-size:21pt;font-weight:600">{{:: Extract (Observation , Circonstances : , Heure d'Arrivée SU: , AT ,AT )}}</span><br />           {{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} {{POIDS PATIENT}} </p>
+</body></html>
+}} /r/n{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p align="center"><span style="font-size:7pt"> </span><span style="font-size:7pt;font-weight:600">{{NOM PRENOM MEDECIN}}</span><br /><br /><br /><br /><span style="font-style:italic;font-size:4pt">membre d'une association agréée par l'administration fiscale, les règlements par chèques sont acceptés<br /></span><span style="font-style:italic;font-size:6pt">Ordonnance mise en page par MedinTux</span></p>
+</body></html>
+}} /r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>5</DocType_GestUser>
+      <DocName_GestUser>Parametres</DocName_GestUser>
+      <Data_GestUser>
+[Observation]
+  Zoom = 10
+  Montrer = Normal
+  Position = 5 , 5 , 969 , 511 , 7 , 25 , 962 , 504
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+[Prescription]
+  Zoom = 12
+  Montrer = Normal
+  Position = 5 , 544 , 970 , 342 , 7 , 25 , 963 , 335
+  Espace de travail = $DEB$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$END$
+
+[Identité]
+  Montrer = Non
+  Position = 198 , 3 , 481 , 503
+
+
+[Terrain]
+  Montrer = Normal
+  Position = 995 , 4 , 386 , 889 , 7 , 25 , 379 , 882
+  Espace de travail = $DEB$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$END$
+
+[Documents]
+  Montrer = Non
+  Position = 1 , 2 , 580 , 369
+
+
+[Choix Patients]
+  Montrer = Non
+  Position = 242 , 6 , 213 , 499
+
+
+[Dock glossaire]
+  Montrer = Normal
+  Position = 0 , 147 , 200 , 943
+
+
+[Windows List]
+  Observation = 5 , 5 , 976 , 536
+  Prescription = 5 , 544 , 977 , 367
+  Terrain = 995 , 4 , 393 , 914
+  Choix Patients = 922 , 0 , 213 , 849
+
+
+[Impression]
+  Resolution = 71 , 71
+  MargTop = 5.94
+  Marg_Left = 10
+  Marg_Right = 10
+  Marg_Bottom = 1
+  Zoom = 100
+  IsOutToFile = 0
+  OutpuFileName = /home/ro/print.ps
+  printerSelectionOption =    
+  colorMode = 0
+
+[* Ordonnance]
+  Head_H = 82.55
+  Foot_H = 44.7675
+  NumCopies = 1
+
+
+[* Observation]
+  Head_H = 78.105
+  Foot_H = 5.3975
+  NumCopies = 1
+
+
+[Dock_Rubriques]
+  Montrer = Cacher
+
+[GoogleAgenda]
+  pass = #
+
+[Dock_Rapid_Access]
+  Montrer = Normal
+  ShowTerrain = true
+  ShowObs = true
+  ShowPrescr = true
+  ShowDoc = true
+  ShowIdent = true
+  ShowInterv = true
+  Glossaire = on
+  DefaultFontSize = 9
+  OpenIdent = true
+  OpenATCD = true
+  OpenVars = true
+  OpenTerrain = true
+  OpenVisuNote = false
+  OpenObs = true
+  OpenPrescr = true
+  OpenInterv = true
+  OpenDoc = true
+  ParentItemInBold = true
+  ClickOnParent = openCMDI
+
+[Dock_Glossaire]
+  Montrer = Normal
+
+[Dock_Vigie]
+  Montrer = Cacher
+
+[Identification]
+  Montrer = Non
+
+[Vigie]
+  Montrer = Non
+
+[Courrier]
+  Montrer = Non
+
+[DrTuxPos]
+  Rubrique active = Prescription
+  Positions = -8 , -8 , 1680 , 988
+
+[DrTuxDockPos]
+  Positions = $DEB$$n$$n$$n$Attributs Texte$.$Outils Texte$.$Liste des rubriques$.$Outils Vigie$.$Menu utilisateur$.$$n$$|$Attributs Texte$.$0$.$0$.$-1$.$-1$.$1$*$$|$Outils Texte$.$0$.$0$.$-1$.$-1$.$1$*$$|$Liste des rubriques$.$0$.$0$.$-1$.$-1$.$1$*$$|$Outils Vigie$.$0$.$0$.$-1$.$-1$.$0$*$$|$Menu utilisateur$.$0$.$0$.$-1$.$-1$.$0$*$$n$$n$$n$Outils Fichiers$.$Outils Divers$.$$n$$|$Outils Fichiers$.$0$.$0$.$-1$.$-1$.$1$*$$|$Outils Divers$.$0$.$0$.$-1$.$-1$.$1$*$$n$Vue rapide$.$Glossaire$.$$n$$|$Vue rapide$.$0$.$0$.$200$.$443$.$1$*$$|$Glossaire$.$0$.$0$.$200$.$488$.$1$*$$n$$END$
+
+[Glossaire]
+  Path = //RELAXING02/GlossaireAnesth/
+</Data_GestUser>
+</DocDefinition_GestUser>
+
+      <Droits_GestUser>-nbv-idd-ata-cec-coc-iec-obc-orc-etc-idc-coc-plc-nog-gls-agm-cep-iep-obp-orp-plp-idg-cem-com-orm-atc-tvc-ttc-agc-cer-cor-orr-fse-rgl-ccc-bmc-cic-lac-med-cov-plv-atv-cev-cov-dov-iev-obv-orv-agv-tvv-sld-ttv-idv-sgn</Droits_GestUser>
+

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Biogest
+Icon=/home/medintux/Documents/medintux-amd64/Icones/biogest.png
+Path=/home/medintux/Documents/medintux-amd64/Programmes/biogest/bin
+Exec=/home/medintux/Documents/medintux-amd64/Programmes/biogest/bin/biogest
+StartupNotify=false
+StartupWMClass=ClassBiogest
+OnlyShowIn=Unity;
+X-UnityGenerated=true
+Name[fr_FR]=Résultats_Biologiques
+
+
+
+

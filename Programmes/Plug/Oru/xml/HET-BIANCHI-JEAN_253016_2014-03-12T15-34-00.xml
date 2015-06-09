@@ -1,0 +1,31 @@
+     <passage>
+         <entree>2014-03-12 15:34:00</entree>
+         <sortie>2014-03-13 14:34:00</sortie>
+         <ilp_c>253016</ilp_c>
+         <idpass_c>1117950</idpass_c>
+         <uf>URGE</uf>
+         <is_uhcd>1</is_uhcd>
+         <dt_naissance>1927-07-31</dt_naissance>
+         <sexe>M</sexe>
+         <med_traitant></med_traitant>
+         <date_examen>2014-03-12 17:54:00</date_examen>
+         <date_uhcd>2014-03-12 :00</date_uhcd>
+         <mode_admission>5</mode_admission>
+         <transport_admission>AMBU</transport_admission>
+         <medecin_urgentiste>6BE6AE4A-577E-3E4C-8C18-EEB2D55D6CDF</medecin_urgentiste>
+         <salle_exam>Lit 3</salle_exam>
+         <categorie_recours>Consultation médicale</categorie_recours>
+         <motif_recours>altération de l'état général</motif_recours>
+         <code_recours>R53</code_recours>
+         <ccmu>3</ccmu>
+         <dest_souhaitee></dest_souhaitee>
+         <dest_attendue></dest_attendue>
+         <ide>LUNE00</ide>
+         <moyen_transport>ambulance privée</moyen_transport>
+         <motif_transfert>Carence de lit</motif_transfert>
+         <type_dest>T</type_dest>
+         <actes></actes>
+         <diags><diag is_ppal="1">R53</diag><diag is_ppal="0">C61</diag></diags>
+         <is_evenement></is_evenement>
+         <lib_evenement></lib_evenement>
+     </passage>

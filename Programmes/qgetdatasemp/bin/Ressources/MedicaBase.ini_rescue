@@ -1,0 +1,16 @@
+[Connexion]    
+ Parametres MedicaBase = QMYSQL3 , MedicaTuxTest , root ,  , localhost , 3306   
+  Parametres SrceBase = QMYSQL3 , DatasempTest , root ,  , localhost , 3306   
+  Parametres Get_Base = QMYSQL3 , BaseGetTest , root ,  , localhost , 3306   
+  InUseBase = Parametres MedicaBase , noMedicaBase
+[GeneralConfig]     
+    Nb_Max_List = 2000 
+
+
+
+
+
+
+
+
+

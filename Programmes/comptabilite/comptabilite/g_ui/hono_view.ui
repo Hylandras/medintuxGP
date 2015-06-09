@@ -1,0 +1,358 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Hono_View</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Hono_View</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>652</width>
+            <height>616</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Gestion des honoraires</string>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>11</y>
+                <width>578</width>
+                <height>17</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&lt;p align="center"&gt;&lt;b&gt;Gestion des honoraires&lt;/b&gt;&lt;/p&gt;</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>but_Validation</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>372</x>
+                <y>226</y>
+                <width>108</width>
+                <height>23</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Valider les honoraires</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>but_Ajouter</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>486</x>
+                <y>226</y>
+                <width>103</width>
+                <height>23</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Ajouter un honoraire</string>
+        </property>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>spacer3</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>355</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>227</y>
+                <width>355</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <spacer>
+        <property name="name">
+            <cstring>spacer1</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>23</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>12</x>
+                <y>117</y>
+                <width>23</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <spacer>
+        <property name="name">
+            <cstring>spacer2</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>23</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>565</x>
+                <y>117</y>
+                <width>23</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QTable">
+        <column>
+            <property name="text">
+                <string>Patient</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>Actes</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>Date</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>Esp</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>Chq</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>CB</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>Autre</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>DAF</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>CMU</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>Vir</string>
+            </property>
+        </column>
+        <column>
+            <property name="text">
+                <string>10</string>
+            </property>
+        </column>
+        <property name="name">
+            <cstring>m_QTable_Hono</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>35</y>
+                <width>600</width>
+                <height>184</height>
+            </rect>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>600</width>
+                <height>32767</height>
+            </size>
+        </property>
+        <property name="resizePolicy">
+            <enum>Default</enum>
+        </property>
+        <property name="vScrollBarMode">
+            <enum>Auto</enum>
+        </property>
+        <property name="dragAutoScroll">
+            <bool>false</bool>
+        </property>
+        <property name="numRows">
+            <number>0</number>
+        </property>
+        <property name="numCols">
+            <number>11</number>
+        </property>
+        <property name="readOnly">
+            <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+            <enum>SingleRow</enum>
+        </property>
+    </widget>
+    <spacer>
+        <property name="name">
+            <cstring>spacer4</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Horizontal</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>469</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>587</y>
+                <width>469</width>
+                <height>20</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>but_ImprimeSynthese</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>486</x>
+                <y>586</y>
+                <width>103</width>
+                <height>23</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Imprimer la synthèse</string>
+        </property>
+    </widget>
+    <widget class="QTextEdit">
+        <property name="name">
+            <cstring>m_QText_Synthese</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>255</y>
+                <width>600</width>
+                <height>320</height>
+            </rect>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>m_QTable_Hono</sender>
+        <signal>contextMenuRequested(int,int,const QPoint&amp;)</signal>
+        <receiver>Hono_View</receiver>
+        <slot>m_QTable_Hono_contextMenuRequested(int,int,const QPoint&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>but_Ajouter</sender>
+        <signal>clicked()</signal>
+        <receiver>Hono_View</receiver>
+        <slot>but_Ajouter_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>but_ImprimeSynthese</sender>
+        <signal>clicked()</signal>
+        <receiver>Hono_View</receiver>
+        <slot>but_ImprimeSynthese_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>but_Validation</sender>
+        <signal>clicked()</signal>
+        <receiver>Hono_View</receiver>
+        <slot>but_Validation_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">qpopupmenu.h</include>
+    <include location="local" impldecl="in declaration">../Listes.h</include>
+    <include location="local" impldecl="in declaration">../ComptaMoteurBase.h</include>
+    <include location="local" impldecl="in declaration">FormPlugins.h</include>
+    <include location="local" impldecl="in declaration">../Tools.h</include>
+    <include location="global" impldecl="in declaration">qpainter.h</include>
+    <include location="global" impldecl="in declaration">qprinter.h</include>
+    <include location="global" impldecl="in declaration">qsimplerichtext.h</include>
+    <include location="global" impldecl="in declaration">qlineedit.h</include>
+    <include location="global" impldecl="in declaration">qgroupbox.h</include>
+    <include location="local" impldecl="in declaration">hono_visualisation.h</include>
+    <include location="local" impldecl="in implementation">hono_view.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">HONO_LISTE* m_Hono_Liste;</variable>
+    <variable access="public">Utilisateurs* m_pUtilisateurActuel;</variable>
+    <variable access="public">bool m_Verbose;</variable>
+    <variable access="public">ComptaMoteurBase* m_pComptaMoteurBase;</variable>
+    <variable access="public">QPopupMenu* m_Popup;</variable>
+    <variable access="public">ACTES_LISTE* m_pActesListe;</variable>
+</variables>
+<slots>
+    <slot>setParams( ComptaMoteurBase * pComptaMoteurBase, Utilisateurs * pUtilisateurActuel, bool verbose )</slot>
+    <slot>m_QTable_Hono_contextMenuRequested( int, int, const QPoint &amp; p )</slot>
+    <slot>but_Ajouter_clicked()</slot>
+    <slot>but_ImprimeSynthese_clicked()</slot>
+    <slot>setTableDesHonorairesTo( HONO_LISTE * hl )</slot>
+    <slot>changeTableFilter()</slot>
+    <slot>honoValide()</slot>
+    <slot>honoView()</slot>
+    <slot>honoModif()</slot>
+    <slot>honoDelete()</slot>
+    <slot>but_Validation_clicked()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function returnType="bool">afficheSynthese()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

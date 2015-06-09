@@ -1,0 +1,342 @@
+body {
+      margin:0;
+      color: #000000;
+      font-size: 12px;
+      font-family:arial, sans serif;
+background-color:#999;
+      }
+			
+a {
+  color: #2121EF; text-decoration:underline;
+}
+a:hover {
+  color:#000000; text-decoration: none;
+}
+			
+.menu {	
+  padding:3px; width:85px; text-align:center; font-weight:bold;
+  }
+
+h1 {
+color:#fff; 
+background:#999; 
+display:block; 
+text-align:center; 
+margin:0; 
+padding:5px;
+border-bottom:1px solid #fff;
+}	
+						
+.bandeau {			
+			background:#ffffff;
+			text-align:center;
+			font-size:10px;
+			padding: 5px;
+			border-bottom:1px solid #666699;
+			}
+			
+.contenu {			
+			padding:0px;
+			}
+.contenu h2 {
+			color: #3333dd;
+			font-style:italic;
+			font-weight:bold;
+			text-decoration:underline;
+			}
+			
+.contenu .centre {			
+			margin:0px;
+			background:#fefefe;
+			line-height:2;
+			font-size:14px;
+			padding:4px 8px 4px 8px;
+			}						
+
+.ligne-grise {
+	background:#dcdcdc;
+	padding:3px 2px 3px 10px;
+	margin: 4px 0;
+	}
+.ligne-blanche {
+	padding:3px 2px 3px 10px;
+	margin: 4px 0;
+	}
+
+label {
+	font-weight:bold;
+}	
+.centrage {text-align: center;}
+
+.footer {			
+        text-align:center;
+        color:#000000;
+        font-size:11px;
+        border-top:1px solid #fff;
+        padding:5px;
+        background: #999;
+        margin:0;
+        }
+tr:hover {
+        background-color:#F0F0F0;
+        }
+        
+ p.info {
+   position: relative;
+   color: black;
+   text-decoration: none;
+   border-bottom: 1px gray dotted; /* On souligne le texte. */
+}
+p.info span {
+   display: none; /* On masque l'infobulle. */
+}
+p.info:hover {
+   background: none; /* Correction d'un bug d'Internet Explorer. */
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+
+   cursor: help; /* On change le curseur par défaut par un curseur d'aide. */
+}
+p.info:hover span {
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 30px; /* On positionne notre infobulle. */
+   left: 20px;
+
+   background: white;
+
+   color: green;
+   padding: 3px;
+
+   border: 1px solid green;
+   border-left: 4px solid green;
+}
+       
+	/*********************************************************
+	**********************************************************
+		Menus
+	**********************************************************
+	*********************************************************/
+
+	#menu
+	{
+		width: 100%;
+		height: 40px;
+		font-size: 90%;
+		font-weight:bold;
+	}
+	
+	#menu ul ul
+	{
+		display: none;
+		position: absolute;
+		margin:0px;
+		padding: 0px;
+		border: 2px solid #be0d0f;
+		width: 140px;
+	}
+	
+	#menu li.li1
+	{
+		display: block;
+		float: left;
+		list-style-type: none;
+		/*position: relative;*/
+		width: 125px;
+		/*background-color: green;*/
+		padding: 2px;
+		margin: 0px;
+		font-size: 16px;
+		text-align:center;
+		color: #005692;
+	}
+	
+	#menu li:hover, #menu li.sfhover
+	{
+		/*background-color: yellow;*/
+		list-style-type: none;
+	}
+	
+	#menu li a
+	{
+		text-decoration:none;
+		list-style-type: none;
+		/*background-color: red;*/
+	}
+	
+	#menu li:hover ul.niveau2, #menu li li:hover ul.niveau3, #menu li.sfhover ul.niveau2, #menu li li.sfhover ul.niveau3
+	{
+		display: block;
+		width: 170px;
+		margin: 2px;
+		list-style-type: none;
+		background-color: white;
+		font-size: 15px;
+		text-align:left;
+		padding: 0px 15px 15px 20px;
+	}
+	
+	/*********************************************************
+	**********************************************************
+		Fin menus
+	**********************************************************
+	*********************************************************/
+
+/**********************************************************/
+	/*  Apport style css Yanick Morza   */
+/**********************************************************/
+
+fieldset {
+margin-top:1em;
+margin-left:auto;
+margin-right:auto;
+border-radius:4px 4px 0 0;
+-moz-border-radius:4px 4px 0 0;
+-webkit-border-radius:4px 4px 0 0;
+padding:5px;
+border:#aaa solid 1px;
+padding:1.5em;
+background:#eee;
+text-shadow:0 1px 0 #fff;
+-moz-box-shadow: 1px 1px 2px #fff inset;
+-webkit-box-shadow: 1px 1px 2px #fff inset;
+box-shadow: 1px 1px 2px #fff inset;
+width: 350px;
+}
+
+fieldset fieldset {
+margin:0.8em;
+background:#fff;
+border:1px solid #aaa;
+background:none repeat scroll 0 0 #E8E8E8;
+}
+
+fieldset legend {
+font-weight:bold;
+color:#444;
+padding:5px 10px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+border:1px solid #aaa;
+background-color:#fff;
+-moz-box-shadow:3px 3px 15px #bbb;
+-webkit-box-shadow:3px 3px 15px #bbb;
+box-shadow:3px 3px 15px #bbb;
+}
+form {
+padding:0;
+margin:0;
+display:inline;
+}
+input[type=text] {
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+box-shadow:0 1px 2px #ddd;
+-moz-box-shadow:0 1px 2px #ddd;
+-webkit-box-shadow:0 1px 2px #ddd;
+background:url(../img/input_bg.gif);
+border:1px solid #aaa;
+color:#555555;
+padding:4px;
+margin:6px;
+}
+input[type=password] {
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+box-shadow:0 1px 2px #ddd;
+-moz-box-shadow:0 1px 2px #ddd;
+-webkit-box-shadow:0 1px 2px #ddd;
+background:url(../img/input_bg.gif);
+border:1px solid #aaa;
+color:#555555;
+padding:4px;
+margin:6px;
+}
+input[type=submit] {
+font-weight:bold;
+margin-left:14px;
+border: 1px solid #aaa;
+padding: 3px 7px;
+color: #111;
+text-decoration: none;
+background: #ddd;
+border-radius: 12px;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+text-shadow: 0px 1px 0px #fff;
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
+background: -moz-linear-gradient(top,  #ffffff,  #cccccc);
+background: -o-linear-gradient(top,  #ffffff,  #cccccc);  
+}
+input[type=submit]:hover {
+position: relative;
+background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#dddddd));
+background: -moz-linear-gradient(top,  #cccccc,  #dddddd);
+background: -o-linear-gradient(top,  #cccccc,  #dddddd);
+cursor:pointer;
+}
+input, select, textarea {
+font-size: 1em;
+}
+.succes {
+position: absolute;
+margin: 20% 30%;
+width: 500px; 
+background-color: #ebf8a4;
+background-image: url(../img/s_success.png);
+background-repeat:  no-repeat;
+background-position: 99% 44%;
+text-align:justify;
+border: 1px solid #aaa;
+color: #000000;
+padding: 20px 20px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+-moz-box-shadow: 0 1px 1px #fff inset;
+-webkit-box-shadow: 0 1px 1px #fff inset;
+box-shadow:  0 1px 1px #fff inset;
+}
+.erreur {
+position: absolute;
+margin: 20% 30%;
+width: 500px;
+background-color: pink;
+background-image: url(../img/s_error.png);
+background-repeat:  no-repeat;
+background-position: 99% 44%;
+text-align:justify;
+border: 1px solid #aaa;
+color: #000000;
+padding: 20px 20px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+-moz-box-shadow: 0 1px 1px #fff inset;
+-webkit-box-shadow: 0 1px 1px #fff inset;
+box-shadow:  0 1px 1px #fff inset;
+}
+.notice {
+position: absolute;
+margin: 20% 30%;
+width: 500px;
+background-color: #ffdc7e;
+border: 1px solid #aaa;
+background-image: url(../img/s_notice.png);
+background-repeat:  no-repeat;
+background-position: 99% 44%;
+text-align:justify;
+color: #000000;
+padding: 20px 20px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+-moz-box-shadow: 0 1px 1px #fff inset;
+-webkit-box-shadow: 0 1px 1px #fff inset;
+box-shadow:  0 1px 1px #fff inset;
+}	

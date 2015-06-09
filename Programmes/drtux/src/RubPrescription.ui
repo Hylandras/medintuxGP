@@ -1,0 +1,389 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>FormRubPrescription</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FormRubPrescription</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>749</width>
+            <height>32</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>32</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>74</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>InvisibleStringFormPrescription</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>textLabel_NbRub</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>22</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>22</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Modifier la date et l'intitulé du document</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>comboBox_RubName</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>100</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                        </font>
+                    </property>
+                    <property name="sizeLimit">
+                        <number>20</number>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonRubDateChange</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>22</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Modifier la date et l'intitulé du document</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>50</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>vu par :</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel_UserName</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>115</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                        </font>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="text">
+                        <string>Utilisateur</string>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>false</bool>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonSave</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>35</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Enregistrer tout le dossier</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonPrint</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>35</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Imprimer cette fenêtre</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonDelete</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>35</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Placer le document en cours comme document à effacer (ne sera effacé qu'après enregistrement)</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonPlus</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>35</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Actions diverses avec cette prescription</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonVidal</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>35</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Modifier cette ordonnance avec l'assistant d'aide à la prescription</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="322">89504e470d0a1a0a0000000d494844520000000b0000000b0806000000a9ac7726000001094944415418958d91bf4a034110c6bf596f6517ab2b02012d2ea4b4ce0b1c4752e6117c012b5f405fc0602bc4b748912224416411fbd85a18924630c5e5e42e9b1b8bf3f436d7f8838119be6f60fe90310625dceff37ebb050008a520462342055126b6d76371f2011524504102cfff848d22ae996db7cbc7cd18cd0b4667017416c0e92543b5beb00bc3bf8627dfe7e716f1db3598d98df75bf0cb39f1a3d66c8c81d8c73184660437a8717605c806234f5377e6ff2084d6c853c2f2ae2eae8780dd1048cac27c341e53b652580f09cb41c5f800acee09c9ab849ccd0800a8bcf32e0c59b753c846b1bcddfc18e7f3df5b53f529368a38cfb242f03cc8e9d4798ae7149389231ef20d52bd6d87174859ca0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>pushButtonSave</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubPrescription</receiver>
+        <slot>pushButtonSave_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonDelete</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubPrescription</receiver>
+        <slot>pushButtonDelete_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonVidal</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubPrescription</receiver>
+        <slot>pushButtonVidal_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonRubDateChange</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubPrescription</receiver>
+        <slot>pushButtonRubDateChange_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonPlus</sender>
+        <signal>clicked()</signal>
+        <receiver>FormRubPrescription</receiver>
+        <slot>pushButtonPlus_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>comboBox_RubName</sender>
+        <signal>highlighted(int)</signal>
+        <receiver>FormRubPrescription</receiver>
+        <slot>comboBox_RubName_highlighted(int)</slot>
+    </connection>
+    <connection>
+        <sender>comboBox_RubName</sender>
+        <signal>activated(int)</signal>
+        <receiver>FormRubPrescription</receiver>
+        <slot>comboBox_RubName_activated(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>comboBox_RubName</tabstop>
+    <tabstop>pushButtonRubDateChange</tabstop>
+    <tabstop>pushButtonSave</tabstop>
+    <tabstop>pushButtonPrint</tabstop>
+    <tabstop>pushButtonDelete</tabstop>
+    <tabstop>pushButtonVidal</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">qsqldatabase.h</include>
+    <include location="local" impldecl="in declaration">CMoteur_Base.h</include>
+    <include location="local" impldecl="in declaration">MyEditText.h</include>
+    <include location="global" impldecl="in declaration">qimage.h</include>
+    <include location="local" impldecl="in declaration">Global.h</include>
+    <include location="local" impldecl="in declaration">CMDI_Terrain.h</include>
+    <include location="global" impldecl="in declaration">qpopupmenu.h</include>
+    <include location="local" impldecl="in implementation">DlgDateNom.h</include>
+    <include location="local" impldecl="in implementation">../../MedinTuxTools/CHtmlTools.h</include>
+    <include location="local" impldecl="in implementation">Dlg_MedicaTux.h</include>
+    <include location="local" impldecl="in implementation">../../MedinTuxTools/CPrtQListBoxItem.h</include>
+    <include location="local" impldecl="in implementation">RubPrescription.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">int m_IsModifiable;</variable>
+    <variable access="public">QString m_DossPrenom;</variable>
+    <variable access="public">QString m_ID_Doss;</variable>
+    <variable access="public">QString m_NumGUID;</variable>
+    <variable access="public">CMoteurBase* m_pCMoteurBase;</variable>
+    <variable access="public">QString m_DossNom;</variable>
+    <variable access="public">MyEditText* m_pMyEditText;</variable>
+    <variable access="public">RUBREC_LIST *m_pRubList;</variable>
+    <variable access="public">int m_LastRub;</variable>
+    <variable access="public">QString m_User;</variable>
+    <variable access="public">QString m_CurrentPopupItem;</variable>
+    <variable access="public">QString m_RetPopupItem;</variable>
+    <variable access="public">QPopupMenu *m_pQPopupMenu;</variable>
+    <variable>bool m_IsBaseMedEnabled;</variable>
+</variables>
+<signals>
+    <signal>Sign_SaveButtonClicked()</signal>
+    <signal>Sign_RubChanged(RUBREC_LIST::iterator)</signal>
+    <signal>Sign_DuplicateData(RUBREC_LIST::iterator, QDateTime &amp;, const QString&amp;, const QString&amp;)</signal>
+    <signal>Sign_PutPrescriptionInTerrain(RUBREC_LIST::iterator)</signal>
+    <signal>Sign_Renouveler_TTT_Fond()</signal>
+    <signal>Sign_CreateAllCurrentsTTT()</signal>
+</signals>
+<slots>
+    <slot>pushButtonPlus_clicked()</slot>
+    <slot>On_buttonDragClicked()</slot>
+    <slot>pushButtonByPrincipe_clicked()</slot>
+    <slot>listView_Produits_rightButtonClicked( QListViewItem *, const QPoint &amp;, int )</slot>
+    <slot>OnMenuActivated( int id )</slot>
+    <slot>GetPopupItem()</slot>
+    <slot>SetModifiableState( int state )</slot>
+    <slot>InitText( MyEditText * pMyEditText )</slot>
+    <slot>FormPatientList_destroyed( QObject * )</slot>
+    <slot returnType="int">SetData()</slot>
+    <slot>comboBox_RubName_highlighted( int item )</slot>
+    <slot>comboBox_RubName_activated( int item )</slot>
+    <slot>PutDataInRubList( RUBREC_LIST::iterator it )</slot>
+    <slot>pushButtonDelete_clicked()</slot>
+    <slot>pushButtonSave_clicked()</slot>
+    <slot>Slot_LapExited()</slot>
+    <slot>pushButtonVidal_clicked()</slot>
+    <slot>pushButtonRubDateChange_clicked()</slot>
+    <slot>SetRubDateName( const QString &amp; name, const QString &amp; date )</slot>
+    <slot>SaveTextInRubList()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function returnType="QString">DoPopupList( QStringList &amp; list )</function>
+    <function returnType="long">initComboListOrdo( void )</function>
+    <function returnType="int">IfModified_SaveInRubList()</function>
+    <function returnType="int">Current_RubList_ID()</function>
+    <function returnType="RUBREC_LIST::iterator">Current_RubList_Iterator()</function>
+    <function returnType="int">SetCurentDocByPrimkey( const QString &amp; primKey )</function>
+    <function returnType="int">GetCurrentOrdoList( QPL_CPosologie &amp; ordo_List )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

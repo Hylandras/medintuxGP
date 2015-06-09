@@ -1,0 +1,401 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Filtre_Hono</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Filtre_Hono</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>250</width>
+            <height>250</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>7</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>250</width>
+            <height>250</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>250</width>
+            <height>400</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>250</width>
+            <height>250</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Filtre_Hono</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="2" column="1">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;au&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="1" column="2">
+            <item>
+                <property name="text">
+                    <string>2006</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>2007</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>2008</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>aCBox</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>textLabel8</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Filtrer la période&lt;/b&gt;</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="1" column="0" rowspan="1" colspan="2">
+            <item>
+                <property name="text">
+                    <string>Janvier</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Février</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Mars</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Avril</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Mai</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Juin</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Juillet</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Août</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Septembre</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Octobre</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Novembre</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Décembre</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>mCBox</cstring>
+            </property>
+            <property name="sizeLimit">
+                <number>12</number>
+            </property>
+            <property name="maxCount">
+                <number>12</number>
+            </property>
+            <property name="insertionPolicy">
+                <enum>NoInsertion</enum>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>textLabel8_2</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Filtrer les honoraires&lt;/b&gt;</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="6" column="0" rowspan="1" colspan="3">
+            <item>
+                <property name="text">
+                    <string>Tous</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>encaissés</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>non encaissés</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>validés</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>non validés</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>cmbTypeHono2</cstring>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="3" column="0" rowspan="1" colspan="3">
+            <item>
+                <property name="text">
+                    <string>Honoraires du jour</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Honoraires de la veille</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Honoraires de la semaine</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Année entière</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Période</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>pre_CBox</cstring>
+            </property>
+        </widget>
+        <widget class="QDateEdit" row="2" column="2">
+            <property name="name">
+                <cstring>periode2</cstring>
+            </property>
+            <property name="date">
+                <date>
+                    <year>2935093</year>
+                    <month>2</month>
+                    <day>28</day>
+                </date>
+            </property>
+            <property name="minValue">
+                <date>
+                    <year>2006</year>
+                    <month>1</month>
+                    <day>1</day>
+                </date>
+            </property>
+        </widget>
+        <widget class="QDateEdit" row="2" column="0">
+            <property name="name">
+                <cstring>periode1</cstring>
+            </property>
+            <property name="minValue">
+                <date>
+                    <year>2006</year>
+                    <month>1</month>
+                    <day>1</day>
+                </date>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="5" column="0" rowspan="1" colspan="3">
+            <item>
+                <property name="text">
+                    <string>Espèces</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Chèques</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>CB</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Autres</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>DAF</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>CMU</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Virements</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Tous</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>cmbTypeHono</cstring>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="7" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>cmbTypeActe</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>mCBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>combo_mois_annee_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>aCBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>combo_mois_annee_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>pre_CBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>pre_CBox_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>periode1</sender>
+        <signal>valueChanged(const QDate&amp;)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>periode1_valueChanged(const QDate&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>periode2</sender>
+        <signal>valueChanged(const QDate&amp;)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>periode1_valueChanged(const QDate&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>cmbTypeHono</sender>
+        <signal>activated(int)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>cmbTypeHono_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>cmbTypeHono2</sender>
+        <signal>activated(int)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>cmbTypeHono2_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>cmbTypeActe</sender>
+        <signal>activated(int)</signal>
+        <receiver>Filtre_Hono</receiver>
+        <slot>cmbTypeActe_activated(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>mCBox</tabstop>
+    <tabstop>aCBox</tabstop>
+    <tabstop>periode1</tabstop>
+    <tabstop>periode2</tabstop>
+    <tabstop>pre_CBox</tabstop>
+    <tabstop>cmbTypeHono</tabstop>
+    <tabstop>cmbTypeHono2</tabstop>
+    <tabstop>cmbTypeActe</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in declaration">../ComptaMoteurBase.h</include>
+    <include location="global" impldecl="in declaration">qdatetime.h</include>
+    <include location="global" impldecl="in declaration">qmessagebox.h</include>
+    <include location="global" impldecl="in declaration">qstringlist.h</include>
+    <include location="local" impldecl="in declaration">../Listes.h</include>
+    <include location="local" impldecl="in implementation">filtre_hono.ui.h</include>
+</includes>
+<variables>
+    <variable access="private">ComptaMoteurBase* m_pComptaMoteurBase;</variable>
+    <variable access="private">QStringList* typesActes;</variable>
+    <variable access="private">ACTES_LISTE* m_pActeListe;</variable>
+</variables>
+<signals>
+    <signal>sign_Filtre_Changed( )</signal>
+</signals>
+<slots>
+    <slot>setParams( ComptaMoteurBase * pComptaMoteurBase )</slot>
+    <slot>slot_ActesListeModif()</slot>
+    <slot>findTypes()</slot>
+    <slot>combo_mois_annee_activated( int )</slot>
+    <slot>pre_CBox_activated( int id )</slot>
+    <slot>periode1_valueChanged( const QDate &amp; )</slot>
+    <slot>cmbTypeHono_activated( int )</slot>
+    <slot>cmbTypeHono2_activated( int id )</slot>
+    <slot>cmbTypeActe_activated( int id )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

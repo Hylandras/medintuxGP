@@ -1,0 +1,2734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1016</width>
+    <height>652</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_d">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter_g">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="C_QToolBox" name="toolBox_classifications">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <property name="tabSpacing">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_ATC">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>98</width>
+           <height>79</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Classification ATC</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTreeWidget" name="treeWidget_ATC">
+            <column>
+             <property name="text">
+              <string>Libellé                                                                                     .</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Code ATC</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_Indications">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>121</width>
+           <height>566</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Indications</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_17">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="5" column="0" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_Indications">
+            <property name="toolTip">
+             <string>Zonne de recherche d'une indication.</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0" colspan="2">
+           <widget class="QTreeWidget" name="treeWidget_Indications">
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <column>
+             <property name="text">
+              <string>Indication</string>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cette colonne liste les indications&lt;br/&gt;liées à un médicament sélectionné&lt;br/&gt;dans la liste des médicaments.&lt;/p&gt;&lt;p&gt;Il est aussi possible de rechercher&lt;br/&gt;une indication avec la zone de saisie&lt;br/&gt;texte située ci-dessus.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ASMR / SMR / REMB</string>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Informations concernant&lt;/span&gt; :&lt;br/&gt;le &lt;span style=&quot; font-weight:600;&quot;&gt;SMR&lt;/span&gt; (service médical rendu) ,&lt;br/&gt;l'&lt;span style=&quot; font-weight:600;&quot;&gt;ASMR&lt;/span&gt; (l'ajout de servive médical rendu), &lt;br/&gt;le &lt;span style=&quot; font-weight:600;&quot;&gt;remboursement&lt;/span&gt; spécifiquement lié à cette indication. &lt;br/&gt;Cliquez sur cette colonne, d'un item, pour informations détaillées.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>comment</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Code</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Remb</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>cip</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_Composition">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>98</width>
+           <height>79</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Composition</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_31">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTreeWidget" name="treeWidget_Composition">
+            <column>
+             <property name="text">
+              <string>Prinee actif                                                                          .</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>dosage</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>unité</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="C_QToolBox" name="toolBox_ListesProduits">
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <property name="tabSpacing">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_Produits">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>236</width>
+           <height>213</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Produits</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="checkBox_Nom_filter">
+              <property name="text">
+               <string>Nom</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QCheckBox" name="checkBox_Dci_filter">
+              <property name="text">
+               <string>Dci 1 </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="checkBox_Dc3_filter">
+              <property name="text">
+               <string>Dci 2+3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="checkBox_Ucd_filter">
+              <property name="text">
+               <string>Tri par prix</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QCheckBox" name="checkBox_Atc_filter">
+              <property name="text">
+               <string>ATC</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QCheckBox" name="checkBox_Vil_filter">
+              <property name="text">
+               <string>ville</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="checkBox_Gen_filter">
+              <property name="text">
+               <string>Gén.</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QCheckBox" name="checkBox_Cip_filter">
+              <property name="text">
+               <string>CIP</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QCheckBox" name="checkBox_Hop_filter">
+              <property name="text">
+               <string>hop</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="C_QLineEdit" name="lineEdit_DrugsSearch"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="C_DragQTreeWidget" name="treeWidget_Produits">
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <attribute name="headerCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Libelle</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 3</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Prix</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ATC</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIP</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIS</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Origine</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Type ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>SpecKey</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Generique</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>statut</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>nb_UP</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLineEdit" name="label_ListMedoc">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_CustomList">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>121</width>
+           <height>155</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Listes Personnalisées</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_14">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>3</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>16</number>
+          </property>
+          <item row="0" column="4">
+           <layout class="QGridLayout" name="gridLayout_32">
+            <property name="horizontalSpacing">
+             <number>-1</number>
+            </property>
+            <item row="0" column="0" colspan="3">
+             <widget class="QComboBox" name="comboBox_customList"/>
+            </item>
+            <item row="1" column="0" colspan="4">
+             <widget class="C_QLineEdit" name="lineEdit_CustomSearch"/>
+            </item>
+            <item row="2" column="0" colspan="4">
+             <widget class="C_DragQTreeWidget" name="treeWidget_CustomDrugsList">
+              <property name="contextMenuPolicy">
+               <enum>Qt::CustomContextMenu</enum>
+              </property>
+              <property name="dragEnabled">
+               <bool>false</bool>
+              </property>
+              <property name="dragDropOverwriteMode">
+               <bool>false</bool>
+              </property>
+              <property name="dragDropMode">
+               <enum>QAbstractItemView::NoDragDrop</enum>
+              </property>
+              <property name="rootIsDecorated">
+               <bool>false</bool>
+              </property>
+              <attribute name="headerCascadingSectionResizes">
+               <bool>true</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Libelle                                    </string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Dci 1</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Dci 2</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Dci 3</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Prix</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ATC</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>CIP</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>CIS</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Origine</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Type ID</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>SpecKey</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Generique</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>statut</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>nb_UP</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QPushButton" name="pushButton_CustomListMenu">
+              <property name="minimumSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_Accessoires">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>190</width>
+           <height>524</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Accessoires</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QComboBox" name="comboBox_FamillesProduits">
+            <item>
+             <property name="text">
+              <string>Diététique</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Vétérinaire</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Parapharmacie</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Accessoires</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>DIvers (Herboristerie etc.)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Homéopathie BOIRON</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Homéopathie WELEDA</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Homéopathie LEHNING</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="C_DragQTreeWidget" name="treeWidget_Accessoires">
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+            <attribute name="headerCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Libelle                                    </string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 3</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Prix</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ATC</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIP</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIS</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Origine</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Type ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>SpecKey</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Generique</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>statut</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>nb_UP</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="C_QLineEdit" name="lineEdit_AccessoiresSearch"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_Favoris">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>123</width>
+           <height>524</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Favoris</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="1" column="0">
+           <widget class="C_QLineEdit" name="lineEdit_FavorisSearch"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_menuFavoris">
+            <property name="minimumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="C_DragQTreeWidget" name="treeWidget_Favoris">
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="itemsExpandable">
+             <bool>false</bool>
+            </property>
+            <property name="expandsOnDoubleClick">
+             <bool>false</bool>
+            </property>
+            <attribute name="headerCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Libelle                                    </string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 3</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Prix</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ATC</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIP</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIS</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Origine</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Type ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>SpecKey</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Generique</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>statut</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>nb_UP</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_Historique">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>144</width>
+           <height>142</height>
+          </rect>
+         </property>
+         <attribute name="label">
+          <string>Historique patient</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0" colspan="2">
+           <widget class="C_QLineEdit" name="lineEdit_HistoriqueSearch"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_debListPatient">
+            <property name="text">
+             <string>Début</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_finListPatient">
+            <property name="text">
+             <string>Fin</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="C_DragQTreeWidget" name="treeWidget_PatientDrugs">
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+            <attribute name="headerCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Libelle                                    </string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Dci 3</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Prix</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ATC</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIP</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>CIS</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Origine</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Type ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>SpecKey</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Generique</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>statut</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>nb_UP</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="C_QTabWidget" name="tab_MainTabWidget">
+       <property name="currentIndex">
+        <number>4</number>
+       </property>
+       <property name="elideMode">
+        <enum>Qt::ElideRight</enum>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>true</bool>
+       </property>
+       <property name="documentMode">
+        <bool>true</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>true</bool>
+       </property>
+       <property name="movable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="tab_bibliographie">
+        <attribute name="title">
+         <string>Bibliographie</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_15">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0" colspan="2">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <widget class="QComboBox" name="comboBox_BiblioURL"/>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="pushButton_RetrySite">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Retry</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QPushButton" name="pushButton_UpdateCache">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Updater le cache</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_DefineLogin">
+             <property name="toolTip">
+              <string>Définir les identifiants pour ce site</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="pushButton_AllItems">
+             <property name="toolTip">
+              <string>Chercher pour tous les éléments de la liste</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QFrame" name="frameTool">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>2</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="pushButton_Print">
+              <property name="toolTip">
+               <string>Imprimer la page</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+P</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QPushButton" name="pushButton_Back">
+              <property name="toolTip">
+               <string>Reculer</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+Left</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QPushButton" name="pushButton_Reload">
+              <property name="toolTip">
+               <string>Recharger la page</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+G</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QPushButton" name="pushButton_Forward">
+              <property name="toolTip">
+               <string>Page suivante</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+Right</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="6">
+             <widget class="QPushButton" name="pushButton_Stop">
+              <property name="toolTip">
+               <string>Interrompre le chargement</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+H</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="7">
+             <widget class="QPushButton" name="pushButton_find">
+              <property name="toolTip">
+               <string>Aller à l'occurence suivante</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="pushButton_Home">
+              <property name="toolTip">
+               <string>Page de démarrage</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+Home</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="lineEdit_url">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_find">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QWebView" name="webView_Help">
+           <property name="url">
+            <url>
+             <string>about:blank</string>
+            </url>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Monographie">
+        <attribute name="title">
+         <string>Monographie</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QWebView" name="webView_HAS">
+           <property name="url">
+            <url>
+             <string>about:blank</string>
+            </url>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_ordonnance">
+        <attribute name="title">
+         <string>Ordonnance</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_16">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QTextEdit" name="textEdit_ordonnance"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Ident">
+        <attribute name="title">
+         <string>Contexte d'appel</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_36">
+         <item row="0" column="0" colspan="3">
+          <widget class="Line" name="line_3">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>3</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Patient</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <layout class="QGridLayout" name="gridLayout_20">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_Nom">
+               <property name="text">
+                <string>Nom</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Naissance</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_Nom_2">
+               <property name="text">
+                <string>Prénom</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_Nom">
+               <property name="text">
+                <string>àè</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_NomNaissance"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_Prenom">
+               <property name="text">
+                <string>âêîôûÂÊÎÔÛ</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="1" colspan="2">
+          <layout class="QGridLayout" name="gridLayout_24">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_22">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_DtNaiss">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;Date naiss : (jj/mm/aaaa)&lt;br/&gt;ou age : (aaa) (mm.jj)&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Poids</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="1">
+              <layout class="QGridLayout" name="gridLayout_21">
+               <item row="0" column="0">
+                <widget class="QLineEdit" name="lineEdit_DateNaissance"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="lineEdit_poids"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <layout class="QGridLayout" name="gridLayout_23">
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>sexe </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_sexe"/>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>Taille </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_taille"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0" colspan="3">
+          <widget class="QTreeWidget" name="treeWidget_ATCD">
+           <column>
+            <property name="text">
+             <string>Code</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Code type</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Libelle</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Statut</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Classe</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Commentaire</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Date début</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Date fin</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="3">
+          <widget class="Line" name="line_2">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>3</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="3">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Prescripteur</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="2">
+          <layout class="QGridLayout" name="gridLayout_25">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_Nom_3">
+               <property name="text">
+                <string>Nom praticien</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Prenom praticien</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_Nom_4">
+               <property name="text">
+                <string>Titre</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserNom"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserPrenom"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserTitre"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="2">
+          <layout class="QGridLayout" name="gridLayout_33">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_Nom_5">
+               <property name="text">
+                <string>RPPS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Clef RPPS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_Nom_6">
+               <property name="text">
+                <string>N° ordinal</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserRPPS"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserClefRPPS"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserNumOrdinal"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="7" column="0" colspan="2">
+          <layout class="QGridLayout" name="gridLayout_34">
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserAdresse"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserVille"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserCodePostal"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserEmail"/>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_Nom_7">
+               <property name="text">
+                <string>Adresse</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_Nom_8">
+               <property name="text">
+                <string>Ville</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Code postal</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Email</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="7" column="2">
+          <layout class="QGridLayout" name="gridLayout_35">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <widget class="QLabel" name="label_Nom_9">
+               <property name="text">
+                <string>Tél 1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Tel 2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_Nom_10">
+               <property name="text">
+                <string>Tel 3</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserTel1"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserTel2"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_UserTel3"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="8" column="0" colspan="3">
+          <widget class="QTextEdit" name="textEdit_changeLog">
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.Lucida Grande UI'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;table border=&quot;0&quot; style=&quot;-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;&quot;&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border: none;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt;====================================== Données du poste de travail =======================================&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;Adresse IP&lt;/span&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;{{IP_ADR}}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;Adresse mac&lt;/span&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;{{MAC_ADR}}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt; color:#000000;&quot;&gt;Adresse du fichier de configuration&lt;/span&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt; color:#000000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt; color:#000000;&quot;&gt;: {{PATH_INI}}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt;========================================================================================================== &lt;br /&gt;Modif RS Manager du 21-02-2013  Version 2.15.000&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt; text-decoration: underline;&quot;&gt;FONCTIONNALITES&lt;/span&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt; : &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'courier'; font-size:9pt;&quot;&gt;    ° Version béta non exploitable .			&lt;br /&gt;========================================================================================================== &lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Prescription">
+        <attribute name="title">
+         <string>Prescription</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_19">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_18">
+           <item row="0" column="11">
+            <widget class="QLineEdit" name="lineEdit_PrixTotal">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Prix total estimé des spécialités remboursées.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QToolButton" name="toolButton_non_Ald">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Tout mettre en ALD</string>
+             </property>
+             <property name="text">
+              <string>Non Ald</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QToolButton" name="toolButton_erase_All">
+             <property name="toolTip">
+              <string>Effacer toute l'ordonnance</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QToolButton" name="toolButton_zoomDw">
+             <property name="toolTip">
+              <string>Diminuer la hauteur des boîtes de prescription</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8">
+            <widget class="QToolButton" name="toolButton_Annuler">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Quitter et annuler toutes les modifications</string>
+             </property>
+             <property name="text">
+              <string>Annuler</string>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="12">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="9">
+            <widget class="QToolButton" name="toolButton_Ok">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Quitter et confirmer cette prescription</string>
+             </property>
+             <property name="text">
+              <string>Ok</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonFollowStyle</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>false</bool>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::NoArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QToolButton" name="toolButton_zoomUp">
+             <property name="toolTip">
+              <string>Augmenter la hauteur des boîtes de prescription</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+             <property name="autoRaise">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="10">
+            <widget class="QLabel" name="label_total">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string> Prix </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QToolButton" name="toolButton_Duration">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Durée</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QToolButton" name="toolButton_tout_Ald">
+             <property name="toolTip">
+              <string>Tout mettre en non ALD</string>
+             </property>
+             <property name="text">
+              <string>Tout Ald</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QToolButton" name="toolButton_dci">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QScrollArea" name="scrollArea_Prescription">
+           <property name="acceptDrops">
+            <bool>true</bool>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="widgetResizable">
+            <bool>false</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>572</width>
+              <height>468</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_Monitor">
+        <attribute name="title">
+         <string>Préférences</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="2" column="0">
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_logDel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>erase</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="text">
+              <string>Messages généraux de l'application</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="3">
+            <widget class="QTextEdit" name="textEdit_Monitor">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="WindowText">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>0</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Text">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>170</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>0</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="WindowText">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>0</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Text">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>170</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>0</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="WindowText">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>116</red>
+                   <green>116</green>
+                   <blue>116</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Text">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>116</red>
+                   <green>116</green>
+                   <blue>116</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="font">
+              <font>
+               <family>Courier</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Si choché, ce le contenu de cette fenêtre est enregistré daté à la fin d'une session.</string>
+             </property>
+             <property name="lineWrapMode">
+              <enum>QTextEdit::NoWrap</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox_logFile">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>tracer</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <widget class="QTabWidget" name="tabWidget_Config">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>150</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="tabShape">
+            <enum>QTabWidget::Rounded</enum>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <property name="tabsClosable">
+            <bool>false</bool>
+           </property>
+           <widget class="QWidget" name="tab_Parametres">
+            <attribute name="title">
+             <string>Paramètres généraux</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_26">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_17">
+                 <property name="text">
+                  <string>Nombre maximum de produits à afficher dans une liste</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_15">
+                 <property name="text">
+                  <string>Durée par default d'une prescription en secondes :</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="lineEdit_DrugListLimit">
+                 <property name="text">
+                  <string>400</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1" colspan="2">
+                <widget class="QPushButton" name="pushButton_PosoEditorFontChoice">
+                 <property name="text">
+                  <string>Police de caractères de l'éditeur de posologies</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1" colspan="2">
+                <widget class="QLineEdit" name="lineEdit_QSP_inSeconds">
+                 <property name="text">
+                  <string>691200</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1" colspan="2">
+                <widget class="QPushButton" name="pushButton_GeneralFontChoice">
+                 <property name="text">
+                  <string>Police de caractères générale</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QCheckBox" name="checkBox_MainMenu">
+                 <property name="text">
+                  <string>Afficher le menu général</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tabDbconfig">
+            <attribute name="title">
+             <string>Bases de données thérapeutiques</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_27">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>1</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>4</number>
+             </property>
+             <item row="3" column="0" colspan="5">
+              <widget class="QLabel" name="label_18">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>connexions favorites à appliquer aux paramètres ci-dessous</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" colspan="4">
+              <widget class="QComboBox" name="comboBox_choixBase"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Paramètres ci-dessous définis pour la base sélectionnée ci-contre : --&gt; </string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0" colspan="5">
+              <widget class="Line" name="line_4">
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <property name="lineWidth">
+                <number>3</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="5">
+              <widget class="Line" name="line">
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <property name="lineWidth">
+                <number>3</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" colspan="3">
+              <widget class="QComboBox" name="comboBox_ip_fav">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="QPushButton" name="pushButton_ip_fav_del">
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #6976f7, stop: 1 #FFFFFF);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0" colspan="5">
+              <layout class="QGridLayout" name="gridLayout_30">
+               <property name="horizontalSpacing">
+                <number>9</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>0</number>
+               </property>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_ip_scrutation">
+                 <property name="text">
+                  <string>scrutation time in seconds</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit_ip_scrutation_time"/>
+               </item>
+               <item row="1" column="2">
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEdit_resultsLimit"/>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>number results limit (0 for no limits)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QPushButton" name="pushButton_InitHitList">
+                 <property name="text">
+                  <string>Init. liste favoris</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QPushButton" name="pushButton_initDrugListe">
+                 <property name="text">
+                  <string>Init. liste produits</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QPushButton" name="pushButton_SQL_Load">
+                 <property name="text">
+                  <string>SQL Load</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_16">
+                 <property name="text">
+                  <string>Répertoire des images de la monographie :</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1" colspan="4">
+                <widget class="QLineEdit" name="lineEdit_pathImagesMonographie">
+                 <property name="text">
+                  <string>../../drtux/bin/Ressources/ImgVidalDgl</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="5">
+                <widget class="QPushButton" name="pushButton_FindMonoPath">
+                 <property name="minimumSize">
+                  <size>
+                   <width>22</width>
+                   <height>22</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>22</width>
+                   <height>22</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>...</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="4">
+              <widget class="QPushButton" name="pushButton_ip_fav_add">
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #6976f7, stop: 1 #FFFFFF);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0" colspan="5">
+              <layout class="QGridLayout" name="gridLayout_28">
+               <property name="horizontalSpacing">
+                <number>3</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>1</number>
+               </property>
+               <item row="0" column="6">
+                <widget class="QLineEdit" name="lineEdit_ip_login"/>
+               </item>
+               <item row="0" column="1" colspan="2">
+                <widget class="QLineEdit" name="lineEdit_ip_driver">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="7">
+                <widget class="QPushButton" name="pushButton_ip_connect">
+                 <property name="text">
+                  <string>Test connexion</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="5">
+                <widget class="QLabel" name="label_ip_login">
+                 <property name="text">
+                  <string>login</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_ip_driver">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>driver </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QLineEdit" name="lineEdit_ip_schema">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLabel" name="label_ip_shema">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>shema</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_ip_password">
+                 <property name="text">
+                  <string>password</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLabel" name="label_ip_hostname">
+                 <property name="text">
+                  <string>hostname</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QLineEdit" name="lineEdit_ip_hostname"/>
+               </item>
+               <item row="1" column="5">
+                <widget class="QLabel" name="label_ip_port">
+                 <property name="text">
+                  <string>port</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="6">
+                <widget class="QLineEdit" name="lineEdit_ip_port">
+                 <property name="echoMode">
+                  <enum>QLineEdit::Normal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="7">
+                <widget class="QPushButton" name="pushButton_ip_apply">
+                 <property name="text">
+                  <string>Apply to : </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" colspan="2">
+                <widget class="QLineEdit" name="lineEdit_ip_password">
+                 <property name="echoMode">
+                  <enum>QLineEdit::PasswordEchoOnEdit</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="checkBox_linkStdBase">
+               <property name="text">
+                <string>lier la base standard avec les autres</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+  <customwidget>
+   <class>C_QLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>../../../MedinTuxTools-QT4/C_QLineEdit/C_QLineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>C_DragQTreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>../../../MedinTuxTools-QT4/C_DragQTreeWidget/C_DragQTreeWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>C_QToolBox</class>
+   <extends>QToolBox</extends>
+   <header>../../../MedinTuxTools-QT4/C_QToolBox/C_QToolBox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>C_QTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>../../../MedinTuxTools-QT4/C_QTabWidget/C_QTabWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

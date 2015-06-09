@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Se mettre en root avec : su root
+
+# dossiers FSV à recopier + donner des droits
+mkdir /usr/local/galss
+mkdir /usr/local/galsssrv
+mkdir /usr/local/sesam
+
+chmod 777 /usr/local/galss
+chmod 777 /usr/local/galsssrv
+chmod 777 /usr/local/sesam
+
+# Copies en user normal
+cp -r galss/* /usr/local/galss
+cp -r sesam/* /usr/local/sesam
+
+# Pour assurer si copie en user root
+chmod 777 /usr/local/sesam/*
+chmod 777 /usr/local/sesam/etc/*
+chmod 777 /usr/local/sesam/srt/*
+chmod 777 /usr/local/galss/*
+
+# dépendences des API SV
+# Debian : ln -s /usr/lib/libssl.so.0.9.8 /usr/lib/libssl.so.4
+ln -s /lib/libssl.so.0.9.8b /usr/lib/libssl.so.4
+# Debian : ln -s /usr/lib/libstdc++-3-libc6.2-2-2.10.0.so /usr/lib/libstdc++-libc6.1-1.so.2
+cp libstdc++-3-libc6.2-2-2.10.0.so /usr/lib
+ln -s /usr/lib/libstdc++-3-libc6.2-2-2.10.0.so /usr/lib/libstdc++-libc6.1-1.so.2
+
+# Problèmes avec SELinux monté en "strict" (réalloc dans libjs.so...)
+#chcon -t textrel_shlib_t /usr/local/sesam/lib/*
+
+# Autoriser le port COM
+chmod 777 /dev/ttyS0

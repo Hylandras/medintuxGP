@@ -1,0 +1,3 @@
+# Etat de l'esclave de la base locale
+SHOW SLAVE STATUS \G
+

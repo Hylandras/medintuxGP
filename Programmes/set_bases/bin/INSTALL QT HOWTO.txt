@@ -1,0 +1,461 @@
+================================== XCode Version 4.6.1 Lion 10.8 ============================================
+Aller dans preference->Download et installer Command Line Tools sinon les
+binaires make gcc and cie ne seront pas disponibles.
+
+================================== Compilation MedinTux sous Lion 10.8 ======================================
+//................ mettre les bons droits pour medintux (acces mac et linux) ...............
+chown -R rolandsevin:staff medintux
+
+//.................. code QT modifie..................
+Fichier Qt/include/qglobal.h
+
+#if defined(Q_OS_MACX)
+#  ifdef MAC_OS_X_VERSION_MIN_REQUIRED
+#    undef MAC_OS_X_VERSION_MIN_REQUIRED
+#  endif
+#  define MAC_OS_X_VERSION_MIN_REQUIRED MAC_OS_X_VERSION_10_2
+#  include <AvailabilityMacros.h>
+#  if !defined(MAC_OS_X_VERSION_10_3)
+#     define MAC_OS_X_VERSION_10_3 MAC_OS_X_VERSION_10_2 + 1
+#  endif
+#  if !defined(MAC_OS_X_VERSION_10_4)
+#       define MAC_OS_X_VERSION_10_4 MAC_OS_X_VERSION_10_3 + 1
+#  endif
+#  if !defined(MAC_OS_X_VERSION_10_5)
+#       define MAC_OS_X_VERSION_10_5 MAC_OS_X_VERSION_10_4 + 1
+#  endif
+#  if !defined(MAC_OS_X_VERSION_10_6)
+#       define MAC_OS_X_VERSION_10_6 MAC_OS_X_VERSION_10_5 + 1
+#  endif
+
+#  if (!defined(MAC_OS_X_VERSION_10_7) && (MAC_OS_X_VERSION_MAX_ALLOWED > MAC_OS_X_VERSION_10_6))
+#    define MAC_OS_X_VERSION_10_7 MAC_OS_X_VERSION_10_6 + 1
+#  endif
+
+#  if (!defined(MAC_OS_X_VERSION_10_8) && (MAC_OS_X_VERSION_MAX_ALLOWED > MAC_OS_X_VERSION_10_7))
+#    define MAC_OS_X_VERSION_10_8 MAC_OS_X_VERSION_10_7 + 1
+#  endif
+
+#  if (MAC_OS_X_VERSION_MAX_ALLOWED > MAC_OS_X_VERSION_10_8)
+#    error "This version of Mac OS X is unsupported"
+#  endif
+#endif
+
+//.................. code modifie ..................
+/Programmes/SesamVitale-QT3/qtsingleapplication_mac.cpp Ligne 20
+
+// #include <qt_mac.h>           // ne fonctionne pas sous OQS 10.8       Lion
+#include <Carbon/Carbon.h>       // a remplacer par cela sous OQS 10.8    Lion
+
+
+//.................. code modifie ..................
+/Programmes/SesamVitale-QT3/qtsingleapplication.h   ligne 23
+
+#ifdef Q_WS_MAC
+      // #include <qt_mac.h>           // ne fonctionne pas sous OQS 10.8    Lion
+      #include <Carbon/Carbon.h>       // a remplacer par cela sous OQS 10.8    Lion
+
+#endif
+================================== Deverouiller des fichiers sur Mac :=====================================
+sudo chflags -R nouchg MedinTux-V2.10-Mac-Intel-105-src  
+sudo chflags -R nouchg ~/.Trash
+le pass sudo pour le mac sophie est : esques
+
+================================== Afficher fichiers cache sur maa ========================================
+defaults write com.apple.finder AppleShowAllFiles 1  // affiche
+defaults write com.apple.finder AppleShowAllFiles FALSE  // cache
+killall Finder
+
+Le faire en mode root et user
+================================== Recompiler MedinTux sur Mac OS 10.6 64 bit =============================================
+Qt3 a été recuperé sur une machine 32 bit (pas encore essayé de le compiler avec ce truc)
+
+dans le fichier : Qt/mkspecs/macx-g++/qmake.conf    rajouter  -arch i386 aux variables suivantes comme indique ci-après
+
+     QMAKE_CFLAGS		= -pipe -arch i386
+     QMAKE_LFLAGS_RELEASE	+=-arch i386
+     QMAKE_LFLAGS_DEBUG	        +=-arch i386
+
+dans le fichier :  QT/include/qglobal.h   modifier vers la ligne 189 comme suit
+
+#  if !defined(MAC_OS_X_VERSION_10_6)
+#       define MAC_OS_X_VERSION_10_6 MAC_OS_X_VERSION_10_5 + 1
+#  endif
+
+#  if (MAC_OS_X_VERSION_MAX_ALLOWED > MAC_OS_X_VERSION_10_6)
+#    error "This version of Mac OS X is unsupported"
+#  endif
+================================== Recompiler MedinTux sur Mac =============================================
+
+1) Ouvrir une console et se placer dans le repertoire des scripts:
+   --------------------------------------------------------------
+   cd /Applications/MedinTux-V2.13-Mac-Intel-105-src/Programmes/set_bases/bin
+
+2) Copier les lignes suivantes dans la console :
+   ---------------------------------------------
+   QTDIR=/Volumes/IOMEGA_HDD/MedinTux-V2.14-Synth-src/Programmes/Qt
+   QTDIR=/Users/rolandsevin/Documents/MedinTux-V2.14-Synth-src/Programmes/Qt
+   QTDIR=/Users/ro/Documents/MedinTux-04-04-2011-premMacVersion/Programmes/Qt
+   PATH=$QTDIR/bin:$PATH
+   DYLD_LIBRARY_PATH=$QTDIR/lib:$DYLD_LIBRARY_PATH
+   DYLD_LIBRARY_PATH=$QTDIR/plugins/sqldrivers:$DYLD_LIBRARY_PATH
+   DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+   INCLUDE=$QTDIR/include:$INCLUDE
+   INCLUDE=/usr/local/mysql/include:$INCLUDE
+
+   QMAKESPEC=$QTDIR/mkspecs/macx-g++
+   export QMAKESPEC
+   export QTDIR 
+   export PATH 
+   export DYLD_LIBRARY_PATH 
+   export INCLUDE
+
+3) executer le script de compilation :
+   ----------------------------------
+   ./MakeAllMac.sh
+
+   on peut lui indiquer juste le nom du module √† compiler si l'on ne
+   veut pas tout compiler (idem avec les sripts suivants)
+
+   ./MakeAllMac.sh drtux
+
+4) executer le script pour inscrire les dependances :
+   ./libmac.sh
+
+5) executer le script de strip :
+   ./stripall.sh
+
+6) nettoyer :
+   ./MakeAllClean.sh
+================================== Icone application sur Mac ===============================================
+Pour changer ses icônes d’applications, soit on utilise un logiciel comme CandyBar qui vous premet de changer simplement vos icônes par glisser-déposer. Soit on utiliser la méthode du Cmd+i décrite dans ce tuto. Soit on utilise la méthode directe qui est plus fastidieuse, mais la seule efficace si on a que le fichier .icns et qu’on ne dispose pas de CandyBar (qui n’est pas gratuit malheureusement).
+
+Cette méthode que je vais vous expliquer ici n’est donc utile que si vous ne possédez que le fichier .icns de l’icône, si vous avez la chance de posséder le fichier Icon (qui ressemble à un dossier avec l’icône) utilisez la méthode du Cmd+i (lien plus haut). Notez que si vous ne possédez qu’un .png, il vous faudra d’abord le transformer en .icns, pour ce faire allez voir le tuto de création d’une icône pour Mac.
+
+Méthode directe
+Cette méthode n’est valable que pour changer l’icône d’une application. Et il vous faudra un fichier au format .icns.
+
+Pour ce faire, trouvez la dans votre dossier application puis cliquez droit dessus et sélectionnez, “Afficher le contenu du paquet”.
+Après une fenêtre s’ouvrira et allez dans Contents>Resources, ensuite repérez l’icône de l’application (qui normalement porte le nom de l’application) et nommer votre fichier .icns de la même façon. Ensuite remplacer celui qui se trouve dans “Resources” par le vôtre.
+Attention il est toujours bon de faire une sauvegarde de l’icône de base, au cas où vous voudriez la remettre.
+
+Voilà, si l’application se trouve dans le dock, il est possible qu’il vous faille l’enlever et la remettre dans le dock ou relancer la session pour y voir le changement.
+================================== Profile =================================================================
+/Volumes/WD_Passport/ArchivesMedinTuxMac/MedinTux-V2.12-Mac-Intel-105-src/Environnement/Programmes/QT
+
+................... copier dans la console les lignes ci-apres .......................
+QTDIR=/Applications/MedinTux-V2.13-Mac-Intel-105-src/Programmes/QT
+PATH=$QTDIR/bin:$PATH
+DYLD_LIBRARY_PATH=$QTDIR/lib:$DYLD_LIBRARY_PATH
+DYLD_LIBRARY_PATH=$QTDIR/plugins/sqldrivers:$DYLD_LIBRARY_PATH
+DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+INCLUDE=/usr/local/mysql/include:$INCLUDE
+
+export QTDIR PATH DYLD_LIBRARY_PATH INCLUDE
+................... fin des lignes √† copier .........................................
+
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
+================================== Crer un compte root sur Mac :===========================================
+
+10.4
+
+http://www.mac4ever.com/articles/macos/253/comment_passer_en_utilisateur_root_en_os_x/
+
+Tout d'abord, ouvrez l'application NetInfo Manager. Vous la trouverez dans votre dossier Utility qui se trouve lui-mme dans le dossier Application.  Network Utility.app "utilitaire de rseau.app"
+Une fois cela fait, vous devez vous authentifier.. Pour ce faire, allez dans le menu Domain, puis dans Security et enfin, dans Authenticate.
+
+L, il vous demande votre mot de passe administrateur. Rentrez-le tout simplement...
+
+Ensuite, il vous faut activer le root en question.. Pour ce faire, retournez dans la partie Security du menu Domain et cliquez sur Enable root user... 
+
+Il va vous spcifier que le mot de passe n'est pas accept, il vous suffit de cliquer sur OK et de lui indiquer un nouveau mot de passe...
+
+10.5
+http://docs.info.apple.com/article.html?path=Mac/10.5/fr/11778.html
+
+1) Ouvrez l'utilitaire Directory (utilitaire d'annuaire) qui se trouve dans le dossier Utilitaires du dossier Applications.
+
+2) Cliquez sur le cadenas pour effectuer des modifications. Vous devrez saisir un nom et un mot de passe d'administrateur.
+
+3) Cliquez sur dition > Activer l'utilisateur Root.
+
+4) Tapez un mot de passe scuris pour l'utilisateur root, puis saisissez-le  nouveau dans la zone de confirmation et cliquez sur OK.
+
+================================== Xcode Tools ==========================================
+
+Installations  partir du DVD dans Optional Installs/Xcode Tools
+
+INSTALLER XcodeTools.pkg qui devrait installer tout ce qui suit.
+
+INSTALLER DeveloperTools.pkg, disc OSX mac
+INSTALLER GCC (dernire version disponible, nom du package : gcc4.O.pkg
+INSTALLER DevSDK.pkg
+INSTALLER QuickTimeSDK.pkg
+INSTALLER CoreAudioSDK
+ISNTALLER OpenGLSDK.pkg
+
+================================== Patcher QT pour Lopard 10.5 ================================================
+Int√©gration du patch suivant :
+http://fink.cvs.sourceforge.net/*checkout*/fink/dists/10.4/unstable/main/finkinfo/graphics/qt3mac.patch2
+√† la main sur les diff√©rents fichers ci-dessous.
+
+----------------------- QT/include/qglobal.h -----------------------
+                        QT/src/tools/qglobal.h
+
+ne pas oublier sous Mac OSX 10.5 de modifier :  QT/include/qglobal.h
+ne pas oublier sous Mac OSX 10.5 de modifier :  QT/src/tools/qglobal.h
+Ligne 187
+
+#if defined(Q_OS_MACX)
+#  ifdef MAC_OS_X_VERSION_MIN_REQUIRED
+#    undef MAC_OS_X_VERSION_MIN_REQUIRED
+#  endif
+#  define MAC_OS_X_VERSION_MIN_REQUIRED MAC_OS_X_VERSION_10_2
+#  include <AvailabilityMacros.h>
+#  if !defined(MAC_OS_X_VERSION_10_3)
+#     define MAC_OS_X_VERSION_10_3 MAC_OS_X_VERSION_10_2 + 1
+#  endif
+#  if !defined(MAC_OS_X_VERSION_10_4)
+#       define MAC_OS_X_VERSION_10_4 MAC_OS_X_VERSION_10_3 + 1
+#  endif
+//..................... rajouter ...............
+#  if !defined(MAC_OS_X_VERSION_10_5)
+#       define MAC_OS_X_VERSION_10_5 MAC_OS_X_VERSION_10_4 + 1
+#  endif
+//..................... fin du rajout ..................
+#  if (MAC_OS_X_VERSION_MAX_ALLOWED > MAC_OS_X_VERSION_10_5)    // <---- changer MAC_OS_X_VERSION_10_4 par MAC_OS_X_VERSION_10_5
+#    error "This version of Mac OS X is unsupported"
+#  endif
+#endif
+----------------------- /src/kernel/qt_mac.h -----------------------
+fichier :   /src/kernel/qt_mac.h
+Ligne 54 :
+remplacer :
+      #if !defined(Q_WS_MACX) || QT_MACOSX_VERSION < 0x1020 || QT_MACOSX_VERSION >= 0x1030 
+           # define QMAC_NO_FAKECURSOR
+      #endif
+par :
+      #if !defined(Q_WS_MACX) || QT_MACOSX_VERSION < 0x1020 || (QT_MACOSX_VERSION >= 0x1030 && QT_MACOSX_VERSION <= 0x1040)
+           # define QMAC_NO_FAKECURSOR
+      #endif
+
+----------------------- /src/kernel/qcursor_mac.cpp -----------------------
+
+===> Remplacer Ligne 177 :
+
+#ifdef QMAC_USE_BIG_CURSOR_API
+	char *big_cursor_name;
+#endif
+	CursorImageRec *ci;
+	struct {
+	    QMacAnimateCursor *anim;
+	    ThemeCursor curs;
+Par :
+
+#ifdef QMAC_USE_BIG_CURSOR_API
+	char *big_cursor_name;
+#endif
+#ifdef QMAC_NO_FAKECURSOR
+	CursorImageRec *ci;
+#endif
+	struct {
+	    QMacAnimateCursor *anim;
+	    ThemeCursor curs;
+
+===> Remplacer Ligne 259 :
+
+    if(type == TYPE_CursPtr) {
+	if(curs.cp.hcurs && curs.cp.my_cursor)
+	    free(curs.cp.hcurs);
+    } else if(type == TYPE_CursorImage) {
+	free(curs.ci);
+
+Par :
+
+    if(type == TYPE_CursPtr) {
+	if(curs.cp.hcurs && curs.cp.my_cursor)
+	    free(curs.cp.hcurs);
+#ifdef QMAC_NO_FAKECURSOR		
+    } else if(type == TYPE_CursorImage) {
+	free(curs.ci);
+#endif
+
+fichier :
+/System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/CarbonEventsCore.h
+NULL A NE PAS FAIRE : commenter : ligne 2069 //typedef struct __EventLoopTimer*        EventLoopTimerRef;
+
+================================== MySQL ================================================
+
+Installer : mysql-5.0.45-osx10.4-i686.pkg
+            MySQLStartupItem.pkg
+Installer : mysql-gui-tools-5-1.0-r12-osx10.4-universal.dmg
+Placer : cp /usr/local/mysql/lib/libmysqlclient.15.dylib  /usr/lib
+
+et red√©marrer.
+
+================================== QT ===================================================
+Tlcharger QT    http://wftp.tu-chemnitz.de/pub/Qt/qt/source/
+
+Macintosh:QT francoispauzie$ QTDIR=/Applications/MedinTux-V2.10/Programmes/QT 
+Macintosh:QT francoispauzie$ cd $QTDIR
+Macintosh:QT francoispauzie$ PATH=$QTDIR/bin
+
+FONCTIONNEL : mysql sous forme de plugin
+./configure -release -shared -thread -enable-network -enable-canvas -enable-table -enable-xml -enable-opengl -enable-sql  -plugin-sql-mysql -enable-iconview -enable-workspace -enable-styles -enable-dialogs -enable-widgets -enable-tools -enable-kernel -big-codecs -no-tablet -no-stl -qt-imgfmt-png -qt-imgfmt-jpeg -qt-imgfmt-mng -qt-gif -qt-style-windows -plugin-style-motif -plugin-style-platinum -plugin-style-motifplus -plugin-style-cde -plugin-style-sgi -ipv6 -cups -I/usr/local/mysql/include -L/usr/local/mysql/lib
+
+FONCTIONNEL : mysql directement dans la lib de QT
+./configure -release -shared -thread -enable-network -enable-canvas -enable-table -enable-xml -enable-opengl -enable-sql -verbose -qt-sql-mysql -enable-iconview -enable-workspace -enable-styles -enable-dialogs -enable-widgets -enable-tools -enable-kernel -big-codecs -no-tablet -no-stl -qt-imgfmt-png -qt-imgfmt-jpeg -qt-imgfmt-mng -qt-gif -qt-style-windows -plugin-style-motif -plugin-style-platinum -plugin-style-motifplus -plugin-style-cde -plugin-style-sgi -ipv6 -cups -I/usr/local/mysql/include -L/usr/local/mysql/lib
+
+Commande make pour multi-processeur : make -jX // X tant le nombre de processeurs +1.
+
+./configure  -system-sqlite -qt-sql-mysql -I/usr/local/mysql/include -L/usr/local/mysql/lib
+------------------------------------------ install_name_tool ---------------------------------------------------------
+#!/bin/sh
+
+if [ "$1" = "" ]; then
+  APP=toto
+else
+  APP=$1
+fi
+
+cd `dirname $APP` #Go to right directory...
+
+APP_NAME=`basename $APP`
+
+echo "Copy libQt:"
+
+
+
+if [ ! -f $APP_NAME.app/Contents/Frameworks/libqt-mt.3.dylib ]; then
+mkdir $APP_NAME.app/Contents/Frameworks/
+cp $QTDIR/lib/libqt-mt.3.dylib $APP_NAME.app/Contents/Frameworks/libqt-mt.3.dylib
+else
+echo "libqt-mt.3.dylib is present"
+fi
+
+
+echo Install name :
+
+install_name_tool -id @executable_path/../Frameworks/libqt-mt.3.dylib $APP_NAME.app/Contents/Frameworks/libqt-mt.3.dylib
+install_name_tool -change libqt-mt.3.dylib @executable_path/../Frameworks/libqt-mt.3.dylib $APP_NAME.app/Contents/MacOS/$APP_NAME
+------------------------------------------ les rferences aux lib de MedinTux (xavier) ---------------------------------------------------------
+G5amourie:/Applications/MedinTuxV2/Programmes/QT/lib Ganjalo$ otool -L  /Applications/MedinTux/Programmes/Qt/3.3.4/lib/libmysqlclient.14.dylib /Applications/MedinTux/Programmes/Qt/3.3.4/lib/libmysqlclient.14.dylib:
+        @executable_path/../Frameworks/libmysqlclient.14.dylib (compatibility version 15.0.0, current version 15.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 71.1.3)
+        /usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+
+G5amourie:/Applications/MedinTuxV2/Programmes/QT/lib Ganjalo$ otool -L  /Applications/MedinTux/Programmes/Qt/3.3.4/lib/libqt-mt.3.dylib        
+/Applications/MedinTux/Programmes/Qt/3.3.4/lib/libqt-mt.3.dylib:
+        @executable_path/../../../../../Qt/3.3.4/lib/libqt-mt.3.dylib (compatibility version 3.3.0, current version 3.3.5)
+        /System/Library/Frameworks/Carbon.framework/Versions/A/Carbon (compatibility version 2.0.0, current version 128.0.0)
+        /System/Library/Frameworks/QuickTime.framework/Versions/A/QuickTime (compatibility version 1.0.0, current version 228.0.0)
+        @executable_path/../../../../../Qt/3.3.4/lib/libmysqlclient.14.dylib (compatibility version 15.0.0, current version 15.0.0)
+        /usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)
+        /System/Library/Frameworks/AGL.framework/Versions/A/AGL (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 71.1.3)
+
+------------------------------------------ changer les rferences aux lib ---------------------------------------------------------
+G5amourie:/Applications/MedinTuxV2/Programmes/QT/bin Ganjalo$ otool -L  designer.app/Contents/MacOS/designerdesigner.app/Contents/MacOS/designer:
+
+        libqui.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        libqt-mt.3.dylib (compatibility version 3.3.0, current version 3.3.8)
+        /usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.3)
+        /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)
+        /System/Library/Frameworks/AGL.framework/Versions/A/AGL (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)
+        /usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 88.1.10)
+
+G5amourie:/Applications/MedinTuxV2/Programmes/QT/bin Ganjalo$ install_name_tool -change libqt-mt.3.dylib @executable_path/../../../../lib/libqt-mt.3.dylib designer.app/Contents/MacOS/designer
+G5amourie:/Applications/MedinTuxV2/Programmes/QT/bin Ganjalo$ install_name_tool -change libqui.1.dylib @executable_path/../../../../lib/libqui.1.dylib designer.app/Contents/MacOS/designer
+
+
+///////////////////////////////////////
+
+
+
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ install_name_tool -id @executable_path/../../../../../QT/lib/libmysqlclient.15.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib 
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ otool -L /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib 
+/Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib:
+        /usr/local/mysql/lib/mysql/libmysqlclient.15.dylib (compatibility version 16.0.0, current version 16.0.0)
+        libqt-mt.3.dylib (compatibility version 3.3.0, current version 3.3.8)
+        /usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.3)
+        /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)
+        /System/Library/Frameworks/AGL.framework/Versions/A/AGL (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)
+        /usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 88.1.10)
+
+// ----------- install_name_tool -id @executable_path/../../../../../QT/lib/libmysqlclient.15.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib 
+
+
+
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ install_name_tool -change @executable_path/../../../../../QT/lib/libmysqlclient.15.dylib /usr/local/mysql/lib/mysql/libmysqlclient.15.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib
+
+// ------------ install_name_tool -change /usr/local/mysql/lib/mysql/libmysqlclient.15.dylib @executable_path/../../../../../QT/lib/libmysqlclient.15.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib
+
+install_name_tool -change libqt-mt.3.dylib @executable_path/../../../../../QT/lib/libqt-mt.3.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib
+
+install_name_tool -change libqt-mt.3.dylib @executable_path/../../../../QT/lib/libqt-mt.3.3.8.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqt-mt.3.3.8.dylib
+
+install_name_tool -id @executable_path/../../../../QT/lib/libqt-mt.3.3.8.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqt-mt.3.3.8.dylib
+
+Ce qui marche :
+
+install_name_tool -id new old
+install_name_tool -change old new cible
+
+
+Commandes ncessaires et fonctionnelles :
+install_name_tool -id @executable_path/../../../../../QT/lib/libmysqlclient.15.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib
+install_name_tool -change /usr/local/mysql/lib/mysql/libmysqlclient.15.dylib @executable_path/../../../../../QT/lib/libmysqlclient.15.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib
+install_name_tool -change libqt-mt.3.dylib @executable_path/../../../../../QT/lib/libqt-mt.3.dylib /Applications/MedinTuxV2/Programmes/QT/plugins/sqldrivers/libqsqlmysql.dylib
+
+install_name_tool -id @executable_path/../../../../QT/lib/libqt-mt.3.3.8.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqt-mt.3.3.8.dylib
+
+
+A faire sur chaque lib : 
+cd
+On applique install_name_tool -id sur lui mme comme ceci :
+install_name_tool -id @executable_path/../../../../../QT/lib/libqui.1.0.0.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib
+
+Ensuite, on effectue un install_name_tool -change sur le nom la lib avec son nom relatif (premier nom obtenu avec le otool -L sans @) puis vers sa cible (en chemin absolu)
+install_name_tool -change libqt-mt.3.dylib @executable_path/../../../../../QT/lib/libqt-mt.3.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib
+
+
+Message console :
+
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ otool -L /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib 
+/Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib:
+        libqui.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        libqt-mt.3.dylib (compatibility version 3.3.0, current version 3.3.8)
+        /usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.3)
+        /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)
+        /System/Library/Frameworks/AGL.framework/Versions/A/AGL (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)
+        /usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 88.1.10)
+
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ install_name_tool -id @executable_path/../../../../../QT/lib/libqui.1.0.0.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ otool -L /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib:
+        @executable_path/../../../../../QT/lib/libqui.1.0.0.dylib (compatibility version 1.0.0, current version 1.0.0)
+        libqt-mt.3.dylib (compatibility version 3.3.0, current version 3.3.8)
+        /usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.3)
+        /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)
+        /System/Library/Frameworks/AGL.framework/Versions/A/AGL (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)
+        /usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 88.1.10)
+
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ install_name_tool -change libqt-mt.3.dylib @executable_path/../../../../../QT/lib/libqt-mt.3.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib
+G5amourie:/Applications/MedinTuxV2 Ganjalo$ otool -L /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib /Applications/MedinTuxV2/Programmes/QT/lib/libqui.1.0.0.dylib:
+        @executable_path/../../../../../QT/lib/libqui.1.0.0.dylib (compatibility version 1.0.0, current version 1.0.0)
+        @executable_path/../../../../../QT/lib/libqt-mt.3.dylib (compatibility version 3.3.0, current version 3.3.8)
+        /usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.3)
+        /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL (compatibility version 1.0.0, current version 1.0.0)
+        /System/Library/Frameworks/AGL.framework/Versions/A/AGL (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)
+        /usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 88.1.10)

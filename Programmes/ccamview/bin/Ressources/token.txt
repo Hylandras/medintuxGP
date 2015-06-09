@@ -1,0 +1,56 @@
+acte.date
+acte.praticien
+acte.code_ccam
+acte.libelle
+acte.phase
+acte.activite
+acte.Mod_1
+acte.Mod_2
+acte.Mod_3
+acte.Mod_4
+acte.nombre
+acte.NumDoss
+acte.Nomenclature
+acte.IdPrat
+DATE COURANTE
+NOM PRENOM USER
+NOM USER
+PRENOM USER
+IDENTIFICATION MEDECIN
+NOM PRENOM MEDECIN
+NOM MEDECIN
+PRENOM MEDECIN
+NUM PATIENT
+NUM DOSSIER
+DATE ENTREE
+DATE SORTIE
+BASE TRAVAIL
+NUM. TEL1 PATIENT
+DATE NAISSANCE 
+AGE PATIENT
+SEXE PATIENT
+TITRE PATIENT
+VILLE PATIENT
+VILLE NAISSANCE PATIENT
+CODE POSTAL PATIENT
+ADRESSE PATIENT 1
+ADRESSE PATIENT 2
+ADRESSE COMPLETE PATIENT
+ADRESSE PATIENT UNE LIGNE
+NUM. SECU PATIENT
+NOM PATIENT
+NOM NAISSANCE PATIENT
+PRENOM PATIENT
+NOM PRENOM PATIENT
+*************************************************
+         Specifiques pour le thesaurus
+*************************************************
+IDENTIFICATION MEDECIN
+NOM PRENOM MEDECIN
+NOM MEDECIN
+PRENOM MEDECIN
+thesaurus.categorie
+thesaurus.LibelleUsuel
+thesaurus.codeCCAM
+thesaurus.LibelleCCAM
+

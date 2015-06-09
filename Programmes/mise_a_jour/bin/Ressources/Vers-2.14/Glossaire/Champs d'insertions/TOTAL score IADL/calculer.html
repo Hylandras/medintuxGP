@@ -1,0 +1,11 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
+<p><span style="font-family:Helvetica;font-weight:400">{{\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_A,{{:: Extract(*,</span><span style="font-weight:400">Continence -IADL</span> :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_B,{{:: Extract(*,</span>Alimentation -IADL :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_C,{{:: Extract(*,</span>Habillement -IADL :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_D,{{:: Extract(*,</span>vêtements etc :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_E,{{:: Extract(*,</span>Mobilité -IADL :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_F,{{:: Extract(*,</span>Toilette -IADL :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(score,{{:: Calc( {{VAR=ques_A}}, + ,{{:: Calc( {{VAR=ques_B}}, + ,{{:: Calc( {{VAR=ques_C}}, + ,{{:: Calc( {{VAR=ques_D}}, + ,{{:: Calc( {{VAR=ques_E}}, + ,{{VAR=ques_F}}) }}) }}) }}) }}) }} )}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">}}{{VAR=score}}</span></p>
+</body></html>

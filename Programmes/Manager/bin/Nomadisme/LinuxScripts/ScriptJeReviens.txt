@@ -1,0 +1,24 @@
+# Etat de l'esclave de la base locale
+SHOW SLAVE STATUS \G
+
+# Par scurit forage de l'arrt de l'Esclave
+# avant de le redmarrer
+
+STOP SLAVE;
+
+
+# Positionnement des paramtres de l'Esclave
+# par rapport  son Matre principal
+CHANGE MASTER TO MASTER_HOST='localhost',
+MASTER_PORT=3306,
+MASTER_USER='root',
+MASTER_PASSWORD='',
+MASTER_LOG_FILE='',
+MASTER_LOG_POS=98;
+
+# Dmarrage de l'Esclave locale pour qu'il
+# se connecte  son Matre de rplication
+# et y rcupre les logs binaires pour les
+# xcuter sur la base locale
+
+START SLAVE;

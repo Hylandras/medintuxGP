@@ -1,0 +1,2 @@
+make confclean
+./configure -nomake examples -nomake demos -opensource -confirm-license -no-framework -debug-and-release -qt-sql-mysql -I/usr/local/mysql/include -L/usr/local/mysql/lib

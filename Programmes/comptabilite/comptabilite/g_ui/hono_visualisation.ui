@@ -1,0 +1,52 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Hono_Visualisation</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Hono_Visualisation</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Information sur les honoraires</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTextEdit" row="1" column="0">
+            <property name="name">
+                <cstring>textEdit</cstring>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;&lt;b&gt;Information sur les honoraires&lt;/b&gt;&lt;/p&gt;</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<includes>
+    <include location="local" impldecl="in declaration">../Listes.h</include>
+    <include location="local" impldecl="in declaration">../Tools.h</include>
+    <include location="global" impldecl="in declaration">qstringlist.h</include>
+    <include location="local" impldecl="in declaration">../Defines.h</include>
+    <include location="global" impldecl="in declaration">qdatetime.h</include>
+    <include location="local" impldecl="in implementation">hono_visualisation.ui.h</include>
+</includes>
+<slots>
+    <slot>setHonoraire( Honoraires * pHonoraires )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

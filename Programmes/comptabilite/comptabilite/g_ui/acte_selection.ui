@@ -1,0 +1,370 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Acte_Selection</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Acte_Selection</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>406</width>
+            <height>440</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Acte et Mode de Paiement</string>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QGroupBox" row="0" column="0">
+            <property name="name">
+                <cstring>grDescr</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>120</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>220</height>
+                </size>
+            </property>
+            <property name="title">
+                <string>Descriptif de l'acte</string>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>lblDescrActe</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>20</y>
+                        <width>350</width>
+                        <height>60</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>NoFrame</enum>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="alignment">
+                    <set>WordBreak|AlignTop</set>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>lblMontant</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>90</y>
+                        <width>350</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" row="2" column="0">
+            <property name="name">
+                <cstring>grPaye</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>78</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>100</height>
+                </size>
+            </property>
+            <property name="title">
+                <string>Mode de Paiement</string>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>131</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>OKBut</cstring>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Annuler</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="1" column="0">
+            <property name="name">
+                <cstring>grActe</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>150</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>150</height>
+                </size>
+            </property>
+            <property name="title">
+                <string>Acte</string>
+            </property>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>chkTiersPayant</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>170</x>
+                        <y>90</y>
+                        <width>16</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="accel">
+                    <string></string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>lblActe</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>60</y>
+                        <width>150</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Acte</string>
+                </property>
+            </widget>
+            <widget class="QComboBox">
+                <property name="name">
+                    <cstring>CmbActe</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>170</x>
+                        <y>60</y>
+                        <width>200</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>lblActe_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>30</y>
+                        <width>150</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Type d'acte</string>
+                </property>
+            </widget>
+            <widget class="QComboBox">
+                <property name="name">
+                    <cstring>CmbType</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>170</x>
+                        <y>30</y>
+                        <width>200</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>lblTiers</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>90</y>
+                        <width>150</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Tiers Payant</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>19</x>
+                        <y>123</y>
+                        <width>146</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Montant total de l'acte</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>montantTotal</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>160</x>
+                        <y>120</y>
+                        <width>200</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>LineEditPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Sunken</enum>
+                </property>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>Acte_Selection</receiver>
+        <slot>Annule_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>OKBut</sender>
+        <signal>clicked()</signal>
+        <receiver>Acte_Selection</receiver>
+        <slot>OK_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>CmbActe</sender>
+        <signal>highlighted(int)</signal>
+        <receiver>Acte_Selection</receiver>
+        <slot>putActeParams(int)</slot>
+    </connection>
+    <connection>
+        <sender>CmbActe</sender>
+        <signal>activated(int)</signal>
+        <receiver>Acte_Selection</receiver>
+        <slot>putActeParams(int)</slot>
+    </connection>
+    <connection>
+        <sender>CmbType</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Acte_Selection</receiver>
+        <slot>CmbType_activated(const QString&amp;)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>CmbType</tabstop>
+    <tabstop>CmbActe</tabstop>
+    <tabstop>chkTiersPayant</tabstop>
+    <tabstop>montantTotal</tabstop>
+    <tabstop>OKBut</tabstop>
+    <tabstop>pushButton2</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">qtable.h</include>
+    <include location="local" impldecl="in declaration">../comptabilite/Listes.h</include>
+    <include location="global" impldecl="in declaration">qmessagebox.h</include>
+    <include location="local" impldecl="in implementation">acte_selection.ui.h</include>
+</includes>
+<variables>
+    <variable>QStringList typesActes;</variable>
+    <variable>ACTES_LISTE *m_pActeListe;</variable>
+    <variable access="public">QTable *t;</variable>
+    <variable>ACTES_LISTE actesSelonType;</variable>
+</variables>
+<signals>
+    <signal>actePaiementSelectionne( Paiements* )</signal>
+</signals>
+<slots>
+    <slot>setActesListe( ACTES_LISTE * al )</slot>
+    <slot>putActeParams( int id )</slot>
+    <slot>paiement( int r, int c, int but )</slot>
+    <slot>Annule_clicked()</slot>
+    <slot>OK_clicked()</slot>
+    <slot>CmbType_activated( const QString &amp; str )</slot>
+    <slot>setPaiement( Paiements &amp; p )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function>findTypes()</function>
+    <function>updateCmbActe()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

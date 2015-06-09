@@ -1,0 +1,613 @@
+$SEP_VAL=-
+$FIELD_SERVICE=OBR|16|3$FIN_FIELD_SERVICE
+$DEB_ENTETE <u><br><b>ATTENTION : RESULTATS NON VALIDÉS BIOLOGIQUEMENT, DONNÉS A TITRE INDICATIF</b><br>Résultats de: <b>{{nom}};{{prenom}}</b> âge: <b>{{age}} </b>
+en date du: <b>{{dateExamen}} à {{heureExamen}}</b> Service: <b>{{service}}</b>    Id Examen : <b>{{OBR_Ident}}</b></u>
+$FIN_ENTETE
+//============================================ FORMULE NUMÉRATION ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=GBSMC|GRS|LHEMO|hct1|VMCS|PLAMC|GRANMC|EOSIMC|BASOMC|LYMPMC|MONOMC
+   //----------------------------------- globules blancs -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=GBSMC|GRANMC|EOSIMC|BASOMC|LYMPMC|MONOMC
+       $DEB_ERR.GBSMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.GBSMC=</span>
+       $DEB_ERR.GRANMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.GRANMC=</span>
+       $DEB_ERR.EOSIMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.EOSIMC=</span>
+       $DEB_ERR.BASOMC=*.<span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.BASOMC=</span>
+       $DEB_ERR.LYMPMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LYMPMC=</span>
+       $DEB_ERR.MONOMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.MONOMC=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=GBSMC}}  <b>GB:</b> {{$DEB_ERR.GBSMC}}{{GBSMC}}{{$FIN_ERR.GBSMC}} {{$NL.GBSMC|(N: de [min] à [max])|(NL: de 4 à 10000)}} {{$UNIT.GBSMC}}{{/IF}}
+{{IF=GRANMC}}<b>N°: </b> {{$DEB_ERR.GRANMC}}{{GRANMC}}{{$FIN_ERR.GRANMC}} {{$UNIT.F    060}}{{/IF}}
+ {{IF=LYMPMC}} <b>L°: </b> {{$DEB_ERR.LYMPMC}}{{LYMPMC}}{{$FIN_ERR.LYMPMC}} {{$UNIT.F    020}}{{/IF}}
+ {{IF=MONOMC}} <b>M°: </b> {{$DEB_ERR.MONOMC}}{{MONOMC}}{{$FIN_ERR.MONOMC}} {{$UNIT.F    040}}{{/IF}}
+ {{IF=EOSIMC}} <b>E°: </b> {{$DEB_ERR.EOSIMC}}{{EOSIMC}}{{$FIN_ERR.EOSIMC}} {{$UNIT.F    080}}{{/IF}}
+ {{IF=BASOMC}} <b>B°: </b> {{$DEB_ERR.BASOMC}}{{BASOMC}}{{$FIN_ERR.BASOMC}} {{$UNIT.F    100}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- globules rouges -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=GRS|VMCS       
+       $DEB_ERR.GRS=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.GRS=</span>
+       $DEB_ERR.GRS=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.GRS=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=GRS}}  <b>GR:</b> {{$DEB_ERR.GRS}}{{GRS}}{{$FIN_ERR.GRS}} {{$NL.GRS|(N: de [min] à [max])|(NL: de 4.1 à 5.7)}} {{$UNIT.GRS}}{{/IF}}
+{{IF=VMCS}}<b> VGM: </b> {{$DEB_ERR.VMCS}}{{VMCS}}{{$FIN_ERR.VMCS}} {{$NL.VMCS|(N: de [min] à [max])|(NL: de 83 à 95)}} {{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC    
+   //----------------------------------- hemoglobine -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LHEMO     
+       $DEB_ERR.LHEMO=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LHEMO=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LHEMO}}  <b>Hb:</b> {{$DEB_ERR.LHEMO}}{{LHEMO}}{{$FIN_ERR.LHEMO}} {{$NL.LHEMO|(N: de [min] à [max])|(NL: de 13.6 à 17.2)}} {{$UNIT.LHEMO}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC
+   //----------------------------------- hematocrite -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=hct1     
+       $DEB_ERR.hct1=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.hct1=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=hct1}}  <b>Hc:</b> {{$DEB_ERR.hct1}}{{hct1}}{{$FIN_ERR.hct1}} {{$NL.hct1|(N: de [min] à [max])|(NL: de 40 à 54)}} {{$UNIT.hct1}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- plaquettes -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=PLAMC|MPV S                                            
+       $DEB_ERR.PLAMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.PLAMC=</span>
+       $DEB_ERR.MPV S=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.MPV S=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=PLAMC}}  <b>Plaquettes:</b> {{$DEB_ERR.PLAMC}}{{PLAMC}}{{$FIN_ERR.PLAMC}} {{$NL.PLAMC|(N: de [min] à [max])|(NL: de 150 à 450000)}} {{$UNIT.PLAMC}}{{/IF}}
+ {{IF=MPV S}}	<b>Vol. Plaq.:</b> {{$DEB_ERR.MPV S}}{{MPV S}}{{$FIN_ERR.MPV S}} {{$NL.MPV S|(N: de [min] à [max])|(NL: de 7.2 à 12)}} {{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+$FIN_GROUP   
+//============================================ COAGULATION ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=TCKNT|TCKP|tckr|TPR|INRMC
+   //----------------------------------- TP -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=TPR|INRMC
+       $DEB_ERR.TPR=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.TPR=</span>
+       $DEB_ERR.INRMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.INRMC=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=TPR}}  <b>TP:</b> {{$DEB_ERR.TPR}}{{TPR}}{{$FIN_ERR.TPR}} {{$NL.TPR|(N: de [min] à [max])|(NL: de 70 à 100)}} {{$UNIT.TPR}}{{/IF}}
+ {{IF=INRMC}}			<b>i.n.r:</b> {{$DEB_ERR.INRMC}}{{INRMC}}{{$FIN_ERR.INRMC}}  {{$NL.INRMC|(N: de [min] à [max])|(NL: environ 1)}} {{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- TCK -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=TCKNT|TCKP|tckr
+       $DEB_ERR.TCKNT=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.TCKNT=</span>
+       $DEB_ERR.TCKP=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.TCKP=</span>
+       $DEB_ERR.tckr=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.tckr=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=TCKNT}}  <b>TCK: témoin</b> {{$DEB_ERR.TCKNT}}{{TCKNT}}{{$FIN_ERR.TCKNT}} <b>patient:</b> {{$DEB_ERR.TCKP}}{{TCKP}}{{$FIN_ERR.TCKP}} {{$UNIT.TCKNT}}		          {{/IF}}
+ {{IF=tckr}}  <b>TCA: patient/témoin</b> {{$DEB_ERR.tckr}}{{tckr}}{{$FIN_ERR.tckr}} {{$NL.tckr|(N: de [min] à [max])|}} {{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+$FIN_GROUP 
+//============================================ IONOGRAMME ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=NAX|K
+   //----------------------------------- NA -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=NAX
+       $DEB_ERR.NAX=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.NAX=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=NAX}}  <b>Na:</b> {{$DEB_ERR.NAX}}{{NAX}}{{$FIN_ERR.NAX}} {{$NL.NAX|(N: de [min] à [max])|(NL: de 135 à 145)}} {{$UNIT.NAX}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- K -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=K
+       $DEB_ERR.K=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.K=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=K}}  <b>Ka:</b> {{$DEB_ERR.K}}{{K}}{{$FIN_ERR.K}} {{$NL.K|(N: de [min] à [max])|(NL: de 3.6 à 5)}} {{$UNIT.K}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC  
+$FIN_GROUP
+//============================================ CHIMIE ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=G|AZ|PCT|PCR|CREA|BIT|bil|BID|ALCOO|AZV1|ACTM|
+   //-----------------------------------alcolemie -------------------------------------------------
+   $DEB_BLOC
+       $CODES=ALCOO
+       $DEB_ERR.ALCOO=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.ALCOO=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=ALCOO}}  <b>Acoolémie.:</b> {{$DEB_ERR.ALCOO}}{{ALCOO}}{{$FIN_ERR.ALCOO}} {{$NL.ALCOO|(N: de [min] à [max])|(NL: de 0.15 à 0.50)}} {{$UNIT.ALCOO}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //-----------------------------------Azotémie -------------------------------------------------
+   $DEB_BLOC
+       $CODES=AZ
+       $DEB_ERR.AZ=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.AZ=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=AZ}}  <b>Azotémie.:</b> {{$DEB_ERR.AZ}}{{AZ}}{{$FIN_ERR.AZ}} {{$NL.AZ|(N: de [min] à [max])|(NL: de 0.15 à 0.50)}} {{$UNIT.AZ}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC
+   //-----------------------------------Azotémie -------------------------------------------------
+   $DEB_BLOC
+       $CODES=AZV1
+       $DEB_ERR.AZV1=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.AZV1=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=AZV1}}  <b>Azotémie.:</b> {{$DEB_ERR.AZV1}}{{AZV1}}{{$FIN_ERR.AZV1}} {{$NL.AZV1|(N: de [min] à [max])|(NL: de 0.13 à 0.43)}} {{$UNIT.AZV1}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- Créat -------------------------------------------------
+   $DEB_BLOC
+       $CODES=CREA
+       $DEB_ERR.CREA=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.CREA=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=CREA}}  <b>Créat:</b> {{$DEB_ERR.CREA}}{{CREA}}{{$FIN_ERR.CREA}} {{$NL.CREA|(N: de [min] à [max])|(NL: de 6 à 14)}} {{$UNIT.CREA}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC
+   //----------------------------------- Glycémie -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=G
+       $DEB_ERR.G=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.G=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=G}}  <b>Glycémie:</b> {{$DEB_ERR.G}}{{G}}{{$FIN_ERR.G}} {{$NL.G|(N: de [min] à [max])|(NL: de 0.75 à 1.20)}} {{$UNIT.G}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC
+   //----------------------------------- PCT -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=PCT
+       $DEB_ERR.PCT=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.PCT=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=PCT}}  <b>PCT :</b> {{$DEB_ERR.PCT}}{{PCT}}{{$FIN_ERR.PCT}} {{$NL.PCT|(N: inf à [max])|(NL: inf à 2)}} {{$UNIT.PCT}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC           
+   //----------------------------------- PCR -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=PCR
+       $DEB_ERR.PCR=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.PCR=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=PCR}}  <b>PCR:</b> {{$DEB_ERR.PCR}}{{PCR}}{{$FIN_ERR.PCR}} {{$NL.PCR|(N: inf à [max])|(NL: inf à 10)}} {{$UNIT.PCR}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC
+   //----------------------------------- Bili Totale -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=BIT|bil|BID
+       $DEB_ERR.BIT=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.BIT=</span>
+       $DEB_ERR.bil=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.bil=</span>
+       $DEB_ERR.BID=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.BID=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=BIT}}  <b>Bili Totale:</b> {{$DEB_ERR.BIT}}{{BIT}}{{$FIN_ERR.BIT}} {{$NL.BIT|(N: de [min] à [max])|(NL: de 2 à 12)}} {{$UNIT.BIT}}	{{/IF}}
+{{IF=bil}}  <b>Libre:</b> {{$DEB_ERR.bil}}{{bil}}{{$FIN_ERR.bil}} {{$NL.bil|(N: de [min] à [max])|(NL: de 1 à 10)}} {{$UNIT.bil}}	{{/IF}}
+{{IF=BID}}  <b>Conjuguée:</b> {{$DEB_ERR.BID}}{{BID}}{{$FIN_ERR.BID}} {{$NL.BID|(N: de [min] à [max])|(NL: de 0 à 2)}} {{$UNIT.BID}}{{/IF}}
+       $FIN_TEXTE
+   //----------------------------------- Paracetamolemie -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=ACTM
+       $DEB_ERR.ACTM=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.ACTM=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=ACTM}}  <b>Paracétamolémie :</b> {{$DEB_ERR.ACTM}}{{ACTM}}{{$FIN_ERR.ACTM}} {{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC     
+   $FIN_BLOC
+$FIN_GROUP
+//============================================ CHIMIE 2 ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=ELPS 020|G|U    010|FI   010|ALCOO010|HCG  020|PCT  010|ACTM|
+   //----------------------------------- Uricémie -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=U    010
+       $DEB_ERR.U    010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.U    010=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=U    010}}  <b>Uricémie:</b> {{$DEB_ERR.U    010}}{{U    010}}{{$FIN_ERR.U    010}} {{$NL.U    010|(N: de [min] à [max])|(NL: de 15 à 60)}} {{$UNIT.U    010}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC  
+   //----------------------------------- Protidémie -------------------------------------------------
+   $DEB_BLOC
+       $CODES=ELPS 020                                        
+       $DEB_ERR.ELPS 020=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.ELPS 020=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=ELPS 020}}  <b>Protidémie:</b> {{$DEB_ERR.ELPS 020}}{{ELPS 020}}{{$FIN_ERR.ELPS 020}} {{$NL.ELPS 020|(N: de [min] à [max])|(NL: de 61 à 69)}} {{$UNIT.ELPS 020}}{{/IF}}
+       $FIN_TEXTE  
+   $FIN_BLOC
+   //----------------------------------- Fibrinogène -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=FI   010
+       $DEB_ERR.FI   010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.FI   010=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=FI   010}}  <b>Fibrinogène:</b> {{$DEB_ERR.FI   010}}{{FI   010}}{{$FIN_ERR.FI   010}} {{$NL.FI   010|(N: de [min] à [max])|(NL: de 2 à 4)}} {{$UNIT.FI   010}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC    
+   //----------------------------------- Alcool -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=ALCOO010
+       $DEB_ERR.ALCOO010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.ALCOO010=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=ALCOO010}}  <b>Alcoolémie:</b> {{$DEB_ERR.ALCOO010}}{{ALCOO010}}{{$FIN_ERR.ALCOO010}} {{$NL.ALCOO010|(N: inf à [max])|(NL: inf à 0.5)}} {{$UNIT.ALCOO010}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC
+   //----------------------------------- Paracetamol -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=PARA 010
+       $DEB_ERR.PARA 010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.PARA 010=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=PARA 010}}  <b>Paracétamolémie:</b> {{$DEB_ERR.PARA 010}}{{PARA 010}}{{$FIN_ERR.PARA 010}} {{$NL.PARA 010|(N: inf à [max])|(NL: inf à 40)}} (NL: inf à 150 µg/l ingestion inf 4h) (NL: inf à 75 µg/l ingestion inf 8h) (NL: inf à 40 µg/l ingestion inf 12h) {{$UNIT.PARA 010}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC  
+   //----------------------------------- PROCALCITONINE -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=PCT  010
+       $DEB_ERR.PCT  010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.PCT  010=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=PCT  010}}  <b>Procalcitonine :</b> {{$DEB_ERR.PCT  010}}{{PCT  010}}{{$FIN_ERR.PCT  010}} {{$NL.PCT  010|(N: inf à [max])|(NL: inf à 0.5)}} {{$UNIT.PCT  010}}{{/IF}}
+       $FIN_TEXTE  
+   //----------------------------------- Béta HCG -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=HCG  020
+       $DEB_ERR.HCG  020=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.HCG  020=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=HCG  020}}  <b>Béta HCG :</b> {{$DEB_ERR.HCG  020}}{{HCG  020}}{{$FIN_ERR.HCG  020}} {{$NL.HCG  020|(N: inf à [max])|(NL: inf à 5)}} {{$UNIT.HCG  020}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC
+$FIN_GROUP 
+//============================================ ENZYMES ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=LDH|CPK|GOT|GPT|PAL|LIPASE|GGT|
+   //----------------------------------- LDH CPK -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LDH|CPK                                        
+       $DEB_ERR.LDH=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LDH=</span>
+       $DEB_ERR.CPK=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.CPK=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LDH}}  <b>LDH:</b> {{$DEB_ERR.LDH}}{{LDH}}{{$FIN_ERR.LDH}} {{$NL.LDH|(N: de [min] à [max])|(NL: de 250 à 500)}} {{$UNIT.LDH}}{{/IF}}
+{{IF=CPK}}		<b>CPK:</b> {{$DEB_ERR.CPK}}{{CPK}}{{$FIN_ERR.CPK}} {{$NL.CPK|(N: de [min] à [max])|(NL: H 52 à 200  F 35 à 165)}} {{$UNIT.CPK}}{{/IF}}       
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- GOT GPT -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=GOT|GPT                                        
+       $DEB_ERR.GOT=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.GOT=</span>
+       $DEB_ERR.GPT=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.GPT=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=GOT}}  <b>GOT:</b> {{$DEB_ERR.GOT}}{{GOT}}{{$FIN_ERR.GOT}} {{$NL.GOT|(N: inf à [max])|(NL: inf à 42)}} {{$UNIT.GOT}}{{/IF}}
+{{IF=GPT}}			<b>GPT:</b> {{$DEB_ERR.GPT}}{{GPT}}{{$FIN_ERR.GPT}} {{$NL.GPT|(N: inf à [max])|(NL: inf à 40)}} {{$UNIT.GPT}}{{/IF}}       
+       $FIN_TEXTE         
+   $FIN_BLOC
+   
+   //----------------------------------- Lipase -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LIPASE                                        
+       $DEB_ERR.AMY  010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.AMY  010=</span>
+       $DEB_ERR.LIPASE=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LIPASE=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LIPASE}}  <b>Lipasémie:</b> {{$DEB_ERR.LIPASE}}{{LIPASE}}{{$FIN_ERR.LIPASE}} {{$NL.LIPASE|(N: inf à [max])|(NL: inf à 500)}} {{$UNIT.LIPASE}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //-----------------------------------Phos Alc -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=PAL
+       $DEB_ERR.PAL=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.PAL=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=PAL}}  <b>Phos.Alc.:</b> {{$DEB_ERR.PAL}}{{PAL}}{{$FIN_ERR.PAL}} {{$NL.PAL|(N: de [min] à [max])|(NL: de 90 à 300)}} {{$UNIT.PAL}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //-----------------------------------Gamma GT -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=GGT
+       $DEB_ERR.GGT=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.GGT=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=GGT}}  <b>Gamma GT:</b> {{$DEB_ERR.GGT}}{{GGT}}{{$FIN_ERR.GGT}}  {{$NL.GGT|(N: inf à [max])|(NL:  H inf à 50, F inf à 38)}} {{$UNIT.GGT}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC 
+$FIN_GROUP 
+//============================================ LIPIDES ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=CT   010|T    010
+   //----------------------------------- CHOLESTEROL TRIGLYCERIDES -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=CT   010|T    010                                        
+       $DEB_ERR.CT   010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.CT   010=</span>
+       $DEB_ERR.T    010=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.T    010=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=CT   010}}  <b>Cholestérol:</b> {{$DEB_ERR.CT   010}}{{CT   010}}{{$FIN_ERR.CT   010}} {{$NL.CT   010|(N: de [min] à [max])|(NL: de 1.6 à 2)}} {{$UNIT.CT   010}}{{/IF}}
+{{IF=T    010}}		<b>Triglycérides:</b> {{$DEB_ERR.T    010}}{{T    010}}{{$FIN_ERR.T    010}} {{$NL.T    010|(N: de [min] à [max])|(NL: 0.35 à 1.60)}} {{$UNIT.T    010}}{{/IF}}       
+       $FIN_TEXTE         
+   $FIN_BLOC 
+$FIN_GROUP 
+//============================================ Fonction cardiaque ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=TROPO|MYOMC|BNPMC|DDI|DDIMD
+   //----------------------------------- Trop Myo -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=TROPO|MYOMC
+       $DEB_ERR.TROPO=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.TROPO=</span>
+       $DEB_ERR.MYOMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.MYOMC=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=MYOMC}}  <b>Myoglobinémie:</b> {{$DEB_ERR.MYOMC}}{{MYOMC}}{{$FIN_ERR.MYOMC}} {{$NL.MYOMC|(N: inf à [max])|(NL: inf à 46)}} {{$UNIT.MYOMC}}		{{/IF}} 
+{{IF=TROPO}}  <b>Troponinémie:</b> {{$DEB_ERR.TROPO}}{{TROPO}}{{$FIN_ERR.TROPO}} {{$NL.TROPO|(N: inf à [max])|(NL: inf à 0.10)}} (0.1 à 0.8 Angor instable)(sup à 0.8  IDM) {{$UNIT.TROPO}}{{/IF}}      
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- BNP -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=BNPMC
+       $DEB_ERR.BNPMC=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.BNPMC=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=BNPMC}}  <b>BNP:</b> {{$DEB_ERR.BNPMC}}{{BNPMC}}{{$FIN_ERR.BNPMC}} {{$NL.BNPMC|(N: inf à [max])|(NL: inf à 100)}} (&lt;100 IC peu probable)(100 à 400 IC possible)(&gt;400 IC certaine ou EP sévère) {{$UNIT.BNPMC}}{{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC    
+   //----------------------------------- D-Dimeres -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=DDIMD
+       $DEB_ERR.DDIMD=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.DDIMD=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=DDIMD}}  <b>D-Dimeres:</b> {{$DEB_ERR.DDIMD}}{{DDIMD}}{{$FIN_ERR.DDIMD}} {{$NL.DDIMD|(N: inf à [max])|(NL: inf à 0.4)}} {{$UNIT.DDIMD}}{{/IF}}
+       $FIN_TEXTE         
+   $FIN_BLOC    
+   //----------------------------------- D-Dimeres -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=DDI
+       $DEB_ERR.DDI=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.DDI=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=DDI}}  <b>D-Dimeres:</b> {{$DEB_ERR.DDI}}{{DDI}}{{$FIN_ERR.DDI}} {{$NL.DDI|(N: inf à [max])|(NL: inf à 0.4)}} {{$UNIT.DDI}}{{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC    
+$FIN_GROUP 
+//============================================ Urines ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP= 
+   $CODES_GROUP=URINE020|URINE260|URINE030|URINE060|URINE050|URINE210|URINE190|URINE180|URINE170|URINE130|URINE100|URINE070 
+   //----------------------------------- Aspect -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=URINE020                                     
+       $DEB_ERR.URINE020=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE020=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE020}}  <b>Aspect:</b> {{URINE020}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC    
+   $DEB_BLOC 
+       $CODES=URINE260                                     
+       $DEB_ERR.URINE260=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE260=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE260}}  <b>CFU:</b> {{URINE260}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE030                                     
+       $DEB_ERR.URINE030=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE030=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE030}}  <b>PH:</b> {{URINE030}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE060                                     
+       $DEB_ERR.URINE060=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE060=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE060}}  <b>Hématies:</b> {{URINE060}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE050                                     
+       $DEB_ERR.URINE050=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE050=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE050}}  <b>Leucocytes:</b> {{URINE050}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE210                                     
+       $DEB_ERR.URINE210=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE210=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE210}}  <b>Germes Gram négatifs:</b> {{URINE210}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE190                                     
+       $DEB_ERR.URINE190=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE190=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE190}}  <b>Flore:</b> {{URINE190}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE180                                     
+       $DEB_ERR.URINE180=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE180=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE180}}  <b>Germes:</b> {{URINE180}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE170                                     
+       $DEB_ERR.URINE170=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE170=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE170}}  <b>Germes:</b> {{URINE170}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE130                                     
+       $DEB_ERR.URINE130=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE130=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE130}}  <b>Sédiment:</b> {{URINE130}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE100                                     
+       $DEB_ERR.URINE100=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE100=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE100}}  <b>Cylindres:</b> {{URINE100}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   $DEB_BLOC 
+       $CODES=URINE070                                     
+       $DEB_ERR.URINE070=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.URINE070=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=URINE070}}  <b>Cellules:<b> {{URINE070}} {{/IF}}     
+       $FIN_TEXTE         
+   $FIN_BLOC 
+$FIN_GROUP 
+//============================================ PONCTION LOMBAIRE ============================================ 
+$DEB_GROUP=
+   $TITRE_GROUP=<b><u><br>Ponction lombaire</u></b>
+   $CODES_GROUP=LCR  020|LCR  040|LCR  050|LCR  080|LCR  090|LCR  130    
+   //----------------------------------- Aspect macroscopique -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LCR  020                                            
+       $DEB_ERR.LCR  020=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LCR  020=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LCR  020}}  <b>Aspect macroscopique :</b>  {{LCR  020}}{{/IF}} 
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- PROTIDES -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LCR  040                                               
+       $DEB_ERR.LCR  040=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LCR  040=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LCR  040}}  <b>Protides : </b> {{$DEB_ERR.LCR  040}}{{LCR  040}}{{$FIN_ERR.LCR  040}} {{$NL.LCR  040|(N: de [min] à [max])|(NL: de 0.1 à 0.4)}} {{$UNIT.LCR  040}}{{/IF}} 
+       $FIN_TEXTE         
+   $FIN_BLOC 
+   //----------------------------------- Glucides -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LCR  050                                               
+       $DEB_ERR.LCR  050=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LCR  050=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LCR  050}}  <b>Glycorachie : </b> {{$DEB_ERR.LCR  050}}{{LCR  050}}{{$FIN_ERR.LCR  050}} {{$NL.LCR  050|(N: de [min] à [max])|(NL: 60% de la Glycémie)}} {{$UNIT.LCR  050}}{{/IF}} 
+       $FIN_TEXTE         
+   $FIN_BLOC 
+ //----------------------------------- Hématie -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LCR  080                                               
+       $DEB_ERR.LCR  080=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LCR  080=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LCR  080}}  <b>Hématies : </b> {{$DEB_ERR.LCR  080}}{{LCR  080}}{{$FIN_ERR.LCR  080}} {{$NL.LCR  080|(N: inf à [max])|(NL: inf à 5)}} {{$UNIT.LCR  080}}{{/IF}} 
+       $FIN_TEXTE         
+   $FIN_BLOC 
+//----------------------------------- Leucocytes -------------------------------------------------
+   $DEB_BLOC 
+       $CODES=LCR  090                                               
+       $DEB_ERR.LCR  090=# <span style="font-weight:600;color:#FF0000">
+       $FIN_ERR.LCR  090=</span>
+       $DEB_LIGNE=<br>
+       $FIN_LIGNE=
+       $DEB_TEXTE={{IF=LCR  090}}  <b>Leucocytes : </b> {{$DEB_ERR.LCR  090}}{{LCR  090}}{{$FIN_ERR.LCR  090}} {{$NL.LCR  090|(N: inf à [max])|(NL: inf à 5)}} {{$UNIT.LCR  090}}{{/IF}} 
+       $FIN_TEXTE         
+   $FIN_BLOC 
+$FIN_GROUP 

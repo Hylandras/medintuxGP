@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=APropos
+Icon=/home/maxime/medintux-amd64/Icones/APropos.png
+Path=/home/maxime/medintux-amd64/Programmes/APropos/bin
+Exec=/home/maxime/medintux-amd64/Programmes/APropos/bin/APropos
+StartupNotify=false
+StartupWMClass=ClassAPropos
+OnlyShowIn=Unity;
+X-UnityGenerated=true
+Name[fr_FR]=Aide_de_MedinTux
+
+
+
+

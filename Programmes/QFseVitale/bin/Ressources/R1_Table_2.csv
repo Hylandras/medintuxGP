@@ -1,0 +1,58 @@
+|Spécialité du professionnel
+de santé|#|
+Codes prestations|
+|1|#|C - CA CST  FPE - HN - ID - IK - IKM - IKS - K - KA - KC - KE - KFA - KFB -KMO - KTH - MD - MDD - MDE - MDI - MDN - MM -  MPI - ORT - PMR - PH1 - PH4 - PH7 - PHN - PRA - PRO - SCM - SES - STH - TDR -THR - UPH - V - VA -Z - ZM - ZN |
+|2|#|C - CS -CST HN - ID - IK - IKM - IKS - K - KA - KC -KCC  - KE - KFA - KFB- KTH - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|3|#|C - CS  CSC CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC  KE  KTH - MPC - PRA - SES - STH - TDR -THR - V VA - VS - Z - ZN|
+|4|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KE - KCC - KFA - KFB  KTH PRA - SES - STH - TDR -THR -V - VA - VS - Z - ZM - ZN|
+|5|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KE - KCC  - KTH - MPC - PRA - SES - STH - TDR -THR -V - VA - VS - Z - ZN|
+|6|#|C - CS - FTN - FTR - HN - ID - IK - IKM - IKS - K KA - KC - KCC  KE - PRA - SES - TDR -V - VA - VS - Z - ZM - ZN|
+|7|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE  KTH - MPC - PRA - SES - STH - TDR -THR -V - VA - VS - Z - ZM - ZN|
+|8|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE  KTH - MPC  - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|9|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KTH - MPC - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|10|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KFA - KFB - KTH - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|11|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KFA - KFB - KMO - KTH - MPC  - PRA - SES - STH - TDR - THR - V - VA - VS - Z - ZN|
+|12|#|C - CS CST FPE - HN - ID - IK - IKM - IKS - K - KA - KC - KCC  KE -KMO - KTH - MM - MPC - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|13|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC  KE - KTH - MPC - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|14|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC  KE - KTH - MPC - PRA - SES - STH - TDR - TDR -THR - V - VA - VS - Z - ZN|
+|15|#|C - CS CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC  KE - KFA - KFB - KTH - MPC - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|16|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC  KE - KFA - KFB - KTH - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|17|#|C - CNP - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC  KE - KMO - KTH - MPC  - PRA - SES - STH - TDR -THR - V - VA - VNP - Z - ZN|
+|18|#|C - CS CST - FDA - FDC - FDO - FDR - HN - ID - IK - IKM - IKS - K - KA - KC - KCC -  KE - KFA - KFB - KMO - KTH - ORT - PRA - PRO - SCM - SES STH - TDR -THR -  V - VA - VS - Z - ZN|
+|19|#|BDC - BR2 - BR4 - C - D - DC - FDA - FDC - FDO - FDR - HN - IF - IK - IKM - IKS RIN- SC - SPR - TO - V - Z|
+|21|#|A - AM - C - HN - IF - IFA - IK - IKM - IKS -MM -  SF - SFI - V|
+|24|#|AIS - AMI - DI -HN - IFA - IK - IKM - IKS - MM|
+|26|#|AMC - AMK - AMS - HN - IFA - IK - IKM - IKS|
+|27|#|AMP - HN - IFA - IK - IKM - IKS|
+|28|#|AMO - HN - IFA - IK - IKM - IKS|
+|29|#|AMY - HN - IFA - IK - IKM - IKS|
+|30|#|AMI - B - K - KB - HN - ID - IFA - IK - IKM - IKS  - PB - TB|
+|31|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KTH - MPC -PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|32|#|C - CNP CST - HN - ID -  IK - IKM - IKS - K - KA - KC - KCC- KE - KMO - KTH - MPC - PRA - SES - STH - TDR -THR - V - VA - VNP - Z - ZN|
+|33|#|C - CNP - CST HN - ID -  IK - IKM - IKS - K - KA - KC - KCC - KE - KMO - KTH  - MPC - PRA - SES - STH - TDR -THR - V - VA - VNP - Z - ZN|
+|35|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KTH - MPC - PRA - SES - STH - TDR -THR -V - VA - VS - Z - ZN|
+|36|#|BDC - BR2 - BR4 - C - CS - FDA - FDC - FDO - FDR - D - DC - HN - IF - IK - IKM - IKS RIN - SC - SPR - TO - VS - Z|
+|37|#|C - CS - HN - ID - IK - IKM - IKS  - K - KC - KCC - KE - KFA - KFB - P - PRA - TDR -V - VS - Z - ZN|
+|38|#|C - CS - ID - IK - IKM - IKS  - K - KE - PRA - V - VS - Z - ZN|
+|39|#|AMI - B - HN - ID - IFA -IK- IKM - IKS  - K - KB - PB - TB|
+|40|#|B - HN - ID - IK - IKM - IKS  - K - KB - PB|
+|41|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KFA - KFB - KTH - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|42|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC-  KE -KTH -  MPC - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|43|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KFA - KFB - KTH - SES - STH - TDR -THR - V - VA - VS - Z|
+|44|#|C - CS CST FDO - HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KE - KFA - KFB - KTH - ORT - SES - STH - TDR -THR - V - VA - VS - Z|
+|45|#|C - CS - CST FDA - FDC - FDO - FDR - HN - ID - IK - IKM - IKS - K - KA - KC - KCC - KTH - KE - KFA - KFB - KMO - ORT - PRO - SCM - SES - STH  - TDR - THR - V - VA - VS - Z|
+|46|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC -KE - KFA - KFB - KTH - SES - STH - TDR -THR - V - VA - VS - Z |
+|47|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC -KE - KFA - KFB - KTH - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|48|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC -KE - KFA - KFB - KTH - PRA - SES - STH - TDR -THR - V - VA - VS - Z - ZN|
+|49|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC -KE - KFA - KFB - KTH - PRA - SES - STH - THR - TDR - V - VA - VS - Z - ZN|
+|50|#|AAD - AAR ARO- B - CPH - MAC - MAD - MPI - -- PMR- PA - PAN - PH1 - PH4 - PH7 - PHA - PHN - SNG - UPH - |
+|51|#|AAD - AAR ARO- - B - CPH - MAC - MAD - MPI - PMR - PA - PAN - PH1 - PH4 - PH7 - PHA - PHN - SNG - UPH|
+|70|#|C - CS CST - HN - ID - IK - IKM - IKS - K - KA - KC - KCC- KE - KTH - MPC - SES - STH - TDR -THR - V - VA - VS - Z - ZM -|
+|71|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC- KE -KTH - MPC - SES - STH - TDR -THR - V - VA - VS - Z|
+|72|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC- KE - KTH - PRA - SES - STH - TDR -THR - V - VA - VS - Z - - ZM - ZN|
+|73|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC- KE - KTH - MPC - SES - STH - TDR -THR - V - VA - VS - Z - ZM -|
+|74|#|C - CS - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC- KE -KTH -  PRA - SES - STH - TDR -THR - V - VA - VS - Z - - ZM - ZN|
+|75|#|C - CNP - CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC- KE - KMO - KTH - MPC - SES - STH - TDR -THR - V - VA - VNP - Z|
+|76|#|C - CS CST FTN - FTR - HN - ID - IK - IKM - IKS - K - KA - KC - KCC-  KE - PRA - SES - TDR -V - VA - VS - Z -- ZM -  ZN|
+|77|#|C - CS CST HN - ID - IK - IKM - IKS - K - KA - KC - KCC-  KE - KTH - SES - STH - TDR -THR - V - VA - VS - Z- ZM -|
+|78|#|C - CS - CST HN - KE- KTH  - STH  - TDR - THR|

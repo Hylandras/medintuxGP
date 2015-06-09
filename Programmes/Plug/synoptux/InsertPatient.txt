@@ -1,0 +1,35 @@
+{{REM= ************************************************* InsertPatient ************************************************** }}\
+{{REM= cette macro verifie si le patient en cours identifie par son {{GUID}} est inscrit dans synoptux                    }}\
+{{REM= si il n'est pas inscrit une liste de choix permet de choisir le BOX ou il doit etre place                          }}\
+{{REM= si l'admission est confirmee son historisation est automatiquement renseignee                                      }}\
+{{REM= ENTREE : néant                                                                                                     }}\
+{{REM= SORTIE : VAR=EN_PK_encours contient la primary key de l'enregistrement du patient dans la table 'synopt_encours'   }}\
+{{REM= SORTIE : VAR=CodeBox       code du BOX ou a ete place le patient lors de son admission                             }}\
+{{REM= SORTIE : VAR=OutMacro      vide si tout est ok  FALSE si le patient est non inscrit dans la table 'synopt_encours' }}\
+
+{{REM=------------------- recuperer le code synoptux en cours pour ce patient ------------------------------------------- }}\
+{{:: SQL_SELECT ( synopt_encours , EC_PK , WHERE EC_GUIDPatient='{{GUID}}', 1,%,,%0)>EN_PK_encours}}\
+{{REM=------------------- si code en cours pour ce patient est vide ----------------------------------------------------- }}\
+{{REM=                    on actionne la liste des BOX car  'NotToDo' est place sur '' sinon sur '_IS_ALREADY_PRESENT'    }}\
+{{:: SI(S,{{VAR=EN_PK_encours}},=,,,_IS_ALREADY_PRESENT)>NotToDo}}\
+{{REM=------------------- creer la liste de choix des BOX ou placer le patient---------------------- }}\
+{{:: SET_VAR(resultat,{{:: {{VAR=NotToDo}}DO_LISTE({{::#SQL_SELECT (synopt_box ,BO_Libelle|BO_Code,WHERE BO_Type!='Sortie' , 30,::,|) }},PATIENT NON INSCRIT : placez le,|,retourBoxPatient,1)}})}}\
+{{:: VAR_SPLIT(BOX_,{{VAR=resultat}},::)}}\
+{{REM= -------------- utilisation par la suite des renseignements du choix --------------}}\
+{{:: VAR_SET(NotToDo,{{::SI(S,{{VAR=retourBoxPatient}},=,Accepted,{{VAR=NotToDo}},CHOICE_OFF)}})}}\
+
+{{REM=------------------- requete d'inscription du patient dans la BOX choisie ---------------------------------------------------------------------- }}\
+{{REM=                    Si le patient n'est pas déjà inscrit et que la liste de choix a ete validee :                                               }}\
+{{REM=                                           'NotToDo' est place sur ''                     sinon soit sur 'CHOICE_OFF' ou  '_IS_ALREADY_PRESENT' }}\
+{{REM=                                           'retourBoxPatient' est place sur 'Accepted'    sinon sur vide ou autre valeur                        }}\
+{{REM=                    AU TOTAL : le prefixage des instructions suivantes  par 'VAR=NotToDo' les execute si NotToDo est vide                       }}\
+{{REM=                                                                                          les invalide et inhibe   si NotToDo n'est pas vide    }}\
+
+{{:: {{VAR=NotToDo}}SQL_EXEC(INSERT INTO synopt_encours &#40;EC_CodeBox&#44;EC_NomPatient&#44;EC_PrenomPatient&#44;EC_Medecin&#44;EC_GUIDPatient&#44;EC_Replier&#44;EC_Commentaire&#44;EC_HeureEntree&#44;EC_ProgAnnexe&#44;EC_ArgsAnnexe&#41; VALUES &#40;'{{VAR=BOX_1}}'&#44;'{{NOM PATIENT}}'&#44;'{{PRENOM PATIENT}}'&#44;'{{VAR=GUID_User}}'&#44;'{{GUID}}'&#44;'1'&#44;'URGENCES MARIGNANE'&#44;'{{DT=yyyy-MM-dd hh:mm:ss}}'&#44;'../../drtux/bin/drtux'&#44;'{{USER LOGIN MEDECIN}}|{{USER LOGIN MEDECIN}}|{{GUID}}|{{SQL_GET_DOSS_PK}}'&#41;)}}\
+{{REM=------------------- relire le PK d'inscription du patient dans synoptux ---------------------- }}\
+{{:: VAR_SET(EN_PK_encours, {{:: SQL_SELECT ( synopt_encours , EC_PK , WHERE EC_GUIDPatient='{{GUID}}', 1,%,,%0)}})}}\
+{{REM=-------------------historiser l'eventuelle admission  ---------------------- }}\
+{{:: {{VAR=NotToDo}}SQL_EXEC(INSERT INTO synopt_historique &#40;HI_Code_box&#44;HI_Nom_patient&#44;HI_PrenomPatient&#44;HI_Code_resp&#44;HI_Code_tache&#44;HI_Date&#44;HI_Action&#44;HI_NumEncours&#44;HI_Libelle_tache&#44;HI_Libelle_etat&#44;HI_Commentaire&#41;VALUES &#40;'{{VAR=BOX_1}}'&#44;'{{NOM PATIENT}}'&#44;'{{PRENOM PATIENT}}'&#44;'{{VAR=GUID_User}}'&#44;'code tache'&#44;'{{DT=yyyy-MM-dd hh:mm:ss}}'&#44;'PATIENT_IN'&#44;'{{VAR=EN_PK_encours}}'&#44;'libelletache'&#44;'libelleetat'&#44;'Admission en urgence'&#41;)}}\
+{{REM=------------------- relire le code box du patient dans synoptux ---------------------- }}\
+{{:: VAR_SET(CodeBox, {{:: SQL_SELECT ( synopt_encours , EC_CodeBox, WHERE EC_GUIDPatient='{{GUID}}', 1,%,,%0)}})}}\
+{{:: VAR_SET(OutMacro,{{::SI(S,{{VAR=EN_PK_encours}},=,,FALSE,)}})}}\

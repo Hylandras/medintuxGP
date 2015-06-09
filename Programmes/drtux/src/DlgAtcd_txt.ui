@@ -1,0 +1,742 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>DlgAtcd_txt</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DlgAtcd_txt</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>623</width>
+            <height>472</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Ajouter un antécédent en mode texte</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="Line" row="1" column="0">
+            <property name="name">
+                <cstring>line1</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>lbl_Titre</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>22</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Ajouter un antécédent en mode texte&lt;/b&gt;</string>
+            </property>
+            <property name="alignment">
+                <set>WordBreak|AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout21</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel_Libelle</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Libellé de l'antécédent</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>m_LineEdit_Libelle</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0">
+            <property name="name">
+                <cstring>layout21_2</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel_Libelle_Long</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Libellé long de l'antécédent</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>m_LineEdit_Libelle_Long</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="4" column="0">
+            <property name="name">
+                <cstring>layout9</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel3_2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Genre :</string>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="4">
+                    <property name="name">
+                        <cstring>pushButtonFamilleGenreEdit</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>2</hsizetype>
+                            <vsizetype>4</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>22</width>
+                            <height>22</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Cliquez ici pour modifier les listes des familles et genres</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Cliquez ici pour modifier les listes des familles et genres</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel3</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Famille de l'antécédent</string>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="1">
+                    <property name="name">
+                        <cstring>m_Combo_Family</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="3">
+                    <property name="name">
+                        <cstring>m_Combo_Genre</cstring>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="5" column="0">
+            <property name="name">
+                <cstring>groupBox_dates</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="title">
+                <string>Dates de l'antécédent</string>
+            </property>
+            <property name="alignment">
+                <set>AlignHCenter</set>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout14</cstring>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget" row="0" column="2">
+                            <property name="name">
+                                <cstring>layout13</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>layout11</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QPushButton" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>pushButtonDateDeb_Del</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="text">
+                                                <string></string>
+                                            </property>
+                                            <property name="accel">
+                                                <string></string>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>Saisie de la date et de l'heure de la rubrique.</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QPushButton" row="0" column="1">
+                                            <property name="name">
+                                                <cstring>pushButtonDateDebDlg</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="text">
+                                                <string></string>
+                                            </property>
+                                            <property name="accel">
+                                                <string></string>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>Saisie de la date et de l'heure de la rubrique.</string>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                                <widget class="QLayoutWidget" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>layout12</cstring>
+                                    </property>
+                                    <grid>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QPushButton" row="0" column="1">
+                                            <property name="name">
+                                                <cstring>pushButtonDateFinDlg</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="text">
+                                                <string></string>
+                                            </property>
+                                            <property name="accel">
+                                                <string></string>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>Saisie de la date et de l'heure de la rubrique.</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QPushButton" row="0" column="0">
+                                            <property name="name">
+                                                <cstring>pushButtonDateFin_Del</cstring>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>22</width>
+                                                    <height>22</height>
+                                                </size>
+                                            </property>
+                                            <property name="text">
+                                                <string></string>
+                                            </property>
+                                            <property name="accel">
+                                                <string></string>
+                                            </property>
+                                            <property name="toolTip" stdset="0">
+                                                <string>Saisie de la date et de l'heure de la rubrique.</string>
+                                            </property>
+                                        </widget>
+                                    </grid>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="0">
+                            <property name="name">
+                                <cstring>layout10</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLabel" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel_date</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>4</hsizetype>
+                                            <vsizetype>5</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string>Date de début l'antécédent</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>textLabel_date_fin</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>4</hsizetype>
+                                            <vsizetype>5</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="text">
+                                        <string>Date de fin l'antécédent</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                        <widget class="QLayoutWidget" row="0" column="1">
+                            <property name="name">
+                                <cstring>layout9</cstring>
+                            </property>
+                            <grid>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="CMaskedLineEdit" row="1" column="0">
+                                    <property name="name">
+                                        <cstring>cMaskedLineDateFinAtcd</cstring>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32767</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="carMask" stdset="0">
+                                        <number>95</number>
+                                    </property>
+                                    <property name="control" stdset="0">
+                                        <string>GGGGGGGG</string>
+                                    </property>
+                                    <property name="mask" stdset="0">
+                                        <string>__/__/____</string>
+                                    </property>
+                                </widget>
+                                <widget class="CMaskedLineEdit" row="0" column="0">
+                                    <property name="name">
+                                        <cstring>cMaskedLineDateDebAtcd</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>7</hsizetype>
+                                            <vsizetype>5</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>100</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>32767</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="carMask" stdset="0">
+                                        <number>95</number>
+                                    </property>
+                                    <property name="control" stdset="0">
+                                        <string>GGGGGGGG</string>
+                                    </property>
+                                    <property name="mask" stdset="0">
+                                        <string>__/__/____</string>
+                                    </property>
+                                </widget>
+                            </grid>
+                        </widget>
+                    </grid>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="8" column="0">
+            <property name="name">
+                <cstring>layout6</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton" row="0" column="2">
+                    <property name="name">
+                        <cstring>but_Annuler</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Annuler</string>
+                    </property>
+                </widget>
+                <spacer row="0" column="0">
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>45</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton" row="0" column="1">
+                    <property name="name">
+                        <cstring>but_Valider</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Valider</string>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="7" column="0">
+            <property name="name">
+                <cstring>layout18</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>m_LineEdit_Commentaire</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel_Commentaire</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Commentaire</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QButtonGroup" row="6" column="0">
+            <property name="name">
+                <cstring>buttonGroup_Sport_ALD</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="title">
+                <string>Rapports ALD, Activité sportive, vigilance</string>
+            </property>
+            <property name="alignment">
+                <set>AlignHCenter</set>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>2</number>
+                </property>
+                <property name="spacing">
+                    <number>2</number>
+                </property>
+                <widget class="QRadioButton" row="2" column="0">
+                    <property name="name">
+                        <cstring>radioButton_Sport</cstring>
+                    </property>
+                    <property name="text">
+                        <string>En rapport avec une activité sportive (détection du dopage)</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>radioButton_nonDefini</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Non défini</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="3" column="0">
+                    <property name="name">
+                        <cstring>radioButton_Vigilance</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Activité nécessitant l'entière vigilance (détection de l'altération de la vigilance)</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>radioButton_ALD</cstring>
+                    </property>
+                    <property name="text">
+                        <string>En rapport avec une pathologie ALD</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>CMaskedLineEdit</class>
+        <header location="global">../../../MedinTuxTools/CMaskedLineEdit.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>Sig_FocusOut()</signal>
+        <signal>Sig_FocusIn()</signal>
+        <signal>Sig_CarEvent(QEvent * ev)</signal>
+        <property type="UInt">carMask</property>
+        <property type="String">text</property>
+        <property type="String">mask</property>
+        <property type="String">control</property>
+        <property type="Int">mixMode</property>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>but_Valider</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgAtcd_txt</receiver>
+        <slot>but_Valider_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>but_Annuler</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgAtcd_txt</receiver>
+        <slot>but_Annuler_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">qdatetime.h</include>
+    <include location="local" impldecl="in declaration">Global.h</include>
+    <include location="global" impldecl="in declaration">qstringlist.h</include>
+    <include location="local" impldecl="in declaration">C_Atcd.h</include>
+    <include location="local" impldecl="in implementation">DlgAtcd_txt.ui.h</include>
+</includes>
+<forwards>
+    <forward>class Atcd_Element;</forward>
+    <forward>class Atcd_Code;</forward>
+</forwards>
+<variables>
+    <variable access="public">bool m_toViewOnly;</variable>
+    <variable access="public">QStringList m_ATCD_FamilyList;</variable>
+    <variable access="public">QStringList m_ATCD_GenreList;</variable>
+    <variable access="public">QString m_structStr;</variable>
+    <variable>bool m_isFamilleGenreModified;</variable>
+</variables>
+<slots>
+    <slot>Slot_pushButtonDateDebDlg()</slot>
+    <slot>Slot_pushButtonDateFinDlg()</slot>
+    <slot>Slot_pushButtonDateDeb_Del()</slot>
+    <slot>Slot_pushButtonDateFin_Del()</slot>
+    <slot>Slot_pushButtonFamilleGenreEdit()</slot>
+    <slot>setSate_Ald_Sport( const QString &amp; sport_ald )</slot>
+    <slot>setDateFin( QDate dt )</slot>
+    <slot>setDateDeb( QDate dt )</slot>
+    <slot>getInfos( QString &amp; libelle, QString &amp; family, QString &amp; dateDebIso, QString &amp; dateFinIso, QString &amp; commentaire )</slot>
+    <slot>setComboFamilyGenre()</slot>
+    <slot>setFamilyGenre( QString familyGenre )</slot>
+    <slot>setDialogForAddToThesaurus()</slot>
+    <slot>setATCD_toView( Atcd_Code *, Atcd_Element * atcd )</slot>
+    <slot>setToUpdate( bool b )</slot>
+    <slot>put_Atcd_Data_in_View( Atcd_Element * atcd )</slot>
+    <slot>but_Valider_clicked()</slot>
+    <slot>but_Annuler_clicked()</slot>
+    <slot>comboBox_Family_highlighted( const QString &amp; section )</slot>
+    <slot>combo_Family_activated( int )</slot>
+    <slot>combo_Genre_activated( int )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function returnType="bool">isFamilleGenreModified()</function>
+    <function>setComboOnValue( QComboBox * pQComboBox, const QString &amp; value )</function>
+    <function returnType="QString">setDateFin( const QString &amp; old_state )</function>
+    <function returnType="QString">getSate_Ald_Sport()</function>
+    <function returnType="QString">getDateFin()</function>
+    <function returnType="QString">getDateDeb()</function>
+    <function returnType="QString">getFamilleGenre()</function>
+    <function returnType="QString">getLibelle()</function>
+    <function returnType="QString">getComment()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+ /includehints>
+</UI>

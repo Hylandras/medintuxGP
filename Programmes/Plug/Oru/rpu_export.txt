@@ -1,0 +1,105 @@
+{{\
+{{WAIT_CURSOR}}\
+{{REM =  la variable 'rpu_is_active' est deja initialisee dans 'definition.txt' du menu utilisateur  }}\
+{{REM =......................... verifier si la macro doit etre active ..............................}}\
+{{REM =                          CAD si le fichier rpu doit etre genere                              }}\
+{{REM =                          la macro est inactive si : elle est plus ancienne de plus           }}\
+{{REM =                          de 24 heures par rapport a la date courante                         }}\
+{{:: DATE DOCUMENT(Observation FORMAT=yyyy-MM-dd hh:mm)>rpu_sql_dt_hr_entree}}\
+{{:: VAR_SET(rpu_sql_dt_hr_entree,{{VAR=rpu_sql_dt_hr_entree}}:00)}}\
+
+{{:: DATE DOCUMENT (Observation FORMAT=dd-MM-yyyy hh:mm:ss)>rpu_dateObs}}\
+{{:: DT (dd-MM-yyyy hh:mm:ss)>rpu_dateCur}}\
+{{:: DATE_TONUM( $rpu_dateCur,S,$rpu_dateObs)>rpu_nbSec}}\
+{{:: {{VAR=c}}VAR_SET(rpu_is_active,{{:: SI(N,$rpu_nbSec,>,86400,NO_ACTIVE,)}})}}
+
+{{REM =..................... recuperer les infos .................................................}}\
+{{:: DATE DOCUMENT(Observation FORMAT=dd-MM-yyyyThh-mm-ss)>rpu_dt_hr_evnt_key}}\
+{{:: DATE DOCUMENT(Observation FORMAT=dd/MM/yyyy)>rpu_dt_evnt}}\
+{{:: CODE_POSTAL_PATIENT()>rpu_cd_post}}\
+{{:: VILLE PATIENT()>rpu_ville}}\
+{{:: DATE NAISSANCE PATIENT(dd/MM/yyyy)>rpu_dt_nss}}\
+{{:: LEFT({{SEXE PATIENT}},1)>rpu_sexe}}\
+{{:: Extract (Observation,Date :, EOL)-rpu_dt_entree}}\
+{{:: Extract (Observation,Heure d'Arrivée SU :, EOL)-rpu_hr_entree}}\
+{{:: VAR_SET(rpu_dt_hr_entree,{{:: RB ($rpu_dt_entree,-,/)}} {{:: RB ($rpu_hr_entree,h,:)}})}}\
+
+{{:: TN ({{:: Extract (Observation,Mode d'entree :,Heure d'Arri)}})>rpu_mode_entree}}\
+{{:: TN ({{:: Extract (Observation,Provenance :,EOL)}})>rpu_provenance}}\
+
+{{:: Extract (Observation,Transport admission :,EOL)>rpu_trans_mode}}\
+{{:: IO($rpu_trans_mode,-)>rpu_i}}\
+{{:: LEFT( $rpu_trans_mode , $rpu_i )-rpu_trans_mode}}\
+
+{{:: Extract (Observation,Transport mode de prise en charge :,EOL)>rpu_trans_pec}}\
+{{:: IO($rpu_trans_pec,-)>rpu_i}}\
+{{:: LEFT( $rpu_trans_pec , $rpu_i )-rpu_trans_pec}}\
+
+{{:: Extract (Observation,Motif CIM10 :,EOL,)>rpu_motif}}\
+{{:: Extract (Observation,C.C.M.U                      :,EOL)>rpu_gravite}}\
+{{:: IO( $rpu_gravite, - )>rpu_i}}\
+{{:: LEFT( $rpu_gravite, $rpu_i)-rpu_gravite}}\
+
+{{REM =..................... recuperer cim 10 .................................................}}\
+{{:: VAR_SET($rpu_cimx_item_0,)}}\
+{{:: Extract (Observation,CIM10Urg,POST URGENCE)>rpu_CIMX_BLOC}}
+{{:: VAR_SPLIT(rpu_cimx_item_, $rpu_CIMX_BLOC ,~[,FALSE TRIMMED,]~)}}
+{{:: VAR_SET(rpu_diag_princ,$rpu_cimx_item_0)}}\
+
+{{:: VAR_SET(rpu_diag_assoc_list,)}}\
+{{::#VAR_SET(rpu_diag_assoc_list,{{VAR=rpu_diag_assoc_list}}{{::#SI(S,$rpu_cimx_item_1,=,,,<DA>{{VAR=rpu_cimx_item_1}}</DA>)}})}}\
+{{::#VAR_SET(rpu_diag_assoc_list,{{VAR=rpu_diag_assoc_list}}{{::#SI(S,$rpu_cimx_item_2,=,,,<DA>{{VAR=rpu_cimx_item_2}}</DA>)}})}}\
+{{::#VAR_SET(rpu_diag_assoc_list,{{VAR=rpu_diag_assoc_list}}{{::#SI(S,$rpu_cimx_item_3,=,,,<DA>{{VAR=rpu_cimx_item_3}}</DA>)}})}}\
+{{::#VAR_SET(rpu_diag_assoc_list,{{VAR=rpu_diag_assoc_list}}{{::#SI(S,$rpu_cimx_item_4,=,,,<DA>{{VAR=rpu_cimx_item_4}}</DA>)}})}}\
+{{::#VAR_SET(rpu_diag_assoc_list,{{VAR=rpu_diag_assoc_list}}{{::#SI(S,$rpu_cimx_item_5,=,,,<DA>{{VAR=rpu_cimx_item_5}}</DA>)}})}}\
+{{::#VAR_SET(rpu_diag_assoc_list,{{VAR=rpu_diag_assoc_list}}{{::#SI(S,$rpu_cimx_item_6,=,,,<DA>{{VAR=rpu_cimx_item_6}}</DA>)}})}}\
+
+{{REM =..................... recuperer CCAM .................................................}}\
+{{:: Extract (Observation,Codage CCAM,$ToEnd)>rpu_CCAM_BLOC}}
+{{:: VAR_SPLIT(rpu_ccam_item_, $rpu_CCAM_BLOC ,::[,FALSE TRIMMED,]::)}}
+
+{{:: VAR_SET(rpu_cam_list,)}}\
+{{::#VAR_SET(rpu_cam_list,{{VAR=rpu_cam_list}}{{::#SI(S,$rpu_ccam_item_0,=,,,<ACTE>{{VAR=rpu_ccam_item_0}}</ACTE>)}})}}\
+{{::#VAR_SET(rpu_cam_list,{{VAR=rpu_cam_list}}{{::#SI(S,$rpu_ccam_item_1,=,,,<ACTE>{{VAR=rpu_ccam_item_1}}</ACTE>)}})}}
+{{::#VAR_SET(rpu_cam_list,{{VAR=rpu_cam_list}}{{::#SI(S,$rpu_ccam_item_2,=,,,<ACTE>{{VAR=rpu_ccam_item_2}}</ACTE>)}})}}\
+{{::#VAR_SET(rpu_cam_list,{{VAR=rpu_cam_list}}{{::#SI(S,$rpu_ccam_item_3,=,,,<ACTE>{{VAR=rpu_ccam_item_3}}</ACTE>)}})}}\
+
+{{REM =..................... recuperer date heure sortie .................................................}}\
+{{:: VAR_SET(rpu_dt_hr_sortie,{{:: RB({{:: CS({{:: Extract (Observation,Date SU :,H. départ SU :)}})}},-,/)}} {{:: CS({{:: Extract (Observation,H. départ SU :,EOL)}})}})}}\
+{{REM =..................... recuperer mode sortie .................................................}}\
+{{:: Extract (Observation,Type de sortie :,EOL)>rpu_mode_sortie}}\
+{{:: IO($rpu_mode_sortie,-)>rpu_i}}\
+{{:: LEFT($rpu_mode_sortie,$rpu_i)-rpu_mode_sortie}}\
+{{:: VAR_SET(rpu_mode_sortie,{{::#SI(S,$rpu_mode_sortie,=,H,6,{{::#SI(S,$rpu_mode_sortie,=,T,7,{{::#SI(S,$rpu_mode_sortie,=,D,9,8)}})}})}})}}\
+{{REM =..................... recuperer destination type .................................................}}\
+{{:: Extract (Observation,Destination type :,EOL)>rpu_destination}}\
+{{:: IO($rpu_destination,-)>rpu_i}}\
+{{:: LEFT($rpu_destination,$rpu_i)-rpu_destination}}\
+{{REM =..................... recuperer orientation .................................................}}\
+{{:: Extract (Observation,RPU-Orientation :,EOL)>rpu_orientation}}\
+{{:: IO($rpu_orientation,-)>rpu_i}}\
+{{:: LEFT($rpu_orientation,$rpu_i)-rpu_orientation}}\
+{{REM =..................... recuperer date naissance sql.............................................................}}\
+{{:: DATE NAISSANCE PATIENT(yyyy-MM-dd)>rpu_sql_dt_nss}}\
+
+
+{{REM=................. --delete-source-file ..................................}}\
+{{:: VAR_SET(sql_error,)}}\
+{{:: VAR_SET(rpu_path_exchg,{{:: RB(../../Plug/Oru/xml/RPU-{{NOM_PRENOM_PATIENT}}_{{GUID}}_{{VAR=rpu_dt_hr_evnt_key}}.xml, ,-)}})}}\
+{{:: RB($rpu_path_exchg,:,=)>rpu_path_exchg}}\
+{{:: DELETE_FILE ($rpu_path_exchg)}}\
+{{:: RF( ../../Plug/Oru/RPU-PassageModele.txt,$rpu_path_exchg,rpu_dt_evnt,rpu_cd_post,rpu_ville,rpu_dt_nss,rpu_sexe,rpu_dt_hr_entree,rpu_mode_entree,rpu_provenance,rpu_trans_mode,rpu_trans_pec,rpu_motif,rpu_gravite,rpu_diag_princ,rpu_diag_assoc_list,rpu_cam_list,rpu_dt_hr_sortie,rpu_mode_sortie,rpu_destination,rpu_orientation)}}\
+{{:: SET_VAR(dataXml, $File{{VAR=rpu_path_exchg}})}}\
+{{:: SET_VAR(requete_where_sql, ( rpu_encours_id_patient = '{{GUID}}' AND rpu_encours_dt_entree = '{{VAR=rpu_sql_dt_hr_entree}}' ) )}}\
+{{:: {{VAR=rpu_is_active}}SQL_WRITE(rpu_passages, $requete_where_sql ,rpu_encours_id_patient,{{GUID}},rpu_encours_dt_lastUse,{{:: DT (yyyy-MM-dd hh:mm:ss)}},rpu_encours_dt_sortie,{{:: DT (yyyy-MM-dd hh:mm:ss)}},rpu_encours_nom_prenom_patient,{{NOM_PRENOM_PATIENT=@}},rpu_encours_dt_naissance_patient,$rpu_sql_dt_nss,rpu_encours_sexe_patient,$rpu_sexe,rpu_encours_dt_entree,$rpu_sql_dt_hr_entree,rpu_encours_dt_examen,$rpu_sql_dt_hr_entree,rpu_xml_blob,$dataXml)-sql_error}}\
+
+{{:: SI(S,$sql_error,=,,NO_ACTIVE,)>rpu_isSqlErr}}\
+{{:: {{VAR=rpu_isSqlErr}}MESSAGE_POPUP ($sql_error) }}\
+
+{{:: RB(../../Plug/Oru/xml/RPU-{{NOM_PRENOM_PATIENT}}_{{GUID}}_{{VAR=rpu_dt_hr_evnt_key}}, ,-)>path_err}}
+{{:: {{VAR=rpu_isSqlErr}}EXPORT ({{VAR=path_err}}.sql,T,$sql_error)}}\
+{{:: {{VAR=rpu_isSqlErr}}EXPORT (last_where.sql,T,$requete_where_sql)}}\
+
+{{:: DELETE_FILE($rpu_path_exchg)}}\
+{{:: WAIT_CURSOR (RESTORE)}}\
+}}<br/>

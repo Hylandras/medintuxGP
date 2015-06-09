@@ -1,0 +1,621 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>Dock_Menu</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Dock_Menu</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>296</width>
+            <height>360</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>3</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>50</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Dock_Menu</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>5</number>
+        </property>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout5</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>but_NewIdent</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>26</horstretch>
+                            <verstretch>26</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="toggleButton">
+                        <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                        <bool>true</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Créer un nouveau dossier patient</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>m_LineEdit_ToSearch</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Saisie du nom;prénom d'un nouveau patient. (appuyer sur touche Entrée pour confirmer)</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QTextEdit" row="4" column="0">
+            <property name="name">
+                <cstring>m_Text_Note</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>50</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>100</height>
+                </size>
+            </property>
+            <property name="readOnly">
+                <bool>false</bool>
+            </property>
+            <property name="undoRedoEnabled">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>22</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>22</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Accès Rapide&lt;/b&gt;</string>
+            </property>
+            <property name="alignment">
+                <set>WordBreak|AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0">
+            <property name="name">
+                <cstring>layout7</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>2</number>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout6</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>0</number>
+                        </property>
+                        <property name="spacing">
+                            <number>2</number>
+                        </property>
+                    </hbox>
+                </widget>
+                <widget class="QListView">
+                    <property name="name">
+                        <cstring>m_ListView_AccesRapide</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>50</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>32767</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                        </color>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="resizePolicy">
+                        <enum>Manual</enum>
+                    </property>
+                    <property name="selectionMode">
+                        <enum>Single</enum>
+                    </property>
+                    <property name="allColumnsShowFocus">
+                        <bool>true</bool>
+                    </property>
+                    <property name="rootIsDecorated">
+                        <bool>true</bool>
+                    </property>
+                    <property name="showToolTips">
+                        <bool>true</bool>
+                    </property>
+                    <property name="resizeMode">
+                        <enum>AllColumns</enum>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Accès rapide aux éléments du dossier médical</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Accès rapide aux éléments du dossier médical</string>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout6</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>m_Lbl_Sexe</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>50</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>50</width>
+                            <height>50</height>
+                        </size>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>m_Lbl_Nom</cstring>
+                    </property>
+                    <property name="text">
+                        <string>textLabel1</string>
+                    </property>
+                    <property name="alignment">
+                        <set>WordBreak|AlignVCenter</set>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>45</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout5</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>but_ZoomPlus</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>0</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>16</horstretch>
+                                    <verstretch>16</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="toggleButton">
+                                <bool>false</bool>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Augmente le zoom</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>but_ZoomMinus</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>0</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>20</horstretch>
+                                    <verstretch>20</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="toggleButton">
+                                <bool>false</bool>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Diminue le zoom</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>but_ZoomDefault</cstring>
+                            </property>
+                            <property name="sizePolicy">
+                                <sizepolicy>
+                                    <hsizetype>0</hsizetype>
+                                    <vsizetype>0</vsizetype>
+                                    <horstretch>20</horstretch>
+                                    <verstretch>20</verstretch>
+                                </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string></string>
+                            </property>
+                            <property name="toggleButton">
+                                <bool>false</bool>
+                            </property>
+                            <property name="flat">
+                                <bool>true</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Zoom par défaut</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>m_ListView_AccesRapide</sender>
+        <signal>contextMenuRequested(QListViewItem*,const QPoint&amp;,int)</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>m_ListView_AccesRapide_contextMenuRequested(QListViewItem*,const QPoint&amp;,int)</slot>
+    </connection>
+    <connection>
+        <sender>m_Text_Note</sender>
+        <signal>textChanged()</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>m_Text_Note_textChanged()</slot>
+    </connection>
+    <connection>
+        <sender>m_ListView_AccesRapide</sender>
+        <signal>clicked(QListViewItem*,const QPoint&amp;,int)</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>m_ListView_AccesRapide_clicked(QListViewItem*,const QPoint&amp;,int)</slot>
+    </connection>
+    <connection>
+        <sender>m_LineEdit_ToSearch</sender>
+        <signal>returnPressed()</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>m_LineEdit_ToSearch_returnPressed()</slot>
+    </connection>
+    <connection>
+        <sender>but_NewIdent</sender>
+        <signal>clicked()</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>but_NewIdent_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>but_ZoomPlus</sender>
+        <signal>clicked()</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>but_ZoomPlus_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>but_ZoomMinus</sender>
+        <signal>clicked()</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>but_ZoomMinus_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>but_ZoomDefault</sender>
+        <signal>clicked()</signal>
+        <receiver>Dock_Menu</receiver>
+        <slot>but_ZoomDefault_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">CMoteur_Base.h</include>
+    <include location="local" impldecl="in declaration">CRubList.h</include>
+    <include location="global" impldecl="in declaration">qstringlist.h</include>
+    <include location="local" impldecl="in declaration">C_Atcd.h</include>
+    <include location="local" impldecl="in declaration">../../MedinTuxTools/CPrtQListViewItem.h</include>
+    <include location="global" impldecl="in declaration">qpixmap.h</include>
+    <include location="local" impldecl="in declaration">C_Var.h</include>
+    <include location="local" impldecl="in declaration">../../MedinTuxTools/ThemePopup.h</include>
+    <include location="local" impldecl="in implementation">Dock_Menu.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">int m_ClickBehavior;</variable>
+    <variable access="public">bool m_ParentInBold;</variable>
+    <variable access="public">bool m_OpenATCD;</variable>
+    <variable access="public">int m_DefaultFontSize;</variable>
+    <variable access="public">bool m_Droits_Modif_ATCD;</variable>
+    <variable access="public">bool m_Droits_Modif_TTTFond;</variable>
+    <variable access="public">bool m_Droits_Modif_Variables;</variable>
+    <variable access="public">bool m_Droits_View_TTTFond;</variable>
+    <variable access="public">bool m_Droits_View_Variables;</variable>
+    <variable access="public">bool m_Droits_View_Prescriptions;</variable>
+    <variable access="public">bool m_Droits_View_Observations;</variable>
+    <variable access="public">bool m_Droits_View_Documents;</variable>
+    <variable access="public">bool m_Droits_View_Identite;</variable>
+    <variable access="public">bool m_Droits_View_Courriers;</variable>
+    <variable access="public">bool m_Droits_View_Certificats;</variable>
+    <variable access="public">bool m_Droits_View_ATCD;</variable>
+    <variable access="public">bool m_Droits_Create_Prescriptions;</variable>
+    <variable access="public">bool m_Droits_Create_Observations;</variable>
+    <variable access="public">bool m_Droits_Create_Documents;</variable>
+    <variable access="public">bool m_Droits_Create_Certificats;</variable>
+    <variable access="public">bool m_Droits_Create_Courriers;</variable>
+    <variable access="public">bool m_Droits_Create_ATCD;</variable>
+    <variable access="public">QString m_SelectedFile;</variable>
+    <variable access="public">bool m_ShowDoc;</variable>
+    <variable access="public">bool m_ShowPrescr;</variable>
+    <variable access="public">bool m_ShowObs;</variable>
+    <variable access="public">bool m_ShowIdentity;</variable>
+    <variable access="public">QString m_PkDocTerrain;</variable>
+    <variable access="public">bool m_IsFeminin;</variable>
+    <variable access="public">QString m_Identity;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_Vars;</variable>
+    <variable access="public">int m_Id_RubList_ToUseForThisTerrain;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_Intervenants;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_Documents;</variable>
+    <variable access="public">QPixmap m_PixMap_Parturiente ;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_Observations;</variable>
+    <variable access="public">QPixmap m_PixMap_Homme;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_Coordonnees;</variable>
+    <variable access="public">QString m_User;</variable>
+    <variable access="public">QString m_DossPrenom;</variable>
+    <variable access="public">QString m_DossNom;</variable>
+    <variable access="public">QString m_Id_Doss;</variable>
+    <variable access="public">QString m_GUID;</variable>
+    <variable access="public">RUBREC_LIST* m_pRubList;</variable>
+    <variable access="public">CMoteurBase* m_pCMoteurBase;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_ATCD;</variable>
+    <variable access="public">QPixmap m_PixMap_Femme;</variable>
+    <variable access="public">QStringList m_QStringList_ATCD;</variable>
+    <variable access="public">Atcd_Code* m_pAtcd_Code;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_Prescriptions;</variable>
+    <variable access="public">bool m_Notes_Changed;</variable>
+    <variable access="public">Var_Code* m_pVar_Code;</variable>
+    <variable access="public">ThemePopup* m_Popup;</variable>
+    <variable access="public">Atcd_Element* m_pAtcd_Element_Selected;</variable>
+    <variable access="public">int m_IsModifiable;</variable>
+    <variable access="public">bool m_ShowTerrain;</variable>
+    <variable access="public">bool m_ShowGlossaire;</variable>
+    <variable access="public">bool m_Droits_All;</variable>
+    <variable access="public">bool m_OpenTerrain;</variable>
+    <variable access="public">bool m_OpenObs;</variable>
+    <variable access="public">bool m_OpenPrescr;</variable>
+    <variable access="public">bool m_OpenDoc;</variable>
+    <variable access="public">bool m_OpenIdentity;</variable>
+    <variable access="public">bool m_OpenVars;</variable>
+    <variable access="public">QString m_TypeATCD_Selectionne;</variable>
+    <variable access="public">bool m_TerrainIsModified;</variable>
+    <variable access="public">bool m_OpenVisuNote;</variable>
+    <variable access="public">bool m_OpenInterv;</variable>
+    <variable access="public">bool m_ShowInterv;</variable>
+    <variable access="public">CPrtQListViewItem* m_Item_Terrains;</variable>
+</variables>
+<signals>
+    <signal>Sign_ItemSelected( int );</signal>
+    <signal>Sign_ActiverDocument(QString , QString, int );</signal>
+    <signal>Sign_SearchPatient(QString);</signal>
+    <signal>Sign_ActiverRubrique( const char*, int );</signal>
+    <signal>Sign_GlossaireFileSelected(const char*, int);</signal>
+    <signal>Sign_CreateNewIdent()</signal>
+    <signal>Sign_NoteToBeSynchronized(int, const char* )</signal>
+</signals>
+<slots>
+    <slot>listView_AccesRapide_doubleClicked( QListViewItem * pQListViewItem, const QPoint &amp;, int )</slot>
+    <slot returnType="QStringList">exeAnnuaire( QString idInterv )</slot>
+    <slot>createIniParams( QString &amp; paramString )</slot>
+    <slot>getIniParams( QString &amp; paramString )</slot>
+    <slot>setParams( CMoteurBase * pCMoteurBase, RUBREC_LIST * pRubList, const char * num_GUID, const char * id_doss, const char * dossNom, const char * dossPrenom, const char * user, const char * droits, Atcd_Code * pAtcd_Code )</slot>
+    <slot>createMenu()</slot>
+    <slot>checkItemToSave()</slot>
+    <slot>getTerrain( QString pkDoc )</slot>
+    <slot>getTerrain()</slot>
+    <slot>Slot_ChangeIdentity( const char * num_GUID, const char * id_doss, const char * dossNom, const char * dossPrenom, RUBREC_LIST * pRubList )</slot>
+    <slot>getRubListAndUpdateView( RUBREC_LIST * pRubList )</slot>
+    <slot>createIdentAndNote()</slot>
+    <slot>getVarFromRubList()</slot>
+    <slot>setSexeAndParturienteDisplay()</slot>
+    <slot>ATCD_HaveChanged()</slot>
+    <slot>getATCDFromRubList()</slot>
+    <slot>getObservationsFromRubList()</slot>
+    <slot>getPrescriptionsFromRubList()</slot>
+    <slot>getIntervenants()</slot>
+    <slot>getDocumentsFromRubList()</slot>
+    <slot>m_ListView_AccesRapide_contextMenuRequested( QListViewItem * item, const QPoint &amp; p, int )</slot>
+    <slot>Terrain_createPopup( ThemePopup * pPopup, CPrtQListViewItem * )</slot>
+    <slot>Observations_createPopup( ThemePopup * pPopup, CPrtQListViewItem * )</slot>
+    <slot>Prescriptions_createPopup( ThemePopup * pPopup, CPrtQListViewItem * )</slot>
+    <slot>Documents_createPopup( ThemePopup * pPopup, CPrtQListViewItem * )</slot>
+    <slot>Droits_createPopup( ThemePopup * pPopup )</slot>
+    <slot>Slot_FileSelected()</slot>
+    <slot>OnMenuActivated( int id )</slot>
+    <slot>ATCDRubriques_createPopup( ThemePopup * pQPopupMenu )</slot>
+    <slot>ATCD_MenuActionSetRubrique()</slot>
+    <slot>ATCD_createPopup( ThemePopup * pPopup, CPrtQListViewItem * pCPrt )</slot>
+    <slot>ATCD_modifyDateGrossesse()</slot>
+    <slot>ATCD_modifyCommentaire()</slot>
+    <slot>ATCD_eraseIt()</slot>
+    <slot>ATCD_modifyDateDeb()</slot>
+    <slot>ATCD_modifyDateFin()</slot>
+    <slot>ATCD_ald_on()</slot>
+    <slot>ATCD_ald_off()</slot>
+    <slot>ATCD_view()</slot>
+    <slot>ATCD_endGrossesse()</slot>
+    <slot>ATCD_endAllaitement()</slot>
+    <slot>ATCD_modifyIt()</slot>
+    <slot>ATCD_addCIM10()</slot>
+    <slot>ATCD_addTextuel()</slot>
+    <slot>ATCD_addAllergie()</slot>
+    <slot>m_ListView_AccesRapide_clicked( QListViewItem * item, const QPoint &amp;, int )</slot>
+    <slot>m_Text_Note_textChanged()</slot>
+    <slot>setModifiableState( int state )</slot>
+    <slot>SetInterfaceOnDroits( const QString &amp; droits )</slot>
+    <slot>but_ZoomPlus_clicked()</slot>
+    <slot>but_ZoomMinus_clicked()</slot>
+    <slot>but_ZoomDefault_clicked()</slot>
+    <slot>m_LineEdit_ToSearch_returnPressed()</slot>
+    <slot>but_NewIdent_clicked()</slot>
+    <slot>synchronizeNoteWith( const char * txt )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function returnType="int">directoryToPopup( ThemePopup * pPopup, QString path, int numSousMenus )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

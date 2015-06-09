@@ -1,0 +1,122 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>FormListMenu</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FormListMenu</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>195</width>
+            <height>335</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Menu Général</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QListBox" row="0" column="0">
+            <item>
+                <property name="text">
+                    <string>Honoraires</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Remise</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Gestion DAF</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Gestion CMU</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Mouvements</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Actes</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Relevés de comptes</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Livre et Bilan</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Paramètres</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>A propos</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>ListView_Doc</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>ListView_Doc</sender>
+        <signal>clicked(QListBoxItem*)</signal>
+        <receiver>FormListMenu</receiver>
+        <slot>ListView_Doc_clicked(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>ListView_Doc</sender>
+        <signal>currentChanged(QListBoxItem*)</signal>
+        <receiver>FormListMenu</receiver>
+        <slot>ListView_Doc_currentChanged(QListBoxItem*)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">ComptaMoteurBase.h</include>
+    <include location="global" impldecl="in declaration">qpopupmenu.h</include>
+    <include location="global" impldecl="in declaration">qlistview.h</include>
+    <include location="local" impldecl="in implementation">FormListMenu.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">QString m_PkRef;</variable>
+    <variable access="public">ComptaMoteurBase* m_pComptaMoteurBase;</variable>
+</variables>
+<signals>
+    <signal>honorairesSelected()</signal>
+    <signal>actesSelected()</signal>
+    <signal>livreSelected()</signal>
+    <signal>banqueSelected()</signal>
+    <signal>paramSelected()</signal>
+    <signal>gestionDAFSelected()</signal>
+	<signal>gestionCMUSelected()</signal>
+    <signal>aboutSelected()</signal>
+    <signal>mouvementsSelected()</signal>
+    <signal>releveSelected()</signal>
+    <signal>livresSelected()</signal>
+</signals>
+<slots>
+    <slot>init()</slot>
+    <slot>ListView_Doc_clicked( QListBoxItem * pItem )</slot>
+    <slot>ListView_Doc_currentChanged( QListBoxItem * pItem )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

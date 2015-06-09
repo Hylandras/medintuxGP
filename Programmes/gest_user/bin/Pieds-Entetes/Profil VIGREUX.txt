@@ -1,0 +1,278 @@
+<!DOCTYPE PROFILE_GestUser>
+<DocIdentite_GestUser>
+;------------- profil complet avec identite-------------------
+
+[identite]
+  nom = VIGREUX
+  prenom = Guy
+  titre = Docteur
+  login = vig
+  qualification = Gastro entérologue
+  sexe = Masculin
+  numero ordinal = 131183030001220
+  numero rpps =
+  convention = 01-CONVENTIONNE
+  droits = -adm-adr-agc-agm-agv-anc-anp-anv-ata-atc-atv-bic-bip-biv-bmc-ccc-cec-cem-cep-cer-cev-cic-clc-clp-clv-coc-coc-com-cop-cop-cor-cov-cov-doc-dop-dov-enc-enp-env-etc-glc-gld-gln-gls-idc-idg-idv-iec-iep-iev-imc-imp-imv-med-obc-obp-obv-orc-orm-orp-orr-orv-plc-plp-plv-sgn-sld-ttc-ttv-tvc-tvv
+  adresse = 394 Bis Avenue du Prado
+  code postal = 13008
+  ville = Marseille
+  email = gastro-prado@orange.fr
+  tel_1 = 0491221414
+  tel_2 = 0491252303
+  tel_3 =
+  tel_Type_1 = Cabinet
+  tel_Type_2 = Fax
+  tel_Type_3 =
+  TelAbr_1 =
+  TelAbr_2 =
+  TelAbr_3 = 
+
+</DocIdentite_GestUser>
+<DocDefinition_GestUser>
+      <DocType_GestUser>20020300</DocType_GestUser>
+      <DocName_GestUser># INFORMATION</DocName_GestUser>
+      <Data_GestUser>=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:11pt;font-weight:600">           Docteur Guy VIGREUX</span><span style="font-size:11pt"><br />          08 - Médecine des Maladies <br />                   de l'Appareil Digestif<br />          394 Bis Avenue du Prado<br />         130008 Marseille CONVENTIONNE<br />                 13 1</span><span style="font-size:10pt"> 09193 6   0  1  22  0 <br /></span></p>
+<p align="center"><span style="font-size:11pt;font-weight:600;text-decoration:underline">INFORMATION DONNEE A</span><span style="font-size:11pt;font-weight:600"> : </span><span style="font-size:11pt">{{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} Le  {{DD-MM-YYYY}}     </span></p>
+</body></html>
+}}==/r/n=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:10pt">		Docteur   </span><span style="font-size:10pt;font-weight:600">{{NOM PRENOM MEDECIN}}<br />			</span><img src=TamponVigreux-300.png ><br /><span style="font-style:italic;font-size:10pt"><br /></span><span style="font-style:italic;font-size:7pt">394 Bis Avenue du Prado 13008 Marseille </span><span style="font-style:italic;font-size:7pt;font-weight:600">Tél </span><span style="font-style:italic;font-size:7pt">: 04 91 22 14 14   </span><span style="font-style:italic;font-size:7pt;font-weight:600">Fax</span><span style="font-style:italic;font-size:7pt"> : 04 91 25 23 03  </span><span style="font-style:italic;font-size:7pt;font-weight:600">Mail </span><span style="font-style:italic;font-size:7pt">: gastro-prado@orange.fr				</span></p>
+</body></html>
+}}==/r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>20020300</DocType_GestUser>
+      <DocName_GestUser>* Certificat</DocName_GestUser>
+      <Data_GestUser>=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:11pt;font-weight:600">           Docteur Guy VIGREUX</span><span style="font-size:11pt"><br />          08 - Médecine des Maladies <br />                   de l'Appareil Digestif<br />          394 Bis Avenue du Prado<br />         130008 Marseille CONVENTIONNE<br />                 13 1</span><span style="font-size:10pt"> 09193 6   0  1  22  0 </span><span style="font-size:11pt"><br /></span></p>
+<p align="center"><span style="font-size:11pt"> 	   </span><span style="font-family:Arial Black;font-size:11pt;text-decoration:underline">CERTIFICAT</span><span style="font-size:11pt"><br />	 Le    {{DD-MM-YYYY}}<br />           {{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} {{POIDS PATIENT}} </span></p>
+</body></html>
+}}==/r/n=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:10pt">		Docteur   </span><span style="font-size:10pt;font-weight:600">{{NOM PRENOM MEDECIN}}<br />			</span><img src=TamponVigreux-300.png ><br /><span style="font-style:italic;font-size:10pt"><br /></span><span style="font-style:italic;font-size:7pt">394 Bis Avenue du Prado 13008 Marseille </span><span style="font-style:italic;font-size:7pt;font-weight:600">Tél </span><span style="font-style:italic;font-size:7pt">: 04 91 22 14 14   </span><span style="font-style:italic;font-size:7pt;font-weight:600">Fax</span><span style="font-style:italic;font-size:7pt"> : 04 91 25 23 03  </span><span style="font-style:italic;font-size:7pt;font-weight:600">Mail </span><span style="font-style:italic;font-size:7pt">: gastro-prado@orange.fr				</span></p>
+</body></html>
+}}==/r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>20030000</DocType_GestUser>
+      <DocName_GestUser>* Observation</DocName_GestUser>
+      <Data_GestUser>=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p align="center">      <span style="font-family:Arial Narrow;font-size:22pt;font-weight:600">CENTRE D'EXPLORATION DES MALADIES DE L'APPAREIL DIGESTIF</span><span style="font-family:Arial Narrow"><br /></span><span style="font-family:Arial Narrow;font-weight:600">ENDOSCOPIE - ECHOGRAPHIE - PROCTOLOGIE</span><span style="font-family:Arial Narrow"><br />(</span><span style="font-family:Arial Narrow;font-weight:600">Tél </span><span style="font-family:Arial Narrow">: 04 91 22 14 14         </span><span style="font-family:Arial Narrow;font-weight:600">Fax</span><span style="font-family:Arial Narrow"> : 04 91 25 23 03      </span><span style="font-family:Arial Narrow;font-weight:600">Mail</span><span style="font-family:Arial Narrow"> : gastro-prado@orange.fr) </span><span style="font-family:Arial Narrow;font-style:italic;font-weight:600;color:#ff0000"><br /></span></p>
+<p><hr><span style="font-weight:600">Nom</span>      : {{NOM PRENOM PATIENT}}        <span style="font-weight:600">Sexe</span>:{{SEXE PATIENT}}<br /><span style="font-weight:600">Né(e)</span>    : {{DATE NAISSANCE PATIENT}}            <span style="font-weight:600">Age  </span>: {{AGE PATIENT ABREGE}}<br /><span style="font-weight:600">Adresse</span>: {{ADRESSE PATIENT UNE LIGNE}}<br /><span style="font-weight:600">Tél</span>       {{NUM. TEL1 PATIENT}}                  <span style="font-weight:600">Tél 2</span>    {{NUM. TEL2 PATIENT}}<br /><hr><span style="font-weight:600">N°S.S.</span>   {{NUM. SECU PATIENT}}           <span style="font-weight:600">Vu par: </span>{{NOM PRENOM MEDECIN}}   <span style="font-weight:600">        <br />MEDECIN TRAITANT</span>:  {{NOM PRENOM INTERVENANT=Médecine Générale}}<br /><hr></p>
+</body></html>
+}}==/r/n=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p align="center"><span style="font-size:11pt">Docteur {{NOM PRENOM MEDECIN}} </span></p>
+</body></html>
+}}==/r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>20020200</DocType_GestUser>
+      <DocName_GestUser>* Ordonnance</DocName_GestUser>
+      <Data_GestUser>{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:11pt;font-weight:600">           Docteur Guy VIGREUX</span><span style="font-size:11pt"><br />          08 - Médecine des Maladies <br />                   de l'Appareil Digestif<br />          394 Bis Avenue du Prado<br />         130008 Marseille CONVENTIONNE<br />                 13 1</span><span style="font-size:10pt"> 09193 6   0  1  22  0 <br /><br /><br /> Le    {{DD-MM-YYYY}} {{ X90}}</span> <span style="font-family:Arial;font-size:35pt;font-weight:600">{{:: Extract (Observation , Circonstances : , Heure d'Arrivée SU: , AT ,AT )}}</span><br /><span style="font-size:10pt">           {{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} {{POIDS PATIENT}} </span></p>
+</body></html>
+}} /r/n{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:10pt">		Docteur   </span><span style="font-size:10pt;font-weight:600">{{NOM PRENOM MEDECIN}}<br />			</span><img src=TamponVigreux-300.png ><br /><span style="font-style:italic;font-size:10pt"><br /></span><span style="font-style:italic;font-size:7pt">394 Bis Avenue du Prado 13008 Marseille </span><span style="font-style:italic;font-size:7pt;font-weight:600">Tél </span><span style="font-style:italic;font-size:7pt">: 04 91 22 14 14   </span><span style="font-style:italic;font-size:7pt;font-weight:600">Fax</span><span style="font-style:italic;font-size:7pt"> : 04 91 25 23 03  </span><span style="font-style:italic;font-size:7pt;font-weight:600">Mail </span><span style="font-style:italic;font-size:7pt">: gastro-prado@orange.fr		</span></p>
+</body></html>
+}} /r/n{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:11pt;font-weight:600">           Docteur Guy VIGREUX</span><span style="font-size:11pt"><br />          08 - Médecine des Maladies <br />                   de l'Appareil Digestif<br />          394 Bis Avenue du Prado<br />         130008 Marseille CONVENTIONNE<br />                 13 1</span><span style="font-size:10pt"> 09193 6   0  1  22  0 </span><span style="font-size:11pt"><br /></span><span style="font-style:italic;font-size:11pt;font-weight:600;color:#ff0000">                                          DUPLICATA ne permettant pas<br />                                          la délivrance de médicament </span><span style="font-size:10pt"><br /> Le    {{DD-MM-YYYY}} {{ X90}}</span> <span style="font-family:Arial;font-size:35pt;font-weight:600">{{:: Extract (Observation , Circonstances : , Heure d'Arrivée SU: , AT ,AT )}}</span><br /><span style="font-size:10pt">           {{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} {{POIDS PATIENT}} </span></p>
+</body></html>
+}} /r/n{{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:10pt">		Docteur   </span><span style="font-size:10pt;font-weight:600">{{NOM PRENOM MEDECIN}}<br />			</span><img src=TamponVigreux-300.png ><br /><span style="font-style:italic;font-size:10pt"><br /></span><span style="font-style:italic;font-size:7pt">394 Bis Avenue du Prado 13008 Marseille </span><span style="font-style:italic;font-size:7pt;font-weight:600">Tél </span><span style="font-style:italic;font-size:7pt">: 04 91 22 14 14   </span><span style="font-style:italic;font-size:7pt;font-weight:600">Fax</span><span style="font-style:italic;font-size:7pt"> : 04 91 25 23 03  </span><span style="font-style:italic;font-size:7pt;font-weight:600">Mail </span><span style="font-style:italic;font-size:7pt">: gastro-prado@orange.fr		</span></p>
+</body></html>
+}} /r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>5</DocType_GestUser>
+      <DocName_GestUser>Parametres</DocName_GestUser>
+      <Data_GestUser>
+[Observation]
+  Zoom = 10
+  Montrer = Normal
+  Position = 2 , 5 , 611 , 307 , 2 , 18 , 609 , 305
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+[Prescription]
+  Zoom = 12
+  Montrer = Normal
+  Position = 2 , 335 , 610 , 268 , 2 , 18 , 608 , 266
+  Espace de travail = $DEB$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$END$
+
+[Identité]
+  Montrer = Non
+  Position = 198 , 3 , 481 , 503
+
+
+[Terrain]
+  Montrer = Non
+  Position = 687 , 6 , 360 , 620 , 2 , 18 , 358 , 618
+  Espace de travail = $DEB$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$n$$END$
+
+[Documents]
+  Montrer = Normal
+  Position = 619 , 4 , 402 , 596 , 2 , 18 , 400 , 594
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+[Choix Patients]
+  Montrer = Non
+  Position = 242 , 6 , 213 , 499
+
+
+[Dock glossaire]
+  Montrer = Normal
+  Position = 0 , 147 , 200 , 943
+
+
+[Windows List]
+  Observation = 2 , 5 , 613 , 325
+  Prescription = 2 , 335 , 612 , 286
+  Terrain = 687 , 6 , 362 , 638
+  Choix Patients = 922 , 0 , 213 , 849
+  Documents = 619 , 4 , 404 , 614
+  Anapath = 619 , 4 , 404 , 614
+  Endoscopie = 619 , 4 , 404 , 614
+  Biologie = 619 , 4 , 404 , 614
+  Courrier = 619 , 4 , 404 , 614
+  Imagerie = 619 , 4 , 404 , 614
+
+[Impression]
+  Resolution = 71 , 71
+  MargTop = 5.94
+  Marg_Left = 10
+  Marg_Right = 10
+  Marg_Bottom = 1
+  Zoom = 100
+  IsOutToFile = 0
+  OutpuFileName = /home/ro/print.ps
+  printerSelectionOption =    
+  colorMode = 0
+
+[* Ordonnance]
+  Head_H = 50.49
+  Foot_H = 44.7675
+  NumCopies = 1
+  Resolution = 96 , 96
+  MargTop = 5.94
+  Marg_Left = 10
+  Marg_Right = 10
+  Marg_Bottom = 1
+  Zoom = 100
+  IsOutToFile = 0
+  OutpuFileName = /home/ro/print.ps
+  printerName = Imprimante-Urgences-Medecine
+  printerSelectionOption =
+  colorMode = 0
+  IsDuplicataToPrint = o
+
+[* Observation]
+  Head_H = 78.105
+  Foot_H = 5.3975
+  NumCopies = 1
+
+
+[Dock_Rubriques]
+  Montrer = Cacher
+[GoogleAgenda]
+  pass = #
+
+[Dock_Rapid_Access]
+  Montrer = Normal
+  ShowTerrain = true
+  ShowObs = true
+  ShowPrescr = true
+  ShowDoc = true
+  ShowIdent = true
+  ShowInterv = true
+  Glossaire = on
+  DefaultFontSize = 9
+  OpenIdent = true
+  OpenATCD = true
+  OpenVars = true
+  OpenTerrain = true
+  OpenVisuNote = false
+  OpenObs = true
+  OpenPrescr = true
+  OpenInterv = true
+  OpenDoc = true
+  ParentItemInBold = true
+  ClickOnParent = openCMDI
+
+[Dock_Glossaire]
+  Montrer = Normal
+
+[Dock_Vigie]
+  Montrer = Cacher
+
+[Identification]
+  Montrer = Non
+
+[Vigie]
+  Montrer = Non
+
+[DrTuxPos]
+  Rubrique active = Observation
+  Positions = -10 , 22 , 1280 , 696
+
+[DrTuxDockPos]
+  Positions = $DEB$$n$$n$$n$Attributs Texte$.$Outils Texte$.$Liste des rubriques$.$Outils Vigie$.$Menu utilisateur$.$$n$$|$Attributs Texte$.$0$.$0$.$-1$.$-1$.$1$*$$|$Outils Texte$.$0$.$0$.$-1$.$-1$.$1$*$$|$Liste des rubriques$.$0$.$0$.$-1$.$-1$.$1$*$$|$Outils Vigie$.$0$.$0$.$-1$.$-1$.$1$*$$|$Menu utilisateur$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$Outils Fichiers$.$Outils Divers$.$$n$$|$Outils Fichiers$.$0$.$0$.$-1$.$-1$.$1$*$$|$Outils Divers$.$0$.$0$.$-1$.$-1$.$1$*$$n$Vue rapide$.$Glossaire$.$$n$$|$Vue rapide$.$0$.$0$.$200$.$-1$.$1$*$$|$Glossaire$.$0$.$0$.$200$.$-1$.$1$*$$n$$END$
+
+[Tab Rubriques]
+  Display = true
+
+[Theme config]
+  PopupFntSize = 9
+  Current Theme = Default
+
+[Glossaire]
+  Path = ../../../Glossaire/
+
+[Dlg_ATCD]
+  WindowPos = 316 , 60 , 878 , 561 , 430 , 438
+  Lister codes Cim10 avec Cisp = Inactif
+  Afficher les chapitres Cim10 = Inactif
+
+[MenuContextuel]
+  PathLib = ../../Librairie de menus
+
+[Courrier]
+  Montrer = Normal
+  Position = 619 , 4 , 402 , 596 , 2 , 18 , 400 , 594
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+[Biologie]
+  Montrer = Normal
+  Position = 619 , 4 , 402 , 596 , 2 , 18 , 400 , 594
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+[Imagerie]
+  Montrer = Normal
+  Position = 619 , 4 , 402 , 596 , 2 , 18 , 400 , 594
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+[Anapath]
+  Montrer = Normal
+  Position = 619 , 4 , 402 , 596 , 2 , 18 , 400 , 594
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+[Endoscopie]
+  Montrer = Normal
+  Position = 619 , 4 , 402 , 596 , 2 , 18 , 400 , 594
+  Espace de travail = $DEB$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$n$$n$$n$$n$$.$$n$$|$$.$0$.$0$.$-1$.$-1$.$1$*$$n$$END$
+
+</Data_GestUser>
+</DocDefinition_GestUser>
+
+<DocDefinition_GestUser>
+      <DocType_GestUser>20020300</DocType_GestUser>
+      <DocName_GestUser>[Documents] * Impression Standard</DocName_GestUser>
+      <Data_GestUser>=={{<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:13pt;font-family:Lucida Grande">
+<p><span style="font-size:11pt;font-weight:600">           Docteur Guy VIGREUX</span><span style="font-size:11pt"><br />          08 - Médecine des Maladies <br />                   de l'Appareil Digestif<br />          394 Bis Avenue du Prado<br />         130008 Marseille CONVENTIONNE<br />                 13 1</span><span style="font-size:10pt"> 09193 6   0  1  22  0 </span><br /> 	<br />	<span style="font-size:10pt"> </span>Le    {{DD-MM-YYYY}}<br />           {{TITRE PATIENT}} {{NOM PATIENT}} {{PRENOM PATIENT}} {{POIDS PATIENT}} </p>
+</body></html>
+}}==/r/n=={{}}==/r/n</Data_GestUser>
+</DocDefinition_GestUser>
+
+      <Droits_GestUser>-adm-adr-agc-agm-agv-anc-anp-anv-ata-atc-atv-bic-bip-biv-bmc-ccc-cec-cem-cep-cer-cev-cic-clc-clp-clv-coc-coc-com-cop-cop-cor-cov-cov-doc-dop-dov-enc-enp-env-etc-glc-gld-gln-gls-idc-idg-idv-iec-iep-iev-imc-imp-imv-med-obc-obp-obv-orc-orm-orp-orr-orv-plc-plp-plv-sgn-sld-ttc-ttv-tvc-tvv</Droits_GestUser>
+

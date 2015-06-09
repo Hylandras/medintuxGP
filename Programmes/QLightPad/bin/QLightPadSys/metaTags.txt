@@ -1,0 +1,4 @@
+utf-8|meta name="qrichtext" content="charset=utf-8"
+utf-8|meta http-equiv="Content-Type" content="text/html"; charset="utf-8"
+latin1|meta http-equiv="Content-Type" content="text/html"; charset="ISO8859-1"
+latin1|meta name="qrichtext" content="1"

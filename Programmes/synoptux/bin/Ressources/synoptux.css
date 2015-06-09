@@ -1,0 +1,206 @@
+Box {
+}
+
+Box_ScrollBar {
+width:15px;
+}
+
+Titre_Box {  
+border: 1px solid #ff0000; 
+border-radius: 6px; 
+font-size: 12px;
+font-weight: bold ;
+}
+
+Bouton_Plier_Deplier {
+border-radius: 0px;
+border: 1px solid #8f8f91; 
+border-right: 0px; 
+border-bottom: 0px;
+font-weight: bold ;
+font-size: 10px;
+background: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ccf, stop: 1 #eef);
+}
+
+Bouton_Annule_Tache {
+border-radius: 0px;
+border: 1px solid #8f8f91; 
+border-right: 0px; 
+ min-width: 30px;
+}
+
+
+Boutton_Appel_DrTux {
+border: 1px solid #8f8f91; 
+border-right: 0px; 
+border-top: 0px;
+background: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #eef, stop: 1 #ccf);
+
+}
+Bouton_Nom_Patient {
+border: 1px solid #8f8f91; 
+border-left: 0px; border-right: 0px; border-bottom: 0px;
+border-radius: 1px;
+font-size: 12px;
+color: #ff0000;
+font-weight: bold ;
+background: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ccf, stop: 1 #eef);
+}
+
+Bouton_Commentaire_Patient {
+border: 1px solid #8f8f91; 
+border-top:  0px; 
+border-left: 1px; 
+font-size: 7px;
+font-style:italic ;
+background: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #eef, stop: 1 #ccf);
+}
+
+Bouton_Heure_Entree {
+border-radius: 0px;
+border-left: 0px ; 
+border-right: 0px;
+border-bottom: 0px;
+border-top: 1px solid #8f8f91; 
+border-bottom: 0px solid #8f8f91;
+text-align: center;
+border-radius: 0px; font-size: 8px;
+background:  QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ccf, stop: 1 #ddf);
+}
+
+Bouton_Heure_Sortie {
+border-radius: 1px; 
+border-left: 0px ;
+border-right: 0px ;
+border-top:  0px; 
+border-bottom: 0px ;
+text-align: right;
+border-radius: 0px; font-size: 8px;
+background: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ddf, stop: 1 #eef);
+}
+
+Bouton_Deplacer_Patient {
+border-radius: 6px;
+border: 1px solid #8f8f91;
+border-left: 0px; 
+border-bottom: 0px;
+font-weight: bold ;
+border-radius: 1px; font-size: 10px;
+background: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ccf, stop: 1 #eef);
+}
+
+Bouton_Nom_Responsable {
+border: 1px solid #8f8f91;
+border-radius: 1px; 
+font-size: 10px;
+}
+
+Bouton_Nom_Tache {  
+border-radius: 6px;
+border: 1px solid #8f8f91;
+border-radius: 1px; 
+border-left: 0px; 
+font-size: 10px;
+}
+                
+Bouton_Etat_Tache {
+border-radius: 2px; 
+border: 1px solid #FFFFFF; 
+margin: 0px;
+font-size: 7px;
+}
+Bouton_Etat_Tache_EnCours {
+border-radius: 2px; 
+margin: 0px;
+font-size: 7px;
+border : 1px solid red;
+}
+Menu_Etat_Tache {
+border-radius: 2px;
+border: 1px solid #8f8f91;
+border-style: outset;
+margin: 1px;
+font-size: 7px;
+}
+
+Menu_Etat_Tache_EnCours {
+border-radius: 2px;
+border: 1px solid red;
+border-style: outset;
+margin: 1px;
+font-size: 7px;
+}
+
+Menu_Etats {
+background-color:#ffddff;
+font-weight: bold ;
+margin: 1px;
+font-size: 20px;
+}
+
+Menu_Responsables {
+background-color:#000094;
+font-weight: bold ;
+color : white;
+margin: 1px;
+font-size: 20px;
+}
+
+PopUp_Detail_Patient {
+border-radius:10px;
+background-color: #f0f7aa;
+border: 1px solid #8f8f91;
+font-weight: bold ;
+border-style: outset;
+margin: 1px;
+padding-left:10px;
+text-align:left;
+border-radius: 1px;
+font-size: 10px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0  #8ae346 , stop: 1 #e1fd9f);
+}
+
+PopUp_Detail_Patient_ScrollBar {
+width: 20px;
+}
+
+PopUp_Note_Tache {
+border-radius:10px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0  #ffff7f , stop: 1 #ffc077);
+border: 1px solid #ff0000;
+margin: 1px;
+padding-left:10px;
+text-align:left;
+font-size: 10px;
+}
+
+PopUp_Note_Tache_ScrollBar {
+width:40px;
+}
+
+Fenetre_Destination {{
+
+QTreeWidget {
+background-color: #d0d0ff;
+font-size:18px;
+}
+QPushButton {
+  background-color: #ddf;
+  border-width: 1px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 5;
+  padding: 3px;
+  min-height: 30px;
+}
+QPushButton:hover {
+  background-color: #ccf;
+}
+QDateTimeEdit {
+min-height:30px;
+font-size:15px;
+
+QScrollBar {
+width:30px;
+}
+}}

@@ -1,0 +1,1641 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>Dlg_AdvancedTerrain</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Dlg_AdvancedTerrain</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>693</width>
+            <height>565</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Définition du terrain</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox" row="5" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>groupBox5_2_3_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Intervalle de bilibirubinémie pour lequel cette posologie s'applique</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Entre : </string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel1_3_2_2_2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>et</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="3">
+                    <property name="name">
+                        <cstring>LineEdit_BiliMax</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>LineEdit_BiliMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="4">
+                    <property name="name">
+                        <cstring>textLabel2_4_2_2_2</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>mg/L</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="6" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>groupBox5_2_3_2_2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Intervalle de fraction d'éjection pour lequel cette posologie s'applique</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2_2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Entre : </string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel1_3_2_2_2_2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>et</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="3">
+                    <property name="name">
+                        <cstring>LineEdit_EjectMax</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>LineEdit_EjectMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="4">
+                    <property name="name">
+                        <cstring>textLabel2_4_2_2_2_2</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>ml/mn</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <spacer row="8" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>spacer3</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>398</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QPushButton" row="8" column="2">
+            <property name="name">
+                <cstring>pushButton_Ok</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;Valider</string>
+            </property>
+            <property name="accel">
+                <string>Alt+V</string>
+            </property>
+        </widget>
+        <widget class="QGroupBox" row="0" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>groupBox4</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string> Intervalle d'âge pour lequel cette posologie s'applique </string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0" rowspan="2" colspan="1">
+                    <property name="name">
+                        <cstring>textLabel1_2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Âge entre : </string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>LineEdit_AnMin</cstring>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="1" rowspan="2" colspan="1">
+                    <property name="name">
+                        <cstring>LineEdit_AnMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>69</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="2" column="1">
+                    <property name="name">
+                        <cstring>LineEdit_AnMax</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2" rowspan="2" colspan="1">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>&amp;an(s) et</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>LineEdit_MoisMin</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="2">
+                    <property name="name">
+                        <cstring>textLabel2_3</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>an(s) et</string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="3" rowspan="2" colspan="1">
+                    <property name="name">
+                        <cstring>LineEdit_MoisMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="2" column="3">
+                    <property name="name">
+                        <cstring>LineEdit_MoisMax</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="4">
+                    <property name="name">
+                        <cstring>textLabel2_2_2</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>mois Maximum</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="4" rowspan="2" colspan="3">
+                    <property name="name">
+                        <cstring>textLabel2_2</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>mois Minimum à</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="7" rowspan="2" colspan="1">
+                    <item>
+                        <property name="text">
+                            <string>Nouveau né</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Nourrisson</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Enfant</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Adolescent</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Adulte</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Personne âgée</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Vieillard</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBoxAgeMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="2" column="7">
+                    <item>
+                        <property name="text">
+                            <string>Nouveau né</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Nourisson</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Enfant</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Adolescent</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Adulte</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Personne âgée</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Vieillard</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBoxAgeMax</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                </widget>
+                <spacer row="1" column="6">
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>10</width>
+                            <height>10</height>
+                        </size>
+                    </property>
+                </spacer>
+                <spacer row="2" column="5" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>10</width>
+                            <height>10</height>
+                        </size>
+                    </property>
+                </spacer>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="1" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>groupBox5_3</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Intervalle de poids pour lequel cette posologie s'applique</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1_4</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Entre : </string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel1_3_3</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>et</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="3">
+                    <property name="name">
+                        <cstring>LineEdit_PoidsMax</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>LineEdit_PoidsMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="4">
+                    <property name="name">
+                        <cstring>textLabel2_4_3</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>kg</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="2" column="0">
+            <property name="name">
+                <cstring>groupBox5_2_3</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Intervalle de mois de grossesse pour lequel cette posologie s'applique</string>
+            </property>
+            <property name="alignment">
+                <set>AlignLeft</set>
+            </property>
+            <property name="flat">
+                <bool>false</bool>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabelGrossesseEntre</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Entre : </string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit">
+                    <property name="name">
+                        <cstring>LineEdit_GrossesseMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel_GrossesseEt</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>et</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit">
+                    <property name="name">
+                        <cstring>LineEdit_GrossesseMax</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <item>
+                        <property name="text">
+                            <string>trimestre(s)</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>mois</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>En cours</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBox_UnitGrossesse</cstring>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="3" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>groupBox5_2</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Intervalle de clearance de la créatinine pour lequel cette posologie s'applique</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel_EntreClearence</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Entre : </string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel_EtClearence</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>et</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="3">
+                    <property name="name">
+                        <cstring>LineEdit_ClearenceMax</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>LineEdit_ClearenceMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="4">
+                    <property name="name">
+                        <cstring>textLabel_UnitClearence</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>ml/mn</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="5">
+                    <item>
+                        <property name="text">
+                            <string>Hémodialysé</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Insuffisant rénal</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBox_Hemodialyse</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="4" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>groupBox_Creat</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Intervalle de créatininémie pour lequel cette posologie s'applique</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Entre : </string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter|AlignRight</set>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel1_3</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>et</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="3">
+                    <property name="name">
+                        <cstring>LineEdit_CreatMax</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="CMaskedLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>LineEdit_CreatMin</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="focusPolicy">
+                        <enum>StrongFocus</enum>
+                    </property>
+                    <property name="carMask" stdset="0">
+                        <number>32</number>
+                    </property>
+                    <property name="control" stdset="0">
+                        <string>GGGGGGGGGG</string>
+                    </property>
+                    <property name="mask" stdset="0">
+                        <string>__________</string>
+                    </property>
+                    <property name="text" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="4">
+                    <property name="name">
+                        <cstring>textLabel2_4</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>mg/L</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QTextBrowser" row="7" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>textBrowser_ResultView</cstring>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+            <property name="paletteBackgroundColor">
+                <color>
+                    <red>170</red>
+                    <green>255</green>
+                    <blue>255</blue>
+                </color>
+            </property>
+        </widget>
+        <widget class="QGroupBox" row="2" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>groupBox5_2_2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="font">
+                <font>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="title">
+                <string>Allaitement</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QComboBox" row="0" column="0">
+                    <item>
+                        <property name="text">
+                            <string>En cours</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Non en cours</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBox_Allaitement</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>9</pointsize>
+                            <bold>0</bold>
+                        </font>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>CMaskedLineEdit</class>
+        <header location="global">../../MedinTuxTools/CMaskedLineEdit.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>Sig_FocusOut()</signal>
+        <signal>Sig_FocusIn()</signal>
+        <signal>Sig_CarEvent(QEvent * ev)</signal>
+        <property type="UInt">carMask</property>
+        <property type="String">text</property>
+        <property type="String">mask</property>
+        <property type="String">control</property>
+        <property type="Int">mixMode</property>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>comboBox_Allaitement</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_AdvancedTerrain</receiver>
+        <slot>comboBox_Allaitement_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>comboBox_UnitGrossesse</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_AdvancedTerrain</receiver>
+        <slot>comboBox_UnitGrossesse_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>pushButton_Ok</sender>
+        <signal>clicked()</signal>
+        <receiver>Dlg_AdvancedTerrain</receiver>
+        <slot>pushButton_Ok_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>comboBox_Hemodialyse</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>Dlg_AdvancedTerrain</receiver>
+        <slot>comboBox_Hemodialyse_activated(const QString&amp;)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>LineEdit_AnMin</tabstop>
+    <tabstop>LineEdit_MoisMin</tabstop>
+    <tabstop>comboBoxAgeMin</tabstop>
+    <tabstop>LineEdit_AnMax</tabstop>
+    <tabstop>LineEdit_MoisMax</tabstop>
+    <tabstop>comboBoxAgeMax</tabstop>
+    <tabstop>LineEdit_PoidsMin</tabstop>
+    <tabstop>LineEdit_PoidsMax</tabstop>
+    <tabstop>LineEdit_GrossesseMin</tabstop>
+    <tabstop>LineEdit_GrossesseMax</tabstop>
+    <tabstop>comboBox_UnitGrossesse</tabstop>
+    <tabstop>comboBox_Allaitement</tabstop>
+    <tabstop>LineEdit_ClearenceMin</tabstop>
+    <tabstop>LineEdit_ClearenceMax</tabstop>
+    <tabstop>comboBox_Hemodialyse</tabstop>
+    <tabstop>LineEdit_CreatMin</tabstop>
+    <tabstop>LineEdit_CreatMax</tabstop>
+    <tabstop>LineEdit_BiliMin</tabstop>
+    <tabstop>LineEdit_BiliMax</tabstop>
+    <tabstop>LineEdit_EjectMin</tabstop>
+    <tabstop>LineEdit_EjectMax</tabstop>
+    <tabstop>textBrowser_ResultView</tabstop>
+    <tabstop>pushButton_Ok</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">Global.h</include>
+    <include location="local" impldecl="in implementation">CApp.h</include>
+    <include location="local" impldecl="in implementation">../../MedinTuxTools/CMedicaBase.h</include>
+    <include location="local" impldecl="in implementation">Dlg_AdvancedTerrain.ui.h</include>
+</includes>
+<slots>
+    <slot>UpdateHtmlView( const QString &amp; )</slot>
+    <slot>comboBox_Allaitement_activated( const QString &amp; )</slot>
+    <slot>comboBox_UnitGrossesse_activated( const QString &amp; )</slot>
+    <slot>comboBox_Hemodialyse_activated( const QString &amp; )</slot>
+    <slot>pushButton_Ok_clicked()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function returnType="int">initDialog( QString &amp; terrain )</function>
+    <function returnType="QString">dialogToTerrain()</function>
+    <function returnType="QString">EDToVal( const QString &amp; var, QString textMin, QString textMax, const QString &amp; unit )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+ /includehints>
+</UI>

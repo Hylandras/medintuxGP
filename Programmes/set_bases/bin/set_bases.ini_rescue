@@ -1,0 +1,170 @@
+
+//.....................................  param?res de creation des bases  ...........................................................
+// toutes les sections debutant par DB_ seront interpretes comme descripteur
+// de base de donnees a creer, le vrai nom de la base est apres  DB_
+// les autres sections seront des sections de parametrage normales
+
+[DB_DrTuxTest]
+  ParseSQL_Dump  = Dump_DrTuxTest.sql 
+  
+[DB_MedicaTuxTest]       
+  ParseSQL_Dump  = Dump_MedicaTuxTest.sql
+
+[DB_BaseGetTest]       
+  ParseSQL_Dump  = Dump_BaseGetTest.sql
+    
+[DB_CIM10Test]    
+  ParseSQL_Dump  = Dump_CIM10.sql
+  
+[DB_CCAMTest]    
+  ParseSQL_Dump  = Dump_CCAM.sql
+
+[DB_qlaboftp]    
+  ParseSQL_Dump  = Dump_qlaboftp.sql
+
+[DB_Comptabilite]
+  ParseSQL_Dump  = Dump_Comptabilite.sql
+  
+[DB_bdm_gouv]
+  ParseSQL_Dump  = Dump_bdm_gouv.sql
+  
+[DB_dbi_C_BDM_GouvPlugin]
+  ParseSQL_Dump  = Dump_dbi_C_BDM_GouvPlugin.sql
+
+;.....................................  parametres de connexion ...........................................................
+;                                       doivent avoir meme nom que ce qui suit DB_ 
+[DrTuxTest]
+  Master = QMYSQL3 , DrTuxTest , root , admin , localhost , 3306
+  Nomade = QMYSQL3 , DrTuxTest , root , admin , localhost , 3306
+  Reverse = QMYSQL3 , DrTuxTest , root , admin , localhost , 3306
+  Connexion = QMYSQL3 , DrTuxTest , root , admin , localhost, 3306 
+  nb_progress = 2299848
+  Parametres = QMYSQL3 , DrTuxTest , root , admin , localhost , 3306
+  
+;................. liste des fichiers à compiler ................
+[Compilables]
+  1 = calendrier
+  2 = ccamview
+  3 = drtux
+  4 = gest_user
+  5 = Manager
+  6 = med_stat
+  7 = mise_a_jour
+  8 = MrPropre
+  9 = param_view
+  10 = personnes
+  12 = QLightPad
+  13 = qmedicabase
+  14 = set_bases
+  15 = comptabilite
+  16 = compta-plugins
+  17 = check_dus
+  18 = APropos
+  19 = guinch
+  20 = qgetdatasemp
+  21 = apitux
+  22 = biogest
+  23 = synoptux
+  24 = qfselib
+  25 = medicatux
+  26 = SigEntrees
+  27 = QNetCopy
+  28 = makedistrib
+  29 = BdmGouvUpdate
+
+[Parametres]
+  sql_buffer = 14000000
+
+[MedicaTuxTest]
+  Connexion = QMYSQL3 , MedicaTuxTest , root , admin , localhost , 3306
+  nb_progress = 12569475
+
+[BaseGetTest]
+  Connexion = QMYSQL3 , BaseGetTest , root , admin , localhost , 3306
+  nb_progress = 3016296
+
+[CIM10Test]    
+  Connexion = QMYSQL3 , CIM10Test , root , admin , localhost , 3306
+  nb_progress = 18589888
+
+[CCAMTest]    
+  Connexion = QMYSQL3 , CCAMTest , root , admin , localhost , 3306
+  nb_progress = 38880809
+
+[qlaboftp]    
+  Connexion = QMYSQL3 , qlaboftp , root , admin , localhost , 3306
+  nb_progress = 2440
+  
+[bdm_gouv]
+  Connexion = QMYSQL3 , bdm_gouv , root , admin , localhost, 3306
+  nb_progress = 30064768
+  
+[dbi_C_BDM_GouvPlugin]
+  Connexion = QMYSQL3 , dbi_C_BDM_GouvPlugin , root ,admin  , localhost, 3306
+  nb_progress = 30064768
+  
+[Comptabilite]
+  Connexion = QMYSQL3 , Comptabilite , root , admin , localhost, 3306
+  nb_progress = 17041
+//.....................................  parametres de connexion ...........................................................
+//                                       nom independant du systeme DB_
+[Datasemp] 
+  Connexion = QMYSQL3 , DatasempTest , root , admin , localhost , 3306
+  FilesOut  = Out_Remove.txt , Out_Insert.txt  ,  Out_Update.txt
+  Mise a jour STD = oui
+  Mise a jour SQL = non
+  // CD_Dir          = PLAIN, DATA/STD89,  DATA/DOCS, STRUCT/MYSQL
+  CD_Dir          = plain, data/std89,  data/docs, struct/mysql
+  
+//.....................................  param?res generaux ...........................................................
+  MIse ?jour SQL = oui
+  MIse ?jour SQL = non
+
+[io_comm]
+0  = COM1@/dev/ttyS0
+1  = COM1@/dev/ttsS0
+2  = COM1@/dev/ttyUSB0
+3  = COM1@/dev/ttsUSB0
+4  = COM1@/dev/ttyACM0
+5  = COM2@/dev/ttyS1
+6  = COM2@/dev/ttsS1
+7  = COM2@/dev/ttyUSB1
+8  = COM2@/dev/ttsUSB1
+9  = COM3@/dev/ttyS2
+10 = COM3@/dev/ttsS2
+11 = COM3@/dev/ttyUSB2
+12 = COM3@/dev/ttsUSB2
+
+[CONFIG] 
+  nb_progress = 453858  
+  VersBase    = 2.16.000
+  
+[Favoris]
+  0 = QMYSQL3,root,admin,localhost,3306
+  2 = QMYSQL3,root,@,localhost,3306
+  3 = QMYSQL3,root,@001E005500430054,localhost,3306
+  4 = QMYSQL3,root,@,localhost,3360
+  5 = QMYSQL3,root,@,192.168.100.3,3306
+  7 = QMYSQL3,root,@,192.168.0.21,3306  
+  8 = QMYSQL3,root,@00090016000200550009001A,,3306  
+
+[Favoris_2]
+  0 = QMYSQL3,root,admin,localhost,3306
+  1 = QMYSQL3,user_medintux,@0001000A00070012001C0008001D001400000059,87.106.27.91,3306
+  2 = QMYSQL3,root,@,192.168.100.3,3306
+  3 = QMYSQL3,root,@,localhost,3306
+  4 = QMYSQL3,root,@001E005500430054,localhost,3306
+  5 = QMYSQL3,root,@,localhost,3360
+
+[Favoris_3]
+  0 = QMYSQL3,root,admin,localhost,3306
+  1 = QMYSQL3,user_medintux,@0001000A00070012001C0008001D001400000059,87.106.27.91,3306
+  2 = QMYSQL3,root,@,192.168.100.3,3306
+  3 = QMYSQL3,root,@,localhost,3306
+  4 = QMYSQL3,root,@001E005500430054,localhost,3306
+  5 = QMYSQL3,root,@,localhost,3360
+
+[Compilation]
+  MacQt4Dir = /usr/local/Trolltech/Qt-4.7.0
+
+[END_INI]

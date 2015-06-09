@@ -1,0 +1,73 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>FormTabRubrique</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FormTabRubrique</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1047</width>
+            <height>23</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>20</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>InvisibleStringForm1</string>
+    </property>
+    <widget class="QTabWidget">
+        <property name="name">
+            <cstring>tabWidget</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>0</y>
+                <width>1110</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>32767</width>
+                <height>20</height>
+            </size>
+        </property>
+        <property name="tabShape">
+            <enum>Triangular</enum>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>tab</cstring>
+            </property>
+            <attribute name="title">
+                <string>Tab 2</string>
+            </attribute>
+        </widget>
+    </widget>
+</widget>
+<includes>
+    <include location="local" impldecl="in implementation">TabRubrique.ui.h</include>
+</includes>
+<variables>
+    <variable>int m_firstAdd;</variable>
+</variables>
+<signals>
+    <signal>message(const QString&amp;, int );</signal>
+</signals>
+<slots>
+    <slot>addPanel( const char * name, QPixmap &amp; pixmap )</slot>
+    <slot>OnRubriqueActived( QWidget * pWdgRub )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function>removePage( int i )</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,44 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>Dlg_Browser</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Dlg_Browser</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Vue HTML</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTextBrowser" row="0" column="0">
+            <property name="name">
+                <cstring>textBrowser1</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>textBrowser1</sender>
+        <signal>sourceChanged(const QString&amp;)</signal>
+        <receiver>Dlg_Browser</receiver>
+        <slot>textBrowser1_sourceChanged(const QString&amp;)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">DLG_Browser.ui.h</include>
+</includes>
+<slots>
+    <slot>textBrowser1_sourceChanged( const QString &amp; source )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

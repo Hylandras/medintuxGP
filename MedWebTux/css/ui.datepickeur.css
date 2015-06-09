@@ -1,0 +1,62 @@
+/* datepickeur
+----------------------------------*/
+.ui-datepickeur { width: 17em; padding: .2em .2em 0; }
+.ui-datepickeur .ui-datepickeur-header { position:relative; padding:.2em 0; }
+.ui-datepickeur .ui-datepickeur-prev, .ui-datepickeur .ui-datepickeur-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepickeur .ui-datepickeur-prev-hover, .ui-datepickeur .ui-datepickeur-next-hover { top: 1px; }
+.ui-datepickeur .ui-datepickeur-prev { left:2px; }
+.ui-datepickeur .ui-datepickeur-next { right:2px; }
+.ui-datepickeur .ui-datepickeur-prev-hover { left:1px; }
+.ui-datepickeur .ui-datepickeur-next-hover { right:1px; }
+.ui-datepickeur .ui-datepickeur-prev span, .ui-datepickeur .ui-datepickeur-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepickeur .ui-datepickeur-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepickeur .ui-datepickeur-title select { float:left; font-size:1em; margin:1px 0; }
+.ui-datepickeur select.ui-datepickeur-month-year {width: 100%;}
+.ui-datepickeur select.ui-datepickeur-month, 
+.ui-datepickeur select.ui-datepickeur-year { width: 49%;}
+.ui-datepickeur .ui-datepickeur-title select.ui-datepickeur-year { float: right; }
+.ui-datepickeur table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepickeur th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepickeur td { border: 0; padding: 1px; }
+.ui-datepickeur td span, .ui-datepickeur td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.ui-datepickeur .ui-datepickeur-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepickeur .ui-datepickeur-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepickeur .ui-datepickeur-buttonpane button.ui-datepickeur-current { float:left; }
+
+/* with multiple calendars */
+.ui-datepickeur.ui-datepickeur-multi { width:auto; }
+.ui-datepickeur-multi .ui-datepickeur-group { float:left; }
+.ui-datepickeur-multi .ui-datepickeur-group table { width:95%; margin:0 auto .4em; }
+.ui-datepickeur-multi-2 .ui-datepickeur-group { width:50%; }
+.ui-datepickeur-multi-3 .ui-datepickeur-group { width:33.3%; }
+.ui-datepickeur-multi-4 .ui-datepickeur-group { width:25%; }
+.ui-datepickeur-multi .ui-datepickeur-group-last .ui-datepickeur-header { border-left-width:0; }
+.ui-datepickeur-multi .ui-datepickeur-group-middle .ui-datepickeur-header { border-left-width:0; }
+.ui-datepickeur-multi .ui-datepickeur-buttonpane { clear:left; }
+.ui-datepickeur-row-break { clear:both; width:100%; }
+
+/* RTL support */
+.ui-datepickeur-rtl { direction: rtl; }
+.ui-datepickeur-rtl .ui-datepickeur-prev { right: 2px; left: auto; }
+.ui-datepickeur-rtl .ui-datepickeur-next { left: 2px; right: auto; }
+.ui-datepickeur-rtl .ui-datepickeur-prev:hover { right: 1px; left: auto; }
+.ui-datepickeur-rtl .ui-datepickeur-next:hover { left: 1px; right: auto; }
+.ui-datepickeur-rtl .ui-datepickeur-buttonpane { clear:right; }
+.ui-datepickeur-rtl .ui-datepickeur-buttonpane button { float: left; }
+.ui-datepickeur-rtl .ui-datepickeur-buttonpane button.ui-datepickeur-current { float:right; }
+.ui-datepickeur-rtl .ui-datepickeur-group { float:right; }
+.ui-datepickeur-rtl .ui-datepickeur-group-last .ui-datepickeur-header { border-right-width:0; border-left-width:1px; }
+.ui-datepickeur-rtl .ui-datepickeur-group-middle .ui-datepickeur-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepickeur 1.5.3 */
+.ui-datepickeur-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}

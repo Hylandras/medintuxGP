@@ -1,0 +1,14 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
+<p><span style="font-family:Helvetica;font-weight:400">{{\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_A,{{:: Extract(*,</span>Utiliser un téléphone :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_B,{{:: Extract(*,</span>Faire des courses :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_C,{{:: Extract(*,</span>Préparer ses repas :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_D,{{:: Extract(*,</span>Faire le ménage :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_E,{{:: Extract(*,</span>Faire la lessive :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_F,{{:: Extract(*,</span>Utiliser les transports :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_G,{{:: Extract(*,</span>Prendre des médicaments :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_H,{{:: Extract(*,</span>Gérer ses finances :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(ques_I,{{:: Extract(*,</span>Bricoler et entretenir la maison :<span style="font-family:Helvetica;font-weight:400">,EOL,,,N)}})}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">    {{:: SET_VAR(score,{{:: Calc( {{VAR=ques_A}}, + ,{{:: Calc( {{VAR=ques_B}}, + ,{{:: Calc( {{VAR=ques_C}}, + ,{{:: Calc( {{VAR=ques_D}}, + ,{{:: Calc( {{VAR=ques_E}}, + ,{{:: Calc( {{VAR=ques_F}}, + ,{{:: Calc( {{VAR=ques_G}}, + , {{:: Calc( {{VAR=ques_H}}, + ,{{VAR=ques_I}}) }}) }}) }}) }}) }}) }}) }}) }} )}}\</span></p>
+<p><span style="font-family:Helvetica;font-weight:400">}}{{VAR=score}}</span></p>
+</body></html>

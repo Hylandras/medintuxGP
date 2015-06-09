@@ -1,0 +1,34 @@
+Log for qt3to4 on sam. juin 20 01:23:50 2009. Number of log entries: 31
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgGetString.ui at line 66 column 32: Horizontal -> Qt::Horizontal
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DLG_InsertList.ui at line 40 column 32: Horizontal -> Qt::Horizontal
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DLG_InsertList.ui at line 57 column 42: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DLG_InsertList.ui at line 59 column 59: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DLG_InsertList.ui at line 69 column 42: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DLG_InsertList.ui at line 71 column 59: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DLG_InsertList.ui at line 79 column 56: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DLG_InsertList.ui at line 81 column 56: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgListOff_Listes.ui at line 48 column 40: Horizontal -> Qt::Horizontal
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgListOff_Listes.ui at line 88 column 36: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgListOff_Listes.ui at line 90 column 48: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgListOff_Listes.ui at line 94 column 42: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgListOff_Listes.ui at line 96 column 54: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgListOff_Listes.ui at line 109 column 45: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgListOff_Listes.ui at line 110 column 51: QListBoxItem -> Q3ListBoxItem
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 28 column 24: red -> Qt::red
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 28 column 31: red -> Qt::red
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 29 column 26: green -> Qt::green
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 29 column 35: green -> Qt::green
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 30 column 25: blue -> Qt::blue
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 30 column 33: blue -> Qt::blue
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 35 column 24: red -> Qt::red
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 35 column 33: red -> Qt::red
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 36 column 26: green -> Qt::green
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 36 column 37: green -> Qt::green
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 37 column 25: blue -> Qt::blue
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 37 column 35: blue -> Qt::blue
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/DlgMyMessageBox.ui at line 45 column 30: RichText -> Qt::RichText
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/Dlg_PasswordGet.ui at line 104 column 32: AlignCenter -> Qt::AlignCenter
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/Form_Organiseur.ui at line 51 column 32: PopupPanel -> QFrame::StyledPanel
+In file /home/ro/OpenDevMedintux/trunk/Programmes/MedinTuxTools/Form_Organiseur.ui: Added the following include directives:
+	#include <QEvent> 
+

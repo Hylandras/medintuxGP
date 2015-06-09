@@ -1,0 +1,45 @@
+<!--EntetePage1-->
+<html><head><meta name="qrichtext" content="1" />
+<style type="text/css"></style>
+</head>
+<body style="font-size:9pt">
+<p align="left" ><span style="font-size:16pt;font-weight:bold">{{USER TITRE PS}}  {{USER NOM MEDECIN}}  {{USER PRENOM MEDECIN}}</span></p>
+<p align="left" > <span >N&deg; ID: {{USER IDENTIFICATION MEDECIN}} </span></p>
+<!--FinEntetePage1-->
+<!--EnteteDate-->
+<p align="center" >
+<span style="font-size:14pt;font-weight:600">Liste des rendez-vous du {{DATE RDV}} </span></p>
+<!--FinEnteteDate-->
+<!--EnteteRDV-->
+  <table width="600" border="1" cellspacing="0" cellpadding="5">  
+  <tr>
+  	<td width="50" ><div align="center"><span style="font-size:9pt">Heure</span></div></td>
+  	<td width="50" ><div align="center"><span style="font-size:9pt">Durée</span></div></td>
+    <td width="190"><div align="center"><span style="font-size:9pt">Patient</span></div></td>
+    <td width="80" ><div align="center"><span style="font-size:9pt">Téléphone</span></div></td>
+    <td width="120"><div align="center"><span style="font-size:9pt">Motif</span></div></td>
+    <td width="120" ><div align="center"><span style="font-size:9pt">Note</span></div></td>
+</tr>
+</table>
+  <!--FinEnteteRDV-->
+  <!--LigneRDV-->
+<table width="700" border="1" cellspacing="0" cellpadding="5">  
+  <tr>
+  	<td width="50" ><div align="center"><span style="font-size:9pt">{{HEURE RDV}}</span></div></td>
+  	<td width="50" ><div align="center"><span style="font-size:9pt">{{DUREE RDV}}</span></div></td>
+    <td width="190"><span style="font-size:9pt">{{NOM PATIENT}} {{PRENOM PATIENT}}</span></td>
+    <td width="80" ><span style="font-size:8pt">{{NUM. TEL1 PATIENT}}</span></td>
+    <td width="120"><span style="font-size:8pt">{{TYPE RDV}}</span></td>
+    <td width="120"><span style="font-size:8pt">{{NOTE RDV}}</span></td>
+</tr>
+</table>
+<!--FinLigneRDV-->
+<!--PiedFin-->
+
+<!--FinPiedFin-->
+</body></html>
+<!--
+
+------------------------ VARIABLES DISPONIBLES ------------------------------------------
+
+-->

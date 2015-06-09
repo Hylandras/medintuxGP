@@ -1,0 +1,27 @@
+<!DOCTYPE CVigie>
+<CVigie version="0.0" stdsetdef="1">
+
+  <Classeur name="0.0 stdsetdef=1">
+  </Classeur>
+
+  <Classeur name="Classeur_sejour">
+    <isOpen>1</isOpen>
+  </Classeur>
+
+  <Classeur name="fiche_aspiration_tracheale">
+    <menuProp0>Tache effectuée</menuProp0>
+  </Classeur>
+
+  <Classeur name="fiche_changement_de_poche_stomie_ide">
+    <menuProp0>Tache effectuée</menuProp0>
+  </Classeur>
+
+  <Classeur name="soin">
+    <isOpen>1</isOpen>
+  </Classeur>
+
+  <Classeur name="soin-ide">
+    <isOpen>1</isOpen>
+  </Classeur>
+
+</CVigie>

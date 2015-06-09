@@ -1,0 +1,9 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
+<p><span style="font-family:Fixed">{{\<br />{{:: SET_VAR ( Pdf_VisualW,C:/Program Files/Foxit Software/Foxit Reader/Foxit Reader)}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_VisualL,/usr/bin/kpdf)}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_VisualM,/Applications/Aperçu)}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_Visual,chemin inconnu)}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_Visual,{{:: TEST (S,{{OS}},=,M,{{VAR=Pdf_VisualM}},{{VAR=Pdf_Visual}})}})}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_Visual,{{:: TEST (S,{{OS}},=,L,{{VAR=Pdf_VisualL}},{{VAR=Pdf_Visual}})}})}}\</span></p>
+<p><span style="font-family:Fixed">{{:: SET_VAR ( Pdf_Visual,{{:: TEST (S,{{OS}},=,W,{{VAR=Pdf_VisualW}},{{VAR=Pdf_Visual}})}})}}\<br />{{:: set_var(pdf_a_visualiser, {{:: RM({{:: CS({{:: Extract (*,Voir ce fichier PDF , EOL)}})}},:)}})}}\<br />{{:: exe_process (noWaitEnd , {{var=Pdf_Visual}},$ToAbsPath../../pdf/{{var=pdf_a_visualiser}})}}\<br />}}</span></p>
+</body></html>

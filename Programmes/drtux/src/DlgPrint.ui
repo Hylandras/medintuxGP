@@ -1,0 +1,1250 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>DlgPrint</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DlgPrint</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>711</width>
+            <height>698</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Impression</string>
+    </property>
+    <widget class="QFrame">
+        <property name="name">
+            <cstring>frameToolBar</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>490</x>
+                <y>5</y>
+                <width>220</width>
+                <height>650</height>
+            </rect>
+        </property>
+        <property name="frameShape">
+            <enum>StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+            <enum>Raised</enum>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>5</x>
+                    <y>45</y>
+                    <width>210</width>
+                    <height>360</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>Mise en page</string>
+            </property>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>25</y>
+                        <width>190</width>
+                        <height>45</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider_Marg_Top</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>26</y>
+                            <width>180</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="tickmarks">
+                        <enum>NoMarks</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_Marg_Top</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>120</x>
+                            <y>5</y>
+                            <width>65</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>4</y>
+                            <width>100</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Marge &amp;haute</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit_Marg_Top</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>75</y>
+                        <width>190</width>
+                        <height>45</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider_Head_H</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>25</y>
+                            <width>180</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>170</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_Head_H</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>120</x>
+                            <y>5</y>
+                            <width>66</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1__2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>5</y>
+                            <width>110</width>
+                            <height>17</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Hauteur en-&amp;tête</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit_Head_H</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame7</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>125</y>
+                        <width>190</width>
+                        <height>45</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider_Marg_Left</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>25</y>
+                            <width>180</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_Marg_Left</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>120</x>
+                            <y>5</y>
+                            <width>66</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1__2_2_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>5</y>
+                            <width>110</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Marge &amp;gauche</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit_Marg_Left</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame9</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>175</y>
+                        <width>190</width>
+                        <height>45</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider_Marg_Right</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>25</y>
+                            <width>180</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_Marg_Right</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>120</x>
+                            <y>5</y>
+                            <width>66</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1__2_2_3_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>5</y>
+                            <width>110</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Marge &amp;droite</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit_Marg_Right</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame11</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>275</y>
+                        <width>190</width>
+                        <height>45</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider_Marg_Bottom</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>25</y>
+                            <width>180</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_Marg_Bottom</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>120</x>
+                            <y>5</y>
+                            <width>66</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1__2_2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>5</y>
+                            <width>110</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Marge &amp;basse</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit_Marg_Bottom</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame">
+                <property name="name">
+                    <cstring>frame10</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>225</y>
+                        <width>190</width>
+                        <height>45</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Raised</enum>
+                </property>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider_Foot_H</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>25</y>
+                            <width>180</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>170</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEdit_Foot_H</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>120</x>
+                            <y>5</y>
+                            <width>66</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1__2_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>5</x>
+                            <y>5</y>
+                            <width>110</width>
+                            <height>17</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Hauteur du &amp;pied</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit_Foot_H</cstring>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineEditResoX</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>323</y>
+                        <width>40</width>
+                        <height>17</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>7</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>96</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineEditResoY</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>340</y>
+                        <width>40</width>
+                        <height>17</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>7</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>96</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1__2_2_2_2_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>175</x>
+                        <y>325</y>
+                        <width>25</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>7</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>DPI</string>
+                </property>
+                <property name="alignment">
+                    <set>WordBreak|AlignCenter</set>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1__2_2_2_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>325</y>
+                        <width>55</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>7</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>Résolution  imprimante</string>
+                </property>
+                <property name="alignment">
+                    <set>WordBreak|AlignVCenter</set>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1__2_2_2_2_3_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>105</x>
+                        <y>325</y>
+                        <width>20</width>
+                        <height>17</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>7</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>&amp;X</string>
+                </property>
+                <property name="alignment">
+                    <set>WordBreak|AlignCenter</set>
+                </property>
+                <property name="buddy" stdset="0">
+                    <cstring>lineEditResoX</cstring>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1__2_2_2_2_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>105</x>
+                        <y>340</y>
+                        <width>20</width>
+                        <height>17</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>7</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>&amp;Y</string>
+                </property>
+                <property name="alignment">
+                    <set>WordBreak|AlignCenter</set>
+                </property>
+                <property name="buddy" stdset="0">
+                    <cstring>lineEditResoY</cstring>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>pushButtonSave</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>7</x>
+                        <y>325</y>
+                        <width>30</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="maximumSize">
+                    <size>
+                        <width>32</width>
+                        <height>32767</height>
+                    </size>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>Permet d'enregistrer les modifications des paramètres d'impression</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>Permet d'enregistrer les modifications des paramètres d'impression</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel_NbPage</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>45</x>
+                    <y>10</y>
+                    <width>135</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>ToolBarPanel</enum>
+            </property>
+            <property name="alignment">
+                <set>AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>5</x>
+                    <y>480</y>
+                    <width>210</width>
+                    <height>125</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>Impression</string>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1__2_2_3_3_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>155</x>
+                        <y>40</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>%</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineEditZoom</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>75</x>
+                        <y>40</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineEdit_PageDeb</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>100</x>
+                        <y>95</y>
+                        <width>35</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineEdit_PageFin</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>160</x>
+                        <y>95</y>
+                        <width>35</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>95</y>
+                        <width>85</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>D&amp;e la page :</string>
+                </property>
+                <property name="buddy" stdset="0">
+                    <cstring>lineEdit_PageDeb</cstring>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel_2_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>140</x>
+                        <y>95</y>
+                        <width>20</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>&amp;à :</string>
+                </property>
+                <property name="buddy" stdset="0">
+                    <cstring>lineEdit_PageFin</cstring>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1__2_2_3_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>27</x>
+                        <y>40</y>
+                        <width>45</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>&amp;Taille</string>
+                </property>
+                <property name="buddy" stdset="0">
+                    <cstring>lineEditZoom</cstring>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>pushButtonPrint_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>105</x>
+                        <y>60</y>
+                        <width>35</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>X &amp;1</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+1</string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+                <property name="default">
+                    <bool>true</bool>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>Imprimer un exemplaire</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>Imprimer un exemplaire</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>pushButtonPrint_2_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>140</x>
+                        <y>60</y>
+                        <width>35</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>X &amp;2</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+2</string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+                <property name="default">
+                    <bool>true</bool>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>Imprimer deux exemplaires</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>Imprimer deux exemplaires</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>pushButtonConfigurer</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>15</y>
+                        <width>170</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>&amp;Configurer</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+C</string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>Configurer quelques paramètres d'impression.</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>pushButtonPrint</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>15</x>
+                        <y>60</y>
+                        <width>90</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>&amp;Imprimer</string>
+                </property>
+                <property name="accel">
+                    <string>Alt+I</string>
+                </property>
+                <property name="autoDefault">
+                    <bool>true</bool>
+                </property>
+                <property name="default">
+                    <bool>true</bool>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>Imprimer avec le nombre d'exemplaires par défaut (bouton Configurer)</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>Imprimer avec le nombre d'exemplaires par défaut (bouton Configurer)</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>checkBox_Duplicata</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>415</y>
+                    <width>200</width>
+                    <height>16</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&amp;Voir le duplicata</string>
+            </property>
+            <property name="accel">
+                <string>Alt+V</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>checkBox_PrintDuplicata</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>435</y>
+                    <width>200</width>
+                    <height>16</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Imprimer le d&amp;uplicata</string>
+            </property>
+            <property name="accel">
+                <string>Alt+U</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButtonPrevious</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>5</x>
+                    <y>5</y>
+                    <width>36</width>
+                    <height>35</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Visualiser la page précédente.</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButtonNext</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>180</x>
+                    <y>5</y>
+                    <width>36</width>
+                    <height>35</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Visualiser la page suivante.</string>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>comboBox_TypeDoc</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>5</x>
+                    <y>455</y>
+                    <width>210</width>
+                    <height>28</height>
+                </rect>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>22</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>250</width>
+                    <height>28</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Sélectionner un en-tête et pied de page.</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButtonQuitter</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>5</x>
+                    <y>610</y>
+                    <width>210</width>
+                    <height>35</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&amp;Quitter</string>
+            </property>
+            <property name="accel">
+                <string>Alt+Q</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Quitter sans imprimer.</string>
+            </property>
+        </widget>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>slider_Marg_Top</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>slider_Marg_Top_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>slider_Head_H</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>slider_Head_H_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>slider_Marg_Left</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>slider_Marg_Left_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>slider_Marg_Right</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>slider_Marg_Right_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>slider_Foot_H</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>slider_Foot_H_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>slider_Marg_Bottom</sender>
+        <signal>sliderMoved(int)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>slider_Marg_Bottom_sliderMoved(int)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonPrint</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonPrint_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonQuitter</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonQuitter_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonConfigurer</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonConfigurer_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonPrevious</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonPrevious_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonNext</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonNext_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>comboBox_TypeDoc</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>comboBox_TypeDoc_activated(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>checkBox_Duplicata</sender>
+        <signal>stateChanged(int)</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>checkBox_Duplicata_stateChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonSave</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonSave_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonPrint_2</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonPrint_2_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonPrint_2_2</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgPrint</receiver>
+        <slot>pushButtonPrint_2_2_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>pushButtonPrevious</tabstop>
+    <tabstop>pushButtonNext</tabstop>
+    <tabstop>lineEdit_Marg_Top</tabstop>
+    <tabstop>slider_Marg_Top</tabstop>
+    <tabstop>lineEdit_Head_H</tabstop>
+    <tabstop>slider_Head_H</tabstop>
+    <tabstop>lineEdit_Marg_Left</tabstop>
+    <tabstop>slider_Marg_Left</tabstop>
+    <tabstop>lineEdit_Marg_Right</tabstop>
+    <tabstop>slider_Marg_Right</tabstop>
+    <tabstop>lineEdit_Foot_H</tabstop>
+    <tabstop>slider_Foot_H</tabstop>
+    <tabstop>lineEdit_Marg_Bottom</tabstop>
+    <tabstop>slider_Marg_Bottom</tabstop>
+    <tabstop>pushButtonSave</tabstop>
+    <tabstop>lineEditResoX</tabstop>
+    <tabstop>lineEditResoY</tabstop>
+    <tabstop>checkBox_Duplicata</tabstop>
+    <tabstop>comboBox_TypeDoc</tabstop>
+    <tabstop>pushButtonConfigurer</tabstop>
+    <tabstop>lineEditZoom</tabstop>
+    <tabstop>pushButtonPrint</tabstop>
+    <tabstop>lineEdit_PageDeb</tabstop>
+    <tabstop>lineEdit_PageFin</tabstop>
+    <tabstop>pushButtonQuitter</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in declaration">CPrinter.h</include>
+    <include location="global" impldecl="in declaration">qsimplerichtext.h</include>
+    <include location="global" impldecl="in declaration">qtextedit.h</include>
+    <include location="local" impldecl="in declaration">CMoteur_Base.h</include>
+    <include location="local" impldecl="in implementation">../../MedinTuxTools/CPrtQListBoxItem.h</include>
+    <include location="global" impldecl="in implementation">stdlib.h</include>
+    <include location="local" impldecl="in implementation">CDevilCrucible.h</include>
+    <include location="local" impldecl="in implementation">drtux.h</include>
+    <include location="local" impldecl="in implementation">CApp.h</include>
+    <include location="local" impldecl="in implementation">../../MedinTuxTools/CHtmlTools.h</include>
+    <include location="local" impldecl="in implementation">DlgPrint.ui.h</include>
+</includes>
+<variables>
+    <variable>DOCUMENT_DISPLAY_MAP m_currentDocDisplayMap ;</variable>
+    <variable>int m_ID_Prs;</variable>
+    <variable>int m_ID_Obs;</variable>
+    <variable>RUBREC_LIST* m_pRubList;</variable>
+    <variable>QString m_IdentPrimKey;</variable>
+    <variable>QString m_SignUser;</variable>
+    <variable>CMoteurBase* m_pCMoteurBase;</variable>
+    <variable>QTextEdit * m_pBodyTextEdit;</variable>
+    <variable>QSimpleRichText * m_pHeadRichText;</variable>
+    <variable>CViewPageWidget* m_pCViewPageWidget;</variable>
+    <variable access="public">float m_PageW;</variable>
+    <variable access="public">float m_PageH;</variable>
+    <variable access="public">QPrinter* m_pQPrinter;</variable>
+    <variable>QSimpleRichText * m_pBodyRichText;</variable>
+    <variable>QSimpleRichText * m_pFootRichText;</variable>
+    <variable>QString m_ObsText;</variable>
+    <variable>QString m_HeadText;</variable>
+    <variable>QString m_FootText;</variable>
+    <variable>QString m_UserActuelPk;</variable>
+    <variable>QString m_BodyText;</variable>
+</variables>
+<slots>
+    <slot>slider_Marg_Top_sliderMoved( int value )</slot>
+    <slot>slider_Head_H_sliderMoved( int value )</slot>
+    <slot>slider_Marg_Left_sliderMoved( int value )</slot>
+    <slot>slider_Marg_Right_sliderMoved( int value )</slot>
+    <slot>slider_Marg_Bottom_sliderMoved( int value )</slot>
+    <slot>slider_Foot_H_sliderMoved( int value )</slot>
+    <slot>UpdateTextePageInfo( int nb_page )</slot>
+    <slot returnType="int">initDialog( QTextEdit * pBodyTextEdit, QString &amp; IdentPrimKey, CMoteurBase * pCMoteurBase, RUBREC_LIST * pRubList, int id_Obs, int id_Prs, const char * observText, const char * userActuelPk, const char * rubName )</slot>
+    <slot>executeTransfertMacro()</slot>
+    <slot>SetCaption()</slot>
+    <slot>pushButtonSave_clicked()</slot>
+    <slot>SetDialogOnPrinterSpec()</slot>
+    <slot>comboBox_TypeDoc_activated( const QString &amp; )</slot>
+    <slot>comboBox_TypeDoc_activated( int item )</slot>
+    <slot>SetDialogOnHeadAndFoot( int )</slot>
+    <slot>GetPossibleDefaultFont( const QString &amp; txt, QFont &amp; font )</slot>
+    <slot>FusionneDocument( QString * pDocument, QString userActuelPk )</slot>
+    <slot>AdjustHeightFootAndHead()</slot>
+    <slot>initRichBodyText( QSimpleRichText * pRichText )</slot>
+    <slot>initRichHeadText( QSimpleRichText * pRichText )</slot>
+    <slot>initRichFootText( QSimpleRichText * pRichText )</slot>
+    <slot>pushButtonOk_clicked()</slot>
+    <slot>pushButtonPrint_2_clicked()</slot>
+    <slot>pushButtonPrint_2_2_clicked()</slot>
+    <slot>pushButtonPrint_clicked()</slot>
+    <slot>printDoc( int nbCopies )</slot>
+    <slot>GetHeadAndFoot( QString prim_key, int type, int update )</slot>
+    <slot>pushButtonQuitter_clicked()</slot>
+    <slot>pushButtonConfigurer_clicked()</slot>
+    <slot>pushButtonPrevious_clicked()</slot>
+    <slot>pushButtonNext_clicked()</slot>
+    <slot>checkBox_Duplicata_stateChanged( int )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function returnType="QString">Get_User_Head_Foot( QString user, QString * foot, const QString &amp; nameDoc, const QString &amp; str_type )</function>
+    <function returnType="QString">GetCurrentComboPrimKey()</function>
+    <function returnType="QString">IsExistDuplicata()</function>
+    <function returnType="QString">GetNameDocFromCombo()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

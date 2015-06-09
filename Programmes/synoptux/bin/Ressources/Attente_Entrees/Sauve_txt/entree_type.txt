@@ -1,0 +1,31 @@
+[Entree]
+Code_Box=B1
+Nom_Patient=ABID
+Prenom_Patient=LISA
+GUID_Patient=ansi 90c-328a-c-990h-d2246e29c3
+Code_Responsable=ro
+Commentaire=très endômmagé !
+Programme_Annexe=D:/MedinTux/Programmes/drtux/bin/drtux.exe
+Arguments_Annexe=Lucette+Lucette+7543d90c-325a-4a9c-9901-d2246e2bb9c3+6521+ABID+LISA+D:/MedinTux/Programmes/Manager/bin/Manager.ini+D:/MedinTux/Programmes/Manager/bin/DataBase.cfg
+[Tache_1]
+Code_Tache=A3
+Priorite=1
+Commentaire=Tête et pieds
+Heure_Debut_Prevue=10h20
+Heure_Fin_Prevue=11h20
+PrimKey_Blob=160651
+[Tache_2]
+Code_Tache=A1
+Priorite=2
+Commentaire=
+Heure_Debut_Prevue=
+Heure_Fin_Prevue=
+Nom_Lecteur_Note=C:/Program Files/Adobe/Reader 9.0/Reader/AcroRd32.exe
+Nom_Fichier_Note=D:/tmp/PDF_tmp/CR ECHO DOPP PULSE.pdf
+[Tache_3]
+Code_Tache=A4
+Priorite=1
+Commentaire=Tête et pieds
+Heure_Debut_Prevue=10h20
+Heure_Fin_Prevue=11h20
+PrimKey_Blob=160651

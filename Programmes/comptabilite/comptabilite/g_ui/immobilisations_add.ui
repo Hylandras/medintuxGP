@@ -1,0 +1,488 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Immobilisations_Add</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Immobilisations_Add</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>498</width>
+            <height>595</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Saisie des immobilisations</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;p align="center"&gt;&lt;b&gt;Saisie des immobilisations&lt;/b&gt;&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>Layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonHelp</cstring>
+                    </property>
+                    <property name="text">
+                        <string>He&amp;lp</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+L</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>Horizontal Spacing2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonCancel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Ca&amp;ncel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+N</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string>Données de calcul</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>textLabel1_2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Compte</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>lblLibelle</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Libellé</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="1" rowspan="1" colspan="4">
+                    <property name="name">
+                        <cstring>libelle</cstring>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Libellé de l'immobilisation</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Libellé de l'immobilisation</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="1" column="1" rowspan="1" colspan="4">
+                    <property name="name">
+                        <cstring>listeComptes</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="3" column="4">
+                    <property name="name">
+                        <cstring>annee</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="3" column="1">
+                    <property name="name">
+                        <cstring>jour</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="3" column="2" rowspan="1" colspan="2">
+                    <item>
+                        <property name="text">
+                            <string>Janvier</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Février</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Mars</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Avril</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Mai</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Juin</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Juillet</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Août</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Septembre</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Octobre</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Novembre</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Décembre</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>mois</cstring>
+                    </property>
+                    <property name="sizeLimit">
+                        <number>12</number>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="3" column="0">
+                    <property name="name">
+                        <cstring>lblDateValeur</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Date de mise en service</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="4" column="0">
+                    <property name="name">
+                        <cstring>lblMontant</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Durée de l'immobilisation</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="4" column="3">
+                    <property name="name">
+                        <cstring>lblMontant_2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>années</string>
+                    </property>
+                </widget>
+                <widget class="QButtonGroup" row="5" column="1" rowspan="1" colspan="4">
+                    <property name="name">
+                        <cstring>buttonGroup2</cstring>
+                    </property>
+                    <property name="title">
+                        <string>Mode d'amortissement</string>
+                    </property>
+                    <widget class="QRadioButton">
+                        <property name="name">
+                            <cstring>lineaire</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>20</x>
+                                <y>20</y>
+                                <width>70</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Linéaire</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Mode d'immobilisation linéaire</string>
+                        </property>
+                        <property name="whatsThis" stdset="0">
+                            <string>Mode d'immobilisation linéaire</string>
+                        </property>
+                    </widget>
+                    <widget class="QRadioButton">
+                        <property name="name">
+                            <cstring>degressif</cstring>
+                        </property>
+                        <property name="geometry">
+                            <rect>
+                                <x>110</x>
+                                <y>20</y>
+                                <width>90</width>
+                                <height>20</height>
+                            </rect>
+                        </property>
+                        <property name="text">
+                            <string>Dégressif</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Mode d'immobilisation dégressif</string>
+                        </property>
+                        <property name="whatsThis" stdset="0">
+                            <string>Mode d'immobilisation dégressif</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QLineEdit" row="4" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>duree</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>32767</number>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Durée en années de l'immobilisation</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>Durée en années de l'immobilisation</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="6" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>valeur</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>7</number>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>La valeur du bien immobilisable s'entend hors taxe</string>
+                    </property>
+                    <property name="whatsThis" stdset="0">
+                        <string>La valeur du bien immobilisable s'entend hors taxe</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="6" column="0">
+                    <property name="name">
+                        <cstring>textLabel1_3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Valeur hors taxe</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="8" column="0" rowspan="1" colspan="5">
+                    <property name="name">
+                        <cstring>but_Calculer</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Calculer</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="7" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>residuel</cstring>
+                    </property>
+                    <property name="maxLength">
+                        <number>7</number>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="7" column="0">
+                    <property name="name">
+                        <cstring>textLabel2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Valeur résiduelle</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="2" column="0">
+            <property name="name">
+                <cstring>resultat</cstring>
+            </property>
+            <property name="title">
+                <string>Résultat</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QTextEdit" row="0" column="0">
+                    <property name="name">
+                        <cstring>resultatTxt</cstring>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>mois</sender>
+        <signal>activated(int)</signal>
+        <receiver>Immobilisations_Add</receiver>
+        <slot>mois_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>annee</sender>
+        <signal>activated(int)</signal>
+        <receiver>Immobilisations_Add</receiver>
+        <slot>annee_activated(int)</slot>
+    </connection>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>Immobilisations_Add</receiver>
+        <slot>buttonOk_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>Immobilisations_Add</receiver>
+        <slot>buttonCancel_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>buttonHelp</sender>
+        <signal>clicked()</signal>
+        <receiver>Immobilisations_Add</receiver>
+        <slot>buttonHelp_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>but_Calculer</sender>
+        <signal>clicked()</signal>
+        <receiver>Immobilisations_Add</receiver>
+        <slot>but_Calculer_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>lineaire</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>Immobilisations_Add</receiver>
+        <slot>lineaire_toggled(bool)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>libelle</tabstop>
+    <tabstop>listeComptes</tabstop>
+    <tabstop>jour</tabstop>
+    <tabstop>mois</tabstop>
+    <tabstop>annee</tabstop>
+    <tabstop>duree</tabstop>
+    <tabstop>lineaire</tabstop>
+    <tabstop>degressif</tabstop>
+    <tabstop>valeur</tabstop>
+    <tabstop>residuel</tabstop>
+    <tabstop>but_Calculer</tabstop>
+    <tabstop>resultatTxt</tabstop>
+    <tabstop>buttonOk</tabstop>
+    <tabstop>buttonCancel</tabstop>
+    <tabstop>buttonHelp</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in declaration">../Listes.h</include>
+    <include location="local" impldecl="in declaration">../ComptaMoteurBase.h</include>
+    <include location="global" impldecl="in declaration">qlistview.h</include>
+    <include location="local" impldecl="in declaration">../Tools.h</include>
+    <include location="local" impldecl="in implementation">immobilisations_add.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">int id_imm_toModif;</variable>
+    <variable access="public">bool forUpdate;</variable>
+    <variable access="public">bool paramOK;</variable>
+    <variable access="public">ComptaMoteurBase* pMB;</variable>
+    <variable access="public">Utilisateurs* currentUser;</variable>
+    <variable access="public">Immobilisations* imm;</variable>
+    <variable access="public">int id_mvt_dispo;</variable>
+    <variable access="public">COMPTES_LISTE* cptListe;</variable>
+    <variable access="public">bool seeOnly;</variable>
+</variables>
+<slots>
+    <slot>setParams( Utilisateurs * curUsr, const char * date, ComptaMoteurBase * pMoteurBase )</slot>
+    <slot>setImm( Immobilisations * pImm )</slot>
+    <slot>setSeeOnly( bool b )</slot>
+    <slot>getImmobilisation()</slot>
+    <slot>buttonOk_clicked()</slot>
+    <slot>but_Calculer_clicked()</slot>
+    <slot>buttonCancel_clicked()</slot>
+    <slot>buttonHelp_clicked()</slot>
+    <slot>mois_activated( int )</slot>
+    <slot>annee_activated( int )</slot>
+    <slot>setDateObserv( QString dt_str )</slot>
+    <slot>setDateObserv( QDate dt )</slot>
+    <slot>setForUpdateOnly( bool up )</slot>
+    <slot>lineaire_toggled( bool b )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function returnType="QString">getDateObserv()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

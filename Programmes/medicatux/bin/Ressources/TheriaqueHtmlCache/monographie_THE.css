@@ -1,0 +1,149 @@
+
+A:visited
+{
+    COLOR: #2F4696;
+    TEXT-DECORATION: none
+}
+A:link
+{
+    COLOR: #2F4696;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #2F4696;
+    TEXT-DECORATION: underline
+}
+TD
+{
+    FONT-SIZE: x-small;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana
+}
+
+body {
+        font-size: 12px;
+        background-color: #d8da3d
+        color: purple;
+}
+
+p.nom_spe {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #68afff;
+        background-color: #a7cffb;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: #ae0d0d; 
+}
+p.nom_chapitres {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        font-weight: bolder;
+        color: #ae0d0d; 
+}
+h1.titre_resume {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: normal;
+        color: #FF0000;
+}
+
+h2.titre_resume {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bolder;
+        color: #FF0000;
+}
+h3.titre_resume {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        font-weight: normal;
+        color: #FF0000;
+}
+h4.titre_resume {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bolder;
+        color: #FF0000;
+}
+h5.titre_resume {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bolder;
+        color: #FF0000;
+}
+h6.titre_resume {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bolder;
+        color: #FF0000;
+}
+
+p.rexte_resume {
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #95c7ff;
+        background-color: #c6e1ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        text-align: left;
+        font-weight: normal;
+        color: #000000; 
+}
+
+.bdm_titre_chapitre_bleu {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #004990;
+        font-weight: bold;
+        height: 18px;
+}
+
+.bdm_info_statut {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #004990;
+        font-weight: bold;
+        height: 25px;
+}

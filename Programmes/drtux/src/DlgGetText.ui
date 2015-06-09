@@ -1,0 +1,132 @@
+<!DOCTYPE UI><UI version="0.0" stdsetdef="1">
+<class>DlgGetText</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>DlgGetText</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>518</width>
+            <height>140</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Saisissez un texte</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTextEdit" row="0" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>textEdit</cstring>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="0">
+            <property name="name">
+                <cstring>pushButtonOK</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>30</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>&amp;Valider</string>
+            </property>
+            <property name="accel">
+                <string>Alt+V</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>pushButtonCancel</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>30</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>Annu&amp;ler</string>
+            </property>
+            <property name="accel">
+                <string>Alt+L</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="2">
+            <property name="name">
+                <cstring>pushButtonClearAndQuit</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>130</width>
+                    <height>30</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>Effacer et &amp;quitter</string>
+            </property>
+            <property name="accel">
+                <string>Alt+Q</string>
+            </property>
+        </widget>
+        <spacer row="1" column="3">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>205</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonOK</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgGetText</receiver>
+        <slot>pushButtonOK_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgGetText</receiver>
+        <slot>pushButtonCancel_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonClearAndQuit</sender>
+        <signal>clicked()</signal>
+        <receiver>DlgGetText</receiver>
+        <slot>pushButtonClearAndQuit_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>textEdit</tabstop>
+    <tabstop>pushButtonOK</tabstop>
+    <tabstop>pushButtonCancel</tabstop>
+    <tabstop>pushButtonClearAndQuit</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">DlgGetText.ui.h</include>
+</includes>
+<slots>
+    <slot>pushButtonOK_clicked()</slot>
+    <slot>pushButtonCancel_clicked()</slot>
+    <slot>pushButtonClearAndQuit_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
