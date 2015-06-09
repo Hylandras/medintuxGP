@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans">
-<p> {{::SET_VAR (NomMed,  <span style="font-weight:400">{{::DO_LISTE(  {{::#SQL_SELECT (Personnes , Nom |Prenom, WHERE Droits LIKE '%-sgn%' , 30,&amp;nbsp;,| )}},Nom du mécecin)}}</span>)}}\<br />{{::SET_DOC_PROP_3({{::PUT_VAR (NomMed)}})}}\<br />{{::PUT_VAR (NomMed)}}\<br />{{::REINIT_CLASSEUR()}}</p>
-</body></html>

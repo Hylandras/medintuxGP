@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:Helvetica">
-<p><span style="font-size:9pt;font-weight:600">$start_titleNumérisation et OCR avec Xsane et tesseract$end_title\<br />{{::Intitule ( Importation Texte OCR ) }}\<br />{{::delete_file (../../tmp/LastScanned.tif)}}\<br />{{::delete_file (../../tmp/LastScanned.txt, clear)}}\<br />{{::delete_file (../../tmp/medintux2tess.log)}}\<br />{{::exe_process (WaitEnd ,/usr/bin/xsane,--save,-N$ToAbsPath../../tmp/LastScanned.tif)}}\<br />{{::exe_process (WaitEnd,../../Plug/ocr/medintux2tess.sh,LastScanned.tif,LastScanned,-l fra,$ToAbsPath../../tmp$EndToAbsPath/,nodebug)}}\<br />{{::import (../../tmp/LastScanned.txt , insert crlf2html)}}</span></p>
-</body></html>

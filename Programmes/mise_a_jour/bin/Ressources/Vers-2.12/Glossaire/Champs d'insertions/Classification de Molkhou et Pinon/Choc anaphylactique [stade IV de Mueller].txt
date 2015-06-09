@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:9pt;font-family:MS Shell Dlg">
-<p><span style="font-weight:600">Choc anaphylactique (</span><span style="font-weight:600;color:#aa0000">stade IV de Mueller</span><span style="font-weight:600">) </span>:<br />	Un ou plusieurs <span style="font-style:italic;text-decoration:underline;color:#0000ff">symptômes du stade III de Mueller</span>  associé à au moins <span style="font-weight:600">deux</span><br />	de ceux qui suivent :<br />		° cyanose<br />		° hypotension<br />		° collapsus<br />		° perte de connaissance<br />		° syncope<br />		° incontinence<br /></p>
-</body></html>

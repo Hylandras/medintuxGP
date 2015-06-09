@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:Helvetica">
-<p><span style="font-size:9pt;font-weight:600">$start_titleMofifier l'image avec The Gimp$end_title</span>{{SAVE LAST IMAGE NAME=../../tmp/}}{{:: exe_process (WaitEnd ,  /usr/bin/gimp ,$ToAbsPath ../../tmp/{{GET LAST IMAGE NAME}})}}{{:: replace_image ({{GET LAST IMAGE NAME}}, ../../tmp/{{GET LAST IMAGE NAME}},-1,-1,keep_src_file Name remove_src )  }}         </p>
-</body></html>

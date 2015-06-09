@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
-<p>$start_title Lire une carte Sesam-Vitale $end_title{{[Execute]<br />pathPlugin=../../QFseVitale/bin/QFseVitale<br />maskExch=Bonjour tout le monde<br />pathIni=****<br />[Parametres]<br />m_Command     = READ_VITALE<br />m_PathLog       = NO_LOGFILE<br />m_CodePorteur = 1234<br />}}<br /></p>
-</body></html>

@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans">
-<p><span style="font-weight:600;color:#aa0000">2</span> <span style="font-family:Arial Narrow">Patient non convoqué sortant aprés consultation ou soins</span></p>
-</body></html>

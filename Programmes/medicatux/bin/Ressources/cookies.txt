@@ -1,1 +1,0 @@
-ASPSESSIONIDCSRDCCQD=OAFHMACAHMAIPHHCKKFIFMLE; domain=www.portailmedicaments.resip.fr; path=/

@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
-<p>$start_title Lire Les Infos Sesam-Vitale$end_title{{[Execute]<br />pathPlugin=../../QFseVitale/bin/QFseVitale<br />maskExch=Bonjour tout le monde<br />pathIni=****<br />[Parametres]<br />m_Command     = READ_CONFIG<br />m_PathLog       = ../../QFseVitale/bin/Trace/<br />m_CodePorteur = 1234<br />}}<br /><br /></p>
-</body></html>
