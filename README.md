@@ -1,4 +1,4 @@
-# medintux-rey
+# medintuxGP
 MedinTux fork with a GP centered optimization
 
 This works aims to tune MedinTux to adapt it to GP job and its specificities.
