@@ -1,5 +1,0 @@
- [PathIni] 
-      RedirectPath=../../medicatux/bin/medicatux.ini
-     ;PathOnIP =  ../../IndirectConfig/IpAdr/
-     ;PathOnMacAdr = ../../IndirectConfig/MacAdr/
-[END_INI]

@@ -1,4 +1,0 @@
------------------
-BNP (NGAP=1821)          en : mg
-Azotémie (NGAP= 591)     en : g/l
-Kaliémimie (NGAP= 1608)  en : g/l

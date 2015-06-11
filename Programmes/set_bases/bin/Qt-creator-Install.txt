@@ -1,9 +1,0 @@
-Apart from a C++ compiler, a number of development libraries need to be present to enable Qt Creator to build your Qt applications. On Debian and Ubuntu, use the following command in a terminal to make sure they are installed:
-
-  sudo apt-get install libglib2.0-dev libSM-dev libxrender-dev libfontconfig1-dev libxext-dev
-
-If you're using QtOpenGL, you'll also need OpenGL development files. You can use the following command to find out which packages to install:
-
-  sudo apt-get install libgl-dev libglu-dev
-
-ne pas oublier de copier : libmysqlclient.18.dylib dans /usr/lib      
