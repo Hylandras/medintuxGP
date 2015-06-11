@@ -1,1 +1,0 @@
-open -Wna Gimp '/Users/rolandsevin/Documents/medintux/Programmes/tmp/ab940067-7f57-492e-bebb-e7042dbb0e28-h400w500.png'
