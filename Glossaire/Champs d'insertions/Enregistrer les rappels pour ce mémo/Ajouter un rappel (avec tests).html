@@ -4,7 +4,7 @@
 {{:: SI(S,{{VAR=testSubject}},=,{{VAR=titreMemo}},,FLAG_FALSE)>macroValidAction}}
 {{:: {{VAR=macroValidAction}}Extract (,Sujet ,EOL)>testReminder}}
 {{:: {{VAR=macroValidAction}}SI(S,{{VAR=testReminder}},=,{{VAR=memoReminder}},,FLAG_FALSE)>macroValidAction}}
-{{:: {{VAR=macroValidAction}}SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} 10:00:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,secretaire,Note,,Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
+{{:: {{VAR=macroValidAction}}SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} 10:00:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,remind,Note,,Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
 {{:: SI(S,{{VAR=macroValidAction}},=,FLAG_FALSE,{{:: MESSAGE_POPUP(Veuillez saisir le sujet et une date de rappel avant de réaliser cette action,, {{VAR=popupFading}})}},{{:: MESSAGE_POPUP(Rappel ajouté au calendrier de "La Secrétaire",, {{VAR=popupFading}})}})}}
 </p>
 </body></html>
