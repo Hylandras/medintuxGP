@@ -12,5 +12,5 @@
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoDueDate}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,{{::# MESSAGE_POPUP(ERREUR !!! Vérifiez votre sujet ainsi que votre date butoir avant de lancer cette macro,,{{VAR=popupFading}})}},)}}
 {{REM= Don't forget to adapt subject to your reminder system requirements}}
-{{:: {{VAR=validAction}}exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{VAR=reminderAppEmail}}?subject={{:: CS({{VAR=titreMemo}})}} !{{:: RB({{:: CS({{VAR=memoDueDate}})}} ,-,/)}} @RAPPELS #{{NOM PATIENT}} {{PRENOM PATIENT}}&amp;body={{:: Extract(Documents,Sujet,Enregistrer les rappels pour ce mémo)}})}}</p>
+{{:: {{VAR=validAction}}exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{VAR=reminderAppEmail}}?subject={{:: CS({{VAR=titreMemo}})}} !{{:: RB({{:: CS({{VAR=memoDueDate}})}} ,-,/)}} @RAPPELS#{{NOM PATIENT}} {{PRENOM PATIENT}}&amp;body={{:: Extract(Documents,Sujet,Enregistrer les rappels pour ce mémo)}})}}</p>
 </body></html>
