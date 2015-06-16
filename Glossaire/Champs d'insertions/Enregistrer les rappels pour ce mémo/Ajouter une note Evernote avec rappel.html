@@ -12,8 +12,8 @@
 {{:: TEST(S,{{VAR=titreMemo}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoDueDate}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,{{::# MESSAGE_POPUP(ERREUR !!! Vérifiez votre sujet ainsi que votre date butoir avant de lancer cette macro,,{{VAR=popupFading}})}},)}}
-{{REM= Don't forget to adapt subject to your reminder system requirements}}
+{{REM= Don't forget to adapt the subject to your reminder system requirements}}
 {{:: {{VAR=validAction}}exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{VAR=reminderAppEmail}}?subject={{:: CS({{VAR=titreMemo}})}} !{{:: RB({{:: CS({{VAR=memoDueDate}})}} ,-,/)}} @RAPPELS#{{NOM PATIENT}} {{PRENOM PATIENT}}&amp;body={{:: Extract(Documents,Sujet,==============================)}})}}
-{{::# Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel créé dans Evernote</b></span>)}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel créé dans Evernote</b></span>)}}
 </p>
 </body></html>
