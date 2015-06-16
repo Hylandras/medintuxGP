@@ -3,5 +3,5 @@
 {{REM= We send a query to grab the email of the reminder system we use. Obviously we need to add this email as remind user email...}}
 {{:: SQL_SELECT ( Personnes , EMail , WHERE Login='remind',20,%, ,%0)>reminderAppEmail}}
 {{REM= Don't forget to adapt subject to your reminder system requirements. Here we use Evernote but all reminders system with "Add by mail" option will work...}}
-{{:: exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{VAR=reminderAppEmail}}?subject={{VAR=titreMemo}} !{{:: REPLACE_BY({{VAR=memoDueDate}},-,/)}} @RAPPELS #{{NOM PATIENT}} {{PRENOM PATIENT}}&amp;body={{:: Extract( ,Sujet,Enregistrer les rappels pour ce mémo)}})}}</p>
+{{:: exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{VAR=reminderAppEmail}}?subject={{VAR=titreMemo}} !{{:: REPLACE_BY({{VAR=memoDueDate}},-,/)}} @RAPPELS #{{NOM PATIENT}} {{PRENOM PATIENT}}&amp;body={{:: Extract(Documents,Sujet,Enregistrer les rappels pour ce mémo)}})}}</p>
 </body></html>
