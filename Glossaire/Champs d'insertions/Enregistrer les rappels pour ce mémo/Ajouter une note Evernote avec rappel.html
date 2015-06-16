@@ -1,5 +1,6 @@
 <html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
 <p>{{REM= To ensure that Memos and Reminders work you need to have a dummy user with "remind" as Login}}
+{{REM= this macro is designed primarily for Evernote but can be easily modified for any reminder system with an "add by mail" option}}
 {{REM= We send a query to grab the email of the reminder system we use. Obviously we need to add this email as remind user email...}}
 {{:: SQL_SELECT ( Personnes , EMail , WHERE Login='remind',20,%, ,%0)>reminderAppEmail}}
 {{REM= we extract title and due date to perform test to prevent execution if they are not filled}}
@@ -9,6 +10,7 @@
 {{:: SET_VAR(validAction, )}}
 {{:: TEST(S,{{VAR=titreMemo}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoDueDate}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
-{{REM= Don't forget to adapt subject to your reminder system requirements. Here we use Evernote but all reminders system with "Add by mail" option will work...}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,{{::# MESSAGE_POPUP(ERREUR !!! Vérifiez votre sujet ainsi que votre date butoir avant de lancer cette macro,,{{VAR=popupFading}})}},)}}
+{{REM= Don't forget to adapt subject to your reminder system requirements}}
 {{:: {{VAR=validAction}}exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{VAR=reminderAppEmail}}?subject={{:: CS({{VAR=titreMemo}})}} !{{:: RB({{:: CS({{VAR=memoDueDate}})}} ,-,/)}} @RAPPELS #{{NOM PATIENT}} {{PRENOM PATIENT}}&amp;body={{:: Extract(Documents,Sujet,Enregistrer les rappels pour ce mémo)}})}}</p>
 </body></html>
