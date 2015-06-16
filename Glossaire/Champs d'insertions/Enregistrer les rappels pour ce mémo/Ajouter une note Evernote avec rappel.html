@@ -1,5 +1,6 @@
 <html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
-<p>{{REM= To ensure that Memos and Reminders work you need to have a dummy user with "remind" as Login}}
+<p>$start_title<span style="color:#aa0000">N'oubliez pas de valider l'envoi du mail à Evernote !</span><br /><br />Prenez garde à ne pas créer de doublon !$end_title
+{{REM= To ensure that Memos and Reminders work you need to have a dummy user with "remind" as Login}}
 {{REM= this macro is designed primarily for Evernote but can be easily modified for any reminder system with an "add by mail" option}}
 {{REM= We send a query to grab the email of the reminder system we use. Obviously we need to add this email as remind user email...}}
 {{:: SQL_SELECT ( Personnes , EMail , WHERE Login='remind',20,%, ,%0)>reminderAppEmail}}
