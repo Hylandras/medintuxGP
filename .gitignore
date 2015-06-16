@@ -6,3 +6,5 @@ Programmes/mise_a_jour/*
 Programmes/medicatux/*
 #Exlure les fichiers de conflit de synchronisation de Synology Cloudstation
 *CaseConflict.html
+#Ignore glossary cache
+Glossaire/Champs d'insertions/cache/*
