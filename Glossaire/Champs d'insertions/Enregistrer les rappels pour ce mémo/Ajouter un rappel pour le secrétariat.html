@@ -3,17 +3,13 @@
 {{REM= To ensure that Memos and Reminders work you need to have a dummy user with "remind" as Login}}
 {{REM= we extract title and due date to perform test to prevent execution if they are not filled}}
 {{:: Extract(Documents,Sujet,EOL)&gt;titreMemo}}
-{{VAR=titreMemo}}
 {{:: Extract(Documents,Date de rappel,EOL)&gt;memoReminder}}
 {{REM= we test with validAction prefix method if extracts returned two values}}
 {{:: SET_VAR(validAction, )}}
-{{VAR=validAction}}
 {{:: TEST(S,{{VAR=titreMemo}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
-{{VAR=titreMemo}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
-{{VAR=memoReminder}}
-{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,{{::# MESSAGE_POPUP(ERREUR !!! Vérifiez votre sujet ainsi que votre date de rappel avant de lancer cette macro,,{{VAR=popupFading}})}},)}}
-{{:: SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} {{hh:mm}}:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,remind,Note,{{:: CS({{VAR=titreMemo}},Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,{{:: MESSAGE_POPUP(ERREUR !!! Vérifiez votre sujet ainsi que votre date de rappel avant de lancer cette macro,,{{VAR=popupFading}})}},)}}
+{{:: SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,remind,Note,{{:: CS({{VAR=titreMemo}})}},Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
 {{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel créé dans le calendrier de la secrétaire automatisée</b></span>)}}
 </p>
 </body></html>
