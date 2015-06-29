@@ -8,7 +8,8 @@
 {{:: SET_VAR(validAction, )}}
 {{:: TEST(S,{{VAR=titreMemo}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
-{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,{{:: MESSAGE_POPUP(ERREUR !!! Vérifiez votre sujet ainsi que votre date de rappel avant de lancer cette macro,,{{VAR=popupFading}})}},)}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
+{{:: {{VAR=doPopup}}(ERREUR !!! Vérifiez votre sujet ainsi que votre date de rappel avant de lancer cette macro,,{{VAR=popupFading}})}}
 {{:: SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,remind,Note,{{:: CS({{VAR=titreMemo}})}},Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
 {{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel créé dans le calendrier de la secrétaire automatisée</b></span>)}}
 </p>

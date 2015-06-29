@@ -13,7 +13,8 @@
 {{:: TEST(S,{{VAR=titreMemo}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoDueDate}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
-{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,{{:: MESSAGE_POPUP(ERREUR !!! Vérifiez votre sujet ainsi que vos dates butoir et de rappel avant de lancer cette macro,,{{VAR=popupFading}})}},)}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
+{{:: {{VAR=doPopup}}(ERREUR !!! Vérifiez votre sujet ainsi que vos dates butoir et de rappel avant de lancer cette macro,,{{VAR=popupFading}})}}
 {{REM= Don't forget to adapt the subject to your reminder system requirements}}
 {{REM= We HHHMM to grab the current time when we use the macro so the reminders won't be all displayed at the same time and will be easier to check}}
 {{:: SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,remind,Note,{{:: CS({{VAR=titreMemo}})}},Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
