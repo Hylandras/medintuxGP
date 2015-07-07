@@ -4,14 +4,30 @@
   <Classeur name="0.0 stdsetdef=1">
   </Classeur>
 
+  <Classeur name="Administratif-Social">
+    <icone>32px-Administratif-Social.png</icone>
+  </Classeur>
+
   <Classeur name="Administratif_Social">
     <icone>kiss.png</icone>
     <IsUnique>1</IsUnique>
   </Classeur>
 
+  <Classeur name="Angiologie">
+    <icone>32px-Angiologie.png</icone>
+  </Classeur>
+
+  <Classeur name="Autre">
+    <icone>32px-Autre.png</icone>
+  </Classeur>
+
   <Classeur name="CardioVasculaire">
     <icone>love.png</icone>
     <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Cardiologie">
+    <icone>32px-Cardiologie.png</icone>
   </Classeur>
 
   <Classeur name="Classeur_Médecine_Générale">
@@ -25,7 +41,7 @@
   </Classeur>
 
   <Classeur name="Dermatologie">
-    <icone>adjusthsl.png</icone>
+    <icone>32px-Dermatologie.png</icone>
     <IsUnique>1</IsUnique>
   </Classeur>
 
@@ -41,6 +57,14 @@
   <Classeur name="Endocrino_Métabolisme_Nutrition">
     <icone>distortionfx.png</icone>
     <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Endocrinologie-Métabolisme-Nutrition">
+    <icone>32px-Endocrinologie-Métabolisme-Nutrition.png</icone>
+  </Classeur>
+
+  <Classeur name="Gynécologie-Obstétrique">
+    <icone>32px-Gynécologie-Obstétrique.png</icone>
   </Classeur>
 
   <Classeur name="Génital_Urinaire">
@@ -59,6 +83,10 @@
     <IsUnique>1</IsUnique>
   </Classeur>
 
+  <Classeur name="Hépato-Gastro-Entérologie">
+    <icone>32px-Hépato-Gastro-Entérologie.png</icone>
+  </Classeur>
+
   <Classeur name="Infectieuse">
     <icone>amarok_magnatune.png</icone>
     <IsUnique>1</IsUnique>
@@ -69,8 +97,16 @@
     <IsUnique>1</IsUnique>
   </Classeur>
 
+  <Classeur name="Maladies Infectieuses">
+    <icone>32px-Maladies_Infectieuses.png</icone>
+  </Classeur>
+
+  <Classeur name="Mémos">
+    <icone>32px-Mémos.png</icone>
+  </Classeur>
+
   <Classeur name="Neurologie">
-    <icone>collection.png</icone>
+    <icone>32px-Neurologie.png</icone>
     <IsUnique>1</IsUnique>
   </Classeur>
 
@@ -79,9 +115,21 @@
     <IsUnique>1</IsUnique>
   </Classeur>
 
+  <Classeur name="ORL">
+    <icone>32px-ORL.png</icone>
+  </Classeur>
+
+  <Classeur name="Oncologie">
+    <icone>32px-Oncologie.png</icone>
+  </Classeur>
+
   <Classeur name="Ophtalmologie">
-    <icone>redeyes.png</icone>
+    <icone>32px-Ophtalmologie.png</icone>
     <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Orthopédie">
+    <icone>32px-Orthopédie.png</icone>
   </Classeur>
 
   <Classeur name="Patho_en_cours_non_résolue">
@@ -89,9 +137,17 @@
     <IsUnique>1</IsUnique>
   </Classeur>
 
+  <Classeur name="Pneumologie">
+    <icone>32px-Pneumologie.png</icone>
+  </Classeur>
+
   <Classeur name="Prévention">
-    <icone>amarok_repeat_album.png</icone>
+    <icone>32px-Prévention.png</icone>
     <IsUnique>1</IsUnique>
+  </Classeur>
+
+  <Classeur name="Psychiatrie">
+    <icone>32px-Psychiatrie.png</icone>
   </Classeur>
 
   <Classeur name="Respiratoire_ORL">
@@ -109,8 +165,12 @@
     <IsUnique>1</IsUnique>
   </Classeur>
 
+  <Classeur name="Urologie">
+    <icone>32px-Urologie.png</icone>
+  </Classeur>
+
   <Classeur name="Vaccinations">
-    <icone>Classeur infirmier.png</icone>
+    <icone>32px-Vaccinations.png</icone>
     <IsUnique>1</IsUnique>
   </Classeur>
 
