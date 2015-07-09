@@ -1,0 +1,48 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p>$start_title<span style="color:#aa0000">Introduction en base du reminder</span>$end_title
+{{REM= To ensure that Memos and Reminders work you need to have a dummy user with "remind" as Login}}
+{{REM= this macro is designed primarily for Evernote but can be easily modified for any reminder system with an "add by mail" option}}
+{{REM= prefix to block further actions if a test returns false}}
+{{:: SET_VAR(validAction, )}}
+{{REM= We'll fill this one with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
+{{:: SET_VAR(popupText,TEST)}}
+{{REM= Test if there is already a reminder for this memo. If yes prompt user to ask him if he wants to update it}}
+{{REM= ###TODO### Warn user we need to save before to execute this macro}}
+{{VALIDER_DOSSIER }}
+{{:: SQL_GET_RUB_HEAD_PK(Documents)&gt;memoPK}}
+{{:: SQL_SELECT ( ToDo , Memo_PK , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;testPK}}
+{{:: TEST(N,{{VAR=testPK}},=,{{VAR=memoPK}},FLAG_FALSE,&nbsp;)&gt;validAction}}
+{{REM= ###TODO### Replace popup by a prompt}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Le rappel a déjà été enregistré et : un mémo = une alerte,)&gt;popupText}}
+{{REM= we extract title and dates to perform a test to prevent execution if they are not filled}}
+{{:: {{VAR=validAction}}Extract(Documents,Sujet,EOL)&gt;memoTitle}}
+{{:: {{VAR=validAction}}Extract(Documents,Date de rappel,EOL)&gt;memoReminder}}
+{{:: {{VAR=validAction}}Extract(Documents,Date butoir,EOL)&gt;memoDueDate}}
+{{REM= test if memoTitle, memoReminder, and memoDueDate are filled}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=memoTitle}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Veuillez saisir un titre,)&gt;popupText}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=memoDueDate}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez saisir la date butoir,)&gt;popupText}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez saisir la date de rappel,)&gt;popupText}}
+
+{{:: {{VAR=validAction}}Extract(Documents,Actions à réaliser,À savoir :)&gt;memoTodo}}
+{{:: {{VAR=validAction}}Extract(Documents,À savoir :,==============================)&gt;memoNote}}
+
+{{REM= Ask user if we link current diagnostic :: SQL_GET_RUB_HEAD_PK(Observation)}}
+
+{{:: {{VAR=validAction}}SQL_WRITE (ToDo, ,DateReminder,{{VAR=memoReminder}},DueDate,{{VAR=memoDueDate}},Title,{{:: CS({{VAR=memoTitle}})}},Todo,({{VAR=memoTodo}},Note,{{VAR=memoNote}},Memo_PK,{{VAR=memoPK}},Observation_PK,,Agenda_PK,,GUID,{{GET_DOSS_GUID}}) }}
+{{:: {{VAR=validAction}}SQL_SELECT ( ToDo , Memo_PK , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;testPK}}
+{{:: {{VAR=validAction}}TEST(N,{{VAR=testPK}},=,{{VAR=memoPK}},&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE !!! Veuillez contacter l'administrateur,)&gt;popupText}}
+{{::# {{VAR=validAction}}Extract(Documents,Enregistrer les rappels pour ce mémo,$ToEnd,,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel ajouté à la base de données</b></span>)}}
+{{REM= at this stage we need to add a second sql_write to add reminder to the planning}}
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{REM= we ensure this var is empty to eliminate false positives}}
+{{:: SET_VAR(doPopup, )}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
+{{:: {{VAR=doPopup}}({{VAR=popupText}},,{{VAR=popupFading}})}}
+{{:: SET_VAR(doPopup, )}}
+</p>
+</body></html>
