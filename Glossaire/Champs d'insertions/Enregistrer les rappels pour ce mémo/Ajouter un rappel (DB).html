@@ -1,18 +1,18 @@
 <html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
 <p>$start_title<span style="color:#aa0000">Introduction en base du reminder</span>$end_title
 {{REM= To ensure that memos and reminders work you need to have a dummy user with "remind" as Login}}
-{{REM= prefix to block further actions if a test returns false}}
-{{:: SET_VAR(validAction, )}}
-{{REM= We'll fill this one with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
-{{:: SET_VAR(popupText,TEST)}}
+
 {{REM= Test if there is already a reminder for this memo. If yes prompt user to ask him if he wants to update it}}
 {{REM= ###TODO### Warn user we need to save before to execute this macro}}
 {{VALIDER_DOSSIER }}
+
 {{:: SQL_GET_RUB_HEAD_PK(Documents)&gt;memoPK}}
 {{:: SQL_SELECT ( ToDo , Memo_PK , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;testPK}}
 {{:: TEST(N,{{VAR=testPK}},=,{{VAR=memoPK}},FLAG_FALSE,&nbsp;)&gt;validAction}}
 {{REM= ###TODO### Replace popup by a prompt}}
+{{REM= We fill popupText with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Le rappel a déjà été enregistré et un mémo = une alerte,TEST)&gt;popupText}}
+
 {{REM= we extract title and dates to perform a test to prevent execution if they are not filled}}
 {{:: {{VAR=validAction}}Extract(Documents,Sujet,EOL)&gt;memoTitle}}
 {{:: {{VAR=validAction}}Extract(Documents,Date de rappel,EOL)&gt;memoReminder}}
@@ -24,22 +24,31 @@
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez la date butoir,TEST)&gt;popupText}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez la date de rappel,TEST)&gt;popupText}}
-
 {{:: {{VAR=validAction}}Extract(Documents,Actions à réaliser,À savoir :)&gt;memoTodo}}
 {{:: {{VAR=validAction}}Extract(Documents,À savoir :,==============================)&gt;memoNote}}
 
 {{REM= Ask user if we link current diagnostic :: SQL_GET_RUB_HEAD_PK(Observation)}}
 
-{{:: {{VAR=validAction}}SQL_WRITE (ToDo, ,DateReminder,{{VAR=memoReminder}},DueDate,{{VAR=memoDueDate}},Title,{{:: CS({{VAR=memoTitle}})}},Todo,({{VAR=memoTodo}},Note,{{VAR=memoNote}},Memo_PK,{{VAR=memoPK}},Observation_PK,,Agenda_PK,,GUID,{{GET_DOSS_GUID}}) }}
+{{REM= first we insert the reminder to get its primary key after its execution}}
+{{:: {{VAR=validAction}}SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,remind,Note,{{:: CS({{VAR=memoTitle}})}},Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
+{{REM= we reset agendaPK in case it was filled by a previous macro}}
+{{:: {{VAR=validAction}}SET_VAR(agendaPK,0)}}
+{{REM= we get the last insert's primary key from agenda so we'll can test if the previous insert was successful and use it when we'll the new todo}}
+{{:: {{VAR=validAction}}SQL_SELECT ( agenda , PrimKey , WHERE Date_Time='{{VAR=memoReminder}} {{HHHMM}}:00' AND GUID='{{GET_DOSS_GUID}}' AND Note='{{:: CS({{VAR=memoTitle}})}}',20,%, ,%0)&gt;agendaPK}}
+{{:: {{VAR=validAction}}TEST(N,{{VAR=agendaPK}},>,0,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (agenda) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
+{{REM=  if the query was validated, then we write the insert date}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel ajouté au calendrier de rappels le {{DT=yyyy-MM-dd}}</b></span>)}}
+
+{{REM= now, it's time to insert the todo}}
+{{:: {{VAR=validAction}}SQL_WRITE (ToDo, ,DateReminder,{{VAR=memoReminder}},DueDate,{{VAR=memoDueDate}},Title,{{:: CS({{VAR=memoTitle}})}},Todo,({{VAR=memoTodo}},Note,{{VAR=memoNote}},Memo_PK,{{VAR=memoPK}},Observation_PK,,Agenda_PK,{{VAR=agendaPK}},GUID,{{GET_DOSS_GUID}}) }}
 {{:: {{VAR=validAction}}SQL_SELECT ( ToDo , Memo_PK , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;testPK}}
 {{:: {{VAR=validAction}}TEST(N,{{VAR=testPK}},=,{{VAR=memoPK}},&nbsp;,FLAG_FALSE)&gt;validAction}}
-{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
-{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel ajouté à la base de données le {{DT=yyyy-MM-dd}}</b></span>)}}
-{{REM= at this stage we need to add a second sql_write to add reminder to the planning}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (ToDo) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
+{{REM=  if the query was validated, then we write the insert date}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Alerte ajoutée le {{DT=yyyy-MM-dd}}</b></span>)}}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
-{{REM= we ensure this var is empty to eliminate false positives}}
-{{:: SET_VAR(doPopup, )}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
 {{:: {{VAR=doPopup}}({{VAR=popupText}},,{{VAR=popupFading}})}}
 {{:: SET_VAR(doPopup, )}}
