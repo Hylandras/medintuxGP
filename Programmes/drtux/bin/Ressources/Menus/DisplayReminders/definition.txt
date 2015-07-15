@@ -20,7 +20,7 @@
 			<string>
 				{{::# SQL_SELECT ( agenda , Date_Time|Note , WHERE Date_Time>='{{DT=yyyy-MM-dd}} 00:00:00' AND GUID='{{GET_DOSS_GUID}}' AND Type='Rappel',200,%, ,<br/><b>%1</b>&nbsp;-->&nbsp;%0)&gt;queryResult}}\
 				{{::# MESSAGE_ALERT ({{VAR=queryResult}}) }}\
-				{{::# Extract(Vigie | Historique des nouveaux documents,Liste des rappels à venir,$ToEnd,,{{VAR=queryResult}})}}\
+				{{REM= ::# Extract(Vigie | Historique des nouveaux documents,Liste des rappels à venir,$ToEnd,,{{VAR=queryResult}})}}\
 			</string>
 		</property>
 		<property name="period">
