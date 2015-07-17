@@ -17,10 +17,14 @@
 {{:: {{VAR=validAction}}SET_VAR(memoTitle, )}}
 {{:: {{VAR=validAction}}SET_VAR(memoReminder, )}}
 {{:: {{VAR=validAction}}SET_VAR(memoDueDate, )}}
+{{:: {{VAR=validAction}}SET_VAR(memoTodo, )}}
+{{:: {{VAR=validAction}}SET_VAR(memoNote, )}}
 {{REM= we extract title and dates to perform a test to prevent execution if they are not filled}}
 {{:: {{VAR=validAction}}Extract(Documents,Sujet,EOL)&gt;memoTitle}}
 {{:: {{VAR=validAction}}Extract(Documents,Date de rappel,EOL)&gt;memoReminder}}
 {{:: {{VAR=validAction}}Extract(Documents,Date butoir,EOL)&gt;memoDueDate}}
+{{:: {{VAR=validAction}}Extract(Documents,Actions à réaliser,À savoir :)&gt;memoTodo}}
+{{:: {{VAR=validAction}}Extract(Documents,À savoir :,==============================)&gt;memoNote}}
 {{REM= test if memoTitle, memoReminder, and memoDueDate are filled}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoTitle}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez le titre,TEST)&gt;popupText}}
@@ -28,8 +32,6 @@
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez la date butoir,TEST)&gt;popupText}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez la date de rappel,TEST)&gt;popupText}}
-{{:: {{VAR=validAction}}Extract(Documents,Actions à réaliser,À savoir :)&gt;memoTodo}}
-{{:: {{VAR=validAction}}Extract(Documents,À savoir :,==============================)&gt;memoNote}}
 
 {{REM= Ask user if we link current diagnostic :: SQL_GET_RUB_HEAD_PK(Observation)}}
 

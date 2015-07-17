@@ -1,0 +1,13 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p>$start_title<span style="color:#aa0000">N'oubliez pas de relire (éditer si nécessaire...) et de valider l'envoi du mail !$end_title
+{{REM= once the mail section will be created, we'll need to create a new document in this one}}
+
+{{REM= resetting vars for extracts}}
+{{:: SET_VAR(memoBody, )}}
+{{:: SET_VAR(memoTitle, )}}
+{{:: Extract(Documents,Mémo,==============================,,,$keepHtml)&gt;memoBody}}
+{{:: Extract(Documents,Sujet,EOL)&gt;memoTitle}}
+{{:: exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{EMAIL PATIENT}}?subject={{VAR=memoTitle}}&amp;body={{VAR=memoBody}})}}
+{{::# Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Mail de rappel généré le {{DT=yyyy-MM-dd}} à {{HHHMM}}</b></span>)}}
+</p>
+</body></html>
