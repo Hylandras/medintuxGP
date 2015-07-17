@@ -1,6 +1,8 @@
 <html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
 <p>$start_titleMettre à jour la date d'alerte<br /><br /> <i>Pour rappel, la date d'alerte est la date butoir à laquelle aurait normalement dû être effectuées les actions prévues dans le mémo<br /> <br />Les éléments suivants seront mis à jour en fonction des données du mémo :<ul><li>Le titre du mémo</li><li>La date de rappel</li><li>La date butoir (date d'alerte)</li><li>Les actions à réaliser</li><li>Les choses à savoir</li></ul></i>$end_title
 
+{{REM= ###TODO### Warn user we need to save to complete this macro}}
+
 {{REM= we reset todoPK in case it was filled by a previous macro}}
 {{:: SET_VAR(todoPK,0)}}
 
@@ -29,14 +31,16 @@
 {{:: {{VAR=validAction}}Extract(Documents,À savoir :,==============================)&gt;memoNote}}
 
 {{REM= alter todo}}
-{{:: {{VAR=validAction}}SQL_WRITE (ToDo, PrimKey='{{VAR=todoPK}}' ,DateReminder,{{VAR=memoReminder}},DueDate,{{VAR=memoDueDate}},Title,{{:: CS({{VAR=memoTitle}})}},Todo,{{VAR=memoTodo}},Note,{{VAR=memoNote}}) }}
+{{:: {{VAR=validAction}}SQL_WRITE (ToDo, PrimKey='{{VAR=todoPK}}' ,DateReminder,{{VAR=memoReminder}},DueDate,{{VAR=memoDueDate}},Title,{{VAR=memoTitle}},Todo,{{VAR=memoTodo}},Note,{{VAR=memoNote}}) }}
 
 {{:: {{VAR=validAction}}SET_VAR(testQuery,0)}}
-{{:: {{VAR=validAction}}SQL_SELECT ( ToDo , PrimKey , WHERE PrimKey='{{VAR=todoPK}}' AND DateReminder='{{VAR=memoReminder}}' AND DueDate='{{VAR=memoDueDate}}' AND Title='{{:: CS({{VAR=memoTitle}})}}' AND Todo='{{VAR=memoTodo}}' AND Note='{{VAR=memoNote}}',20,%, ,%0)&gt;testQuery}}
+{{:: {{VAR=validAction}}SQL_SELECT ( ToDo , PrimKey , WHERE PrimKey='{{VAR=todoPK}}' AND DateReminder='{{VAR=memoReminder}}' AND DueDate='{{VAR=memoDueDate}}' AND Title='{{VAR=memoTitle}}' AND Todo='{{VAR=memoTodo}}' AND Note='{{VAR=memoNote}}',20,%, ,%0)&gt;testQuery}}
 {{:: {{VAR=validAction}}TEST(S,{{VAR=testQuery}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (ToDo) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
-{{REM=  if the query was validated, then we write the modification date}}
-{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Alerte modifiée le {{DT=yyyy-MM-dd}}</b></span>)}}
+{{REM=  if the query was validated, then we write the alteration date and update the document title}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Alerte modifiée le {{DT=yyyy-MM-dd}} à {{HHHMM}}</b></span>)}}
+{{:: {{VAR=validAction}}Intitule ( {{VAR=memoTitle}} , change ) }}
+{{REM= VALIDER_DOSSIER}}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}

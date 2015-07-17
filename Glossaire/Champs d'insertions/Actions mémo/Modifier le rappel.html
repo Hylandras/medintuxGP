@@ -2,6 +2,8 @@
 <p>$start_titleMettre à jour la date de rappel<br /><br /> <i>Les éléments suivants seronts mis à jour,<br />en fonction des données du mémo :<ul><li>Le titre du mémo</li><li>La date de rappel</li><li>Le nom de l'intervenant ayant validé ce rappel</li></ul></i>$end_title
 {{REM= To ensure that Memos and Reminders work you need to have a dummy user with "remind" as Login}}
 
+{{REM= ###TODO### Warn user we need to save to complete this macro}}
+
 {{REM= we reset agendaPK in case it was filled by a previous macro}}
 {{:: {{VAR=validAction}}SET_VAR(agendaPK,0)}}
 
@@ -23,14 +25,16 @@
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez la date de rappel,TEST)&gt;popupText}}
 
-{{:: {{VAR=validAction}}SQL_WRITE (agenda, PrimKey='{{VAR=agendaPK}}' ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,RDV_PrisPar,{{USER LOGIN MEDECIN}},Note,{{:: CS({{VAR=memoTitle}})}}) }}
+{{:: {{VAR=validAction}}SQL_WRITE (agenda, PrimKey='{{VAR=agendaPK}}' ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,RDV_PrisPar,{{USER LOGIN MEDECIN}},Note,{{VAR=memoTitle}}) }}
 
 {{:: {{VAR=validAction}}SET_VAR(testQuery,0)}}
-{{::# {{VAR=validAction}}SQL_SELECT ( agenda , PrimKey , WHERE PrimKey='{{VAR=agendaPK}}' AND Date_Time='{{VAR=memoReminder}} {{HHHMM}}:00' AND RDV_PrisPar='{{USER LOGIN MEDECIN}}' AND Note='{{:: CS({{VAR=memoTitle}})}}',20,%, ,%0)&gt;testQuery}}
+{{::# {{VAR=validAction}}SQL_SELECT ( agenda , PrimKey , WHERE PrimKey='{{VAR=agendaPK}}' AND Date_Time='{{VAR=memoReminder}} {{HHHMM}}:00' AND RDV_PrisPar='{{USER LOGIN MEDECIN}}' AND Note='{{VAR=memoTitle}}',20,%, ,%0)&gt;testQuery}}
 {{:: {{VAR=validAction}}TEST(N,{{VAR=testQuery}},>,0,&nbsp;,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (agenda) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
-{{REM=  if the query was validated, then we write the modification date}}
-{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel modifié le {{DT=yyyy-MM-dd}}</b></span>)}}
+{{REM=  if the query was validated, then we write the alteration date and update the document title}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel modifié le {{DT=yyyy-MM-dd}} à {{HHHMM}}</b></span>)}}
+{{:: {{VAR=validAction}}Intitule ( {{VAR=memoTitle}} , change ) }}
+{{REM= VALIDER_DOSSIER}}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
