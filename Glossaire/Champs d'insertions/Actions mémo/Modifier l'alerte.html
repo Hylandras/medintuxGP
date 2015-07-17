@@ -6,7 +6,7 @@
 
 {{:: SQL_GET_RUB_HEAD_PK(Documents)&gt;memoPK}}
 {{:: SQL_SELECT ( ToDo , PrimKey , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;todoPK}}
-{{:: TEST(N,{{VAR=todoPK}},>,0,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{:: TEST(S,{{VAR=todoPK}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
 {{REM= We fill popupText with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Le rappel n'a pas encore été enregistré,TEST)&gt;popupText}}
 
@@ -33,10 +33,10 @@
 
 {{:: {{VAR=validAction}}SET_VAR(testQuery,0)}}
 {{:: {{VAR=validAction}}SQL_SELECT ( ToDo , PrimKey , WHERE PrimKey='{{VAR=todoPK}}' AND DateReminder='{{VAR=memoReminder}}' AND DueDate='{{VAR=memoDueDate}}' AND Title='{{:: CS({{VAR=memoTitle}})}}' AND Todo='{{VAR=memoTodo}}' AND Note='{{VAR=memoNote}}',20,%, ,%0)&gt;testQuery}}
-{{:: {{VAR=validAction}}TEST(N,{{VAR=testQuery}},>,0,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=testQuery}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (ToDo) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
 {{REM=  if the query was validated, then we write the modification date}}
-{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Alerte modifiée le {{DT=yyyy-MM-dd}}</b></span>)}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Alerte modifiée le {{DT=yyyy-MM-dd}}</b></span>)}}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}

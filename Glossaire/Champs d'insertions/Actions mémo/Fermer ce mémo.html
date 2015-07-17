@@ -1,0 +1,39 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p>$start_titleATTENTION !!!<br />Cette action va supprimer le rappel du calendrier et désactiver l'alerte !<br />En cas d'activation de cette macro par erreur, vous devrez remettre à jour&#44; séparément&#44; le rappel et l'alerte$end_title
+{{REM= this macro aims to set the dates to the year 9999, so we can easily rollback if we need and keep a perfect compatibility with date tests of the other components}}
+
+{{REM= ###TODO### Warn user we need to save before to execute this macro}}
+
+{{:: SQL_GET_RUB_HEAD_PK(Documents)&gt;memoPK}}
+{{:: SQL_SELECT ( ToDo , PrimKey , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;todoPK}}
+{{:: TEST(S,{{VAR=todoPK}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{REM= We fill popupText with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Le rappel n'a pas encore été enregistré,TEST)&gt;popupText}}
+
+{{REM= alter todo}}
+{{:: {{VAR=validAction}}SET_VAR(agendaPK, )}}
+{{:: {{VAR=validAction}}SQL_WRITE (ToDo, PrimKey='{{VAR=todoPK}}' ,DateReminder,9999-01-01,DueDate,9999-01-01) }}
+{{REM= We use the test query to get the Agenda_PK, so we'll can use it after}}
+{{:: {{VAR=validAction}}SQL_SELECT ( ToDo , Agenda_PK , WHERE PrimKey='{{VAR=todoPK}}' AND DateReminder='9999-01-01' AND DueDate='9999-01-01',20,%, ,%0)&gt;agendaPK}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=agendaPK}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (ToDo) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
+{{REM=  if the query was validated, then we write the modification date}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8A0829"><b>Alerte désactivée le {{DT=yyyy-MM-dd}}</b></span>)}}
+
+{{REM= alter agenda}}
+{{:: {{VAR=validAction}}SET_VAR(reminderNote, )}}
+{{:: {{VAR=validAction}}SQL_WRITE (agenda, PrimKey='{{VAR=agendaPK}}' ,Date_Time,9999-01-01 00:00:00) }}
+{{REM= We use the test query to get the Note, so we'll can use it to update the document title}}
+{{:: {{VAR=validAction}}SQL_SELECT ( agenda , Note , WHERE PrimKey='{{VAR=agendaPK}}' AND Date_Time='9999-01-01 00:00:00',20,%, ,%0)&gt;reminderNote}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=reminderNote}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (agenda) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
+{{REM=  if the query was validated, then we write the modification date and prefix the document title}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8A0829"><b>Rappel supprimé le {{DT=yyyy-MM-dd}}</b></span>)}}
+{{:: {{VAR=validAction}}Intitule ( [FAIT] {{VAR=reminderNote}} , change ) }}
+{{VALIDER_DOSSIER}}
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
+{{:: {{VAR=doPopup}}({{VAR=popupText}},,{{VAR=popupFading}})}}
+</p>
+</body></html>

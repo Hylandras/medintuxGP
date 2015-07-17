@@ -30,7 +30,7 @@
 {{:: {{VAR=validAction}}TEST(N,{{VAR=testQuery}},>,0,&nbsp;,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR CRITIQUE (agenda) !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
 {{REM=  if the query was validated, then we write the modification date}}
-{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Enregistrer les rappels pour ce mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel modifié le {{DT=yyyy-MM-dd}}</b></span>)}}
+{{::# {{VAR=validAction}}Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Rappel modifié le {{DT=yyyy-MM-dd}}</b></span>)}}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
