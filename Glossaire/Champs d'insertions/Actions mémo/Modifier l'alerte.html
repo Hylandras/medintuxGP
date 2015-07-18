@@ -3,9 +3,7 @@
 
 {{REM= ###TODO### Warn user we need to save to complete this macro}}
 
-{{REM= we reset todoPK in case it was filled by a previous macro}}
-{{:: SET_VAR(todoPK,0)}}
-
+{{:: SET_VAR(todoPK, )}}
 {{:: SQL_GET_RUB_HEAD_PK(Documents)&gt;memoPK}}
 {{:: SQL_SELECT ( ToDo , PrimKey , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;todoPK}}
 {{:: TEST(S,{{VAR=todoPK}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}

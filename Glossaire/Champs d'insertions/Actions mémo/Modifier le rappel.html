@@ -4,9 +4,8 @@
 
 {{REM= ###TODO### Warn user we need to save to complete this macro}}
 
-{{REM= we reset agendaPK in case it was filled by a previous macro}}
-{{:: {{VAR=validAction}}SET_VAR(agendaPK,0)}}
 
+{{:: SET_VAR(agendaPK,0)}}
 {{:: SQL_GET_RUB_HEAD_PK(Documents)&gt;memoPK}}
 {{:: SQL_SELECT ( ToDo , Agenda_PK , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;agendaPK}}
 {{:: TEST(N,{{VAR=agendaPK}},>,0,&nbsp;,FLAG_FALSE)&gt;validAction}}
@@ -25,8 +24,10 @@
 {{:: {{VAR=validAction}}TEST(S,{{VAR=memoReminder}},=,&nbsp;,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Vérifiez la date de rappel,TEST)&gt;popupText}}
 
+{{REM= alter agenda}}
 {{:: {{VAR=validAction}}SQL_WRITE (agenda, PrimKey='{{VAR=agendaPK}}' ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,RDV_PrisPar,{{USER LOGIN MEDECIN}},Note,{{VAR=memoTitle}}) }}
 
+{{REM= test if query was executed}}
 {{:: {{VAR=validAction}}SET_VAR(testQuery,0)}}
 {{::# {{VAR=validAction}}SQL_SELECT ( agenda , PrimKey , WHERE PrimKey='{{VAR=agendaPK}}' AND Date_Time='{{VAR=memoReminder}} {{HHHMM}}:00' AND RDV_PrisPar='{{USER LOGIN MEDECIN}}' AND Note='{{VAR=memoTitle}}',20,%, ,%0)&gt;testQuery}}
 {{:: {{VAR=validAction}}TEST(N,{{VAR=testQuery}},>,0,&nbsp;,FLAG_FALSE)&gt;validAction}}

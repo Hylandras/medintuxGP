@@ -9,7 +9,6 @@
 {{:: SQL_GET_RUB_HEAD_PK(Documents)&gt;memoPK}}
 {{:: SQL_SELECT ( ToDo , Memo_PK , WHERE Memo_PK={{VAR=memoPK}},20,%, ,%0)&gt;testPK}}
 {{:: TEST(N,{{VAR=testPK}},=,{{VAR=memoPK}},FLAG_FALSE,&nbsp;)&gt;validAction}}
-{{REM= ###TODO### Replace popup by a prompt}}
 {{REM= We fill popupText with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Le rappel a déjà été enregistré et un mémo = une alerte,TEST)&gt;popupText}}
 
@@ -35,7 +34,7 @@
 
 {{REM= Ask user if we link current diagnostic :: SQL_GET_RUB_HEAD_PK(Observation)}}
 
-{{REM= first we insert the reminder to get its primary key after its execution}}
+{{REM= first, we insert the reminder to get its primary key after its execution}}
 {{:: {{VAR=validAction}}SQL_WRITE (agenda, ,Date_Time,{{VAR=memoReminder}} {{HHHMM}}:00,Duree,15,Nom,{{NOM PATIENT}},Prenom,{{PRENOM PATIENT}},Tel,{{NUM. TEL1 PATIENT}},RDV_PrisPar,{{USER LOGIN MEDECIN}},RDV_PrisAvec,remind,Note,{{VAR=memoTitle}},Type,Rappel,GUID,{{GET_DOSS_GUID}},status,Absent,Adresse,{{ADRESSE PATIENT}},PrimKey,) }}
 {{REM= we reset agendaPK in case it was filled by a previous macro}}
 {{:: {{VAR=validAction}}SET_VAR(agendaPK,0)}}

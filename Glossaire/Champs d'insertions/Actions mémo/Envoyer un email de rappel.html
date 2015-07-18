@@ -8,6 +8,6 @@
 {{:: Extract(Documents,Mémo,==============================,,,$keepHtml)&gt;memoBody}}
 {{:: Extract(Documents,Sujet,EOL)&gt;memoTitle}}
 {{:: exe_process (NoWaitEnd ,../../APropos/bin/APropos,MailOnly,{{EMAIL PATIENT}}?subject={{VAR=memoTitle}}&amp;body={{VAR=memoBody}})}}
-{{::# Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#00ff00"><b>Mail de rappel généré le {{DT=yyyy-MM-dd}} à {{HHHMM}}</b></span>)}}
+{{::# Extract(Documents,==============================,$ToEnd,Actions mémo,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#dba901"><b>Mail de rappel généré le {{DT=yyyy-MM-dd}} à {{HHHMM}}</b></span>)}}
 </p>
 </body></html>
