@@ -21,26 +21,38 @@
 {{:: SET_VAR(dueDateResult, )}}
 {{:: SET_VAR(todoResult, )}}
 
-{{REM= one query for one section. First the expired ones}}
-{{::# SQL_SELECT ( ToDo INNER JOIN RubriquesHead ON ToDo.Memo_PK=RubriquesHead.RbDate_PrimKey , ToDo.DateReminder|ToDo.DueDate|ToDo.Title|RubriquesHead.RbDate_NomDate , WHERE ToDo.DueDate<='{{DT=yyyy-MM-dd}}' AND ToDo.GUID='{{GET_DOSS_GUID}}',200,%, ,<br  /> <b>%2</b><ul><li>La date butoir était fixée au <i><span style="font-weight:600;color:#ff0000">%1</span></i></li><li>La date de rappel était fixée au <i><span style="font-weight:600;color:#610B21">%0</span></i></li><li>Pour plus d'informations&#44; consultez le mémo suivant &nbsp; ==> &nbsp; <i><u>%3</u></i></li></ul>)&gt;queryResult}}
-{{REM= ::# MESSAGE_ALERT({{VAR=queryResult}})}}
+{{REM= one query for one section. First the expired ones. We use a count to be sure that queryResult will be filled even if we have legitimately no result. We give the fffdca (it's the default background of MESSAGE_ALERT) color to the count so it will be invisible for the final user.}}
+{{::# SQL_SELECT ( ToDo INNER JOIN RubriquesHead ON ToDo.Memo_PK=RubriquesHead.RbDate_PrimKey , ToDo.DateReminder|ToDo.DueDate|ToDo.Title|RubriquesHead.RbDate_NomDate|count&#40;ToDo.DueDate&#41; , WHERE ToDo.DueDate<='{{DT=yyyy-MM-dd}}' AND ToDo.GUID='{{GET_DOSS_GUID}}',200,%, ,<br  /> <b>%2</b><ul><li>La date butoir était fixée au <i><span style="font-weight:600;color:#ff0000">%1</span></i> <span style="color:#fffdca">%4</span></li><li>La date de rappel était fixée au <i><span style="font-weight:600;color:#610B21">%0</span></i></li><li>Pour plus d'informations&#44; consultez le mémo suivant &nbsp; ==> &nbsp; <i><u>%3</u></i></li></ul>)&gt;queryResult}}
 {{:: TEST(S,{{VAR=queryResult}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
-{{REM= ::# MESSAGE_ALERT({{VAR=validAction}})}}
 {{REM= We fill popupText with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
-{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! La requête pour les rappels dépassés a échoué,TEST)&gt;popupText}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Échec requête pour les rappels dépassés,TEST)&gt;popupText}}
 {{REM= we use an intermediate var so we'll can concatenate them at the end of the macro}}
 {{::# {{VAR=validAction}}SET_VAR(dueDateResult,<center><span style="font-size:16pt;font-weight:600;color:#ff0000">!!! DATE DÉPASSÉE !!!</span></center> {{VAR=queryResult}}<br />)}}
 
-{{REM= then the things planned for the next 90 days}}
-{{::# SQL_SELECT ( ToDo INNER JOIN RubriquesHead ON ToDo.Memo_PK=RubriquesHead.RbDate_PrimKey , ToDo.DateReminder|ToDo.DueDate|ToDo.Title|RubriquesHead.RbDate_NomDate , WHERE &#40;ToDo.DueDate BETWEEN NOW&#40;&#41; AND NOW&#40;&#41; + INTERVAL 90 DAY&#41; AND ToDo.GUID='{{GET_DOSS_GUID}}',200,%, ,<br  /> <b>%2</b><ul><li>Doit être effectué avant le <i><span style="font-weight:600;color:#ff00ff">%1</span></i></li><li>Date de rappel fixée au <i><span style="font-weight:600;color:#dba901">%0</span></i></li><li>Pour plus d'informations&#44; consultez le mémo suivant &nbsp; ==> &nbsp; <i><u>%3</u></i></li></ul>)&gt;queryResult}}
-{{:: TEST(S,{{VAR=queryResult}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{REM= then the things planned for the next 90 days. We use a count to be sure that queryResult will be filled even if we have legitimately no result. We give the fffdca (it's the default background of MESSAGE_ALERT) color to the count so it will be invisible for the final user.}}
+{{::# {{VAR=validAction}}SQL_SELECT ( ToDo INNER JOIN RubriquesHead ON ToDo.Memo_PK=RubriquesHead.RbDate_PrimKey , ToDo.DateReminder|ToDo.DueDate|ToDo.Title|RubriquesHead.RbDate_NomDate|count&#40;ToDo.DueDate&#41; , WHERE &#40;ToDo.DueDate BETWEEN NOW&#40;&#41; AND NOW&#40;&#41; + INTERVAL 90 DAY&#41; AND ToDo.GUID='{{GET_DOSS_GUID}}',200,%, ,<br  /> <b>%2</b><ul><li>Doit être effectué avant le <i><span style="font-weight:600;color:#ff00ff">%1</span></i> <span style="color:#fffdca">%4</span></li><li>Date de rappel fixée au <i><span style="font-weight:600;color:#dba901">%0</span></i></li><li>Pour plus d'informations&#44; consultez le mémo suivant &nbsp; ==> &nbsp; <i><u>%3</u></i></li></ul>)&gt;queryResult}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=queryResult}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
 {{REM= We fill popupText with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
-{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! La requête pour les rappels à venir dans les 90 prochains jours a échoué,TEST)&gt;popupText}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Échec requête pour les rappels à venir dans les 90 prochains jours,TEST)&gt;popupText}}
 {{REM= we use an intermediate var so we'll can concatenate them at the end}}
 {{::# {{VAR=validAction}}SET_VAR(todoResult,{{VAR=dueDateResult}}<center><span style="font-size:16pt;font-weight:600">À faire dans les 3 prochains mois</span></center>{{VAR=queryResult}})}}
 
-{{:: TEST(S,{{VAR=todoResult}},!=,,MESSAGE_ALERT,)&gt;doMessage}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=todoResult}},!=,,MESSAGE_ALERT,)&gt;doMessage}}
 {{::# {{VAR=doMessage}}({{VAR=todoResult}},Rappels & Alertes pour ce patient,,,,,650,350) }}
+
+{{:: {{VAR=validAction}}SET_VAR(todoResult, )}}
+{{REM= Now we display a second alert with only the patient names for the ones with expired alerts. We use a count to be sure that queryResult will be filled even if we have legitimately no result. We give the fffdca (it's the default background of MESSAGE_ALERT) color to the count so it will be invisible for the final user.}}
+{{REM= ###TODO### We need to transform the date to get rid of hh:mm:ss but date_format seems to not work with SQL_SELECT}}
+{{::# {{VAR=validAction}}SQL_SELECT ( ToDo INNER JOIN fchpat ON ToDo.GUID=fchpat.FchPat_GUID_Doss , fchpat.FchPat_Nee|fchpat.FchPat_NomAss|fchpat.FchPat_PrenomAss|count&#40;fchpat.FchPat_Nee&#41; , WHERE ToDo.DueDate<='{{DT=yyyy-MM-dd}}',200,%, ,<br  /> <b>%1 %2</b> <i>&#40;Date de naissance : %0&#41;</i> <span style="color:#fffdca">%3</span>)&gt;queryResult}}
+{{REM= ::# MESSAGE_ALERT({{VAR=queryResult}})}}
+{{:: {{VAR=validAction}}TEST(S,{{VAR=queryResult}},!=,,&nbsp;,FLAG_FALSE)&gt;validAction}}
+{{REM= We fill popupText with error messages. If not altered it will allow execution of tests to ensure that final error popup will display at what stage the macro broke.}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Échec récupération de la liste des autres rappels en retard,TEST)&gt;popupText}}
+{{REM= we use an intermediate var so we'll can concatenate them at the end of the macro}}
+{{::# {{VAR=validAction}}SET_VAR(todoResult,<center><span style="font-size:16pt;font-weight:600;color:#ff0000">!!! CES PATIENTS ONT DES RAPPELS EN RETARD !!!</center><br />{{VAR=queryResult}}</span><br />)}}
+
+{{:: {{VAR=validAction}}TEST(S,{{VAR=todoResult}},!=,,MESSAGE_ALERT,)&gt;doMessage}}
+{{::# {{VAR=doMessage}}({{VAR=todoResult}},Alertes dépassées,,,,,800,350) }}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
