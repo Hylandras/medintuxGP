@@ -58,7 +58,11 @@
 {{REM= VALIDER_DOSSIER}}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
-{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
-{{:: {{VAR=doPopup}}({{VAR=popupText}},,{{VAR=popupFading}})}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,SET_VAR,)&gt;doPopup}}
+{{REM= if true doPopup take firstly SET_VAR to affect macroName and ErroLog and after it takes INCLUDE to call the error method}}
+{{:: {{VAR=doPopup}}(macroName, ajouter.rappel.et.alerte)}}
+{{:: {{VAR=doPopup}}(errorLog, VARIABLES :: memoPK|{{VAR=memoPK}} testPK|{{VAR=testPK}} memoTitle|{{VAR=memoTitle}} memoDueDate|{{VAR=memoDueDate}} memoReminder|{{VAR=memoReminder}} agendaPK|{{VAR=agendaPK}})}}
+{{:: {{VAR=doPopup}}(doPopup, INCLUDE)}}
+{{:: {{VAR=doPopup}}( $Glossaire/INCLUDE/log/write_error.html ) }}
 </p>
 </body></html>

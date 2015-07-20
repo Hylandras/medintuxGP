@@ -1,0 +1,10 @@
+<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:8pt;font-family:MS Shell Dlg">
+<p>{{REM= this macro enables the ability for macros to write a new file each time validAction is filled with FLAG_FALSE}}
+{{::# SET_VAR(logInfo, Requête effectuée par : {{USER LOGIN MEDECIN}}###Effectuée sur le dossier de : {{NOM_PRENOM_PATIENT}}_{{GET_DOSS_GUID}}###TEXTE :: {{VAR=popupText}}###{{VAR=errorLog}})}}
+{{REM= ###TODO### EXPORT is not working}}
+{{:: EXPORT($IsAbsPath{{VAR=logDir}}/{{VAR=macroName}}.{{DT=yyyy-MM-dd}}.{{HHHMM}}.txt , T, {{VAR=logInfo}}, A, A,,,)}}
+{{:: MESSAGE_POPUP({{VAR=popupText}},,3000)}}
+{{:: SET_VAR(macroName, )}}
+{{:: SET_VAR(errorLog, )}}
+</p>
+</body></html>
