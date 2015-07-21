@@ -1,4 +1,0 @@
-# Etat de l'esclave de la base locale
-SHOW MASTER STATUS \G
-SHOW MASTER LOGS;
-

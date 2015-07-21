@@ -1,9 +1,0 @@
-Révision 1 du 22/09/2008 :
-
-Diffusion nouvelles cartes virtuelles techniques
-
-Révision 2 du 01/10/2008 :
-
-Modification cartes "CT04.in", "CT05.in" et "CT06.in" : suppression de "blancs" dans les groupes 106.
-Modification cartes  "CT05.in" et "CT06.in" : correction du NIR certifié du bénéficiaire "BENEFUN" dans le groupe 104.
-

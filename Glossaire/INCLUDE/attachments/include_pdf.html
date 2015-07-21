@@ -1,0 +1,72 @@
+<html>
+<head><meta name="qrichtext" content="charset=utf-8" /></head>
+<body bgcolor="#ffffff" style="font-size:10pt;font-family:Sans">
+<p><span style="font-family:Courier New">
+	{{REM=	Integrate a file from scanner}}
+	{{REM=	provide a temporary file, always named the same way and put in the same directory by the scanner ; the output is a file stored in patient file directory with a link in a document in the patient record, enabling end users to view the PDF just with a right-click}}
+	{{REM=	Author&gt;&gt; Jocelyn PERRUCHET // modified by Maxime MICLO @maxime [dot] miclo [at] gmail [dot] com }}
+
+	{{REM=	######VAR##### }}
+	{{REM=	The file from the scanner }}
+	{{:: SET_VAR(tmpFile,../../tmp/tmp_scanner.pdf)}}
+	{{REM= ~~~~~~~~~~~TODO~~~~~~~~~~~~~ }}
+	{{REM= !!!!!!!!!!!!!BUG&gt;&gt; we can't declare final path }}
+	{{REM= ~~~~~~~~~~~END TODO~~~~~~~~~~~~~ }}
+	{{REM= !!!!!DEACTIVATED!!!!! SET_VAR(PatientFilePath,../../../PatientFiles)}}
+	{{REM= We initialize list results at false }}
+	{{:: SET_VAR(listResult,Rejected)}}
+	{{:: SET_VAR(docType,Type de Document)}}
+	{{:: SET_VAR(docSpeciality,speciality)}}
+	{{REM=	#####END VAR##### }}
+
+	{{REM=	If SCRIPT_STATUS has the value FUSION_ADD or FUSION_CREATE, which is right if we create a document, validAction variable takes no value if not it takes FLAG_FALSE. We prefix almost all instructions with validAction so if we are in preview mode, instructions will be prefixed and not recognized }}
+	{{:: SI(S,{{FE={{VAR = tmpFile}}}},=,,,FLAG_FALSE)&gt;pdf_ValidPopupNoFile}}
+	{{:: SI(S,{{VAR=$SCRIPT_STATUS}},%%,$FUSION_ADD, ,{{:: SI(S,{{VAR=$SCRIPT_STATUS}},%%,$FUSION_CREATE,,FLAG_FALSE)}})&gt;validAction}}
+	{{:: SI(S,{{FE={{VAR = tmpFile}}}},=,,FLAG_FALSE,{{VAR = validAction}})&gt;validAction}}
+	{{REM= ~~~~~~~~~~~TODO~~~~~~~~~~~~~ }}
+	{{REM= Find a way to add an option to permit to add some text to the document title }}
+	{{REM= ~~~~~~~~~~~END TODO~~~~~~~~~~~~~ }}
+	{{:: {{VAR = validAction}}DO_LISTE({{VAR = LIST_docType}} , Type de document ,|, listResult)&gt;docType}}
+	{{:: SI(S,{{VAR=listResult}},=,Rejected,FLAG_FALSE,{{VAR = validAction}})&gt;validAction}}
+	{{:: {{VAR = validAction}}DO_LISTE({{VAR = LIST_docSpeciality}} ,Spécialité ,|, listResult)&gt;docSpeciality}}
+	{{:: SI(S,{{VAR=listResult}},=,Rejected,FLAG_FALSE,{{VAR = validAction}})&gt;validAction}}
+	{{REM= We test the OS constant, and create a variable for each of them. We prefix OS specific instructions with the associated variable, if it's the good one, it has no value and if not it has a value, so instructions won't be recognized because they will be prefixed }}
+	{{:: {{VAR = validAction}}TEST(S,{{OS}},=,L,{{VAR=toDo}},NO_LIN)&gt;toDoL}}
+	{{REM= ~~~~~~~~~~~TODO~~~~~~~~~~~~~ }}
+	{{REM=	Windows cases (preview &amp; patient file directory)&gt;&gt; {{VAR = validAction}}TEST(S,{{OS}},=,W,{{VAR=toDo}},NO_WIN)&gt;toDoW}}
+	{{REM= ~~~~~~~~~~~END TODO~~~~~~~~~~~~~ }}
+	{{:: {{VAR = validAction}}TEST(S,{{OS}},=,M,{{VAR=toDo}},NO_MAC)&gt;toDoM}}
+	{{REM=	 For Mac OS X we use bash because other shells can be version specifics // Sips is an apple tool fitting perfectly for our usage. It converts only the first page to PNG if we don't use anymore parameter }}
+	{{:: {{VAR = toDoM}}{{VAR = validAction}}exe_process (WaitEnd, $IsBinPath/bin/bash, &quot;sips -s format png {{VAR = tmpFile}} --out $ToAbsPath ../../tmp/preview_pdf.png&quot;)}}
+	{{REM= It is necessary to install ImageMagick for Linux compatibility }}
+	{{:: {{VAR = toDoL}}{{VAR = validAction}}exe_process (WaitEnd, /usr/bin/convert, convert,-density,150,-trim, $ToAbsPath {{VAR = tmpFile}}[0],-quality,100,-sharpen,0x1.0, $ToAbsPath ../../tmp/preview_pdf.png)}}
+	{{REM= We create patient file directory if it doesn't exist }}
+	{{REM= The command is the same for Linux and Mac so we test the Windows prefix }}
+	{{:: SI(S,{{VAR=toDoW}},=,NO_WIN,{{:: {{VAR = validAction}}exe_process (WaitEnd, /bin/bash, mkdir,-p,$ToAbsPath ../../../PatientFiles/{{GET_DOSS_GUID}})}},)}}
+	{{REM= We generate the final file name }}
+	{{:: SET_VAR(NomFichierDst, {{GET_DOSS_GUID}}_{{VAR = docType}}_{{VAR = docSpeciality}}_{{DATE = yyyyMMdd}}_{{HeureCourante = hhmmss}}.pdf)}}
+	{{REM= We format NomFichierDist in white color so it won't be displayed which has no interest for end user }}\</span>
+
+	<span style="font-family:Fixed;font-size:9pt;font-weight:600">{{::#SI(S,{{FE={{VAR  = tmpFile}}}},=,,Pas de fichier numérisé disponible,</span><span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF</span><span style="font-family:Fixed;font-size:9pt;font-weight:600"> </span><span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR = NomFichierDst}}</span><span style="font-family:Fixed;font-size:9pt;font-weight:600">)&gt;pdf_MessageFinal}}\</span><span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#aa0000">
+	{{REM= ~~~~~~~~~~~TODO~~~~~~~~~~~~~ }}
+	{{REM= !!!!!!!!!!!!!BUG&gt;&gt; If the patient file directory is newly created the copy doesn't function and we lose original and final file, but the preview is perfectly stored in... }}
+	{{REM= ~~~~~~~~~~~END TODO~~~~~~~~~~~~~ }}
+	{{:: {{VAR = validAction}}copy_file($ToAbsPath {{VAR = tmpFile}},$ToAbsPath ../../../PatientFiles/{{GET_DOSS_GUID}}/{{VAR = NomFichierDst}}, $remove_src_file)}}
+	{{REM= ~~~~~~~~~~~TODO~~~~~~~~~~~~~ }}
+	{{REM= !!!!!!!!!!!!!BUG&gt;&gt; Flags for creating/modifying/adding seems to be always on when we are adding }}
+	{{REM= ~~~~~~~~~~~END TODO~~~~~~~~~~~~~ }}
+	{{REM= We give a name to the document only if we are creating a new one }}
+	{{:: {{VAR = validAction}}SI(S,$SCRIPT_STATUS,%%,$FUSION_ADD_Ajouter,,{{:: Intitule({{VAR = docType}} {{VAR = docSpeciality}})}})}}
+	{{REM= Text to display in popup if this script didn't found tmpFile }}
+	{{:: {{VAR = pdf_ValidPopupNoFile}}MESSAGE_POPUP($pdf_MessageFinal)}}</span>
+
+	<hr>
+	<span style="font-family:Courier New;font-size:20pt;font-weight:600">{{VAR = docType}} // {{VAR = docSpeciality}}</span><br />
+	<hr>
+	<span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#aa0000">{{::insert_image (../../tmp/preview_pdf.png,1000,1000,clear_src new remove_src,../../../PatientFiles/{{GET_DOSS_GUID}})}}</span><br />
+	<hr>
+	<img src=pdfLies.png ><span style="font-family:Fixed;font-size:9pt;font-weight:600">{{VAR=pdf_MessageFinal}}</span><br />
+</p>
+
+</body>
+</html>

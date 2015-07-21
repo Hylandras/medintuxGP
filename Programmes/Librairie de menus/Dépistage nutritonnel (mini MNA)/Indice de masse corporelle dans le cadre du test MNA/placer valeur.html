@@ -1,3 +1,0 @@
-<html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Arial">
-<p><span style="font-family:Helvetica">{{\<br />  {{:: SET_VAR(bmi,{{BMI_PATIENT}}) }}\<br />  {{:: SET_VAR(resultat, {{:: TEST(N,{{VAR=bmi}} , &lt; , 19 , 0,{{:: TEST(N,{{VAR=bmi}} , &lt; , 21 , 1,{{:: TEST(N,{{VAR=bmi}} , &lt; , 23 , 2,3)}} )}} )}} )}}\<br />}}\<br />{{VAR=resultat}} pour un indice de masse corporelle de :{{:: TN( {{VAR=bmi}},$toInt)}}</span></p>
-</body></html>
