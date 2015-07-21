@@ -14,7 +14,7 @@
 			<string>Réinitialiser les variables d'environnement</string>
 		</property>
 		<property name="accel">
-			<string>Ctrl+r</string>
+			<string>Alt+r</string>
 		</property>
 		<property name="script">
 			<string>
