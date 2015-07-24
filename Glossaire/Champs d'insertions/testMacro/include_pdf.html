@@ -1,9 +1,9 @@
 <html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans Serif">
 <p>{{:: INCLUDE( $Glossaire/INCLUDE/attachments/include_pdf.html )}}<br />
 {{REM= We format finalFiname in white color so it won't be displayed}}
-<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF</span>  <span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR=finalFilename}}</span>
-<hr>
-<img src=pdfLies.png >{{:: insert_image ({{VAR=tmpFiles}}/preview_pdf.png,1000,1000,clear_src new remove_src)}}<br />
+{{REM= ###TODO### shrink PNGs}}
+{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLies.png,32,32)}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLocal.png,32,32)}}{{VAR=localAccess}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLies.png,32,32)}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfRemote.png,32,32)}}{{VAR=remoteAccess}}{{:: {{VAR=validAction}}insert_image({{VAR=tmpFiles}}/preview_pdf.png,1000,1000)}}{{:: {{VAR=validAction}}delete_file({{VAR=tmpFiles}}/preview_pdf.png)}}
+{{REM= ###TODO### OCR here (include br and hr tag)}}<br />
 <hr>
 </p>
 </body></html>

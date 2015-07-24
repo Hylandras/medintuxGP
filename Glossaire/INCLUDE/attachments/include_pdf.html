@@ -2,6 +2,7 @@
 <body bgcolor="#ffffff" style="font-size:10pt;font-family:Sans">
 <p><span style="font-family:Courier New">{{REM=	Include PDF}}
 {{REM=	This macro looks for a temporary file named include_pdf.tmp.pdf. We make several operations to permit to inject some elements in documents whatever their section is. At the end we copy the pdf in patient files' directory and provide two links : one for local access and another for remotes. This macro doesn't print any information in documents, it returns only values to use in other macros}}
+{{REM= ###TODO### insert line_edit to prompt user for filename >>> document title}}
 {{:: WAIT_CURSOR (WAIT) }}
 
 {{REM= we test if the temporary file is in the tmp directory}}
@@ -9,14 +10,16 @@
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Fichier temporaire absent,TEST)&gt;popupText}}
 
 {{REM= preview and OCR instructions are system dependent so we use a second macro suffixed with OS constant}}
-{{REM= we extract the first page of the pdf and transform it to PNG so macros will be able to insert previews}}
 {{:: {{VAR=validAction}}INCLUDE( $Glossaire/INCLUDE/attachments/include_pdf.{{OS}}.html ) }}
 
 {{:: {{VAR=validAction}}SET_VAR(finalFilename, {{GET_DOSS_GUID}}__{{DATE=yyyyMMdd}}_{{HeureCourante=hhmmss}}_{{USER LOGIN MEDECIN}}.pdf)}}
 
-{{REM= ###TODO### the copy fails if patient directory was just created}}
-{{:: {{VAR = validAction}}copy_file($ToAbsPath {{VAR=tmpFiles}}/include_pdf.tmp.pdf, $ToAbsPath{{VAR=PatientFiles}}/{{VAR=finalFilename}}, $remove_src_file)}}
-{{REM= ###TODO### add test with FE}}
+{{:: {{VAR=validAction}}copy_file($ToAbsPath {{VAR=tmpFiles}}/include_pdf.tmp.pdf, $ToAbsPath{{VAR=PatientFiles}}/{{VAR=finalFilename}}, $remove_src_file)}}
+{{:: {{VAR=validAction}}SI(S,{{VAR=PatientFiles}}/{{VAR=finalFilename}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Problème lors de la copie du fichier,TEST)&gt;popupText}}
+{{::# {{VAR=validAction}}SET_VAR(localAccess,<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF &#40;accès local&#41;</span>  <span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR=finalFilename}}</span><br />)}}
+{{REM= ###TODO### remote access}}
+{{::# {{VAR=validAction}}SET_VAR(remoteAccess,<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF &#40;accès distant&#41;</span>  <span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR=finalFilename}}</span><br /><hr><br />)}}
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}

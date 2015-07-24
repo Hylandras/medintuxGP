@@ -8,6 +8,7 @@
 {{:: {{VAR=validAction}}SI(S,{{FE={{VAR=PatientFiles}}}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Répertoire du patient introuvable,TEST)&gt;popupText}}
 
+{{REM= we extract the first page of the pdf and transform it to PNG so macros will be able to insert previews}}
 {{:: {{VAR=validAction}}exe_process (WaitEnd, /usr/bin/convert, convert,-density,150,-trim, $ToAbsPath{{VAR=tmpFiles}}/include_pdf.tmp.pdf[0],-quality,100,-sharpen,0x1.0, $ToAbsPath{{VAR = tmpFiles}}/preview_pdf.png)}}
 
 {{REM= ###TODO### OCR}}
