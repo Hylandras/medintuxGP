@@ -26,8 +26,8 @@
 				{{:: SET_VAR(logDir,../../../../../../opt/medintux/log)}}\
 				{{REM= we create the patient file directory if we need to}}\
 				{{:: SET_VAR(PatientFiles,../../../../../../opt/medintux/PatientFiles/{{GET_DOSS_GUID}})}}\
-				{{REM= next include doesn't work:: SI(S,{{FE={{VAR=PatientFiles}}}},=,,,FLAG_FALSE)&gt;validAction}}\
-				{{REM= NOT WORKING  :: INCLUDE( $Glossaire/INCLUDE/reset/{{OS}}.txt )}}\
+				{{SI(S,{{FE={{VAR=PatientFiles}}}},=,,,FLAG_FALSE)&gt;validAction}}\
+				{{:: {{VAR=validAction}}INCLUDE( $Glossaire/INCLUDE/reset/{{OS}}.txt )}}\
 				{{REM= we store the DrTux bin directory's depth so we'll can easily call it when we'll need to verify that an external software is installed on the system}}
 				{{:: SET_VAR(drtuxDepth,../../../../../..)}}\
 			</string>
@@ -37,3 +37,4 @@
 		</property>
 	</action>
 </actions>
+</CMenu>

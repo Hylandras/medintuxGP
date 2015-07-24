@@ -4,15 +4,11 @@
 {{REM= It is necessary to install ImageMagick for Linux compatibility and we test if it is}}
 {{:: SI(S,{{FE={{VAR=drtuxDepth}}/usr/bin/convert}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! ImageMagick introuvable,TEST)&gt;popupText}}
-{{REM= ###TODO### use directly tmpFiles}}
+{{REM= We also test if the patient file directory was created}}
+{{:: {{VAR=validAction}}SI(S,{{FE={{VAR=PatientFiles}}}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Répertoire du patient introuvable,TEST)&gt;popupText}}
+
 {{:: {{VAR=validAction}}exe_process (WaitEnd, /usr/bin/convert, convert,-density,150,-trim, $ToAbsPath{{VAR=tmpFiles}}/include_pdf.tmp.pdf[0],-quality,100,-sharpen,0x1.0, $ToAbsPath{{VAR = tmpFiles}}/preview_pdf.png)}}
 
 {{REM= ###TODO### OCR}}
-
-{{REM= ###TODO### these instructions are not relevant at this place, we need to move them at startup}}
-{{:: {{VAR=validAction}}SI(S,{{FE={{VAR=PatientFiles}}}},=,,EXE_PROCESS,)&gt;makePatientDirectory}}
-{{:: {{VAR=makePatientDirectory}}(WaitEnd, /bin/bash, mkdir,-p, $ToAbsPath{{VAR=PatientFiles}})}}
-{{REM= ###TODO### the next two instructions are deactivated because even when the directory is created they return FLAG_FALSE}}
-{{REM= :: {{VAR=validAction}}SI(S,{{FE={{VAR=PatientFiles}}}},=,,FLAG_FALSE,)&gt;validAction}}
-{{REM= :: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Le répertoire du patient n'a pu être créé,TEST)&gt;popupText}}
 </p></body></html>

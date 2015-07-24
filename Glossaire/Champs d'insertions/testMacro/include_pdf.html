@@ -1,12 +1,9 @@
 <html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans Serif">
 <p>{{:: INCLUDE( $Glossaire/INCLUDE/attachments/include_pdf.html )}}<br />
 {{REM= We format finalFiname in white color so it won't be displayed}}
-<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF</span>&nbsp;<span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR=finalFilename}}</span>
+<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF</span>  <span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR=finalFilename}}</span>
 <hr>
-{{REM= ###TODO### use directly tmpFiles}}
-{{REM= ###TODO### use directly PatientFiles}}
-{{::insert_image ({{VAR=tmpFiles}}/preview_pdf.png,1000,1000,clear_src new remove_src, {{VAR=PatientFiles}})}}<br />
+<img src=pdfLies.png >{{:: insert_image ({{VAR=tmpFiles}}/preview_pdf.png,1000,1000,clear_src new remove_src)}}<br />
 <hr>
-<img src=pdfLies.png >
 </p>
 </body></html>
