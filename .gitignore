@@ -4,3 +4,5 @@
 #Exclure mise à jour et medicatux pour éviter les problèmes avec les systèmes Windows
 Programmes/mise_a_jour/*
 Programmes/medicatux/*
+#Ignore Mac finder files
+*.DS_Store
