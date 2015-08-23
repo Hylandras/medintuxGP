@@ -8,8 +8,16 @@
 {{:: {{VAR=validAction}}SI(S,{{FE={{VAR=PatientFiles}}}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Répertoire du patient introuvable,TEST)&gt;popupText}}
 
-{{REM= we extract the first page of the pdf and transform it to PNG so macros will be able to insert previews}}
-{{:: {{VAR=validAction}}exe_process (WaitEnd, /usr/bin/convert, convert,-density,150,-trim, $ToAbsPath{{VAR=tmpFiles}}/include_pdf.tmp.pdf[0],-quality,100,-sharpen,0x1.0, $ToAbsPath{{VAR = tmpFiles}}/preview_pdf.png)}}
+{{REM= we convert PDF file to PNG format}}
+{{:: {{VAR=validAction}}exe_process (WaitEnd, /usr/bin/convert, convert,-density,300,-trim, $ToAbsPath{{VAR=tmpFiles}}/include_pdf.tmp.pdf,-quality,100,-sharpen,0x1.0, $ToAbsPath{{VAR = tmpFiles}}/preview_pdf_%02d.png)}}
 
-{{REM= ###TODO### OCR}}
+{{REM= OCR}}
+{{REM= It is necessary to install Tesseract for Linux compatibility and we test if it is}}
+{{:: {{VAR=validAction}}SI(S,{{FE={{VAR=drtuxDepth}}/usr/bin/tesseract}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Tesseract introuvable,TEST)&gt;popupText}}
+{{REM= ###TODO### we need to prompt user for language}}
+
+{{REM= We test if pdf had multiple pages}}
+{{:: {{VAR=validAction}}SI(S,{{FE=$ToAbsPath{{VAR = tmpFiles}}/preview_pdf_01.png}},=,,NO,YES)&gt;useWildcard}}
+{{:: {{VAR=validAction}}exe_process(WaitEnd,$Glossaire/INCLUDE/attachments/medintux2tess.sh,{{VAR=useWildcard}},ocr_pdf,-l fra,$ToAbsPath{{VAR = tmpFiles}}$EndToAbsPath/,nodebug)}}
 </p></body></html>

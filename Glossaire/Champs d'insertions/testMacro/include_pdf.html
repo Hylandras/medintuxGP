@@ -1,7 +1,6 @@
 <html><head><meta name="qrichtext" content="1" /></head><body style="font-size:10pt;font-family:Sans Serif">
 <p>{{:: INCLUDE( $Glossaire/INCLUDE/attachments/include_pdf.html )}}<br />
-{{REM= ###TODO### shrink PNGs}}
-{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLies.png,32,32)}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLocal.png,32,32)}}{{VAR=localAccess}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLies.png,32,32)}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfRemote.png,32,32)}}{{VAR=remoteAccess}}{{:: {{VAR=validAction}}insert_image({{VAR=tmpFiles}}/preview_pdf.png,1000,1000)}}{{:: {{VAR=validAction}}delete_file({{VAR=tmpFiles}}/preview_pdf.png)}}
+{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLies.png,32,32)}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLocal.png,32,32)}}{{VAR=localAccess}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfLies.png,32,32)}}{{:: {{VAR=validAction}}insert_image ($Glossaire/INCLUDE/attachments/pdfRemote.png,32,32)}}{{VAR=remoteAccess}}{{:: {{VAR=validAction}}insert_image({{VAR=tmpFiles}}/preview_pdf_00.png,1000,1000)}}{{:: {{VAR=validAction}}delete_file({{VAR=tmpFiles}}/preview_pdf_00.png)}}
 {{REM= ###TODO### OCR here (include br and hr tags)}}<br />
 <hr>
 </p>
