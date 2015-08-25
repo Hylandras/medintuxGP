@@ -34,13 +34,13 @@ if [ $1 = 'YES' ]; then
 		c=000
 		for i in "$TEMP_DIR"preview_pdf_*.png
 			do
-				tesseract $i "$TEMP_DIR"ocr_pdf.multi$c $TES_LANG 1>&2
+				tesseract $i "$TEMP_DIR"ocr_pdf.multi$c $TES_LANG >&2
 				c=`printf "%03d" $((c+1))`
 				rm $i
 			done
 		cat "$TEMP_DIR"ocr_pdf.multi*.txt > "$TEMP_DIR"ocr_pdf.txt
 		rm "$TEMP_DIR"ocr_pdf.multi*.txt
 	else
-		tesseract "$TEMP_DIR"preview_pdf_00.png "$TEMP_DIR"ocr_pdf $TES_LANG 1>&2
+		tesseract "$TEMP_DIR"preview_pdf_00.png "$TEMP_DIR"ocr_pdf $TES_LANG >&2
 		rm "$TEMP_DIR"preview_pdf_00.png
 	fi
