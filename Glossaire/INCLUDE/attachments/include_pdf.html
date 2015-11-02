@@ -12,15 +12,22 @@
 {{:: SI(S,{{FE={{VAR=tmpFiles}}/include_pdf.tmp.pdf}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Fichier temporaire absent,TEST)&gt;popupText}}
 
+{{REM= We prompt the user to know if we need to do an OCR}}
+{{:: {{VAR=validAction}}SET_VAR(doOCR,Non)}}
+{{:: {{VAR=validAction}}MESSAGE_ALERT (Le fichier doit-il être soumis à la reconnaissance de caractères ?, OCR ?, Oui, Non)&gt;doOCR}}
+
 {{REM= preview and OCR instructions are system dependent so we use a second macro suffixed with OS constant}}
 {{:: {{VAR=validAction}}INCLUDE( $Glossaire/INCLUDE/attachments/include_pdf.{{OS}}.html ) }}
 
+{{REM= We generate au unique name for the file}}
 {{:: {{VAR=validAction}}SET_VAR(finalFilename, {{GET_DOSS_GUID}}__{{DATE=yyyyMMdd}}_{{HeureCourante=hhmmss}}_{{USER LOGIN MEDECIN}}.pdf)}}
 
+{{REM= We copy the file to its final destination}}
 {{:: {{VAR=validAction}}copy_file($ToAbsPath {{VAR=tmpFiles}}/include_pdf.tmp.pdf, $ToAbsPath{{VAR=PatientFiles}}/{{VAR=finalFilename}}, $remove_src_file)}}
 {{:: {{VAR=validAction}}SI(S,{{VAR=PatientFiles}}/{{VAR=finalFilename}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Problème lors de la copie du fichier,TEST)&gt;popupText}}
 
+{{REM= We prompt the user for a human friendly name for the document to insert}}
 {{:: {{VAR=validAction}}LINE_EDIT(Saisissez le nom du document,Nom du document ?)&gt;docName}}
 
 {{REM= insert in database}}
@@ -32,6 +39,7 @@
 {{:: {{VAR=validAction}}TEST(N,{{VAR=sqlTest}},>,0,,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR DB:attachments !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
 
+{{REM= Formatting docName}}
 {{::# {{VAR=validAction}}SET_VAR(docName,<b><font size="14">{{VAR=docName}}</font></b><br /><br />)}}
 
 {{REM= We format finalFilename in white color so it won't be displayed}}
