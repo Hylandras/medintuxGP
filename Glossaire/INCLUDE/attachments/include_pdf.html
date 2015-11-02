@@ -21,6 +21,8 @@
 {{:: {{VAR=validAction}}SI(S,{{VAR=PatientFiles}}/{{VAR=finalFilename}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Problème lors de la copie du fichier,TEST)&gt;popupText}}
 
+{{:: {{VAR=validAction}}LINE_EDIT(Saisissez le nom du document,Nom du document ?)&gt;docName}}
+
 {{REM= insert in database}}
 {{:: {{VAR=validAction}}SQL_WRITE(Attachments, ,PrimKey,,Doc_PK,{{:: SQL_GET_RUB_HEAD_PK()}},File_Name,{{VAR=finalFilename}},Doc_Name,{{VAR=docName}},Date,{{DT=yyyy-MM-dd hh:mm:ss}})}}
 {{REM= we reset agendaPK in case it was filled by a previous macro}}
@@ -29,6 +31,8 @@
 {{:: {{VAR=validAction}}SQL_SELECT( Attachments , PrimKey , WHERE Date='{{DT=yyyy-MM-dd hh:mm:ss}}' AND File_Name='{{VAR=finalFilename}}',20,%, ,%0)&gt;sqlTest}}
 {{:: {{VAR=validAction}}TEST(N,{{VAR=sqlTest}},>,0,,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR DB:attachments !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
+
+{{::# {{VAR=validAction}}SET_VAR(docName,<b><font size="14">{{VAR=docName}}</font></b><br /><br />)}}
 
 {{REM= We format finalFilename in white color so it won't be displayed}}
 {{::# {{VAR=validAction}}SET_VAR(localAccess,<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF &#40;accès local&#41;</span>  <span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR=finalFilename}}</span><br />)}}
