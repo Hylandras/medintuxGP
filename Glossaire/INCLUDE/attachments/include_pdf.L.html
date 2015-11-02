@@ -19,5 +19,7 @@
 
 {{REM= We test if pdf had multiple pages}}
 {{:: {{VAR=validAction}}SI(S,{{FE=$ToAbsPath{{VAR = tmpFiles}}/preview_pdf_01.png}},=,,NO,YES)&gt;useWildcard}}
-{{:: {{VAR=validAction}}exe_process(WaitEnd,$Glossaire/INCLUDE/attachments/medintux2tess.sh,{{VAR=useWildcard}},ocr_pdf,-l fra,$ToAbsPath{{VAR = tmpFiles}}$EndToAbsPath/,nodebug)}}
+{{:: {{VAR=validAction}}exe_process(WaitEnd,../../../Glossaire/INCLUDE/attachments/medintux2tess.sh,{{VAR=useWildcard}},-l fra,$ToAbsPath{{VAR = tmpFiles}}$EndToAbsPath/,debug)}}
+{{:: {{VAR=validAction}}SI(S,{{FE={{VAR = tmpFiles}}/ocr_pdf.txt}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Échec OCR,TEST)&gt;popupText}}
 </p></body></html>

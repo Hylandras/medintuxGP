@@ -35,6 +35,7 @@
 {{REM= ###TODO### remote access}}
 {{::# {{VAR=validAction}}SET_VAR(remoteAccess,<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF &#40;accès distant&#41;</span>  <span style="font-family:Fixed;font-size:9pt;font-weight:600;color:#ffffff">{{VAR=finalFilename}}</span><br /><hr><br />)}}
 
+
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
 {{:: {{VAR=doPopup}}({{VAR=popupText}},,{{VAR=popupFading}})}}

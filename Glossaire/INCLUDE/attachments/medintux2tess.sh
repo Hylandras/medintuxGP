@@ -4,6 +4,7 @@
 ##############################################################################
 # medintux2tess4attachments is a TesseractOCR wrapper to be able to use tesseract with
 # MedinTux
+# This work is based on the original medintux2tess
 
 ERRORLOG="medintux2tess--"$(date +"%Y-%m-%d-%H-%M")".log" # file where STDERR goes
 TES_LANG=$2
@@ -13,23 +14,29 @@ TEMP_DIR=$3
 exec 2>>$TEMP_DIR$ERRORLOG
 
 if [ $4 = 'debug' ]; then
-echo "=========================================">&2
-echo " medintux2tess">&2
-echo "=========================================">&2
-echo "------------ arguments-------------------">&2
-echo $1>&2
-echo $2>&2
-echo $3>&2
-echo "------------ fichiers--------------------">&2
-echo "Rep. Temp : "$TEMP_DIR>&2
-echo "Language : "$TES_LANG>&2
-echo "-----------------------------------------">&2
+	echo "=========================================">&2
+	echo " medintux2tess">&2
+	echo "=========================================">&2
+	echo "------------ arguments-------------------">&2
+	echo $1>&2
+	echo $2>&2
+	echo $3>&2
+	echo "------------ fichiers--------------------">&2
+	echo "Rep. Temp : "$TEMP_DIR>&2
+	echo "Language : "$TES_LANG>&2
+	echo "-----------------------------------------">&2
 fi
 
 #............... cleaning for the new output ...............
+#Usually ocr_pdf.txt is destroyed during the import but in case of bug
+#we perform this action so the validating test occuring after this script
+#won't return any false positive
 rm "$TEMP_DIR"ocr_pdf.txt
 
 #............... start OCR (tesseract expands output with *.txt) ...............
+#First we copy preview_pdf_00 to be sure to keep a preview file
+cp "$TEMP_DIR"preview_pdf_00.png "$TEMP_DIR"preview_pdf.png
+
 if [ $1 = 'YES' ]; then
 		c=000
 		for i in "$TEMP_DIR"preview_pdf_*.png
