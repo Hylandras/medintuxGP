@@ -21,9 +21,12 @@
 				{{:: SET_VAR(LIST_docType,Hospitalisation|Consultation Spécialisée|Examen Complémentaire|Courrier|)}}\
 				{{:: SET_VAR(LIST_docSpeciality,Administratif-Social|Angiologie|Cardiologie|Dermatologie|Hépato-Gastro-Entérologie|Endocrinologie-Métabolisme-Nutrition|Gynécologie-Obstétrique|Maladies Infectieuses|Neurologie|Oncologie|Ophtalmologie|ORL|Orthopédie|Pneumologie|Prévention|Psychiatrie|Urologie|Vaccinations|Autre|)}}\
 				{{:: SET_VAR(listResult,Rejected)}}\
-				{{REM= relative paths to settable directories}}\
+				{{REM= relative path to temporary directory}}\
 				{{:: SET_VAR(tmpFiles,../../../../../../opt/medintux/tmpFiles)}}\
+				{{REM= relative path to log directory}}\
 				{{:: SET_VAR(logDir,../../../../../../opt/medintux/log)}}\
+				{{REM= relative path to default location for files to import}}\
+				{{:: SET_VAR(defLoc,../../../../../../opt/medintux/import)}}\
 				{{REM= we create the patient file directory if we need to}}\
 				{{:: SET_VAR(PatientFiles,../../../../../../opt/medintux/PatientFiles/{{GET_DOSS_GUID}})}}\
 				{{SI(S,{{FE={{VAR=PatientFiles}}}},=,,,FLAG_FALSE)&gt;validAction}}\

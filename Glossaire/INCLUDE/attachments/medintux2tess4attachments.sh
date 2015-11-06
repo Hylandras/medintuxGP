@@ -40,7 +40,7 @@ rm "$TEMP_DIR"ocr_pdf.txt
 cp "$TEMP_DIR"preview_pdf_00.png "$TEMP_DIR"preview_pdf.png
 
 #if DO_OCR is not equal to "SI" then we only delete temp files
-if [ $DO_OCR = 'SI' ]; then
+if [ $DO_OCR = 'YES' ]; then
 	if [ $USE_WILDCARD = 'YES' ]; then #if YES then our PDF has multiple pages
 			c=000
 			for i in "$TEMP_DIR"preview_pdf_*.png
