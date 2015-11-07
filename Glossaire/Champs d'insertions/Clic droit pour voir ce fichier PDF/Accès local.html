@@ -5,12 +5,12 @@
 
 {{REM= getting the filename}}
 {{:: {{VAR= validAction}} SET_VAR(attachmentQuery,)}}
-{{:: {{VAR= validAction}} SQL_SELECT(Attachments , count&#40;File_Name&#41;|File_Name ,WHERE Doc_PK='{{:: SQL_GET_RUB_HEAD_PK()}}',1,::,)&gt;attachmentQuery}}
+{{:: {{VAR= validAction}} SQL_SELECT(Attachments , count&#40;File_Name&#41;|File_Name ,WHERE Doc_PK='{{:: SQL_GET_RUB_HEAD_PK()}}' AND File_Type='pdf',1,::,)&gt;attachmentQuery}}
 {{:: {{VAR= validAction}} TEST(S,{{VAR=attachmentQuery}},!=,,,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR= popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Il n'y a pas de document référencé,)&gt;popupText}}
 {{:: {{VAR= validAction}} VAR_SPLIT(attachmentQueryPar_,{{VAR= attachmentQuery}},::)}}
 {{:: {{VAR= validAction}} TEST(N,{{VAR= attachmentQueryPar_0}},=,1,FALSE,)&gt;dontDoListe}}
-{{:: {{VAR= dontDoListe}} SQL_SELECT(Attachments , Doc_Name|File_Name ,WHERE Doc_PK='{{:: SQL_GET_RUB_HEAD_PK()}}',200,::,|)&gt;attachmentQuery}}
+{{:: {{VAR= dontDoListe}} SQL_SELECT(Attachments , Doc_Name|File_Name ,WHERE Doc_PK='{{:: SQL_GET_RUB_HEAD_PK()}}' AND File_Type='pdf',200,::,|)&gt;attachmentQuery}}
 {{:: {{VAR= dontDoListe}} DO_LISTE({{VAR= attachmentQuery}},Liste des documents associés,|,listResult,1,S)&gt;attachmentChosen}}
 {{:: {{VAR= dontDoListe}} TEST(S,{{VAR= listResult}},=,Accepted,,FLAG_FALSE)&gt;validAction}}
 {{:: {{VAR= dontDoListe}} {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucun document choisi,)&gt;popupText}}

@@ -31,7 +31,8 @@ CREATE TABLE IF NOT EXISTS `Attachments` (
   `Doc_PK` bigint(20) unsigned NOT NULL,
   `File_Name` mediumtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Doc_Name` mediumtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+  `Date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `File_Type` varchar(3) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

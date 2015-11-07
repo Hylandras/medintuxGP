@@ -32,7 +32,7 @@
 {{:: {{VAR= validAction}} LINE_EDIT(Saisissez le nom du document,Nom du document ?)&gt;docName}}
 
 {{REM= insert in database}}
-{{:: {{VAR= validAction}} SQL_WRITE(Attachments, ,PrimKey,,Doc_PK,{{:: SQL_GET_RUB_HEAD_PK()}},File_Name,{{VAR= finalFilename}},Doc_Name,{{VAR= docName}},Date,{{DT=yyyy-MM-dd hh:mm:ss}})}}
+{{:: {{VAR= validAction}} SQL_WRITE(Attachments, ,PrimKey,,Doc_PK,{{:: SQL_GET_RUB_HEAD_PK()}},File_Name,{{VAR= finalFilename}},Doc_Name,{{VAR= docName}},Date,{{DT=yyyy-MM-dd hh:mm:ss}},File_Type,pdf)}}
 {{REM= we reset agendaPK in case it was filled by a previous macro}}
 {{:: {{VAR= validAction}} SET_VAR(sqlTest,0)}}
 {{REM= we test if sql_write worked}}
