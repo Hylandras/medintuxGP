@@ -1,0 +1,16 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>{{REM=	This macro generates the header of the inserted documents}}
+
+{{REM= later docType will be related to some rubric, and docSpecialty is related to the binder}}
+{{:: {{VAR= validAction}} DO_LISTE({{VAR = LIST_docType}} , Type de document ,|, listResult)&gt;docType}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= listResult}},=,Rejected,FLAG_FALSE,)&gt;validAction}}
+{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucun type de document sélectionné,TEST)&gt;popupText}}
+
+{{:: {{VAR= validAction}} DO_LISTE({{VAR = LIST_docSpecialty}} ,Spécialité ,|, listResult)&gt;docSpecialty}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= listResult}},=,Rejected,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucune spécialité sélectionnée,TEST)&gt;popupText}}
+
+{{:: {{VAR= validAction}} APPEND_DOC_IN_CLASSEUR(Classeur_Médecine_Générale/{{VAR= docSpecialty}},1)}}
+
+{{::#{{Var= validAction}} SET_VAR(importFileHead, <br /><br /><span style="font-size:12pt;font-weight:600">{{VAR= docType}}     {{VAR= docSpecialty}}</span>)}}
+</p></body></html>

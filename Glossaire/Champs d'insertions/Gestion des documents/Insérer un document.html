@@ -17,7 +17,6 @@
 {{REM= We test docType to fill insertType and prefix every test after the first one with insertType so, once the right type matched there is no more useless tests}}
 {{:: {{VAR= validAction}} SI(S,{{VAR= docType}},=,PDF,insert_pdf,)&gt;insertType}}
 {{:: {{VAR=validAction}} INCLUDE($Glossaire/INCLUDE/attachments/{{VAR= insertType}}.html)}}
-($Glossaire/INCLUDE/attachments/insert_pdf.html)
 
 {{REM= If validAction was filled we display a message to help troubleshooting}}
 {{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,,POPUP_FLAG_FALSE)&gt;doPopup}}
