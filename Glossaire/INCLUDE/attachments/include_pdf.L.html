@@ -4,9 +4,6 @@
 {{REM= It is necessary to install ImageMagick for Linux compatibility and we test if it is}}
 {{:: SI(S,{{FE={{VAR=drtuxDepth}}/usr/bin/convert}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! ImageMagick introuvable,TEST)&gt;popupText}}
-{{REM= We also test if the patient file directory was created}}
-{{:: {{VAR=validAction}}SI(S,{{FE={{VAR=PatientFiles}}}},=,,FLAG_FALSE,)&gt;validAction}}
-{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Répertoire du patient introuvable,TEST)&gt;popupText}}
 
 {{REM= we convert PDF file to PNG format}}
 {{:: {{VAR= validAction}} EXE_PROCESS(WaitEnd, /usr/bin/convert, convert,-density,300,-trim, $ToAbsPath{{VAR=tmpFiles}}/include_pdf.tmp.pdf,-quality,100,-sharpen,0x1.0, $ToAbsPath{{VAR = tmpFiles}}/preview_pdf_%02d.png)}}
@@ -21,10 +18,7 @@
 
 {{:: {{VAR= validAction}} SI(S,{{VAR=doOCR}},=,OCR_FLAG_FALSE,NO,YES)&gt;doOCR2Tess}}
 
-{{:: {{VAR= validAction}} EXE_PROCESS(WaitEnd,../../../Glossaire/INCLUDE/attachments/medintux2tess4attachments.sh,{{VAR= useWildcard}},-l fra,$ToAbsPath{{VAR= tmpFiles}}$EndToAbsPath/,nodebug,{{VAR=doOCR2Tess}},$ToAbsPath{{VAR= logDir}}$EndToAbsPath/)}}
-{{:: {{VAR= validAction}} {{VAR= doOCR}} SI(S,{{FE={{VAR = tmpFiles}}/ocr_pdf.txt}},=,,FLAG_FALSE,)&gt;validAction}}
-{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Échec OCR,TEST)&gt;popupText}}
-{{:: {{VAR= validAction}} COPY_FILE($ToAbsPath {{VAR=tmpFiles}}/ocr_pdf.txt, $ToAbsPath{{VAR= PatientFiles}}/{{VAR= finalFilename}}.ocr.txt, $remove_src_file)}}
+{{:: {{VAR= validAction}} EXE_PROCESS(WaitEnd,../../../Glossaire/INCLUDE/attachments/medintux2tess4attachments.sh,{{VAR= useWildcard}},-l fra,$ToAbsPath{{VAR= tmpFiles}}$EndToAbsPath/,nodebug,{{VAR=doOCR2Tess}},$ToAbsPath{{VAR= logDir}}$EndToAbsPath/,pdf,{{VAR=finalFilename}},$ToAbsPath{{VAR= PatientFiles}}$EndToAbsPath/)}}
 {{:: {{VAR= validAction}} {{VAR= doOCR}} SI(S,{{FE={{VAR=PatientFiles}}/{{VAR=finalFilename}}.ocr.txt}},=,,FLAG_FALSE,)&gt;validAction}}
-{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Échec déplacement OCR,TEST)&gt;popupText}}
+{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Échec OCR,TEST)&gt;popupText}}
 </p></body></html>

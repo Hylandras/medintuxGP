@@ -1,0 +1,45 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>{{REM=	With this macro we aim to reuse some of the methods applied to PDFs to unify the templates and allow some specific treats like OCR}}
+
+{{REM= we select the file and call the include_img macro}}
+{{:: OPEN_FILE_NAME(Fichiers IMAGE [*.jpg *.jpeg *.png *.gif *.JPG *.JPEG *.PNG *.GIF];;Tous les fichiers [*], $ToAbsPath{{VAR= defLoc}}$EndToAbsPath/)&gt;importChosenFile}}
+
+{{REM= ###TODO### find a method to control user's action because if he cancels the macro doesn't stop at this point}}
+
+{{REM= We look for file extension until we find the right one. We prefix any test after the first one to be sur to immediately stop after we found the right case. If we don't find we fill validAction and PopupText to stop the macro}}
+{{:: INDEX_OF({{VAR= importChosenFile}},.jpg)&gt;extIndex}}
+{{:: SI(N,{{VAR= extIndex}},>,-1,.jpg,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} INDEX_OF({{VAR= importChosenFile}},.jpeg)&gt;extIndex}}
+{{:: {{VAR= importChosenFileExt}} SI(N,{{VAR= extIndex}},>,-1,.jpeg,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} INDEX_OF({{VAR= importChosenFile}},.png)&gt;extIndex}}
+{{:: {{VAR= importChosenFileExt}} SI(N,{{VAR= extIndex}},>,-1,.png,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} INDEX_OF({{VAR= importChosenFile}},.gif)&gt;extIndex}}
+{{:: {{VAR= importChosenFileExt}} SI(N,{{VAR= extIndex}},>,-1,.gif,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} INDEX_OF({{VAR= importChosenFile}},.JPG)&gt;extIndex}}
+{{:: {{VAR= importChosenFileExt}} SI(N,{{VAR= extIndex}},>,-1,.JPG,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} INDEX_OF({{VAR= importChosenFile}},.JPEG)&gt;extIndex}}
+{{:: {{VAR= importChosenFileExt}} SI(N,{{VAR= extIndex}},>,-1,.JPEG,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} INDEX_OF({{VAR= importChosenFile}},.PNG)&gt;extIndex}}
+{{:: {{VAR= importChosenFileExt}} SI(N,{{VAR= extIndex}},>,-1,.PNG,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} INDEX_OF({{VAR= importChosenFile}},.GIF)&gt;extIndex}}
+{{:: {{VAR= importChosenFileExt}} SI(N,{{VAR= extIndex}},>,-1,.GIF,)&gt;importChosenFileExt}}
+{{:: {{VAR= importChosenFileExt}} TEST(N,{{VAR= extIndex}},>,-1,,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR= importChosenFileExt}} TEST(S,{{VAR= validAction}},=,FLAG_FALSE,Format de fichier non supporté sélectionné,)&gt;popupText}}
+{{REM= ###TODO### Add ask delete file}}
+{{:: {{VAR= validAction}} COPY_FILE({{VAR= importChosenFile}}, $ToAbsPath {{VAR= tmpFiles}}/include_img.tmp{{VAR= importChosenFileExt}})}}
+
+{{:: {{VAR=validAction}} INCLUDE($Glossaire/INCLUDE/attachments/insert_head.html)}}
+
+{{:: {{VAR=validAction}} INCLUDE($Glossaire/INCLUDE/attachments/include_img.html)}}
+
+{{:: {{VAR= validAction}} SI(S,{{VAR= $SCRIPT_STATUS}},%%,$FUSION_ADD_Ajouter,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= validAction}} Intitule({{VAR= docName}})}}
+
+{{REM= ###TODO### Ajouter ask delete file}}
+{{REM= the delete action can only run if all actions went well}}
+{{:: {{VAR= validAction}} DELETE_FILE({{VAR= importChosenFile}})}}
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,,POPUP_FLAG_FALSE)&gt;doPopup}}
+{{:: {{VAR= doPopup}} MESSAGE_POPUP({{VAR= popupText}},,{{VAR= popupFading}})}}
+</p></body></html>

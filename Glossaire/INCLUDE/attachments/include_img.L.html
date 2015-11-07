@@ -1,0 +1,11 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head>
+<body><p>{{REM= For images we only need to call Tesseract}}
+{{REM= It is necessary to install Tesseract for Linux compatibility so we test if it is}}
+{{:: {{VAR= validAction}} {{VAR= doOCR}} SI(S,{{FE= {{VAR= drtuxDepth}}/usr/bin/tesseract}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= doOCR}} {{VAR=popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Tesseract introuvable,TEST)&gt;popupText}}
+{{REM= ###TODO### we need to prompt user for language}}
+
+{{:: {{VAR= validAction}} {{VAR= doOCR}} EXE_PROCESS(WaitEnd,../../../Glossaire/INCLUDE/attachments/medintux2tess4attachments.sh,NO,-l fra,$ToAbsPath{{VAR= tmpFiles}}$EndToAbsPath/,nodebug,YES,$ToAbsPath{{VAR= logDir}}$EndToAbsPath/,include_img.tmp{{VAR= importChosenFileExt}},{{VAR=finalFilename}},$ToAbsPath{{VAR= PatientFiles}}$EndToAbsPath/)}}
+{{:: {{VAR= validAction}} {{VAR= doOCR}} SI(S,{{FE={{VAR=PatientFiles}}/{{VAR=finalFilename}}.ocr.txt}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= doOCR}} {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Échec OCR,TEST)&gt;popupText}}
+</p></body></html>
