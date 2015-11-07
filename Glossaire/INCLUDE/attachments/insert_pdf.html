@@ -1,0 +1,31 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>{{REM=	Import a PDF file}}
+{{REM= we select the file and call the include_pdf macro}}
+{{:: OPEN_FILE_NAME(Fichiers PDF [*.pdf *.PDF];;Tous les fichiers [*], $ToAbsPath{{VAR= defLoc}}$EndToAbsPath/)&gt;importChosenFile}}
+
+{{REM= ###TODO### find a method to control user's action because if he cancels the macro doesn't stop at this point}}
+
+{{REM= ###TODO### AJouter ask delete file}}
+{{:: COPY_FILE({{VAR= importChosenFile}}, $ToAbsPath {{VAR= tmpFiles}}/include_pdf.tmp.pdf, $remove_src_file)}}
+
+{{REM= later docType will be related to some rubric, and docSpeciality is related to the binder}}
+{{:: {{VAR= validAction}} DO_LISTE({{VAR = LIST_docType}} , Type de document ,|, listResult)&gt;docType}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= listResult}},=,Rejected,FLAG_FALSE,)&gt;validAction}}
+{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucun type de document sélectionné,TEST)&gt;popupText}}
+{{:: {{VAR= validAction}} DO_LISTE({{VAR = LIST_docSpeciality}} ,Spécialité ,|, listResult)&gt;docSpeciality}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= listResult}},=,Rejected,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucune spécialité sélectionnée,TEST)&gt;popupText}}
+
+{{:: {{VAR= validAction}} APPEND_DOC_IN_CLASSEUR(Classeur_Médecine_Générale/{{VAR= docSpeciality}},1)}}
+
+{{::#{{Var= validAction}} Extract(Documents,avant d',EOL,Aspirer un fichier, <br /><br /><span style="font-size:12pt;font-weight:600">{{ {{VAR= validAction}} VAR= docType}}     {{ {{VAR= validAction}} VAR= docSpeciality}}</span>,$keepHtml)}}
+
+{{:: {{VAR=validAction}} INCLUDE($Glossaire/INCLUDE/attachments/include_pdf.html)}}
+
+{{:: {{VAR= validAction}} SI(S,{{VAR= $SCRIPT_STATUS}},%%,$FUSION_ADD_Ajouter,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= validAction}} Intitule({{VAR= docName}})}}
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,,POPUP_FLAG_FALSE)&gt;doPopup}}
+{{:: {{VAR= doPopup}} MESSAGE_POPUP({{VAR= popupText}},,{{VAR= popupFading}})}}
+</p></body></html>

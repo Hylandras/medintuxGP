@@ -1,0 +1,25 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>
+{{REM=	This script aims to make the link with integration macros built for the glossary}}
+{{REM=	It displays a warning to the user to ask him if he already has save the document and then displays a list of different insert options displayed when we right cliçk after the trigger set up for the glossary}}
+
+{{REM= We prompt the user to be sure he saved}}
+{{:: SET_VAR(doList,Non)}}
+{{:: MESSAGE_ALERT(Avez-vous pensé à sauvegarder le ddossier patient avant d'insérer un document ?, Avez-vous sauvegardé ?, Oui, Non)&gt;doList}}
+{{:: SI(S,{{VAR= doList}},=,Oui,,FLAG_FALSE)&gt;validAction}}
+{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,Veuillez sauvegarder avant de continuer,)&gt;popupText}}
+
+{{REM= list items match the available choices when we use the glossary to include a new document}}
+{{:: {{VAR= validAction}} DO_LISTE(PDF| , Type de document à insérer ,|, listResult)&gt;docType}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= listResult}},=,Rejected,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= popupText}} TEST(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Vous devez sélectionner un type de document,)&gt;popupText}}
+
+{{REM= We test docType to fill insertType and prefix every test after the first one with insertType so, once the right type matched there is no more useless tests}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= docType}},=,PDF,insert_pdf,)&gt;insertType}}
+{{:: {{VAR=validAction}} INCLUDE($Glossaire/INCLUDE/attachments/{{VAR= insertType}}.html)}}
+($Glossaire/INCLUDE/attachments/insert_pdf.html)
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,,POPUP_FLAG_FALSE)&gt;doPopup}}
+{{:: {{VAR= doPopup}} MESSAGE_POPUP({{VAR= popupText}},,{{VAR= popupFading}})}}
+</p></body></html>

@@ -1,7 +1,7 @@
 <html><head><meta name="qrichtext" content="charset=utf-8" /></head>
-<body bgcolor="#ffffff" style="font-size:10pt;font-family:Sans">
-<p><span style="font-family:Courier New">{{REM=	Include PDF}}
+<body bgcolor="#ffffff" style="font-size:10pt;font-family:Sans"><p>{{REM=	Include PDF}}
 {{REM=	This macro looks for a temporary file named include_pdf.tmp.pdf. We make several operations to permit to inject some elements in documents whatever their section is. At the end we copy the pdf in patient files' directory and provide two links : one for local access and another for remotes. This macro doesn't print any information in documents, it returns only values to use in other macros}}
+
 {{REM= ###TODO### insert line_edit to prompt user for filename >>> document title}}
 {{:: WAIT_CURSOR (WAIT) }}
 
@@ -51,11 +51,5 @@
 {{ {{VAR= validAction}} {{VAR= doOCR}} VAR= ocrHead}}
 {{:: {{VAR= validAction}} {{VAR= doOCR}} IMPORT({{VAR= PatientFiles}}/{{VAR= finalFilename}}.ocr.txt, insert crlf2html)}}
 
-{{REM= If validAction was filled we display a message to help troubleshooting}}
-{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,,POPUP_FLAG_FALSE)&gt;doPopup}}
-{{:: {{VAR= doPopup}} MESSAGE_POPUP({{VAR= popupText}},,{{VAR= popupFading}})}}
-
 {{:: WAIT_CURSOR (RESTORE) }}
-</p>
-</body>
-</html>
+</p></body></html>
