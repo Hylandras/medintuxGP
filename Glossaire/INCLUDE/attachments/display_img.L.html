@@ -1,5 +1,6 @@
-<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
-<p>{{REM= We check for viewers one after another until we found one installed}}
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body><p>
+{{REM= We check for viewers one after another until we found one installed}}
+{{REM= After first tests are prefixed var used to store result of positive tests, so the next ones won't be executed}}
 {{:: SI(S,{{FE= {{VAR= drtuxDepth}}/usr/bin/gpicview}},=,,,/usr/bin/gpicview)&gt;imgViewer}}
 {{:: {{VAR= imgViewer}} SI(S,{{FE= {{VAR= drtuxDepth}}/usr/bin/ksquirrel}},=,,,/usr/bin/ksquirrel)&gt;imgViewer}}
 {{:: {{VAR= imgViewer}} SI(S,{{FE= {{VAR= drtuxDepth}}/usr/bin/kuickshow}},=,,,/usr/bin/kuickshow)&gt;imgViewer}}
@@ -8,6 +9,8 @@
 {{:: {{VAR= imgViewer}} SI(S,{{FE= {{VAR= drtuxDepth}}/usr/bin/gthumb}},=,,,/usr/bin/gthumb)&gt;imgViewer}}
 {{:: {{VAR= imgViewer}} SI(S,{{FE= {{VAR= drtuxDepth}}/usr/bin/eog}},=,,,/usr/bin/eog)&gt;imgViewer}}
 {{:: {{VAR= imgViewer}} SI(S,{{FE= {{VAR= drtuxDepth}}/usr/bin/gwenview}},=,,,/usr/bin/gwenview)&gt;imgViewer}}
+
+{{REM= If we didn't find a viewer we fill validAction and popupText}}
 {{:: SI(S,{{VAR=imgViewer}},=,,FLAG_FALSE,)&gt;validAction}}
 {{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Aucun logiciel de visualisation trouvé,TEST)&gt;popupText}}
 </p></body></html>

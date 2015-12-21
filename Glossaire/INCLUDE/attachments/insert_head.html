@@ -1,16 +1,23 @@
 <html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
-<p>{{REM=	This macro generates the header of the inserted documents}}
+<p>{{REM=	This macro generates the header of the inserted documents and it links the created/edited document to the right binder}}
+  {{REM= INPUT= no input}}
+  {{REM= OUTPUT= importFileHead}}
 
-{{REM= later docType will be related to some rubric, and docSpecialty is related to the binder}}
+{{REM= We ask to user what is the document type and speciality}}
+{{REM= later docType will be related to some rubric anbd the the list is set by a macro running at file opening}}
 {{:: {{VAR= validAction}} DO_LISTE({{VAR = LIST_docType}} , Type de document ,|, listResult)&gt;docType}}
+{{REM= Breakpoint}}
 {{:: {{VAR= validAction}} SI(S,{{VAR= listResult}},=,Rejected,FLAG_FALSE,)&gt;validAction}}
 {{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucun type de document sélectionné,TEST)&gt;popupText}}
-
+{{REM= docSpeciality is a binder to class the document. The binder list is set by a macro running at file opening}}
 {{:: {{VAR= validAction}} DO_LISTE({{VAR = LIST_docSpecialty}} ,Spécialité ,|, listResult)&gt;docSpecialty}}
+{{REM= Breakpoint}}
 {{:: {{VAR= validAction}} SI(S,{{VAR= listResult}},=,Rejected,FLAG_FALSE,)&gt;validAction}}
 {{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucune spécialité sélectionnée,TEST)&gt;popupText}}
 
+{{REM= We link the document to the chosen binder}}
 {{:: {{VAR= validAction}} APPEND_DOC_IN_CLASSEUR(Classeur_Médecine_Générale/{{VAR= docSpecialty}},1)}}
 
+{{REM= we format directly the output display before to store the results for further use}}
 {{::#{{Var= validAction}} SET_VAR(importFileHead, <br /><br /><span style="font-size:12pt;font-weight:600">{{VAR= docType}}     {{VAR= docSpecialty}}</span><br/><br/>)}}
 </p></body></html>

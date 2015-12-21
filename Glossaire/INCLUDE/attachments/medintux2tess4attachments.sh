@@ -7,15 +7,14 @@
 # This work is based on the original medintux2tess
 
 ERRORLOG="medintux2tess4pdfattachments--"$(date +"%Y-%m-%d-%H-%M")".log" # file where STDERR goes
-USE_WILDCARD=$1 #PDF only : if YES then our PDF has multiple pages
+PAT_DIR=$1 #It's the directory where files are finally stored
 TES_LANG=$2 #Language setting for Tesseract
 TEMP_DIR=$3 #Directory of temporary files
-#the fourth argument is not because we only need it once for debug
+#the fourth argument is not here because we only need it once for debug
 DO_OCR=$5 #PDF only : if NO then we only delete temporary preview files
 LOG_DIR=$6 #Directory of Log Files
 FILE_NAME=$7 #File name is useful for images where extension can change, when we call the script for a PDF we give "pdf" as value so we can easily test if we need to run this script for a simple picture or a PDF file without needing a tenth variable
 LAST_NAME=$8 #It's the final name (with extension) of the file for which we run an OCR
-PAT_DIR=$9 #It's the directory where files are finally stored
 
 #............... redirect STDERR to ERRORLOG ...............
 exec 2>>$LOG_DIR$ERRORLOG
@@ -25,7 +24,6 @@ if [ $4 = 'debug' ]; then
 	echo "medintux2tess4attachments">&2
 	echo "=========================================">&2
 	echo "------------ Arguments -------------------">&2
-	echo "Wildcard : "$USE_WILDCARD>&2
 	echo "Language : "$TES_LANG>&2
 	echo "Do OCR : "$DO_OCR>&2
 	echo "Temp Dir : "$TEMP_DIR>&2
@@ -37,12 +35,14 @@ if [ $4 = 'debug' ]; then
 fi
 
 if [ $FILE_NAME = 'pdf' ]; then
-			#............... start OCR (tesseract expands output with *.txt) ...............
+			convert -density 300 -trim "$TEMP_DIR"include_pdf.tmp.pdf -quality 100 -sharpen 0x1.0 "$TEMP_DIR"preview_pdf_%02d.png
+
 			#First we copy preview_pdf_00 to be sure to keep a preview file
 			cp "$TEMP_DIR"preview_pdf_00.png "$TEMP_DIR"preview_pdf.png
 
+			#............... start OCR (tesseract expands output with *.txt) ...............
 			if [ $DO_OCR = 'YES' ]; then
-				if [ $USE_WILDCARD = 'YES' ]; then
+				if [ -f "$TEMP_DIR"'preview_pdf_01.png' ]; then
 						c=000
 						for i in "$TEMP_DIR"preview_pdf_*.png
 							do
