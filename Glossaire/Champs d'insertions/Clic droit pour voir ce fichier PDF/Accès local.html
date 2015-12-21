@@ -1,0 +1,32 @@
+<html><head><meta name="qrichtext" content="1" /></head><body>
+<p>$start_titleAfficher la copie du fichier PDF sur mon ordinateur à l'aide d'un logiciel externe$end_title
+{{REM= To display a PDF file we are looking for a known PDF Reader installed on the computer, then we get from database the list of attachments linked to the current document, and we finally the PDF reader with the right settings}}
+
+{{REM= firstly we find what PDF reader we will use. As it's not cross-platform we call a different function according to the operating system}}
+{{:: INCLUDE( $Glossaire/INCLUDE/attachments/display_pdf.{{OS}}.html )}}
+
+{{REM= Now we check database to be sure we have at least one attachment linked to the current document}}
+{{REM= We query for attached pdf file counts. If query returns an empty result we break the macro. If it returns 1 we are sure to have the right file name and we use first query result for next step. If not we once again query the database to get a list of the linked attachments}}
+{{:: {{VAR= validAction}} SET_VAR(attachmentQuery,)}}
+{{:: {{VAR= validAction}} SQL_SELECT(Attachments ,count&#40;File_Name&#41;|File_Name ,WHERE Doc_PK='{{:: SQL_GET_RUB_HEAD_PK()}}' AND File_Type='pdf',1,::,)&gt;attachmentQuery}}
+{{REM= Breakpoint}}
+{{:: {{VAR= validAction}} TEST(S,{{VAR=attachmentQuery}},!=,,,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR= popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Il n'y a pas de document référencé,)&gt;popupText}}
+{{REM= if query result wasn't empty we test the count. If it's equal to 1 we don't have to do a second query and we can use the File_Name retrieved with the count. The dontDoListe var is a way to skip the list step}}
+{{:: {{VAR= validAction}} VAR_SPLIT(attachmentQueryPar_,{{VAR= attachmentQuery}},::)}}
+{{:: {{VAR= validAction}} TEST(N,{{VAR= attachmentQueryPar_0}},=,1,FALSE,)&gt;dontDoListe}}
+{{REM= We couldn't query database at once because with MySQL count function we can only have a one row result, so we query the database for Doc_Name (display in list) and File_Name with same WHERE clauses}}
+{{:: {{VAR= validAction}} {{VAR= dontDoListe}} SQL_SELECT(Attachments , Doc_Name|File_Name ,WHERE Doc_PK='{{:: SQL_GET_RUB_HEAD_PK()}}' AND File_Type='pdf',200,::,|)&gt;attachmentQuery}}
+{{:: {{VAR= validAction}} {{VAR= dontDoListe}} DO_LISTE({{VAR= attachmentQuery}},Liste des documents associés,|,listResult,1,S)&gt;attachmentChosen}}
+{{REM= Breakpoint}}
+{{:: {{VAR= validAction}} {{VAR= dontDoListe}} TEST(S,{{VAR= listResult}},=,Accepted,,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR= validAction}} {{VAR= dontDoListe}} {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Aucun document choisi,)&gt;popupText}}
+{{:: {{VAR= validAction}} {{VAR= dontDoListe}} VAR_SPLIT(attachmentQueryPar_,{{VAR=attachmentChosen}},::)}}
+
+{{REM= we display the file}}
+{{:: {{VAR= validAction}} EXE_PROCESS(noWaitEnd,{{VAR=pdfReader}},$ToAbsPath{{VAR=PatientFiles}}/{{VAR=attachmentQueryPar_1}})}}
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
+{{:: {{VAR=doPopup}}({{VAR=popupText}},,{{VAR=popupFading}})}}
+</p></body></html>

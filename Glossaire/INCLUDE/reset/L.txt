@@ -1,0 +1,2 @@
+{{REm= we call a script to execute the mkdir instruction because it doesn't work directly with exe_process when it is called from a toolbar macro}}\
+{{:: exe_process(WaitEnd,../../../Glossaire/INCLUDE/reset/{{OS}}.sh, $ToAbsPath{{VAR=PatientFiles}})}}\

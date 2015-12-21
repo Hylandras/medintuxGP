@@ -1,0 +1,61 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>{{REM=	Include PDF}}
+{{REM=	This macro looks for a temporary file named include_pdf.tmp.pdf (this macro will be provided by a previous one). We make several operations to allow to inject some elements in documents whatever their section is. At the end we copy the pdf in patient files directory and provide a call to action to allow to call different macros to display the file with a PDF viewer}}
+
+{{REM= ###TODO### Warn user we need to save before to execute this macro}}
+{{REM= ###BUG### VALIDER_DOSSIER doesn't work, DrTux crashes each time we try to run it}}
+
+{{REM= we test if the temporary file is in the tmp directory}}
+{{:: {{VAR= validAction}}SI(S,{{FE= {{VAR= tmpFiles}}/include_pdf.tmp.pdf}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Fichier temporaire absent,TEST)&gt;popupText}}
+
+{{REM= We test if the patient file directory was created (usually it was by a startup macro but testing is always better...)}}
+{{:: {{VAR=validAction}}SI(S,{{FE={{VAR=PatientFiles}}}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Répertoire du patient introuvable,TEST)&gt;popupText}}
+
+{{REM= We prompt the user to know if we need to perform OCR}}
+{{:: {{VAR= validAction}} SET_VAR(doOCR,Non)}}
+{{:: {{VAR= validAction}} MESSAGE_ALERT(Le fichier doit-il être soumis à la reconnaissance de caractères ?, OCR ?, Oui, Non)&gt;doOCR}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= doOCR}},=,Oui,,OCR_FLAG_FALSE)&gt;doOCR}}
+
+{{REM= We generate au unique name for the file}}
+{{:: {{VAR= validAction}} SET_VAR(finalFilename, {{GET_DOSS_GUID}}__{{DATE=yyyyMMdd}}_{{HeureCourante=hhmmss}}_{{USER LOGIN MEDECIN}}.pdf)}}
+
+{{REM= we start a long set of functions, so we put the cursor in wait mode}}
+{{:: WAIT_CURSOR (WAIT) }}
+
+{{REM= preview and OCR instructions are system dependent so we use a second macro suffixed with OS constant}}
+{{:: {{VAR= validAction}} INCLUDE( $Glossaire/INCLUDE/attachments/include_pdf.{{OS}}.html ) }}
+
+{{REM= We copy the file to its final destination}}
+{{:: {{VAR= validAction}} COPY_FILE($ToAbsPath {{VAR= tmpFiles}}/include_pdf.tmp.pdf, $ToAbsPath{{VAR= PatientFiles}}/{{VAR= finalFilename}}, $remove_src_file)}}
+{{:: {{VAR= validAction}} SI(S,{{VAR= PatientFiles}}/{{VAR= finalFilename}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Problème lors de la copie du fichier,TEST)&gt;popupText}}
+
+{{REM= We prompt the user for a human friendly name for the document to insert}}
+{{:: {{VAR= validAction}} LINE_EDIT(Saisissez le nom du document,Nom du document ?)&gt;docName}}
+
+{{REM= insert in database}}
+{{:: {{VAR= validAction}} SQL_WRITE(Attachments, ,PrimKey,,Doc_PK,{{:: SQL_GET_RUB_HEAD_PK()}},File_Name,{{VAR= finalFilename}},Doc_Name,{{VAR= docName}},Date,{{DT=yyyy-MM-dd hh:mm:ss}},File_Type,pdf)}}
+{{REM= we reset agendaPK in case it was filled by a previous macro}}
+{{:: {{VAR= validAction}} SET_VAR(sqlTest,0)}}
+{{REM= we test if sql_write worked}}
+{{:: {{VAR= validAction}} SQL_SELECT( Attachments , PrimKey , WHERE Date='{{DT=yyyy-MM-dd hh:mm:ss}}' AND File_Name='{{VAR= finalFilename}}',20,%, ,%0)&gt;sqlTest}}
+{{:: {{VAR= validAction}} TEST(N,{{VAR= sqlTest}},>,0,,FLAG_FALSE)&gt;validAction}}
+{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR DB:attachments !!! Veuillez contacter l'administrateur,TEST)&gt;popupText}}
+
+{{REM= Formatting docName}}
+{{::#{{VAR= validAction}} SET_VAR(docName,<b><font size="14">{{VAR= docName}}</font></b><br /><br />)}}
+
+{{REM= We format finalFilename in white color so it won't be displayed}}
+{{::#{{VAR= validAction}} SET_VAR(accessLink,<span style="font-family:Fixed;font-size:9pt;font-weight:600;text-decoration:underline;color:#0000ff">Clic droit pour voir ce fichier PDF</span><br /><hr><br />)}}
+
+{{REM= Printing output}}
+{{ {{VAR= validAction}} VAR= importFileHead}}{{ {{VAR= validAction}} VAR= docName}}{{:: {{VAR= validAction}} INSERT_IMAGE($Glossaire/INCLUDE/attachments/pdfLies.png,32,32)}}{{ {{VAR= validAction}} VAR= accessLink}}{{:: {{VAR=validAction}} INSERT_IMAGE({{VAR= tmpFiles}}/preview_pdf.png,1000,1000)}}{{:: {{VAR= validAction}} DELETE_FILE({{VAR=tmpFiles}}/preview_pdf.png)}}
+{{::#{{VAR= validAction}} {{VAR= doOCR}} SET_VAR(ocrHead,<br /><hr><span style="font-size:10pt;font-weight:600">La reconnaissance de caractères est fournie à titre indicatif&#44; gardez toujours bien à l'esprit que la fiabilité à 100% n'existe pas dans ce domaine</span><hr>)}}
+{{ {{VAR= validAction}} {{VAR= doOCR}} VAR= ocrHead}}
+{{:: {{VAR= validAction}} {{VAR= doOCR}} IMPORT({{VAR= PatientFiles}}/{{VAR= finalFilename}}.ocr.txt, insert crlf2html)}}
+
+{{REM= We restore the cursor to its initial state}}
+{{:: WAIT_CURSOR (RESTORE) }}
+</p></body></html>

@@ -1,0 +1,29 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>{{REM= With Linux, we need to use the ImageMagick library and Tesseract for OCR. So we begin by tests to valid them and then we a bash script to perform some operations and OCR}}
+
+{{REM= Looking for ImageMagick}}
+{{:: SI(S,{{FE={{VAR=drtuxDepth}}/usr/bin/convert}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! ImageMagick introuvable,TEST)&gt;popupText}}
+
+{{REM= It is necessary to install Tesseract for Linux compatibility so we test if it is}}
+{{:: {{VAR=validAction}}SI(S,{{FE={{VAR=drtuxDepth}}/usr/bin/tesseract}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR=popupText}}(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Tesseract introuvable,TEST)&gt;popupText}}
+{{REM= ###TODO### we need to prompt user for language}}
+
+{{REM= We test doOCR to init the bash script OCR setting}}
+{{:: {{VAR= validAction}} SI(S,{{VAR=doOCR}},=,OCR_FLAG_FALSE,NO,YES)&gt;doOCR2Tess}}
+
+{{REM= Calling the script}}
+  {{REM= $1 $ToAbsPath{{VAR= PatientFiles}}$EndToAbsPath/ : absolute path for patient file directory with ending slash}}
+  {{REM= $2 string (prefix "-l " and language declared with ISO 639-3 nomenclature) : language to perform OCR}}
+  {{REM= $3 $ToAbsPath{{VAR= tmpFiles}}$EndToAbsPath/ : absolute path for temporary file directory with ending slash}}
+  {{REM= $4 string (debug/nodebug) : do we need to write a log file ?)}}
+  {{REM= $5 {{VAR=doOCR2Tess}} : string (YES/NO) : do we have to perform OCR ?}}
+  {{REM= $6 $ToAbsPath{{VAR= logDir}}$EndToAbsPath/ : absolute path for log file directory with ending slash}}
+  {{REM= $7 string ("pdf"/picture name) : do we need to perform actions for PDF ?}}
+  {{REM= $8 {{VAR=finalFilename}} : the name that we'll give to the file we are inserting once stored in the patient directory}}
+{{:: {{VAR= validAction}} EXE_PROCESS(WaitEnd,../../../Glossaire/INCLUDE/attachments/medintux2tess4attachments.sh,$ToAbsPath{{VAR= PatientFiles}}$EndToAbsPath/,-l fra,$ToAbsPath{{VAR= tmpFiles}}$EndToAbsPath/,nodebug,{{VAR=doOCR2Tess}},$ToAbsPath{{VAR= logDir}}$EndToAbsPath/,pdf,{{VAR=finalFilename}})}}
+{{REM= Breakpoint}}
+{{:: {{VAR= validAction}} {{VAR= doOCR}} SI(S,{{FE={{VAR=PatientFiles}}/{{VAR=finalFilename}}.ocr.txt}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= popupText}}(S,{{VAR= validAction}},=,FLAG_FALSE,ERREUR !!! Échec OCR,TEST)&gt;popupText}}
+</p></body></html>

@@ -1,0 +1,7 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>{{REM= as PDF display manager change with almost each distribution we test for several and stop the tests when we found one. We prefix each test after the first one with pdfReader, so with this method it's easy to add one}}
+{{:: SI(S,{{FE={{VAR=drtuxDepth}}/usr/bin/evince}},=,,,/usr/bin/evince)&gt;pdfReader}}
+{{:: {{VAR=pdfReader}}SI(S,{{FE={{VAR=drtuxDepth}}/usr/bin/okular}},=,,,/usr/bin/okular)&gt;pdfReader}}
+{{:: SI(S,{{VAR=pdfReader}},=,,FLAG_FALSE,)&gt;validAction}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,ERREUR !!! Aucun lecteur PDF n'est installé,TEST)&gt;popupText}}
+</p></body></html>

@@ -4,5 +4,12 @@
 #Exclure mise à jour et medicatux pour éviter les problèmes avec les systèmes Windows
 Programmes/mise_a_jour/*
 Programmes/medicatux/*
+<<<<<<< HEAD
+#Exlure les fichiers de conflit de synchronisation de Synology Cloudstation
+*CaseConflict.html
+#Ignore glossary cache
+Glossaire/Champs\ d\'insertions/cache/*
+=======
 #Ignore Mac finder files
 *.DS_Store
+>>>>>>> origin/master

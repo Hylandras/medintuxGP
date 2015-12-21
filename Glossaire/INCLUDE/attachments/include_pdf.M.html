@@ -1,0 +1,18 @@
+<html>
+<head><meta name="qrichtext" content="charset=utf-8" /></head>
+<body bgcolor="#ffffff" style="font-size:10pt;font-family:Sans">
+<p>{{REM= we extract the first page of the pdf and transform it to PNG so macros will be able to insert previews}}
+{{REM=	 For Mac OS X we use bash because other shells can be version specifics // Sips is an apple tool fitting perfectly for our usage. It converts only the first page to PNG if we don't use anymore parameter }}
+{{:: exe_process (WaitEnd, $IsBinPath/bin/bash, &quot;sips -s format png {{VAR = tmpFile}} --out $ToAbsPath ../../tmp/preview_pdf.png&quot;)}}
+
+{{:: {{VAR = validAction}}exe_process (WaitEnd, /bin/bash, mkdir,-p,$ToAbsPath ../../../PatientFiles/{{GET_DOSS_GUID}})}}
+
+
+{{REM= ###TODO###}}
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{:: TEST(S,{{VAR=validAction}},=,FLAG_FALSE,MESSAGE_POPUP,)&gt;doPopup}}
+{{:: {{VAR=doPopup}}({{VAR=popupText}},,{{VAR=popupFading}})}}
+</p>
+</body>
+</html>

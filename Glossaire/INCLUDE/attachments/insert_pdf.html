@@ -1,0 +1,26 @@
+<html><head><meta name="qrichtext" content="charset=utf-8" /></head><body>
+<p>{{REM=	Import a PDF file}}
+{{REM= we select the file and call the include_pdf macro}}
+{{:: OPEN_FILE_NAME(Fichiers PDF [*.pdf *.PDF];;Tous les fichiers [*], $ToAbsPath{{VAR= defLoc}}$EndToAbsPath/)&gt;importChosenFile}}
+
+{{REM= ###TODO### find a method to control user's action because if he cancels the macro doesn't stop at this point}}
+{{REM= waiting this issue solved we init validAction to avoid false positives in error detection}}
+{{:: SET_VAR(validAction,)}}
+
+{{:: COPY_FILE({{VAR= importChosenFile}}, $ToAbsPath {{VAR= tmpFiles}}/include_pdf.tmp.pdf)}}
+
+{{:: {{VAR= validAction}} INCLUDE($Glossaire/INCLUDE/attachments/insert_head.html)}}
+
+{{:: {{VAR=validAction}} INCLUDE($Glossaire/INCLUDE/attachments/include_pdf.html)}}
+
+{{:: {{VAR= validAction}} SI(S,{{VAR= $SCRIPT_STATUS}},%%,$FUSION_ADD_Ajouter,FLAG_FALSE,)&gt;validAction}}
+{{:: {{VAR= validAction}} Intitule({{VAR= docName}})}}
+
+{{REM= ###TODO### Ajouter ask delete file}}
+{{REM= the delete action can only run if all actions went well}}
+{{:: {{VAR= validAction}} DELETE_FILE({{VAR= importChosenFile}})}}
+
+{{REM= If validAction was filled we display a message to help troubleshooting}}
+{{:: TEST(S,{{VAR= validAction}},=,FLAG_FALSE,,POPUP_FLAG_FALSE)&gt;doPopup}}
+{{:: {{VAR= doPopup}} MESSAGE_POPUP({{VAR= popupText}},,{{VAR= popupFading}})}}
+</p></body></html>
